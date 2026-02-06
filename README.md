@@ -17,6 +17,7 @@ The planned evaluation targets four core failure modes:
 │  ├─ datasets/                # JSONL drafting tasks tied to packets
 │  └─ prompts/                 # prompt templates and system instructions
 ├─ docs/
+│  ├─ project_overview.md      # core goals, scope, and eval strategy
 │  ├─ packet_design.md
 │  ├─ data_schema.md           # placeholder until SME confirmation
 │  └─ grading.md               # early guidance; subject to change

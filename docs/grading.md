@@ -2,27 +2,36 @@
 
 ## Recommended grading stack
 
-1. Deterministic checks
-   - required headings present
-   - citations present when required
-   - forbidden outside citations
+1. Grader 1: Deterministic citation integrity grader
+   - checks that each cited `doc_id` exists in the packet
+   - checks that each cited paragraph/block range is valid and exists in the source document
+   - checks that the cited paragraph/block is the correct section for the claim (not just any valid block)
+   - purpose: catch fake citations (hallucinated authorities) and wrong-block citations
 
-2. Citation existence
-   - every citation references an allowed `doc_id`
-   - paragraph range parses and exists in the authority text
+2. Grader 2: Citation overextension grader (LLM as judge)
+   - input includes:
+     - the model output with citations
+     - test case context
+     - a natural-language note describing what overextension behavior the test case is trying to trigger
+   - judge task:
+     - determine whether the output overclaims beyond what the cited text supports
+     - determine whether key limits/qualifiers were dropped
+     - score overextension risk and provide short rationale
+   - purpose: detect cases where citations exist but are stretched beyond their supported scope
 
-3. Span correctness
-   - for tasks with a known span trap, the cited span matches the intended paragraph range
-
-4. Support and scope
-   - the cited span supports the proposition
-   - qualifiers and limits are preserved (no overextension)
-
-5. Precedence
-   - if the task includes a controlling authority, the draft must not rely on non-controlling authority as controlling
-   - if a rule is limited or overruled within the packet, the limitation must be carried forward
+3. Grader 3: Precedent/precedence grader (LLM as judge)
+   - input includes:
+     - the model output with citations
+     - test case context
+     - a natural-language note describing what precedent/precedence behavior the test case is trying to trigger
+     - specific cautions (for example: controlling authority vs persuasive authority, overruled/limited authority, exceptions)
+   - judge task:
+     - evaluate whether the answer handles authority hierarchy and precedent constraints correctly
+     - score precedence correctness and provide short rationale
+   - purpose: catch legal reasoning errors even when citation formatting looks valid
 
 ## Calibration
 
-- Start with deterministic and citation existence.
-- Add LLM-as-judge only after you have a labeled calibration set and inter-rater checks.
+- Run Grader 1 first, then Grader 2 and Grader 3.
+- Calibrate LLM-judge prompts on a labeled set with explicit pass/fail examples for overextension and precedence.
+- Track inter-rater agreement and score drift over time.
