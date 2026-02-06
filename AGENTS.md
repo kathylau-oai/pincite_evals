@@ -43,3 +43,4 @@
 ## Recent learnings
 - Problem -> Excerpt citation parsing accepted overly broad IDs and legacy styles -> Fix -> Enforce only `DOC_ID[P<page>.B<block>]` in parser/tests and reject legacy paragraph citations -> Why -> Keeps citations block-level, deterministic, and consistent with the current grading format.
 - Problem -> Citable block text needed explicit span boundaries for reliable post-processing -> Fix -> Write annotated text with `[CITE_START:...] ... [CITE_END:...]` markers per block -> Why -> Makes block extraction and audit checks deterministic.
+- Problem -> Needed TTFT and inter-token latency metrics from Responses API calls -> Fix -> Use `client.responses.stream(...)`, timestamp `response.output_text.delta` events, and finalize with `stream.get_final_response()` for status/usage -> Why -> Captures latency distributions and token usage (including reasoning tokens) from one request path.

@@ -29,6 +29,9 @@ dev = [
   "pytest>=8.0.0",
 ]
 
+[project.scripts]
+pincite-template-eval = "pincite_evals.template_eval_runner:main"
+
 [tool.setuptools]
 package-dir = {"" = "src"}
 
