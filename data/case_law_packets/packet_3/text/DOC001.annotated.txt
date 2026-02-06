@@ -1,0 +1,1160 @@
+[Page 1]
+[CITE_START:DOC001[P001.B01]] 1 
+(Slip Opinion) 
+OCTOBER TERM, 2020 [CITE_END:DOC001[P001.B01]]
+[CITE_START:DOC001[P001.B02]] Syllabus [CITE_END:DOC001[P001.B02]]
+[CITE_START:DOC001[P001.B03]] NOTE: Where it is feasible, a syllabus (headnote) will be released, as is 
+being done in connection with this case, at the time the opinion is issued. 
+The syllabus constitutes no part of the opinion of the Court but has been 
+prepared by the Reporter of Decisions for the convenience of the reader. 
+See  United States  v.  Detroit Timber & Lumber Co.,  200 U. S. 321, 337. 
+SUPREME COURT OF THE UNITED STATES [CITE_END:DOC001[P001.B03]]
+[CITE_START:DOC001[P001.B04]] Syllabus TRANSUNION LLC v . RAMIREZ CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT No. 20–297. Argued March 30, 2021—Decided June 25, 2021 The Fair Credit Reporting Act regulates the consumer reporting agencies that compile and disseminate personal information about consumers. 15 U. S. C. §1681 et seq. The Act also creates a cause of action for con sumers to sue and recover damages for certain violations. §1681n(a). TransUnion is a credit reporting agency that compiles personal and financial information about individual consumers to create consumer reports and then sells those reports for use by entities [CITE_END:DOC001[P001.B04]]
+[CITE_START:DOC001[P001.B05]] that request information about the creditworthiness of individual consumers. Be ginning in 2002, TransUnion introduced an add-on product called OFAC Name Screen Alert. When a business opted into the Name Screen service, TransUnion would conduct its ordinary credit check of the consumer, and it would also use third-party software to compare the consumer’s name against a list maintained by the U. S. Treasury Department’s Office of Foreign Assets Control (OFAC) of terrorists, drug traffickers, and other serious criminals. If the consumer’s first and last name matched the first and last name of an individual on OFAC’s list, then TransUnion would [CITE_END:DOC001[P001.B05]]
+[CITE_START:DOC001[P001.B06]] place an alert on the credit report indicating that the consumer’s name was a “potential match” to a name on the OFAC list. At that time, TransUnion did not compare any data other than first and last names. A class of 8,185 individuals with OFAC alerts in their credit files sued TransUnion under the Fair Credit Reporting Act for failing to use reasonable procedures to ensure the accuracy of their credit files. The plaintiffs also complained about formatting defects in certain mailings sent to them by TransUnion. The parties stipulated prior to trial that only 1,853 class members (including the [CITE_END:DOC001[P001.B06]]
+[CITE_START:DOC001[P001.B07]] named plaintiff Sergio Ramirez) had their misleading credit reports containing OFAC alerts provided to third parties during the 7-month period specified in the [CITE_END:DOC001[P001.B07]]
+
+[Page 2]
+[CITE_START:DOC001[P002.B01]] 2 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P002.B01]]
+[CITE_START:DOC001[P002.B02]] Syllabus [CITE_END:DOC001[P002.B02]]
+[CITE_START:DOC001[P002.B03]] class definition.  The internal credit files of the other 6,332 class mem
+bers were not provided to third parties during the relevant time period. 
+The District Court ruled that all class members had Article III stand
+ing on each of the three statutory claims.  The jury returned a verdict 
+for the plaintiffs and awarded each class member statutory damages 
+and punitive damages.  A divided panel of the Ninth Circuit affirmed 
+in relevant part. Held : Only plaintiffs concretely harmed by a defendant’s statutory viola tion have Article III standing to seek damages against that private de
+fendant in federal court.  Pp. 6–27. [CITE_END:DOC001[P002.B03]]
+[CITE_START:DOC001[P002.B04]] (a) Article III confines the federal judicial power to the resolution of “Cases” and “Controversies” in which a plaintiff has a “personal stake.” Raines v. Byrd , 521 U. S. 811, 819–820. To have Article III standing to sue in federal court, a plaintiff must show, among other things, that the plaintiff suffered concrete injury in fact. Lujan v. Defenders of Wildlife , 504 U. S. 555, 560–561. Central to assessing concreteness is whether the asserted harm has a “close relationship” to a harm “tradi tionally” recognized as providing a basis for a lawsuit in American courts. Spokeo, Inc. v. [CITE_END:DOC001[P002.B04]]
+[CITE_START:DOC001[P002.B05]] Robins , 578 U. S. 330, 340. That inquiry asks whether plaintiffs have identified a close historical or common-law an alogue for their asserted injury. Physical or monetary harms readily qualify as concrete injuries under Article III, and various intangible harms—like reputational harms—can also be concrete. Ibid . [CITE_END:DOC001[P002.B05]]
+[CITE_START:DOC001[P002.B06]] “Article III standing requires a concrete injury even in the context 
+of a statutory violation.”   Ibid .  The Court has rejected the proposition 
+that “a plaintiff automatically satisfies the injury-in-fact requirement 
+whenever a statute grants a person a statutory right and purports to 
+authorize that person to sue to vindicate that right.”   Id. , at 341. An 
+injury in law is not an injury in fact.  Pp. 6–14. (b) The Court applies the fundamental standing requirement of con
+crete harm to this case.  Pp. 15–27. [CITE_END:DOC001[P002.B06]]
+[CITE_START:DOC001[P002.B07]] (1) In their reasonable-procedures claim, all 8,185 class members maintain that TransUnion did not do enough to ensure that mislead ing OFAC alerts labeling them as potential terrorists were not in cluded in their credit files. See §1681e(b). TransUnion provided third parties with credit reports containing OFAC alerts for 1,853 class members (including the named plaintiff Ramirez). Those 1,853 class members therefore suffered a harm with a “close relationship” to the harm associated with the tort of defamation. Spokeo , 578 U. S., at 341. Under longstanding American law, a person is injured when a defam atory statement “that would [CITE_END:DOC001[P002.B07]]
+[CITE_START:DOC001[P002.B08]] subject him to hatred, contempt, or ridi cule” is published to a third party. Milkovich v. Lorain Journal Co. , 497 U. S. 1, 13. The Court has no trouble concluding that the 1,853 class members suffered a concrete harm that qualifies as an injury in [CITE_END:DOC001[P002.B08]]
+
+[Page 3]
+[CITE_START:DOC001[P003.B01]] 3 
+Cite as: 594 U. S. ____ (2021) Syllabus fact. The credit files of the remaining 6,332 class members also contained 
+misleading OFAC alerts, but the parties stipulated that TransUnion 
+did not provide those plaintiffs’ credit information to any potential
+creditors during the designated class period.  The mere existence of 
+inaccurate information, absent dissemination, traditionally has not 
+provided the basis for a lawsuit in American courts.  The plaintiffs can
+not demonstrate that the misleading information in the internal credit
+files itself constitutes a concrete harm. [CITE_END:DOC001[P003.B01]]
+[CITE_START:DOC001[P003.B02]] The plaintiffs advance a separate argument based on their exposure to the risk that the misleading information would be disseminated in the future to third parties. The Court has recognized that material risk of future harm can satisfy the concrete-harm requirement in the context of a claim for injunctive relief to prevent the harm from occur ring, at least so long as the risk of harm is sufficiently imminent and substantial. See Spokeo , 578 U. S., at 341–342 (citing Clapper v. Am nesty Int’l USA , 568 U. S. 398). But TransUnion advances a persua sive argument that the [CITE_END:DOC001[P003.B02]]
+[CITE_START:DOC001[P003.B03]] mere risk of future harm, without more, cannot qualify as a concrete harm in a suit for damages. The 6,332 plaintiffs did not demonstrate that the risk of future harm materialized. Nor did those plaintiffs present evidence that the class members were in dependently harmed by their exposure to the risk itself. The risk of future harm cannot supply the basis for their standing. Pp. 16–24. [CITE_END:DOC001[P003.B03]]
+[CITE_START:DOC001[P003.B04]] (2) In two other claims, all 8,185 class members complained about
+formatting defects in certain mailings sent to them by TransUnion. 
+But the plaintiffs have not demonstrated that the format of TransUn
+ion’s mailings caused them a harm with a close relationship to a harm 
+traditionally recognized as providing a basis for a lawsuit in American 
+courts.  See  Spokeo , 578 U. S., at 341. [CITE_END:DOC001[P003.B04]]
+[CITE_START:DOC001[P003.B05]] The plaintiffs argue that TransUnion’s formatting violations created
+a risk of future harm, because consumers who received the information 
+in the dual-mailing format were at risk of not learning about the OFAC 
+alert in their credit files and thus not asking for corrections.  The risk 
+of future harm on its own is not enough to support Article III standing
+for their damages claim.  In any event, the plaintiffs here made no 
+effort to explain how the formatting error prevented them asking for 
+corrections to prevent future harm. [CITE_END:DOC001[P003.B05]]
+[CITE_START:DOC001[P003.B06]] The United States as  amicus curiae  asserts that the plaintiffs suf
+fered a concrete “informational injury” from TransUnion’s formatting 
+violations. See  Federal Election Comm’n  v.  Akins , 524 U. S. 11;  Public 
+Citizen  v.  Department of Justice , 491 U. S. 440.  But the plaintiffs here 
+did not allege that they failed to receive any required information. 
+They argued only that they received the information in the wrong for [CITE_END:DOC001[P003.B06]]
+
+[Page 4]
+[CITE_START:DOC001[P004.B01]] 4 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P004.B01]]
+[CITE_START:DOC001[P004.B02]] Syllabus [CITE_END:DOC001[P004.B02]]
+[CITE_START:DOC001[P004.B03]] mat. Moreover, an asserted informational injury that causes no ad
+verse effects does not satisfy Article III.  Pp. 24–27. 951 F. 3d 1008, reversed and remanded. [CITE_END:DOC001[P004.B03]]
+[CITE_START:DOC001[P004.B04]] K AVANAUGH , J., delivered the opinion of the Court, in which R OBERTS , 
+C. J., and A LITO , G ORSUCH , and B ARRETT , JJ., joined. T HOMAS , J., filed a 
+dissenting opinion, in which B REYER , S OTOMAYOR , and K AGAN , JJ., 
+joined. K AGAN , J., filed a dissenting opinion, in which B REYER  and S O TOMAYOR , JJ., joined. [CITE_END:DOC001[P004.B04]]
+
+[Page 5]
+[CITE_START:DOC001[P005.B01]] 1 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P005.B01]]
+[CITE_START:DOC001[P005.B02]] NOTICE: This opinion is subject to formal revision before publication in the 
+preliminary print of the United States Reports. Readers are requested to 
+notify the Reporter of Decisions, Supreme Court of the United States, Wash
+ington, D. C. 20543, of any typographical or other formal errors, in order that 
+corrections may be made before the preliminary print goes to press. 
+SUPREME COURT OF THE UNITED STATES [CITE_END:DOC001[P005.B02]]
+[CITE_START:DOC001[P005.B03]] No. 20–297 [CITE_END:DOC001[P005.B03]]
+[CITE_START:DOC001[P005.B04]] TRANSUNION LLC, PETITIONER  v.  SERGIO L. 
+RAMIREZ ON WRIT OF CERTIORARI TO THE UNITED STATES COURT OF 
+APPEALS FOR THE NINTH CIRCUIT [CITE_END:DOC001[P005.B04]]
+[CITE_START:DOC001[P005.B05]] [June 25, 2021] [CITE_END:DOC001[P005.B05]]
+[CITE_START:DOC001[P005.B06]] J USTICE  K AVANAUGH  delivered the opinion of the Court. 
+To have Article III standing to sue in federal court, plain
+tiffs must demonstrate, among other things, that they suf
+fered a concrete harm.  No concrete harm, no standing.
+Central to assessing concreteness is whether the asserted
+harm has a “close relationship” to a harm traditionally rec
+ognized as providing a basis for a lawsuit in American 
+courts—such as physical harm, monetary harm, or various 
+intangible harms including (as relevant here) reputational 
+harm. 
+Spokeo, Inc.  v.  Robins , 578 U. S. 330, 340–341 
+(2016). [CITE_END:DOC001[P005.B06]]
+[CITE_START:DOC001[P005.B07]] In this case, a class of 8,185 individuals sued TransUn
+ion, a credit reporting agency, in federal court under the
+Fair Credit Reporting Act. 
+The plaintiffs claimed that 
+TransUnion failed to use reasonable procedures to ensure 
+the accuracy of their credit files, as maintained internally
+by TransUnion.  For 1,853 of the class members, TransUn
+ion provided misleading credit reports to third-party busi
+nesses.  We conclude that those 1,853 class members have 
+demonstrated concrete reputational harm and thus have 
+Article III standing to sue on the reasonable-procedures [CITE_END:DOC001[P005.B07]]
+
+[Page 6]
+[CITE_START:DOC001[P006.B01]] 2 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P006.B01]]
+[CITE_START:DOC001[P006.B02]] Opinion of the Court [CITE_END:DOC001[P006.B02]]
+[CITE_START:DOC001[P006.B03]] claim. The internal credit files of the other 6,332 class 
+members were  not  provided to third-party businesses dur
+ing the relevant time period.  We conclude that those 6,332 
+class members have not demonstrated concrete harm and 
+thus lack Article III standing to sue on the reasonable-pro
+cedures claim. [CITE_END:DOC001[P006.B03]]
+[CITE_START:DOC001[P006.B04]] In two other claims, all 8,185 class members complained 
+about formatting defects in certain mailings sent to them
+by TransUnion. But the class members other than the 
+named plaintiff Sergio Ramirez have not demonstrated that
+the alleged formatting errors caused them any concrete 
+harm. Therefore, except for Ramirez, the class members do
+not have standing as to those two claims. [CITE_END:DOC001[P006.B04]]
+[CITE_START:DOC001[P006.B05]] Over Judge McKeown’s dissent, the U. S. Court of Ap
+peals for the Ninth Circuit ruled that all 8,185 class mem
+bers have standing as to all three claims. The Court of Ap
+peals approved a class damages award of about $40 million. 
+In light of our conclusion that (i) only 1,853 class members 
+have standing for the reasonable-procedures claim and 
+(ii) only Ramirez himself has standing for the two format
+ting claims relating to the mailings, we reverse the judg
+ment of the Ninth Circuit and remand the case for further 
+proceedings consistent with this opinion. [CITE_END:DOC001[P006.B05]]
+[CITE_START:DOC001[P006.B06]] I 
+In 1970, Congress passed and President Nixon signed the 
+Fair Credit Reporting Act.  84 Stat. 1127, as amended, 15 
+U. S. C. §1681  et seq . The Act seeks to promote “fair and
+accurate credit reporting” and to protect consumer privacy.
+§1681(a). To achieve those goals, the Act regulates the con
+sumer reporting agencies that compile and disseminate 
+personal information about consumers. [CITE_END:DOC001[P006.B06]]
+[CITE_START:DOC001[P006.B07]] The Act “imposes a host of requirements concerning the 
+creation and use of consumer reports.”  Spokeo, Inc.  v.  Rob
+ins , 578 U. S. 330, 335 (2016).  Three of the Act’s require [CITE_END:DOC001[P006.B07]]
+
+[Page 7]
+[CITE_START:DOC001[P007.B01]] 3 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P007.B01]]
+[CITE_START:DOC001[P007.B02]] ments are relevant to this case.  First , the Act requires con
+sumer reporting agencies to “follow reasonable procedures 
+to assure maximum possible accuracy” in consumer reports. 
+§1681e(b).  Second , the Act provides that consumer report
+ing agencies must, upon request, disclose to the consumer 
+“[a]ll information in the consumer’s file at the time of the
+request.” §1681g(a)(1).  Third , the Act compels consumer
+reporting agencies to “provide to a consumer, with each 
+written disclosure by the agency to the consumer,” a “sum
+mary of rights” prepared by the Consumer Financial Pro
+tection Bureau. §1681g(c)(2). [CITE_END:DOC001[P007.B02]]
+[CITE_START:DOC001[P007.B03]] The Act creates a cause of action for consumers to sue and 
+recover damages for certain violations.  The Act provides: 
+“Any person who willfully fails to comply with any require
+ment imposed under this subchapter with respect to any 
+consumer is liable to that consumer” for actual damages or 
+for statutory damages not less than $100 and not more than 
+$1,000, as well as for punitive damages and attorney’s fees.
+§1681n(a). [CITE_END:DOC001[P007.B03]]
+[CITE_START:DOC001[P007.B04]] TransUnion is one of the “Big Three” credit reporting
+agencies, along with Equifax and Experian.  As a credit re
+porting agency, TransUnion compiles personal and finan
+cial information about individual consumers to create con
+sumer reports. 
+TransUnion then sells those consumer 
+reports for use by entities such as banks, landlords, and car 
+dealerships that request information about the creditwor
+thiness of individual consumers. [CITE_END:DOC001[P007.B04]]
+[CITE_START:DOC001[P007.B05]] Beginning in 2002, TransUnion introduced an add-on 
+product called OFAC Name Screen Alert.  OFAC is the U. S. 
+Treasury Department’s Office of Foreign Assets Control. 
+OFAC maintains a list of “specially designated nationals” 
+who threaten America’s national security.  Individuals on 
+the OFAC list are terrorists, drug traffickers, or other seri
+ous criminals.  It is generally unlawful to transact business
+with any person on the list.  31 CFR pt. 501, App. A (2020).
+TransUnion created the OFAC Name Screen Alert to help [CITE_END:DOC001[P007.B05]]
+
+[Page 8]
+[CITE_START:DOC001[P008.B01]] 4 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P008.B01]]
+[CITE_START:DOC001[P008.B02]] Opinion of the Court [CITE_END:DOC001[P008.B02]]
+[CITE_START:DOC001[P008.B03]] businesses avoid transacting with individuals on OFAC’s list. When this litigation arose, Name Screen worked in the following way: When a business opted into the Name Screen service, TransUnion would conduct its ordinary credit check of the consumer, and it would also use third-party software to compare the consumer’s name against the OFAC list. If the consumer’s first and last name matched the first and last name of an individual on OFAC’s list, then TransUnion would place an alert on the credit report indi cating that the consumer’s name was a “potential match” to a name on the OFAC list. [CITE_END:DOC001[P008.B03]]
+[CITE_START:DOC001[P008.B04]] TransUnion did not compare any data other than first and last names. Unsurprisingly, TransUnion’s Name Screen product generated many false positives. Thousands of law-abiding Americans happen to share a first and last name with one of the terrorists, drug traffickers, or serious criminals on OFAC’s list of specially designated nationals. [CITE_END:DOC001[P008.B04]]
+[CITE_START:DOC001[P008.B05]] Sergio Ramirez learned the hard way that he is one such individual. On February 27, 2011, Ramirez visited a Nis san dealership in Dublin, California, seeking to buy a Nis san Maxima. Ramirez was accompanied by his wife and his father-in-law. After Ramirez and his wife selected a color and negotiated a price, the dealership ran a credit check on both Ramirez and his wife. Ramirez’s credit report, pro duced by TransUnion, contained the following alert: “***OFAC ADVISOR ALERT - INPUT NAME MATCHES NAME ON THE OFAC DATABASE.” App. 84. A Nissan salesman told Ramirez that Nissan would not sell [CITE_END:DOC001[P008.B05]]
+[CITE_START:DOC001[P008.B06]] the car to him because his name was on a “‘terrorist list.’” Id., at 333. Ramirez’s wife had to purchase the car in her own name. [CITE_END:DOC001[P008.B06]]
+[CITE_START:DOC001[P008.B07]] The next day, Ramirez called TransUnion and requested 
+a copy of his credit file. TransUnion sent Ramirez a mailing 
+that same day that included his credit file and the statuto
+rily required summary of rights prepared by the CFPB. The [CITE_END:DOC001[P008.B07]]
+
+[Page 9]
+[CITE_START:DOC001[P009.B01]] 5 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P009.B01]]
+[CITE_START:DOC001[P009.B02]] mailing did not mention the OFAC alert in Ramirez’s file.
+The following day, TransUnion sent Ramirez a second 
+mailing—a letter alerting him that his name was consid
+ered a potential match to names on the OFAC list.  The sec
+ond mailing did not include an additional copy of the sum
+mary of rights.  Concerned about the mailings, Ramirez 
+consulted a lawyer and ultimately canceled a planned trip 
+to Mexico. TransUnion eventually removed the OFAC alert 
+from Ramirez’s file. [CITE_END:DOC001[P009.B02]]
+[CITE_START:DOC001[P009.B03]] In February 2012, Ramirez sued TransUnion and alleged three violations of the Fair Credit Reporting Act. First , he alleged that TransUnion, by using the Name Screen prod uct, failed to follow reasonable procedures to ensure the ac curacy of information in his credit file. See §1681e(b). Sec ond , he claimed that TransUnion failed to provide him with all the information in his credit file upon his request. In particular, TransUnion’s first mailing did not include the fact that Ramirez’s name was a potential match for a name on the OFAC list. See §1681g(a)(1). Third , Ramirez as serted [CITE_END:DOC001[P009.B03]]
+[CITE_START:DOC001[P009.B04]] that TransUnion violated its obligation to provide him with a summary of his rights “with each written disclo sure,” because TransUnion’s second mailing did not contain a summary of Ramirez’s rights. §1681g(c)(2). Ramirez re quested statutory and punitive damages. [CITE_END:DOC001[P009.B04]]
+[CITE_START:DOC001[P009.B05]] Ramirez also sought to certify a class of all people in the
+United States to whom TransUnion sent a mailing during 
+the period from January 1, 2011, to July 26, 2011, that was 
+similar in form to the second mailing that Ramirez re
+ceived. TransUnion opposed certification.  The U. S. Dis
+trict Court for the Northern District of California rejected 
+TransUnion’s argument and certified the class.  301 
+F. R. D. 408 (2014). [CITE_END:DOC001[P009.B05]]
+[CITE_START:DOC001[P009.B06]] Before trial, the parties stipulated that the class con
+tained 8,185 members, including Ramirez. The parties also 
+stipulated that only 1,853 members of the class (including 
+Ramirez) had their credit reports disseminated by [CITE_END:DOC001[P009.B06]]
+
+[Page 10]
+[CITE_START:DOC001[P010.B01]] 6 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P010.B01]]
+[CITE_START:DOC001[P010.B02]] Opinion of the Court [CITE_END:DOC001[P010.B02]]
+[CITE_START:DOC001[P010.B03]] TransUnion to potential creditors during the period from
+January 1, 2011, to July 26, 2011. The District Court ruled 
+that all 8,185 class members had Article III standing.  2016 
+WL 6070490, *5 (Oct. 17, 2016). [CITE_END:DOC001[P010.B03]]
+[CITE_START:DOC001[P010.B04]] At trial, Ramirez testified about his experience at the
+Nissan dealership. But Ramirez did not present evidence
+about the experiences of other members of the class. [CITE_END:DOC001[P010.B04]]
+[CITE_START:DOC001[P010.B05]] After six days of trial, the jury returned a verdict for the 
+plaintiffs. The jury awarded each class member $984.22 in
+statutory damages and $6,353.08 in punitive damages for a
+total award of more than $60 million.  The District Court 
+rejected all of TransUnion’s post-trial motions. [CITE_END:DOC001[P010.B05]]
+[CITE_START:DOC001[P010.B06]] The U. S. Court of Appeals for the Ninth Circuit affirmed
+in relevant part. 951 F. 3d 1008 (2020).  The court held that 
+all members of the class had Article III standing to recover
+damages for all three claims.  The court also concluded that 
+Ramirez’s claims were typical of the class’s claims for pur
+poses of Rule 23 of the Federal Rules of Civil Procedure. 
+Finally, the court reduced the punitive damages award to
+$3,936.88 per class member, thus reducing the total award 
+to about $40 million. [CITE_END:DOC001[P010.B06]]
+[CITE_START:DOC001[P010.B07]] Judge McKeown dissented in relevant part.  As to the 
+reasonable-procedures claim, she concluded that only the
+1,853 class members whose reports were actually dissemi
+nated by TransUnion to third parties had Article III stand
+ing to recover damages.  In her view, the remaining 6,332
+class members did not suffer a concrete injury sufficient for
+standing. As to the two claims related to the mailings,
+Judge McKeown would have held that none of the 8,185 
+class members other than the named plaintiff Ramirez had 
+standing as to those claims. We granted certiorari. 592 U. S. ___ (2020). [CITE_END:DOC001[P010.B07]]
+[CITE_START:DOC001[P010.B08]] II 
+The question in this case is whether the 8,185 class mem
+bers have Article III standing as to their three claims. In Part [CITE_END:DOC001[P010.B08]]
+
+[Page 11]
+[CITE_START:DOC001[P011.B01]] 7 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P011.B01]]
+[CITE_START:DOC001[P011.B02]] II, we summarize the requirements of Article III standing—
+in particular, the requirement that plaintiffs demonstrate a 
+“concrete harm.”  In Part III, we then apply the concrete-harm
+requirement to the plaintiffs’ lawsuit against TransUnion. [CITE_END:DOC001[P011.B02]]
+[CITE_START:DOC001[P011.B03]] A 
+The “law of Art. III standing is built on a single basic
+idea—the idea of separation of powers.”   Raines  v.  Byrd , 521 
+U. S. 811, 820 (1997) (internal quotation marks omitted). 
+Separation of powers “was not simply an abstract generali
+zation in the minds of the Framers: it was woven into the 
+document that they drafted in Philadelphia in the summer 
+of 1787.”  INS  v.  Chadha , 462 U. S. 919, 946 (1983) (inter
+nal quotation marks omitted). [CITE_END:DOC001[P011.B03]]
+[CITE_START:DOC001[P011.B04]] Therefore, we start with the text of the Constitution.  Ar
+ticle III confines the federal judicial power to the resolution 
+of “Cases” and “Controversies.” For there to be a case or 
+controversy under Article III, the plaintiff must have a 
+“‘personal stake’” in the case—in other words, standing. 
+Raines , 521 U. S., at 819.  To demonstrate their personal 
+stake, plaintiffs must be able to sufficiently answer the 
+question: “‘What’s it to you?’”  Scalia, The Doctrine of 
+Standing as an Essential Element of the Separation of Pow
+ers, 17 Suffolk U. L. Rev. 881, 882 (1983). [CITE_END:DOC001[P011.B04]]
+[CITE_START:DOC001[P011.B05]] To answer that question in a way sufficient to establish
+standing, a plaintiff must show (i) that he suffered an injury
+in fact that is concrete, particularized, and actual or immi
+nent; (ii) that the injury was likely caused by the defendant;
+and (iii) that the injury would likely be redressed by judicial
+relief.  Lujan  v.  Defenders of Wildlife , 504 U. S. 555, 560– 
+561 (1992).  If “the plaintiff does not claim to have suffered 
+an injury that the defendant caused and the court can rem
+edy, there is no case or controversy for the federal court to
+resolve.”  Casillas  v.  Madison Avenue Assocs., Inc. , 926 
+F. 3d 329, 333 (CA7 2019) (Barrett, J.). [CITE_END:DOC001[P011.B05]]
+
+[Page 12]
+[CITE_START:DOC001[P012.B01]] 8 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P012.B01]]
+[CITE_START:DOC001[P012.B02]] Opinion of the Court [CITE_END:DOC001[P012.B02]]
+[CITE_START:DOC001[P012.B03]] Requiring a plaintiff to demonstrate a concrete and par ticularized injury caused by the defendant and redressable by the court ensures that federal courts decide only “the rights of individuals,” Marbury v. Madison , 1 Cranch 137, 170 (1803), and that federal courts exercise “their proper function in a limited and separated government,” Roberts, Article III Limits on Statutory Standing, 42 Duke L. J. 1219, 1224 (1993). Under Article III, federal courts do not adjudicate hypothetical or abstract disputes. Federal courts do not possess a roving commission to publicly opine on every legal question. Federal courts do not exercise gen [CITE_END:DOC001[P012.B03]]
+[CITE_START:DOC001[P012.B04]] eral legal oversight of the Legislative and Executive Branches, or of private entities. And federal courts do not issue advisory opinions. As Madison explained in Philadel phia, federal courts instead decide only matters “of a Judi ciary Nature.” 2 Records of the Federal Convention of 1787, p. 430 (M. Farrand ed. 1966). [CITE_END:DOC001[P012.B04]]
+[CITE_START:DOC001[P012.B05]] In sum, under Article III, a federal court may resolve only 
+“a real controversy with real impact on real persons.” 
+American Legion  v.  American Humanist Assn. , 588 U. S. 
+___, ___ (2019) (G ORSUCH , J., concurring in judgment) (slip
+op., at 10). [CITE_END:DOC001[P012.B05]]
+[CITE_START:DOC001[P012.B06]] B 
+The question in this case focuses on the Article III re
+quirement that the plaintiff ’s injury in fact be “concrete”—
+that is, “real, and not abstract.”  Spokeo, Inc.  v.  Robins , 578 
+U. S. 330, 340 (2016) (internal quotation marks omitted); 
+see  Susan B. Anthony List  v.  Driehaus , 573 U. S. 149, 158 
+(2014);  Summers  v.  Earth Island Institute , 555 U. S. 488, 
+493 (2009);  Lujan , 504 U. S., at 560;  Schlesinger  v.  Reserv
+ists Comm. to Stop the War , 418 U. S. 208, 220–221 (1974). [CITE_END:DOC001[P012.B06]]
+[CITE_START:DOC001[P012.B07]] What makes a harm concrete for purposes of Article III? 
+As a general matter, the Court has explained that “history
+and tradition offer a meaningful guide to the types of cases
+that Article III empowers federal courts to consider.” [CITE_END:DOC001[P012.B07]]
+
+[Page 13]
+[CITE_START:DOC001[P013.B01]] 9 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P013.B01]]
+[CITE_START:DOC001[P013.B02]] Sprint Communications Co. v. APCC Services, Inc. , 554 U. S. 269, 274 (2008); see also Steel Co. v. Citizens for Better Environment , 523 U. S. 83, 102 (1998). And with respect to the concrete-harm requirement in particular, this Court’s opinion in Spokeo v. Robins indicated that courts should as sess whether the alleged injury to the plaintiff has a “close relationship” to a harm “traditionally” recognized as provid ing a basis for a lawsuit in American courts. 578 U. S., at 341. That inquiry asks whether plaintiffs have identified a close historical or common-law analogue for their asserted [CITE_END:DOC001[P013.B02]]
+[CITE_START:DOC001[P013.B03]] injury. Spokeo does not require an exact duplicate in Amer ican history and tradition. But Spokeo is not an open-ended invitation for federal courts to loosen Article III based on contemporary, evolving beliefs about what kinds of suits should be heard in federal courts. As Spokeo explained, certain harms readily qualify as concrete injuries under Article III. The most obvious are traditional tangible harms, such as physical harms and monetary harms. If a defendant has caused physical or monetary injury to the plaintiff, the plaintiff has suffered a concrete injury in fact under Article III. [CITE_END:DOC001[P013.B03]]
+[CITE_START:DOC001[P013.B04]] Various intangible harms can also be concrete. Chief among them are injuries with a close relationship to harms traditionally recognized as providing a basis for lawsuits in American courts. Id. , at 340–341. Those include, for exam ple, reputational harms, disclosure of private information, and intrusion upon seclusion. See, e.g., Meese v. Keene , 481 U. S. 465, 473 (1987) (reputational harms); Davis v. Federal Election Comm’n , 554 U. S. 724, 733 (2008) (disclosure of private information); see also Gadelhak v. AT&T Services, Inc. , 950 F. 3d 458, 462 (CA7 2020) (Barrett, J.) (intrusion upon seclusion). And those [CITE_END:DOC001[P013.B04]]
+[CITE_START:DOC001[P013.B05]] traditional harms may also in clude harms specified by the Constitution itself. See, e.g., Spokeo , 578 U. S., at 340 (citing Pleasant Grove City v. Summum , 555 U. S. 460 (2009) (abridgment of free speech), and Church of Lukumi Babalu Aye, Inc. v. Hialeah , 508 [CITE_END:DOC001[P013.B05]]
+
+[Page 14]
+[CITE_START:DOC001[P014.B01]] 10 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P014.B01]]
+[CITE_START:DOC001[P014.B02]] Opinion of the Court [CITE_END:DOC001[P014.B02]]
+[CITE_START:DOC001[P014.B03]] U. S. 520 (1993) (infringement of free exercise)). In determining whether a harm is sufficiently concrete to qualify as an injury in fact, the Court in Spokeo said that Congress’s views may be “instructive.” 578 U. S., at 341. Courts must afford due respect to Congress’s decision to im pose a statutory prohibition or obligation on a defendant, and to grant a plaintiff a cause of action to sue over the de fendant’s violation of that statutory prohibition or obliga tion. See id., at 340–341. In that way, Congress may “ele vate to the status of legally cognizable injuries concrete, [CITE_END:DOC001[P014.B03]]
+[CITE_START:DOC001[P014.B04]] de facto injuries that were previously inadequate in law.” Id., at 341 (alterations and internal quotation marks omit ted); see Lujan , 504 U. S., at 562–563, 578; cf., e.g., Allen v. Wright , 468 U. S. 737, 757, n. 22 (1984) (discriminatory treatment). But even though “Congress may ‘elevate’ harms that ‘exist’ in the real world before Congress recog nized them to actionable legal status, it may not simply en act an injury into existence, using its lawmaking power to transform something that is not remotely harmful into something that is.” Hagy v. Demers & Adams , 882 F. [CITE_END:DOC001[P014.B04]]
+[CITE_START:DOC001[P014.B05]] 3d 616, 622 (CA6 2018) (Sutton, J.) (citing Spokeo , 578 U. S., at 341). [CITE_END:DOC001[P014.B05]]
+[CITE_START:DOC001[P014.B06]] Importantly, this Court has rejected the proposition that 
+“a plaintiff automatically satisfies the injury-in-fact re
+quirement whenever a statute grants a person a statutory 
+right and purports to authorize that person to sue to vindi
+cate that right.”   Spokeo , 578 U. S., at 341.  As the Court 
+emphasized in  Spokeo , “Article III standing requires a con
+crete injury even in the context of a statutory violation.” 
+Ibid. [CITE_END:DOC001[P014.B06]]
+[CITE_START:DOC001[P014.B07]] Congress’s creation of a statutory prohibition or obliga
+tion and a cause of action does not relieve courts of their 
+responsibility to independently decide whether a plaintiff 
+has suffered a concrete harm under Article III any more 
+than, for example, Congress’s enactment of a law regulating [CITE_END:DOC001[P014.B07]]
+
+[Page 15]
+[CITE_START:DOC001[P015.B01]] 11 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P015.B01]]
+[CITE_START:DOC001[P015.B02]] speech relieves courts of their responsibility to inde
+pendently decide whether the law violates the First Amend
+ment. Cf.  United States  v.  Eichman , 496 U. S. 310, 317– 
+318 (1990). As Judge Katsas has rightly stated, “we cannot 
+treat an injury as ‘concrete’ for Article III purposes based 
+only on Congress’s say-so.” 
+Trichell  v.  Midland Credit 
+Mgmt., Inc. , 964 F. 3d 990, 999, n. 2 (CA11 2020) (sitting by 
+designation); see  Marbury , 1 Cranch, at 178; see also 
+Raines , 521 U. S., at 820, n. 3;  Simon  v.  Eastern Ky. Welfare 
+Rights Organization , 426 U. S. 26, 41, n. 22 (1976);  Muskrat 
+v.  United States , 219 U. S. 346, 361–362 (1911). [CITE_END:DOC001[P015.B02]]
+[CITE_START:DOC001[P015.B03]] For standing purposes, therefore, an important difference exists between (i) a plaintiff ’s statutory cause of action to sue a defendant over the defendant’s violation of federal law, and (ii) a plaintiff ’s suffering concrete harm because of the defendant’s violation of federal law. Congress may en act legal prohibitions and obligations. And Congress may create causes of action for plaintiffs to sue defendants who violate those legal prohibitions or obligations. But under Article III, an injury in law is not an injury in fact. Only those plaintiffs who have been concretely harmed by a de fendant’s statutory violation may [CITE_END:DOC001[P015.B03]]
+[CITE_START:DOC001[P015.B04]] sue that private defend ant over that violation in federal court. As then-Judge Bar rett succinctly summarized, “Article III grants federal courts the power to redress harms that defendants cause plaintiffs, not a freewheeling power to hold defendants ac countable for legal infractions.” Casillas , 926 F. 3d, at 332. [CITE_END:DOC001[P015.B04]]
+[CITE_START:DOC001[P015.B05]] To appreciate how the Article III “concrete harm” princi
+ple operates in practice, consider two different hypothetical
+plaintiffs. Suppose first that a Maine citizen’s land is pol
+luted by a nearby factory. She sues the company, alleging
+that it violated a federal environmental law and damaged 
+her property. Suppose also that a second plaintiff in Hawaii 
+files a federal lawsuit alleging that the same company in
+Maine violated that same environmental law by polluting 
+land in Maine. The violation did not personally harm the [CITE_END:DOC001[P015.B05]]
+
+[Page 16]
+[CITE_START:DOC001[P016.B01]] 12 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P016.B01]]
+[CITE_START:DOC001[P016.B02]] Opinion of the Court [CITE_END:DOC001[P016.B02]]
+[CITE_START:DOC001[P016.B03]] plaintiff in Hawaii. Even if Congress affords both hypothetical plaintiffs a cause of action (with statutory damages available) to sue over the defendant’s legal violation, Article III standing doctrine sharply distinguishes between those two scenar ios. The first lawsuit may of course proceed in federal court because the plaintiff has suffered concrete harm to her property. But the second lawsuit may not proceed because that plaintiff has not suffered any physical, monetary, or cognizable intangible harm traditionally recognized as providing a basis for a lawsuit in American courts. An un injured plaintiff who sues in those circumstances is, by def [CITE_END:DOC001[P016.B03]]
+[CITE_START:DOC001[P016.B04]] inition, not seeking to remedy any harm to herself but in stead is merely seeking to ensure a defendant’s “compliance with regulatory law” (and, of course, to obtain some money via the statutory damages). Spokeo, 578 U. S., at 345 (T HOMAS , J., concurring) (internal quotation marks omit ted); see Steel Co. , 523 U. S., at 106–107. Those are not grounds for Article III standing. 1 1 The lead dissent notes that the terminology of injury in fact became prevalent only in the latter half of the 20th century. That is unsurprising because until the 20th century, Congress [CITE_END:DOC001[P016.B04]]
+[CITE_START:DOC001[P016.B05]] did not often afford federal “cit izen suit”-style causes of action to private plaintiffs who did not suffer concrete harms. For example, until the 20th century, Congress generally did not create “citizen suit” causes of action for private plaintiffs to sue the Government. See Magill, Standing for the Public, 95 Va. L. Rev. 1131, 1186–1187 (2009). Moreover, until Abbott Laboratories v. Gard ner , 387 U. S. 136 (1967), a plaintiff often could not bring a pre-enforce ment suit against a Government agency or official under the Adminis trative Procedure Act arguing that an agency rule was unlawful; instead, a [CITE_END:DOC001[P016.B05]]
+[CITE_START:DOC001[P016.B06]] party could raise such an argument only in an enforcement action. Likewise, until the 20th century, Congress rarely created “citizen suit” style causes of action for suits against private parties by private plain tiffs who had not suffered a concrete harm. All told, until the 20th cen tury, this Court had little reason to emphasize the injury-in-fact require ment because, until the 20th century, there were relatively few instances where litigants without concrete injuries had a cause of action to sue in federal court. The situation has changed markedly, especially over the last 50 years or so. During that time, [CITE_END:DOC001[P016.B06]]
+[CITE_START:DOC001[P016.B07]] Congress has created many novel [CITE_END:DOC001[P016.B07]]
+
+[Page 17]
+[CITE_START:DOC001[P017.B01]] 13 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P017.B01]]
+[CITE_START:DOC001[P017.B02]] As those examples illustrate, if the law of Article III did not require plaintiffs to demonstrate a “concrete harm,” Congress could authorize virtually any citizen to bring a statutory damages suit against virtually any defendant who violated virtually any federal law. Such an expansive understanding of Article III would flout constitutional text, history, and precedent. In our view, the public interest that private entities comply with the law cannot “be converted into an individual right by a statute that denominates it as such, and that permits all citizens (or, for that matter, a subclass of citizens who suffer no distinctive [CITE_END:DOC001[P017.B02]]
+[CITE_START:DOC001[P017.B03]] concrete harm) to sue.” Lujan , 504 U. S., at 576–577. 2 A regime where Congress could freely authorize un harmed plaintiffs to sue defendants who violate federal law not only would violate Article III but also would infringe on the Executive Branch’s Article II authority. We accept the “displacement of the democratically elected branches when necessary to decide an actual case.” Roberts, 42 Duke L. J. , at 1230. But otherwise, the choice of how to prioritize and how aggressively to pursue legal actions against defendants who violate the law falls within the discretion of the Exec utive Branch, [CITE_END:DOC001[P017.B03]]
+[CITE_START:DOC001[P017.B04]] not within the purview of private plaintiffs —————— and expansive causes of action that in turn have required greater judicial focus on the requirements of Article III. See, e.g., Spokeo, Inc. v. Robins , 578 U. S. 330 (2016); Summers v. Earth Island Institute , 555 U. S. 488 (2009); Lujan v. Defenders of Wildlife , 504 U. S. 555 (1992). [CITE_END:DOC001[P017.B04]]
+[CITE_START:DOC001[P017.B05]] 2 A plaintiff must show that the injury is not only concrete but also particularized. But if there were no concrete-harm requirement, the re quirement of a particularized injury would do little or nothing to con strain Congress from freely creating causes of action for vast classes of unharmed plaintiffs to sue any defendants who violate any federal law. (Congress might, for example, provide that everyone has an individual right to clean air and can sue any defendant who violates any air-pollu tion law.) That is one reason why the Court has been careful to empha size that concreteness and [CITE_END:DOC001[P017.B05]]
+[CITE_START:DOC001[P017.B06]] particularization are separate requirements. See Spokeo , 578 U. S., at 339–340; see generally Bayefsky, Constitu tional Injury and Tangibility, 59 Wm. & Mary L. Rev. 2285, 2298–2300, 2368 (2018). [CITE_END:DOC001[P017.B06]]
+
+[Page 18]
+[CITE_START:DOC001[P018.B01]] 14 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P018.B01]]
+[CITE_START:DOC001[P018.B02]] Opinion of the Court [CITE_END:DOC001[P018.B02]]
+[CITE_START:DOC001[P018.B03]] (and their attorneys).  Private plaintiffs are not accountable
+to the people and are not charged with pursuing the public 
+interest in enforcing a defendant’s general compliance with
+regulatory law.  See  Lujan , 504 U. S., at 577. [CITE_END:DOC001[P018.B03]]
+[CITE_START:DOC001[P018.B04]] In sum, the concrete-harm requirement is essential to the Constitution’s separation of powers. To be sure, the con crete-harm requirement can be difficult to apply in some cases. Some advocate that the concrete-harm requirement be ditched altogether, on the theory that it would be more efficient or convenient to simply say that a statutory viola tion and a cause of action suffice to afford a plaintiff stand ing. But as the Court has often stated, “the fact that a given law or procedure is efficient, convenient, and useful in facil itating functions of government, standing alone, will not save it [CITE_END:DOC001[P018.B04]]
+[CITE_START:DOC001[P018.B05]] if it is contrary to the Constitution.” Chadha , 462 U. S., at 944. So it is here. 3 3 The lead dissent would reject the core standing principle that a plain tiff must always have suffered a concrete harm, and would cast aside decades of precedent articulating that requirement, such as Spokeo , Summers , and Lujan . Post, at 9–11 (opinion of T HOMAS , J.). As we see it, the dissent’s theory would largely outsource Article III to Congress. As we understand the dissent’s theory, a suit seeking to enforce “general compliance with regulatory law” would not [CITE_END:DOC001[P018.B05]]
+[CITE_START:DOC001[P018.B06]] suffice for Article III standing because such a suit seeks to vindicate a duty owed to the whole commu nity. Spokeo , 578 U. S., at 345 (T HOMAS , J., concurring) (internal quota tion marks omitted). But under the dissent’s theory, so long as Congress frames a defendant’s obligation to comply with regulatory law as an ob ligation owed to individuals , any suit to vindicate that obligation sud denly suffices for Article III. Suppose, for example, that Congress passes a law purporting to give all American citizens an individual right to clean air and clean water, as well [CITE_END:DOC001[P018.B06]]
+[CITE_START:DOC001[P018.B07]] as a cause of action to sue and recover $100 in damages from any business that violates any pollution law anywhere in the United States. The dissent apparently would find standing in such a case. We respectfully disagree. In our view, unharmed plaintiffs who seek to sue under such a law are still doing no more than enforcing gen eral compliance with regulatory law. And under Article III and this Court’s precedents, Congress may not authorize plaintiffs who have not suffered concrete harms to sue in federal court simply to enforce general compliance with regulatory law. [CITE_END:DOC001[P018.B07]]
+
+[Page 19]
+[CITE_START:DOC001[P019.B01]] 15 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P019.B01]]
+[CITE_START:DOC001[P019.B02]] III We now apply those fundamental standing principles to this lawsuit. We must determine whether the 8,185 class members have standing to sue TransUnion for its alleged violations of the Fair Credit Reporting Act. The plaintiffs argue that TransUnion failed to comply with statutory ob ligations (i) to follow reasonable procedures to ensure the accuracy of credit files so that the files would not include OFAC alerts labeling the plaintiffs as potential terrorists; and (ii) to provide a consumer, upon request, with his or her complete credit file, including a summary of rights. Some preliminaries: As the party invoking federal [CITE_END:DOC001[P019.B02]]
+[CITE_START:DOC001[P019.B03]] juris diction, the plaintiffs bear the burden of demonstrating that they have standing. See Lujan v. Defenders of Wildlife , 504 U. S. 555, 561 (1992). Every class member must have Arti cle III standing in order to recover individual damages. “Article III does not give federal courts the power to order relief to any uninjured plaintiff, class action or not.” Tyson Foods, Inc. v. Bouaphakeo , 577 U. S. 442, 466 (2016) (R OBERTS , C. J., concurring). 4 Plaintiffs must maintain their personal interest in the dispute at all stages of litiga tion. Davis v. Federal Election Comm’n [CITE_END:DOC001[P019.B03]]
+[CITE_START:DOC001[P019.B04]] , 554 U. S. 724, 733 (2008). A plaintiff must demonstrate standing “with the manner and degree of evidence required at the successive stages of the litigation.” Lujan , 504 U. S., at 561. There fore, in a case like this that proceeds to trial, the specific facts set forth by the plaintiff to support standing “must be supported adequately by the evidence adduced at trial.” Ibid. (internal quotation marks omitted). And standing is not dispensed in gross; rather, plaintiffs must demonstrate standing for each claim that they press and for each form of [CITE_END:DOC001[P019.B04]]
+[CITE_START:DOC001[P019.B05]] 4 We do not here address the distinct question whether every class 
+member must demonstrate standing  before  a court certifies a class.  See, 
+e.g., Cordoba  v.  DIRECTV, LLC , 942 F. 3d 1259, 1277 (CA11 2019). [CITE_END:DOC001[P019.B05]]
+
+[Page 20]
+[CITE_START:DOC001[P020.B01]] 16 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P020.B01]]
+[CITE_START:DOC001[P020.B02]] Opinion of the Court [CITE_END:DOC001[P020.B02]]
+[CITE_START:DOC001[P020.B03]] relief that they seek (for example, injunctive relief and dam
+ages).  Davis , 554 U. S., at 734;  Friends of the Earth, Inc.  v. 
+Laidlaw Environmental Services (TOC), Inc. , 528 U. S. 167, 
+185 (2000). [CITE_END:DOC001[P020.B03]]
+[CITE_START:DOC001[P020.B04]] A We first address the plaintiffs’ claim that TransUnion failed to “follow reasonable procedures to assure maximum possible accuracy” of the plaintiffs’ credit files maintained by TransUnion. 15 U. S. C. §1681e(b). In particular, the plaintiffs argue that TransUnion did not do enough to en sure that OFAC alerts labeling them as potential terrorists were not included in their credit files. Assuming that the plaintiffs are correct that TransUnion violated its obligations under the Fair Credit Reporting Act to use reasonable procedures in internally maintaining the credit files, we must determine whether the 8,185 class members suffered concrete harm from [CITE_END:DOC001[P020.B04]]
+[CITE_START:DOC001[P020.B05]] TransUnion’s failure to employ reasonable procedures. 5 1 Start with the 1,853 class members (including the named plaintiff Ramirez) whose reports were disseminated to third-party businesses. The plaintiffs argue that the publi cation to a third party of a credit report bearing a mislead ing OFAC alert injures the subject of the report. The plain tiffs contend that this injury bears a “close relationship” to a harm traditionally recognized as providing a basis for a lawsuit in American courts—namely, the reputational harm associated with the tort of defamation. Spokeo, Inc. v. Robins , 578 U. S. 330, 341 (2016). [CITE_END:DOC001[P020.B05]]
+[CITE_START:DOC001[P020.B06]] 5 For purposes of this case, the parties have assumed that TransUnion
+violated the statute even with respect to those plaintiffs whose OFAC 
+alerts were never disseminated to third-party businesses.  But see  Wash
+ington  v.  CSC Credit Servs. Inc. , 199 F. 3d 263, 267 (CA5 2000).  We take 
+no position on that issue. [CITE_END:DOC001[P020.B06]]
+
+[Page 21]
+[CITE_START:DOC001[P021.B01]] 17 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P021.B01]]
+[CITE_START:DOC001[P021.B02]] We agree with the plaintiffs. Under longstanding Amer ican law, a person is injured when a defamatory statement “that would subject him to hatred, contempt, or ridicule” is published to a third party. Milkovich v. Lorain Journal Co. , 497 U. S. 1, 13 (1990) (internal quotation marks omitted); Gertz v. Robert Welch, Inc. , 418 U. S. 323, 349 (1974); see also Restatement of Torts §559 (1938). TransUnion pro vided third parties with credit reports containing OFAC alerts that labeled the class members as potential terror ists, drug traffickers, or serious criminals. The 1,853 class members therefore suffered a [CITE_END:DOC001[P021.B02]]
+[CITE_START:DOC001[P021.B03]] harm with a “close relation ship” to the harm associated with the tort of defamation. We have no trouble concluding that the 1,853 class mem bers suffered a concrete harm that qualifies as an injury in fact. [CITE_END:DOC001[P021.B03]]
+[CITE_START:DOC001[P021.B04]] TransUnion counters that those 1,853 class members did 
+not suffer a harm with a “close relationship” to defamation 
+because the OFAC alerts on the disseminated credit reports
+were only misleading and not literally false.  See  id. , §558.
+TransUnion points out that the reports merely identified a 
+consumer as a “ potential  match” to an individual on the 
+OFAC list—a fact that TransUnion says is not technically
+false. [CITE_END:DOC001[P021.B04]]
+[CITE_START:DOC001[P021.B05]] In looking to whether a plaintiff ’s asserted harm has a
+“close relationship” to a harm traditionally recognized as
+providing a basis for a lawsuit in American courts, we do 
+not require an exact duplicate. The harm from being la
+beled a “potential terrorist” bears a close relationship to the 
+harm from being labeled a “terrorist.”  In other words, the 
+harm from a misleading statement of this kind bears a suf
+ficiently close relationship to the harm from a false and de
+famatory statement. In short, the 1,853 class members whose reports were dis
+seminated to third parties suffered a concrete injury in fact
+under Article III. [CITE_END:DOC001[P021.B05]]
+
+[Page 22]
+[CITE_START:DOC001[P022.B01]] 18 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P022.B01]]
+[CITE_START:DOC001[P022.B02]] Opinion of the Court [CITE_END:DOC001[P022.B02]]
+[CITE_START:DOC001[P022.B03]] 2 
+The remaining 6,332 class members are a different story.
+To be sure, their credit files, which were maintained by
+TransUnion, contained misleading OFAC alerts. But the 
+parties stipulated that TransUnion did not provide those
+plaintiffs’ credit information to any potential creditors dur
+ing the class period from January 2011 to July 2011.  Given 
+the absence of dissemination, we must determine whether 
+the 6,332 class members suffered some other concrete harm 
+for purposes of Article III. [CITE_END:DOC001[P022.B03]]
+[CITE_START:DOC001[P022.B04]] The initial question is whether the mere existence of a 
+misleading OFAC alert in a consumer’s internal credit file
+at TransUnion constitutes a concrete injury.  As Judge
+Tatel phrased it in a similar context, “if inaccurate infor
+mation falls into” a consumer’s credit file, “does it make a 
+sound?”  Owner-Operator Independent Drivers Assn., Inc.  v. 
+United States Dept. of Transp. , 879 F. 3d 339, 344 (CADC 
+2018). [CITE_END:DOC001[P022.B04]]
+[CITE_START:DOC001[P022.B05]] Writing the opinion for the D. C. Circuit in Owner-Oper ator , Judge Tatel answered no. Publication is “essential to liability” in a suit for defamation. Restatement of Torts §577, Comment a , at 192. And there is “no historical or common-law analog where the mere existence of inaccurate information, absent dissemination, amounts to concrete in jury.” Owner-Operator , 879 F. 3d, at 344–345. “Since the basis of the action for words was the loss of credit or fame, and not the insult, it was always necessary to show a pub lication of the words.” J. Baker, An Introduction to [CITE_END:DOC001[P022.B05]]
+[CITE_START:DOC001[P022.B06]] English Legal History 474 (5th ed. 2019). Other Courts of Appeals have similarly recognized that, as Judge Colloton summa rized, the “retention of information lawfully obtained, with out further disclosure, traditionally has not provided the basis for a lawsuit in American courts,” meaning that the mere existence of inaccurate information in a database is insufficient to confer Article III standing. Braitberg v. Charter Communications, Inc. , 836 F. 3d 925, 930 (CA8 [CITE_END:DOC001[P022.B06]]
+
+[Page 23]
+[CITE_START:DOC001[P023.B01]] 19 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P023.B01]]
+[CITE_START:DOC001[P023.B02]] 2016); see Gubala v. Time Warner Cable, Inc. , 846 F. 3d 909, 912 (CA7 2017). The standing inquiry in this case thus distinguishes be tween (i) credit files that consumer reporting agencies maintain internally and (ii) the consumer credit reports that consumer reporting agencies disseminate to third- party creditors. The mere presence of an inaccuracy in an internal credit file, if it is not disclosed to a third party, causes no concrete harm. In cases such as these where al legedly inaccurate or misleading information sits in a com pany database, the plaintiffs’ harm is roughly the same, le [CITE_END:DOC001[P023.B02]]
+[CITE_START:DOC001[P023.B03]] gally speaking, as if someone wrote a defamatory letter and then stored it in her desk drawer. A letter that is not sent does not harm anyone, no matter how insulting the letter is. So too here. 6 Because the plaintiffs cannot demonstrate that the mis leading information in the internal credit files itself consti 6 For the first time in this Court, the plaintiffs also argue that TransUnion “published” the class members’ information internally—for example, to employees within TransUnion and to the vendors that printed and sent the mailings that the class members received. That new argument is forfeited. [CITE_END:DOC001[P023.B03]]
+[CITE_START:DOC001[P023.B04]] In any event, it is unavailing. Many Ameri can courts did not traditionally recognize intra-company disclosures as actionable publications for purposes of the tort of defamation. See, e.g., Chalkley v. Atlantic Coast Line R. Co. , 150 Va. 301, 326–328, 143 S. E. 631, 638–639 (1928). Nor have they necessarily recognized disclosures to printing vendors as actionable publications. See, e.g., Mack v. Delta Air Lines , Inc. , 639 Fed. Appx. 582, 586 (CA11 2016). Moreover, even the plaintiffs’ cited cases require evidence that the defendant actually “brought an idea to the perception of another,” Restatement of Torts §559, Comment [CITE_END:DOC001[P023.B04]]
+[CITE_START:DOC001[P023.B05]] a , p. 140 (1938), and thus generally require evidence that the document was actually read and not merely processed, cf. Ostrowe v. Lee , 256 N. Y. 36, 38–39, 175 N. E. 505, 505–506 (1931) (Cardozo, C. J.). That evidence is lacking here. In short, the plaintiffs’ internal publica tion theory circumvents a fundamental requirement of an ordinary def amation claim—publication—and does not bear a sufficiently “close rela tionship” to the traditional defamation tort to qualify for Article III standing. [CITE_END:DOC001[P023.B05]]
+
+[Page 24]
+[CITE_START:DOC001[P024.B01]] 20 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P024.B01]]
+[CITE_START:DOC001[P024.B02]] Opinion of the Court [CITE_END:DOC001[P024.B02]]
+[CITE_START:DOC001[P024.B03]] tutes a concrete harm, the plaintiffs advance a separate ar gument based on an asserted risk of future harm . They say that the 6,332 class members suffered a concrete injury for Article III purposes because the existence of misleading OFAC alerts in their internal credit files exposed them to a material risk that the information would be disseminated in the future to third parties and thereby cause them harm. The plaintiffs rely on language from Spokeo where the Court said that “the risk of real harm” (or as the Court oth erwise stated, a “material risk of harm”) can [CITE_END:DOC001[P024.B03]]
+[CITE_START:DOC001[P024.B04]] sometimes “satisfy the requirement of concreteness.” 578 U. S., at 341–342 (citing Clapper v. Amnesty Int’l USA , 568 U. S. 398 (2013)). [CITE_END:DOC001[P024.B04]]
+[CITE_START:DOC001[P024.B05]] To support its statement that a material risk of future 
+harm can satisfy the concrete-harm requirement,  Spokeo
+cited this Court’s decision in  Clapper . But importantly, 
+Clapper  involved a suit for  injunctive relief . As this Court 
+has recognized, a person exposed to a risk of future harm 
+may pursue forward-looking, injunctive relief to prevent
+the harm from occurring, at least so long as the risk of harm
+is sufficiently imminent and substantial. See  Clapper , 568 
+U. S., at 414, n. 5;  Los Angeles  v.  Lyons , 461 U. S. 95, 102 
+(1983); see also  Gubala , 846 F. 3d, at 912. [CITE_END:DOC001[P024.B05]]
+[CITE_START:DOC001[P024.B06]] But a plaintiff must “demonstrate standing separately for
+each form of relief sought.”   Friends of the Earth , 528 U. S., 
+at 185. Therefore, a plaintiff ’s standing to seek injunctive 
+relief does not necessarily mean that the plaintiff has 
+standing to seek retrospective damages. [CITE_END:DOC001[P024.B06]]
+[CITE_START:DOC001[P024.B07]] TransUnion advances a persuasive argument that in a 
+suit for damages, the mere risk of future harm, standing
+alone, cannot qualify as a concrete harm—at least unless 
+the exposure to the risk of future harm itself causes a  sepa
+rate  concrete harm. Brief for Petitioner 39, n. 4; Tr. of Oral [CITE_END:DOC001[P024.B07]]
+
+[Page 25]
+[CITE_START:DOC001[P025.B01]] 21 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P025.B01]]
+[CITE_START:DOC001[P025.B02]] Arg. 36. 7  TransUnion contends that if an individual is ex
+posed to a risk of future harm, time will eventually reveal 
+whether the risk materializes in the form of actual harm. 
+If the risk of future harm materializes and the individual 
+suffers a concrete harm, then the harm itself, and not the 
+pre-existing risk, will constitute a basis for the person’s in
+jury and for damages.  If the risk of future harm does  not 
+materialize, then the individual cannot establish a concrete 
+harm sufficient for standing, according to TransUnion. [CITE_END:DOC001[P025.B02]]
+[CITE_START:DOC001[P025.B03]] Consider an example.  Suppose that a woman drives 
+home from work a quarter mile ahead of a reckless driver 
+who is dangerously swerving across lanes. The reckless 
+driver has exposed the woman to a risk of future harm, but
+the risk does not materialize and the woman makes it home 
+safely. As counsel for TransUnion stated, that would ordi
+narily be cause for celebration, not a lawsuit.  Id.,  at 8.  But 
+if the reckless driver crashes into the woman’s car, the sit
+uation would be different, and (assuming a cause of action)
+the woman could sue the driver for damages. [CITE_END:DOC001[P025.B03]]
+[CITE_START:DOC001[P025.B04]] The plaintiffs note that Spokeo cited libel and slander per se as examples of cases where, as the plaintiffs see it, a mere risk of harm suffices for a damages claim. But as Judge Tatel explained for the D. C. Circuit, libel and slan der per se “require evidence of publication .” Owner-Opera tor , 879 F. 3d, at 345. And for those torts, publication is 7 For example, a plaintiff ’s knowledge that he or she is exposed to a risk of future physical, monetary, or reputational harm could cause its own current emotional or psychological harm. We take [CITE_END:DOC001[P025.B04]]
+[CITE_START:DOC001[P025.B05]] no position on whether or how such an emotional or psychological harm could suffice for Article III purposes—for example, by analogy to the tort of intentional infliction of emotional distress. See Reply Brief 14; Tr. of Oral Arg. 30. The plaintiffs here have not relied on such a theory of Article III harm. They have not claimed an emotional distress injury from the risk that a misleading credit report might be sent to a third-party business. Nor could they do so, given that the 6,332 plaintiffs have not established that they were even aware of the misleading information in the [CITE_END:DOC001[P025.B05]]
+[CITE_START:DOC001[P025.B06]] internal credit files maintained at TransUnion. [CITE_END:DOC001[P025.B06]]
+
+[Page 26]
+[CITE_START:DOC001[P026.B01]] 22 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P026.B01]]
+[CITE_START:DOC001[P026.B02]] Opinion of the Court [CITE_END:DOC001[P026.B02]]
+[CITE_START:DOC001[P026.B03]] generally presumed to cause a harm, albeit not a readily
+quantifiable harm. As  Spokeo  noted, “the law has long per
+mitted recovery by certain tort victims  even if their harms 
+may be difficult to prove or measure .”  578 U. S., at 341 (em
+phasis added). But there is a significant difference between
+(i) an actual harm that has occurred but is not readily quan
+tifiable, as in cases of libel and slander  per se , and (ii) a 
+mere risk of future harm.  By citing libel and slander  per se , 
+Spokeo  did not hold that the mere risk of future harm, with
+out more, suffices to demonstrate Article III standing in a 
+suit for damages. [CITE_END:DOC001[P026.B03]]
+[CITE_START:DOC001[P026.B04]] Here, the 6,332 plaintiffs did not demonstrate that the
+risk of future harm materialized—that is, that the inaccu
+rate OFAC alerts in their internal TransUnion credit files 
+were ever provided to third parties or caused a denial of 
+credit. Nor did those plaintiffs present evidence that the
+class members were independently harmed by their expo
+sure to the risk itself—that is, that they suffered some other 
+injury (such as an emotional injury) from the mere risk that 
+their credit reports would be provided to third-party busi
+nesses. Therefore, the 6,332 plaintiffs’ argument for stand
+ing for their damages claims based on an asserted risk of
+future harm is unavailing. [CITE_END:DOC001[P026.B04]]
+[CITE_START:DOC001[P026.B05]] Even apart from that fundamental problem with their ar
+gument based on the risk of future harm, the plaintiffs did 
+not factually establish a sufficient risk of future harm to 
+support Article III standing.  As Judge McKeown explained 
+in her dissent, the risk of future harm that the 6,332 plain
+tiffs identified—the risk of dissemination to third parties—
+was too speculative to support Article III standing.  951 
+F. 3d 1008, 1040 (2020); see  Whitmore  v.  Arkansas , 495 
+U. S. 149, 157 (1990). The plaintiffs claimed that TransUn
+ion could have divulged their misleading credit information
+to a third party at any moment.  But the plaintiffs did not
+demonstrate a sufficient likelihood that their individual [CITE_END:DOC001[P026.B05]]
+
+[Page 27]
+[CITE_START:DOC001[P027.B01]] 23 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P027.B01]]
+[CITE_START:DOC001[P027.B02]] credit information would be requested by third-party busi
+nesses and provided by TransUnion during the relevant
+time period. Nor did the plaintiffs demonstrate that there
+was a sufficient likelihood that TransUnion would other
+wise intentionally or accidentally release their information
+to third parties.  “Because no evidence in the record estab
+lishes a serious likelihood of disclosure, we cannot simply
+presume a material risk of concrete harm.” 951 F. 3d, at 
+1040 (opinion of McKeown, J.). [CITE_END:DOC001[P027.B02]]
+[CITE_START:DOC001[P027.B03]] Moreover, the plaintiffs did not present any evidence that
+the 6,332 class members even  knew  that there were OFAC 
+alerts in their internal TransUnion credit files. If those 
+plaintiffs prevailed in this case, many of them would first 
+learn that they were “injured” when they received a check 
+compensating them for their supposed “injury.”  It is diffi
+cult to see how a risk of future harm could supply the basis 
+for a plaintiff ’s standing when the plaintiff did not even
+know that there was a risk of future harm. [CITE_END:DOC001[P027.B03]]
+[CITE_START:DOC001[P027.B04]] Finally, the plaintiffs advance one last argument for why the 6,332 class members are similarly situated to the other 1,853 class members and thus should have standing. The 6,332 plaintiffs note that they sought damages for the en tire 46-month period permitted by the statute of limita tions, whereas the stipulation regarding dissemination cov ered only 7 of those months. They argue that the credit reports of many of those 6,332 class members were likely also sent to third parties outside of the period covered by the stipulation because all of the class members requested copies of their reports, and [CITE_END:DOC001[P027.B04]]
+[CITE_START:DOC001[P027.B05]] consumers usually do not re quest copies unless they are contemplating a transaction that would trigger a credit check. [CITE_END:DOC001[P027.B05]]
+[CITE_START:DOC001[P027.B06]] That is a serious argument, but in the end, we conclude
+that it fails to support standing for the 6,332 class mem
+bers. The plaintiffs had the burden to prove at trial that
+their reports were actually sent to third-party businesses. 
+The inferences on which the argument rests are too weak [CITE_END:DOC001[P027.B06]]
+
+[Page 28]
+[CITE_START:DOC001[P028.B01]] 24 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P028.B01]]
+[CITE_START:DOC001[P028.B02]] Opinion of the Court [CITE_END:DOC001[P028.B02]]
+[CITE_START:DOC001[P028.B03]] to demonstrate that the reports of any particular number of the 6,332 class members were sent to third-party busi nesses. The plaintiffs’ attorneys could have attempted to show that some or all of the 6,332 class members were in jured in that way. They presumably could have sought the names and addresses of those individuals, and they could have contacted them. In the face of the stipulation, which pointedly failed to demonstrate dissemination for those class members, the inferences on which the plaintiffs rely are insufficient to support standing. Cf. Interstate Circuit, Inc. v. United States , 306 U. S. [CITE_END:DOC001[P028.B03]]
+[CITE_START:DOC001[P028.B04]] 208, 226 (1939) (“The pro duction of weak evidence when strong is available can lead only to the conclusion that the strong would have been ad verse”). [CITE_END:DOC001[P028.B04]]
+[CITE_START:DOC001[P028.B05]] In sum, the 6,332 class members whose internal 
+TransUnion credit files were not disseminated to third-
+party businesses did not suffer a concrete harm.  By con
+trast, the 1,853 class members (including Ramirez) whose 
+credit reports were disseminated to third-party businesses 
+during the class period suffered a concrete harm. [CITE_END:DOC001[P028.B05]]
+[CITE_START:DOC001[P028.B06]] B 
+We next address the plaintiffs’ standing to recover dam
+ages for two other claims in the complaint: the disclosure 
+claim and the summary-of-rights claim.  Those two claims 
+are intertwined. 
+In the disclosure claim, the plaintiffs alleged that
+TransUnion breached its obligation to provide them with 
+their complete credit files upon request.  According to the 
+plaintiffs, TransUnion sent the plaintiffs copies of their
+credit files that omitted the OFAC information, and then in 
+a second mailing sent the OFAC information. 
+See 
+§1681g(a)(1). In the summary-of-rights claim, the plaintiffs 
+further asserted that TransUnion should have included an
+other summary of rights in that second mailing—the mail
+ing that included the OFAC information.  See §1681g(c)(2). [CITE_END:DOC001[P028.B06]]
+
+[Page 29]
+[CITE_START:DOC001[P029.B01]] 25 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P029.B01]]
+[CITE_START:DOC001[P029.B02]] As the plaintiffs note, the disclosure and summary-of-rights
+requirements are designed to protect consumers’ interests
+in learning of any inaccuracies in their credit files so that 
+they can promptly correct the files before they are dissemi
+nated to third parties. [CITE_END:DOC001[P029.B02]]
+[CITE_START:DOC001[P029.B03]] In support of standing, the plaintiffs thus contend that the TransUnion mailings were formatted incorrectly and deprived them of their right to receive information in the format required by statute. But the plaintiffs have not demonstrated that the format of TransUnion’s mailings caused them a harm with a close relationship to a harm tra ditionally recognized as providing a basis for a lawsuit in American courts. See Spokeo , 578 U. S., at 341. In fact, they do not demonstrate that they suffered any harm at all from the formatting violations. The plaintiffs presented no evidence that, other than Ramirez, [CITE_END:DOC001[P029.B03]]
+[CITE_START:DOC001[P029.B04]] “a single other class member so much as opened the dual mailings,” “nor that they were confused, distressed, or relied on the information in any way.” 951 F. 3d, at 1039, 1041 (opinion of McKeown, J.) (emphasis added). The plaintiffs put forth no evidence, moreover, that the plaintiffs would have tried to correct their credit files—and thereby prevented dissemination of a misleading report—had they been sent the information in the proper format. Ibid. Without any evidence of harm caused by the format of the mailings, these are “bare proce dural violation[s], divorced from any concrete harm.” Spokeo , 578 U. [CITE_END:DOC001[P029.B04]]
+[CITE_START:DOC001[P029.B05]] S., at 341. That does not suffice for Article III standing. 8 The plaintiffs separately argue that TransUnion’s for [CITE_END:DOC001[P029.B05]]
+[CITE_START:DOC001[P029.B06]] 8 The District Court and the Court of Appeals concluded that Ramirez
+(in addition to the other 8,184 class members) had standing as to those 
+two claims.  In this Court, TransUnion has not meaningfully contested 
+Ramirez’s individual standing as to those two claims.  We have no reason 
+or basis to disturb the lower courts’ conclusion on Ramirez’s individual 
+standing as to those two claims. [CITE_END:DOC001[P029.B06]]
+
+[Page 30]
+[CITE_START:DOC001[P030.B01]] 26 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P030.B01]]
+[CITE_START:DOC001[P030.B02]] Opinion of the Court [CITE_END:DOC001[P030.B02]]
+[CITE_START:DOC001[P030.B03]] matting violations created a risk of future harm. Specifi cally, the plaintiffs contend that consumers who received the information in this dual-mailing format were at risk of not learning about the OFAC alert in their credit files. They say that they were thus at risk of not being able to correct their credit files before TransUnion disseminated credit reports containing the misleading information to third-party businesses. As noted above, the risk of future harm on its own does not support Article III standing for the plaintiffs’ damages claim. In any event, the plaintiffs made no effort here to explain how [CITE_END:DOC001[P030.B03]]
+[CITE_START:DOC001[P030.B04]] the formatting error pre vented them from contacting TransUnion to correct any er rors before misleading credit reports were disseminated to third-party businesses. To reiterate, there is no evidence that “a single other class member so much as opened the dual mailings,” “nor that they were confused, distressed, or relied on the information in any way.” 951 F. 3d, at 1039, 1041 (opinion of McKeown, J.). [CITE_END:DOC001[P030.B04]]
+[CITE_START:DOC001[P030.B05]] For its part, the United States as amicus curiae , but not the plaintiffs, separately asserts that the plaintiffs suffered a concrete “informational injury” under several of this Court’s precedents. See Federal Election Comm’n v. Akins , 524 U. S. 11 (1998); Public Citizen v. Department of Justice , 491 U. S. 440 (1989). We disagree. The plaintiffs did not allege that they failed to receive any required information. They argued only that they received it in the wrong format . Therefore, Akins and Public Citizen do not control here. In addition, those cases involved denial of information subject to [CITE_END:DOC001[P030.B05]]
+[CITE_START:DOC001[P030.B06]] public-disclosure or sunshine laws that entitle all mem bers of the public to certain information. This case does not involve such a public-disclosure law. See Casillas v. Madi son Avenue Assocs., Inc. , 926 F. 3d 329, 338 (CA7 2019); Trichell v. Midland Credit Mgmt., Inc. , 964 F. 3d 990, 1004 (CA11 2020). Moreover, the plaintiffs have identified no “downstream consequences” from failing to receive the re quired information. Trichell , 964 F. 3d, at 1004. They did [CITE_END:DOC001[P030.B06]]
+
+[Page 31]
+[CITE_START:DOC001[P031.B01]] 27 
+Cite as: 594 U. S. ____ (2021) Opinion of the Court [CITE_END:DOC001[P031.B01]]
+[CITE_START:DOC001[P031.B02]] not demonstrate, for example, that the alleged information 
+deficit hindered their ability to correct erroneous infor
+mation before it was later sent to third parties.  An “as
+serted informational injury that causes no adverse effects 
+cannot satisfy Article III.”  Ibid. [CITE_END:DOC001[P031.B02]]
+[CITE_START:DOC001[P031.B03]] * * * No concrete harm, no standing. The 1,853 class members whose credit reports were provided to third-party busi nesses suffered a concrete harm and thus have standing as to the reasonable-procedures claim. The 6,332 class mem bers whose credit reports were not provided to third-party businesses did not suffer a concrete harm and thus do not have standing as to the reasonable-procedures claim. As for the claims pertaining to the format of TransUnion’s mailings, none of the 8,185 class members other than the named plaintiff Ramirez suffered a concrete harm. We reverse the judgment of the U. S. [CITE_END:DOC001[P031.B03]]
+[CITE_START:DOC001[P031.B04]] Court of Appeals for the Ninth Circuit and remand the case for further proceed ings consistent with this opinion. In light of our conclusion about Article III standing, we need not decide whether Ramirez’s claims were typical of the claims of the class un der Rule 23. On remand, the Ninth Circuit may consider in the first instance whether class certification is appropriate in light of our conclusion about standing. [CITE_END:DOC001[P031.B04]]
+[CITE_START:DOC001[P031.B05]] It is so ordered. [CITE_END:DOC001[P031.B05]]
+
+[Page 32]
+[CITE_START:DOC001[P032.B01]] 1 
+Cite as: 594 U. S. ____ (2021) T HOMAS , J., dissenting [CITE_END:DOC001[P032.B01]]
+[CITE_START:DOC001[P032.B02]] SUPREME COURT OF THE UNITED STATES [CITE_END:DOC001[P032.B02]]
+[CITE_START:DOC001[P032.B03]] No. 20–297 [CITE_END:DOC001[P032.B03]]
+[CITE_START:DOC001[P032.B04]] TRANSUNION LLC, PETITIONER  v.  SERGIO L. 
+RAMIREZ ON WRIT OF CERTIORARI TO THE UNITED STATES COURT OF 
+APPEALS FOR THE NINTH CIRCUIT [CITE_END:DOC001[P032.B04]]
+[CITE_START:DOC001[P032.B05]] [June 25, 2021] [CITE_END:DOC001[P032.B05]]
+[CITE_START:DOC001[P032.B06]] J USTICE  T HOMAS , with whom J USTICE  B REYER , J USTICE 
+S OTOMAYOR ,  AND  J USTICE  K AGAN  join, dissenting. TransUnion generated credit reports that erroneously 
+flagged many law-abiding people as potential terrorists and 
+drug traffickers.  In doing so, TransUnion violated several 
+provisions of the Fair Credit Reporting Act (FCRA) that en
+title consumers to accuracy in credit-reporting procedures; 
+to receive information in their credit files; and to receive a 
+summary of their rights. Yet despite Congress’ judgment
+that such misdeeds deserve redress, the majority decides
+that TransUnion’s actions are so insignificant that the Con
+stitution prohibits consumers from vindicating their rights 
+in federal court. The Constitution does no such thing. [CITE_END:DOC001[P032.B06]]
+[CITE_START:DOC001[P032.B07]] I 
+For decades, the Treasury Department’s Office of Foreign
+Assets Control (OFAC) has compiled a list of “Specially Des
+ignated Nationals.”  The list largely includes terrorists and
+drug traffickers, among other unseemly types.  And, as a 
+general matter, Americans are barred from doing business
+with those listed. In the wake of the September 11 attacks,
+TransUnion began to sell a new (and more expensive) type
+of credit report that flagged whether an individual’s name 
+matched a name found on that list. 
+The system TransUnion used to decide which individuals [CITE_END:DOC001[P032.B07]]
+
+[Page 33]
+[CITE_START:DOC001[P033.B01]] 2 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P033.B01]]
+[CITE_START:DOC001[P033.B02]] T HOMAS , J., dissenting [CITE_END:DOC001[P033.B02]]
+[CITE_START:DOC001[P033.B03]] to flag was rather rudimentary.  It compared only the con
+sumer’s first and last name with the names on the OFAC 
+list. If the names were identical or similar, TransUnion in
+cluded in the consumer’s report an “OFAC ADVISOR
+ALERT,” explaining that the consumer’s name matches a
+name on the OFAC database.  See,  e.g.,  951 F. 3d 1008, 
+1017, 1019 (CA9 2020) (“‘Cortez’ would match with ‘Cor
+tes’”). TransUnion did not compare birth dates, middle in
+itials, Social Security numbers, or any other available iden
+tifier routinely used to collect and verify credit-report data. 
+Id. , at 1019, n. 2. [CITE_END:DOC001[P033.B03]]
+[CITE_START:DOC001[P033.B04]] In 2005, a consumer sued. 
+TransUnion had sold an 
+OFAC credit report about this consumer to a car dealership. 
+The report flagged her—Sandra Jean Cortez, born in May
+1944—as a match for a person on the OFAC list: Sandra 
+Cortes Quintero, born in June 1971.  TransUnion withheld 
+this OFAC alert from the credit report that Cortez had re
+quested. And despite Cortez’s efforts to have the alert re
+moved, TransUnion kept the alert in place for years. [CITE_END:DOC001[P033.B04]]
+[CITE_START:DOC001[P033.B05]] After a trial, the jury returned a verdict in the consumer’s favor on four FCRA claims, two of which are similar to claims at issue here: (1) TransUnion failed to follow rea sonable procedures that would ensure maximum possible accuracy, 15 U. S. C. §1681e(b); and (2) TransUnion failed to provide Cortez all information in her file despite her re quests, §1681g(a). See Cortez v. Trans Union, LLC , 617 F. 3d 688, 696–706 (CA3 2010). The jury awarded $50,000 in actual damages and $750,000 in punitive damages, and it also took the unusual step of including on the verdict [CITE_END:DOC001[P033.B05]]
+[CITE_START:DOC001[P033.B06]] form a handwritten note urging TransUnion to “completely re vam[p]” its business practices. App. to Brief for Respondent 2a. The District Court reduced the punitive damages award to $100,000, which the Third Circuit affirmed on ap peal, stressing that TransUnion’s failure to, “at the very least, compar[e] birth dates when they are available,” was “reprehensible.” 617 F. 3d, at 723. [CITE_END:DOC001[P033.B06]]
+
+[Page 34]
+[CITE_START:DOC001[P034.B01]] 3 
+Cite as: 594 U. S. ____ (2021) T HOMAS , J., dissenting [CITE_END:DOC001[P034.B01]]
+[CITE_START:DOC001[P034.B02]] But TransUnion “made surprisingly few changes” after 
+this verdict.  951 F. 3d, at 1021.  It did not begin comparing
+birth dates. Or middle initials. Or citizenship.  In fact, 
+TransUnion did not compare  any  new piece of information.
+Instead, it hedged its language saying a consumer was a 
+“‘potential match’” rather than saying the person was a
+“‘match.’”   Ibid.  And instead of listing matches for similar 
+names, TransUnion required that the first and last names
+match exactly.  Unsurprisingly, these reports kept flagging
+law-abiding Americans as potential terrorists and drug
+traffickers.  And equally unsurprising, someone else sued. [CITE_END:DOC001[P034.B02]]
+[CITE_START:DOC001[P034.B03]] That brings us to this case.  Sergio Ramirez visited a car
+dealership, offered to buy a car, and negotiated the terms.
+The dealership then ran a joint credit check on Ramirez and 
+his wife.  The salesperson said that the check revealed that 
+Ramirez was on “‘a terrorist list,’” so the salesperson re
+fused to close the deal with him.   Id.,  at 1017. [CITE_END:DOC001[P034.B03]]
+[CITE_START:DOC001[P034.B04]] Ramirez requested and received a copy of his credit report from TransUnion. The report purported to be “complete and reliable,” but it made no mention of the OFAC alert. See App. 88–91. TransUnion later sent a separate “‘cour tesy’” letter, which informed Ramirez that his “TransUnion credit report” had “been mailed to [him] separately.” Id. , at 92. That letter informed Ramirez that he was a potential match to someone in the OFAC database, but it never re vealed that any OFAC information was present on his credit report. See id. , at 92–94. TransUnion opted not to include with [CITE_END:DOC001[P034.B04]]
+[CITE_START:DOC001[P034.B05]] this letter a description of Ramirez’s rights un der the FCRA or any information on how to dispute the OFAC match. 951 F. 3d, at 1018. The letter merely di rected Ramirez to visit the Department of Treasury’s web site or to call or write TransUnion if Ramirez had any addi tional questions or concerns. Ramirez sued, asserting three claims under the FCRA: TransUnion willfully failed to follow reasonable procedures to assure maximum possible accuracy of the information [CITE_END:DOC001[P034.B05]]
+
+[Page 35]
+[CITE_START:DOC001[P035.B01]] 4 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P035.B01]]
+[CITE_START:DOC001[P035.B02]] T HOMAS , J., dissenting [CITE_END:DOC001[P035.B02]]
+[CITE_START:DOC001[P035.B03]] concerning him, §1681e(b); TransUnion willfully failed to 
+disclose to him all the information in his credit file by with
+holding the true version of his credit report, §1681g(a)(1);
+and TransUnion willfully failed to provide a summary of 
+rights when it sent him the courtesy letter, §1681g(c)(2). [CITE_END:DOC001[P035.B03]]
+[CITE_START:DOC001[P035.B04]] Ramirez also sought to represent a class of individuals
+who had received a similar OFAC letter from TransUnion. 
+“[E]veryone in the class: (1) was falsely labeled . . . a poten
+tial OFAC match; (2) requested a copy of his or her credit
+report from TransUnion; and (3) in response, received a 
+credit-report mailing with the OFAC alert redacted and a 
+separate OFAC Letter mailing with no summary of rights.” 
+Id. , at 1022. [CITE_END:DOC001[P035.B04]]
+[CITE_START:DOC001[P035.B05]] The jury found in favor of the class on all three claims.
+And because it also determined that TransUnion’s miscon
+duct was “willfu[l],” §1681n(a), the jury awarded each class
+member $984.22 in statutory damages (about $8 million to
+tal) and $6,353.08 in punitive damages (about $52 million
+total). [CITE_END:DOC001[P035.B05]]
+[CITE_START:DOC001[P035.B06]] TransUnion appealed, arguing that the class members
+lacked standing. The Ninth Circuit disagreed, explaining
+that “TransUnion’s reckless handling of OFAC information
+exposed every class member to a real risk of harm to their 
+concrete privacy, reputational, and informational interests 
+protected by the FCRA.”   Id.,  at 1037. 1 II 
+A 
+Article III vests “[t]he judicial Power of the United
+States” in this Court “and in such inferior Courts as the 
+Congress may from time to time ordain and establish.”  §1. [CITE_END:DOC001[P035.B06]]
+[CITE_START:DOC001[P035.B07]] 1 TransUnion also contends that Ramirez’s claims and defenses are not 
+typical of those of the class. The Court declines to reach that question
+because its jurisdictional holding is dispositive.   Ante , at 27. In my view, 
+the District Court did not abuse its discretion in certifying the class given 
+the similarities among the claims and defenses at issue. [CITE_END:DOC001[P035.B07]]
+
+[Page 36]
+[CITE_START:DOC001[P036.B01]] 5 
+Cite as: 594 U. S. ____ (2021) T HOMAS , J., dissenting [CITE_END:DOC001[P036.B01]]
+[CITE_START:DOC001[P036.B02]] This power “shall extend to  all  Cases, in Law and Equity,
+arising under this Constitution, the Laws of the United
+States, and Treaties made, or which shall be made, under 
+their Authority.” §2 (emphasis added).  When a federal 
+court has jurisdiction over a case or controversy, it has a 
+“virtually unflagging obligation” to exercise it.   Colorado 
+River Water Conservation Dist.  v.  United States , 424 U. S. 
+800, 817 (1976). [CITE_END:DOC001[P036.B02]]
+[CITE_START:DOC001[P036.B03]] The mere filing of a complaint in federal court, however,
+does not a case (or controversy) make.  Article III “does not 
+extend the judicial power to every violation of the constitu
+tion” or federal law “which may possibly take place.”   Co-
+hens  v.  Virginia , 6 Wheat. 264, 405 (1821) .   Rather, the 
+power extends only “to ‘a case in law or equity,’ in which a 
+right , under such law, is asserted.”   Ibid.  (emphasis added). [CITE_END:DOC001[P036.B03]]
+[CITE_START:DOC001[P036.B04]] Key to the scope of the judicial power, then, is whether an individual asserts his or her own rights. At the time of the founding, whether a court possessed judicial power over an action with no showing of actual damages depended on whether the plaintiff sought to enforce a right held pri vately by an individual or a duty owed broadly to the com munity. See Spokeo, Inc. v. Robins , 578 U. S. 330, 344–346 (2016) (T HOMAS , J., concurring); see also Thole v. U. S. Bank N. A. , 590 U. S. ___, ___–___ (2020) (same) (slip [CITE_END:DOC001[P036.B04]]
+[CITE_START:DOC001[P036.B05]] op., at 1–2); 3 W. Blackstone, Commentaries on the Laws of England 2 (J. Chitty ed. 1826); 4 id., at 5. Where an indi vidual sought to sue someone for a violation of his private rights, such as trespass on his land, the plaintiff needed only to allege the violation. See Entick v. Carrington , 2 Wils. K. B. 275, 291, 95 Eng. Rep. 807, 817 (K. B. 1765). Courts typically did not require any showing of actual dam age. See Uzuegbunam v. Preczewski , 592 U. S. ___, ___–___ (2021) (slip op., at 5–6). But where an individual sued [CITE_END:DOC001[P036.B05]]
+[CITE_START:DOC001[P036.B06]] based on the violation of a duty owed broadly to the whole community, such as the overgrazing of public lands, courts required “not only injuria [legal injury] but also damnum [CITE_END:DOC001[P036.B06]]
+
+[Page 37]
+[CITE_START:DOC001[P037.B01]] 6 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P037.B01]]
+[CITE_START:DOC001[P037.B02]] T HOMAS , J., dissenting [CITE_END:DOC001[P037.B02]]
+[CITE_START:DOC001[P037.B03]] [damage].”  Spokeo , 578 U. S., at 346 (T HOMAS , J., concur
+ring) (citing  Robert Marys’s Case , 9 Co. Rep. 111b, 112b, 77 
+Eng. Rep. 895, 898–899 (K. B. 1613); brackets in original). [CITE_END:DOC001[P037.B03]]
+[CITE_START:DOC001[P037.B04]] This distinction mattered not only for traditional com- mon-law rights, but also for newly created statutory ones. The First Congress enacted a law defining copyrights and gave copyright holders the right to sue infringing persons in order to recover statutory damages, even if the holder “could not show monetary loss.” Muransky v. Godiva Choc olatier, Inc. , 979 F. 3d 917, 972 (CA11 2020) (Jordan, J., dis senting) (citing Act of May 31, 1790, §2, 1 Stat. 124–125). In the patent context, a defendant challenged an infringe ment suit brought under a similar law. Along the lines of what TransUnion [CITE_END:DOC001[P037.B04]]
+[CITE_START:DOC001[P037.B05]] argues here, the infringer contended that “the making of a machine cannot be an offence, because no action lies, except for actual damage, and there can be no actual damages, or even a rule for damages, for an infringe ment by making a machine.” Whittemore v. Cutter , 29 F. Cas. 1120, 1121 (No. 17,600) (CC Mass. 1813). Riding circuit, Justice Story rejected that theory, noting that the plaintiff could sue in federal court merely by alleging a vio lation of a private right: “[W]here the law gives an action for a particular act, the doing of that act imports [CITE_END:DOC001[P037.B05]]
+[CITE_START:DOC001[P037.B06]] of itself a damage to the party” because “[e]very violation of a right imports some damage.” Ibid. ; cf. Gayler v. Wilder , 10 How. 477, 494 (1851) (patent rights “did not exist at common law”). 2 2 The “public rights” terminology has been used to refer to two different concepts. In one context, these rights are “ ‘take[n] from the public’ ”— like the right to make, use, or sell an invention—and “ ‘bestow[ed] . . . upon the’ ” individual, like a “decision to grant a public franchise.” Oil States Energy Services, LLC v. Greene’s Energy Group, LLC [CITE_END:DOC001[P037.B06]]
+[CITE_START:DOC001[P037.B07]] , 584 U. S. ___, ___–___ (2018) (slip op., at 6–7). Disputes with the Government over these rights generally can be resolved “outside of an Article III court.” Id., at ___–___ (slip op., at 9–10). Here, in contrast, the term “public rights” refers to duties owed collectively to the community. For example, [CITE_END:DOC001[P037.B07]]
+
+[Page 38]
+[CITE_START:DOC001[P038.B01]] 7 
+Cite as: 594 U. S. ____ (2021) T HOMAS , J., dissenting [CITE_END:DOC001[P038.B01]]
+[CITE_START:DOC001[P038.B02]] The principle that the violation of an individual right gives rise to an actionable harm was widespread at the founding, in early American history, and in many modern cases. See Uzuegbunam , 592 U. S., at ___–___ (slip op., at 5–8) (collecting cases); Havens Realty Corp. v. Coleman , 455 U. S. 363, 373 (1982) (“[T]he actual or threatened injury re quired by Art. III may exist solely by virtue of statutes cre ating legal rights, the invasion of which creates standing” (citing cases; brackets and internal quotation marks omit ted)). And this understanding accords proper respect for the power [CITE_END:DOC001[P038.B02]]
+[CITE_START:DOC001[P038.B03]] of Congress and other legislatures to define legal rights. No one could seriously dispute, for example, that a violation of property rights is actionable, but as a general matter, “[p]roperty rights are created by the State.” Palazzolo v. Rhode Island , 533 U. S. 606, 626 (2001). In light of this history, tradition, and common practice, our test should be clear: So long as a “statute fixes a minimum of recovery . . . , there would seem to be no doubt of the right of one who establishes a technical ground of action to re cover this minimum sum [CITE_END:DOC001[P038.B03]]
+[CITE_START:DOC001[P038.B04]] without any specific showing of loss.” T. Cooley, Law of Torts *271. 3 While the Court today discusses the supposed failure to show “injury in fact,” courts for centuries held that injury in law to a private right —————— Congress owes a duty to all Americans to legislate within its constitu tional confines. But not every single American can sue over Congress’ failure to do so. Only individuals who, at a minimum, establish harm beyond the mere violation of that constitutional duty can sue. Cf. Fairchild v. Hughes , 258 U. S. 126, 129–130 (1922) (“Plaintiff has only the right, [CITE_END:DOC001[P038.B04]]
+[CITE_START:DOC001[P038.B05]] possessed by every citizen, to require that the Government be administered according to law and that the public moneys be not wasted. Obviously this general right does not entitle a private citizen to institute in the federal courts a suit to secure by indirection a determination whether a statute, if passed, or a constitutional amendment, about to be adopted, will be valid”). [CITE_END:DOC001[P038.B05]]
+[CITE_START:DOC001[P038.B06]] 3 Etymology is also a helpful guide.  The word “injury” stems from the 
+Latin “ injuria ,” which combines “in” (expressing negation) and “jus” 
+(right, law, justice).  See Barnhart Dictionary of Etymology 529 (1988). [CITE_END:DOC001[P038.B06]]
+
+[Page 39]
+[CITE_START:DOC001[P039.B01]] 8 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P039.B01]]
+[CITE_START:DOC001[P039.B02]] T HOMAS , J., dissenting [CITE_END:DOC001[P039.B02]]
+[CITE_START:DOC001[P039.B03]] was enough to create a case or controversy. B Here, each class member established a violation of his or her private rights. The jury found that TransUnion vio lated three separate duties created by statute. See App. 690. All three of those duties are owed to individuals, not to the community writ large. Take §1681e(b), which re quires a consumer reporting agency to “follow reasonable procedures to assure maximum possible accuracy of the in formation concerning the individual about whom the report relates.” This statute creates a duty: to use reasonable pro cedures to assure maximum possible accuracy. And that [CITE_END:DOC001[P039.B03]]
+[CITE_START:DOC001[P039.B04]] duty is particularized to an individual: the subject of the report. Section 1681g does the same. It requires an agency to “clearly and accurately disclose” to a consumer, upon his request, “[a]ll information in the consumer’s file at the time of the request” and to include a written “summary of rights” with that “written disclosure.” §§1681g(a), (c)(2). Those di rectives likewise create duties: provide all information in the consumer’s file and accompany the disclosure with a summary of rights. And these too are owed to a single per son: the consumer who requests the information. [CITE_END:DOC001[P039.B04]]
+[CITE_START:DOC001[P039.B05]] Were there any doubt that consumer reporting agencies
+owe these duties to specific individuals—and not to the 
+larger community—Congress created a cause of action
+providing that “[a]ny person who willfully fails to comply” 
+with an FCRA requirement “with respect to any  consumer 
+is liable to  that consumer .” §1681n(a) (emphasis added). If 
+a consumer reporting agency breaches any FCRA duty
+owed to a specific consumer, then that individual (not all
+consumers) may sue the agency.  No one disputes that each 
+class member possesses this cause of action.  And no one 
+disputes that the jury found that TransUnion violated each 
+class member’s individual rights.  The plaintiffs thus have
+a sufficient injury to sue in federal court. [CITE_END:DOC001[P039.B05]]
+
+[Page 40]
+[CITE_START:DOC001[P040.B01]] 9 
+Cite as: 594 U. S. ____ (2021) T HOMAS , J., dissenting [CITE_END:DOC001[P040.B01]]
+[CITE_START:DOC001[P040.B02]] C 
+The Court chooses a different approach.  Rejecting this
+history, the majority holds that the mere violation of a per
+sonal legal right is  not —and never can be—an injury suffi
+cient to establish standing.  What matters for the Court is 
+only that the “injury in fact be ‘concrete.’”  Ante,  at 8. “No 
+concrete harm, no standing.”  Ante,  at 1, 27. [CITE_END:DOC001[P040.B02]]
+[CITE_START:DOC001[P040.B03]] That may be a pithy catchphrase, but it is worth pausing to ask why “concrete” injury in fact should be the sole in quiry. After all, it was not until 1970—“180 years after the ratification of Article III”—that this Court even introduced the “injury in fact” (as opposed to injury in law) concept of standing. Sierra v. Hallandale Beach , 996 F. 3d 1110, 1117 (CA11 2021) (Newsom, J., concurring). And the concept then was not even about constitutional standing; it con cerned a statutory cause of action under the Administrative Procedure Act. See Association of Data Processing Service Organizations, [CITE_END:DOC001[P040.B03]]
+[CITE_START:DOC001[P040.B04]] Inc. v. Camp , 397 U. S. 150, 153 (1970) (ex plaining that the injury-in-fact requirement “concerns, apart from the ‘case’ or ‘controversy’ test, the question whether the interest sought to be protected by the com plainant is arguably within the zone of interests to be pro tected or regulated by the statute or constitutional guaran tee in question”). [CITE_END:DOC001[P040.B04]]
+[CITE_START:DOC001[P040.B05]] The Court later took this statutory requirement and be
+gan to graft it onto its constitutional standing analysis.
+See,  e.g., Warth  v.  Seldin , 422 U. S. 490 (1975).  But even 
+then, injury in fact served as an  additional  way to get into 
+federal court. Article III injury still could “exist solely by
+virtue of ‘statutes creating legal rights, the invasion of 
+which creates standing.’”   Id. , at 500 (quoting  Linda R. S. 
+v.  Richard D. , 410 U. S. 614, 617, n. 3 (1973)). So the intro
+duction of an injury-in-fact requirement, in effect, “repre
+sented a substantial broadening of access to the federal
+courts.”  Simon  v.  Eastern Ky. Welfare Rights Organization , [CITE_END:DOC001[P040.B05]]
+
+[Page 41]
+[CITE_START:DOC001[P041.B01]] 10 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P041.B01]]
+[CITE_START:DOC001[P041.B02]] T HOMAS , J., dissenting [CITE_END:DOC001[P041.B02]]
+[CITE_START:DOC001[P041.B03]] 426 U. S. 26, 39 (1976).  A plaintiff could now invoke a fed
+eral court’s judicial power by establishing injury by virtue 
+of a violated legal right  or  by alleging some  other  type of 
+“personal interest.”  Ibid. [CITE_END:DOC001[P041.B03]]
+[CITE_START:DOC001[P041.B04]] In the context of public rights, the Court continued to re quire more than just a legal violation. In Lujan v. Defend ers of Wildlife , 504 U. S. 555 (1992), for example, the Court concluded that several environmental organizations lacked standing to challenge a regulation about interagency com munications, even though the organizations invoked a citi zen-suit provision allowing “‘any person [to] commence a civil suit . . . to enjoin any person . . . who is alleged to be in violation of ’” the law. See id., at 558, 571–572; 16 U. S. C. §1540(g). Echoing the [CITE_END:DOC001[P041.B04]]
+[CITE_START:DOC001[P041.B05]] historical distinction between duties owed to individuals and those owed to the community, the Court explained that a plaintiff must do more than raise “a generally available grievance about government—claiming only harm to his and every citizen’s interest in proper ap plication of the Constitution and laws.” 504 U. S., at 573. “Vindicating the public interest (including the public inter est in Government observance of the Constitution and laws) is the function of Congress and the Chief Executive.” Id., at 576. “‘The province of the court,’” in contrast, “‘is, solely, to decide on the rights of individuals.’” Ibid. (quoting Mar- [CITE_END:DOC001[P041.B05]]
+[CITE_START:DOC001[P041.B06]] bury v. Madison , 1 Cranch 137, 170 (1803)). [CITE_END:DOC001[P041.B06]]
+[CITE_START:DOC001[P041.B07]] The same public-rights analysis prevailed in  Summers  v. 
+Earth Island Institute , 555 U. S. 488 (2009).  There, a group
+of organizations sought to prevent the United States Forest 
+Service from enforcing regulations that exempt certain pro
+jects from notice and comment.  Id. , at 490.  The Court, 
+again, found that the mere violation of the law “without
+some concrete interest that is affected by the deprivation—
+a procedural right  in vacuo —is insufficient to create Article 
+III standing.”  Id ., at 496. But again, this was rooted in the 
+context of public rights: “‘It would exceed Article III’s limi
+tations if, at the behest of Congress and in the absence of [CITE_END:DOC001[P041.B07]]
+
+[Page 42]
+[CITE_START:DOC001[P042.B01]] 11 
+Cite as: 594 U. S. ____ (2021) T HOMAS , J., dissenting [CITE_END:DOC001[P042.B01]]
+[CITE_START:DOC001[P042.B02]] any showing of concrete injury, we were to entertain citizen
+suits to vindicate the  public’s  nonconcrete interest in the 
+proper administration of the laws.’”   Id. , at 497 (emphasis 
+added; brackets omitted). [CITE_END:DOC001[P042.B02]]
+[CITE_START:DOC001[P042.B03]] In  Spokeo , the Court built on this approach.  Based on a 
+few sentences from  Lujan  and  Summers , the Court con
+cluded that a plaintiff does not automatically “satisf[y] the
+injury-in-fact requirement whenever a statute grants a per
+son a statutory right and purports to authorize that person
+to sue to vindicate that right.”   Spokeo , 578 U. S., at 341. 
+But the Court made clear that “Congress is well positioned 
+to identify intangible harms that meet minimum Article III 
+requirements” and explained that “the violation of a proce
+dural right granted by statute  can be  sufficient in some cir
+cumstances to constitute injury in fact.”   Id.,  at 341, 342 
+(emphasis added). [CITE_END:DOC001[P042.B03]]
+[CITE_START:DOC001[P042.B04]] Reconciling these statements has proved to be a chal lenge. See Sierra , 996 F. 3d, at 1116–1117 (Newsom, J., concurring) (collecting examples of inconsistent decisions). But “[t]he historical restrictions on standing” offer consid erable guidance. Thole , 590 U. S., at ___ (T HOMAS , J., con curring) (slip op., at 1). A statute that creates a public right plus a citizen-suit cause of action is insufficient by itself to establish standing. See Lujan , 504 U. S., at 576. 4 A statute that creates a private right and a cause of action, however, does gives plaintiffs an adequate [CITE_END:DOC001[P042.B04]]
+[CITE_START:DOC001[P042.B05]] interest in vindicating their private rights in federal court. See Thole , 590 U. S., at ___ (T HOMAS , J., concurring); Spokeo , 578 U. S., at ___– —————— 4 But see Caminker, Comment, The Constitutionality of Qui Tam Ac tions, 99 Yale L. J. 341, 342, n. 3 (1989) (“Six statutes [enacted by the First Congress] imposed penalties and/or forfeitures for conduct injuri ous to the general public and expressly authorized suits by private in formers, with the recovery being shared between the informer and the United States”); McCulloch v. Maryland , 4 Wheat. 316, 317, 321–322 (1819) [CITE_END:DOC001[P042.B05]]
+[CITE_START:DOC001[P042.B06]] (reviewing “an action of debt brought by the defendant in error . . . who sued as well for himself as for the State of Maryland . . . to recover certain penalties”). [CITE_END:DOC001[P042.B06]]
+
+[Page 43]
+[CITE_START:DOC001[P043.B01]] 12 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P043.B01]]
+[CITE_START:DOC001[P043.B02]] T HOMAS , J., dissenting [CITE_END:DOC001[P043.B02]]
+[CITE_START:DOC001[P043.B03]] ___ (same); see also  Muransky , 979 F. 3d, at 970–972 (Jor
+dan, J., dissenting);  Huff  v.  TeleCheck Servs .,  Inc. , 923 F. 3d 
+458, 469 (CA6 2019) (“Article III standing may draw a line
+between private and public rights”);  Bryant  v.  Compass 
+Group USA, Inc. , 958 F. 3d, 617, 624 (CA7 2020) (the 
+Spokeo  concurrence “drew a useful distinction between two 
+types of injuries”). [CITE_END:DOC001[P043.B03]]
+[CITE_START:DOC001[P043.B04]] The majority today, however, takes the road less trav eled: “[U]nder Article III, an injury in law is not an injury in fact.” Ante, at 11; but see Webb v. Portland Mfg. Co. , 29 F. Cas. 506, 508 (No. 17,322) (CC Me. 1838) (“The law tol erates no farther inquiry than whether there has been the violation of a right”). No matter if the right is personal or if the legislature deems the right worthy of legal protection, legislatures are constitutionally unable to offer the protec tion of the federal courts for anything other than money, bodily integrity, and [CITE_END:DOC001[P043.B04]]
+[CITE_START:DOC001[P043.B05]] anything else that this Court thinks looks close enough to rights existing at common law. See ante , at 9. The 1970s injury-in-fact theory has now dis placed the traditional gateway into federal courts. [CITE_END:DOC001[P043.B05]]
+[CITE_START:DOC001[P043.B06]] This approach is remarkable in both its novelty and ef fects. Never before has this Court declared that legal injury is inherently insufficient to support standing. 5 And never before has this Court declared that legislatures are consti tutionally precluded from creating legal rights enforceable in federal court if those rights deviate too far from their 5 See, e.g., Lujan v. Defenders of Wildlife , 504 U. S. 555, 578 (1992) (“Nothing in this contradicts the principle that the injury required by Art. III may exist solely by virtue of ‘statutes creating legal rights, the invasion of which creates standing” [CITE_END:DOC001[P043.B06]]
+[CITE_START:DOC001[P043.B07]] (internal quotation marks, brackets, and ellipsis omitted)); Warth v. Seldin , 422 U. S. 490, 514 (1975) (“Con gress may create a statutory right or entitlement the alleged deprivation of which can confer standing to sue even where the plaintiff would have suffered no judicially cognizable injury in the absence of statute”); Linda R. S. v. Richard D ., 410 U. S. 614, 617, n. 3 (1973) (“Congress may enact statutes creating legal rights, the invasion of which creates standing, even though no injury would exist without the statute”). [CITE_END:DOC001[P043.B07]]
+
+[Page 44]
+[CITE_START:DOC001[P044.B01]] 13 
+Cite as: 594 U. S. ____ (2021) T HOMAS , J., dissenting [CITE_END:DOC001[P044.B01]]
+[CITE_START:DOC001[P044.B02]] common-law roots. According to the majority, courts alone 
+have the power to sift and weigh harms to decide whether
+they merit the Federal Judiciary’s attention.  In the name 
+of protecting the separation of powers,  ante , at 7, 14, this 
+Court has relieved the legislature of its power to create and 
+define rights. [CITE_END:DOC001[P044.B02]]
+[CITE_START:DOC001[P044.B03]] III Even assuming that this Court should be in the business of second-guessing private rights, this is a rather odd case to say that Congress went too far. TransUnion’s miscon duct here is exactly the sort of thing that has long merited legal redress. As an initial matter, this Court has recognized that the unlawful withholding of requested information causes “a sufficiently distinct injury to provide standing to sue.” Pub lic Citizen v. Department of Justice , 491 U. S. 440, 449 (1989); see also Havens Realty Corp. , 455 U. S., at 374. Here, TransUnion unlawfully withheld from each [CITE_END:DOC001[P044.B03]]
+[CITE_START:DOC001[P044.B04]] class member the OFAC version of his or her credit report that the class member requested. And TransUnion unlawfully failed to send a summary of rights. The majority’s response is to contend that the plaintiffs actually did not allege that they failed to receive any required information; they alleged only that they received it in the “ wrong format .” Ante , at 26. That reframing finds little support in the complaint, which alleged that TransUnion “fail[ed] to include the OFAC alerts . . . in the consumer’s own files which consum ers, as of right, may request and obtain,” [CITE_END:DOC001[P044.B04]]
+[CITE_START:DOC001[P044.B05]] and that TransUn ion did “not advise consumers that they may dispute inac curate OFAC alerts.” Class Action Complaint in No. 3:12– cv–00632, ECF Doc. 1 (ND Cal.), p. 5. It also finds no foot ing in the record. Neither the mailed credit report nor sep arate letter provide any indication that a person’s report is marked with an OFAC alert. See, e.g., App. 88–94. [CITE_END:DOC001[P044.B05]]
+
+[Page 45]
+[CITE_START:DOC001[P045.B01]] 14 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P045.B01]]
+[CITE_START:DOC001[P045.B02]] T HOMAS , J., dissenting [CITE_END:DOC001[P045.B02]]
+[CITE_START:DOC001[P045.B03]] Were there any doubt about the facts below, we have the helpful benefit of a jury verdict. The jury found that “De fendant TransUnion, LLC willfully fail[ed] to clearly and accurately disclose OFAC information in the written disclo sures it sent to members of the class.” Id. , at 690. And the jury found that “Defendant TransUnion, LLC willfully fail[ed] to provide class members a summary of their FCRA rights with each written disclosure made to them.” Ibid. I would not be so quick as to recharacterize these jury find ings as mere “formatting” errors. Ante , at 2, 25–26; [CITE_END:DOC001[P045.B03]]
+[CITE_START:DOC001[P045.B04]] see also U. S. Const., Amdt. 7 (“no fact tried by a jury, shall be oth erwise re-examined in any Court of the United States, than according to the rules of the common law”). [CITE_END:DOC001[P045.B04]]
+[CITE_START:DOC001[P045.B05]] Moreover, to the extent this Court privileges concrete,  fi
+nancial  injury for standing purposes, recall that TransUn
+ion charged its clients extra to receive credit reports with 
+the OFAC designation. According to TransUnion, these 
+special OFAC credit reports are valuable.  Even the major
+ity must admit that withholding something of value from
+another person—that is, “monetary harm”—falls in the 
+heartland of tangible injury in fact.  Ante , at 1, 9.  Recogniz
+ing as much, TransUnion admits that its clients would have
+standing to sue if they, like the class members, did not re
+ceive the OFAC credit reports they had requested.  Tr. of 
+Oral Arg. 9. [CITE_END:DOC001[P045.B05]]
+[CITE_START:DOC001[P045.B06]] And then there is the standalone harm caused by the ra
+ther extreme errors in the credit reports. The majority
+(rightly) decides that having one’s identity falsely and pub
+lically associated with terrorism and drug trafficking is it
+self a concrete harm.  Ante , at 16–17.  For good reason.  This 
+case is a particularly grave example of the harm this Court 
+identified as central to the FCRA: “curb[ing] the dissemina
+tion of false information.”   Spokeo , 578 U. S., at 342.  And it 
+aligns closely with a “harm that has traditionally been re
+garded as providing a basis for a lawsuit.”   Id. , at 341.  His
+torically, “[o]ne who falsely, and without a privilege to do [CITE_END:DOC001[P045.B06]]
+
+[Page 46]
+[CITE_START:DOC001[P046.B01]] 15 
+Cite as: 594 U. S. ____ (2021) T HOMAS , J., dissenting [CITE_END:DOC001[P046.B01]]
+[CITE_START:DOC001[P046.B02]] so, publishes matter defamatory to another in such a man
+ner as to make the publication a libel is liable to the other,” 
+even though “no special harm or loss of reputation results 
+therefrom.” Restatement of Torts §569, p. 165 (1938). [CITE_END:DOC001[P046.B02]]
+[CITE_START:DOC001[P046.B03]] The question this Court has identified as key, then, is 
+whether a plaintiff established “a degree of risk” that is
+“sufficient to meet the concreteness requirement.”   Spokeo,
+578 U. S., at 343.  Here, in a 7-month period, it is undis
+puted that nearly 25 percent of the class had false OFAC-
+flags sent to potential creditors.  Twenty-five percent over
+just a 7-month period seems, to me, “a degree of risk suffi
+cient to meet the concreteness requirement.”  Ibid.  If 25 
+percent is insufficient, then, pray tell, what percentage is? [CITE_END:DOC001[P046.B03]]
+[CITE_START:DOC001[P046.B04]] The majority deflects this line of analysis by all but elim inating the risk-of-harm analysis. According to the major ity, an elevated risk of harm simply shows that a concrete harm is imminent and thus may support only a claim for injunctive relief. Ante , at 20, 26. But this reworking of Spokeo fails for two reasons. First, it ignores what Spokeo said: “[Our opinion] does not mean . . . that the risk of real harm cannot satisfy the requirement of concreteness.” Spokeo , 578 U. S., at 341. Second, it ignores what Spokeo did. The Court in Spokeo [CITE_END:DOC001[P046.B04]]
+[CITE_START:DOC001[P046.B05]] remanded the respondent’s claims for statutory damages to the Ninth Circuit to consider “whether the . . . violations alleged in this case entail a de gree of risk sufficient to meet the concreteness require ment.” Id., at 342–343. The theory that risk of harm mat ters only for injunctive relief is thus squarely foreclosed by Spokeo itself. [CITE_END:DOC001[P046.B05]]
+[CITE_START:DOC001[P046.B06]] But even if risk of harm is out, the Ninth Circuit indi
+cated that every class member may have had an OFAC alert 
+disclosed. According to the court below, TransUnion not 
+only published this information to creditors for a quarter of 
+the class but also “communicated about the database infor
+mation and OFAC matches” with a third party. 951 F. 3d, 
+at 1026; cf.  Cortez , 617 F. 3d, at 711 (TransUnion cannot [CITE_END:DOC001[P046.B06]]
+
+[Page 47]
+[CITE_START:DOC001[P047.B01]] 16 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P047.B01]]
+[CITE_START:DOC001[P047.B02]] T HOMAS , J., dissenting [CITE_END:DOC001[P047.B02]]
+[CITE_START:DOC001[P047.B03]] avoid FCRA liability “by simply contracting with a third party to store and maintain information”). Respondent adds to this by pointing out that TransUnion published this information to vendors that printed and sent the mailings. See Brief for Respondent 16; see also App. 161 (deposition testimony explaining that “a printed credit report . . . would have been sent through our print vendor through the mail and delivered to the consumer requesting the file disclo sure); id., at 545 (trial testimony identifying three different print-vendor companies that worked with TransUnion dur ing the relevant time period). In the historical context [CITE_END:DOC001[P047.B03]]
+[CITE_START:DOC001[P047.B04]] of libel, publication to even a single other party could be enough to give rise to suit. This was true, even where the third party was a telegraph company, 6 an attorney, 7 or a stenographer who merely writes the information down. 8 6 Munson v. Lathrop , 96 Wis. 386, 389, 71 N. W. 596, 597 (1897) (“The writing of the message, and the delivery of it by him to the [telegraph] company for transmission, as mentioned, was a publication of the same”). [CITE_END:DOC001[P047.B04]]
+[CITE_START:DOC001[P047.B05]] 7  Hedgepeth  v.  Coleman , 183 N. C. 309, 312–313, 111 S. E. 517, 519 
+(1922) (“[I]t has been held that the publication was sufficient where the 
+defendant had communicated the defamatory matter to the plaintiff ’s 
+agent, or attorney; or had read it to a friend before posting it to the plain
+tiff; or had procured it to be copied, or sealed in the form of a letter ad
+dressed to the plaintiff and left in the house of a neighbor by whom it 
+was read; or had caused it to be delivered to and read by a member of the 
+plaintiff ’s family”). [CITE_END:DOC001[P047.B05]]
+[CITE_START:DOC001[P047.B06]] 8 Rickbeil v. Grafton Deaconess Hospital , 74 N. D. 525, 542 (1946) (“We hold that the dictating of this letter by the manager to the stenographer and her transcription of her notes into the written instrument consti tutes publication within the purview of the law of libel: whether the re lationship be that of master and servant or of coemployees of a corpora tion”); see also Larimore v. Blaylock , 259 Va. 568, 573, 528 S. E. 2d 119, 122 (2000) (rejecting an argument of “absolute protection of the ‘intra corporate immunity doctrine’” for defamatory statements); but see Swin [CITE_END:DOC001[P047.B06]]
+[CITE_START:DOC001[P047.B07]] dle v. State , 10 Tenn. 581, 582 (1831) (“ ‘A personal libel is published when it arrives to the person against whom it is written , pursuant to the design of the author, or is made known to any other person, by any means to which the dissent of the author is not necessarily implied’ ” (emphasis added)). [CITE_END:DOC001[P047.B07]]
+
+[Page 48]
+[CITE_START:DOC001[P048.B01]] 17 
+Cite as: 594 U. S. ____ (2021) T HOMAS , J., dissenting [CITE_END:DOC001[P048.B01]]
+[CITE_START:DOC001[P048.B02]] Surely with a harm so closely paralleling a common-law 
+harm, this is an instance where a plaintiff “need not allege
+any additional harm beyond the one Congress has identi
+fied.”  Spokeo , 578 U. S., at 342 (emphasis deleted). [CITE_END:DOC001[P048.B02]]
+[CITE_START:DOC001[P048.B03]] But even setting aside everything already mentioned—
+the Constitution’s text, history, precedent, financial harm,
+libel, the risk of publication, and actual disclosure to a third 
+party—one need only tap into common sense to know that 
+receiving a letter identifying you as a potential drug traf
+ficker or terrorist is harmful.  All the more so when the in
+formation comes in the context of a credit report, the entire 
+purpose of which is to demonstrate that a person can be 
+trusted. [CITE_END:DOC001[P048.B03]]
+[CITE_START:DOC001[P048.B04]] And if this sort of confusing and frustrating communica tion is insufficient to establish a real injury, one wonders what could rise to that level. If, instead of falsely identify ing Ramirez as a potential drug trafficker or terrorist, TransUnion had flagged him as a “potential” child molester, would that alone still be insufficient to open the courthouse doors? What about falsely labeling a person a racist? In cluding a slur on the report? Or what about openly reduc ing a person’s credit score by several points because of his race? If none of these constitutes an injury in fact, [CITE_END:DOC001[P048.B04]]
+[CITE_START:DOC001[P048.B05]] how can that possibly square with our past cases indicating that the inability to “observe an animal species, even for purely es thetic purposes, . . . undeniably” is? Lujan , 504 U. S., at 562; see also Friends of the Earth, Inc. v. Laidlaw Environ mental Services (TOC), Inc. , 528 U. S. 167, 183 (2000) (“plaintiffs adequately allege injury in fact when they aver that they use the affected area and are persons for whom the aesthetic and recreational values of the area will be lessened” (internal quotation marks omitted)); Summers , 555 U. S., at 494 (“[I]f [CITE_END:DOC001[P048.B05]]
+[CITE_START:DOC001[P048.B06]] . . . harm in fact affects the recrea tional or even the mere esthetic interests of the plaintiff, that will suffice”). Had the class members claimed an aes thetic interest in viewing an accurate report, would this [CITE_END:DOC001[P048.B06]]
+
+[Page 49]
+[CITE_START:DOC001[P049.B01]] 18 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P049.B01]]
+[CITE_START:DOC001[P049.B02]] T HOMAS , J., dissenting [CITE_END:DOC001[P049.B02]]
+[CITE_START:DOC001[P049.B03]] case have come out differently? And if some of these examples do cause sufficiently “con
+crete” and “real”—though “intangible”—harms, how do  we 
+go about picking and choosing which ones do and which do 
+not? I see no way to engage in this “inescapably value-
+laden” inquiry without it “devolv[ing] into [pure] policy 
+judgment.”  Sierra , 996 F. 3d, at 1129 (Newsom, J., concur
+ring). Weighing the harms caused by specific facts and 
+choosing remedies seems to me like a much better fit for
+legislatures and juries than for this Court. [CITE_END:DOC001[P049.B03]]
+[CITE_START:DOC001[P049.B04]] Finally, it is not just the harm that is reminiscent of a constitutional case or controversy. So too is the remedy. Although statutory damages are not necessarily a proxy for unjust enrichment, they have a similar flavor in this case. TransUnion violated consumers’ rights in order to create and sell a product to its clients. Reckless handling of con sumer information and bungled responses to requests for information served a means to an end. And the end was financial gain. “TransUnion could not confirm that a single OFAC alert sold to its customers was accurate.” 951 F. 3d, at 1021, [CITE_END:DOC001[P049.B04]]
+[CITE_START:DOC001[P049.B05]] n. 4. Yet thanks to this Court, it may well be in a position to keep much of its ill-gotten gains. 9 * * * Ultimately, the majority seems to pose to the reader a 9 Today’s decision might actually be a pyrrhic victory for TransUnion. The Court does not prohibit Congress from creating statutory rights for consumers; it simply holds that federal courts lack jurisdiction to hear some of these cases. That combination may leave state courts—which “are not bound by the limitations of a case or controversy or other federal rules of justiciability even when they address issues [CITE_END:DOC001[P049.B05]]
+[CITE_START:DOC001[P049.B06]] of federal law,” ASARCO Inc. v. Kadish , 490 U. S. 605, 617 (1989)—as the sole forum for such cases, with defendants unable to seek removal to federal court. See also Bennett, The Paradox of Exclusive State-Court Jurisdiction Over Federal Claims, 105 Minn. L. Rev. 1211 (2021). By declaring that federal courts lack jurisdiction, the Court has thus ensured that state courts will exercise exclusive jurisdiction over these sorts of class actions. [CITE_END:DOC001[P049.B06]]
+
+[Page 50]
+[CITE_START:DOC001[P050.B01]] 19 
+Cite as: 594 U. S. ____ (2021) T HOMAS , J., dissenting [CITE_END:DOC001[P050.B01]]
+[CITE_START:DOC001[P050.B02]] single rhetorical question: Who could possibly think that a
+person is harmed when he requests and is sent an incom
+plete credit report, or is sent a suspicious notice informing 
+him that he may be a designated drug trafficker or terrorist,
+or is  not  sent anything informing him of how to remove this 
+inaccurate red flag?  The answer is, of course, legion: Con
+gress, the President, the jury, the District Court, the Ninth
+Circuit, and four Members of this Court. I respectfully dissent. [CITE_END:DOC001[P050.B02]]
+
+[Page 51]
+[CITE_START:DOC001[P051.B01]] 1 
+Cite as: 594 U. S. ____ (2021) K AGAN , J., dissenting [CITE_END:DOC001[P051.B01]]
+[CITE_START:DOC001[P051.B02]] SUPREME COURT OF THE UNITED STATES [CITE_END:DOC001[P051.B02]]
+[CITE_START:DOC001[P051.B03]] No. 20–297 [CITE_END:DOC001[P051.B03]]
+[CITE_START:DOC001[P051.B04]] TRANSUNION LLC, PETITIONER  v.  SERGIO L. 
+RAMIREZ ON WRIT OF CERTIORARI TO THE UNITED STATES COURT OF 
+APPEALS FOR THE NINTH CIRCUIT [CITE_END:DOC001[P051.B04]]
+[CITE_START:DOC001[P051.B05]] [June 25, 2021] [CITE_END:DOC001[P051.B05]]
+[CITE_START:DOC001[P051.B06]] J USTICE K AGAN , with whom J USTICE B REYER and J USTICE S OTOMAYOR join, dissenting. The familiar story of Article III standing depicts the doc trine as an integral aspect of judicial restraint. The case or-controversy requirement of Article III, the account runs, is “built on a single basic idea—the idea of separation of powers.” Allen v. Wright , 468 U. S. 737, 752 (1984). Rigor ous standing rules help safeguard that separation by keep ing the courts away from issues “more appropriately ad dressed in the representative branches.” Id. , at 751 . In so doing, [CITE_END:DOC001[P051.B06]]
+[CITE_START:DOC001[P051.B07]] those rules prevent courts from overstepping their “proper—and properly limited—role” in “a democratic soci ety.” Warth v. Seldin , 422 U. S. 490, 498 (1975); see ante , at 7–8 (T HOMAS , J., dissenting). [CITE_END:DOC001[P051.B07]]
+[CITE_START:DOC001[P051.B08]] After today’s decision, that story needs a rewrite.  The 
+Court here transforms standing law from a doctrine of judi
+cial modesty into a tool of judicial aggrandizement.  It holds, 
+for the first time, that a specific class of plaintiffs whom
+Congress allowed to bring a lawsuit cannot do so under Ar
+ticle III. I join J USTICE  T HOMAS ’s dissent, which explains
+why the majority’s decision is so mistaken.  As he recounts, 
+our Article III precedents teach that Congress has broad 
+“power to create and define rights.”   Ante , at 13; see  Spokeo , 
+Inc.  v.  Robins , 578 U. S. 330, 341 (2016);  Lujan  v.  Defenders 
+of Wildlife , 504 U. S. 555, 578 (1992);  Warth , 422 U. S., at [CITE_END:DOC001[P051.B08]]
+
+[Page 52]
+[CITE_START:DOC001[P052.B01]] 2 
+TRANSUNION LLC  v.  RAMIREZ [CITE_END:DOC001[P052.B01]]
+[CITE_START:DOC001[P052.B02]] K AGAN , J., dissenting [CITE_END:DOC001[P052.B02]]
+[CITE_START:DOC001[P052.B03]] 500. And Congress may protect those rights by authorizing suits not only for past harms but also for the material risk of future ones. See Spokeo , 578 U. S., at 341–343; ante , at 15 (T HOMAS , J., dissenting). Under those precedents, this case should be easy. In the Fair Credit Reporting Act, Con gress determined to protect consumers’ reputations from in accurate credit reporting. TransUnion willfully violated that statute’s provisions by preparing credit files that falsely called the plaintiffs potential terrorists, and by ob scuring that fact when the plaintiffs requested copies of their files. To say, [CITE_END:DOC001[P052.B03]]
+[CITE_START:DOC001[P052.B04]] as the majority does, that the resulting injuries did not “‘exist’ in the real world” is to inhabit a world I don’t know. Ante , at 10. And to make that claim in the face of Congress’s contrary judgment is to exceed the judiciary’s “proper—and properly limited—role.” Warth , 422 U. S., at 498; see ante , at 12–13 (T HOMAS , J., dissent ing). [CITE_END:DOC001[P052.B04]]
+[CITE_START:DOC001[P052.B05]] I add a few words about the majority’s view of the risks of harm to the plaintiffs. In addressing the claim that TransUnion failed to maintain accurate credit files, the ma jority argues that the “risk of dissemination” of the plain tiffs’ credit information to third parties is “too speculative.” Ante , at 22. But why is it so speculative that a company in the business of selling credit reports to third parties will in fact sell a credit report to a third party? See also ante , at 15 (T HOMAS , J., dissenting) (noting that “nearly 25% of [CITE_END:DOC001[P052.B05]]
+[CITE_START:DOC001[P052.B06]] the class” already had false reports “sent to potential credi tors”). And in addressing the claims of faulty disclosure to the plaintiffs, the majority makes a set of curious assump tions. According to the majority, people who specifically re quest a copy of their credit report may not even “ open[] ” the envelope. Ante , at 25 (emphasis in original). And people who receive multiple opaque mailings are not likely to be “confused.” Ibid. ; but see Niz-Chavez v. Garland , 593 U. S. ___, ___ (2021) (slip op., at 14) (explaining that a “series of [CITE_END:DOC001[P052.B06]]
+
+[Page 53]
+[CITE_START:DOC001[P053.B01]] 3 
+Cite as: 594 U. S. ____ (2021) K AGAN , J., dissenting [CITE_END:DOC001[P053.B01]]
+[CITE_START:DOC001[P053.B02]] letters,” “each containing a new morsel of vital infor
+mation,” is likely to perplex recipients). And finally, people 
+who learn that their credit files label them potential terror
+ists would not “have tried to correct” the error.  Ante , at 25. 
+Rather than accept those suppositions, I sign up with 
+J USTICE  T HOMAS : “[O]ne need only tap into common sense 
+to know that receiving a letter identifying you as a potential 
+drug trafficker or terrorist is harmful.”   Ante , at 17. [CITE_END:DOC001[P053.B02]]
+[CITE_START:DOC001[P053.B03]] I differ with J USTICE T HOMAS on just one matter, unlikely to make much difference in practice. In his view, any “vio lation of an individual right” created by Congress gives rise to Article III standing. Ante , at 7. But in Spokeo , this Court held that “Article III requires a concrete injury even in the context of a statutory violation.” 578 U. S., at 341. I con tinue to adhere to that view, but think it should lead to the same result as J USTICE T HOMAS ’s approach in all but highly unusual cases. As Spokeo [CITE_END:DOC001[P053.B03]]
+[CITE_START:DOC001[P053.B04]] recognized, “Congress is well po sitioned to identify [both tangible and] intangible harms” meeting Article III standards. Ibid. Article III requires for concreteness only a “real harm” (that is, a harm that “actu ally exist[s]”) or a “risk of real harm.” Ibid. And as today’s decision definitively proves, Congress is better suited than courts to determine when something causes a harm or risk of harm in the real world. For that reason, courts should give deference to those congressional judgments. Overrid ing an authorization to sue is appropriate when but only when Congress could not reasonably have thought that a [CITE_END:DOC001[P053.B04]]
+[CITE_START:DOC001[P053.B05]] suit will contribute to compensating or preventing the harm at issue. Subject to that qualification, I join J USTICE T HOMAS ’s dissent in full. [CITE_END:DOC001[P053.B05]]

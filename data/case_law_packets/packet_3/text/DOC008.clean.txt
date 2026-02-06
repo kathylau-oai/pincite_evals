@@ -1,0 +1,825 @@
+[Page 1]
+398 
+OCTOBER TERM, 2012
+Syllabus
+CLAPPER, DIRECTOR OF NATIONAL INTELLIGENCE, et al. v . AMNESTY INTERNATIONAL USA et al. certiorari to the united states court of appeals for the second circuit No. 11–1025. Argued October 29, 2012—Decided February 26, 2013 Section 702 of the Foreign Intelligence Surveillance Act of 1978 (FISA), 50 U. S. C. § 1881a, added by the FISA Amendments Act of 2008, per mits the Attorney General and the Director of National Intelligence to acquire foreign intelligence information by jointly authorizing the surveillance of individuals who are not “United States persons” and are reasonably believed to be located outside the United States.
+Before doing so, the Attorney General and the Director of National Intelligence normally must obtain the Foreign Intelligence Surveillance Court’s (FISC) approval. Surveillance under § 1881a is subject to statutory conditions, judicial authorization, congressional supervision, and com pliance with the Fourth Amendment. Respondents—attorneys and human rights, labor, legal, and media organizations—are United States persons who claim that they engage in sensitive international communi cations with individuals who they believe are likely targets of § 1881a surveillance. On the day that the FISA Amendments Act was enacted, they ﬁled suit, seeking a declaration that § 1881a is facially unconstitu tional and
+a permanent injunction against § 1881a-authorized surveil lance. The District Court found that respondents lacked standing, but the Second Circuit reversed, holding that respondents showed (1) an “objectively reasonable likelihood” that their communications will be in tercepted at some time in the future, and (2) that they are suffering present injuries resulting from costly and burdensome measures they take to protect the conﬁdentiality of their international communications from possible § 1881a surveillance. Held : Respondents do not have Article III standing. Pp. 408–422.
+(a) To establish Article III standing, an injury must be “concrete, 
+particularized, and actual or imminent; fairly traceable to the challenged 
+action; and redressable by a favorable ruling.”  Monsanto Co.  v.  Geert
+son Seed Farms , 561 U. S. 139, 149. “[T]hreatened injury must be 
+‘ “certainly impending” ’ to constitute injury in fact,” and “[a]llegations 
+of possible future injury” are not sufﬁcient.  Whitmore  v.  Arkansas , 
+495 U. S. 149, 158. Pp. 408–409. (b) Respondents assert that they have suffered injury in fact that is 
+fairly traceable to § 1881a because there is an objectively reasonable
+
+[Page 2]
+Cite as: 568 U. S. 398 (2013) 
+399 Syllabus
+likelihood that their communications with their foreign contacts will be intercepted under § 1881a at some point. This argument fails. Ini tially, the Second Circuit’s “objectively reasonable likelihood” standard is inconsistent with this Court’s “threatened injury” requirement. Re spondents’ standing theory also rests on a speculative chain of possibili ties that does not establish that their potential injury is certainly im pending or is fairly traceable to § 1881a. First, it is highly speculative whether the Government will imminently target communications to which respondents are parties. Since respondents, as U. S. persons, cannot be targeted under § 1881a, their theory
+necessarily rests on their assertion that their foreign contacts will be targeted. Yet they have no actual knowledge of the Government’s § 1881a targeting practices. Second, even if respondents could demonstrate that the targeting of their foreign contacts is imminent, they can only speculate as to whether the Government will seek to use § 1881a-authorized surveillance instead of one of the Government’s numerous other surveillance methods, which are not challenged here. Third, even if respondents could show that the Government will seek the FISC’s authorization to target respondents’ foreign contacts under § 1881a, they can only speculate as to whether
+the FISC will authorize the surveillance. This Court is reluctant to endorse standing theories that require guesswork as to how independ ent decisionmakers will exercise their judgment. See, e. g., Whitmore , supra, at 159–160. Fourth, even if the Government were to obtain the FISC’s approval to target respondents’ foreign contacts under § 1881a, it is unclear whether the Government would succeed in acquiring those contacts’ communications. And ﬁfth, even if the Government were to target respondents’ foreign contacts, respondents can only speculate as to whether their own communications with those contacts would be inci dentally acquired. Pp. 410–414.
+(c) Respondents’ alternative argument is also unpersuasive. They claim that they suffer ongoing injuries that are fairly traceable to § 1881a because the risk of § 1881a surveillance requires them to take costly and burdensome measures to protect the conﬁdentiality of their communications. But respondents cannot manufacture standing by choosing to make expenditures based on hypothetical future harm that is not certainly impending. Because they do not face a threat of cer tainly impending interception under § 1881a, their costs are simply the product of their fear of surveillance, which is insufﬁcient to create stand ing. See Laird v. Tatum
+, 408 U. S. 1, 10–15. Accordingly, any on going injuries that respondents are suffering are not fairly traceable to § 1881a. Pp. 415–418. (d) Respondents’ remaining arguments are likewise unavailing. Contrary to their claim, their alleged injuries are not the same kinds of
+
+[Page 3]
+400 
+CLAPPER  v.  AMNESTY INT’L USA
+Syllabus
+injuries that supported standing in cases such as Friends of the Earth, Inc. v. Laidlaw Environmental Services (TOC), Inc., 528 U. S. 167, Meese v. Keene , 481 U. S. 465, and Monsanto, supra. And their sugges tion that they should be held to have standing because otherwise the constitutionality of § 1881a will never be adjudicated is both legally and factually incorrect. First, “ ‘[t]he assumption that if respondents have no standing to sue, no one would have standing, is not a reason to ﬁnd standing.’ ” Valley Forge Christian College v. Americans United for Separation of Church and
+State, Inc. , 454 U. S. 464, 489. Second, the holding in this case by no means insulates § 1881a from judicial review. Pp. 418–422. 638 F. 3d 118, reversed and remanded.
+Alito, J.,  delivered the opinion of the Court, in which  Roberts, C. J., 
+and  Scalia, Kennedy,  and  Thomas, JJ.,  joined.  Breyer, J.,  ﬁled a dis
+senting opinion, in which  Ginsburg, Sotomayor,  and  Kagan, JJ.,  joined, 
+post , p. 422.
+Solicitor General Verrilli  argued the cause for petition
+ers. With him on the briefs were  Acting Assistant Attor
+ney General Delery, Deputy Solicitor General Kneedler, 
+Anthony A. Yang, Douglas N. Letter, Thomas M. Bondy, 
+Henry C. Whitaker, Robert S. Litt, Tricia S. Wellman,  and 
+Bradley A. Brooker.
+Jameel Jaffer  argued the cause for respondents. With 
+him on the brief were  Steven R. Shapiro, Alexander A. 
+Abdo, Arthur N. Eisenberg, Christopher T. Dunn,  and 
+Charles S. Sims.* * Richard A. Samp, Megan L. Brown,  and  Claire J. Evans  ﬁled a brief 
+for John D. Ashcroft et al. as  amici curiae  urging reversal.
+Briefs of  amici curiae  urging afﬁrmance were ﬁled for the Canadian 
+Civil Liberties Association et al. by  Carmine D. Boccuzzi  and  Michael R. 
+Lazerwitz ; for the Center for Constitutional Rights et al. by  Shayana 
+Kadidal ; for the Constitutional Accountability Center by  Douglas T. Ken
+dall, Elizabeth B. Wydra,  and  Rochelle Bobroff ; for the Electronic Privacy 
+Information Center et al. by  Marc Rotenberg ; for Former Church Commit
+tee Members and Staff by  Sidney S. Rosdeitcher, Jonathan Hafetz,  and 
+Barbara Moses ; for the Gun Owners Foundation et al. by  William J. 
+Olson, Herbert W. Titus, John S. Miles, Jeremiah L. Morgan,  and  Gary 
+G. Kreep ; for the National Association of Criminal Defense Lawyers by
+
+[Page 4]
+Cite as: 568 U. S. 398 (2013) 
+401 Opinion of the Court
+Justice Alito delivered the opinion of the Court. Section 702 of the Foreign Intelligence Surveillance Act of 1978, 50 U. S. C. § 1881a (2006 ed., Supp. V), allows the Attor ney General and the Director of National Intelligence to ac quire foreign intelligence information by jointly authorizing the surveillance of individuals who are not “United States persons” 1 and are reasonably believed to be located outside the United States. Before doing so, the Attorney General and the Director of National Intelligence normally must ob tain the Foreign Intelligence Surveillance Court’s approval. Respondents are United States persons whose work, they
+allege, requires them to engage in sensitive international communications with individuals who they believe are likely targets of surveillance under § 1881a. Respondents seek a declaration that § 1881a is unconstitutional, as well as an in junction against § 1881a-authorized surveillance. The ques tion before us is whether respondents have Article III stand ing to seek this prospective relief.
+Respondents assert that they can establish injury in fact 
+because there is an objectively reasonable likelihood that 
+their communications will be acquired under § 1881a at some 
+point in the future. But respondents’ theory of  future  in
+jury is too speculative to satisfy the well-established require
+ment that threatened injury must be “certainly impending.” 
+E. g. ,  Whitmore  v.  Arkansas , 495 U. S. 149, 158 (1990). And 
+even if respondents could demonstrate that the threatened 
+injury is certainly impending, they still would not be able John D. Cline  and  Joshua L. Dratel ; and for the Reporters Committee for 
+Freedom of the Press by  Bruce D. Brown  and  Gregg P. Leslie.
+Briefs of  amici curiae  were ﬁled for the Committee on Civil Rights of 
+the Association of the Bar of the City of New York by  Peter T. Barbur 
+and  James G. Felakos ; and for the New York State Bar Association by 
+Seymour W. James, Jr.,  and  Gregory L. Diskant.
+1  The term “United States person” includes citizens of the United States, 
+aliens admitted for permanent residence, and certain associations and cor
+porations. 50 U. S. C. § 1801(i); see § 1881(a).
+
+[Page 5]
+402 
+CLAPPER  v.  AMNESTY INT’L USA
+Opinion of the Court
+to establish that this injury is fairly traceable to § 1881a. 
+As an alternative argument, respondents contend that they 
+are suffering  present  injury because the risk of § 1881a
+authorized surveillance already has forced them to take 
+costly and burdensome measures to protect the conﬁdential
+ity of their international communications. But respondents 
+cannot manufacture standing by choosing to make expendi
+tures based on hypothetical future harm that is not certainly 
+impending. We therefore hold that respondents lack Article 
+III standing.
+I A
+In 1978, after years of debate, Congress enacted the For eign Intelligence Surveillance Act (FISA) to authorize and regulate certain governmental electronic surveillance of communications for foreign intelligence purposes. See 92 Stat. 1783, 50 U. S. C. § 1801 et seq. ; 1 D. Kris & J. Wilson, National Security Investigations & Prosecutions §§ 3.1, 3.7 (2d ed. 2012) (hereinafter Kris & Wilson). In enacting FISA, Congress legislated against the backdrop of our deci sion in United States v. United States Dist. Court for East ern Dist. of Mich. , 407 U. S. 297 (1972) ( Keith ), in which
+we explained that the standards and procedures that law en forcement ofﬁcials must follow when conducting “surveil lance of ‘ordinary crime’ ” might not be required in the con text of surveillance conducted for domestic national-security purposes. Id. , at 322–323. Although the Keith opinion ex pressly disclaimed any ruling “on the scope of the President’s surveillance power with respect to the activities of foreign powers,” id. , at 308, it implicitly suggested that a special framework for foreign intelligence surveillance might be con stitutionally permissible, see id. , at 322–323. In constructing such a framework for foreign intelligence surveillance,
+Congress created two specialized courts. In FISA, Congress authorized judges of the Foreign Intelli
+
+[Page 6]
+Cite as: 568 U. S. 398 (2013) 
+403 Opinion of the Court
+gence Surveillance Court (FISC) to approve electronic sur veillance for foreign intelligence purposes if there is probable cause to believe that “the target of the electronic surveil lance is a foreign power or an agent of a foreign power,” and that each of the speciﬁc “facilities or places at which the electronic surveillance is directed is being used, or is about to be used, by a foreign power or an agent of a foreign power.” § 105(a)(3), 92 Stat. 1790; see §§ 105(b)(1)(A), (b)(1)(B), ibid. ; 1 Kris & Wilson § 7:2, at 194–195; id., § 16:2, at 528–529. Ad
+ditionally, Congress vested the Foreign Intelligence Surveil lance Court of Review with jurisdiction to review any deni als by the FISC of applications for electronic surveillance. § 103(b), 92 Stat. 1788; 1 Kris & Wilson § 5:7, at 151–153.
+In the wake of the September 11th attacks, President George W. Bush authorized the National Security Agency (NSA) to conduct warrantless wiretapping of telephone and e-mail communications where one party to the communica tion was located outside the United States and a participant in “the call was reasonably believed to be a member or agent of al Qaeda or an afﬁliated terrorist organization,” App. to Pet. for Cert. 403a. See id. , at 263a–265a, 268a, 273a–279a, 292a–293a; American Civil Liberties Union v. NSA , 493 F. 3d 644, 648 (CA6 2007) ( ACLU ) (opinion of Batchelder, J.). In January
+2007, the FISC issued orders authorizing the Government to target international communications into or out of the United States where there was probable cause to believe that one participant to the communication was a member or agent of al Qaeda or an associated terrorist orga nization. App. to Pet. for Cert. 312a, 398a, 405a. These FISC orders subjected any electronic surveillance that was then occurring under the NSA’s program to the approval of the FISC. Id. , at 405a; see id. , at 312a, 404a. After a FISC Judge subsequently narrowed the FISC’s authorization of such surveillance, however, the Executive
+asked Congress to amend FISA so that it would provide the intelligence community with additional authority to meet the challenges
+
+[Page 7]
+404 
+CLAPPER  v.  AMNESTY INT’L USA
+Opinion of the Court
+of modern technology and international terrorism. Id. , at 315a–318a, 331a–333a, 398a; see id. , at 262a, 277a–279a, 287a. When Congress enacted the FISA Amendments Act of 2008 (FISA Amendments Act), 122 Stat. 2436, it left much of FISA intact, but it “established a new and independent source of intelligence collection authority, beyond that granted in traditional FISA.” 1 Kris & Wilson § 9:11, at 349–350. As relevant here, § 702 of FISA, 50 U. S. C. § 1881a (2006 ed., Supp. V), which was enacted as part of the FISA Amendments Act, supplements pre-existing FISA authority by creating a
+new framework under which the Government may seek the FISC’s authorization of certain foreign intelli gence surveillance targeting the communications of non-U. S. persons located abroad. Unlike traditional FISA surveil lance, § 1881a does not require the Government to demon strate probable cause that the target of the electronic sur veillance is a foreign power or agent of a foreign power. Compare §§ 1805(a)(2)(A), (a)(2)(B), with §§ 1881a(d)(1), (i)(3)(A); 638 F. 3d 118, 126 (CA2 2011); 1 Kris & Wilson § 16:16, at 584. And, unlike traditional FISA, § 1881a does not require the Government to specify the nature and
+loca tion of each of the particular facilities or places at which the electronic surveillance will occur. Compare §§ 1805(a)(2)(B), (c)(1) (2006 ed. and Supp. V) with §§ 1881a(d)(1), (g)(4), (i)(3)(A); 638 F. 3d, at 125–126; 1 Kris & Wilson § 16:16, at 585. 2 The present case involves a constitutional challenge to § 1881a. Surveillance under § 1881a is subject to statutory conditions, judicial authorization, congressional supervision, and compliance with the Fourth Amendment. Section 1881a provides that, upon the issuance of an order from the FISC, “the Attorney General and the Director of National Intelli gence may authorize jointly,
+for a period of up to 1 year . . . , the targeting of persons reasonably believed to be located 2 Congress recently reauthorized the FISA Amendments Act for another ﬁve years. See 126 Stat. 1631.
+
+[Page 8]
+Cite as: 568 U. S. 398 (2013) 
+405 Opinion of the Court
+outside the United States to acquire foreign intelligence in
+formation.” § 1881a(a). Surveillance under § 1881a may 
+not be intentionally targeted at any person known to be in 
+the United States or any U. S. person reasonably believed 
+to be located abroad. §§ 1881a(b)(1)–(3); see also § 1801(i). 
+Additionally, acquisitions under § 1881a must comport with 
+the Fourth Amendment. § 1881a(b)(5). Moreover, surveil
+lance under § 1881a is subject to congressional oversight and 
+several types of Executive Branch review. See §§1881a(f)(2), 
+( l );  Amnesty Int’l USA  v.  McConnell , 646 F. Supp. 2d 633, 
+640–641 (SDNY 2009).
+Section 1881a mandates that the Government obtain the FISC’s approval of “targeting” procedures, “minimization” procedures, and a governmental certiﬁcation regarding pro posed surveillance. §§ 1881a(a), (c)(1), (i)(2), (i)(3). Among other things, the Government’s certiﬁcation must attest that (1) procedures are in place “that have been approved, have been submitted for approval, or will be submitted with the certiﬁcation for approval by the [FISC] that are reasonably designed” to ensure that an acquisition is “limited to tar geting persons reasonably believed to be located outside” the United States; (2) minimization procedures adequately restrict the acquisition, retention, and dissemination of nonpublic information
+about unconsenting U. S. persons, as appropriate; (3) guidelines have been adopted to ensure compliance with targeting limits and the Fourth Amend ment; and (4) the procedures and guidelines referred to above comport with the Fourth Amendment. § 1881a(g)(2); see § 1801(h).
+The FISC’s role includes determining whether the Gov
+ernment’s certiﬁcation contains the required elements. Ad
+ditionally, the court assesses whether the targeting proce
+dures are “reasonably designed” (1) to “ensure that an 
+acquisition . . . is limited to targeting persons reasonably 
+believed to be located outside the United States” and (2) to 
+“prevent the intentional acquisition of any communication as
+
+[Page 9]
+406 
+CLAPPER  v.  AMNESTY INT’L USA
+Opinion of the Court
+to which the sender and all intended recipients are known 
+. . . to be located in the United States.” § 1881a(i)(2)(B). 
+The court analyzes whether the minimization procedures 
+“meet the deﬁnition of minimization procedures under sec
+tion 1801(h) . . . , as appropriate.” § 1881a(i)(2)(C). The 
+court also assesses whether the targeting and minimization 
+procedures are consistent with the statute and the Fourth 
+Amendment. See § 1881a(i)(3)(A). 3
+B
+Respondents are attorneys and human rights, labor, legal, 
+and media organizations whose work allegedly requires them 
+to engage in sensitive and sometimes privileged telephone 
+and e-mail communications with colleagues, clients, sources, 
+and other individuals located abroad. Respondents believe 
+that some of the people with whom they exchange foreign 
+intelligence information are likely targets of surveillance 
+under § 1881a. Specifically, respondents claim that they 
+communicate by telephone and e-mail with people the Gov
+ernment “believes or believed to be associated with terrorist 
+organizations,” “people located in geographic areas that are 
+a special focus” of the Government’s counterterrorism or dip
+lomatic efforts, and activists who oppose governments that 
+are supported by the United States Government. App. to 
+Pet. for Cert. 399a.
+Respondents claim that § 1881a compromises their ability 
+to locate witnesses, cultivate sources, obtain information, 
+and communicate conﬁdential information to their clients. 
+Respondents also assert that they “have ceased engaging” 
+in certain telephone and e-mail conversations.  Id.,  at 400a.
+3  The dissent attempts to downplay the safeguards established by 
+§ 1881a. See  post,  at 425 (opinion of B reyer , J.). Notably, the dissent 
+does not directly acknowledge that § 1881a surveillance must comport with 
+the Fourth Amendment, see § 1881a(b)(5), and that the FISC must assess 
+whether targeting and minimization procedures are consistent with the 
+Fourth Amendment, see § 1881a(i)(3)(A).
+
+[Page 10]
+Cite as: 568 U. S. 398 (2013) 
+407 Opinion of the Court
+According to respondents, the threat of surveillance will 
+compel them to travel abroad in order to have in-person con
+versations. In addition, respondents declare that they have 
+undertaken “costly and burdensome measures” to protect 
+the conﬁdentiality of sensitive communications.  Ibid.
+C
+On the day when the FISA Amendments Act was enacted, respondents ﬁled this action seeking (1) a declaration that § 1881a, on its face, violates the Fourth Amendment, the First Amendment, Article III, and separation-of-powers principles and (2) a permanent injunction against the use of § 1881a. Respondents assert what they characterize as two separate theories of Article III standing. First, they claim that there is an objectively reasonable likelihood that their communications will be acquired under § 1881a at some point in the future, thus causing them injury. Second, respond ents maintain that the risk of surveillance under §
+1881a is so substantial that they have been forced to take costly and burdensome measures to protect the conﬁdentiality of their international communications; in their view, the costs they have incurred constitute present injury that is fairly trace able to § 1881a.
+After both parties moved for summary judgment, the Dis trict Court held that respondents do not have standing. 646 F. Supp. 2d, at 635. On appeal, however, a panel of the Sec ond Circuit reversed. The panel agreed with respondents’ argument that they have standing due to the objectively rea sonable likelihood that their communications will be inter cepted at some time in the future. 638 F. 3d, at 133, 134, 139. In addition, the panel held that respondents have es tablished that they are suffering “ present injuries in fact— economic and professional harms—stemming from a reason able fear
+of future harmful government conduct.” Id. , at 138. The Second Circuit denied rehearing en banc by an equally divided vote. 667 F. 3d 163 (2011).
+
+[Page 11]
+408 
+CLAPPER  v.  AMNESTY INT’L USA
+Opinion of the Court
+Because of the importance of the issue and the novel view 
+of standing adopted by the Court of Appeals, we granted 
+certiorari, 566 U. S. 1009 (2012), and we now reverse.
+II
+Article III of the Constitution limits federal courts’ juris diction to certain “Cases” and “Controversies.” As we have explained, “[n]o principle is more fundamental to the judici ary’s proper role in our system of government than the con stitutional limitation of federal-court jurisdiction to actual cases or controversies.” DaimlerChrysler Corp. v. Cuno , 547 U. S. 332, 341 (2006) (internal quotation marks omitted); Raines v. Byrd , 521 U. S. 811, 818 (1997) (internal quotation marks omitted); see, e. g. , Summers v. Earth Island Insti tute , 555 U. S. 488, 492–493 (2009). “One element of the case-or-controversy requirement”
+is that plaintiffs “must es tablish that they have standing to sue.” Raines , supra, at 818; see also Summers , supra , at 492–493; DaimlerChrysler Corp. , supra , at 342; Lujan v. Defenders of Wildlife , 504 U. S. 555, 560 (1992).
+The law of Article III standing, which is built on separation-of-powers principles, serves to prevent the judi cial process from being used to usurp the powers of the po litical branches. Summers , supra , at 492–493; Daimler- Chrysler Corp. , supra , at 341–342, 353; Raines , supra , at 818–820; Valley Forge Christian College v. Americans United for Separation of Church and State, Inc. , 454 U. S. 464, 471–474 (1982); Schlesinger v. Reservists Comm. to Stop the War , 418 U. S. 208, 221–222 (1974). In keeping with the purpose of this doctrine, “our standing inquiry has
+been especially rigorous when reaching the merits of the dispute would force us to decide whether an action taken by one of the other two branches of the Federal Govern ment was unconstitutional.” Raines , supra , at 819–820; see Valley Forge Christian College , supra , at 473–474; Schlesinger , supra , at 221–222. “Relaxation of standing re
+
+[Page 12]
+Cite as: 568 U. S. 398 (2013) 
+409 Opinion of the Court
+quirements is directly related to the expansion of judicial power,” United States v. Richardson , 418 U. S. 166, 188 (1974) (Powell, J., concurring); see also Summers , supra , at 492–493; Schlesinger , supra , at 222, and we have often found a lack of standing in cases in which the Judiciary has been requested to review actions of the political branches in the ﬁelds of intelligence gathering and foreign affairs, see, e. g. , Richardson , supra , at 167–170 (plaintiff lacked standing to challenge the constitutionality of a statute permitting the Central Intelligence Agency to account for
+its expenditures solely on the certiﬁcate of the CIA Director); Schlesinger , supra , at 209–211 (plaintiffs lacked standing to challenge the Armed Forces Reserve membership of Members of Congress); Laird v. Tatum , 408 U. S. 1, 11–16 (1972) (plain tiffs lacked standing to challenge an Army intelligence- gathering program).
+To establish Article III standing, an injury must be “con crete, particularized, and actual or imminent; fairly traceable to the challenged action; and redressable by a favorable rul ing.” Monsanto Co. v. Geertson Seed Farms , 561 U. S. 139, 149 (2010); see also Summers , supra , at 493; Defenders of Wildlife , 504 U. S., at 560–561. “Although imminence is concededly a somewhat elastic concept, it cannot be stretched beyond its purpose, which is to ensure that the alleged injury is not too speculative for Article III pur poses—that the injury is certainly impending.” Id. , at 565,
+n. 2 (internal quotation marks omitted). Thus, we have repeatedly reiterated that “threatened injury must be certainly impending to constitute injury in fact,” and that “[a]llegations of possible future injury” are not sufﬁcient. Whitmore , 495 U. S., at 158 (emphasis added; internal quota tion marks omitted); see also Defenders of Wildlife , supra , at 565, n. 2, 567, n. 3; see DaimlerChrysler Corp. , supra , at 345; Friends of the Earth, Inc. v. Laidlaw Environmental Services (TOC), Inc. , 528 U. S. 167, 190 (2000); Babbitt v. Farm Workers , 442 U. S. 289, 298 (1979).
+
+[Page 13]
+410 
+CLAPPER  v.  AMNESTY INT’L USA
+Opinion of the Court III A
+Respondents assert that they can establish injury in fact that is fairly traceable to § 1881a because there is an objec tively reasonable likelihood that their communications with their foreign contacts will be intercepted under § 1881a at some point in the future. This argument fails. As an initial matter, the Second Circuit’s “objectively reasonable likeli hood” standard is inconsistent with our requirement that “threatened injury must be certainly impending to constitute injury in fact.” Whitmore , supra , at 158 (internal quotation marks omitted); see also DaimlerChrysler Corp. , supra , at 345; Laidlaw , supra , at 190;
+Defenders of Wildlife , supra , at 565, n. 2; Babbitt , supra , at 298. Furthermore, respondents’ argument rests on their highly speculative fear that: (1) the Government will decide to target the communications of non- U. S. persons with whom they communicate; (2) in doing so, the Government will choose to invoke its authority under § 1881a rather than utilizing another method of surveillance; (3) the Article III judges who serve on the FISC will con clude that the Government’s proposed surveillance proce dures satisfy § 1881a’s many safeguards and are consistent with the Fourth Amendment; (4) the
+Government will suc ceed in intercepting the communications of respondents’ con tacts; and (5) respondents will be parties to the particular communications that the Government intercepts. As dis cussed below, respondents’ theory of standing, which relies on a highly attenuated chain of possibilities, does not satisfy the requirement that threatened injury must be certainly impending. See Summers , supra , at 496 (rejecting a stand ing theory premised on a speculative chain of possibilities); Whitmore , supra , at 157–160 (same). Moreover, even if respondents could demonstrate injury in fact, the second link in the above-described chain of contingencies—which amounts
+to mere speculation about whether surveillance
+
+[Page 14]
+Cite as: 568 U. S. 398 (2013) 
+411 Opinion of the Court
+would be under § 1881a or some other authority—shows that 
+respondents cannot satisfy the requirement that any injury 
+in fact must be fairly traceable to § 1881a.
+First, it is speculative whether the Government will immi nently target communications to which respondents are par ties. Section 1881a expressly provides that respondents, who are U. S. persons, cannot be targeted for surveillance under § 1881a. See §§ 1881a(b)(1)–(3); 667 F. 3d, at 173 (Raggi, J., dissenting from denial of rehearing en banc). Ac cordingly, it is no surprise that respondents fail to offer any evidence that their communications have been monitored under § 1881a, a failure that substantially undermines their standing theory. See ACLU , 493 F. 3d, at 655–656, 673–674 (opinion of Batchelder, J.) (concluding that plaintiffs
+who lacked evidence that their communications had been inter cepted did not have standing to challenge alleged NSA sur veillance). Indeed, respondents do not even allege that the Government has sought the FISC’s approval for surveillance of their communications. Accordingly, respondents’ theory necessarily rests on their assertion that the Government will target other individuals —namely, their foreign contacts.
+Yet respondents have no actual knowledge of the Govern ment’s § 1881a targeting practices. Instead, respondents merely speculate and make assumptions about whether their communications with their foreign contacts will be acquired under § 1881a. See 667 F. 3d, at 185–187 (opinion of Raggi, J.). For example, journalist Christopher Hedges states: “I have no choice but to assume that any of my international commu nications may be subject to government surveillance, and I have to make decisions . . . in light of that assumption .” App. to Pet. for Cert. 366a (emphasis added and deleted). Similarly, attorney Scott McKay
+asserts that, “[b]ecause of the [FISA Amendments Act], we now have to assume that every one of our international communications may be moni tored by the government.” Id. , at 375a (emphasis added); see also id. , at 337a, 343a–344a, 350a, 356a. “The party in
+
+[Page 15]
+412 
+CLAPPER  v.  AMNESTY INT’L USA
+Opinion of the Court
+voking federal jurisdiction bears the burden of establishing” standing—and, at the summary judgment stage, such a party “can no longer rest on . . . ‘mere allegations,’ but must ‘set forth’ by afﬁdavit or other evidence ‘speciﬁc facts.’ ” De fenders of Wildlife , 504 U. S., at 561. Respondents, how ever, have set forth no speciﬁc facts demonstrating that the communications of their foreign contacts will be targeted. Moreover, because § 1881a at most authorizes —but does not mandate or direct —the surveillance that respondents fear, respondents’ allegations are necessarily conjectural. See United Presbyterian Church in U. S. A.
+v. Reagan , 738 F. 2d 1375, 1380 (CADC 1984) (Scalia, J.); 667 F. 3d, at 187 (opinion of Raggi, J.). Simply put, respondents can only speculate as to how the Attorney General and the Director of National Intelligence will exercise their discretion in determining which communications to target. 4 Second, even if respondents could demonstrate that the targeting of their foreign contacts is imminent, respondents can only speculate as to whether the Government will seek to use § 1881a-authorized surveillance (rather than other methods) to do so. The Government has numerous other 4 It was suggested at oral argument
+that the Government could help resolve the standing inquiry by disclosing to a court, perhaps through an in camera proceeding, (1) whether it is intercepting respondents’ commu nications and (2) what targeting or minimization procedures it is using. See Tr. of Oral Arg. 13–14, 44, 56. This suggestion is puzzling. As an initial matter, it is respondents’ burden to prove their standing by pointing to speciﬁc facts, Lujan v. Defenders of Wildlife , 504 U. S. 555, 561 (1992), not the Government’s burden to disprove standing by revealing details of its surveillance priorities. Moreover, this type of hypothetical disclosure proceeding
+would allow a terrorist (or his attorney) to determine whether he is currently under U. S. surveillance simply by ﬁling a lawsuit challeng ing the Government’s surveillance program. Even if the terrorist’s attor ney were to comply with a protective order prohibiting him from sharing the Government’s disclosures with his client, the court’s postdisclosure de cision about whether to dismiss the suit for lack of standing would surely signal to the terrorist whether his name was on the list of surveillance targets.
+
+[Page 16]
+Cite as: 568 U. S. 398 (2013) 
+413 Opinion of the Court
+methods of conducting surveillance, none of which is chal lenged here. Even after the enactment of the FISA Amend ments Act, for example, the Government may still conduct electronic surveillance of persons abroad under the older pro visions of FISA so long as it satisﬁes the applicable require ments, including a demonstration of probable cause to be lieve that the person is a foreign power or agent of a foreign power. See § 1805. The Government may also obtain infor mation from the intelligence services of foreign nations. Brief for Petitioners 33. And, although we do not reach the question,
+the Government contends that it can conduct FISA-exempt human and technical surveillance programs that are governed by Executive Order 12333. See Exec. Order No. 12333, §§ 1.4, 2.1–2.5, 3 CFR 202, 210–212 (1981), reprinted as amended, note following 50 U. S. C. § 401, pp. 543, 547–548. Even if respondents could demonstrate that their foreign contacts will imminently be targeted— indeed, even if they could show that interception of their own communications will imminently occur—they would still need to show that their injury is fairly traceable to § 1881a. But, because respondents can only speculate as to whether any (asserted)
+interception would be under § 1881a or some other authority, they cannot satisfy the “fairly traceable” requirement.
+Third, even if respondents could show that the Govern
+ment will seek the FISC’s authorization to acquire the com
+munications of respondents’ foreign contacts under § 1881a, 
+respondents can only speculate as to whether that court will 
+authorize such surveillance. In the past, we have been re
+luctant to endorse standing theories that require guesswork 
+as to how independent decisionmakers will exercise their 
+judgment. In  Whitmore , for example, the plaintiff ’s theory 
+of standing hinged largely on the probability that he would 
+obtain federal habeas relief and be convicted upon retrial. 
+In holding that the plaintiff lacked standing, we explained 
+that “[i]t is just not possible for a litigant to prove in advance
+
+[Page 17]
+414 
+CLAPPER  v.  AMNESTY INT’L USA
+Opinion of the Court
+that the judicial system will lead to any particular result in 
+his case.” 495 U. S., at 159–160; see  Defenders of Wildlife , 
+supra , at 562.
+We decline to abandon our usual reluctance to endorse standing theories that rest on speculation about the de cisions of independent actors. Section 1881a mandates that the Government must obtain the FISC’s approval of targeting procedures, minimization procedures, and a gov ernmental certification regarding proposed surveillance. §§ 1881a(a), (c)(1), (i)(2), (i)(3). The court must, for example, determine whether the Government’s procedures are “rea sonably designed . . . to minimize the acquisition and re tention, and prohibit the dissemination, of nonpublicly avail able information concerning unconsenting United States persons.” § 1801(h); see §§ 1881a(i)(2), (i)(3)(A). And, criti cally, the court
+must also assess whether the Government’s targeting and minimization procedures comport with the Fourth Amendment. § 1881a(i)(3)(A).
+Fourth, even if the Government were to obtain the FISC’s 
+approval to target respondents’ foreign contacts under 
+§ 1881a, it is unclear whether the Government would succeed 
+in acquiring the communications of respondents’ foreign con
+tacts. And ﬁfth, even if the Government were to conduct 
+surveillance of respondents’ foreign contacts, respondents 
+can only speculate as to whether  their own communications 
+with their foreign contacts would be incidentally acquired.
+In sum, respondents’ speculative chain of possibilities does not establish that injury based on potential future surveil lance is certainly impending or is fairly traceable to § 1881a. 5 5 Our cases do not uniformly require plaintiffs to demonstrate that it is literally certain that the harms they identify will come about. In some instances, we have found standing based on a “substantial risk” that the harm will occur, which may prompt plaintiffs to reasonably incur costs to mitigate or avoid that harm. Monsanto Co. v. Geertson Seed Farms , 561 U. S. 139, 153 (2010). See also Pennell v.
+San Jose , 485 U. S. 1, 8 (1988); Blum v. Yaretsky , 457 U. S. 991, 1000–1001 (1982); Babbitt v. Farm Work ers , 442 U. S. 289, 298 (1979). But to the extent that the “substantial risk” standard is relevant and is distinct from the “certainly impending”
+
+[Page 18]
+Cite as: 568 U. S. 398 (2013) 
+415 Opinion of the Court B
+Respondents’ alternative argument—namely, that they can establish standing based on the measures that they have undertaken to avoid § 1881a-authorized surveillance—fares no better. Respondents assert that they are suffering ongo ing injuries that are fairly traceable to § 1881a because the risk of surveillance under § 1881a requires them to take costly and burdensome measures to protect the conﬁdential ity of their communications. Respondents claim, for in stance, that the threat of surveillance sometimes compels them to avoid certain e-mail and phone conversations, to “tal[k] in generalities rather than speciﬁcs,” or to travel so that they can have in-person conversations.
+Tr. of Oral Arg. 38; App. to Pet. for Cert. 338a, 345a, 367a, 400a. 6 The Sec ond Circuit panel concluded that, because respondents are already suffering such ongoing injuries, the likelihood of in terception under § 1881a is relevant only to the question whether respondents’ ongoing injuries are “fairly traceable” to § 1881a. See 638 F. 3d, at 133–134; 667 F. 3d, at 180 (opin ion of Raggi, J.). Analyzing the “fairly traceable” element of standing under a relaxed reasonableness standard, see 638 F. 3d, at 133–134, the Second Circuit then held that “plaintiffs requirement, respondents fall short of
+even that standard, in light of the attenuated chain of inferences necessary to ﬁnd harm here. See supra, at 411–414. In addition, plaintiffs bear the burden of pleading and proving concrete facts showing that the defendant’s actual action has caused the substantial risk of harm. Plaintiffs cannot rely on speculation about “ ‘the unfettered choices made by independent actors not before the courts.’ ” Defenders of Wildlife , 504 U. S., at 562.
+6  For all the focus on respondents’ supposed need to travel abroad in 
+light of potential § 1881a surveillance, respondents cite only one speciﬁc 
+instance of travel: an attorney’s trip to New York City to meet with other 
+lawyers. See App. to Pet. for Cert. 352a. This domestic travel had but 
+a tenuous connection to § 1881a, because § 1881a-authorized acquisitions 
+“may not intentionally target any person known at the time of acquisition 
+to be located in the United States.” § 1881a(b)(1); see also 667 F. 3d 163, 
+202 (CA2 2011) (Jacobs, C. J., dissenting from denial of rehearing en banc); 
+id. , at 185 (opinion of Raggi, J. (same)).
+
+[Page 19]
+416 
+CLAPPER  v.  AMNESTY INT’L USA
+Opinion of the Court
+have established that they suffered  present  injuries in fact— 
+economic and professional harms—stemming from a reason
+able fear of  future  harmful government conduct,”  id. , at 138.
+The Second Circuit’s analysis improperly allowed respond ents to establish standing by asserting that they suffer pres ent costs and burdens that are based on a fear of surveil lance, so long as that fear is not “fanciful, paranoid, or otherwise unreasonable.” See id. , at 134. This improperly waters down the fundamental requirements of Article III. Respondents’ contention that they have standing because they incurred certain costs as a reasonable reaction to a risk of harm is unavailing—because the harm respondents seek to avoid is not certainly impending. In other words, re spondents cannot manufacture standing merely by inﬂicting
+harm on themselves based on their fears of hypothetical fu ture harm that is not certainly impending. See Pennsylva nia v. New Jersey , 426 U. S. 660, 664 (1976) ( per curiam ); National Family Planning & Reproductive Health Assn. , Inc . v. Gonzales , 468 F. 3d 826, 831 (CADC 2006). Any ongo ing injuries that respondents are suffering are not fairly traceable to § 1881a.
+If the law were otherwise, an enterprising plaintiff would be able to secure a lower standard for Article III standing simply by making an expenditure based on a nonparanoid fear. As Judge Raggi accurately noted, under the Second Circuit panel’s reasoning, respondents could, “for the price of a plane ticket, . . . transform their standing burden from one requiring a showing of actual or imminent . . . intercep tion to one requiring a showing that their subjective fear of such interception is not fanciful, irrational, or clearly unrea sonable.” 667 F. 3d, at 180 (internal quotation marks omit
+ted). Thus, allowing respondents to bring this action based on costs they incurred in response to a speculative threat would be tantamount to accepting a repackaged version of respondents’ ﬁrst failed theory of standing. See ACLU , 493 F. 3d, at 656–657 (opinion of Batchelder, J.).
+
+[Page 20]
+Cite as: 568 U. S. 398 (2013) 
+417 Opinion of the Court
+Another reason that respondents’ present injuries are not fairly traceable to § 1881a is that even before § 1881a was enacted, they had a similar incentive to engage in many of the countermeasures that they are now taking. See id., at 668–670. For instance, respondent Scott McKay’s decla ration describes—and the dissent heavily relies on—McKay’s “knowledge” that thousands of communications involving one of his clients were monitored in the past. App. to Pet. for Cert. 370a; post, at 425–426, 429. But this surveillance was conducted pursuant to FISA authority that predated § 1881a. See Brief for Petitioners 32, n. 11;
+Al-Kidd v. Gonzales , No. 05–cv–93, 2008 WL 5123009 (D Idaho, Dec. 4, 2008). Thus, because the Government was allegedly conducting surveil lance of McKay’s client before Congress enacted § 1881a, it is difﬁcult to see how the safeguards that McKay now claims to have implemented can be traced to § 1881a.
+Because respondents do not face a threat of certainly im pending interception under § 1881a, the costs that they have incurred to avoid surveillance are simply the product of their fear of surveillance, 7 and our decision in Laird makes it clear that such a fear is insufﬁcient to create standing. See 408 U. S., at 10–15. The plaintiffs in Laird argued that their exercise of First Amendment rights was being “chilled by the mere existence, without more, of [the Army’s] investiga tive and data-gathering activity.” Id. , at 10. While ac knowledging that prior cases had held that constitutional
+vi olations may arise from the chilling effect of “regulations that fall short of a direct prohibition against the exercise of 7 Although respondents’ alternative theory of standing rests primarily on choices that they have made based on their subjective fear of surveil lance, respondents also assert that third parties might be disinclined to speak with them due to a fear of surveillance. See App. to Pet. for Cert. 372a–373a, 352a–353a. To the extent that such assertions are based on anything other than conjecture, see Defenders of Wildlife , 504 U. S., at 560, they do not establish injury that
+is fairly traceable to § 1881a, because they are based on third parties’ subjective fear of surveillance, see Laird v. Tatum , 408 U. S. 1, 10–14 (1972).
+
+[Page 21]
+418 
+CLAPPER  v.  AMNESTY INT’L USA
+Opinion of the Court
+First Amendment rights,” the Court declared that none of those cases involved a “chilling effect aris[ing] merely from the individual’s knowledge that a governmental agency was engaged in certain activities or from the individual’s concom itant fear that, armed with the fruits of those activities, the agency might in the future take some other and additional action detrimental to that individual.” Id. , at 11. Because “[a]llegations of a subjective ‘chill’ are not an adequate sub stitute for a claim of speciﬁc present objective harm or a threat of speciﬁc future harm,” id. , at 13–14, the plaintiffs in Laird
+—and respondents here—lack standing. See ibid. ; ACLU , supra , at 661–662 (opinion of Batchelder, J.) (holding that plaintiffs lacked standing because they “allege[d] only a subjective apprehension” of alleged NSA surveillance and “a personal (self-imposed) unwillingness to communicate”); United Presbyterian Church , 738 F. 2d, at 1378 (holding that plaintiffs lacked standing to challenge the legality of an Ex ecutive Order relating to surveillance because “the ‘chilling effect’ which is produced by their fear of being subjected to illegal surveillance and which deters them from conducting constitutionally protected activities, is foreclosed as a basis for standing” by Laird
+).
+For the reasons discussed above, respondents’ self-inﬂicted 
+injuries are not fairly traceable to the Government’s pur
+ported activities under § 1881a, and their subjective fear of 
+surveillance does not give rise to standing.
+IV A
+Respondents incorrectly maintain that “[t]he kinds of inju
+ries incurred here—injuries incurred because of [respond
+ents’] reasonable efforts to avoid greater injuries that are 
+otherwise likely to ﬂow from the conduct they challenge— 
+are the same kinds of injuries that this Court held to support 
+standing in cases such as”  Laidlaw, Meese  v.  Keene , 481 U. S.
+
+[Page 22]
+Cite as: 568 U. S. 398 (2013) 
+419 Opinion of the Court
+465 (1987), and  Monsanto.  Brief for Respondents 24. As 
+an initial matter, none of these cases holds or even suggests 
+that plaintiffs can establish standing simply by claiming that 
+they experienced a “chilling effect” that resulted from a gov
+ernmental policy that does not regulate, constrain, or compel 
+any action on their part. Moreover, each of these cases was 
+very different from the present case.
+In Laidlaw , plaintiffs’ standing was based on “the proposi tion that a company’s continuous and pervasive illegal dis charges of pollutants into a river would cause nearby resi dents to curtail their recreational use of that waterway and would subject them to other economic and aesthetic harms.” 528 U. S., at 184. Because the unlawful discharges of pollut ants were “concededly ongoing,” the only issue was whether “nearby residents”—who were members of the organiza tional plaintiffs—acted reasonably in refraining from using the polluted area. Id. , at 183–184. Laidlaw is therefore quite unlike the present case, in which it
+is not “concede[d]” that respondents would be subject to unlawful surveillance but for their decision to take preventive measures. See ACLU , 493 F. 3d, at 686 (opinion of Batchelder, J.) (distin guishing Laidlaw on this ground); id. , at 689–690 (Gibbons, J., concurring) (same); 667 F. 3d, at 182–183 (opinion of Raggi, J.) (same). Laidlaw would resemble this case only if (1) it were undisputed that the Government was using § 1881a authorized surveillance to acquire respondents’ communica tions and (2) the sole dispute concerned the reasonableness of respondents’ preventive measures.
+In  Keene , the plaintiff challenged the constitutionality of 
+the Government’s decision to label three ﬁlms as “political 
+propaganda.” 481 U. S., at 467. The Court held that the 
+plaintiff, who was an attorney and a state legislator, had 
+standing because he demonstrated, through “detailed afﬁda
+vits,” that he “could not exhibit the ﬁlms without incurring 
+a risk of injury to his reputation and of an impairment of his
+
+[Page 23]
+420 
+CLAPPER  v.  AMNESTY INT’L USA
+Opinion of the Court
+political career.”  Id.,  at 467, 473–475. Unlike the present 
+case,  Keene  involved “more than a ‘subjective chill’ ” based 
+on speculation about potential governmental action; the 
+plaintiff in that case was unquestionably regulated by the 
+relevant statute, and the ﬁlms that he wished to exhibit had 
+already been labeled as “political propaganda.” See  ibid. ; 
+ACLU , 493 F. 3d, at 663–664 (opinion of Batchelder, J.);  id. , 
+at 691 (Gibbons, J., concurring).
+Monsanto , on which respondents also rely, is likewise in- apposite. In Monsanto , conventional alfalfa farmers had standing to seek injunctive relief because the agency’s decision to deregulate a variety of genetically engineered alfalfa gave rise to a “signiﬁcant risk of gene ﬂow to non-genetically-engineered varieties of alfalfa.” 561 U. S., at 155. The standing analysis in that case hinged on evi dence that genetically engineered alfalfa “ ‘seed ﬁelds [we]re currently being planted in all the major alfalfa seed produc tion areas’ ”; the bees that pollinate alfalfa “ ‘have a range of at least two to ten
+miles’ ”; and the alfalfa seed farms were concentrated in an area well within the bees’ pollination range. Id. , at 154, and n. 3. Unlike the conventional alfalfa farmers in Monsanto , however, respondents in the present case present no concrete evidence to substantiate their fears, but instead rest on mere conjecture about possible govern mental actions.
+B
+Respondents also suggest that they should be held to have 
+standing because otherwise the constitutionality of § 1881a 
+could not be challenged. It would be wrong, they maintain, 
+to “insulate the government’s surveillance activities from 
+meaningful judicial review.” Brief for Respondents 60. 
+Respondents’ suggestion is both legally and factually incor
+rect. First, “ ‘[t]he assumption that if respondents have no 
+standing to sue, no one would have standing, is not a reason 
+to ﬁnd standing.’ ”  Valley Forge Christian College , 454 
+U. S., at 489;  Schlesinger , 418 U. S., at 227; see also  Richard
+
+[Page 24]
+Cite as: 568 U. S. 398 (2013) 
+421 Opinion of the Court
+son , 418 U. S., at 179;  Raines , 521 U. S., at 835 (Souter, J., 
+joined by G insburg , J., concurring in judgment). Second, our holding today by no means insulates § 1881a 
+from judicial review. As described above, Congress created 
+a comprehensive scheme in which the FISC evaluates the 
+Government’s certiﬁcations, targeting procedures, and mini
+mization procedures—including assessing whether the tar
+geting and minimization procedures comport with the 
+Fourth Amendment. §§ 1881a(a), (c)(1), (i)(2), (i)(3). Any 
+dissatisfaction that respondents may have about the FISC’s 
+rulings—or the congressional delineation of that court’s 
+role—is irrelevant to our standing analysis.
+Additionally, if the Government intends to use or disclose information obtained or derived from a § 1881a acquisition in judicial or administrative proceedings, it must provide advance notice of its intent, and the affected person may challenge the lawfulness of the acquisition. §§ 1806(c), (e), 1881e(a) (2006 ed. and Supp. V). 8 Thus, if the Government were to prosecute one of respondent-attorney’s foreign cli ents using § 1881a-authorized surveillance, the Government would be required to make a disclosure. Although the for eign client might not have a viable Fourth Amendment claim, see, e. g. , United States v. Verdugo-Urquidez ,
+494 U. S. 259, 261 (1990), it is possible that the monitoring of the tar get’s conversations with his or her attorney would provide grounds for a claim of standing on the part of the attorney. Such an attorney would certainly have a stronger eviden tiary basis for establishing standing than do respondents in the present case. In such a situation, unlike in the pres 8 The possibility of judicial review in this context is not farfetched. In United States v. Damrah , 412 F. 3d 618 (CA6 2005), for example, the Gov ernment made a pretrial disclosure that it
+intended to use FISA evidence in a prosecution; the defendant (unsuccessfully) moved to suppress the FISA evidence, even though he had not been the target of the surveillance; and the Sixth Circuit ultimately held that FISA’s procedures are consist ent with the Fourth Amendment. See id. , at 622, 623, 625.
+
+[Page 25]
+422 
+CLAPPER  v.  AMNESTY INT’L USA
+Breyer, J. , dissenting
+ent case, it would at least be clear that the Government 
+had acquired the foreign client’s communications using 
+§ 1881a-authorized surveillance. Finally, any electronic communications service provider 
+that the Government directs to assist in § 1881a surveillance 
+may challenge the lawfulness of that directive before the 
+FISC. §§ 1881a(h)(4), (h)(6). Indeed, at the behest of a 
+service provider, the Foreign Intelligence Surveillance Court 
+of Review previously analyzed the constitutionality of elec
+tronic surveillance directives issued pursuant to a now-
+expired set of FISA amendments. See  In re Directives 
+Pursuant to Section 105B of Foreign Intelligence Surveil
+lance Act , 551 F. 3d 1004, 1006–1016 (2008) (holding that 
+the provider had standing and that the directives were 
+constitutional).
+We hold that respondents lack Article III standing because 
+they cannot demonstrate that the future injury they purport
+edly fear is certainly impending and because they cannot 
+manufacture standing by incurring costs in anticipation of 
+nonimminent harm. We therefore reverse the judgment of 
+the Second Circuit and remand the case for further proceed
+ings consistent with this opinion.
+It is so ordered.
+Justice Breyer , with whom  Justice Ginsburg, Jus
+tice Sotomayor,  and  Justice Kagan  join, dissenting. The plaintiffs’ standing depends upon the likelihood that 
+the Government, acting under the authority of 50 U. S. C. 
+§ 1881a (2006 ed., Supp. V), will harm them by intercepting 
+at least some of their private, foreign, telephone, or e-mail 
+conversations. In my view, this harm is not “speculative.” 
+Indeed it is as likely to take place as are most future events 
+that commonsense inference and ordinary knowledge of 
+human nature tell us will happen. This Court has often 
+found the occurrence of similar future events sufﬁciently cer
+
+[Page 26]
+Cite as: 568 U. S. 398 (2013) 
+423 Breyer, J. , dissenting
+tain to support standing. I dissent from the Court’s con
+trary conclusion.
+I
+Article III speciﬁes that the “judicial Power” of the United States extends only to actual “Cases” and “Controversies.” § 2. It thereby helps to ensure that the legal questions pre sented to the federal courts will not take the form of abstract intellectual problems resolved in the “rariﬁed atmosphere of a debating society” but instead those questions will be pre sented “in a concrete factual context conducive to a realistic appreciation of the consequences of judicial action.” Valley Forge Christian College v. Americans United for Separa tion of Church and State, Inc. , 454 U. S. 464, 472 (1982) (pur
+pose of Article III); Lujan v. Defenders of Wildlife , 504 U. S. 555, 560 (1992) (similar); Babbitt v. Farm Workers , 442 U. S. 289, 297 (1979) (similar).
+The Court has recognized that the precise boundaries of the “case or controversy” requirement are matters of “de gree . . . not discernible by any precise test.” Ibid. At the same time, the Court has developed a subsidiary set of legal rules that help to determine when the Constitution’s require ment is met. See Lujan , 504 U. S., at 560–561; id., at 583 (Stevens, J., concurring in judgment). Thus, a plaintiff must have “standing” to bring a legal claim. And a plaintiff has that standing, the Court has said, only if the action or omis sion that the
+plaintiff challenges has caused, or will cause, the plaintiff to suffer an injury that is “concrete and particu larized,” “actual or imminent,” and “redress[able] by a favor able decision.” Id. , at 560–561 (internal quotation marks omitted).
+No one here denies that the Government’s interception of 
+a private telephone or e-mail conversation amounts to an in
+jury that is “concrete and particularized.” Moreover, the 
+plaintiffs, respondents here, seek as relief a judgment declar
+ing unconstitutional (and enjoining enforcement of) a statu
+tory provision authorizing those interceptions; and, such a
+
+[Page 27]
+424 
+CLAPPER  v.  AMNESTY INT’L USA
+Breyer, J. , dissenting
+judgment would redress the injury by preventing it. Thus, 
+the basic question is whether the injury,  i. e.,  the intercep
+tion, is “actual or imminent.”
+II A
+Since the plaintiffs fear interceptions of a kind authorized by § 1881a, it is important to understand just what kind of surveillance that section authorizes. Congress enacted § 1881a in 2008, as an amendment to the pre-existing Foreign Intelligence Surveillance Act of 1978, 50 U. S. C. § 1801 et seq . Before the amendment, the Act authorized the Government (acting within the United States) to monitor private elec tronic communications between the United States and a for eign country if (1) the Government’s purpose was, in signiﬁ cant part, to obtain foreign intelligence information (which includes information concerning a
+“foreign power” or “terri tory” related to our “national defense” or “security” or the “conduct of . . . foreign affairs”), (2) the Government’s sur veillance target was “a foreign power or an agent of a foreign power,” and (3) the Government used surveillance proce dures designed to “minimize the acquisition and retention, and prohibit the dissemination, of” any private information acquired about Americans. §§ 1801(e), (h), 1804(a).
+In addition, the Government had to obtain the approval of 
+the Foreign Intelligence Surveillance Court. To do so, it 
+had to submit an application describing (1) each “speciﬁc tar
+get,” (2) the “nature of the information sought,” and (3) the 
+“type of communications or activities to be subjected to 
+the surveillance.” § 1804(a). It had to certify that, in sig
+niﬁcant part, it sought to obtain foreign intelligence in
+formation.  Ibid.  It had to demonstrate probable cause to 
+believe that each speciﬁc target was “a foreign power or 
+an agent of a foreign power.” §§ 1804(a), 1805(a). It also 
+had to describe instance-speciﬁc procedures to be used to 
+minimize intrusions upon Americans’ privacy (compliance
+
+[Page 28]
+Cite as: 568 U. S. 398 (2013) 
+425 Breyer, J. , dissenting
+with which the court subsequently could assess). §§ 1804(a), 1805(d)(3). The addition of § 1881a in 2008 changed this prior law in three important ways. First, it eliminated the requirement that the Government describe to the court each speciﬁc tar get and identify each facility at which its surveillance would be directed, thus permitting surveillance on a programmatic, not necessarily individualized, basis. § 1881a(g). Second, it eliminated the requirement that a target be a “foreign power or an agent of a foreign power.” Ibid . Third, it diminished the court’s authority to insist upon, and eliminated its au thority to
+supervise, instance-speciﬁc privacy-intrusion mini mization procedures (though the Government still must use court-approved general minimization procedures). § 1881a(e). Thus, using the authority of § 1881a, the Govern ment can obtain court approval for its surveillance of elec tronic communications between places within the United States and targets in foreign territories by showing the court (1) that “a signiﬁcant purpose of the acquisition is to obtain foreign intelligence information,” and (2) that it will use general targeting and privacy-intrusion minimization procedures of a kind that the court had previously ap proved. § 1881a(g).
+B
+It is similarly important to understand the kinds of com
+munications in which the plaintiffs say they engage and 
+which they believe the Government will intercept. Plaintiff 
+Scott McKay, for example, says in an afﬁdavit (1) that he 
+is a lawyer; (2) that he represented “Mr. Sami Omar Al-
+Hussayen, who was acquitted in June 2004 on terrorism 
+charges”; (3) that he continues to represent “Mr. Al-
+Hussayen, who, in addition to facing criminal charges after 
+September 11, was named as a defendant in several civil 
+cases”; (4) that he represents Khalid Sheik Mohammed, a 
+detainee, “before the Military Commissions at Guantánamo 
+Bay, Cuba”; (5) that in representing these clients he “commu
+
+[Page 29]
+426 
+CLAPPER  v.  AMNESTY INT’L USA
+Breyer, J. , dissenting
+nicate[s] by telephone and email with people outside the 
+United States, including Mr. Al-Hussayen himself,” “experts, 
+investigators, attorneys, family members . . . and others who 
+are located abroad”; and (6) that prior to 2008 “the U. S. 
+government had intercepted some 10,000 telephone calls 
+and 20,000 email communications involving [his client] Al-
+Hussayen.” App. to Pet. for Cert. 369a–371a.
+Another plaintiff, Sylvia Royce, says in her afﬁdavit (1) 
+that she is an attorney; (2) that she “represent[s] Moham
+medou Ould Salahi, a prisoner who has been held at Guantá
+namo Bay as an enemy combatant”; (3) that, “[i]n connection 
+with [her] representation of Mr. Salahi, [she] receive[s] calls 
+from time to time from Mr. Salahi’s brother, . . . a university 
+student in Germany”; and (4) that she has been told that the 
+Government has threatened Salahi “that his family members 
+would be arrested and mistreated if he did not cooperate.” 
+Id ., at 349a–351a.
+The plaintiffs have noted that McKay no longer represents 
+Mohammed and Royce no longer represents Ould Salahi. 
+Brief for Respondents 15, n. 11. But these changes are ir
+relevant, for we assess standing as of the time a suit is ﬁled, 
+see  Davis  v.  Federal Election Comm’n , 554 U. S. 724, 734 
+(2008), and in any event McKay himself continues to repre
+sent Al Hussayen, his partner now represents Mohammed, 
+and Royce continues to represent individuals held in the cus
+tody of the U. S. military overseas.
+A third plaintiff, Joanne Mariner, says in her afﬁdavit (1) 
+that she is a human rights researcher; (2) that “some of the 
+work [she] do[es] involves trying to track down people who 
+were rendered by the CIA to countries in which they were 
+tortured”; (3) that many of those people “the CIA has said 
+are (or were) associated with terrorist organizations”; and (4) 
+that, to do this research, she “communicate[s] by telephone 
+and e-mail with . . . former detainees, lawyers for detainees, 
+relatives of detainees, political activists, journalists, and 
+ﬁxers” “all over the world, including in Jordan, Egypt, Paki
+
+[Page 30]
+Cite as: 568 U. S. 398 (2013) 
+427 Breyer, J. , dissenting
+stan, Afghanistan, [and] the Gaza Strip.” App. to Pet. for 
+Cert. 343a–344a. Other plaintiffs, including lawyers, journalists, and human 
+rights researchers, say in afﬁdavits (1) that they have jobs 
+that require them to gather information from foreigners lo
+cated abroad; (2) that they regularly communicate electroni
+cally ( e. g. , by telephone or e-mail) with foreigners located 
+abroad; and (3) that in these communications they exchange 
+“foreign intelligence information” as the Act deﬁnes it.  Id ., 
+at 334a–375a.
+III
+Several considerations, based upon the record along with commonsense inferences, convince me that there is a very high likelihood that the Government, acting under the au thority of § 1881a , will intercept at least some of the commu nications just described. First, the plaintiffs have engaged, and continue to engage, in electronic communications of a kind that the 2008 amendment, but not the prior Act, author izes the Government to intercept. These communications include discussions with family members of those detained at Guantanamo, friends and acquaintances of those persons, and investigators, experts, and others with knowledge of cir cumstances
+related to terrorist activities. These persons are foreigners located outside the United States. They are not “foreign power[s]” or “agent[s] of . . . foreign power[s].” And the plaintiffs state that they exchange with these per sons “foreign intelligence information,” deﬁned to include in formation that “relates to” “international terrorism” and “the national defense or the security of the United States.” See 50 U. S. C. § 1801 (2006 ed. and Supp. V); see, e. g., App. to Pet. for Cert. 342a, 366a, 373a–374a.
+Second, the plaintiffs have a strong  motive  to engage in, 
+and the Government has a strong  motive  to listen to, conver
+sations of the kind described. A lawyer representing a cli
+ent normally seeks to learn the circumstances surrounding 
+the crime (or the civil wrong) of which the client is accused.
+
+[Page 31]
+428 
+CLAPPER  v.  AMNESTY INT’L USA
+Breyer, J. , dissenting
+A fair reading of the afﬁdavit of Scott McKay, for example, taken together with elementary considerations of a lawyer’s obligation to his client, indicates that McKay will engage in conversations that concern what suspected foreign terror ists, such as his client, have done; in conversations that con cern his clients’ families, colleagues, and contacts; in conver sations that concern what those persons (or those connected to them) have said and done, at least in relation to terrorist activities; in conversations that concern the political, social, and commercial environments in which the suspected terror ists have lived and worked; and so
+forth. See, e. g., id ., at 373a–374a. Journalists and human rights workers have strong similar motives to conduct conversations of this kind. See, e. g. , id ., at 342a (declaration of Joanne Mariner, stating that “some of the information [she] exchange[s] by telephone and e-mail relates to terrorism and counterterrorism, and much of the information relates to the foreign affairs of the United States”).
+At the same time, the Government has a strong motive to conduct surveillance of conversations that contain material of this kind. The Government, after all, seeks to learn as much as it can reasonably learn about suspected terrorists (such as those detained at Guantanamo), as well as about their contacts and activities, along with those of friends and family members. See Executive Ofﬁce of the President, Of ﬁce of Management and Budget, Statement of Administra tion Policy on S. 2248, p. 4 (Dec. 17, 2007) (“Part of the value of the [new authority] is to enable the Intelligence Commu nity
+to collect expeditiously the communications of terrorists in foreign countries who may contact an associate in the United States”). And the Government is motivated to do so, not simply by the desire to help convict those whom the Government believes guilty, but also by the critical, overrid ing need to protect America from terrorism. See id., at 1 (“Protection of the American people and American interests at home and abroad requires access to timely, accurate, and
+
+[Page 32]
+Cite as: 568 U. S. 398 (2013) 
+429 Breyer, J. , dissenting
+insightful intelligence on the capabilities, intentions, and ac
+tivities of . . . terrorists”). Third, the Government’s  past behavior  shows that it has 
+sought, and hence will in all likelihood continue to seek, in
+formation about alleged terrorists and detainees through 
+means that include surveillance of electronic communica
+tions. As just pointed out, plaintiff Scott McKay states that 
+the Government (under the authority of the pre-2008 law) 
+“intercepted some 10,000 telephone calls and 20,000 email 
+communications involving [his client] Mr. Al-Hussayen.” 
+App. to Pet. for Cert. 370a.
+Fourth, the Government has the capacity to conduct elec tronic surveillance of the kind at issue. To some degree this capacity rests upon technology available to the Government. See 1 D. Kris & J. Wilson, National Security Investigations & Prosecutions § 16:6, p. 562 (2d ed. 2012) (“NSA’s technological abilities are legendary”); id., § 16:12, at 572–577 (describing the National Security Agency’s capacity to monitor “ very broad facilities” such as international switches). See, e. g. , Lichtblau & Risen, Spy Agency Mined Vast Data Trove, Of ﬁcials Report, N. Y. Times, Dec. 24, 2005, p. A1 (describing capacity to
+trace and to analyze large volumes of communica tions into and out of the United States); Lichtblau & Shane, Bush Is Pressed Over New Report on Surveillance, N. Y. Times, May 12, 2006, p. A1 (reporting capacity to obtain ac cess to records of many, if not most, telephone calls made in the United States); Priest & Arkin, A Hidden World, Grow ing Beyond Control, Washington Post, July 19, 2010, p. A1 (reporting that every day, collection systems at the National Security Agency intercept and store 1.7 billion e-mails, tele phone calls, and other types of communications). Cf. State ment
+of Administration Policy on S. 2248, supra , at 3 (reject ing a provision of the Senate bill that would require intelligence analysts to count “the number of persons located in the United States whose communications were reviewed” as “impossible to implement” (internal quotation marks
+
+[Page 33]
+430 
+CLAPPER  v.  AMNESTY INT’L USA
+Breyer, J. , dissenting
+omitted)). This capacity also includes the Government’s 
+authority to obtain the kind of information here at issue 
+from private carriers such as AT&T and Verizon. See 50 
+U. S. C. § 1881a(h). We are further told by  amici  that the 
+Government is expanding that capacity. See Brief for Elec
+tronic Privacy Information Center et al. 22–23 (National 
+Security Agency will be able to conduct surveillance of 
+most electronic communications between domestic and for
+eign points).
+Of course, to exercise this capacity the Government must have intelligence court authorization. But the Government rarely ﬁles requests that fail to meet the statutory criteria. See Letter from Ronald Weich, Assistant Attorney General, to Joseph R. Biden, Jr., 1 (Apr. 30, 2012) (In 2011, of the 1,676 applications to the intelligence court, 2 were withdrawn by the Government, and the remaining 1,674 were approved, 30 with some modiﬁcation), online at http://www.justice.gov/ nsd/foia/foia_library/2011ﬁsa-ltr.pdf. (as visited Feb. 22, 2013, and available in Clerk of Court’s case ﬁle). As the intelli gence court itself has stated, its review under § 1881a is
+“ ‘narrowly circumscribed.’ ” In re Proceedings Required by § 702(i) of the FISA Amendments Act of 2008, No. Misc. 08– 01 (Aug. 27, 2008), p. 3. There is no reason to believe that the communications described would all fail to meet the con ditions necessary for approval. Moreover, compared with prior law, § 1881a simpliﬁes and thus expedites the approval process, making it more likely that the Government will use § 1881a to obtain the necessary approval.
+The upshot is that (1) similarity of content, (2) strong mo
+tives, (3) prior behavior, and (4) capacity all point to a very 
+strong likelihood that the Government will intercept at least 
+some of the plaintiffs’ communications, including some that 
+the 2008 amendment, § 1881a, but not the pre-2008 Act, au
+thorizes the Government to intercept. At the same time, nothing suggests the presence of some 
+special factor here that might support a contrary conclusion.
+
+[Page 34]
+Cite as: 568 U. S. 398 (2013) 
+431 Breyer, J. , dissenting
+The Government does not deny that it has both the motive and the capacity to listen to communications of the kind de scribed by the plaintiffs. Nor does it describe any system for avoiding the interception of an electronic communication that happens to include a party who is an American lawyer, journalist, or human rights worker. One can, of course, al ways imagine some special circumstance that negates a vir tual likelihood, no matter how strong. But the same is true about most, if not all, ordinary inferences about future events. Perhaps, despite pouring rain, the streets will re main
+dry (due to the presence of a special chemical). But ordinarily a party that seeks to defeat a strong natural infer ence must bear the burden of showing that some such special circumstance exists. And no one has suggested any such special circumstance here.
+Consequently, we need only assume that the Government 
+is doing its job (to ﬁnd out about, and combat, terrorism) in 
+order to conclude that there is a high probability that the 
+Government will intercept at least some electronic communi
+cation to which at least some of the plaintiffs are parties. 
+The majority is wrong when it describes the harm threat
+ened the plaintiffs as “speculative.”
+IV A
+The majority more plausibly says that the plaintiffs have 
+failed to show that the threatened harm is “ certainly im
+pending .”  Ante , at 409 (internal quotation marks omitted). 
+But, as the majority appears to concede, see  ante,  at 414, 
+and n. 5,  certainty  is not, and never has been, the touchstone 
+of standing. The future is inherently uncertain. Yet fed
+eral courts frequently entertain actions for injunctions and 
+for declaratory relief aimed at preventing future activities 
+that are reasonably likely or highly likely, but not absolutely 
+certain, to take place. And that degree of certainty is all 
+that is needed to support standing here.
+
+[Page 35]
+432 
+CLAPPER  v.  AMNESTY INT’L USA
+Breyer, J. , dissenting
+The Court’s use of the term “certainly impending” is not to the contrary. Sometimes the Court has used the phrase “certainly impending” as if the phrase described a sufﬁcient, rather than a necessary, condition for jurisdiction. See Pennsylvania v. West Virginia , 262 U. S. 553, 593 (1923) (“If the injury is certainly impending that is enough”). See also Babbitt , 442 U. S., at 298 (same). On other occasions, it has used the phrase as if it concerned when , not whether , an al leged injury would occur. Thus, in Lujan , 504 U. S., at 564, n.
+2, the Court considered a threatened future injury that consisted of harm that the plaintiffs would suffer when they “soon” visited a government project area that (they claimed) would suffer environmental damage. The Court wrote that a “mere profession of an intent, some day, to return” to the project area did not show the harm was “ imminent ,” for “soon” might mean nothing more than “in this lifetime.” Id., at 564–565, n. 2 (internal quotation marks omitted). Similarly, in McConnell v. Federal Election Comm’n , 540 U. S. 93 (2003), the Court denied standing because the Sena tor’s future
+injury (stemming from a campaign ﬁnance law) would not affect him until his reelection. That fact, the Court said, made the injury “too remote temporally to sat isfy Article III standing.” Id., at 225–226.
+On still other occasions, recognizing that “ ‘imminence’ is concededly a somewhat elastic concept,” Lujan , supra , at 565, n. 2, the Court has referred to, or used (sometimes along with “certainly impending”), other phrases such as “reason able probability” that suggest less than absolute, or literal, certainty. See Babbitt , supra , at 298 (plaintiff “must dem onstrate a realistic danger of sustaining a direct injury” (em phasis added)); Friends of the Earth, Inc. v. Laidlaw Envi ronmental Services (TOC), Inc. , 528 U. S. 167, 190 (2000) (“[I]t is the plaintiff ’s burden to establish standing by
+dem onstrating that . . . the defendant’s allegedly wrongful behav ior will likely occur or continue”). See also Monsanto Co. v. Geertson Seed Farms , 561 U. S. 139, 153 (2010) (“ ‘ “reason
+
+[Page 36]
+Cite as: 568 U. S. 398 (2013) 
+433 Breyer, J. , dissenting
+able probability” ’ ” and “substantial risk”); Davis , 554 U. S., at 734 (“realistic and impending threat of direct injury”); MedImmune, Inc. v. Genentech, Inc. , 549 U. S. 118, 129 (2007) (“genuine threat of enforcement”); Department of Commerce v. United States House of Representatives , 525 U. S. 316, 333 (1999) (“substantially likely” (internal quotation marks omit ted)); Clinton v. City of New York , 524 U. S. 417, 432 (1998) (“sufﬁcient likelihood of economic injury”); Pennell v. San Jose , 485 U. S. 1, 8 (1988) (“realistic danger” (internal quota tion marks omitted)); Blum v. Yaretsky ,
+457 U. S. 991, 1001 (1982) (“quite realistic” threat); Bryant v. Yellen , 447 U. S. 352, 367–368 (1980) (“likely”); Buckley v. Valeo , 424 U. S. 1, 74 (1976) ( per curiam ) (“reasonable probability”). Taken to gether the case law uses the word “certainly” as if it empha sizes, rather than literally deﬁnes, the immediately following term “impending.”
+B 1
+More important, the Court’s holdings in standing cases show that standing exists here. The Court has often found standing where the occurrence of the relevant injury was far less certain than here. Consider a few, fairly typical, cases. Consider Pennell , supra . A city ordinance forbade land lords to raise the rent charged to a tenant by more than 8 percent where doing so would work an unreasonably severe hardship on that tenant. Id ., at 4–5. A group of landlords sought a judgment declaring the ordinance unconstitutional. The Court held that, to have standing, the landlords had to
+demonstrate a “ ‘ realistic danger of sustaining a direct in jury as a result of the statute’s operation.’ ” Id ., at 8 (em phasis added). It found that the landlords had done so by showing a likelihood of enforcement and a “probability,” ibid. , that the ordinance would make the landlords charge lower rents—even though the landlords had not shown (1) that they intended to raise the relevant rents to the point of
+
+[Page 37]
+434 
+CLAPPER  v.  AMNESTY INT’L USA
+Breyer, J. , dissenting
+causing unreasonably severe hardship; (2) that the tenants 
+would challenge those increases; or (3) that the city’s hearing 
+examiners and arbitrators would ﬁnd against the landlords. 
+Here, even more so than in  Pennell , there is a “ realistic 
+danger ” that the relevant harm will occur.
+Or, consider Blum, supra. A group of nursing home resi dents receiving Medicaid beneﬁts challenged the constitu tionality (on procedural grounds) of a regulation that permit ted their nursing home to transfer them to a less desirable home. Id ., at 999–1000. Although a Medicaid committee had recommended transfers, Medicaid-initiated transfer had been enjoined and the nursing home itself had not threatened to transfer the plaintiffs. But the Court found “standing” because “the threat of transfers” was “not ‘imaginary or speculative’ ” but “quite realistic,” hence “sufﬁciently sub stantial.” Id ., at 1000–1001 (quoting Younger v. Harris , 401 U.
+S. 37, 42 (1971)). The plaintiffs’ injury here is not imagi nary or speculative, but “quite realistic.” Or, consider Davis , supra . The plaintiff, a candidate for the United States House of Representatives, self-ﬁnanced his campaigns. He challenged the constitutionality of an elec tion law that relaxed the limits on an opponent’s contribu tions when a self-ﬁnanced candidate’s spending itself ex ceeded certain other limits. His opponent, in fact, had decided not to take advantage of the increased contribution limits that the statute would have allowed. Id ., at 734. But the Court nonetheless found standing because there was
+a “realistic and impending threat,” not a certainty, that the candidate’s opponent would do so at the time the plaintiff ﬁled the complaint. Id ., at 734–735. The threat facing the plaintiffs here is as “realistic and impending.” Or, consider MedImmune , supra . The plaintiff, a patent licensee, sought a declaratory judgment that the patent was invalid. But, the plaintiff did not face an imminent threat of suit because it continued making royalty payments to the patent holder. In explaining why the plaintiff had standing,
+
+[Page 38]
+Cite as: 568 U. S. 398 (2013) 
+435 Breyer, J. , dissenting
+we (1) assumed that if the plaintiff stopped making royalty 
+payments it would have standing (despite the fact that the 
+patent holder might not bring suit), (2) rejected the Fed
+eral Circuit’s “reasonable apprehension of  imminent  suit” 
+requirement, and (3) instead suggested that a “genuine 
+threat of enforcement” was likely sufﬁcient.  Id ., at 128, 129, 
+132, n. 11 (internal quotation marks omitted). A “genuine 
+threat” is present here.
+Moreover, courts have often found probabilistic injuries sufﬁcient to support standing. In Duke Power Co. v. Caro lina Environmental Study Group, Inc. , 438 U. S. 59 (1978) , for example, the plaintiffs, a group of individuals living near a proposed nuclear powerplant, challenged the constitution ality of the Price-Anderson Act, a statute that limited the plant’s liability in the case of a nuclear accident. The plain tiffs said that, without the Act, the defendants would not build a nuclear plant. And the building of the plant would harm them, in part, by emitting “non-natural radiation into [their] environment.” Id
+., at 74. The Court found standing in part due to “our generalized concern about exposure to radiation and the apprehension ﬂowing from the uncertainty about the health and genetic consequences of even small emissions.” Ibid . (emphasis added). See also Monsanto Co. , 561 U. S., at 153–154 (“A substantial risk of gene ﬂow injures respondents in several ways” (emphasis added)).
+See also lower court cases, such as  Mountain States Legal 
+Foundation  v.  Glickman , 92 F. 3d 1228, 1234–1235 (CADC 
+1996) (plaintiffs attack Government decision to limit timber 
+harvesting; standing based upon increased  risk  of wildﬁres); 
+Natural Resources Defense Council  v.  EPA,  464 F. 3d 1, 7 
+(CADC 2006) (plaintiffs attack Government decision deregu
+lating methyl bromide; standing based upon increased life
+time  risk  of developing skin cancer);  Constellation Energy 
+Commodities Group, Inc.  v.  FERC , 457 F. 3d 14, 20 (CADC 
+2006) (standing based on increased  risk  of nonrecovery in
+herent in the reduction of collateral securing a debt of uncer
+
+[Page 39]
+436 
+CLAPPER  v.  AMNESTY INT’L USA
+Breyer, J. , dissenting
+tain amount);  Sutton  v . St. Jude Medical S. C., Inc. , 419 F. 3d 
+568, 570–575 (CA6 2005) (standing based on increased  risk  of 
+harm caused by implantation of defective medical device); 
+Johnson  v.  Allsteel, Inc. , 259 F. 3d 885, 888–891 (CA7 2001) 
+(standing based on increased  risk  that Employee Retire
+ment Income Security Act of 1974 beneﬁciary will not be 
+covered due to increased amount of discretion given to 
+ERISA administrator).
+How could the law be otherwise? Suppose that a federal 
+court faced a claim by homeowners that (allegedly) unlawful 
+dam-building practices created a high risk that their homes 
+would be ﬂooded. Would the court deny them standing on 
+the ground that the risk of ﬂood was only 60, rather than 
+90, percent?
+Would federal courts deny standing to a plaintiff in a di versity action who claims an anticipatory breach of contract where the future breach depends on probabilities? The de fendant, say, has threatened to load wheat onto a ship bound for India despite a promise to send the wheat to the United States. No one can know for certain that this will happen. Perhaps the defendant will change his mind; perhaps the ship will turn and head for the United States. Yet, despite the uncertainty, the Constitution does not prohibit a federal court from hearing such a claim. See 23
+R. Lord, Williston on Contracts § 63:35 (4th ed. 2002) (plaintiff may bring an anticipatory breach suit even though the defendant’s promise is one to perform in the future, it has not yet been broken, and defendant may still retract the repudiation). E. g., Wis consin Power & Light Co. v. Century Indemnity Co. , 130 F. 3d 787, 792–793 (CA7 1997) (plaintiff could sue insurer that disclaimed liability for all costs that would be incurred in the future if environmental agencies required cleanup); Combs v. International Ins. Co. , 354 F. 3d 568, 598–601 (CA6 2004) (similar). Would federal
+courts deny standing to a plaintiff who seeks to enjoin as a nuisance the building of a nearby pond
+
+[Page 40]
+Cite as: 568 U. S. 398 (2013) 
+437 Breyer, J. , dissenting
+which, the plaintiff believes, will very likely, but not inevita bly, overﬂow his land? See 42 Am. Jur. 2d, Injunctions §§ 2, 5 (2010) (noting that an injunction is ordinarily preventive in character and restrains actions that have not yet been taken, but threaten injury). E. g. , Central Delta Water Agency v . United States , 306 F. 3d 938, 947–950 (CA9 2002) (standing to seek injunction where method of operating dam was highly likely to severely hamper plaintiffs’ ability to grow crops); Consolidated Companies, Inc. v. Union Paciﬁc R. Co. , 499 F. 3d 382, 386 (CA5 2007)
+(standing to seek injunc tion requiring cleanup of land adjacent to plaintiff ’s tract be cause of threat that contaminants might migrate to plain tiff ’s tract).
+Neither do ordinary declaratory judgment actions always involve the degree of certainty upon which the Court insists here. See, e. g. , Maryland Casualty Co. v. Paciﬁc Coal & Oil Co. , 312 U. S. 270, 273 (1941) (insurance company could seek declaration that it need not pay claim against insured automobile driver who was in an accident even though the driver had not yet been found liable for the accident); Aetna Life Ins. Co. v. Haworth , 300 U. S. 227, 239–244 (1937) (insur ance company could seek declaration that it need not pay plaintiff for disability although plaintiff
+had not yet sought disability payments). See also, e. g. , Associated Indemnity Corp. v . Fairchild Industries, Inc., 961 F. 2d 32, 35–36 (CA2 1992) (insured could seek declaration that insurance company must pay liability even before insured found liable).
+2
+In some standing cases, the Court has found that a reason
+able probability of  future  injury comes accompanied with 
+present  injury that takes the form of reasonable efforts to 
+mitigate the threatened effects of the future injury or to pre
+vent it from occurring. Thus, in  Monsanto Co. , 561 U. S., at 
+153–156, the plaintiffs, a group of conventional alfalfa grow
+ers, challenged an agency decision to deregulate genetically
+
+[Page 41]
+438 
+CLAPPER  v.  AMNESTY INT’L USA
+Breyer, J. , dissenting
+engineered alfalfa. They claimed that deregulation would 
+harm them because their neighbors would plant the geneti
+cally engineered seed, bees would obtain pollen from the 
+neighbors’ plants, and the bees would then (harmfully) con
+taminate their own conventional alfalfa with the genetically 
+modiﬁed gene. The lower courts had found a “reasonable 
+probability” that this injury would occur.  Ibid.  (internal 
+quotation marks omitted).
+Without expressing views about that probability, we found 
+standing because the plaintiffs would suffer present harm 
+by trying to combat the threat.  Ibid . The plaintiffs, for 
+example, “would have to conduct testing to ﬁnd out whether 
+and to what extent their crops have been contaminated.” 
+Id ., at 154. And they would have to take “measures to mini
+mize the likelihood of potential contamination and to ensure 
+an adequate supply of non-genetically-engineered alfalfa.” 
+Ibid . We held that these “harms, which [the plaintiffs] will 
+suffer even if their crops are not actually infected with” the 
+genetically modiﬁed gene, “are sufﬁciently concrete to satisfy 
+the injury-in-fact prong of the constitutional standing analy
+sis.”  Id ., at 155.
+Virtually identical circumstances are present here. Plain
+tiff McKay, for example, points out that, when he communi
+cates abroad about, or in the interests of, a client ( e. g. , a 
+client accused of terrorism), he must “make an assessment” 
+whether his “client’s interest would be compromised” should 
+the Government “acquire the communications.” App. to 
+Pet. for Cert. 375a. If so, he must either forgo the communi
+cation or travel abroad.  Id ., at 371a–372a (“I have had to 
+take measures to protect the conﬁdentiality of information 
+that I believe is particularly sensitive,” including “travel 
+that is both time-consuming and expensive”).
+Since travel is expensive, since forgoing communication 
+can compromise the client’s interests, since McKay’s assess
+ment itself takes time and effort, this case does not differ 
+signiﬁcantly from  Monsanto.  And that is so whether we
+
+[Page 42]
+Cite as: 568 U. S. 398 (2013) 
+439 Breyer, J. , dissenting
+consider the plaintiffs’ present necessary expenditure of time 
+and effort as a separate concrete, particularized, imminent 
+harm, or consider it as additional evidence that the future 
+harm (an interception) is likely to occur. See also  Friends 
+of the Earth, Inc. , 528 U. S., at 183–184 (holding that plain
+tiffs who curtailed their recreational activities on a river due 
+to reasonable concerns about the effect of pollutant dis
+charges into that river had standing);  Meese  v.  Keene , 481 
+U. S. 465, 475 (1987) (stating that “the need to take . . . af
+ﬁrmative steps to avoid the risk of harm . . . constitutes a 
+cognizable injury”).
+3
+The majority cannot ﬁnd support in cases that use the words “certainly impending” to deny standing. While I do not claim to have read every standing case, I have examined quite a few, and not yet found any such case. The majority refers to Whitmore v. Arkansas , 495 U. S. 149 (1990). But in that case the Court denied standing to a prisoner who challenged the validity of a death sentence given to a differ ent prisoner who refused to challenge his own sentence. The plaintiff feared that in the absence of an appeal, his fel low prisoner’s death
+sentence would be missing from the State’s death penalty database and thereby skew the data base against him, making it less likely his challenges to his own death penalty would succeed. The Court found no standing. Id., at 161. But the fellow prisoner’s lack of ap peal would have harmed the plaintiff only if (1) the plaintiff separately obtained federal habeas relief and was then recon victed and resentenced to death, (2) he sought review of his new sentence, and (3) during that review, his death sentence was afﬁrmed only because it was compared to an artiﬁcially skewed database. Id.,
+at 156–157. These events seemed not very likely to occur.
+In  DaimlerChrysler Corp.  v.  Cuno , 547 U. S. 332 (2006), 
+taxpayers challenged the constitutionality of a tax break of
+fered by state and local governments to a car manufacturer.
+
+[Page 43]
+440 
+CLAPPER  v.  AMNESTY INT’L USA
+Breyer, J. , dissenting
+We found no standing. But the plaintiffs would have suf
+fered resulting injury only if the tax break had depleted 
+state and local treasuries and the legislature had responded 
+by raising their taxes.  Id ., at 344.
+In Lujan, the case that may come closest to supporting the majority, the Court also found no standing. But, as I pointed out, supra , at 432, Lujan is a case where the Court considered when, not whether, the threatened harm would occur. 504 U. S., at 564, n. 2. The relevant injury there consisted of a visit by an environmental group’s members to a project site where they would ﬁnd (unlawful) environmen tal depredation. Id ., at 564. The Court pointed out that members had alleged that they would visit the project sites “soon.” But it wrote that “soon”
+might refer to almost any time in the future. Ibid ., n. 2. By way of contrast, the on going threat of terrorism means that here the relevant inter ceptions will likely take place imminently, if not now.
+The Court has, of course, denied standing in other cases. But they involve injuries less likely, not more likely, to occur than here. In a recent case, Summers v. Earth Island Insti tute , 555 U. S. 488 (2009), for example, the plaintiffs chal lenged a regulation exempting certain timber sales from public comment and administrative appeal. The plaintiffs claimed that the regulations injured them by interfering with their esthetic enjoyment and recreational use of the for ests. The Court found this harm too unlikely to occur to support standing. Id., at 496. The Court noted that one plaintiff had
+not pointed to a speciﬁc affected forest that he would visit. The Court concluded that “[t]here may be a chance, but . . . hardly a likelihood , ” that the plaintiff ’s “wanderings will bring him to a parcel about to be affected by a project unlawfully subject to the regulations.” Id ., at 495 (emphasis added).
+4
+In sum, as the Court concedes, see  ante,  at 414, and n. 5, 
+the word “certainly” in the phrase “certainly impending”
+
+[Page 44]
+Cite as: 568 U. S. 398 (2013) 
+441 Breyer, J. , dissenting
+does not refer to absolute certainty. As our case law demon
+strates, what the Constitution requires is something more 
+akin to “reasonable probability” or “high probability.” The 
+use of some such standard is all that is necessary here to 
+ensure the actual concrete injury that the Constitution de
+mands. The considerations set forth in Parts II and III, 
+supra , make clear that the standard is readily met in this 
+case.
+While I express no view on the merits of the plaintiffs’ 
+constitutional claims, I do believe that at least some of the 
+plaintiffs have standing to make those claims. I dissent, 
+with respect, from the majority’s contrary conclusion.

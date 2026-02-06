@@ -1,0 +1,387 @@
+[Page 1]
+FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT
+T HOMAS  R OBINS , individually and on 
+behalf of all others similarly situated,
+No. 11-56843 D.C. No. 
+2:10-cv-05306-
+ODW-AGR
+Plaintiff-Appellant , v. 
+S POKEO , I NC ., a California corporation,
+OPINION
+Defendant-Appellee. On Remand from the 
+Supreme Court of the United States Argued and Submitted December 13, 2016 San Francisco, California
+Filed August 15, 2017 Before:  Diarmuid F. O’Scannlain, Susan P. Graber, and Carlos T. Bea, Circuit Judges. Opinion by Judge O’Scannlain
+
+[Page 2]
+2 
+R OBINS V . S POKEO
+SUMMARY *
+Article III Standing / Fair Credit Reporting Act On remand from the United States Supreme Court, Spokeo, Inc. v. Robins , 136 S. Ct. 1540 (2016), the panel reversed the district court’s dismissal of an action brought by Thomas Robins against Spokeo, Inc., alleging willful violations of the Fair Credit Reporting Act (“FCRA”); held that Robins’ alleged injuries were sufficiently concrete for the purposes of Article III standing; and concluded that because the alleged injuries were also sufficiently particularized to Robins and caused by Spokeo’s alleged FCRA violations that were redressable in court, Robins adequately alleged the elements necessary for
+Article III standing. The Supreme Court held that to establish Article III standing, there must be an injury that is “real” and not “abstract” or merely “procedural.” Spokeo , Inc. , 136 S. Ct. at 1549. Robins alleged that Spokeo published an allegedly inaccurate report about him on its website, and further alleged that Spokeo willfully violated various procedural requirements under FCRA, including failing to follow reasonable procedures to assure the accuracy of the information in his consumer report.
+*  This summary constitutes no part of the opinion of the court.  It 
+has been prepared by court staff for the convenience of the reader.
+
+[Page 3]
+R OBINS V . S POKEO 3 First, the panel held that Congress established the FCRA provisions at issue to protect consumers’ concrete interests (as opposed to purely procedural rights). Specifically, the panel concluded that the FCRA provisions in this case were crafted to protect consumers’ (like Robins’s) concrete interests in accurate credit reporting about themselves. Second, the panel held that Robins alleged FCRA violations that actually harmed his concrete interest. Specifically, the panel held that Robins alleged inaccuracies by Spokeo concerning his age, marital status, educational background, and employment history that could be deemed a real harm to his
+employment prospects. The panel rejected Spokeo’s suggestion that Robins’s allegations of harm were too speculative to establish a concrete injury. The panel held that both the challenged conduct and attendant injury had already occurred, where Spokeo published an inaccurate consumer report about Robins and the alleged intangible injury caused by the report had also occurred. The panel concluded that Robins had alleged injuries that were sufficiently concrete for purposes of Article III standing.
+COUNSEL 
+William S. Consovoy (argued), Consovoy McCarthy Park 
+PLLC, Arlington, Virginia; Jay Edelson, Rafey S. 
+Balabanian, Ryan D. Andrews, Roger Perlstadt, and J. Aaron 
+Lawson, Edelson PC, Chicago, Illinois; Patrick Strawbridge, 
+Consovoy McCarthy Park PLLC, Boston, Massachusetts; 
+for Plaintiff-Appellant. 
+Andrew J. Pincus (argued), Archis A. Parasharami, Stephen 
+C.N. Lilley, and Daniel E. Jones, Mayer Brown LLP,
+
+[Page 4]
+4 
+R OBINS V . S POKEO
+Washington, D.C.; John Nadolenco, Mayer Brown LLP, Los 
+Angeles, California; Donald M. Falk, Mayer Brown LLP, 
+Palo Alto, California; for Defendant-Appellee. 
+Daniel J. McLoon, Jones Day, Los Angeles, California; Meir 
+Feder, and Joshua S. Stillman, Jones Day, New York, New 
+York; for Amicus Curiae Experian Information Solutions, 
+Inc. 
+A. James Chareq, Hudson Cook LLP, Washington, D.C., for 
+Amicus Curiae Consumer Data Industry Association. 
+Marcy McLeod, General Counsel; John R. Coleman, 
+Assistant General Counsel; Nandan M. Joshi and Kristin 
+Bateman, Counsel; Consumer Financial Protection Bureau, 
+Washington, D.C., for Amicus Curiae Consumer Financial 
+Protection Bureau.
+OPINION
+O’SCANNLAIN, Circuit Judge: On remand from the Supreme Court, we must determine 
+whether an alleged violation of a consumer’s rights under the 
+Fair Credit Reporting Act constitutes a harm sufficiently 
+concrete  to satisfy the injury-in-fact requirement of Article 
+III of the United States Constitution.
+I A
+Spokeo, Inc., operates a website by the same name that 
+compiles consumer data and builds individual consumer-
+information profiles.  At no cost, consumers can use
+
+[Page 5]
+R OBINS V . S POKEO
+5 
+spokeo.com to view a report containing an array of details 
+about a person’s life, such as the person’s age, contact 
+information, marital status, occupation, hobbies, economic 
+health, and wealth.  More detailed information is available 
+for users who pay subscription fees.  Spokeo markets its 
+services to businesses, claiming that its reports provide a 
+good way to learn more about prospective business 
+associates and employees.
+At some point, Thomas Robins became aware that 
+Spokeo had published an allegedly inaccurate report about 
+him on its website.  Robins then sued Spokeo for willful 
+violations of the Fair Credit Reporting Act (“FCRA”), 
+15 U.S.C. § 1681  et seq .  FCRA imposes a number of 
+procedural requirements on consumer reporting agencies to 
+regulate their creation and use of consumer reports. 1   The 
+statute gives consumers affected by a violation of such 
+requirements a right to sue the responsible party, including 
+the right to sue (and to recover statutory damages) for willful 
+violations even if the consumer cannot show that the
+1   “Consumer reports”—also commonly referred to as credit 
+reports—are any communications of information by a consumer 
+reporting agency that bear on issues such as a consumer’s credit-
+worthiness, character, or general reputation, and which are used or 
+expected to be used in establishing the consumer’s eligibility for credit, 
+insurance, employment, and other similar purposes.  15 U.S.C. 
+§ 1681a(d)(1).
+“Consumer reporting agencies” are entities that regularly assemble 
+or evaluate consumer information “for the purpose of furnishing 
+consumer reports to third parties.”   Id.  § 1681a(f).  Although Spokeo has 
+questioned whether it qualifies as a consumer reporting agency under the 
+statute, we assume that it does for purposes of this appeal.   See Spokeo, 
+Inc. v. Robins  ( Spokeo II ), 136 S. Ct. 1540, 1546 n.4 (2016).
+
+[Page 6]
+6 
+R OBINS V . S POKEO
+violation caused him to sustain any actual damages.   See id.
+§§ 1681n, 1681o. Robins’s suit alleged that Spokeo willfully violated 
+various procedural requirements under FCRA, including that 
+Spokeo failed to “follow reasonable procedures to assure 
+maximum possible accuracy” of the information in his 
+consumer report.   Id.  § 1681e(b).  He alleged that, as a result, 
+Spokeo published a report which falsely stated his age, 
+marital status, wealth, education level, and profession, and 
+which included a photo of a different person.  Robins alleged 
+that such errors harmed his employment prospects at a time 
+when he was out of work and that he continues to be 
+unemployed 
+and 
+suffers 
+emotional 
+distress 
+as 
+a 
+consequence.
+B
+The district court dismissed Robins’s First Amended 
+Complaint, upon its determination that he lacked standing to 
+sue under Article III of the United States Constitution.  
+Specifically, the district court concluded that Robins alleged 
+only a bare violation of the statute and did not adequately 
+plead that such violation caused him to suffer an actual 
+injury-in-fact.
+Robins appealed to this court, and we reversed.   Robins 
+v. Spokeo, Inc.  ( Spokeo I ), 742 F.3d 409, 414 (9th Cir. 2014).  
+We held that Robins’s allegations established a sufficient 
+injury-in-fact—that is, that he allegedly suffered a concrete 
+and particularized injury—because Robins alleged that 
+Spokeo violated specifically  his  statutory rights, which 
+Congress established to protect against individual rather than 
+collective harms.   Id . at 413.  Likewise, we concluded that 
+the alleged harm to Robins’s statutory rights was certainly 
+“caused” by Spokeo’s alleged violations of FCRA and that
+
+[Page 7]
+R OBINS V . S POKEO
+7 
+FCRA’s statutory damages could redress such injury.   Id . at 
+414.  We ordered the case to be remanded to the district court 
+for further proceedings.
+C
+On certiorari, the Supreme Court vacated our opinion, and held that our standing analysis was incomplete. See Spokeo, Inc. v. Robins ( Spokeo II ), 136 S. Ct. 1540 (2016). The Supreme Court noted that although our analysis properly addressed whether the injury alleged by Robins was particularized as to him, we did not devote appropriate attention to whether the alleged injury is sufficiently concrete as well. Id. at 1548. The Court emphasized that particularity and concreteness are two separate inquiries, and it vacated our opinion and remanded the case with instructions to consider specifically whether Robins’s alleged injuries “meet
+the concreteness requirement” imposed by Article III. Id . at 1550. The Court did not call into question our conclusions on any of the other elements of standing.
+D
+On remand to this court, and after further briefing and 
+oral argument, the question before us is whether Robins has 
+sufficiently pled a concrete injury under the  Spokeo II  rubric.
+II
+Robins argues that Spokeo’s alleged violation of 
+FCRA—specifically its failure reasonably to ensure the 
+accuracy of his consumer report—is, alone, enough to 
+establish a concrete injury.  Robins contends that he has no 
+need to allege any additional harm caused by that statutory 
+violation because FCRA exists specifically to protect
+
+[Page 8]
+8 
+R OBINS V . S POKEO
+consumers’ concrete interest in credit-reporting accuracy.  
+Thus, Robins argues, so long as Spokeo’s alleged FCRA 
+violations harm this real-world and congressionally 
+recognized interest, he has standing to sue.
+A
+Robins’s argument requires us to consider, following the 
+Supreme Court’s guidance in  Spokeo II , the extent to which 
+violation of a statutory right can itself establish an injury 
+sufficiently concrete for the purposes of Article III standing.
+1
+Robins is certainly correct that FCRA purportedly allows 
+him to sue for willful violations without showing that he 
+suffered any additional harm as a result.   See  15 U.S.C. 
+§ 1681n.  But the mere fact that Congress said a consumer 
+like Robins may bring such a suit does not mean that a 
+federal court necessarily has the power to hear it.
+In Spokeo II , the Supreme Court made clear that a plaintiff does not “automatically satisf[y] the injury-in-fact requirement whenever a statute grants a person a statutory right and purports to authorize that person to sue to vindicate that right.” 136 S. Ct. at 1549. Even then, “Article III standing requires a concrete injury.” Id. To establish such an injury, the plaintiff must allege a statutory violation that caused him to suffer some harm that “actually exist[s]” in the world; there must be an injury that is “real” and not “abstract” or merely “procedural.” Id. at 1548–49 (internal quotation marks
+omitted). In other words, even when a statute has allegedly been violated, Article III requires such violation to have caused some real—as opposed to purely legal—harm to the plaintiff.
+
+[Page 9]
+R OBINS V . S POKEO
+9
+2
+The Court emphasized, however, that congressional judgment still plays an important role in the concreteness inquiry, especially in cases—like this one—in which the plaintiff alleges that he suffered an intangible harm. Although they are often harder to recognize, intangible injuries—for example, restrictions on First Amendment freedoms or harm to one’s reputation—may be sufficient for Article III standing. See id. at 1549. And in this somewhat murky area, Congress’s judgment as to what amounts to a real, concrete injury is instructive. The Court explained, “In determining whether an intangible harm constitutes injury in fact, both history and the judgment of Congress
+play important roles.” Id. Indeed, “because Congress is well positioned to identify intangible harms that meet minimum Article III requirements, its judgment is . . . instructive and important.” Id. “Congress may ‘elevate to the status of legally cognizable injuries concrete, de facto injuries that were previously inadequate in law.’” Id. (alteration omitted) (quoting Lujan v. Defs. of Wildlife , 504 U.S. 555, 578 (1992)). And “Congress has the power to define injuries and articulate chains of causation that will give rise to a case or controversy where none existed before.” Id. (internal quotation marks omitted). In some areas—like libel
+and slander per se—the common law has permitted recovery by victims even where their injuries are “difficult to prove or measure,” and Congress may likewise enact procedural rights to guard against a “risk of real harm,” the violation of which may “be sufficient in some circumstances to constitute injury in fact.” Id.
+3
+Accordingly, while Robins may not show an injury-in-
+fact merely by pointing to a statutory cause of action, the
+
+[Page 10]
+10 R OBINS V . S POKEO Supreme Court also recognized that some statutory violations, alone, do establish concrete harm. As the Second Circuit has summarized, Spokeo II “instruct[s] that an alleged procedural violation [of a statute] can by itself manifest concrete injury where Congress conferred the procedural right to protect a plaintiff’s concrete interests and where the procedural violation presents ‘a risk of real harm’ to that concrete interest.” Strubel v. Comenity Bank , 842 F.3d 181, 190 (2d Cir. 2016) (quoting Spokeo II , 136 S. Ct. at 1549). Other circuits—and our own—have suggested similar interpretations of standing
+in this context. See, e.g. , Dreher v. Experian Info. Sols., Inc. , 856 F.3d 337, 346 (4th Cir. 2017) (concrete harm may be shown by FCRA violation that causes the plaintiff to “suffer[] . . . the type of harm Congress sought to prevent when it enacted the FCRA”); Lyshe v. Levy , 854 F.3d 855, 859 (6th Cir. 2017) (“ Spokeo [ II ] allows for a bare procedural violation to create a concrete harm . . . [based on] the failure to comply with a statutory procedure that was designed to protect against the harm the statute
+was enacted to prevent.”); Van Patten v. Vertical Fitness Grp., LLC , 847 F.3d 1037, 1043 (9th Cir. 2017) (recognizing standing where alleged statutory violations “present[ed] the precise harm and infringe[d] the same privacy interests Congress sought to protect in enacting the [Telephone Consumer Protection Act]”). And we now agree that the Second Circuit’s formulation in Strubel best elucidates the concreteness standards articulated by the Supreme Court in Spokeo II .
+B
+In evaluating Robins’s claim of harm, we thus ask: (1) 
+whether the statutory provisions at issue were established to 
+protect his concrete interests (as opposed to purely 
+procedural rights), and if so, (2) whether the specific
+
+[Page 11]
+R OBINS V . S POKEO
+11 
+procedural violations alleged in this case actually harm, or 
+present a material risk of harm to, such interests.
+1
+As to the first question, we agree with Robins that Congress established the FCRA provisions at issue to protect consumers’ concrete interests. We have previously observed that FCRA “was crafted to protect consumers from the transmission of inaccurate information about them” in consumer reports. Guimond v. Trans Union Credit Info. Co. , 45 F.3d 1329, 1333 (9th Cir. 1995); see also Spokeo II , 136 S. Ct. at 1550 (Congress enacted FCRA to “curb the dissemination of false information”); S. Rep. No. 91-517, at 1 (1969) (“The purpose of the fair credit reporting bill is to prevent consumers from being
+unjustly damaged because of inaccurate or arbitrary information in a credit report.”). Put differently, FCRA aims “to ensure fair and accurate credit reporting” and to “protect consumer privacy.” Safeco Ins. Co. of Am. v. Burr , 551 U.S. 47, 52 (2007); see 15 U.S.C. § 1681; Van Patten , 847 F.3d at 1042. “To achieve this end,” FCRA imposes on consumer-reporting agencies “a host of [procedural] requirements concerning the creation and use of consumer reports” and, as mentioned, allows individuals to sue those which are non-compliant. Spokeo II , 136 S. Ct. at 1545. Relevant to Robins’s claims, § 1681e(b)
+of the statute specifically requires reporting agencies to “follow reasonable procedures to assure maximum possible accuracy” of the information contained in an individual’s consumer report. 15 U.S.C. § 1681e(b).
+a
+We have little difficulty concluding that these interests 
+protected by FCRA’s procedural requirements are “real,” 
+rather than purely legal creations.  To begin, the Supreme
+
+[Page 12]
+12 R OBINS V . S POKEO Court seems to have assumed that, at least in general, the dissemination of false information in consumer reports can itself constitute a concrete harm. See Spokeo II , 136 S. Ct. at 1550. Moreover, given the ubiquity and importance of consumer reports in modern life—in employment decisions, in loan applications, in home purchases, and much more— the real-world implications of material inaccuracies in those reports seem patent on their face. Indeed, the legislative record includes pages of discussion of how such inaccuracies may harm consumers in light of the increasing importance of consumer
+reporting nearly fifty years ago. See, e.g. , 116 Cong. Rec. 35,941 (1970) (statement of Sen. Proxmire); id. at 36,570 (statement of Rep. Sullivan); id. at 36,574 (statement of Rep. Wylie); 115 Cong. Rec. 2410–15 (1969); see also Dalton v. Capital Associated Indus., Inc. , 257 F.3d 409, 414 (4th Cir. 2001) (“Employers [in 1970] were placing increasing reliance on consumer reporting agencies to obtain information on the backgrounds of prospective employees. Congress found that in too many instances agencies were reporting inaccurate information that was adversely affecting the ability of individuals to obtain employment.”). In this context, it makes
+sense that Congress might choose to protect against such harms without requiring any additional showing of injury. The threat to a consumer’s livelihood is caused by the very existence of inaccurate information in his credit report and the likelihood that such information will be important to one of the many entities who make use of such reports. Congress could have seen fit to guard against that threat (and, for example, against the uncertainty and stress it could cause to the consumer’s life), especially in light of the difficulty the consumer might have in learning exactly who has accessed (or who
+will access) his credit report.
+
+[Page 13]
+R OBINS V . S POKEO
+13
+b
+As other courts have observed, the interests that FCRA protects also resemble other reputational and privacy interests that have long been protected in the law. See, e.g. , In re Horizon Healthcare Servs. Inc. Data Breach Litig. , 846 F.3d 625, 638–40 (3d Cir. 2017) (comparing FCRA’s privacy protections to common law protections for “a person’s right to prevent the dissemination of private information”); Gambles v. Sterling Infosystems, Inc. , No. 15 Civ. 9746, — F. Supp. 3d — , 2017 WL 589130, at *8 (S.D.N.Y. Feb. 13, 2017) (discussing the “significant history . . . of lawsuits based on
+(1) the unauthorized disclosure of a person’s private information, and (2) the disclosure of adverse information claimed to have been misleading or false”). For example, the common law provided remedies for a variety of defamatory statements, including those which falsely attributed characteristics “incompatible with the proper exercise of [an individual’s] lawful business, trade, profession, or office.” Restatement (First) of Torts § 570 (1938). The first Restatement of Torts explained that the publication of such a libel was “actionable per se, that is irrespective of whether any special harm has been caused to the plaintiff’s reputation or otherwise,” because the “publication
+is itself an injury.” Id. § 569 cmt. c. As is true with respect to FCRA, the “social value of this rule” was to prevent the false publication from causing further harm by allowing the “defamed person to expose the groundless character of a defamatory rumor before harm to the reputation has resulted therefrom.” Id. § 569 cmt. b. Just as Congress’s judgment about an intangible harm is important to our concreteness analysis, so is the fact that the interest Congress identified is similar to others that traditionally have
+
+[Page 14]
+14 R OBINS V . S POKEO been protected. See Spokeo II , 136 S. Ct. at 1549; Van Patten , 847 F.3d at 1042–43. We recognize, of course, that there are differences between the harms that FCRA protects against and those at issue in common-law causes of action like defamation or libel per se. As Spokeo points out, those common-law claims required the disclosure of false information that would be harmful to one’s reputation, while FCRA protects against the disclosure of merely inaccurate information, without requiring a showing of reputational harm. But the Supreme Court observed that “it is
+instructive to consider whether an alleged intangible harm has a close relationship to a harm that has traditionally been regarded as providing a basis for a lawsuit,” not that Congress may recognize a de facto intangible harm only when its statute exactly tracks the common law. Spokeo II , 136 S. Ct. at 1549 (emphasis added); see also Steel Co. v. Citizens for a Better Env’t , 523 U.S. 83, 102 (1998) (judicial power extends to “cases and controversies of the sort traditionally amenable to, and resolved by, the judicial process” (emphasis added)). Even if there are differences between FCRA’s
+cause of action and those recognized at common law, the relevant point is that Congress has chosen to protect against a harm that is at least closely similar in kind to others that have traditionally served as the basis for lawsuit. See In re Horizon Healthcare , 846 F.3d at 638–41. Courts have long entertained causes of action to vindicate intangible harms caused by certain untruthful disclosures about individuals, and we respect Congress’s judgment that a similar harm would result from inaccurate credit reporting. See generally Van Patten , 847 F.3d at 1043 (“We defer in part to Congress’s judgment
+[as to an intangible harm].”).
+
+[Page 15]
+R OBINS V . S POKEO
+15 In short, guided by both Congress’s judgment and 
+historical practice, we conclude that the FCRA procedures at 
+issue in this case were crafted to protect consumers’ (like 
+Robins’s) concrete interest in accurate credit reporting about 
+themselves.   Cf. Dreher , 856 F.3d at 346 (FCRA violations 
+that undermine “the fairness or accuracy” of an individual’s 
+credit report are concrete harms (internal quotation marks 
+and alterations omitted));  In re Horizon Healthcare. , 
+846 F.3d at 638–41 (unauthorized disclosure in violation of 
+FCRA’s privacy protections is a concrete harm).
+2
+Second, we must determine whether Robins has alleged 
+FCRA violations that actually harm, or at least that actually 
+create a “material risk of harm” to, this concrete interest.   See 
+Spokeo II , 136 S. Ct. at 1550;  Strubel , 842 F.3d at 190.  
+Robins must allege more than a bare procedural violation of 
+the statute that is “divorced from” the real harms that FCRA 
+is designed to prevent.   Spokeo II , 136 S. Ct. at 1549;  Van 
+Patten , 847 F.3d at 1042.
+This second requirement makes clear that, in many 
+instances, a plaintiff will not be able to show a concrete 
+injury simply by alleging that a consumer-reporting agency 
+failed to comply with one of FCRA’s procedures.  For 
+example, a reporting agency’s failure to follow certain 
+FCRA requirements may not result in the creation or 
+dissemination of an inaccurate consumer report.   See Spokeo 
+II , 136 S. Ct. at 1550.  In such a case, the statute would have 
+been violated, but that violation alone would not materially 
+affect the consumer’s protected interests in accurate credit 
+reporting. But Robins argues that Spokeo’s alleged violation of 
+§ 1681e(b) is enough to show harm to the statute’s
+
+[Page 16]
+16 R OBINS V . S POKEO underlying concrete interests because his claim turns on whether Spokeo properly ensured the accuracy of his consumer report, and to prevail Robins will have to show that Spokeo did prepare a report that contained inaccurate information about him. 2 See 15 U.S.C. § 1681e(b); Guimond , 45 F.3d at 1333. Moreover, Robins has alleged not only that Spokeo prepared such a report, but also that it then published the report on the Internet. 3 His claim thus clearly implicates, at least in some way, Robins’s concrete interests in truthful credit reporting. See also
+Spokeo II , 136 S. Ct. at 1553–54 (Thomas, J., concurring) (unlike other FCRA procedural requirements, § 1681e(b) potentially creates a private duty to protect an individual’s personal information).
+Nevertheless, Robins is not correct that any FCRA violation premised on some inaccurate disclosure of his information is sufficient. In Spokeo II , the Supreme Court explicitly rejected the notion that every minor inaccuracy reported in violation of FCRA will “cause [real] harm or 2 Robins’s complaint also alleged violations of other FCRA provisions, which do not turn on any alleged reporting inaccuracy—and which would thus present great difficulty for his standing argument. But, following remand from the Supreme Court, Robins now insists that these “inartfully styled . . . ‘claims’” are not alleged as independent grounds for relief but
+instead serve as “merely examples of Spokeo’s willful failure to use reasonable procedures and to assure maximum possible accuracy in its published reports.” Robins now states that he has alleged only “a single claim for relief under Section 1681e(b).” We therefore do not consider the extent to which Robins would have standing to pursue claims for relief based on these other violations, given our understanding that he no longer attempts to do so.
+3   We do not consider whether a plaintiff would allege a concrete 
+harm if he alleged only that a materially inaccurate report about him was 
+prepared  but never  published .
+
+[Page 17]
+R OBINS V . S POKEO
+17 
+present any material risk of [real] harm.”   Id.  at 1550 
+(majority opinion).  The Court gave the example of an 
+incorrectly reported zip code, opining, “It is difficult to 
+imagine how the dissemination of an incorrect zip code, 
+without more, could work any concrete harm.”   Id.   The 
+Court left open the question of what other sorts of 
+information would “merit similar treatment.”   Id.  at 1550 
+n.8.
+Thus, Spokeo II requires some examination of the nature of the specific alleged reporting inaccuracies to ensure that they raise a real risk of harm to the concrete interests that FCRA protects. See Strubel , 842 F.3d at 190 (“[E]ven where Congress has accorded procedural rights to protect a concrete interest, a plaintiff may fail to demonstrate concrete injury where violation of the procedure at issue presents no material risk of harm to that underlying interest.”). Put slightly differently, the Court suggested that even if Congress determined that inaccurate credit reporting generally causes real harm to consumers, it cannot be
+the case that every trivial or meaningless inaccuracy does so. See id. Unfortunately, the Court gave little guidance as to what varieties of misinformation should fall into the harmless category, beyond the example of an erroneous zip code.
+We need not conduct a searching review for where that 
+line should be drawn in this case, however, because it is clear 
+to us that Robins’s allegations relate facts that are 
+substantially more likely to harm his concrete interests than 
+the Supreme Court’s example of an incorrect zip code.  
+Robins specifically alleged that Spokeo falsely reported that 
+he is married with children, that he is in his 50s, that he is 
+employed in a professional or technical field, that he has a 
+graduate degree, and that his wealth level is higher than it is.
+
+[Page 18]
+18 R OBINS V . S POKEO It does not take much imagination to understand how inaccurate reports on such a broad range of material facts about Robins’s life could be deemed a real harm. For example, Robins alleged that he is out of work and looking for a job, but that Spokeo’s inaccurate reports have “caused actual harm to [his] employment prospects” by misrepresenting facts that would be relevant to employers, and that he suffers from “anxiety, stress, concern, and/or worry about his diminished employment prospects” as a result. We acknowledge that the alleged misrepresentations could seem worse—for example,
+Spokeo could have reported that Robins had less education or money than he has. But we agree with Robins that information of this sort (age, marital status, educational background, and employment history) is the type that may be important to employers or others making use of a consumer report. Ensuring the accuracy of this sort of information thus seems directly and substantially related to FCRA’s goals.
+Further, determining whether any given inaccuracy in a credit report would help or harm an individual (or perhaps both) is not always easily done. For example, in support of Robins, the Consumer Financial Protection Bureau has argued that even seemingly flattering inaccuracies can hurt an individual’s employment prospects as they may cause a prospective employer to question the applicant’s truthfulness or to determine that he is overqualified for the position sought. Even if their likelihood actually to harm Robins’s job search could be debated, the inaccuracies alleged in this case do not strike us as the sort of “mere technical
+violation[s]” which are too insignificant to present a sincere risk of harm to the real-world interests that Congress chose to protect with FCRA. In re Horizon Healthcare , 846 F.3d at 638; see also Spokeo II , 136 S. Ct. at 1556 (Ginsburg, J., dissenting) (describing Robins’s
+
+[Page 19]
+R OBINS V . S POKEO
+19 
+allegations as “[f]ar from an incorrect zip code”).  Robins’s 
+complaint thus sufficiently alleges that he suffered a 
+concrete injury. 4 See In re Horizon Healthcare , 846 F.3d at 
+638–41;  Strubel , 842 F.3d at 190.
+C
+Finally, we reject Spokeo’s suggestion that Robins’s 
+allegations of harm are too speculative to establish a 
+concrete injury.  Relying on  Clapper v. Amnesty 
+International USA , 133 S. Ct. 1138, 1143 (2013), Spokeo 
+argues that Robins has failed to allege how the “seemingly 
+flattering but inaccurate information” published about him 
+would “expose Robins to any injury that was ‘certainly 
+impending.’”  Spokeo argues that, at best, Robins has 
+asserted that such inaccuracies  might  hurt his employment 
+prospects, but not that they present a material or impending 
+risk of doing so.
+Spokeo’s reliance on Clapper is misplaced. In Clapper , the plaintiffs sought to establish standing on the basis of harm they would supposedly suffer from threatened conduct that had not happened yet but which they believed was reasonably likely to occur—specifically on their belief that “some of the people with whom they exchange[d] . . . information [were] likely targets of surveillance” under a federal statute. Id. at 1145 (emphasis added). The plaintiffs 4 We caution that our conclusion on Robins’s allegations does not mean that every inaccuracy in these categories of information (age, marital status, economic standing, etc.) will
+necessarily establish concrete injury under FCRA. There may be times that a violation leads to a seemingly trivial inaccuracy in such information (for example, misreporting a person’s age by a day or a person’s wealth by a dollar). We express no opinion on the circumstances in which alleged inaccuracies of this nature would or would not cause a concrete harm.
+
+[Page 20]
+20 
+R OBINS V . S POKEO
+sought to strike down the statute authorizing such 
+surveillance in order to remove the threat that their 
+communications would eventually be intercepted.   Id.  at 
+1145–46.  The question for the Court was how certain such 
+predicted  surveillance needed to be in order to create an 
+injury in fact.  In such a case, the Supreme Court explained 
+that a plaintiff cannot show injury-in-fact unless the 
+“threatened injury [is]  certainly impending ” as opposed to 
+merely speculative.   Id.  at 1147–48 (emphasis added) 
+(internal quotation marks omitted).
+Here, by contrast, both the challenged conduct and the 
+attendant injury have already occurred.  As alleged in the 
+complaint, Spokeo has indeed published a materially 
+inaccurate consumer report about Robins.  And, as we have 
+discussed, the alleged intangible injury caused by that 
+inaccurate report has also occurred.  We have explained 
+why, in the context of FCRA, this alleged intangible injury 
+is itself sufficiently concrete.  It is of no consequence how 
+likely Robins is to suffer  additional  concrete harm as well 
+(such as the loss of a specific job opportunity).   See Spokeo 
+II , 136 S. Ct. at 1549;  Strubel , 842 F.3d at 190.
+Clapper ’s discussion of what must be shown to establish 
+standing based on anticipated conduct or an anticipated 
+injury is therefore beside the point.   Clapper  did not address 
+the concreteness of intangible injuries like the one Robins 
+asserts, and the Court in  Spokeo II  did not suggest that 
+Congress’s ability to recognize such injuries turns on 
+whether they would also result in additional future injuries 
+that would satisfy  Clapper .  Many previous Supreme Court 
+cases recognize that such statutorily recognized harms alone 
+may confer standing (without additional resulting harm), 
+none of which the Court purported to doubt or to overrule in 
+Spokeo II .   See, e.g. ,  Spokeo II , 136 S. Ct. at 1553 (Thomas,
+
+[Page 21]
+R OBINS V . S POKEO
+21 
+J., concurring) (collecting cases);  id.  at 1554–55 (Ginsburg, 
+J., dissenting) (same). In short, we need not—and we do not—decide whether 
+Robins’s allegations of additional harm to his job 
+opportunities would satisfy the demands of  Clapper.
+III
+We are satisfied that Robins has alleged injuries that are 
+sufficiently concrete for the purposes of Article III.  As 
+noted, we previously determined that the alleged injuries 
+were also sufficiently particularized to Robins and that they 
+were caused by Spokeo’s alleged FCRA violations and are 
+redressable in court.   See Spokeo I , 742 F.3d at 412–14.  The 
+Supreme Court did not question those prior conclusions, and 
+we do not revisit them now.  Robins has therefore adequately 
+alleged the elements necessary for standing. REVERSED AND REMANDED.

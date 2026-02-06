@@ -1,0 +1,582 @@
+[Page 1]
+[CITE_START:DOC003[P001.B01]] FOR PUBLICATION [CITE_END:DOC003[P001.B01]]
+[CITE_START:DOC003[P001.B02]] UNITED STATES COURT OF APPEALS
+FOR THE NINTH CIRCUIT
+
+D ION  S TARR ,
+No. 09-55233
+Plaintiff-Appellant,
+D.C. No.
+v.
+2:08-cv-00508-GW-
+
+L EROY  B ACA , Los Angeles County
+SH
+Sheriff; in his individual capacity,
+OPINION
+Defendant-Appellee.   Appeal from the United States District Court
+for the Central District of California
+George H. Wu, District Judge, Presiding Argued and Submitted
+June 8, 2010—Pasadena, California [CITE_END:DOC003[P001.B02]]
+[CITE_START:DOC003[P001.B03]] Filed February 11, 2011 Before: Stephen S. Trott and William A. Fletcher,
+Circuit Judges, and Charles R. Breyer, District Judge.* Opinion by Judge William A. Fletcher;
+Dissent by Judge Trott [CITE_END:DOC003[P001.B03]]
+[CITE_START:DOC003[P001.B04]] *The Honorable Charles R. Breyer, United States District Judge for the
+Northern District of California, sitting by designation. [CITE_END:DOC003[P001.B04]]
+[CITE_START:DOC003[P001.B05]] 2251 [CITE_END:DOC003[P001.B05]]
+
+[Page 2]
+[CITE_START:DOC003[P002.B01]] 2255
+S TARR  v. B ACA [CITE_END:DOC003[P002.B01]]
+[CITE_START:DOC003[P002.B02]] COUNSEL [CITE_END:DOC003[P002.B02]]
+[CITE_START:DOC003[P002.B03]] Sonia Maria Mercado, R. Samuel Paz, LAW OFFICES OF R.
+SAMUEL PAZ, Culver City, California, for the plaintiff-
+appellant. Melinda Cantrall, Adrianna Corrado, HURRELL & CAN-
+TRALL LLP, Los Angeles, California, for defendant-appellee
+Baca. [CITE_END:DOC003[P002.B03]]
+[CITE_START:DOC003[P002.B04]] OPINION [CITE_END:DOC003[P002.B04]]
+[CITE_START:DOC003[P002.B05]] W. FLETCHER, Circuit Judge: Plaintiff Dion Starr brings a § 1983 action for damages
+resulting from a violent attack he allegedly suffered while he
+was an inmate in the Los Angeles County Jail. The district [CITE_END:DOC003[P002.B05]]
+
+[Page 3]
+[CITE_START:DOC003[P003.B01]] 2256
+S TARR  v. B ACA court dismissed Starr’s supervisory liability claim for deliber-
+ate indifference against Sheriff Leroy Baca in his individual
+capacity under Federal Rule of Civil Procedure 12(b)(6) for
+failure to state a claim. Because we hold that Starr has ade-
+quately stated a claim, we reverse and remand for further pro-
+ceedings. [CITE_END:DOC003[P003.B01]]
+[CITE_START:DOC003[P003.B02]] I. Background [CITE_END:DOC003[P003.B02]]
+[CITE_START:DOC003[P003.B03]] Because we are reviewing an order granting a motion to dismiss under Rule 12(b)(6), we take the facts alleged in the complaint to be true. Navarro v. Block , 250 F.3d 729, 732 (9th Cir. 2001). Starr’s Third Amended Complaint alleges that on or about January 27, 2006, he was in custody in the Los Angeles County Jail. A group of inmates gathered at his cell door and threatened to inflict physical harm on him. He yelled for the deputies guarding the jail to come to his aid. Instead of protecting him, a deputy opened Starr’s cell gate in order [CITE_END:DOC003[P003.B03]]
+[CITE_START:DOC003[P003.B04]] to allow the group of inmates to enter. The inmates entered the cell and repeatedly stabbed Starr and his cellmate with knife-like objects. They stabbed Starr twenty-three times while Starr screamed for help and protection. After the attack- ing inmates left the cell, several deputies went to Starr. Starr lay on the floor of his cell, seriously injured, bleeding and moaning in pain. One deputy yelled at him, “nigger lay down.” While repeatedly yelling “shut up nigger,” the deputy then kicked his face, nose, and body numerous times, causing pain, bleeding and a nose fracture. Other deputies stood by and [CITE_END:DOC003[P003.B04]]
+[CITE_START:DOC003[P003.B05]] watched. The deputy who kicked Starr subsequently interfered with his ability to obtain medical treatment for his injuries. Starr continues to suffer from and receive treatment for his injuries. [CITE_END:DOC003[P003.B05]]
+[CITE_START:DOC003[P003.B06]] Starr sued Sheriff Baca as well as the deputies directly
+involved in the attack. His claims against the deputies are not
+at issue in this appeal. In his claim against Sheriff Baca, Starr
+alleges unconstitutional conditions of confinement in viola-
+tion of the Eighth and Fourteenth Amendments. He alleges [CITE_END:DOC003[P003.B06]]
+
+[Page 4]
+[CITE_START:DOC003[P004.B01]] 2257
+S TARR  v. B ACA [CITE_END:DOC003[P004.B01]]
+[CITE_START:DOC003[P004.B02]] that Sheriff Baca is liable in his individual capacity because
+he knew or should have known about the dangers in the Los
+Angeles County Jail, and that he was deliberately indifferent
+to those dangers. [CITE_END:DOC003[P004.B02]]
+[CITE_START:DOC003[P004.B03]] After giving Starr several chances to plead his claim against Sheriff Baca, the district court dismissed the claim with prejudice under Rule 12(b)(6). The district court held that Starr’s allegations against Sheriff Baca were insufficient to state a claim for supervisory liability because the com- plaint’s recital of prior incidents and accompanying allega- tions did not sufficiently state a causal connection between Sheriff Baca’s action and inaction and the alleged injury to Starr. The district court wrote that Starr “does not allege that Baca himself directly participated in any way in the January 27, 2006 incident or that he was [CITE_END:DOC003[P004.B03]]
+[CITE_START:DOC003[P004.B04]] involved in any review or investigation of it.” Nor, the district court held, did Starr allege any specific policy implemented by Sheriff Baca that caused the violation. The district court directed that final judgment in favor of Sheriff Baca be entered under Federal Rule of Civil Procedure 54(b). Starr appeals. [CITE_END:DOC003[P004.B04]]
+[CITE_START:DOC003[P004.B05]] II. Standard of Review [CITE_END:DOC003[P004.B05]]
+[CITE_START:DOC003[P004.B06]] We review de novo a district court’s dismissal of a com-
+plaint under Fed. R. Civ. P. 12(b)(6) for failure to state a
+claim.  Caviness v. Horizon Cmty. Learning Ctr., Inc. , 590
+F.3d 806, 811-12 (9th Cir. 2010). [CITE_END:DOC003[P004.B06]]
+[CITE_START:DOC003[P004.B07]] III. Discussion [CITE_END:DOC003[P004.B07]]
+[CITE_START:DOC003[P004.B08]] To prevail on his claim under the Eighth and Fourteenth
+Amendments, Starr must demonstrate “either that prison offi-
+cials acted with ‘deliberate indifference’ or that their conduct
+was so reckless as to be tantamount to a desire to inflict
+harm.”  Redman v. Cnty. of San Diego , 942 F.2d 1435, 1449 [CITE_END:DOC003[P004.B08]]
+
+[Page 5]
+[CITE_START:DOC003[P005.B01]] 2258
+S TARR  v. B ACA (9th Cir. 1991). The gravamen of Starr’s claim against Sheriff
+Baca is deliberate indifference. On appeal, Starr contends that the district court erred in dis-
+missing his claim against Sheriff Baca on the pleadings. Sher-
+iff Baca contends that the Supreme Court eliminated claims
+for supervisory liability in its decision in  Iqbal . He contends
+further that even under pre- Iqbal  case law, Starr has not
+alleged a causal connection between Sheriff Baca’s conduct
+and his injury. Finally, he contends that Starr has failed to
+allege anything more than legal conclusions, rendering the
+complaint insufficient under Federal Rule of Civil Procedure
+8(a), as interpreted by  Iqbal . [CITE_END:DOC003[P005.B01]]
+[CITE_START:DOC003[P005.B02]] Because the question of whether Iqbal eliminated supervi- sory liability was not adequately briefed, we ordered supple- mental briefing after oral argument. Having reviewed the original and supplemental briefing, we now address the par- ties’ arguments. A. Supervisory Liability after Ashcroft v. Iqbal We have long permitted plaintiffs to hold supervisors indi- vidually liable in § 1983 suits when culpable action, or inac- tion, is directly attributed to them. We have never required a plaintiff seeking to state a claim for supervisory liability to allege that a supervisor was physically present when the injury occurred. In Larez v. City of [CITE_END:DOC003[P005.B02]]
+[CITE_START:DOC003[P005.B03]] Los Angeles , 946 F.2d 630 (9th Cir. 1991), we explained that to be held liable, the super- visor need not be “directly and personally involved in the same way as are the individual officers who are on the scene inflicting constitutional injury.” Id. at 645. Rather, the super- visor’s participation could include his “own culpable action or inaction in the training, supervision, or control of his subordi- nates,” “his acquiescence in the constitutional deprivations of which the complaint is made,” or “conduct that showed a reckless or callous indifference to the rights of others.” Id. at [CITE_END:DOC003[P005.B03]]
+
+[Page 6]
+[CITE_START:DOC003[P006.B01]] 2259
+S TARR  v. B ACA [CITE_END:DOC003[P006.B01]]
+[CITE_START:DOC003[P006.B02]] 646 (internal citations, quotation marks, and alterations omit- ted). After the district court dismissed Starr’s claim, but before briefing on appeal, the Supreme Court decided Ashcroft v. Iqbal , 129 S. Ct. 1937 (2009). Plaintiff Iqbal, a Pakistani Muslim, had been arrested and detained in severely restrictive conditions following the attacks of September 11, 2001. Id. at 1943. He filed a Bivens action in federal court against his jail- ers and various officials, including Attorney General John Ashcroft and F.B.I. Director Robert Mueller, alleging pur- poseful discrimination on the basis of race, religion and national origin. Id. (citing Bivens v. [CITE_END:DOC003[P006.B02]]
+[CITE_START:DOC003[P006.B03]] Six Unknown Fed. Nar- cotics Agents , 403 U.S. 388 (1971)). A Bivens action seeks to hold federal officers individually liable for constitutional vio- lations. Although “more limited in some respects,” a Bivens action is the federal analog to an action against state or local officials under § 1983. Hartman v. Moore , 547 U.S. 250, 254 n.2 (2006). [CITE_END:DOC003[P006.B03]]
+[CITE_START:DOC003[P006.B04]] The Court held that Iqbal’s complaint failed to plead facts
+sufficient to state a claim against Attorney General Ashcroft
+and Director Mueller for purposeful and unlawful discrimina-
+tion.  Iqbal , 129 S. Ct. at 1954. The Court explained that
+because  Bivens  and § 1983 suits do not allow for the imposi-
+tion of vicarious liability, stating a claim against a govern-
+ment official in his or her individual capacity for purposeful
+discrimination requires pleading that “each Government-
+official defendant, through the official’s own individual
+actions, has violated the Constitution.”  Id.  at 1948. [CITE_END:DOC003[P006.B04]]
+[CITE_START:DOC003[P006.B05]] [1]  The Court stated that “[t]he factors necessary to estab-
+lish a  Bivens  violation will vary with the constitutional provi-
+sion at issue.”  Id.  The Court explained that purposeful
+discrimination, which was alleged against Attorney General
+Ashcroft and Director Mueller, requires a plaintiff to “plead
+and prove that the defendant acted with discriminatory pur-
+pose.”  Id.  Proving purposeful discrimination requires showing [CITE_END:DOC003[P006.B05]]
+
+[Page 7]
+[CITE_START:DOC003[P007.B01]] 2260 S TARR v. B ACA “more than intent as volition or intent as awareness of conse- quences”; the plaintiff must show that the decisionmaker acted because of his action’s adverse effects, not merely in spite of them. Id. (internal quotation marks omitted). There- fore, the supervisors in Iqbal needed to have “adopted and implemented the detention policies at issue not for a neutral, investigative reason but for the purpose of discriminating on account of race, religion, or national origin.” Id. at 1948-49. Holding Attorney General Ashcroft and Director Mueller per- sonally liable for unconstitutional discrimination if they did not [CITE_END:DOC003[P007.B01]]
+[CITE_START:DOC003[P007.B02]] themselves have a discriminatory purpose would be equivalent to finding them vicariously liable for their subordi- nates’ violation, which Bivens and § 1983 do not allow. In so holding, Iqbal followed earlier cases holding that alleging a supervisor’s mere awareness of the discriminatory effects of his or her actions or inaction does not state a claim of uncon- stitutional discrimination. [CITE_END:DOC003[P007.B02]]
+[CITE_START:DOC003[P007.B03]] [2] Starr does not allege purposeful discrimination by Sheriff Baca. Rather, he alleges unconstitutional conditions of confinement in violation of the Eighth Amendment’s prohibi- tion against cruel and unusual punishment, as incorporated through the Due Process Clause of the Fourteenth Amend- ment. A claim of unconstitutional conditions of confinement, unlike a claim of unconstitutional discrimination, is actionable on a theory of deliberate indifference. See Farmer v. Brennan , 511 U.S. 825 (1994). A showing that a supervisor acted, or failed to act, in a manner that was deliberately indifferent to an inmate’s Eighth Amendment rights is sufficient to demon- strate [CITE_END:DOC003[P007.B03]]
+[CITE_START:DOC003[P007.B04]] the involvement — and the liability — of that supervi- sor. Thus, when a supervisor is found liable based on deliberate indifference, the supervisor is being held liable for his or her own culpable action or inaction, not held vicari- ously liable for the culpable action or inaction of his or her subordinates. [3] We see nothing in Iqbal that indicates that the Supreme Court intended to overturn longstanding case law on deliber- [CITE_END:DOC003[P007.B04]]
+
+[Page 8]
+[CITE_START:DOC003[P008.B01]] 2261
+S TARR  v. B ACA [CITE_END:DOC003[P008.B01]]
+[CITE_START:DOC003[P008.B02]] ate indifference claims against supervisors in conditions of confinement cases. We also note that, to the extent that our sister circuits have confronted this question, they have agreed with our interpretation of Iqbal . See Dodds v. Richardson , 614 F.3d 1185, 1204 (10th Cir. 2010) (“We therefore conclude that after Iqbal, Plaintiff can no longer succeed on a § 1983 claim against Defendant by showing that as a supervisor he behaved knowingly or with deliberate indifference that a con- stitutional violation would occur at the hands of his subordi- nates, unless that is the same state of mind required [CITE_END:DOC003[P008.B02]]
+[CITE_START:DOC003[P008.B03]] for the constitutional deprivation he alleges .” (emphasis added; inter- nal quotation marks omitted)); Sandra T.E. v. Grindle , 599 F.3d 583, 591 (7th Cir. 2010) ( Iqbal does not change the fact that “[w]hen a state actor’s deliberate indifference deprives someone of his or her protected liberty interest in bodily integrity, that actor violates the Constitution, regardless of whether the actor is a supervisor or subordinate, and the actor may be held liable for the resulting harm.”); Sanchez v. Pereira-Castillo , 590 F.3d 31, 49 (1st Cir. 2009) (“Although ‘Government officials may not be held liable for the unconsti- [CITE_END:DOC003[P008.B03]]
+[CITE_START:DOC003[P008.B04]] tutional conduct of their subordinates under a theory of respondeat superior ,’ supervisory officials may be liable on the basis of their own acts or omissions,” including supervis- ing “with deliberate indifference toward the possibility that deficient performance of the task may contribute to a civil rights deprivation.” (quoting Iqbal , 129 S. Ct. at 1948) (some internal quotation marks omitted)). [CITE_END:DOC003[P008.B04]]
+[CITE_START:DOC003[P008.B05]] [4]  We therefore conclude that where the applicable con-
+stitutional standard is deliberate indifference, a plaintiff may
+state a claim for supervisory liability based upon the supervi-
+sor’s knowledge of and acquiescence in unconstitutional con-
+duct by others. B. Supervisory Liability for Deliberate Indifference Sheriff Baca contends that even under a deliberate indiffer-
+ence standard Starr has failed to state a claim for supervisory [CITE_END:DOC003[P008.B05]]
+
+[Page 9]
+[CITE_START:DOC003[P009.B01]] 2262
+S TARR  v. B ACA liability. He contends that Starr’s claim fails for want of a
+causal connection between Sheriff Baca’s allegedly wrongful
+action and inaction and Starr’s alleged injury. We disagree. [CITE_END:DOC003[P009.B01]]
+[CITE_START:DOC003[P009.B02]] [5]  A defendant may be held liable as a supervisor under
+§ 1983 “if there exists either (1) his or her personal involve-
+ment in the constitutional deprivation, or (2) a sufficient
+causal connection between the supervisor’s wrongful conduct
+and the constitutional violation.”  Hansen v. Black , 885 F.2d
+642, 646 (9th Cir. 1989). “[A] plaintiff must show the super-
+visor breached a duty to plaintiff which was the proximate
+cause of the injury. The law clearly allows actions against
+supervisors under section 1983 as long as a sufficient causal
+connection is present and the plaintiff was deprived under
+color of law of a federally secured right.”  Redman , 942 F.2d
+at 1447 (internal quotation marks omitted). [CITE_END:DOC003[P009.B02]]
+[CITE_START:DOC003[P009.B03]] [6] “The requisite causal connection can be established . . . by setting in motion a series of acts by others,” id. (alteration in original; internal quotation marks omitted), or by “know- ingly refus[ing] to terminate a series of acts by others, which [the supervisor] knew or reasonably should have known would cause others to inflict a constitutional injury,” Dubner v. City & Cnty. of San Francisco , 266 F.3d 959, 968 (9th Cir. 2001). “A supervisor can be liable in his individual capacity for his own culpable action or inaction in the training, super- vision, or control of his [CITE_END:DOC003[P009.B03]]
+[CITE_START:DOC003[P009.B04]] subordinates; for his acquiescence in the constitutional deprivation; or for conduct that showed a reckless or callous indifference to the rights of others.” Wat- kins v. City of Oakland , 145 F.3d 1087, 1093 (9th Cir. 1998) (internal alteration and quotation marks omitted). [CITE_END:DOC003[P009.B04]]
+[CITE_START:DOC003[P009.B05]] Our decision in  Redman  is illustrative. In  Redman , the
+plaintiff alleged that the facility in which he was confined was
+overcrowded; that the Sheriff knew the facility was not a
+proper place to detain him and posed a risk of harm but had
+placed him there anyway; and that the Sheriff was ultimately
+in charge of the facility’s operations. 942 F.2d at 1446-47. [CITE_END:DOC003[P009.B05]]
+
+[Page 10]
+[CITE_START:DOC003[P010.B01]] 2263
+S TARR  v. B ACA [CITE_END:DOC003[P010.B01]]
+[CITE_START:DOC003[P010.B02]] Reversing the district court’s grant of a directed verdict in
+favor of the Sheriff, we concluded that a reasonable jury
+could have found that the Sheriff was deliberately indifferent
+to the plaintiff’s safety.  Id.  at 1447-48. Such a jury could have
+found that the Sheriff “knew or reasonably should have
+known of the overcrowding” and that “he acquiesced in a
+deficient policy that was a moving force behind” the harm
+caused to the plaintiff.  Id.  at 1447. [CITE_END:DOC003[P010.B02]]
+[CITE_START:DOC003[P010.B03]] [7] Starr alleges that Sheriff Baca’s knowledge of the unconstitutional conditions in the jail, including his knowl- edge of the culpable actions of his subordinates, coupled with his inaction, amounted to acquiescence in the unconstitutional conduct of his subordinates. As we noted in Redman , under California law, “[t]he sheriff is required by statute to take charge of and keep the county jail and the prisoners in it, and is answerable for the prisoner’s safekeeping.” Id. at 1446 (cit- ing Cal. Gov. Code §§ 26605, 26610; Cal. Penal Code § 4006). We have held that “acquiescence or culpable indif- ference” [CITE_END:DOC003[P010.B03]]
+[CITE_START:DOC003[P010.B04]] may suffice to show that a supervisor “personally played a role in the alleged constitutional violations.” Menotti v. City of Seattle , 409 F.3d 1113, 1149 (9th Cir. 2005); see Redman , 942 F.2d at 1446. Starr’s allegations that the actions or inactions of the person “answerable for the prisoner’s safe- keeping” caused his injury are therefore sufficient to state a claim of supervisory liability for deliberate indifference. C. Adequacy of Starr’s Complaint Under Rule 8(a) Finally, Sheriff Baca argues that even if Starr’s complaint might be read to state a claim of deliberate indifference, it does not satisfy the [CITE_END:DOC003[P010.B04]]
+[CITE_START:DOC003[P010.B05]] pleading standard that the Court in Iqbal held Federal Rule of Civil Procedure 8(a) to require. Our dis- senting colleague agrees with the district court that Starr has not satisfied the pleading requirements of Rule 8(a), as inter- preted by Iqbal . He writes, “Plaintiff’s complaint does noth- ing more than allege raw legal conclusions with insufficient facts to support them.” Diss. Op. at 2278. We disagree. [CITE_END:DOC003[P010.B05]]
+
+[Page 11]
+[CITE_START:DOC003[P011.B01]] 2264 S TARR v. B ACA 1. Allegations of the Complaint Starr claims that Sheriff Baca failed to act to protect inmates under his care despite his knowledge that they were in danger because of culpable acts of his subordinates and despite his ability to take actions that would have protected them. That is, to use language from our prior opinions, Starr claims that Sheriff Baca “knowingly refused to terminate a series of acts by others, which he knew or reasonably should have known would cause . . . constitutional injury.” Dubner , 266 F.3d at 968. Or, to state [CITE_END:DOC003[P011.B01]]
+[CITE_START:DOC003[P011.B02]] it slightly differently, Starr claims that Sheriff Baca is “liable in his individual capacity for his own culpable action or inaction in the training, super- vision, or control of his subordinates[.]” Watkins , 145 F.3d at 1093 (emphasis added; internal quotation marks omitted). [CITE_END:DOC003[P011.B02]]
+[CITE_START:DOC003[P011.B03]] It is somewhat tedious to recount the many allegations in
+the complaint detailing what Sheriff Baca knew or should
+have known, and what Sheriff Baca did or failed to do. But
+given our colleague’s conclusion that Starr’s complaint has
+not satisfied Rule 8(a), we feel obliged to do so. [CITE_END:DOC003[P011.B03]]
+[CITE_START:DOC003[P011.B04]] In paragraph 36, Starr alleges that the United States Depart- ment of Justice (“DOJ”) initiated an investigation into condi- tions at Los Angeles County Jails in June 1996. On September 5, 1997, the DOJ “gave BACA, then a supervisor, clear written notice in a ‘findings letter’ of a continued and serious pattern and practices of constitutional violations including[ ] abuse of inmates by sheriff’s deputies working in the jail and inmate on inmate violence.” In paragraph 37, Starr alleges that Sheriff Baca receives “weekly reports from his subordinates responsible for report- ing deaths and injuries in the jails,” and receives [CITE_END:DOC003[P011.B04]]
+[CITE_START:DOC003[P011.B05]] “ongoing reports of his Special Counsel and Office of Independent Review.” In paragraph 38, Starr alleges that in 1999, “under threat of a lawsuit by the DOJ, BACA and the COUNTY submitted to [CITE_END:DOC003[P011.B05]]
+
+[Page 12]
+[CITE_START:DOC003[P012.B01]] 2265
+S TARR  v. B ACA [CITE_END:DOC003[P012.B01]]
+[CITE_START:DOC003[P012.B02]] a Memorandum of Understanding (“MOU”) with the DOJ which required BACA and the COUNTY to address and cor- rect the continuous constitutional violations to which inmates were being subjected, particularly inmates suffering from mental problems. BACA personally signed the MOU. How- ever, after years of monitoring the County Jail system, under the authority of the MOU, in 2006, the DOJ experts issued a report which still found noncompliance with many of its rec- ommendations regarding the abuse of inmates and the defi- ciencies which continue at county jails[.]” In paragraph 39, Starr alleges that on July 6, 2002, “Ramon Gavira [CITE_END:DOC003[P012.B02]]
+[CITE_START:DOC003[P012.B03]] was severely beaten by a female deputy and later . . . was killed in his cell at [the] county jail. Deputies and staff testified that they were not investigated nor disciplined for lapses in supervision of Mr. Gavira and allegations that Mr. Gavira had been physically abused by deputies. BACA was personally advised of the failure to investigate and no disci- pline being imposed[.]” In paragraph 40, Starr alleges that on March 23, 2003, “BACA was . . . again made aware of Hispanic inmate gangs attacking African Americans and the failure to provide rea- sonable security when the [CITE_END:DOC003[P012.B03]]
+[CITE_START:DOC003[P012.B04]] COUNTY and LASD [Los Angeles County Sheriff’s Department] approved a settlement in a civil action where Ahmad Burrell, Rory Fontanelle, and Aaron Cunningham were attacked over a three day period, sustaining serious injuries. Although the deputies had known that His- panic gangs were going to attack African Americans, . . . the deputies failed to provide reasonable security and Burrell was attacked in the housing dormitory and the attackers were able to stab him twenty-four (24) times, some causing serious and permanent injury to his abdomen and head.” In paragraph 41, Starr alleges that on October 21, 2003, “inmate Ki [CITE_END:DOC003[P012.B04]]
+[CITE_START:DOC003[P012.B05]] Hong was killed by three inmates who entered the dayroom where Hong was housed. . . . Notice of numerous violations showing deputies failing to provide reasonable [CITE_END:DOC003[P012.B05]]
+
+[Page 13]
+[CITE_START:DOC003[P013.B01]] 2266 S TARR v. B ACA security and abandoning their duties, their lax discipline and failure to supervise were given to BACA by his in-house law- yers, yet the inmate on inmate violence continued. This was the first of five inmate-on-inmate killings that occurred in the jail system over a six-month period.” In paragraph 42, Starr alleges that on December 6, 2003, “Inmate Prendergast was beaten periodically over several hours from about 6:00 p.m., to early next morning by . . . two of his three cellmates. . . . Again, notice of numerous viola- tions showing deputy failing to [CITE_END:DOC003[P013.B01]]
+[CITE_START:DOC003[P013.B02]] provide reasonable security to the entire cell block, lax discipline and failure to supervise were presented to BACA, yet the inmate on inmate violence continued.” In paragraph 43, Starr alleges that on December 9, 2003, “inmate Mario Alvarado . . . was killed in a holding cell. . . . Deputies responsible for providing reasonable security failed to . . . do so, and the inmates who beat Alvarado had so much time they [were able to] conceal[ ] his dead body under clothes and trash . . . . Again, notice of numerous viola- tions showing deputy failing to [CITE_END:DOC003[P013.B02]]
+[CITE_START:DOC003[P013.B03]] provide reasonable security to the holding cell, lax discipline and failure to supervise were presented to BACA[.]” In paragraph 44, Starr alleges that on December 13, 2003, a deputy falsified the contents of a statement by a pre-trial detainee, Jose Beas, so that the falsified statement recounted that Beas had admitted to inappropriate touching of a minor. Beas was classified as an inmate who should be kept away from the general prison population, and was “given a wrist band that identified him as such,” but he was placed in a hold- ing tank with “general population inmates.” “Beas was imme- [CITE_END:DOC003[P013.B03]]
+[CITE_START:DOC003[P013.B04]] diately beaten by the other inmates and suffered brain damage. BACA was named as a defendant in that civil case and knew of the allegations of failure to provide reasonable security to the holding cell, lax discipline and failure to super- vise[,] and [he] approved the settlement[.]” [CITE_END:DOC003[P013.B04]]
+
+[Page 14]
+[CITE_START:DOC003[P014.B01]] 2267
+S TARR  v. B ACA [CITE_END:DOC003[P014.B01]]
+[CITE_START:DOC003[P014.B02]] In paragraph 45, Starr alleges that on January 12, 2004, “in- mate Kristopher Faye was stabbed to death by several inmates with jail-made knives. . . . Fay[e] was African American and the attackers were Hispanic. Deputies responsible for keeping the cell gates in the housing module close[d] allowed all the cell gates in the module to remain open which increased the danger of violence and was in violation of LASD policy. . . . Numerous violations showing errors in classification, placing highly dangerous inmates with histories of violence with nonviolent inmates presenting low security risk, deputy failing to provide [CITE_END:DOC003[P014.B02]]
+[CITE_START:DOC003[P014.B03]] reasonable security to the holding cell, lax discipline and failure to supervise were again presented to BACA in official reports[.]” In paragraph 46, Starr alleges that on April 20, 2004, “in- mate Raul Tinajero was killed in his cell in the jail, by inmate Santiago Pineda. Pineda had a history of prior misconduct in the jail[.] . . . Tinajero was to be a witness in a criminal case against Pineda. . . . Due to the monitoring failures of the depu- ties and inadequate procedures with regard to the escorting of inmates, Pineda was able to enter Tinajero’s cell [CITE_END:DOC003[P014.B03]]
+[CITE_START:DOC003[P014.B04]] unchallenged by the deputies responsible for providing reasonable security, kill Tinajero undetected, [and] remain in Tinajero’s cell for five hours undetected by deputies. Numerous violations show- ing errors in classification, deputies failing to provide reason- able security to the housing cells, lax discipline and failure to supervise were again presented to BACA in official reports[.]” In paragraph 47, Starr alleges that on May 23 or 24, 2004, inmate Antonio Fernandez was killed by other inmates in the dormitory. “The deputy that was assigned to monitor the dor- mitory had abandoned her duties and left her post unattended, and the post [CITE_END:DOC003[P014.B04]]
+[CITE_START:DOC003[P014.B05]] was vacant for approximately 20 minutes during which time the assault occurred. . . . [T]he failure to provide reasonable security to [the] housing area, lax discipline and failure to supervise were again presented to BACA[.]” [CITE_END:DOC003[P014.B05]]
+
+[Page 15]
+[CITE_START:DOC003[P015.B01]] 2268 S TARR v. B ACA In paragraph 48, Starr alleges, “BACA received notice from The Special Counsel to the Los Angeles County Sher- iff’s Department, in the 17th Semiannual Report (February 2004) and the 18th Semiannual Report (August 2004) of increasing levels of inmate violence in the jails.” In paragraph 49, Starr alleges that in “February 2005 BACA received notice from The Special Counsel to the Los Angeles County Sheriff’s Department, in the 19th Semiannual Report that his deputies[’] conduct was . . . costing county tax payers millions of dollars annually in payments of civil judg- ments and [CITE_END:DOC003[P015.B01]]
+[CITE_START:DOC003[P015.B02]] settlements, in cases where the internal investiga- tions had found no wrong doing. In all, BACA was notified by his Special Counsel that . . . of twenty-nine (29) cases involving police misconduct [that] settled for $100,000 or more over the past five years, only eight resulted in any type of discipline to the involved officers or policy change in the Department.” In paragraph 50, Starr alleges that on February 3, 2005, Special Counsel Merrick Bobb presented to BACA a finding of inmate abuse, contained in a report to the Los Angeles County Board of Supervisors. The report found “that [CITE_END:DOC003[P015.B02]]
+[CITE_START:DOC003[P015.B03]] ‘Los Angeles County’s largest jail is so outdated, understaffed and riddled with security flaws that it jeopardizes the lives of guards and inmates.’ The Special Counsel’s report criticized the County Jail in downtown Los Angeles for ‘failing to pre- vent dangerous inmates from being housed with lower-risk inmates . . . .’ The report concluded that Men[’]s[ ] Central Jail ‘is nightmarish to manage’ and suffers from ‘lax supervi- sion and a long-standing jail culture that has shortchanged accountability for inmate safety and security.’ ” In paragraph 52, Starr alleges that on October 24, 2005, Chadwick Shane Cochran was booked [CITE_END:DOC003[P015.B03]]
+[CITE_START:DOC003[P015.B04]] into county jail for a nonviolent misdemeanor. Due to mental health difficulties, Cochran was classified to be placed in a mental health facility located within the jail. “Due to errors by staff his protective [CITE_END:DOC003[P015.B04]]
+
+[Page 16]
+[CITE_START:DOC003[P016.B01]] 2269
+S TARR  v. B ACA [CITE_END:DOC003[P016.B01]]
+[CITE_START:DOC003[P016.B02]] housing was terminated and he was sent to general population on November 16, 2005, where he was beaten to death a few hours later that day. Deputies compounded the error of removing Cochran from protective status and left a red color identification card which led the attacking inmates to believe that he was a ‘snitch’ or informant. The deputies responsible for the safety of inmates abandoned their post and supervision of the locked day room in which 40 other inmates, some of whom were classified as violent ‘high risk’ accused murderers and gang members, and known violent offenders. Cochran was [CITE_END:DOC003[P016.B02]]
+[CITE_START:DOC003[P016.B03]] screaming and many other inmates were yelling for them to stop, but no deputy resumed their responsibility to provide reasonable security until the inmates had grown tired of beat- ing Cochran and hid his body under clothing and food trays. The numerous errors in classification, deputies failing to pro- vide reasonable security to the day room housing cells, lax discipline and failure to supervise were again presented to BACA in official reports[.]” In paragraphs 13 through 19, Starr alleges that he was attacked three months after Cochran was killed. We recounted the details of this alleged attack at the beginning [CITE_END:DOC003[P016.B03]]
+[CITE_START:DOC003[P016.B04]] of our opin- ion. [CITE_END:DOC003[P016.B04]]
+[CITE_START:DOC003[P016.B05]] In paragraph 32, Starr alleges that Sheriff “BACA knew or reasonabl[y] could have known[ ] of his subordinates’ ongo- ing constitutional violations . . . , of the failure to provide rea- sonable security at the jail, failure to prevent inmate on inmate violence, failure to monitor inmates, lax or no supervi- sion by his subordinate supervisors, use of excessive force on inmates, failure to investigate incidents . . . involving inmate on inmate violence, failure to protect, failure to implement indicated policies and procedures regarding, including but not limited to[,] the use of inmates as trustees[.] BACA failed to [CITE_END:DOC003[P016.B05]]
+[CITE_START:DOC003[P016.B06]] act to prevent his subordinates[’] ongoing unconstitutional conduct[;] . . . he acquiesced, condoned or ratified a custom, practice or policy of ongoing misconduct by his subordinate deputies and supervisors.” In paragraph 35, Starr alleges that [CITE_END:DOC003[P016.B06]]
+
+[Page 17]
+[CITE_START:DOC003[P017.B01]] 2270
+S TARR  v. B ACA “Sheriff BACA . . . became aware, or should have become
+aware, and should have taken corrective actions to prevent
+repeated incidents” of derelictions of duty by his subordi-
+nates. 2.  Pleading Standards under Rule 8(a) [8]  We hold that the foregoing allegations are sufficient to
+satisfy Rule 8(a). The text of Rule 8(a) has not been changed
+since the initial promulgation of the Federal Rules of Civil
+Procedure in 1938. In relevant part, it provides: (a) Claim for Relief. A pleading that states a claim
+for relief must contain: [CITE_END:DOC003[P017.B01]]
+[CITE_START:DOC003[P017.B02]] (2) a short and plain statement of the claim showing that the pleader is entitled to relief[.] The theory of Rule 8(a), and of the federal rules in general, is notice pleading. The 1938 federal rules replaced a system in which the federal trial courts had followed the procedural rules of the different states in which they sat. Conformity Act of 1872, Act of June 1, 1872, ch. 225, § 5, 17 Stat. 196, 197 (codified in Rev. Stat. § 914 (1878)). Ever since 1938, the federal civil rules have been applicable in all federal courts. They apply uniformly to [CITE_END:DOC003[P017.B02]]
+[CITE_START:DOC003[P017.B03]] all civil cases, whatever the cause of action or subject matter of the suit. See Fed. R. Civ. P. 1 (“These rules govern the procedure in all civil actions and proceedings in the United States district courts, except as stated in Rule 81.”). [CITE_END:DOC003[P017.B03]]
+[CITE_START:DOC003[P017.B04]] The state pleading rules had largely required code, or fact,
+pleading, under which pleaders were required to allege very
+specifically the factual bases for their claims. By contrast,
+under the federal rules a complaint is required only to give the [CITE_END:DOC003[P017.B04]]
+
+[Page 18]
+[CITE_START:DOC003[P018.B01]] 2271
+S TARR  v. B ACA [CITE_END:DOC003[P018.B01]]
+[CITE_START:DOC003[P018.B02]] notice of the claim such that the opposing party may defend
+himself or herself effectively. The theory of the federal rules
+is that once notice-giving pleadings have been served, the par-
+ties are to conduct discovery in order to learn more about the
+underlying facts. When they have learned the facts, the parties
+can settle or seek judgment. If the case does not settle but the
+material facts are clear, the court will grant summary judg-
+ment. If material facts are genuinely disputed, the case will go
+to trial. That, in any event, is the theory. [CITE_END:DOC003[P018.B02]]
+[CITE_START:DOC003[P018.B03]] In practice, the operation of the federal pleading rules is more nuanced. In some cases, particularly complex commer- cial cases, notice pleading rules give an advantage — perhaps an unfair advantage — to the plaintiff. If a plaintiff can sur- vive a motion to dismiss on the pleadings in such cases, he or she can put the defendant to enormous expense in discovery. In practical terms, this means that the settlement value of a suit jumps substantially the moment the complaint survives a motion to dismiss. In recognition of this practical reality, Congress took some aspects of pleading in federal [CITE_END:DOC003[P018.B03]]
+[CITE_START:DOC003[P018.B04]] securities cases out of the federal rules entirely, imposing by statute something like the old code pleading system as a way of pro- tecting defendants from some of the settlement pressures that exist under the Rule 8(a) regime. Private Securities Litigation Reform Act of 1995 (“PSLRA”), Pub. L. 104-67, 109 Stat. 737, Title I, § 101, codified at 15 U.S.C. § 78u-4(b); see also Tellabs, Inc. v. Makor Issues & Rights, Ltd. , 551 U.S. 308, 313 (2007) (“Exacting pleading requirements are among the control measures Congress included in the PSLRA. The PSLRA Act requires plaintiffs to state with particularity [CITE_END:DOC003[P018.B04]]
+[CITE_START:DOC003[P018.B05]] both the facts constituting the alleged violation, and the facts evi- dencing scienter.”); Zucco Partners, LLC v. Digimarc Corp. , 552 F.3d 981, 990 (9th Cir. 2009) (“All securities fraud com- plaints since 1995 . . . are subject to the more exacting plead- ing requirements of the PSLRA, which significantly altered pleading requirements in securities fraud cases.” (internal quotation marks omitted)). [CITE_END:DOC003[P018.B05]]
+
+[Page 19]
+[CITE_START:DOC003[P019.B01]] 2272 S TARR v. B ACA In several recent cases, without benefit of statute, the Supreme Court has applied what appears to be higher plead- ing standard under Rule 8(a). In Dura Pharmaceuticals, Inc. v. Broudo , 544 U.S. 336 (2005), the Court dealt with allega- tions of damage causation in a federal securities case; this allegation was not covered by the new higher pleading stan- dard imposed by the PSLRA. The Court “assume[d], at least for argument’s sake, that neither [Rule 8(a)(2)] nor the securi- ties statutes impose any special further requirement in respect to the pleading of proximate [CITE_END:DOC003[P019.B01]]
+[CITE_START:DOC003[P019.B02]] causation or economic loss.” Id. at 346. After “conced[ing] that ordinary pleading rules are not meant to impose a great burden upon a plaintiff,” the Court wrote, At the same time, allowing a plaintiff to forgo giving any indication of the economic loss and proximate cause that the plaintiff has in mind would bring about harm of the very sort the statutes seek to avoid. Cf. H. R. Conf. Rep. No. 104-369, p. 31 (1995) . . . (criticizing “abusive” practices including “the routine filing of lawsuits . . . with only [a] faint hope that the discovery process might [CITE_END:DOC003[P019.B02]]
+[CITE_START:DOC003[P019.B03]] lead to some plausible cause of action.”). It would permit a plain- tiff “with a largely groundless claim to simply take up the time of a number of other people, with the right to do so representing an in terrorem increment of the settlement value, rather than a reasonably founded hope that the [discovery] process will reveal relevant evidence.” Blue Chip Stamps [ v. Manor Drug Stores ], 421 U.S. [723, 741 (1975]. Id. at 347 (some alterations in original). [CITE_END:DOC003[P019.B03]]
+[CITE_START:DOC003[P019.B04]] In  Bell Atlantic Corp. v. Twombly , 550 U.S. 544 (2007),
+plaintiff alleged a violation of Section 1 of the Sherman Act.
+Applying the pleading standard of Rule 8(a), the Court wrote
+“that an allegation of parallel conduct and a bare assertion of
+conspiracy will not suffice,”  id.  at 556, even though the exis- [CITE_END:DOC003[P019.B04]]
+
+[Page 20]
+[CITE_START:DOC003[P020.B01]] 2273
+S TARR  v. B ACA [CITE_END:DOC003[P020.B01]]
+[CITE_START:DOC003[P020.B02]] tence of parallel conduct and a conspiracy would violate Sec-
+tion 1. The Court required more than just notice of the claim.
+It required that the claim be plausible. “[W]e hold that stating
+such a claim requires a complaint with enough factual matter
+(taken as true) to suggest that an agreement was made. Asking
+for plausible grounds to infer an agreement does not impose
+a probability requirement at the pleading stage; it simply calls
+for enough fact to raise a reasonable expectation that discov-
+ery will reveal evidence of illegal agreement.”  Id. [CITE_END:DOC003[P020.B02]]
+[CITE_START:DOC003[P020.B03]] The Court made clear in  Twombly  that it was concerned
+that lenient pleading standards facilitated abusive antitrust liti-
+gation. It provided, with approval, the following citation: [CITE_END:DOC003[P020.B03]]
+[CITE_START:DOC003[P020.B04]] See also Car Carriers, Inc. v. Ford Motor Co. , 745 F.2d 1101, 1106 (C.A.7 1984) (“[T]he costs of mod- ern federal antitrust litigation and the increasing caseload of the federal courts counsel against send- ing the parties into discovery when there is no rea- sonable likelihood that the plaintiffs can construct a claim from the events related in the complaint”)[.] Id. at 558. The Court wrote, further, “Probably, then, it is only by taking care to require allegations that reach the level sug- gesting conspiracy that we can hope to avoid the potentially enormous expense of discovery in cases [CITE_END:DOC003[P020.B04]]
+[CITE_START:DOC003[P020.B05]] with no ‘reasonably founded hope that the [discovery] process will reveal relevant evidence’ to support a § 1 claim. Dura , 544 U.S. at 347.” Id. at 559-60 (some internal quotation marks omitted). [CITE_END:DOC003[P020.B05]]
+[CITE_START:DOC003[P020.B06]] Finally, in  Iqbal , plaintiff Iqbal, a Muslim American man,
+brought a  Bivens  action alleging deliberate discrimination by
+Attorney General Ashcroft and F.B.I. Director Mueller.
+Applying Rule 8(a), the Court held that the allegations in
+Iqbal’s complaint were insufficient. In the Court’s view, the
+allegations were neither entitled to the presumption of truth
+nor plausible. [CITE_END:DOC003[P020.B06]]
+
+[Page 21]
+[CITE_START:DOC003[P021.B01]] 2274
+S TARR  v. B ACA Iqbal’s complaint alleged that defendants “ ‘knew of, con-
+doned, and willfully and maliciously agreed to subject’ [him]
+to harsh conditions of confinement ‘as a matter of policy,
+solely on account of [his] religion, race, and/or national origin
+and for no legitimate penological interest.’ ”  Id.  at 1944 (sec-
+ond alteration in original). The complaint alleged that “Ash-
+croft was the ‘principal architect’ of this invidious policy, . . .
+and that Mueller was ‘instrumental’ in adopting and executing
+it[.]”  Id.  at 1951. The Court held that these allegations were
+“bald,” and that their “conclusory nature . . . disentitle[d]
+them to the presumption of truth.”  Id. [CITE_END:DOC003[P021.B01]]
+[CITE_START:DOC003[P021.B02]] The complaint further alleged that the two defendants had
+caused the arrest and detention of “thousands of Arab Muslim
+men . . . as part of [the government’s] investigation of the
+events of September 11.”  Id.  at 1951. It alleged that the defen-
+dants had “purposefully designat[ed] detainees ‘of high inter-
+est’ because of their race, religion, or national origin.”  Id.  The
+Court held that this allegation of discriminatory purpose was
+implausible and therefore not a sufficient allegation under
+Rule 8(a): “[G]iven more likely explanations, [the allegations]
+do not plausibly establish this purpose.”  Id.  “[The] complaint
+does not contain any factual allegation sufficient to plausibly
+suggest [defendants’] discriminatory state of mind.”  Id.  at
+1952. [CITE_END:DOC003[P021.B02]]
+[CITE_START:DOC003[P021.B03]] In two cases decided during roughly the same period, the
+Court appears to have applied the original, more lenient ver-
+sion of Rule 8(a). In  Swierkiewicz v. Sorema N. A. , 534 U.S.
+506 (2002), the Second Circuit had dismissed plaintiff’s
+employment discrimination case for failure to plead facts
+establishing a prima facie case of discrimination. The
+Supreme Court reversed, writing: [CITE_END:DOC003[P021.B03]]
+[CITE_START:DOC003[P021.B04]] [P]etitioner’s 
+complaint 
+easily 
+satisfies 
+the
+requirements of Rule 8(a) because it gives respon-
+dent fair notice of the basis for petitioner’s claims.
+Petitioner alleged that he had been terminated on [CITE_END:DOC003[P021.B04]]
+
+[Page 22]
+[CITE_START:DOC003[P022.B01]] 2275
+S TARR  v. B ACA [CITE_END:DOC003[P022.B01]]
+[CITE_START:DOC003[P022.B02]] account of his national origin in violation of Title
+VII and on account of his age in violation of the
+ADEA. His complaint detailed the events leading to
+his termination, provided relevant dates, and
+included the ages and nationalities of at least some
+of the relevant persons involved in his termination.
+These allegations give respondent fair notice of what
+petitioner’s claims are and the grounds upon which
+they rest. . . . [CITE_END:DOC003[P022.B02]]
+[CITE_START:DOC003[P022.B03]] Respondent argues that allowing lawsuits based
+on conclusory allegations of discrimination to go
+forward will burden the courts and encourage dis-
+gruntled employees to bring unsubstantiated suits.
+Whatever the practical merits of this argument, the
+Federal Rules do not contain a heightened pleading
+standard for employment discrimination suits . . . .
+Rule 8(a) establishes a pleading standard without
+regard to whether a claim will succeed on the merits.
+“Indeed it may appear on the face of the pleadings
+that a recovery is very remote and unlikely but that
+is not the test.”  Scheuer , 416 U.S., at 236. Id.  at 514-15 (emphasis added) (some citations omitted). [CITE_END:DOC003[P022.B03]]
+[CITE_START:DOC003[P022.B04]] In Erickson v. Pardus , 551 U.S. 89 (2007) (per curiam), the Tenth Circuit had dismissed an Eighth and Fourteenth Amendment deliberate indifference claim for failure to satisfy Rule 8(a). Plaintiff, an inmate in a Colorado state prison, had “alleged that a liver condition resulting from hepatitis C required a treatment program that officials had commenced but then wrongfully terminated, with life-threatening conse- quences.” Id. at 89-90. The Tenth Circuit deemed the allega- tions of the complaint “conclusory” and dismissed on the pleadings. Id. at 90. The Court emphatically disagreed: “The holding departs in so stark a manner from the [CITE_END:DOC003[P022.B04]]
+[CITE_START:DOC003[P022.B05]] pleading stan- dard mandated by the Federal Rules of Civil Procedure that we grant review.” Id. The Court wrote, “[The complaint] [CITE_END:DOC003[P022.B05]]
+
+[Page 23]
+[CITE_START:DOC003[P023.B01]] 2276
+S TARR  v. B ACA alleged this medication was withheld ‘shortly after’ petitioner
+had commenced a treatment program that would take one
+year, that he was ‘still in need of treatment for this disease,’
+and that the prison officials were in the meantime refusing to
+provide treatment. This alone was enough to satisfy Rule
+8(a)(2).”  Id.  at 94 (citations omitted). [CITE_END:DOC003[P023.B01]]
+[CITE_START:DOC003[P023.B02]] The juxtaposition of Swierkiewicz and Erickson , on the one hand, and Dura , Twombly , and Iqbal , on the other, is perplex- ing. Even though the Court stated in all five cases that it was applying Rule 8(a), it is hard to avoid the conclusion that, in fact, the Court applied a higher pleading standard in Dura , Twombly and Iqbal . The Court in Dura and Twombly appeared concerned that in some complex commercial cases the usual lenient pleading standard under Rule 8(a) gave too much settlement leverage to plaintiffs. That is, if a non- specific complaint [CITE_END:DOC003[P023.B02]]
+[CITE_START:DOC003[P023.B03]] was enough to survive a motion to dismiss, plaintiffs would be able to extract undeservedly high settle- ments from deep-pocket companies. In Iqbal , by contrast, the Court was concerned that the usual lenient standard under Rule 8(a) would provide too little protection for high-level executive branch officials who allegedly engaged in miscon- duct in the aftermath of September 11, 2001. To the extent that we perceive a difference in the application of Rule 8(a) in the two groups of cases, it is difficult to know in cases that come before us whether we should apply the more lenient or [CITE_END:DOC003[P023.B03]]
+[CITE_START:DOC003[P023.B04]] the more demanding standard. [CITE_END:DOC003[P023.B04]]
+[CITE_START:DOC003[P023.B05]] [9]  But whatever the difference between these cases, we
+can at least state the following two principles common to all
+of them. First, allegations in a complaint or counterclaim must
+be sufficiently detailed to give fair notice to the opposing
+party of the nature of the claim so that the party may effec-
+tively defend against it. Second, the allegations must be suffi-
+ciently plausible that it is not unfair to require the opposing
+party to be subjected to the expense of discovery. [CITE_END:DOC003[P023.B05]]
+
+[Page 24]
+[CITE_START:DOC003[P024.B01]] 2277
+S TARR  v. B ACA 3.  Evaluation of Starr’s Complaint Viewed in the light of all of the Supreme Court’s recent
+cases, we hold that the allegations of Starr’s complaint satisfy
+the standard of Rule 8(a). We do not so hold merely because
+Starr’s complaint, like the complaint in  Erickson , alleges
+deliberate indifference in violation of the Eighth and Four-
+teenth Amendments. Rather, we so hold because his com-
+plaint complies with the two principles just stated. [CITE_END:DOC003[P024.B01]]
+[CITE_START:DOC003[P024.B02]] [10] First, Starr’s complaint specifically alleges numerous incidents in which inmates in Los Angeles County jails have been killed or injured because of the culpable actions of the subordinates of Sheriff Baca. The complaint specifically alleges that Sheriff Baca was given notice of all of these inci- dents. It specifically alleges, in addition, that Sheriff Baca was given notice, in several reports, of systematic problems in the county jails under his supervision that have resulted in these deaths and injuries. Finally, it alleges that Sheriff Baca did not take action to protect inmates under his care despite the dan- gers, [CITE_END:DOC003[P024.B02]]
+[CITE_START:DOC003[P024.B03]] created by the actions of his subordinates, of which he had been made aware. These allegations are neither “bald” nor “conclusory.” Iqbal , 129 S. Ct. at 1951. Rather, they are sufficiently detailed to give notice to Sheriff Baca of the nature of Starr’s claim against him and to give him a fair opportunity to defend against it. [CITE_END:DOC003[P024.B03]]
+[CITE_START:DOC003[P024.B04]] [11]  Second, the allegations in Starr’s complaint are plau-
+sible. They may or may not ultimately be proven by evidence.
+But the question is not truth or even probability. Rule 8(a)
+“does not impose a probability requirement at the pleading
+stage; it simply calls for enough fact to raise a reasonable
+expectation that discovery will reveal evidence” to support the
+allegations.  Twombly , 550 U.S. at 556. [CITE_END:DOC003[P024.B04]]
+[CITE_START:DOC003[P024.B05]] Conclusion [CITE_END:DOC003[P024.B05]]
+[CITE_START:DOC003[P024.B06]] [12]  We hold that the Supreme Court’s decision in  Iqbal
+did not alter the substantive requirements for supervisory lia- [CITE_END:DOC003[P024.B06]]
+
+[Page 25]
+[CITE_START:DOC003[P025.B01]] 2278
+S TARR  v. B ACA bility claims in an unconstitutional conditions of confinement
+case under the Eighth and Fourteenth Amendments where
+deliberate indifference is the applicable standard. We also
+hold that Starr has sufficiently alleged a supervisory liability
+claim of deliberate indifference against Sheriff Baca. We
+therefore reverse the district court’s dismissal of Starr’s claim
+against Sheriff Baca and remand for further proceedings. REVERSED AND REMANDED. [CITE_END:DOC003[P025.B01]]
+[CITE_START:DOC003[P025.B02]] TROTT, Circuit Judge, Dissenting: I respect my experienced colleagues’ evaluation of Starr’s
+final complaint, but my view of it is different. In the main, his
+complaint has all the hallmarks of an attempted end run
+around the prohibition against using the vicarious liability
+doctrine of respondeat superior to get at the boss. [CITE_END:DOC003[P025.B02]]
+[CITE_START:DOC003[P025.B03]] Judge Fletcher accurately describes what Starr must allege to support an actionable claim of individual supervisory liabil- ity, but I respectfully disagree that Starr’s complaint measures up to that standard. Yes, we have held that “acquiescence or culpable indifference” may suffice to show that a supervisor “personally played a role in the alleged constitutional viola- tions,” Menotti v. City of Seattle , 409 F.3d 1113, 1149 (9th Cir. 2005); but simply alleging generally that the Sheriff is “answerable for the prisoner’s safekeeping” doesn’t cut it. Id. Plaintiff’s complaint does nothing more than allege raw legal conclusions with insufficient facts to [CITE_END:DOC003[P025.B03]]
+[CITE_START:DOC003[P025.B04]] support them. Starr’s complaint runs afoul of our Circuit’s rule that to establish a claim for individual supervisory liability, a plaintiff must allege facts , not simply conclusions; and those facts must show that the individual sued was personally involved in the alleged deprivation of the plaintiff’s civil rights. Barren v. Harrington , 152 F.3d 1193, 1194 (9th Cir. 1998). Otherwise, the action fails for failure to state a viable claim. Id. Even if [CITE_END:DOC003[P025.B04]]
+
+[Page 26]
+[CITE_START:DOC003[P026.B01]] 2279
+S TARR  v. B ACA [CITE_END:DOC003[P026.B01]]
+[CITE_START:DOC003[P026.B02]] Judge Fletcher is correct that “supervisory liability” survives Iqbal , a plaintiff must still allege facts to get into court. Here, I pause for a moment to underscore and to highlight a critical aspect of the causation aspect of this issue that too often is lost in the undertow of the jailhouse activities of which the plaintiff complains: this part of Starr’s case is a claim not under Monell for an actionable governmental policy or custom or practice, but a claim for individual responsibility — not agency or department or political unit responsibility, but individual responsibility. It follows as night [CITE_END:DOC003[P026.B02]]
+[CITE_START:DOC003[P026.B03]] the day that the individual under scrutiny must have personally engaged in identifiably actionable behavior. As Judge Wu correctly explained, A supervisor may be liable if there exists either “(1) his or her personal involvement in the constitutional deprivation, or (2) a sufficient causal connection between the supervisor’s wrongful conduct and the constitutional violation.” . . . As the Ninth Circuit explained in Redman v. County of San Diego , 942 F.2d 1435, 1446-47 (9th Cir. 1991): [CITE_END:DOC003[P026.B03]]
+[CITE_START:DOC003[P026.B04]] This latter liability is not a form of vicari-
+ous liability. Rather, it is direct liability.
+Under direct liability, plaintiff must show
+the supervisor breached a duty to plaintiff
+which was the proximate cause of the
+injury. The law clearly allows actions
+against supervisors under section 1983 as
+long as a sufficient causal connection is
+present and the plaintiff was deprived under
+color of law of a federally secured right.
+“The requisite causal connection can be
+established . . . by setting in motion a series
+of acts by others which the actor knows or
+reasonably should know would cause others
+to inflict the constitutional injury.”  Johnson [CITE_END:DOC003[P026.B04]]
+
+[Page 27]
+[CITE_START:DOC003[P027.B01]] 2280 S TARR v. B ACA v. Duffy , 588 F.2d 740, 743-44 (9th Cir. 1978). We are evaluating Starr’s revised third amended complaint. The district court gave him multiple opportunities factually to amend to articulate the Sheriff’s personal involvement in this matter. In particular, the court requested on November 6, 2006, that Starr “state precisely the basis for the claims as to defendant L. Baca in the [anticipated] revised third amended complaint.” In response, Starr alleged only more conclusions and vague and insufficient allegations that the Sheriff (1) “knew or reasonably could have known,” (2) “knew or rea- sonably [CITE_END:DOC003[P027.B01]]
+[CITE_START:DOC003[P027.B02]] should have known,” and (3) was “aware or should have become aware” of the jail conditions of which Starr complains. He sums up his boilerplate allegations with a state- ment that the Sheriff is liable because he had either “personal knowledge or constructive knowledge” of all these conditions. Alleging that the Sheriff “ could ” have known, “ should ” have known, and “ should ” have become aware is tantamount to admitting that Starr had no facts to support his allegations. [CITE_END:DOC003[P027.B02]]
+[CITE_START:DOC003[P027.B03]] When we cease to look at the Los Angeles Sheriff’s Department (LASD) as an abstraction and look at the reality, we see good reasons for requiring facts before permitting law- suits against the Sheriff himself: the agency is gigantic. The LASD is the largest Sheriff’s Department in the world. It cov- ers 3,171 square miles, 2,557,754 residents, and by contract 42 of the 88 incorporated cities in Los Angeles County. The Department employs 8,400 law enforcement officers and 7,600 civilians and is responsible for 48 courthouses and 23 substations. The Men’s Central Jail alone houses a revolving population of 5,000 [CITE_END:DOC003[P027.B03]]
+[CITE_START:DOC003[P027.B04]] inmates. In addition, the Department operates the Twin Towers Correctional Facility, the Mira Loma Detention Facility, the Pitchess Detention Center, and the North County Correctional Center. Persons charged with or convicted of crimes are in over one hundred different loca- tions. The layers of administration and management between what happens in a jail are many and they are complex. To [CITE_END:DOC003[P027.B04]]
+
+[Page 28]
+[CITE_START:DOC003[P028.B01]] 2281
+S TARR  v. B ACA [CITE_END:DOC003[P028.B01]]
+[CITE_START:DOC003[P028.B02]] infer that specific incidents which occur in a jail are necessar-
+ily known by the Sheriff is to engage in fallacious logic. None
+of this complexity absolves the Department of responsibility
+for respecting the constitutional rights and general well-being
+of its charges, but it does show how inappropriate it is to sue
+the Sheriff individually  unless  in terms of causation the Sher-
+iff can be personally tied to the actionable behavior at issue.
+Just being a disappointing or even an insufficiently engaged
+public servant is not enough. Those issues are for the ballot
+box and the County Board of Supervisors, not the courts. Judge Wu was clear and correct in his articulation of the
+complaint’s deficiencies: [CITE_END:DOC003[P028.B02]]
+[CITE_START:DOC003[P028.B03]] What you need to do is state precisely what it is that you are claiming other than he’s the general supervisor of the jail facility, and therefore, he can be sued individually if anything bad happens, because bad things have happened in the past at the jail. It has to be something more than that to give rise to a claim. That’s what I want. I want you to state what precisely it is that he supposedly did wrong, and if it’s a failure to supervise it can’t be just a gen- eral failure of supervision. It has to be [CITE_END:DOC003[P028.B03]]
+[CITE_START:DOC003[P028.B04]] something that is specific. That’s what I want. Earlier in the same hearing, Starr’s counsel said this, which is equally indicative of no facts, just “theory:” MR. PAZ: Your Honor, let me give you an anal- ogy, Your Honor. All I can do is put it on the record and try to explain to the court the theory. It’s no different than if we had the head of a hospital, and a surgeon five floors down below is killing people on a regu- [CITE_END:DOC003[P028.B04]]
+
+[Page 29]
+[CITE_START:DOC003[P029.B01]] 2282
+S TARR  v. B ACA [CITE_END:DOC003[P029.B01]]
+[CITE_START:DOC003[P029.B02]] lar basis. If the head of the hospital
+doesn’t act, then they will be liable. [CITE_END:DOC003[P029.B02]]
+[CITE_START:DOC003[P029.B03]] Another concession appeared when counsel said, “We’re still
+at the pleading stage where we are just saying do we have a
+right to go to Mr. Baca and do discovery and try to prove our
+case.” Counsel’s statement here collides with what the
+Supreme Court said in  Ashcroft v. Iqbal , ___ U.S. ___, 129
+S.Ct. 1937 (2009): “Rule 8 . . . does not unlock the doors for
+a plaintiff armed with nothing more than conclusions.”  Id.  at
+1949-50. Accordingly, although we review this issue de novo, I
+agree with Judge Wu’s end-of-the-process conclusion: [CITE_END:DOC003[P029.B03]]
+[CITE_START:DOC003[P029.B04]] The TAC [Third Amended Complaint], as compared
+to previous pleadings, adds no new allegations which
+adequately identifies [sic] the precise nature of
+Baca’s misfeasance or nonfeasance or which estab-
+lishes a sufficient causal link between Baca’s actions
+or inaction and the alleged violation of plaintiff’s
+constitutional rights. [CITE_END:DOC003[P029.B04]]
+[CITE_START:DOC003[P029.B05]] Nor does Plaintiff’s opposition memorandum point to any language in the TAC which demon- strates such a causal connection. Plaintiff does not allege that Baca himself directly participated in any way in the January 27, 2006 incident or that he was involved in any review or investigation of it. Like- wise, Plaintiff has not cited to any specific policy implemented by Baca which was the “moving force [in] the constitutional violation.” Plaintiff simply argues that he “has amply satisfied the second ‘causal connection’ prong by alleging facts which put Baca on notice of ongoing unconstitutional con- duct of his subordinates [CITE_END:DOC003[P029.B05]]
+[CITE_START:DOC003[P029.B06]] .” However, the mere fact that Baca may have known about prior incidents [that] allegedly occurred in the jail does not show [CITE_END:DOC003[P029.B06]]
+
+[Page 30]
+[CITE_START:DOC003[P030.B01]] 2283
+S TARR  v. B ACA [CITE_END:DOC003[P030.B01]]
+[CITE_START:DOC003[P030.B02]] that Baca has implemented a policy that is tanta-
+mount to a repudiation of constitutional rights. Judge Fletcher’s Opinion, with all respect, is difficult to
+reconcile with  Iqbal . I extract portions of the  Iqbal  Opinion
+to illustrate my point: [CITE_END:DOC003[P030.B02]]
+[CITE_START:DOC003[P030.B03]] The allegations against petitioners are the only ones relevant here. The complaint contends that peti- tioners designated respondent a person of high inter- est on account of his race, religion, or national origin, in contravention of the First and Fifth Amendments to the Constitution. The complaint alleges that “the [FBI], under the direction of Defen- dant MUELLER, arrested and detained thousands of Arab Muslim men . . . as part of its investigation of the events of September 11.” It further alleges that “[t]he policy of holding post-September-11th detain- ees in highly restrictive conditions of confinement until they were ‘cleared’ [CITE_END:DOC003[P030.B03]]
+[CITE_START:DOC003[P030.B04]] by the FBI was approved by Defendants ASHCROFT and MUELLER in dis- cussions in the weeks after September 11, 2001.” Lastly, the complaint posits that petitioners “each knew of, condoned, and willfully and maliciously agreed to subject” respondent to harsh conditions of confinement “as a matter of policy, solely on account of [his] religion, race, and/or national origin and for no legitimate penological interest.” The pleading names Ashcroft as the “principal architect” of the policy, and identifies Mueller as “instrumental in [its] adoption, promulgation, and implementa- tion.” Id. at 1944 (internal citations omitted) (alterations and omis- sions in original). Respondent [CITE_END:DOC003[P030.B04]]
+[CITE_START:DOC003[P030.B05]] [Iqbal] . . . argues that, under a theory of “supervisory liability,” petitioners can be liable [CITE_END:DOC003[P030.B05]]
+
+[Page 31]
+[CITE_START:DOC003[P031.B01]] 2284 S TARR v. B ACA for “knowledge and acquiescence in their subordi- nates’ use of discriminatory criteria to make classifi- cation decisions among detainees.” That is to say, respondent believes a supervisor’s mere knowledge of his subordinate’s discriminatory purpose amounts to the supervisor’s violating the Constitution. We reject this argument. Respondent’s conception of “supervisory liability” is inconsistent with his accu- rate stipulation that petitioners may not be held accountable for the misdeeds of their agents. In a § 1983 suit or a Bivens action-where masters do not answer for the torts of their servants-the term “super- visory liability” is [CITE_END:DOC003[P031.B01]]
+[CITE_START:DOC003[P031.B02]] a misnomer. Absent vicarious lia- bility, each Government official, his or her title notwithstanding, is only liable for his or her own misconduct. In the context of determining whether there is a violation of [a] clearly established right to overcome qualified immunity, purpose rather than knowledge is required to impose Bivens liability on the subordinate for unconstitutional discriminations; the same holds true for an official charged with vio- lations arising from his or her superintendent responsibilities . Id. at 1949 (emphasis added) (internal citation omitted). [CITE_END:DOC003[P031.B02]]
+[CITE_START:DOC003[P031.B03]] Two working principles underlie our decision in
+[ Bell Atlantic Corp. v. ]  Twombly  [550 U.S. 544
+(2007)]. First, the tenet that a court must accept as
+true all of the allegations contained in a complaint is
+inapplicable to legal conclusions.  Thread-bare recit-
+als of the elements of a cause of action, supported by
+mere conclusory statements, do not suffice .  Id. , at
+555, 127 S. Ct. 1995 (Although for the purposes of
+a motion to dismiss we must take all of the factual
+allegations in the complaint as true,  we “are not
+bound to accept as true a legal conclusion couched
+as a factual allegation “ (internal quotation marks [CITE_END:DOC003[P031.B03]]
+
+[Page 32]
+[CITE_START:DOC003[P032.B01]] 2285
+S TARR  v. B ACA [CITE_END:DOC003[P032.B01]]
+[CITE_START:DOC003[P032.B02]] omitted)). Rule 8 marks a notable and generous departure from the hyper-technical, code-pleading regime of a prior era, but it does not unlock the doors of discovery for a plaintiff armed with nothing more than conclusions . Second, only a complaint that states a plausible claim for relief survives a motion to dismiss. Determining whether a complaint states a plausible claim for relief will, as the Court of Appeals observed, be a context-specific task that requires the reviewing court to draw on its judicial experience and common sense. But where the well- pleaded facts do not permit the court to [CITE_END:DOC003[P032.B02]]
+[CITE_START:DOC003[P032.B03]] infer more than the mere possibility of misconduct, the com- plaint has alleged-but it has not “show[n]”-”that the pleader is entitled to relief.” Fed. Rule Civ. Proc. 8(a)(2). Id. at 1949-50 (emphasis added) (internal citations omitted) (second alteration in original). [CITE_END:DOC003[P032.B03]]
+[CITE_START:DOC003[P032.B04]] We begin our analysis by identifying the allega- tions in the complaint that are not entitled to the assumption of truth. Respondent pleads that petition- ers “knew of, condoned, and willfully and mali- ciously agreed to subject [him]” to harsh conditions of confinement “as a matter of policy, solely on account of [his] religion, race, and/or national origin and for no legitimate penological interest.” The com- plaint alleges that Ashcroft was the “principal archi- tect” of this invidious policy, and that Mueller was “instrumental” in adopting and executing it. These bare assertions, much like the pleading of conspir- acy in [CITE_END:DOC003[P032.B04]]
+[CITE_START:DOC003[P032.B05]] Twombly, amount to nothing more than a “formulaic recitation of the elements” of a constitu- tional discrimination claim , namely, that petitioners adopted a policy “ ‘because of,’ not merely ‘in spite of,’ its adverse effects upon an identifiable group.” As such, the allegations are conclusory and not enti- [CITE_END:DOC003[P032.B05]]
+
+[Page 33]
+[CITE_START:DOC003[P033.B01]] 2286
+S TARR  v. B ACA tled to be assumed true. To be clear, we do  not  reject
+these bald allegations on the ground that they are
+unrealistic or nonsensical. We do not so characterize
+them any more than the Court in Twombly rejected
+the plaintiffs’ express allegation of a “ ‘contract,
+combination or conspiracy to prevent competitive
+entry,’ ” because it thought that claim too chimerical
+to be maintained. It is the  conclusory nature  of
+respondent’s allegations, rather than their extrava-
+gantly fanciful nature, that disentitles them to the
+presumption of truth. Id.  at 1951 (emphasis added) (internal citations omitted)
+(alterations in original). [CITE_END:DOC003[P033.B01]]
+[CITE_START:DOC003[P033.B02]] Although  Iqbal  puts considerable meat on this wise rule’s
+bones, it is not new. In 1988, for example, we said in  Taylor
+v. List , a failed lawsuit against Nevada’s Attorney General
+and the Director of the Nevada State Prison alleging their
+“knowledge of and failure to prevent the alleged constitu-
+tional violations by their subordinates,” the following: [CITE_END:DOC003[P033.B02]]
+[CITE_START:DOC003[P033.B03]] Liability under section 1983 arises only upon a
+showing of  personal participation  by the defendant.
+A supervisor is only liable for constitutional viola-
+tions of his subordinates if the supervisor partici-
+pated in or directed the violations, or knew of the
+violations and failed to act to prevent them. 880 F.2d 1040, 1043, 1045 (9th Cir. 1988) (emphasis added)
+(internal citation omitted). [CITE_END:DOC003[P033.B03]]
+[CITE_START:DOC003[P033.B04]] The days of pleading conclusions without factual support
+accompanied by the wishful hope of finding something juicy
+during discovery are over. Wisely, we have moved up judg-
+ment day to the complaint stage rather than bog down the
+courts and parties with pre-summary judgment combat. [CITE_END:DOC003[P033.B04]]
+
+[Page 34]
+[CITE_START:DOC003[P034.B01]] 2287
+S TARR  v. B ACA [CITE_END:DOC003[P034.B01]]
+[CITE_START:DOC003[P034.B02]] This conclusion, of course, does not leave Starr without
+redress. He may sue the Sheriff in his official capacity, which
+is the same as suing the County of Los Angeles and the Sher-
+iff’s Department, and he may pursue his lawsuit on the
+ground of official policy or longstanding custom and practice
+— but he may not sue the Sheriff just because he is the Sher-
+iff.  See Pembaur v. City of Cincinnati , 475 U.S. 469, 478
+(1986);  Community House, Inc. v. City of Boise , 623 F.3d
+945, 973 (9th Cir. 2010). The district court clearly under-
+stands this distinction: [CITE_END:DOC003[P034.B02]]
+[CITE_START:DOC003[P034.B03]] In other words, any time anything goes wrong of
+any sort Baca gets blamed and he can be individually
+liable as opposed to being liable [in his official
+capacity] as the agent of the county. I can understand
+that claim. There is no problem with that one, but
+you are suing him on an individual basis. [CITE_END:DOC003[P034.B03]]
+[CITE_START:DOC003[P034.B04]] Given the amount of time and effort already devoted to try-
+ing to get the Sheriff into this case, I seriously doubt any addi-
+tional facts will come forward. Thus, the next step is summary
+judgment. So be it. Accordingly, I respectfully dissent. [CITE_END:DOC003[P034.B04]]

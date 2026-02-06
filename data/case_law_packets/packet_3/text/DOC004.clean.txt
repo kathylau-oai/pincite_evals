@@ -1,0 +1,190 @@
+[Page 1]
+FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT
+T HOMAS  R OBINS , individually and
+on behalf of all others similarly
+situated,
+No. 11-56843 D.C. No.
+2:10-cv-05306-
+Plaintiff-Appellant ,
+ODW-AGR
+v.
+S POKEO , I NC ., a California
+corporation,
+OPINION
+Defendant-Appellee .
+Appeal from the United States District Court for the Central District of California
+Otis D. Wright, II, District Judge, Presiding Argued and Submitted
+November 6, 2013—Pasadena, California Filed February 4, 2014 Before: Diarmuid F. O’Scannlain, Susan P. Graber, and Carlos T. Bea, Circuit Judges. Opinion by Judge O’Scannlain
+
+[Page 2]
+R OBINS V . S POKEO , I NC .
+2
+SUMMARY *
+Standing / Fair Credit Reporting Act The panel reversed the district court’s dismissal, based on
+lack of Article III standing, of an action alleging willful
+violations of the Fair Credit Reporting Act.
+The panel held that the individual plaintiff had Article III
+standing to sue a website’s operator under the Fair Credit
+Reporting Act for publishing inaccurate personal information
+about himself.  The panel also held that law of the case did
+not limit the district court in its final order, and it was free to
+reconsider its own prior ruling on standing, where the district
+court had neither been divested of jurisdiction nor submitted
+this case to the jury.
+COUNSEL
+Steven Woodrow, Edelson LLC, Denver, Colorado, argued
+the cause for the plaintiff-appellant.  Bradley M. Baglien,
+Edelson LLC, Chicago, Illinois, filed the briefs for the
+plaintiff-appellant.  With him on the briefs were Jay Edelson,
+Edelson, LLC, Chicago, Illinois, and Rafey S. Balabanian,
+Edelson LLC, Chicago, Illinois.
+Donald M. Falk, Mayer Brown LLP, Palo Alto, California,
+argued the cause for the defendant-appellee.  John Nadolenco,
+Mayer Brown LLC, Los Angeles, California, filed the brief *  This summary constitutes no part of the opinion of the court.  It has
+been prepared by court staff for the convenience of the reader.
+
+[Page 3]
+R OBINS V . S POKEO , I NC .
+3
+for defendant-appellee.  With him on the brief was Barrett L.
+Schreiner, Mayer Brown LLP, Los Angeles, California. Meir Feder, Jones Day, New York, New York, filed the brief
+on behalf of amicus curiae Experian Information Solutions,
+Inc in support of the defendant-appellee.
+A. James Chareq, Hudson Cook, LLP, Washington, D.C.,
+filed the brief on behalf of amicus curiae Consumer Data
+Industry Association in support of the defendant-appellee.
+OPINION
+O’SCANNLAIN, Circuit Judge: We must decide whether an individual has Article III
+standing to sue a website’s operator under the Fair Credit
+Reporting Act for publishing inaccurate personal information
+about himself.
+I
+Spokeo, Inc. operates a website that provides users with
+information about other individuals, including contact data,
+marital status, age, occupation, economic health, and wealth
+level.  Thomas Robins sued Spokeo for willful violations of
+the Fair Credit Reporting Act (FCRA), 15 U.S.C. § 1681  et
+seq. , related to its website.  Although he asserted that
+Spokeo’s website contained false information about him,
+Robins’s allegations of injury were sparse.  Spokeo moved to
+dismiss Robins’s original complaint for lack of subject-matter
+jurisdiction on the ground that Robins lacked standing
+sufficient under Article III of the United States Constitution.
+
+[Page 4]
+R OBINS V . S POKEO , I NC .
+4 On January 27, 2011, the district court ruled that Robins
+had failed to allege an injury in fact because he had not
+alleged “any actual or imminent harm.”  The court
+characterized Robins’s allegations as simply “that he has been
+unsuccessful in seeking employment, and that he is concerned
+that the inaccuracies in his report will affect his ability to
+obtain credit, employment, insurance, and the like.”  The
+district court noted that “[a]llegations of possible future
+injury do not satisfy the [standing] requirements of Art. III”
+and dismissed the complaint without prejudice.
+Robins thereafter filed his First Amended Complaint (FAC). Similar to the original complaint, the FAC alleged willful violations of the FCRA. For example, the website allegedly described Robins as holding a graduate degree and as wealthy, both of which are alleged to be untrue. Robins, who is unemployed, described the misinformation as “caus[ing] actual harm to [his] employment prospects.” Remaining unemployed has cost Robins money as well as caused “anxiety, stress, concern, and/or worry about his diminished employment prospects.” Again, Spokeo moved to dismiss for lack of subject- matter jurisdiction on the ground that Robins lacked standing under Article III.
+On May 11, the district court denied the motion and concluded that Robins had alleged a sufficient injury in fact, namely Spokeo’s “marketing of inaccurate consumer reporting information about” Robins. The court also ruled that the injury was traceable to Spokeo’s alleged violations of the FCRA and that the injury was redressable through a favorable court decision. On September 19, after Spokeo moved to certify an interlocutory appeal, the district court reconsidered its
+
+[Page 5]
+R OBINS V . S POKEO , I NC .
+5
+previous ruling on standing.  It then ruled, contrary to its May
+11 order, that Robins failed to plead an injury in fact and that
+any injuries pled were not traceable to Spokeo’s alleged
+violations, dismissing the action.  Robins timely appealed.
+II
+On appeal, Robins first argues that the law-of-the-case
+doctrine prohibited the district court from revisiting its own
+May 11 decision.  In  United States v. Smith , however, we
+held that the law-of-the-case doctrine does not apply “to
+circumstances where a district court seeks to reconsider an
+order over which it has not been divested of jurisdiction.” 
+389 F.3d 944, 949 (9th Cir. 2004) (per curiam) (describing
+the doctrine as “wholly inapposite”).  In this case, the district
+court was not divested of jurisdiction prior to its September
+19 order.
+Although  United States v. Alexander  held that the law-of-
+the-case doctrine precluded a district court from
+reconsidering an evidentiary issue after a mistrial, 106 F.3d
+874, 876–77 (9th Cir. 1997), we distinguished  Alexander  in
+Smith  and do so again here.  The rule from  Alexander  applies
+only to cases in which a submission to the jury separates the
+two decisions.   See Smith , 389 F.3d at 949–50 (distinguishing
+Alexander  on the ground that the district court in that case
+had reconsidered its decision only after submitting the case to
+a jury).
+Here, because the district court had neither been divested
+of jurisdiction nor submitted this case to the jury, it was free
+to reconsider its own prior ruling.  The law-of-the-case
+doctrine did not limit the district court.
+
+[Page 6]
+R OBINS V . S POKEO , I NC .
+6
+III
+Robins next argues that the FAC sufficiently alleges Article III standing and that the May 11 ruling was correct. 1 The FAC indeed alleges violations of various statutory provisions. See 15 U.S.C. § 1681b(b)(1) (listing the circumstances in which consumer reporting agencies (CRAs) may provide “consumer reports for employment purposes”); id. § 1681e(b) (requiring CRAs to “follow reasonable procedures to assure maximum possible accuracy of” consumer reports); id. § 1681e(d) (requiring CRAs to issue notices to providers and users of information); id. § 1681j(a) (requiring CRAs to post toll-free telephone numbers to allow consumers to request consumer reports). Robins contends
+that because these provisions are enforceable through a private cause of action, see id. § 1681n, they create statutory rights that he has standing to vindicate in court. See Warth v. Seldin , 422 U.S. 490, 500 (1975) (“The actual or threatened injury required by Art[icle] III may exist solely by virtue of statutes creating legal rights, the invasion of which creates standing.” (internal quotation marks omitted)).
+The district court properly recognized that it would not
+have subject-matter jurisdiction if Robins did not have
+standing.   See DaimlerChrysler Corp. v. Cuno , 547 U.S. 332,
+1  Spokeo briefly responds that the FAC “pleads no facts from which an
+inference of willfulness might be drawn.”  We disagree.  “[W]illful[]”
+violations within the meaning of 15 U.S.C. § 1681n include violations in
+“reckless disregard of statutory duty.”   Safeco Ins. Co. of Am. v. Burr ,
+551 U.S. 47, 57 (2007).  The facts that Robins pled make it plausible that
+Spokeo acted in reckless disregard of duties created by the FCRA.  Robins
+pled, among other things, that Spokeo knew about inaccuracies in its
+reports and marketed its reports for purposes covered by the FCRA despite
+disclaiming any such uses.
+
+[Page 7]
+R OBINS V . S POKEO , I NC .
+7
+341–42 (2006). The district court also correctly identified the three components of standing: (1) the plaintiff “has suffered an ‘injury in fact’ that is (a) concrete and particularized and (b) actual or imminent, not conjectural or hypothetical”; (2) “the injury is fairly traceable to the challenged action of the defendant”; and (3) “it is likely, as opposed to merely speculative, that the injury will be redressed by a favorable decision.” Friends of the Earth, Inc. v. Laidlaw Envtl. Servs., Inc. , 528 U.S. 167, 180–81 (2000). Although more may be required at later stages of the litigation, on a motion
+to dismiss, “general factual allegations of injury resulting from the defendant’s conduct may suffice.” Lujan v. Defenders of Wildlife , 504 U.S. 555, 561 (1992).
+A
+In standing cases that analyze statutory rights, our precedent establishes two propositions. First, Congress’s creation of a private cause of action to enforce a statutory provision implies that Congress intended the enforceable provision to create a statutory right. See Fulfillment Servs. Inc. v. United Parcel Serv., Inc. , 528 F.3d 614, 619 (9th Cir. 2008). Second, the violation of a statutory right is usually a sufficient injury in fact to confer standing. See Edwards v. First Am. Corp. , 610 F.3d 514, 517 (9th Cir. 2010) (“Essentially, the standing question in such cases is whether the constitutional or statutory provision
+on which the claim rests properly can be understood as granting persons in the plaintiff’s position a right to judicial relief.”); Fulfillment Servs. , 528 F.3d at 619 (same).
+Spokeo contends, however, that Robins cannot sue under
+the FCRA without showing actual harm.  But the statutory
+cause of action does not require a showing of actual harm
+
+[Page 8]
+R OBINS V . S POKEO , I NC . 8 when a plaintiff sues for willful violations. 15 U.S.C. § 1681n(a) (“Any person who willfully fails to comply with any requirement imposed under this subchapter with respect to any consumer is liable to that consumer in an amount equal to . . . damages of not less than $100 and not more than $1,000 . . . .”); see also Beaudry v. TeleCheck Servs., Inc. , 579 F.3d 702, 705–07 (6th Cir. 2009) (ruling that the FCRA “permits a recovery when there are no identifiable or measurable actual damages”);
+Murray v. GMAC Mortg. Corp. , 434 F.3d 948, 952–53 (7th Cir. 2006) (ruling that the FCRA “provide[s] for modest damages without proof of injury”). 2 The scope of the cause of action determines the scope of the implied statutory right. See Edwards , 610 F.3d at 517 (“Because the statutory text does not limit liability to instances in which a plaintiff is overcharged, we hold that Plaintiff has established an injury sufficient to satisfy Article III.”). When, as here, the statutory cause of action does not require proof of actual damages, a plaintiff can suffer a violation of the
+statutory right without suffering actual damages.
+2 Spokeo urges that such interpretation of the FCRA “would raise serious constitutional issues,” suggesting that we should adopt the contrary reading, which the Eighth Circuit has described as “reasonable.” See Dowell v. Wells Fargo Bank, NA , 517 F.3d 1024, 1026 (8th Cir. 2008) (per curiam) (noting that one “reasonable reading of the [FCRA] could still require proof of actual damages but simply substitute statutory rather than actual damages for the purpose of calculating the damage award”). We are not persuaded. As we explain below, our reading of the FCRA does not raise difficult constitutional questions. That our sister
+circuit has described Spokeo’s reading as “reasonable,” without actually ruling on the best interpretation of the statutory text, is of little consequence here.
+
+[Page 9]
+R OBINS V . S POKEO , I NC .
+9 B
+Of course, the Constitution limits the power of Congress to confer standing. See Lujan , 504 U.S. at 577 (refusing “[t]o permit Congress to convert the undifferentiated public interest in executive officers’ compliance with the law into an ‘individual right’ vindicable in the courts”); id. at 580 (Kennedy, J., concurring in part and concurring in the judgment) (“The Court’s holding that there is an outer limit to the power of Congress to confer rights of action is a direct and necessary consequence of the case and controversy limitations found in Article III.”). This constitutional limit, however, does not prohibit Congress
+from “elevating to the status of legally cognizable injuries concrete, de facto injuries that were previously inadequate in law.” Id. at 578 (majority opinion).
+The issue before us is whether violations of statutory rights created by the FCRA are “concrete, de facto injuries” that Congress can so elevate. We are not the first Court of Appeals to face this question. In Beaudry , the Sixth Circuit considered whether an FCRA plaintiff suing under 15 U.S.C. § 1681n had sufficiently alleged an injury in fact by alleging a violation of the FCRA. 579 F.3d at 707. The court identified two constitutional limitations on congressional power to confer standing. First, a plaintiff “must be ‘among the injured,’ in the sense that she alleges the defendants violated
+her statutory rights.” Id. Second, the statutory right at issue must protect against “individual, rather than collective, harm.” Id. The Beaudry court held that the plaintiff satisfied both of these requirements. Id. Robins is in the same position. First, he alleges that Spokeo violated his statutory rights, not just the statutory
+
+[Page 10]
+R OBINS V . S POKEO , I NC . 10 rights of other people, so he is “among the injured.” Second, the interests protected by the statutory rights at issue are sufficiently concrete and particularized that Congress can elevate them. Lujan , 504 U.S. at 578. Like “an individual’s personal interest in living in a racially integrated community” or “a company’s interest in marketing its product free from competition,” Robins’s personal interests in the handling of his credit information are individualized rather than collective. Id. (describing two “concrete, de facto injuries” that Congress could “elevat[e] to the status of
+legally cognizable injuries”). Therefore, alleged violations of Robins’s statutory rights are sufficient to satisfy the injury-in- fact requirement of Article III.
+C
+In addition to injury in fact, of course, standing requires causation and redressability. See Laidlaw , 528 U.S. at 180–81. Where statutory rights are asserted, however, our cases have described the standing inquiry as boiling down to “essentially” the injury-in-fact prong. See Edwards , 610 F.3d at 517; Fulfillment Servs. , 528 F.3d at 618–19. When the injury in fact is the violation of a statutory right that we inferred from the existence of a private cause of action, causation and redressability will usually be satisfied. First, there is little doubt that a defendant’s alleged violation of a statutory provision
+“caused” the violation of a right created by that provision. Second, statutes like the FCRA frequently provide for monetary damages, which redress the violation of statutory rights. See Jewel v. Nat’l Sec. Agency , 673 F.3d 902, 912 (9th Cir. 2011) (ruling that there was “no real question about redressability” when a plaintiff sought “an injunction and damages, either of which is an available
+
+[Page 11]
+R OBINS V . S POKEO , I NC .
+11
+remedy”).  Therefore, Robins has adequately pled causation
+and redressability in this case. 3
+IV
+For the foregoing reasons, Robins adequately alleges
+Article III standing. 4 REVERSED AND REMANDED.
+3  Because we determine that Robins has standing by virtue of the alleged
+violations of his statutory rights, we do not decide whether harm to his
+employment prospects or related anxiety could be sufficient injuries in
+fact.
+4  Because standing is the only question before us, we do not intimate any
+opinion on the merits of this case.  We do not decide, for example,
+whether Spokeo qualifies as a consumer reporting agency or whether
+Spokeo actually violated the FCRA.

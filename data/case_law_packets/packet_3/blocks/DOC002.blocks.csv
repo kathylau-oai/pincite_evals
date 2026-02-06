@@ -1,0 +1,456 @@
+packet_id,doc_id,source_url,page_number,block_number,excerpt_id,citation_token,word_count,token_count,x0,y0,x1,y1,text
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,1,1,P001.B01,DOC002[P001.B01],6,16,156.24,114.02,458.25,124.84,"1 
+(Slip Opinion) 
+OCTOBER TERM, 2015"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,1,2,P001.B02,DOC002[P001.B02],1,2,288.06,137.66,326.32,148.47,Syllabus
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,1,3,P001.B03,DOC002[P001.B03],72,102,156.54,157.79,458.92,218.22,"NOTE: Where it is feasible, a syllabus (headnote) will be released, as is
+being done in connection with this case, at the time the opinion is issued.
+The syllabus constitutes no part of the opinion of the Court but has been
+prepared by the Reporter of Decisions for the convenience of the reader. 
+See  United States  v.  Detroit Timber & Lumber Co.,  200 U. S. 321, 337. 
+SUPREME COURT OF THE UNITED STATES"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,1,4,P001.B04,DOC002[P001.B04],104,174,156.23,236.23,458.36,558.34,"Syllabus SPOKEO, INC. v . ROBINS CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT No. 13–1339. Argued November 2, 2015—Decided May 16, 2016 The Fair Credit Reporting Act of 1970 (FCRA) requires consumer re porting agencies to “follow reasonable procedures to assure maximum possible accuracy of” consumer reports, 15 U. S. C. §1681e(b), and imposes liability on “[a]ny person who willfully fails to comply with any requirement [of the Act] with respect to any” individual, §1681n(a). Petitioner Spokeo, Inc., an alleged consumer reporting agency, op erates a “people search engine,” which searches a wide spectrum of"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,1,5,P001.B05,DOC002[P001.B05],101,131,156.23,236.23,458.36,558.34,"databases to gather and provide personal information about individ uals to a variety of users, including employers wanting to evaluate prospective employees. After respondent Thomas Robins discovered that his Spokeo-generated profile contained inaccurate information, he filed a federal class-action complaint against Spokeo, alleging that the company willfully failed to comply with the FCRA’s require ments. The District Court dismissed Robins’ complaint, holding that he had not properly pleaded injury in fact as required by Article III. The Ninth Circuit reversed. Based on Robins’ allegation that “Spokeo vio lated his statutory rights” and the fact that Robins’ “personal inter ests in"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,1,6,P001.B06,DOC002[P001.B06],20,24,156.23,236.23,458.36,558.34,"the handling of his credit information are individualized ,” the court held that Robins had adequately alleged an injury in fact."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,1,7,P001.B07,DOC002[P001.B07],26,39,156.23,561.39,455.7,593.8,"Held : Because the Ninth Circuit failed to consider both aspects of the
+injury-in-fact requirement, its Article III standing analysis was in
+complete. Pp. 5–11."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,1,8,P001.B08,DOC002[P001.B08],44,67,165.24,593.85,458.34,637.12,"(a) A plaintiff invoking federal jurisdiction bears the burden of es
+tablishing the “irreducible constitutional minimum” of standing by
+demonstrating (1) an injury in fact, (2) fairly traceable to the chal
+lenged conduct of the defendant, and (3) likely to be redressed by a"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,2,1,P002.B01,DOC002[P002.B01],5,15,156.24,114.06,365.04,124.87,"2 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,2,2,P002.B02,DOC002[P002.B02],1,2,288.05,137.7,326.31,148.51,Syllabus
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,2,3,P002.B03,DOC002[P002.B03],63,124,165.23,156.06,458.32,231.8,"favorable judicial decision.   Lujan  v.  Defenders of Wildlife , 504 U. S. 
+555, 560–561.  Pp. 5–6. (b) As relevant here, the injury-in-fact requirement requires a 
+plaintiff to show that he or she suffered “an invasion of a legally pro
+tected interest” that is “concrete and particularized” and “actual or
+imminent, not conjectural or hypothetical.”   Lujan ,  supra,  at 560. 
+Pp. 7–11."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,2,4,P002.B04,DOC002[P002.B04],91,168,165.24,231.79,458.27,318.39,"(1) The Ninth Circuit’s injury-in-fact analysis elided the inde
+pendent “concreteness” requirement.  Both observations it made con
+cerned only “particularization,”  i.e.,  the requirement that an injury
+“affect the plaintiff in a personal and individual way,”  Lujan ,  supra,
+at 560, n. 1, but an injury in fact must be both concrete  and  particu
+larized, see,  e.g. ,  Susan B. Anthony List  v.  Driehaus , 573 U. S. ___, 
+___. Concreteness is quite different from particularization and re
+quires an injury to be “ de facto ,” that is, to actually exist.  Pp. 7–8."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,2,5,P002.B05,DOC002[P002.B05],101,129,156.24,318.38,458.29,590.87,"(2) The Ninth Circuit also failed to address whether the alleged procedural violations entail a degree of risk sufficient to meet the concreteness requirement. A “concrete” injury need not be a “tangi ble” injury. See, e.g., Pleasant Grove City v. Summum , 555 U. S. 460. To determine whether an intangible harm constitutes injury in fact, both history and the judgment of Congress are instructive. Congress is well positioned to identify intangible harms that meet minimum Article III requirements, but a plaintiff does not automatically satisfy the injury-in-fact requirement whenever a statute grants a right and purports to authorize a"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,2,6,P002.B06,DOC002[P002.B06],100,133,156.24,318.38,458.29,590.87,"suit to vindicate it. Article III standing re quires a concrete injury even in the context of a statutory violation. This does not mean, however, that the risk of real harm cannot satis fy that requirement. See , e.g., Clapper v. Amnesty Int’l USA , 568 U. S. ____. The violation of a procedural right granted by statute can be sufficient in some circumstances to constitute injury in fact; in such a case, a plaintiff need not allege any additional harm beyond the one identified by Congress, see Federal Election Comm’n v. Akins , 524 U. S. 11, 20–25. This"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,2,7,P002.B07,DOC002[P002.B07],69,90,156.24,318.38,458.29,590.87,"Court takes no position on the correctness of the Ninth Circuit’s ultimate conclusion, but these general princi ples demonstrate two things: that Congress plainly sought to curb the dissemination of false information by adopting procedures de signed to decrease that risk and that Robins cannot satisfy the de mands of Article III by alleging a bare procedural violation. Pp. 8– 11. 742 F. 3d 409, vacated and remanded."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,2,8,P002.B08,DOC002[P002.B08],47,91,156.24,598.87,458.3,639.38,"A LITO , J., delivered the opinion of the Court, in which R OBERTS , C. J., 
+and K ENNEDY , T HOMAS , B REYER , and K AGAN , JJ., joined. T HOMAS , J., 
+filed a concurring opinion.  G INSBURG , J., filed a dissenting opinion, in 
+which S OTOMAYOR , J., joined."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,3,1,P003.B01,DOC002[P003.B01],11,21,244.27,114.02,458.33,148.47,"1 
+Cite as: 578 U. S. ____ (2016) Opinion of the Court"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,3,2,P003.B02,DOC002[P003.B02],66,88,156.54,158.03,458.92,218.46,"NOTICE: This opinion is subject to formal revision before publication in the
+preliminary print of the United States Reports. Readers are requested to
+notify the Reporter of Decisions, Supreme Court of the United States, Wash
+ington, D. C. 20543, of any typographical or other formal errors, in order
+that corrections may be made before the preliminary print goes to press. 
+SUPREME COURT OF THE UNITED STATES"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,3,3,P003.B03,DOC002[P003.B03],3,7,280.02,232.69,334.39,243.5,No. 13–1339
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,3,4,P003.B04,DOC002[P003.B04],21,45,162.12,259.72,454.64,303.31,"SPOKEO, INC., PETITIONER  v.  THOMAS ROBINS ON WRIT OF CERTIORARI TO THE UNITED STATES COURT OF 
+APPEALS FOR THE NINTH CIRCUIT"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,3,5,P003.B05,DOC002[P003.B05],3,9,275.03,308.4,341.71,320.41,"[May 16, 2016]"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,3,6,P003.B06,DOC002[P003.B06],53,85,156.24,328.78,458.88,411.09,"J USTICE  A LITO  delivered the opinion of the Court. 
+This case presents the question whether respondent
+Robins has standing to maintain an action in federal court 
+against petitioner Spokeo under the Fair Credit Reporting
+Act of 1970 (FCRA or Act), 84 Stat. 1127, as amended, 15 
+U. S. C. §1681  et seq."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,3,7,P003.B07,DOC002[P003.B07],93,126,156.24,411.1,458.93,543.33,"Spokeo operates a “people search engine.”  If an individ
+ual visits Spokeo’s Web site and inputs a person’s name, a 
+phone number, or an e-mail address, Spokeo conducts a 
+computerized search in a wide variety of databases and 
+provides information about the subject of the search.
+Spokeo performed such a search for information about
+Robins, and some of the information it gathered and then
+disseminated was incorrect. When Robins learned of these 
+inaccuracies, he filed a complaint on his own behalf and on
+behalf of a class of similarly situated individuals."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,3,8,P003.B08,DOC002[P003.B08],56,81,156.24,543.34,458.91,622.65,"The District Court dismissed Robins’ complaint for lack 
+of standing, but a panel of the Ninth Circuit reversed.  The 
+Ninth Circuit noted, first, that Robins had alleged that
+“Spokeo violated  his  statutory rights, not just the statu-
+tory rights of other people,” and, second, that “Robins’s
+personal interests in the handling of his credit information"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,4,1,P004.B01,DOC002[P004.B01],5,15,156.24,113.78,365.04,124.59,"2 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,4,2,P004.B02,DOC002[P004.B02],4,4,263.03,137.42,351.41,148.23,Opinion of the Court
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,4,3,P004.B03,DOC002[P004.B03],42,67,156.24,156.22,458.85,222.34,"are individualized rather than collective.” 742 F. 3d 409, 
+413 (2014). Based on these two observations, the Ninth 
+Circuit held that Robins had adequately alleged injury in
+fact, a requirement for standing under Article III of the
+Constitution.  Id.,  at 413–414."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,4,4,P004.B04,DOC002[P004.B04],87,152,156.24,222.35,458.87,354.58,"This analysis was incomplete.  As we have explained in 
+our prior opinions, the injury-in-fact requirement requires
+a plaintiff to allege an injury that is both “concrete  and 
+particularized.”   Friends of the Earth, Inc.  v.  Laidlaw 
+Environmental Services (TOC), Inc. , 528 U. S. 167, 180– 
+181 (2000) (emphasis added). The Ninth Circuit’s analysis 
+focused on the second characteristic (particularity), but it
+overlooked the first (concreteness).  We therefore vacate 
+the decision below and remand for the Ninth Circuit to 
+consider  both  aspects of the injury-in-fact requirement."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,4,5,P004.B05,DOC002[P004.B05],105,137,156.24,360.65,458.86,581.68,"I The FCRA seeks to ensure “fair and accurate credit reporting.” §1681(a)(1). To achieve this end, the Act regulates the creation and the use of “consumer report[s]” 1 by “consumer reporting agenc[ies]” 2 for certain specified 1 The Act defines the term “consumer report” as: “any written, oral, or other communication of any information by a consumer reporting agency bearing on a consumer’s credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics, or mode of living which is used or expected to be used or collected in whole or in part for the purpose of serving as a"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,4,6,P004.B06,DOC002[P004.B06],44,71,156.24,360.65,458.86,581.68,"factor in establishing the consumer’s eligibility for— “(A) credit or insurance to be used primarily for personal, family, or household purposes; “(B) employment purposes; or “(C) any other purpose authorized under section 1681b of this title.” 15 U. S. C. §1681a(d)(1)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,4,7,P004.B07,DOC002[P004.B07],55,70,156.24,581.65,458.42,635.79,"2 “The term ‘consumer reporting agency’ means any person which, for
+monetary fees, dues, or on a cooperative nonprofit basis, regularly
+engages in whole or in part in the practice of assembling or evaluating
+consumer credit information or other information on consumers for the 
+purpose of furnishing consumer reports to third parties, and which uses"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,5,1,P005.B01,DOC002[P005.B01],11,21,244.26,113.78,458.33,148.16,"3 
+Cite as: 578 U. S. ____ (2016) Opinion of the Court"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,5,2,P005.B02,DOC002[P005.B02],60,111,156.24,156.22,458.85,261.99,"purposes, including credit transactions, insurance, licens
+ing, consumer-initiated business transactions, and em
+ployment. 
+See §§1681a(d)(1)(A)–(C); §1681b.  Enacted 
+long before the advent of the Internet, the FCRA applies to 
+companies that regularly disseminate information bearing 
+on an individual’s “credit worthiness, credit standing,
+credit capacity, character, general reputation, personal 
+characteristics, or mode of living.” §1681a(d)(1)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,5,3,P005.B03,DOC002[P005.B03],85,125,156.24,262.01,458.87,394.24,"The FCRA imposes a host of requirements concerning 
+the creation and use of consumer reports.  As relevant 
+here, the Act requires consumer reporting agencies to
+“follow reasonable procedures to assure maximum possible
+accuracy of ” consumer reports, §1681e(b); to notify provid
+ers and users of consumer information of their responsibil
+ities under the Act, §1681e(d); to limit the circumstances
+in which such agencies provide consumer reports “for
+employment purposes,” §1681b(b)(1); and to post toll-free
+numbers for consumers to request reports, §1681j(a)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,5,4,P005.B04,DOC002[P005.B04],62,94,156.23,394.25,458.83,486.82,"The Act also provides that “[a]ny person who willfully 
+fails to comply with any requirement [of the Act] with
+respect to any [individual 3 ] is liable to that [individual]” 
+for, among other things, either “actual damages” or statu
+tory damages of $100 to $1,000 per violation, costs of the 
+action and attorney’s fees, and possibly punitive damages. 
+§1681n(a)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,5,5,P005.B05,DOC002[P005.B05],101,144,156.24,486.83,458.74,635.79,"Spokeo is alleged to qualify as a “consumer reporting
+agency” under the FCRA. 4  It operates a Web site that
+allows users to search for information about other individ
+uals by name, e-mail address, or phone number.  In re
+sponse to an inquiry submitted online, Spokeo searches a any means or facility of interstate commerce for the purpose of prepar
+ing or furnishing consumer reports.”  §1681a(f). 3 This statutory provision uses the term “consumer,” but that term is
+defined to mean “an individual.” §1681a(c). 4 For purposes of this opinion, we assume that Spokeo is a consumer 
+reporting agency."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,6,1,P006.B01,DOC002[P006.B01],5,15,156.24,113.78,365.04,124.58,"4 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,6,2,P006.B02,DOC002[P006.B02],4,4,263.03,137.42,351.41,148.23,Opinion of the Court
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,6,3,P006.B03,DOC002[P006.B03],97,142,156.24,156.22,458.86,314.85,"wide spectrum of databases and gathers and provides 
+information such as the individual’s address, phone num
+ber, marital status, approximate age, occupation, hobbies, 
+finances, shopping habits, and musical preferences.  App.
+7, 10–11. According to Robins, Spokeo markets its ser
+vices to a variety of users, including not only “employers
+who want to evaluate prospective employees,” but also
+“those who want to investigate prospective romantic part
+ners or seek other personal information.”  Brief for Re
+spondent 7. Persons wishing to perform a Spokeo search 
+need not disclose their identities, and much information is 
+available for free."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,6,4,P006.B04,DOC002[P006.B04],97,140,156.24,314.93,458.87,447.1,"At some point in time, someone (Robins’ complaint does
+not specify who) made a Spokeo search request for infor
+mation about Robins, and Spokeo trawled its sources and 
+generated a profile.  By some means not detailed in Rob
+ins’ complaint, he became aware of the contents of that 
+profile and discovered that it contained inaccurate infor
+mation. His profile, he asserts, states that he is married, 
+has children, is in his 50’s, has a job, is relatively affluent,
+and holds a graduate degree. App. 14. According to Rob
+ins’ complaint, all of this information is incorrect."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,6,5,P006.B05,DOC002[P006.B05],33,48,156.24,447.17,458.83,513.22,"Robins filed a class-action complaint in the United
+States District Court for the Central District of California, 
+claiming, among other things, that Spokeo willfully failed 
+to comply with the FCRA requirements enumerated
+above."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,6,6,P006.B06,DOC002[P006.B06],59,85,156.24,513.29,458.82,605.8,"The District Court initially denied Spokeo’s motion to 
+dismiss the complaint for lack of jurisdiction, but later
+reconsidered and dismissed the complaint with prejudice.
+App. to Pet. for Cert. 23a.  The court found that Robins 
+had not “properly pled” an injury in fact, as required by
+Article III.  Ibid. The Court of Appeals for the Ninth Circuit reversed."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,7,1,P007.B01,DOC002[P007.B01],11,21,244.27,113.78,458.33,148.16,"5 
+Cite as: 578 U. S. ____ (2016) Opinion of the Court"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,7,2,P007.B02,DOC002[P007.B02],100,131,156.24,156.22,458.88,354.58,"Relying on Circuit precedent, 5 the court began by stating that “the violation of a statutory right is usually a suffi cient injury in fact to confer standing.” 742 F. 3d, at 412. The court recognized that “the Constitution limits the power of Congress to confer standing.” Id., at 413. But the court held that those limits were honored in this case because Robins alleged that “Spokeo violated his statutory rights, not just the statutory rights of other people,” and because his “personal interests in the handling of his credit information are individualized rather than collec tive.” Ibid. (emphasis in"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,7,3,P007.B03,DOC002[P007.B03],37,66,156.24,156.22,458.88,354.58,"original). The court thus con cluded that Robins’ “alleged violations of [his] statutory rights [were] sufficient to satisfy the injury-in-fact re quirement of Article III.” Id., at 413–414. We granted certiorari. 575 U. S. ___ (2015)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,7,4,P007.B04,DOC002[P007.B04],109,198,156.24,359.85,458.95,535.48,"II
+A 
+The Constitution confers limited authority on each 
+branch of the Federal Government.  It vests Congress with
+enumerated “legislative Powers,” Art. I, §1; it confers upon 
+the President “[t]he executive Power,” Art. II, §1, cl. 1; and 
+it endows the federal courts with “[t]he judicial Power of
+the United States,” Art. III, §1.  In order to remain faithful 
+to this tripartite structure, the power of the Federal Judi
+ciary may not be permitted to intrude upon the powers 
+given to the other branches. See  DaimlerChrysler Corp.  v. 
+Cuno , 547 U. S. 332, 341 (2006);  Lujan  v.  Defenders of 
+Wildlife , 504 U. S. 555, 559–560 (1992)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,7,5,P007.B05,DOC002[P007.B05],71,133,156.24,535.56,458.81,635.73,"Although the Constitution does not fully explain what is 
+meant by “[t]he judicial Power of the United States,”
+Art. III, § 1, it does specify that this power extends only to 5 See  Edwards  v.  First American Corp ., 610 F. 3d 514 (CA9 2010), 
+cert. granted  sub nom. First American Financial Corp.  v.  Edwards , 564 
+U. S. 1018 (2011), cert. dism’d as improvidently granted, 567 U. S. ___ 
+(2012) (  per curiam )."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,8,1,P008.B01,DOC002[P008.B01],5,15,156.24,113.78,365.04,124.58,"6 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,8,2,P008.B02,DOC002[P008.B02],4,4,263.03,137.42,351.41,148.23,Opinion of the Court
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,8,3,P008.B03,DOC002[P008.B03],48,89,156.24,156.22,458.86,222.34,"“Cases” and “Controversies,” Art. III, §2.  And “ ‘[n]o prin
+ciple is more fundamental to the judiciary’s proper role in 
+our system of government than the constitutional limita
+tion of federal-court jurisdiction to actual cases or contro
+versies.’ ”  Raines  v.  Byrd , 521 U. S. 811, 818 (1997)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,8,4,P008.B04,DOC002[P008.B04],99,137,156.23,222.35,458.81,433.96,"Standing to sue is a doctrine rooted in the traditional understanding of a case or controversy. The doctrine developed in our case law to ensure that federal courts do not exceed their authority as it has been traditionally understood. See id., at 820. The doctrine limits the cate gory of litigants empowered to maintain a lawsuit in federal court to seek redress for a legal wrong. See Valley Forge Christian College v. Americans United for Separa tion of Church and State, Inc. , 454 U. S. 464, 473 (1982); Warth v. Seldin , 422 U. S. 490, 498–499 (1975). In"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,8,5,P008.B05,DOC002[P008.B05],60,99,156.23,222.35,458.81,433.96,"this way, “[t]he law of Article III standing . . . serves to prevent the judicial process from being used to usurp the powers of the political branches,” Clapper v. Amnesty Int’l USA , 568 U. S. ___, ___ (2013) (slip op., at 9); Lujan , supra , at 576– 577, and confines the federal courts to a properly judicial role, see Warth , supra , at 498."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,8,6,P008.B06,DOC002[P008.B06],99,158,156.23,433.97,458.92,635.78,"Our cases have established that the “irreducible consti tutional minimum” of standing consists of three elements. Lujan , 504 U. S. , at 560. The plaintiff must have (1) suffered an injury in fact, (2) that is fairly traceable to the challenged conduct of the defendant, and (3) that is likely to be redressed by a favorable judicial decision. Id., at 560–561; Friends of the Earth, Inc. , 528 U. S., at 180–181. The plaintiff, as the party invoking federal jurisdiction, bears the burden of establishing these elements. FW/PBS, Inc. v. Dallas , 493 U. S. 215, 231 (1990). Where,"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,8,7,P008.B07,DOC002[P008.B07],37,58,156.23,433.97,458.92,635.78,"as here, a case is at the pleading stage, the plaintiff must “clearly . . . allege facts demonstrating” each element. Warth , supra , at 518. 6 6 “That a suit may be a class action . . . adds nothing to the question"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,9,1,P009.B01,DOC002[P009.B01],11,21,244.26,113.78,458.32,148.17,"7 
+Cite as: 578 U. S. ____ (2016) Opinion of the Court"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,9,2,P009.B02,DOC002[P009.B02],101,158,156.25,156.22,458.88,397.24,"B This case primarily concerns injury in fact, the “[f]irst and foremost” of standing’s three elements. Steel Co. v. Citizens for Better Environment , 523 U. S. 83, 103 (1998). Injury in fact is a constitutional requirement, and “[i]t is settled that Congress cannot erase Article III’s standing requirements by statutorily granting the right to sue to a plaintiff who would not otherwise have standing.” Raines, supra, at 820, n. 3; see Summers v. Earth Island Institute , 555 U. S. 488, 497 (2009); Gladstone, Realtors v. Village of Bellwood , 441 U. S. 91, 100 (1979) (“In no event"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,9,3,P009.B03,DOC002[P009.B03],60,91,156.25,156.22,458.88,397.24,". . . may Congress abrogate the Art. III minima”). To establish injury in fact, a plaintiff must show that he or she suffered “an invasion of a legally protected interest” that is “concrete and particularized” and “actual or immi nent, not conjectural or hypothetical.” Lujan , 504 U. S., at 560 (internal quotation marks omitted). We discuss the particularization and concreteness requirements below."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,9,4,P009.B04,DOC002[P009.B04],87,174,156.24,403.31,458.86,635.72,"1 For an injury to be “particularized,” it “must affect the plaintiff in a personal and individual way.” Ibid. , n. 1; see also, e.g. , Cuno , supra, at 342 (“ ‘plaintiff must allege personal injury’ ”); Whitmore v. Arkansas , 495 U. S. 149, 155 (1990) (“ ‘distinct’ ”); Allen v. Wright , 468 U. S. 737, 751 (1984) (“personal”); Valley Forge , supra , at 472 (stand ing requires that the plaintiff “ ‘personally has suffered some actual or threatened injury’ ”); United States v. Richardson , 418 U. S. 166, 177 (1974) (not “undifferenti- ated”); Public"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,9,5,P009.B05,DOC002[P009.B05],76,130,156.24,403.31,458.86,635.72,"Citizen, Inc. v. National Hwy. Traffic Safety Admin. , 489 F. 3d 1279, 1292–1293 (CADC 2007) (collect of standing, for even named plaintiffs who represent a class ‘must allege and show that they personally have been injured, not that injury has been suffered by other, unidentified members of the class to which they belong.’ ” Simon v. Eastern Ky. Welfare Rights Organization , 426 U. S. 26, 40, n. 20 (1976) (quoting Warth , 422 U. S., at 502)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,10,1,P010.B01,DOC002[P010.B01],5,15,156.25,113.78,365.05,124.59,"8 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,10,2,P010.B02,DOC002[P010.B02],4,4,263.04,137.42,351.42,148.23,Opinion of the Court
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,10,3,P010.B03,DOC002[P010.B03],101,140,156.24,156.22,458.94,433.96,"ing cases). 7 Particularization is necessary to establish injury in fact, but it is not sufficient. An injury in fact must also be “concrete.” Under the Ninth Circuit’s analysis, however, that independent requirement was elided. As previously noted, the Ninth Circuit concluded that Robins’ complaint alleges “concrete, de facto ” injuries for essentially two reasons. 742 F. 3d, at 413. First, the court noted that Robins “alleges that Spokeo violated his statutory rights, not just the statutory rights of other people.” Ibid. Sec ond, the court wrote that “Robins’s personal interests in the handling of his credit information are individualized"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,10,4,P010.B04,DOC002[P010.B04],79,145,156.24,156.22,458.94,433.96,"rather than collective .” Ibid . (emphasis added). Both of these observations concern particularization, not con creteness. We have made it clear time and time again that an injury in fact must be both concrete and particu larized. See, e.g. , Susan B. Anthony List v. Driehaus , 573 U. S. ___, ___ (2014) (slip op., at 8); Summers , supra, at 493; Sprint Communications Co. v. APCC Services, Inc. , 554 U. S. 269, 274 (2008); Massachusetts v. EPA , 549 U. S. 497, 517 (2007)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,10,5,P010.B05,DOC002[P010.B05],100,145,156.24,433.97,458.83,635.79,"A “concrete” injury must be “ de facto ”; that is, it must actually exist. See Black’s Law Dictionary 479 (9th ed. 2009). When we have used the adjective “concrete,” we have meant to convey the usual meaning of the term— “real,” and not “abstract.” Webster’s Third New Interna tional Dictionary 472 (1971); Random House Dictionary of the English Language 305 (1967). Concreteness, there fore, is quite different from particularization. 2 “Concrete” is not, however, necessarily synonymous with 7 The fact that an injury may be suffered by a large number of people does not of itself make that injury"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,10,6,P010.B06,DOC002[P010.B06],27,39,156.24,433.97,458.83,635.79,"a nonjusticiable generalized griev ance. The victims’ injuries from a mass tort, for example, are widely shared, to be sure, but each individual suffers a particularized harm."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,11,1,P011.B01,DOC002[P011.B01],11,21,244.27,113.78,458.33,148.16,"9 
+Cite as: 578 U. S. ____ (2016) Opinion of the Court"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,11,2,P011.B02,DOC002[P011.B02],55,104,156.24,156.22,458.76,235.53,"“tangible.”  Although tangible injuries are perhaps easier
+to recognize, we have confirmed in many of our previous
+cases that intangible injuries can nevertheless be concrete.
+See,  e.g. ,  Pleasant Grove City  v.  Summum , 555 U. S. 460 
+(2009) (free speech);  Church of Lukumi Babalu Aye, Inc.  v. 
+Hialeah , 508 U. S. 520 (1993) (free exercise)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,11,3,P011.B03,DOC002[P011.B03],101,126,156.24,235.61,458.85,526.55,"In determining whether an intangible harm constitutes injury in fact, both history and the judgment of Congress play important roles. Because the doctrine of standing derives from the case-or-controversy requirement, and because that requirement in turn is grounded in historical practice, it is instructive to consider whether an alleged intangible harm has a close relationship to a harm that has traditionally been regarded as providing a basis for a lawsuit in English or American courts. See Vermont Agency of Natural Resources v. United States ex rel. Ste vens , 529 U. S. 765, 775–777 (2000). In addition, because Congress is"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,11,4,P011.B04,DOC002[P011.B04],100,132,156.24,235.61,458.85,526.55,"well positioned to identify intangible harms that meet minimum Article III requirements, its judgment is also instructive and important. Thus, we said in Lujan that Congress may “elevat[e] to the status of legally cog nizable injuries concrete, de facto injuries that were previ ously inadequate in law.” 504 U. S., at 578. Similarly, Justice Kennedy’s concurrence in that case explained that “Congress has the power to define injuries and articulate chains of causation that will give rise to a case or contro versy where none existed before.” Id., at 580 (opinion concurring in part and concurring in judgment)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,11,5,P011.B05,DOC002[P011.B05],73,101,156.24,526.56,458.92,632.33,"Congress’ role in identifying and elevating intangible 
+harms does not mean that a plaintiff automatically satis
+fies the injury-in-fact requirement whenever a statute 
+grants a person a statutory right and purports to author
+ize that person to sue to vindicate that right.  Article III 
+standing requires a concrete injury even in the context of a 
+statutory violation.  For that reason, Robins could not, for 
+example, allege a bare procedural violation, divorced from"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,12,1,P012.B01,DOC002[P012.B01],5,15,156.24,113.78,365.05,124.58,"10 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,12,2,P012.B02,DOC002[P012.B02],4,4,263.04,137.42,351.42,148.23,Opinion of the Court
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,12,3,P012.B03,DOC002[P012.B03],50,85,156.24,156.22,458.86,235.53,"any concrete harm, and satisfy the injury-in-fact require
+ment of Article III. 
+See  Summers , 555 U. S., at 496 
+(“[D]eprivation of a procedural right without some con
+crete interest that is affected by the deprivation . . . is 
+insufficient to create Article III standing”); see also  Lujan , 
+supra , at 572."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,12,4,P012.B04,DOC002[P012.B04],99,134,156.24,235.61,458.89,513.28,"This does not mean, however, that the risk of real harm cannot satisfy the requirement of concreteness. See , e.g., Clapper v. Amnesty Int’l USA , 568 U. S. ____. For exam ple, the law has long permitted recovery by certain tort victims even if their harms may be difficult to prove or measure. See, e.g., Restatement (First) of Torts §§569 (libel), 570 (slander per se ) (1938). Just as the common law permitted suit in such instances, the violation of a procedural right granted by statute can be sufficient in some circumstances to constitute injury in fact. In other"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,12,5,P012.B05,DOC002[P012.B05],100,140,156.24,235.61,458.89,513.28,"words, a plaintiff in such a case need not allege any addi tional harm beyond the one Congress has identified. See Federal Election Comm’n v. Akins , 524 U. S. 11, 20–25 (1998) (confirming that a group of voters’ “inability to obtain information” that Congress had decided to make public is a sufficient injury in fact to satisfy Article III); Public Citizen v. Department of Justice , 491 U. S. 440, 449 (1989) (holding that two advocacy organizations’ failure to obtain information subject to disclosure under the Federal Advisory Committee Act “constitutes a sufficiently distinct injury to provide standing to"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,12,6,P012.B06,DOC002[P012.B06],1,3,156.24,235.61,458.89,513.28,sue”).
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,12,7,P012.B07,DOC002[P012.B07],86,109,156.25,513.36,458.91,632.33,"In the context of this particular case, these general
+principles tell us two things: On the one hand, Congress 
+plainly sought to curb the dissemination of false infor
+mation by adopting procedures designed to decrease that 
+risk. On the other hand, Robins cannot satisfy the de
+mands of Article III by alleging a bare procedural viola
+tion. A violation of one of the FCRA’s procedural require
+ments may result in no harm.  For example, even if a
+consumer reporting agency fails to provide the required"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,13,1,P013.B01,DOC002[P013.B01],11,21,244.27,113.78,458.29,148.17,"11 
+Cite as: 578 U. S. ____ (2016) Opinion of the Court"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,13,2,P013.B02,DOC002[P013.B02],101,117,156.24,156.22,458.84,429.7,"notice to a user of the agency’s consumer information, that information regardless may be entirely accurate. In addi tion, not all inaccuracies cause harm or present any mate rial risk of harm. An example that comes readily to mind is an incorrect zip code. It is difficult to imagine how the dissemination of an incorrect zip code, without more, could work any concrete harm. 8 Because the Ninth Circuit failed to fully appreciate the distinction between concreteness and particularization, its standing analysis was incomplete. It did not address the question framed by our discussion, namely, whether the particular procedural violations"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,13,3,P013.B03,DOC002[P013.B03],59,74,156.24,156.22,458.84,429.7,"alleged in this case entail a degree of risk sufficient to meet the concreteness re quirement. We take no position as to whether the Ninth Circuit’s ultimate conclusion—that Robins adequately alleged an injury in fact—was correct. * * * The judgment of the Court of Appeals is vacated, and the case is remanded for proceedings consistent with this opinion."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,13,4,P013.B04,DOC002[P013.B04],4,5,377.76,429.78,458.8,442.96,It is so ordered.
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,13,5,P013.B05,DOC002[P013.B05],29,35,156.24,603.31,458.27,635.79,"8 We express no view about any other types of false information that
+may merit similar treatment.  We leave that issue for the Ninth Circuit 
+to consider on remand."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,14,1,P014.B01,DOC002[P014.B01],11,25,244.27,114.02,458.33,148.47,"1 
+Cite as: 578 U. S. ____ (2016) T HOMAS , J., concurring"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,14,2,P014.B02,DOC002[P014.B02],6,9,156.54,156.85,458.92,173.46,SUPREME COURT OF THE UNITED STATES
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,14,3,P014.B03,DOC002[P014.B03],3,7,280.02,187.69,334.39,198.5,No. 13–1339
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,14,4,P014.B04,DOC002[P014.B04],21,45,162.12,214.72,454.64,258.31,"SPOKEO, INC., PETITIONER  v.  THOMAS ROBINS ON WRIT OF CERTIORARI TO THE UNITED STATES COURT OF 
+APPEALS FOR THE NINTH CIRCUIT"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,14,5,P014.B05,DOC002[P014.B05],3,9,275.03,263.4,341.71,275.41,"[May 16, 2016]"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,14,6,P014.B06,DOC002[P014.B06],71,122,156.25,283.78,458.83,405.75,"J USTICE  T HOMAS , concurring. 
+The Court vacates and remands to have the Court of 
+Appeals determine “whether the particular procedural
+violations alleged in this case entail a degree of risk suffi
+cient to meet the concreteness requirement.”  Ante,  at 11. 
+In defining what constitutes a concrete injury, the Court
+explains that “concrete” means “‘real,’” and “not ‘ab
+stract,’” but is not “necessarily synonymous with ‘tan- 
+gible.’”   Ante , at 8–9."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,14,7,P014.B07,DOC002[P014.B07],81,109,156.25,405.83,458.83,524.8,"I join the Court’s opinion.  I write separately to explain
+how, in my view, the injury-in-fact requirement applies to 
+different types of rights.  The judicial power of common-
+law courts was historically limited depending on the na
+ture of the plaintiff ’s suit. 
+Common-law courts more 
+readily entertained suits from private plaintiffs who al
+leged a violation of their own rights, in contrast to private 
+plaintiffs who asserted claims vindicating public rights.
+Those limitations persist in modern standing doctrine."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,14,8,P014.B08,DOC002[P014.B08],48,84,156.25,530.07,458.84,626.38,"I 
+A 
+Standing doctrine limits the “judicial power” to “‘cases
+and controversies of the sort traditionally amenable to,
+and resolved by, the judicial process.’”   Vermont Agency of 
+Natural Resources  v.  United States ex rel. Stevens , 529 
+U. S. 765, 774 (2000) (quoting  Steel Co.  v.  Citizens for a"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,15,1,P015.B01,DOC002[P015.B01],5,15,156.24,113.78,365.04,124.58,"2 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,15,2,P015.B02,DOC002[P015.B02],4,8,258.53,137.42,356.03,148.23,"T HOMAS , J., concurring"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,15,3,P015.B03,DOC002[P015.B03],91,152,156.24,156.22,458.87,301.65,"Better Environ ment, 523 U. S. 83, 102 (1998)).  To under
+stand the limits that standing imposes on “the judicial
+Power,” therefore, we must “refer directly to the traditional, 
+fundamental limitations upon the powers of common- 
+law courts.”   Honig  v.  Doe , 484 U. S. 305, 340 (1988) (Scalia, 
+J., dissenting).  These limitations preserve separation
+of powers by preventing the judiciary’s entanglement in
+disputes that are primarily political in nature.  This con
+cern is generally absent when a private plaintiff seeks to
+enforce only his personal rights against another private 
+party."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,15,4,P015.B04,DOC002[P015.B04],99,144,156.24,301.73,458.88,632.26,"Common-law courts imposed different limitations on a plaintiff ’s right to bring suit depending on the type of right the plaintiff sought to vindicate. Historically, common-law courts possessed broad power to adjudicate suits involving the alleged violation of private rights, even when plaintiffs alleged only the violation of those rights and nothing more. “Private rights” are rights “belonging to individuals, considered as individuals.” 3 W. Blackstone, Commentaries *2 (hereinafter Blackstone). “Private rights” have traditionally included rights of personal security (including security of reputation), property rights, and contract rights. See 1 id. , at *130–*139; Woolhander & Nelson, Does History Defeat"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,15,5,P015.B05,DOC002[P015.B05],103,150,156.24,301.73,458.88,632.26,"Standing Doctrine?, 102 Mich. L. Rev. 689, 693 (2004). In a suit for the violation of a private right, courts historically presumed that the plaintiff suffered a de facto injury merely from having his personal, legal rights invaded. Thus, when one man placed his foot on another’s property, the property owner needed to show nothing more to establish a traditional case or controversy. See Entick v. Carrington, 2 Wils. K. B. 275, 291, 95 Eng. Rep. 807, 817 (1765). Many tradi tional remedies for private-rights causes of action—such as for trespass, infringement of intellectual property, and unjust enrichment—are not contingent"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,15,6,P015.B06,DOC002[P015.B06],13,14,156.24,301.73,458.88,632.26,on a plaintiff ’s allegation of damages beyond the violation of his private
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,16,1,P016.B01,DOC002[P016.B01],11,25,244.26,113.78,458.32,148.17,"Cite as: 578 U. S. ____ (2016) 
+3 T HOMAS , J., concurring"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,16,2,P016.B02,DOC002[P016.B02],48,92,156.24,156.22,458.83,222.34,"legal right.  See Brief for Restitution and Remedies Schol
+ars as  Amici Curiae  6–18; see also  Webb  v.  Portland Mfg. 
+Co.,  29 F. Cas. 506, 508 (No. 17,322) (Me. 1838) (stating 
+that a legal injury “imports damage in the nature of it”
+(internal quotation marks omitted))."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,16,3,P016.B03,DOC002[P016.B03],101,136,156.25,222.35,458.92,635.72,"Common-law courts, however, have required a further showing of injury for violations of “public rights”—rights that involve duties owed “to the whole community, consid ered as a community, in its social aggregate capacity.” 4 Blackstone *5. Such rights include “free navigation of waterways, passage on public highways, and general compliance with regulatory law.” Woolhander & Nelson, 102 Mich. L. Rev., at 693. Generally, only the government had the authority to vindicate a harm borne by the public at large, such as the violation of the criminal laws. See id., at 695–700. Even in limited cases where private plaintiffs could bring"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,16,4,P016.B04,DOC002[P016.B04],99,146,156.25,222.35,458.92,635.72,"a claim for the violation of public rights, they had to allege that the violation caused them “some extraordinary damage, beyond the rest of the [com munity].” 3 Blackstone *220 (discussing nuisance); see also Commonwealth v. Webb , 27 Va. 726, 729 (Gen. Ct. 1828).* An action to redress a public nuisance, for exam ple, was historically considered an action to vindicate the violation of a public right at common law, lest “every subject in the kingdom” be able to “harass the offender with separate actions.” 3 Blackstone *219; see also 4 id., at *167 (same). But if the plaintiff"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,16,5,P016.B05,DOC002[P016.B05],84,113,156.25,222.35,458.92,635.72,"could allege “special damage” as the result of a nuisance, the suit could pro ceed. The existence of special, individualized damage had the effect of creating a private action for compensatory relief to an otherwise public-rights claim. See 3 id., at *The well-established exception for qui tam actions allows private plaintiffs to sue in the government’s name for the violation of a public right. See Vermont Agency of Natural Resources v. United States ex rel. Stevens , 529 U. S. 765, 773–774 (2000)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,17,1,P017.B01,DOC002[P017.B01],5,15,156.24,113.78,365.04,124.58,"4 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,17,2,P017.B02,DOC002[P017.B02],4,8,258.53,137.42,356.03,148.23,"T HOMAS , J., concurring"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,17,3,P017.B03,DOC002[P017.B03],59,110,156.24,156.22,458.81,235.53,"*220. Similarly, a plaintiff had to allege individual dam
+age in disputes over the use of public lands.  E.g. ,  Robert 
+Marys’s Case , 9 Co. Rep. 111b, 112b, 77 Eng. Rep. 895,
+898–899 (K. B. 1613) (commoner must establish not only 
+injuria  [legal injury] but also  damnum  [damage] to chal
+lenge another’s overgrazing on the commons)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,17,4,P017.B04,DOC002[P017.B04],102,140,156.22,241.61,458.85,628.06,"B These differences between legal claims brought by pri vate plaintiffs for the violation of public and private rights underlie modern standing doctrine and explain the Court’s description of the injury-in-fact requirement. “Injury in fact” is the first of three “irreducible” requirements for Article III standing. Lujan v. Defenders of Wildlife , 504 U. S. 555, 560 (1992). The injury-in-fact requirement often stymies a private plaintiff ’s attempt to vindicate the infringement of public rights. The Court has said time and again that, when a plaintiff seeks to vindicate a public right, the plaintiff must allege that he has suffered"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,17,5,P017.B05,DOC002[P017.B05],98,165,156.22,241.61,458.85,628.06,"a “concrete” injury particular to himself. See Schlesinger v. Reservists Comm. to Stop the War , 418 U. S. 208, 221–223 (1974) (explaining this where plaintiffs sought to enforce the Incompatibility Clause, Art. I, §6, cl. 2, against Mem bers of Congress holding reserve commissions in the Armed Forces); see also Lujan , supra , at 572–573 (evaluat ing standing where plaintiffs sought to enforce the Endan gered Species Act); Friends of the Earth, Inc. v. Laidlaw Environmental Services (TOC), Inc. , 528 U. S. 167, 183– 184 (2000) (Clean Water Act). This requirement applies with special force when a"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,17,6,P017.B06,DOC002[P017.B06],69,91,156.22,241.61,458.85,628.06,"plaintiff files suit to require an executive agency to “follow the law”; at that point, the citizen must prove that he “has sustained or is immediately in danger of sustaining a direct injury as a result of that [challenged] action and it is not sufficient that he has merely a general interest common to all members of the public.” Ex parte Levitt , 302 U. S. 633, 634 (1937) ( per"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,18,1,P018.B01,DOC002[P018.B01],11,25,244.27,113.78,458.33,148.16,"5 
+Cite as: 578 U. S. ____ (2016) T HOMAS , J., concurring"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,18,2,P018.B02,DOC002[P018.B02],72,122,156.24,156.22,458.89,275.19,"curiam ). Thus, in a case where private plaintiffs sought to
+compel the U. S. Forest Service to follow certain proce
+dures when it regulated “small fire-rehabilitation and 
+timber-salvage projects,” we held that “deprivation of a
+procedural right without some concrete interest that is
+affected by the deprivation . . . is insufficient to create 
+Article III standing,” even if “accorded by Congress.” 
+Summers  v.  Earth Island Institute , 555 U. S. 488, 490, 
+496–497 (2009)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,18,3,P018.B03,DOC002[P018.B03],81,127,156.24,275.27,458.87,394.24,"But the concrete-harm requirement does not apply as
+rigorously when a private plaintiff seeks to vindicate his 
+own private rights.  Our contemporary decisions have not
+required a plaintiff to assert an actual injury beyond the 
+violation of his personal legal rights to satisfy the “injury
+in-fact” requirement.  See,  e.g., Carey  v.  Piphus , 435 U. S. 
+247, 266 (1978) (holding that nominal damages are appro
+priate when a plaintiff ’s constitutional rights have been
+infringed but he cannot show further injury)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,18,4,P018.B04,DOC002[P018.B04],97,129,156.24,394.31,458.91,632.26,"The separation-of-powers concerns underlying our public- rights decisions are not implicated when private indi- viduals sue to redress violations of their own private rights. But, when they are implicated, standing doctrine keeps courts out of political disputes by denying private litigants the right to test the abstract legality of govern ment action. See Schlesinger , supra , at 222. And by limiting Congress’ ability to delegate law enforcement authority to private plaintiffs and the courts, standing doctrine preserves executive discretion. See Lujan , supra , at 577 (“‘To permit Congress to convert the undifferenti ated public interest in executive officers’"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,18,5,P018.B05,DOC002[P018.B05],59,69,156.24,394.31,458.91,632.26,"compliance with the law into an ‘individual right’ vindicable in the courts is to permit Congress to transfer from the President to the courts the Chief Executive’s most important constitutional duty, to ‘take Care that the Laws be faithfully executed’”). But where one private party has alleged that another private party violated his private rights, there is generally"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,19,1,P019.B01,DOC002[P019.B01],5,15,156.24,113.78,365.04,124.58,"6 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,19,2,P019.B02,DOC002[P019.B02],4,8,258.53,137.42,356.03,148.23,"T HOMAS , J., concurring"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,19,3,P019.B03,DOC002[P019.B03],59,88,156.24,156.22,458.87,248.8,"no danger that the private party’s suit is an impermissible 
+attempt to police the activity of the political branches or,
+more broadly, that the legislative branch has impermissi
+bly delegated law enforcement authority from the execu
+tive to a private individual.  See Hessick, Standing, Injury 
+in Fact, and Private Rights, 93 Cornell L. Rev. 275, 317–
+321 (2008)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,19,4,P019.B04,DOC002[P019.B04],98,133,156.22,254.81,458.88,628.07,"C When Congress creates new private causes of action to vindicate private or public rights, these Article III princi ples circumscribe federal courts’ power to adjudicate a suit alleging the violation of those new legal rights. Congress can create new private rights and authorize private plain tiffs to sue based simply on the violation of those private rights. See Warth v. Seldin , 422 U. S. 490, 500 (1975). A plaintiff seeking to vindicate a statutorily created private right need not allege actual harm beyond the invasion of that private right. See Havens Realty Corp. v. Coleman , 455 U."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,19,5,P019.B05,DOC002[P019.B05],101,145,156.22,254.81,458.88,628.07,"S. 363, 373–374 (1982) (recognizing standing for a violation of the Fair Housing Act); Tennessee Elec. Power Co. v. TVA , 306 U. S. 118, 137–138 (1939) (recognizing that standing can exist where “the right invaded is a legal right,—one of property, one arising out of contract, one protected against tortious invasion, or one founded on a statute which confers a privilege”). A plaintiff seeking to vindicate a public right embodied in a federal statute, however, must demonstrate that the violation of that public right has caused him a concrete, individual harm distinct from the general population. See Lujan ,"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,19,6,P019.B06,DOC002[P019.B06],56,70,156.22,254.81,458.88,628.07,"supra , at 578 (noting that, whatever the scope of Congress’ power to create new legal rights, “it is clear that in suits against the Government, at least, the concrete injury requirement must remain”). Thus, Congress cannot authorize private plaintiffs to enforce public rights in their own names, absent some showing that the plaintiff has suffered a"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,20,1,P020.B01,DOC002[P020.B01],11,25,244.27,113.78,458.33,148.16,"7 
+Cite as: 578 U. S. ____ (2016) T HOMAS , J., concurring"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,20,2,P020.B02,DOC002[P020.B02],103,133,156.24,156.22,458.93,561.94,"concrete harm particular to him. II Given these principles, I agree with the Court’s decision to vacate and remand. The Fair Credit Reporting Act creates a series of regulatory duties. Robins has no stand ing to sue Spokeo, in his own name, for violations of the duties that Spokeo owes to the public collectively, absent some showing that he has suffered concrete and particular harm. See supra, at 4–5. These consumer protection requirements include, for example, the requirement to “post a toll-free telephone number on [Spokeo’s] website through which consumers can request free annual file disclosures.” App. 23, First Amended"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,20,3,P020.B03,DOC002[P020.B03],104,148,156.24,156.22,458.93,561.94,"Complaint ¶74; see 15 U. S. C. §1681j; 16 CFR §610.3(a)(1) (2010). But a remand is required because one claim in Robins’ complaint rests on a statutory provision that could argu- ably establish a private cause of action to vindicate the violation of a privately held right. Section 1681e(b) re quires Robins to “follow reasonable procedures to assure maximum possible accuracy of the information concerning the individual about whom the report relates. ” §1681e(b) (emphasis added). If Congress has created a private duty owed personally to Robins to protect his information, then the violation of the legal duty suffices for"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,20,4,P020.B04,DOC002[P020.B04],61,78,156.24,156.22,458.93,561.94,"Article III injury in fact. If that provision, however, vests any and all con sumers with the power to police the “reasonable proce dures” of Spokeo, without more, then Robins has no stand ing to sue for its violation absent an allegation that he has suffered individualized harm. On remand, the Court of Appeals can consider the nature of this claim."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,21,1,P021.B01,DOC002[P021.B01],11,26,244.27,114.02,458.34,148.47,"1 
+Cite as: 578 U. S. ____ (2016) G INSBURG , J., dissenting"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,21,2,P021.B02,DOC002[P021.B02],6,9,156.54,156.85,458.92,173.46,SUPREME COURT OF THE UNITED STATES
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,21,3,P021.B03,DOC002[P021.B03],3,7,280.02,187.69,334.39,198.5,No. 13–1339
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,21,4,P021.B04,DOC002[P021.B04],21,45,162.12,214.72,454.64,258.31,"SPOKEO, INC., PETITIONER  v.  THOMAS ROBINS ON WRIT OF CERTIORARI TO THE UNITED STATES COURT OF 
+APPEALS FOR THE NINTH CIRCUIT"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,21,5,P021.B05,DOC002[P021.B05],3,9,275.03,263.4,341.71,275.41,"[May 16, 2016]"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,21,6,P021.B06,DOC002[P021.B06],100,161,156.23,283.78,458.86,498.33,"J USTICE G INSBURG , with whom J USTICE S OTOMAYOR joins, dissenting. In the Fair Credit Reporting Act of 1970 (FCRA or Act), 15 U. S. C. §1681 et seq. , Congress required consumer reporting agencies, whenever preparing a consumer re port, to “follow reasonable procedures to assure maximum possible accuracy of the information concerning the indi vidual about whom the report relates.” §1681e(b). To promote adherence to the Act’s procedural requirements, Congress granted adversely affected consumers a right to sue noncomplying reporting agencies. §1681n (willful noncompliance); §1681o (negligent noncompliance). 1 Thomas Robins instituted suit against Spokeo, Inc., alleg"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,21,7,P021.B07,DOC002[P021.B07],27,36,156.23,283.78,458.86,498.33,"ing that Spokeo was a reporting agency governed by the FCRA, and that Spokeo maintains on its Web site an inaccurate consumer report about Robins. App. 13."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,21,8,P021.B08,DOC002[P021.B08],90,152,156.24,498.34,458.89,635.79,"In particular, Robins alleged that Spokeo posted “a
+picture . . . purport[ing] to be an image of Robins [that] 
+was not in fact [of him],” and incorrectly reported that 
+Robins “was in his 50s, . . . married, . . . employed in a
+professional or technical field, and . . . has children.”   Id. , 
+at 14. Robins further alleged that Spokeo’s profile of him
+continues to misrepresent “that he has a graduate degree, 1 Congress added the right of action for willful violations in 1996 as
+part of the Consumer Credit Reporting Reform Act, 110 Stat. 3009–426."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,22,1,P022.B01,DOC002[P022.B01],5,15,156.24,113.78,365.04,124.59,"2 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,22,2,P022.B02,DOC002[P022.B02],4,9,255.35,137.42,359.02,148.23,"G INSBURG , J., dissenting"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,22,3,P022.B03,DOC002[P022.B03],98,163,156.24,156.22,458.91,314.91,"that his economic health is ‘Very Strong[,]’ and that his
+wealth level [is in] the ‘Top 10%.’ ”  Ibid.   Spokeo displayed 
+that erroneous information, Robins asserts, when he was 
+“out of work” and “actively seeking employment.”   Ibid. 
+Because of the misinformation, Robins stated, he encoun
+tered “[imminent and ongoing] actual harm to [his] 
+employment prospects.”   Ibid. 2   As Robins elaborated on 
+brief, Spokeo’s report made him appear overqualified for 
+jobs he might have gained, expectant of a higher
+salary than employers would be willing to pay, and less
+mobile because of family responsibilities.  See Brief for 
+Respondent 44."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,22,4,P022.B04,DOC002[P022.B04],102,139,156.23,314.92,458.97,635.79,"I agree with much of the Court’s opinion. Robins, the Court holds, meets the particularity requirement for standing under Article III. See ante, at 8, 11 (remanding only for concreteness inquiry). The Court acknowledges that Congress has the authority to confer rights and delin eate claims for relief where none existed before. Ante, at 9; see Federal Election Comm’n v. Akins , 524 U. S. 11, 19– 20 (1998) (holding that inability to procure information to which Congress has created a right in the Federal Election Campaign Act of 1971 qualifies as concrete injury satisfy ing Article III’s standing requirement);"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,22,5,P022.B05,DOC002[P022.B05],98,141,156.23,314.92,458.97,635.79,"Public Citizen v. Department of Justice , 491 U. S. 440, 449 (1989) (holding that plaintiff advocacy organizations’ inability to obtain information that Congress made subject to disclosure under the Federal Advisory Committee Act “constitutes a sufficiently distinct injury to provide standing to sue”); Havens Realty Corp. v. Coleman , 455 U. S. 363, 373 (1982) 2 Because this case remains at the pleading stage, the court of first instance must assume the truth of Robins’ factual allegations. In particular, that court must assume, subject to later proof, that Spokeo is a consumer reporting agency under 15 U. S. C."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,22,6,P022.B06,DOC002[P022.B06],24,34,156.23,314.92,458.97,635.79,"§1681a(f ) and that, in preparing consumer reports, Spokeo does not employ reasonable procedures to ensure maximum possible accuracy, in violation of the FCRA."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,23,1,P023.B01,DOC002[P023.B01],11,26,244.28,113.78,458.34,148.17,"3 
+Cite as: 578 U. S. ____ (2016) G INSBURG , J., dissenting"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,23,2,P023.B02,DOC002[P023.B02],97,148,156.23,156.22,458.9,394.23,"(identifying, as Article III injury, violation of plaintiff ’s right, secured by the Fair Housing Act, to “truthful infor mation concerning the availability of housing”). 3 Con gress’ connection of procedural requirements to the pre vention of a substantive harm, the Court appears to agree, is “instructive and important.” Ante, at 9; see Lujan v. Defenders of Wildlife , 504 U. S. 555, 580 (1992) (K ENNEDY , J., concurring in part and concurring in judgment) (“As Government programs and policies become more complex and far reaching, we must be sensitive to the articulation of new rights of action ."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,23,3,P023.B03,DOC002[P023.B03],62,95,156.23,156.22,458.9,394.23,". . .”); Brief for Restitution and Remedies Scholars et al. as Amici Curiae 3 (“Congress cannot authorize individual plaintiffs to enforce general ized rights that belong to the whole public. But Congress can create new individual rights, and it can enact effective remedies for those rights.”). See generally Sunstein, Informational Regulation and Informational Standing: Akins and Beyond, 147 U. Pa. L. Rev. 613 (1999)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,23,4,P023.B04,DOC002[P023.B04],97,162,156.23,394.31,458.85,635.79,"I part ways with the Court, however, on the necessity of a remand to determine whether Robins’ particularized injury was “concrete.” See ante, at 11. Judged by what we have said about “concreteness,” Robins’ allegations carry him across the threshold. The Court’s opinion observes that time and again, our decisions have coupled the words “concrete and particularized.” Ante, at 8 (citing as exam ples, Susan B. Anthony List v. Driehaus , 573 U. S. ___, ___ (2014) (slip op., at 8); Summers v. Earth Island Institute , 555 U. S. 488, 493 (2009); Sprint Communications Co. v. APCC Services, Inc."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,23,5,P023.B05,DOC002[P023.B05],81,122,156.23,394.31,458.85,635.79,", 554 U. S. 269, 274 (2008); Massachu setts v. EPA , 549 U. S. 497, 517 (2007)). True, but true 3 Just as the right to truthful information at stake in Havens Realty Corp. v. Coleman , 455 U. S. 363 (1982), was closely tied to the Fair Housing Act’s goal of eradicating racial discrimination in housing, so the right here at stake is closely tied to the FCRA’s goal of protecting consumers against dissemination of inaccurate credit information about them."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,24,1,P024.B01,DOC002[P024.B01],5,15,156.24,113.78,365.04,124.58,"4 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,24,2,P024.B02,DOC002[P024.B02],4,9,255.36,137.42,359.02,148.23,"G INSBURG , J., dissenting"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,24,3,P024.B03,DOC002[P024.B03],102,138,156.24,156.22,458.85,394.24,"too, in the four cases cited by the Court, and many others, opinions do not discuss the separate offices of the terms “concrete” and “particularized.” Inspection of the Court’s decisions suggests that the particularity requirement bars complaints raising general ized grievances, seeking relief that no more benefits the plaintiff than it does the public at large. See, e.g., Lujan , 504 U. S., at 573–574 (a plaintiff “seeking relief that no more directly and tangibly benefits him than it does the public at large does not state an Article III case or contro versy” (punctuation omitted)); Perkins v. Lukens Steel"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,24,4,P024.B04,DOC002[P024.B04],67,94,156.24,156.22,458.85,394.24,"Co. , 310 U. S. 113, 125 (1940) (plaintiffs lack standing because they failed to show injury to “a particular right of their own, as distinguished from the public’s interest in the administration of the law”). Robins’ claim does not pre sent a question of that character. He seeks redress, not for harm to the citizenry, but for Spokeo’s spread of misin formation specifically about him."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,24,5,P024.B05,DOC002[P024.B05],101,162,156.23,394.25,458.86,632.32,"Concreteness as a discrete requirement for standing, the Court’s decisions indicate, refers to the reality of an injury, harm that is real, not abstract, but not necessarily tangi ble. See ante, at 8–9; ante, at 1 (T HOMAS , J., concurring). Illustrative opinions include Akins , 524 U. S., at 20 (“[C]ourts will not pass upon abstract, intellectual prob lems, but adjudicate concrete, living contests between adversaries.” (internal quotation marks and alterations omitted)); Diamond v. Charles , 476 U. S. 54, 67 (1986) (plaintiff ’s “abstract concern does not substitute for the concrete injury required by Art[icle] III” (internal quota"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,24,6,P024.B06,DOC002[P024.B06],68,112,156.23,394.25,458.86,632.32,"tion marks and ellipsis omitted)); Los Angeles v. Lyons , 461 U. S. 95, 101 (1983) (“Plaintiffs must demonstrate a personal stake in the outcome . . . . Abstract injury is not enough.” (internal quotation marks omitted)); Babbitt v. Farm Workers , 442 U. S. 289, 297–298 (1979) (“The differ ence between an abstract question and a ‘case or contro versy’ is one of degree, of course, and is not discernable by"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,25,1,P025.B01,DOC002[P025.B01],11,26,244.27,113.78,458.33,148.16,"5 
+Cite as: 578 U. S. ____ (2016) G INSBURG , J., dissenting"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,25,2,P025.B02,DOC002[P025.B02],94,150,156.23,156.22,458.88,407.5,"any precise test. The basic inquiry is whether the conflict ing contentions of the parties present a real, substantial controversy between parties having adverse legal inter ests, a dispute definite and concrete, not hypothetical or abstract.” (citation, some internal quotation marks, and ellipsis omitted)); Simon v. Eastern Ky. Welfare Rights Organization , 426 U. S. 26, 40 (1976) (“organization’s abstract concern . . . does not substitute for the concrete injury required by Art. III”); California Bankers Assn. v. Shultz , 416 U. S. 21, 69 (1974) (“There must be . . . con crete adverseness”; “[a]bstract injury is not"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,25,3,P025.B03,DOC002[P025.B03],70,135,156.23,156.22,458.88,407.5,"enough.” (in ternal quotation marks omitted)); Railway Mail Assn. v. Corsi , 326 U. S. 88, 93 (1945) (controversy must be “defi nite and concrete, not hypothetical or abstract”); Coleman v. Miller , 307 U. S. 433, 460 (1939) (opinion of Frankfur ter, J.) (“[I]t [is] not for courts to pass upon . . . abstract, intellectual problems but only . . . concrete, living con- test[s] between adversaries call[ing] for the arbitrament of law.”)."
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,25,4,P025.B04,DOC002[P025.B04],100,133,156.23,407.51,458.89,632.33,"Robins would not qualify, the Court observes, if he alleged a “bare” procedural violation, ante, at 10, one that results in no harm, for example, “an incorrect zip code,” ante, at 11. Far from an incorrect zip code, Robins com plains of misinformation about his education, family situa tion, and economic status, inaccurate representations that could affect his fortune in the job market. See Brief for Center for Democracy & Technology et al. as Amici Curiae 13 (Spokeo’s inaccuracies bore on Robins’ “ability to find employment by creating the erroneous impression that he was overqualified for the work he was"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,25,5,P025.B05,DOC002[P025.B05],64,80,156.23,407.51,458.89,632.33,"seeking, that he might be unwilling to relocate for a job due to family commitments, or that his salary demands would exceed what prospective employers were prepared to offer him.”); Brief for Restitution and Remedies Scholars et al. as Amici Curiae 35 (“An applicant can lose [a] job for being over qualified; a suitor can lose a woman if she reads that he is"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,26,1,P026.B01,DOC002[P026.B01],5,15,156.24,113.78,365.04,124.58,"6 
+SPOKEO, INC.  v.  ROBINS"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,26,2,P026.B02,DOC002[P026.B02],4,9,255.36,137.42,359.02,148.23,"G INSBURG , J., dissenting"
+packet_3,DOC002,https://supreme.justia.com/cases/federal/us/578/13-1339/case.pdf,26,3,P026.B03,DOC002[P026.B03],66,117,156.24,156.22,458.82,297.46,"married.”).  The FCRA’s procedural requirements aimed to 
+prevent such harm. See 115 Cong. Rec. 2410–2415 (1969).
+I therefore see no utility in returning this case to the
+Ninth Circuit to underscore what Robins’ complaint al
+ready 
+conveys 
+concretely: 
+Spokeo’s 
+misinformation 
+“cause[s] actual harm to [his] employment prospects.”
+App. 14. * 
+* 
+* 
+For the reasons stated, I would affirm the Ninth Cir
+cuit’s judgment."
