@@ -43,6 +43,43 @@ ANNOTATED_CITATION_TOKEN_PATTERN = re.compile(
     r"<BLOCK\s+id=['\"](DOC\d{3}\.P\d{3}\.B\d{2})['\"]\s*>|\[CITE_START:(DOC\d{3}\[P\d{3}\.B\d{2}\]|DOC\d{3}\.P\d{3}\.B\d{2})\]"
 )
 ParsedModelType = TypeVar("ParsedModelType", bound=BaseModel)
+REALISTIC_LAWYER_QUERY_EXAMPLES = (
+    "Draft an internal legal memo analyzing whether we can remove this case to federal court (diversity). Facts: [brief facts]. Identify any gaps we need from the client.",
+    "Can you draft a research memo on the standard for a Rule 12(b)(6) motion to dismiss in the Ninth Circuit, with a short recommendation section?",
+    "Write a memo assessing likelihood of success on a preliminary injunction for [client] against [competitor] for trademark infringement. Use IRAC and include a risk matrix.",
+    "Please draft a legal memo on whether an arbitration clause is enforceable under [STATE] law given these facts: [facts]. Include arguments both ways.",
+    "Create an internal memo analyzing personal jurisdiction over a foreign defendant in [STATE] (specific jurisdiction). Facts: [facts]. Focus on the best cases and how they apply.",
+    "Write a research memo on spoliation sanctions in federal court (Rule 37(e)) and how courts treat routine deletion policies.",
+    "Can you draft a memo re: enforceability of non-compete agreements in [STATE] after the latest changes? Keep it practical - what should we advise HR?",
+    "I'm preparing for a meet-and-confer - draft a memo on proportionality limits in discovery under Rule 26(b)(1) with sample talking points.",
+    "Draft a memo analyzing whether we can bring an anti-SLAPP motion in federal court in [CIRCUIT] and how it interacts with Rule 12/56.",
+    "Draft a short partner-ready memo on whether we should file a motion to compel and what sanctions risk we face, based on these discovery facts: [facts].",
+    "Draft a memo on what counts as trade secret under DTSA + [STATE] UTSA and whether these items qualify: [list]. Include misappropriation elements.",
+    "Draft a memo analyzing enforceability of an online clickwrap agreement for [product], and what evidence we need for assent. Facts: [facts].",
+    "I need a memo on whether we can challenge venue as improper and/or move to transfer under Section 1404. Facts: [facts]. Compare pros/cons.",
+    "Draft a memo on insurance coverage: is a professional services exclusion likely to bar coverage for these allegations? Facts: [facts].",
+    "Draft a memo on the admissibility of expert testimony under Daubert in [CIRCUIT], and how to challenge the opposing expert's methodology. Facts: [facts].",
+    "Prepare a memo: can we enforce a subpoena against an out-of-state nonparty? Cover Rule 45 compliance, venue, and objections.",
+    "Draft a memo analyzing whether force majeure applies to excuse performance here. Facts: [facts]. Include what we should ask the client to confirm.",
+    "I need a concise memo (1-2 pages) summarizing the strongest arguments for and against filing a motion to dismiss for failure to state a claim in this case. Facts: [facts].",
+)
+
+
+def _build_realistic_lawyer_query_style_guide() -> str:
+    """Build extra guidance that steers synthetic prompts toward lawyer-realistic requests."""
+    guidance_lines = [
+        "## Lawyer-realistic query style guide",
+        "Use these examples as style anchors for `prompt` and `scenario_facts` phrasing.",
+        "Do not copy an example verbatim. Keep the issue packet-grounded and adapt it to the packet facts.",
+        "Write `scenario_facts` as concrete client/case facts and deliverable constraints, not generic filler.",
+        "",
+        "Examples:",
+    ]
+    numbered_examples = [
+        f"{example_index}) {query_example}"
+        for example_index, query_example in enumerate(REALISTIC_LAWYER_QUERY_EXAMPLES, start=1)
+    ]
+    return "\n".join(guidance_lines + numbered_examples)
 
 
 @dataclass(frozen=True)
@@ -418,14 +455,18 @@ def _load_mode_prompts(
     item_index: int,
     packet_corpus_text: str,
 ) -> tuple[str, str]:
+    lawyer_query_style_guide = _build_realistic_lawyer_query_style_guide()
     replacements = {
         "__PACKET_ID__": packet_id,
         "__AS_OF_DATE__": as_of_date,
         "__ITEM_INDEX__": str(item_index),
         "__PACKET_CORPUS__": packet_corpus_text,
+        "__LAWYER_QUERY_STYLE_GUIDE__": lawyer_query_style_guide,
     }
     system_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/system.txt"), replacements)
     user_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/user.txt"), replacements)
+    if lawyer_query_style_guide not in user_prompt:
+        user_prompt = f"{user_prompt}\n\n{lawyer_query_style_guide}"
     return system_prompt, user_prompt
 
 

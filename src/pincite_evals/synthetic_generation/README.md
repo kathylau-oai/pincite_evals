@@ -49,12 +49,6 @@ Run the pipeline on all packets (from repo root):
 ./src/pincite_evals/synthetic_generation/run_all_packets.sh
 ```
 
-Optional: pass a fixed UTC timestamp to control run-id prefixes:
-
-```bash
-./src/pincite_evals/synthetic_generation/run_all_packets.sh 20260206T120000Z
-```
-
 ## Outputs
 
 - Run artifacts: `results/synthetic_generation/<packet_id>/<run_id>/`
@@ -87,3 +81,4 @@ Run folder layout:
 - `prompts/fake_citations/user.txt`
 - `prompts/verifier/system.txt`
 - `prompts/verifier/user.txt`
+

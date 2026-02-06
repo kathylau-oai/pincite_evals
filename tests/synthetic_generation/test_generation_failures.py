@@ -9,7 +9,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
 
 from pincite_evals.synthetic_generation.config import load_config  # noqa: E402
-from pincite_evals.synthetic_generation.pipeline import _generate_one_item, _load_verifier_prompts  # noqa: E402
+from pincite_evals.synthetic_generation.pipeline import _generate_one_item, _load_mode_prompts, _load_verifier_prompts  # noqa: E402
 from pincite_evals.synthetic_generation.structured_outputs import GeneratedSyntheticItemOutput  # noqa: E402
 
 
@@ -88,3 +88,17 @@ def test_load_verifier_prompts_renders_item_citations_as_block_ids():
     assert "DOC001.P001.B01" in user_prompt
     assert "DOC002.P002.B03" in user_prompt
     assert "DOC001[P001.B01]" not in user_prompt
+
+
+def test_load_mode_prompts_adds_lawyer_realistic_query_style_guidance():
+    _, user_prompt = _load_mode_prompts(
+        mode_name="overextension",
+        packet_id="packet_1",
+        as_of_date="2026-02-06",
+        item_index=1,
+        packet_corpus_text='<DOCUMENT id="DOC001"><BLOCK id="DOC001.P001.B01">Example</BLOCK></DOCUMENT>\n',
+    )
+
+    assert "Lawyer-realistic query style guide" in user_prompt
+    assert "Draft an internal legal memo analyzing whether we can remove this case to federal court" in user_prompt
+    assert "can we enforce a subpoena against an out-of-state nonparty?" in user_prompt
