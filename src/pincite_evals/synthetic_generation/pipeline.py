@@ -647,7 +647,7 @@ def _generate_one_item(
     item_index: int,
     generation_traces_dir: Path,
     openai_client: OpenAI | None,
-) -> tuple[dict[str, Any], dict[str, Any]]:
+) -> tuple[dict[str, Any] | None, dict[str, Any]]:
     start_time = time.perf_counter()
     mode_letter = MODE_TO_ERROR[mode_name]
     item_id = f"{config.packet_id}_{mode_letter}_{item_index:02d}"
@@ -695,77 +695,70 @@ def _generate_one_item(
         user_prompt=user_prompt,
     )
 
-    try:
-        response = _call_openai_parse(openai_client, request, GeneratedSyntheticItemOutput)
-    except ValidationError:
+    max_attempts = max(1, int(config.parallelism.max_retries))
+    last_generation_status = "generation_failed_unknown"
+    last_usage = None
+
+    for attempt_index in range(1, max_attempts + 1):
+        try:
+            response = _call_openai_parse(openai_client, request, GeneratedSyntheticItemOutput)
+        except ValidationError:
+            last_generation_status = "invalid_structured_output"
+            continue
+
+        last_usage = response.usage
+        trace_path = generation_traces_dir / f"{mode_name}_{request_id}_attempt{attempt_index}.json"
+        trace_path.parent.mkdir(parents=True, exist_ok=True)
+        trace_path.write_text(response.model_dump_json(indent=2), encoding="utf-8")
+
+        if response.output_parsed is None:
+            last_generation_status = "missing_parsed_structured_output"
+            continue
+
+        parsed_candidate = response.output_parsed.model_dump(mode="python", exclude_none=True)
+        try:
+            normalized_candidate = _normalize_generated_item(
+                parsed_candidate,
+                mode_name=mode_name,
+                citation_token=normalize_citation_token(default_citation_token),
+                packet_id=config.packet_id,
+                as_of_date=config.as_of_date,
+            )
+            validated_candidate = SyntheticItem.model_validate(normalized_candidate).model_dump()
+        except (ValueError, ValidationError):
+            last_generation_status = "invalid_generated_candidate"
+            continue
+
+        validated_candidate["item_id"] = item_id
+        validated_candidate["query_id"] = query_id
         latency = time.perf_counter() - start_time
-        validated_candidate = _default_candidate_from_mode(
-            mode_name,
-            config.packet_id,
-            config.as_of_date,
-            item_index,
-            default_citation_token,
-        )
         return validated_candidate, {
             "stage": "generation",
             "item_id": item_id,
             "item_index": item_index,
             "mode_name": mode_name,
             "request_id": request_id,
-            "status": "invalid_structured_output_fallback_default_candidate",
+            "status": response.status,
             "latency_seconds": latency,
-            "input_tokens": None,
-            "output_tokens": None,
-            "reasoning_tokens": None,
-            "total_tokens": None,
+            "input_tokens": last_usage.input_tokens if last_usage else None,
+            "output_tokens": last_usage.output_tokens if last_usage else None,
+            "reasoning_tokens": _extract_reasoning_tokens(last_usage),
+            "total_tokens": last_usage.total_tokens if last_usage else None,
         }
 
     latency = time.perf_counter() - start_time
-
-    trace_path = generation_traces_dir / f"{mode_name}_{request_id}.json"
-    trace_path.parent.mkdir(parents=True, exist_ok=True)
-    trace_path.write_text(response.model_dump_json(indent=2), encoding="utf-8")
-
-    generation_status = response.status
-    try:
-        if response.output_parsed is None:
-            raise ValueError("Missing parsed structured output.")
-        parsed_candidate = response.output_parsed.model_dump(mode="python", exclude_none=True)
-        normalized_candidate = _normalize_generated_item(
-            parsed_candidate,
-            mode_name=mode_name,
-            citation_token=normalize_citation_token(default_citation_token),
-            packet_id=config.packet_id,
-            as_of_date=config.as_of_date,
-        )
-        validated_candidate = SyntheticItem.model_validate(normalized_candidate).model_dump()
-    except (ValueError, ValidationError):
-        # Fallback keeps the run moving when model output cannot be validated.
-        validated_candidate = _default_candidate_from_mode(
-            mode_name,
-            config.packet_id,
-            config.as_of_date,
-            item_index,
-            default_citation_token,
-        )
-        generation_status = "fallback_default_candidate"
-
-    validated_candidate["item_id"] = item_id
-    validated_candidate["query_id"] = query_id
-
-    usage = response.usage
-    return validated_candidate, {
+    return None, {
         "stage": "generation",
         "item_id": item_id,
         "item_index": item_index,
         "mode_name": mode_name,
         "request_id": request_id,
-        "status": generation_status,
+        "status": f"generation_failed_after_{max_attempts}_attempts:{last_generation_status}",
         "latency_seconds": latency,
-        "input_tokens": usage.input_tokens if usage else None,
-        "output_tokens": usage.output_tokens if usage else None,
-        "reasoning_tokens": _extract_reasoning_tokens(usage),
-        "total_tokens": usage.total_tokens if usage else None,
+        "input_tokens": last_usage.input_tokens if last_usage else None,
+        "output_tokens": last_usage.output_tokens if last_usage else None,
+        "reasoning_tokens": _extract_reasoning_tokens(last_usage),
+        "total_tokens": last_usage.total_tokens if last_usage else None,
     }
 
 
@@ -1135,22 +1128,14 @@ class SyntheticGenerationPipeline:
                     try:
                         candidate, metric = future.result()
                     except OpenAIError as error:
-                        fallback_candidate = _default_candidate_from_mode(
-                            mode_name=mode_name,
-                            packet_id=context.config.packet_id,
-                            as_of_date=context.config.as_of_date,
-                            item_index=item_index,
-                            default_citation_token=default_citation_token,
-                        )
-                        mode_candidates.append(fallback_candidate)
                         mode_metrics.append(
                             {
                                 "stage": "generation",
-                                "item_id": fallback_candidate["item_id"],
+                                "item_id": f"{context.config.packet_id}_{MODE_TO_ERROR[mode_name]}_{item_index:02d}",
                                 "item_index": item_index,
                                 "mode_name": mode_name,
                                 "request_id": request_id,
-                                "status": "error_fallback_default_candidate",
+                                "status": "error_generation_request_failed",
                                 "latency_seconds": None,
                                 "input_tokens": None,
                                 "output_tokens": None,
@@ -1161,7 +1146,8 @@ class SyntheticGenerationPipeline:
                         )
                         continue
 
-                    mode_candidates.append(candidate)
+                    if candidate is not None:
+                        mode_candidates.append(candidate)
                     mode_metrics.append(metric)
 
             return mode_name, mode_candidates, mode_metrics

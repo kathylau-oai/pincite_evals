@@ -80,9 +80,9 @@ DEFAULT_CONFIG = {
     },
     "parallelism": {
         "mode_workers": 3,
-        "generation_workers": 6,
-        "validation_workers": 6,
-        "max_in_flight_requests": 12,
+        "generation_workers": 32,
+        "validation_workers": 32,
+        "max_in_flight_requests": 64,
         "max_retries": 4,
     },
     "request_timeout_seconds": 900.0,
@@ -109,7 +109,12 @@ def _load_dict_from_file(config_path: Path) -> dict[str, Any]:
 def _merge_config(user_config: dict[str, Any]) -> dict[str, Any]:
     merged = dict(DEFAULT_CONFIG)
     for key, value in user_config.items():
-        if key in {"generate_count", "final_keep_count", "parallelism", "quality_thresholds"}:
+        if key in {
+            "generate_count",
+            "final_keep_count",
+            "parallelism",
+            "quality_thresholds",
+        }:
             base_section = dict(DEFAULT_CONFIG[key])
             if not isinstance(value, dict):
                 raise ValueError(f"Config field '{key}' must be an object.")
@@ -120,7 +125,9 @@ def _merge_config(user_config: dict[str, Any]) -> dict[str, Any]:
     return merged
 
 
-def _validate_reasoning_and_temperature(stage_name: str, reasoning_effort: str, temperature: float | None) -> None:
+def _validate_reasoning_and_temperature(
+    stage_name: str, reasoning_effort: str, temperature: float | None
+) -> None:
     if reasoning_effort not in VALID_REASONING_EFFORTS:
         raise ValueError(
             f"{stage_name}_reasoning_effort must be one of {sorted(VALID_REASONING_EFFORTS)}, got: {reasoning_effort}"
@@ -134,7 +141,9 @@ def _validate_reasoning_and_temperature(stage_name: str, reasoning_effort: str, 
 
 def _validate_service_tier(service_tier: str) -> None:
     if service_tier not in VALID_SERVICE_TIERS:
-        raise ValueError(f"service_tier must be one of {sorted(VALID_SERVICE_TIERS)}, got: {service_tier}")
+        raise ValueError(
+            f"service_tier must be one of {sorted(VALID_SERVICE_TIERS)}, got: {service_tier}"
+        )
 
 
 def load_config(config_path: Path) -> SyntheticGenerationConfig:
@@ -197,7 +206,11 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
         max_retries=int(merged["parallelism"]["max_retries"]),
     )
 
-    if parallelism.mode_workers <= 0 or parallelism.generation_workers <= 0 or parallelism.validation_workers <= 0:
+    if (
+        parallelism.mode_workers <= 0
+        or parallelism.generation_workers <= 0
+        or parallelism.validation_workers <= 0
+    ):
         raise ValueError("parallelism worker counts must be > 0.")
 
     as_of_date_value = str(merged.get("as_of_date", date.today().isoformat())).strip()
@@ -209,10 +222,18 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
         dataset_root=Path(merged["dataset_root"]),
         generation_model=str(merged["generation_model"]),
         generation_reasoning_effort=generation_reasoning_effort,
-        generation_temperature=(float(merged["generation_temperature"]) if merged.get("generation_temperature") is not None else None),
+        generation_temperature=(
+            float(merged["generation_temperature"])
+            if merged.get("generation_temperature") is not None
+            else None
+        ),
         validation_model=str(merged["validation_model"]),
         validation_reasoning_effort=validation_reasoning_effort,
-        validation_temperature=(float(merged["validation_temperature"]) if merged.get("validation_temperature") is not None else None),
+        validation_temperature=(
+            float(merged["validation_temperature"])
+            if merged.get("validation_temperature") is not None
+            else None
+        ),
         selection_model=str(merged["selection_model"]),
         selection_reasoning_effort=selection_reasoning_effort,
         service_tier=service_tier,
