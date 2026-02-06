@@ -19,6 +19,18 @@ def normalize_citation_token(citation_token: str) -> str:
     raise ValueError(f"Invalid citation token '{citation_token}'. Expected DOC_ID[P###.B##] or DOC_ID.P###.B##.")
 
 
+def format_citation_token_as_block_id(citation_token: str) -> str:
+    normalized_citation_token = normalize_citation_token(citation_token)
+    doc_id, excerpt_id = normalized_citation_token.split("[", maxsplit=1)
+    excerpt_id = excerpt_id.rstrip("]")
+    return f"{doc_id}.{excerpt_id}"
+
+
+def extract_doc_id_from_citation_token(citation_token: str) -> str:
+    normalized_citation_token = normalize_citation_token(citation_token)
+    return normalized_citation_token.split("[", maxsplit=1)[0]
+
+
 class GradingContract(BaseModel):
     expected_citation_groups: list[list[str]] = Field(default_factory=list)
     citation_integrity_trigger_note: str | None = None

@@ -9,6 +9,7 @@ Return a strict structured output object only.
 - Evaluate prompt quality, scenario realism, grading-contract clarity, and internal consistency.
 - Use the full packet corpus and candidate item together when judging support, ambiguity, and realism.
 - Assume citation tokens refer to packet blocks unless there is obvious mismatch with packet content.
+- Treat `DOC001[P001.B01]` and `DOC001.P001.B01` as the same block reference; do not fail an item for notation style alone.
 - Do not require external legal research; evaluate the item as a closed-world artifact.
 
 # Pass Criteria

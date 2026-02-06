@@ -8,7 +8,11 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
 
-from pincite_evals.synthetic_generation.schema import SyntheticItem  # noqa: E402
+from pincite_evals.synthetic_generation.schema import (  # noqa: E402
+    SyntheticItem,
+    extract_doc_id_from_citation_token,
+    format_citation_token_as_block_id,
+)
 
 
 def test_schema_accepts_valid_item():
@@ -69,3 +73,13 @@ def test_schema_accepts_xml_citation_and_normalizes():
     )
 
     assert item.grading_contract.expected_citation_groups[0][0] == "DOC001[P001.B01]"
+
+
+def test_format_citation_token_as_block_id_converts_canonical_and_xml():
+    assert format_citation_token_as_block_id("DOC001[P001.B01]") == "DOC001.P001.B01"
+    assert format_citation_token_as_block_id("DOC001.P001.B01") == "DOC001.P001.B01"
+
+
+def test_extract_doc_id_from_citation_token_handles_both_formats():
+    assert extract_doc_id_from_citation_token("DOC001[P001.B01]") == "DOC001"
+    assert extract_doc_id_from_citation_token("DOC001.P001.B01") == "DOC001"

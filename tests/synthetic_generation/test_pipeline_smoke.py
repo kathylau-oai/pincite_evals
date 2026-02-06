@@ -1,6 +1,8 @@
 import sys
 from pathlib import Path
 
+import pandas as pd
+
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
@@ -41,3 +43,18 @@ final_keep_count:
     assert summary["generated_counts"]["fake_citations"] == 2
     assert summary["selected_items"] == 3
     assert Path(summary["dataset_dir"]).exists()
+
+    run_root = Path(summary["run_root"])
+    llm_reviews_csv = run_root / "validation" / "llm_consensus_reviews.csv"
+    validation_datapoints_csv = run_root / "validation" / "validation_datapoints.csv"
+
+    assert llm_reviews_csv.exists()
+    assert validation_datapoints_csv.exists()
+
+    llm_reviews_df = pd.read_csv(llm_reviews_csv)
+    validation_datapoints_df = pd.read_csv(validation_datapoints_csv)
+
+    assert len(llm_reviews_df) == 6
+    assert len(validation_datapoints_df) == 6
+    assert "llm_verdict" in llm_reviews_df.columns
+    assert "final_validation_status" in validation_datapoints_df.columns

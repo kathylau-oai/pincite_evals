@@ -1,3 +1,4 @@
+import copy
 import json
 import re
 import time
@@ -20,7 +21,12 @@ from pydantic import BaseModel, ValidationError
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
 
 from .config import SyntheticGenerationConfig
-from .schema import SyntheticItem, normalize_citation_token
+from .schema import (
+    SyntheticItem,
+    extract_doc_id_from_citation_token,
+    format_citation_token_as_block_id,
+    normalize_citation_token,
+)
 from .structured_outputs import GeneratedSyntheticItemOutput, VerifierOutput
 
 
@@ -153,6 +159,185 @@ def _augment_with_latency_milliseconds(metrics_dataframe: pd.DataFrame) -> pd.Da
     return augmented_dataframe
 
 
+def _build_candidate_review_table(candidates: list[dict[str, Any]]) -> pd.DataFrame:
+    rows: list[dict[str, Any]] = []
+    for item in candidates:
+        grading_contract = item.get("grading_contract", {})
+        expected_citation_groups = grading_contract.get("expected_citation_groups", [])
+        if not isinstance(expected_citation_groups, list):
+            expected_citation_groups = []
+
+        normalized_groups: list[list[str]] = []
+        for citation_group in expected_citation_groups:
+            if not isinstance(citation_group, list):
+                continue
+            cleaned_group = [str(citation_token).strip() for citation_token in citation_group if str(citation_token).strip()]
+            if cleaned_group:
+                normalized_groups.append(cleaned_group)
+
+        expected_citation_count = sum(len(citation_group) for citation_group in normalized_groups)
+        primary_doc_id = ""
+        if normalized_groups and normalized_groups[0]:
+            try:
+                primary_doc_id = extract_doc_id_from_citation_token(normalized_groups[0][0])
+            except ValueError:
+                primary_doc_id = str(normalized_groups[0][0]).split("[")[0].split(".")[0]
+
+        scenario_facts = item.get("scenario_facts", [])
+        if not isinstance(scenario_facts, list):
+            scenario_facts = []
+
+        mode_name = ERROR_TO_MODE.get(str(item.get("target_error_mode", "")).strip(), "")
+        rows.append(
+            {
+                "item_id": str(item.get("item_id", "")),
+                "packet_id": str(item.get("packet_id", "")),
+                "target_error_mode": str(item.get("target_error_mode", "")),
+                "mode_name": mode_name,
+                "query_id": str(item.get("query_id", "")),
+                "as_of_date": str(item.get("as_of_date", "")),
+                "prompt": str(item.get("prompt", "")),
+                "scenario_fact_count": int(len(scenario_facts)),
+                "scenario_facts_json": json.dumps(scenario_facts, ensure_ascii=True),
+                "expected_citation_group_count": int(len(normalized_groups)),
+                "expected_citation_count": int(expected_citation_count),
+                "expected_citation_groups_json": json.dumps(normalized_groups, ensure_ascii=True),
+                "primary_doc_id": primary_doc_id,
+            }
+        )
+
+    if not rows:
+        return pd.DataFrame(columns=["item_id"])
+    return pd.DataFrame(rows)
+
+
+def _build_llm_review_csv_table(llm_reviews: list[dict[str, Any]]) -> pd.DataFrame:
+    if not llm_reviews:
+        return pd.DataFrame(
+            columns=[
+                "item_id",
+                "llm_verdict",
+                "llm_reason",
+                "llm_risk_flag_count",
+                "llm_risk_flags_json",
+                "llm_suggested_fix",
+                "llm_full_response_json",
+            ]
+        )
+
+    llm_reviews_df = pd.DataFrame(llm_reviews)
+    risk_flags_series = llm_reviews_df["risk_flags"].apply(lambda value: value if isinstance(value, list) else [])
+    full_response_series = llm_reviews_df["full_response"].apply(lambda value: value if isinstance(value, dict) else {})
+
+    llm_reviews_df["llm_risk_flag_count"] = risk_flags_series.apply(len)
+    llm_reviews_df["llm_risk_flags_json"] = risk_flags_series.apply(lambda value: json.dumps(value, ensure_ascii=True))
+    llm_reviews_df["llm_full_response_json"] = full_response_series.apply(lambda value: json.dumps(value, ensure_ascii=True))
+
+    llm_reviews_df = llm_reviews_df.rename(
+        columns={
+            "verdict": "llm_verdict",
+            "reason": "llm_reason",
+            "suggested_fix": "llm_suggested_fix",
+        }
+    )
+
+    return llm_reviews_df[
+        [
+            "item_id",
+            "llm_verdict",
+            "llm_reason",
+            "llm_risk_flag_count",
+            "llm_risk_flags_json",
+            "llm_suggested_fix",
+            "llm_full_response_json",
+        ]
+    ].copy()
+
+
+def _join_unique_values(values: pd.Series) -> str:
+    return "|".join(dict.fromkeys([str(value).strip() for value in values if str(value).strip()]))
+
+
+def _build_validation_datapoints_table(
+    *,
+    candidates: list[dict[str, Any]],
+    deterministic_df: pd.DataFrame,
+    llm_reviews_csv_df: pd.DataFrame,
+    rejection_df: pd.DataFrame,
+    validation_metrics_df: pd.DataFrame,
+) -> pd.DataFrame:
+    candidate_df = _build_candidate_review_table(candidates)
+
+    deterministic_export_df = deterministic_df.rename(
+        columns={
+            "deterministic_pass": "deterministic_pass",
+            "reason_codes": "deterministic_reason_codes",
+            "expected_citation_count": "deterministic_expected_citation_count",
+            "criteria_checks_passed": "deterministic_criteria_checks_passed",
+        }
+    )
+
+    if rejection_df.empty:
+        rejection_export_df = pd.DataFrame(columns=["item_id", "rejection_stage", "rejection_reason"])
+    else:
+        rejection_export_df = (
+            rejection_df.groupby("item_id", as_index=False)
+            .agg(
+                {
+                    "rejection_stage": _join_unique_values,
+                    "rejection_reason": _join_unique_values,
+                }
+            )
+            .rename(
+                columns={
+                    "rejection_stage": "final_rejection_stage",
+                    "rejection_reason": "final_rejection_reason",
+                }
+            )
+        )
+
+    metrics_export_df = validation_metrics_df.rename(
+        columns={
+            "status": "validation_request_status",
+            "verdict": "validation_verdict_from_metrics",
+            "latency_seconds": "validation_latency_seconds",
+            "latency_milliseconds": "validation_latency_milliseconds",
+            "input_tokens": "validation_input_tokens",
+            "output_tokens": "validation_output_tokens",
+            "reasoning_tokens": "validation_reasoning_tokens",
+            "total_tokens": "validation_total_tokens",
+        }
+    )
+    metrics_export_df = metrics_export_df.reindex(
+        [
+            "item_id",
+            "validation_request_status",
+            "validation_verdict_from_metrics",
+            "validation_latency_seconds",
+            "validation_latency_milliseconds",
+            "validation_input_tokens",
+            "validation_output_tokens",
+            "validation_reasoning_tokens",
+            "validation_total_tokens",
+        ]
+    ).copy()
+
+    merged_df = candidate_df.merge(deterministic_export_df, on="item_id", how="left")
+    merged_df = merged_df.merge(llm_reviews_csv_df, on="item_id", how="left")
+    merged_df = merged_df.merge(rejection_export_df, on="item_id", how="left")
+    merged_df = merged_df.merge(metrics_export_df, on="item_id", how="left")
+
+    rejected_item_ids = set(rejection_df["item_id"]) if not rejection_df.empty else set()
+    merged_df["accepted_after_validation"] = ~merged_df["item_id"].isin(rejected_item_ids)
+    merged_df["final_validation_status"] = merged_df["accepted_after_validation"].apply(
+        lambda accepted: "accepted" if bool(accepted) else "rejected"
+    )
+
+    if "mode_name" in merged_df.columns:
+        merged_df = merged_df.sort_values(["mode_name", "item_id"]).reset_index(drop=True)
+    return merged_df
+
+
 def _build_datapoint_timing_table(
     generation_metrics: pd.DataFrame,
     validation_metrics: pd.DataFrame,
@@ -245,15 +430,51 @@ def _load_mode_prompts(
 
 
 def _load_verifier_prompts(item_payload: dict[str, Any], packet_corpus_text: str) -> tuple[str, str]:
+    verifier_item_payload = _convert_item_payload_citations_to_block_ids(item_payload)
     system_prompt = _load_prompt_template("verifier/system.txt")
     user_prompt = _render_prompt_template(
         _load_prompt_template("verifier/user.txt"),
         {
-            "__ITEM_JSON__": json.dumps(item_payload, ensure_ascii=True),
+            "__ITEM_JSON__": json.dumps(verifier_item_payload, ensure_ascii=True),
             "__PACKET_CORPUS__": packet_corpus_text,
         },
     )
     return system_prompt, user_prompt
+
+
+def _convert_item_payload_citations_to_block_ids(item_payload: dict[str, Any]) -> dict[str, Any]:
+    converted_item_payload = copy.deepcopy(item_payload)
+    grading_contract = converted_item_payload.get("grading_contract")
+    if not isinstance(grading_contract, dict):
+        return converted_item_payload
+
+    expected_citation_groups = grading_contract.get("expected_citation_groups")
+    if not isinstance(expected_citation_groups, list):
+        return converted_item_payload
+
+    converted_groups: list[list[str]] = []
+    for citation_group in expected_citation_groups:
+        if not isinstance(citation_group, list):
+            continue
+
+        converted_group: list[str] = []
+        for citation_token in citation_group:
+            cleaned_citation_token = str(citation_token).strip()
+            if not cleaned_citation_token:
+                continue
+
+            try:
+                converted_group.append(format_citation_token_as_block_id(cleaned_citation_token))
+            except ValueError:
+                converted_group.append(cleaned_citation_token)
+
+        if converted_group:
+            converted_groups.append(converted_group)
+
+    if converted_groups:
+        grading_contract["expected_citation_groups"] = converted_groups
+
+    return converted_item_payload
 
 
 def _extract_reasoning_tokens(usage: Any) -> int | None:
@@ -960,7 +1181,7 @@ def _trap_signature(prompt_text: str) -> str:
 
 def _primary_doc_id(item_payload: dict[str, Any]) -> str:
     first_citation = item_payload["grading_contract"]["expected_citation_groups"][0][0]
-    return first_citation.split("[")[0]
+    return extract_doc_id_from_citation_token(first_citation)
 
 
 def build_items_for_selection(
@@ -1272,15 +1493,25 @@ class SyntheticGenerationPipeline:
         deterministic_df = pd.DataFrame(deterministic_rows)
         rejection_df = pd.DataFrame(rejection_rows)
         metrics_df = pd.DataFrame(metrics_rows)
+        llm_reviews_csv_df = _build_llm_review_csv_table(llm_reviews)
 
         deterministic_df.to_csv(context.run_paths.validation_dir / "deterministic_checks.csv", index=False)
         with (context.run_paths.validation_dir / "llm_consensus_reviews.jsonl").open("w", encoding="utf-8") as file_handle:
             for review in llm_reviews:
                 file_handle.write(json.dumps(review, ensure_ascii=True) + "\n")
+        llm_reviews_csv_df.to_csv(context.run_paths.validation_dir / "llm_consensus_reviews.csv", index=False)
         rejection_df.to_csv(context.run_paths.validation_dir / "rejection_log.csv", index=False)
         augmented_metrics_df = _augment_with_latency_milliseconds(metrics_df)
         augmented_metrics_df.to_csv(context.run_paths.validation_metrics_dir / "request_metrics.csv", index=False)
         augmented_metrics_df.to_csv(context.run_paths.validation_metrics_dir / "datapoint_timings.csv", index=False)
+        validation_datapoints_df = _build_validation_datapoints_table(
+            candidates=candidates,
+            deterministic_df=deterministic_df,
+            llm_reviews_csv_df=llm_reviews_csv_df,
+            rejection_df=rejection_df,
+            validation_metrics_df=augmented_metrics_df,
+        )
+        validation_datapoints_df.to_csv(context.run_paths.validation_dir / "validation_datapoints.csv", index=False)
 
         return ValidationResult(
             accepted_items=accepted_items,

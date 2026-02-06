@@ -43,6 +43,18 @@ pincite-synth generate --config path/to/config.yaml --run-id my_run
 pincite-synth validate --config path/to/config.yaml --run-id my_run
 ```
 
+Run the pipeline on all packets (from repo root):
+
+```bash
+./src/pincite_evals/synthetic_generation/run_all_packets.sh
+```
+
+Optional: pass a fixed UTC timestamp to control run-id prefixes:
+
+```bash
+./src/pincite_evals/synthetic_generation/run_all_packets.sh 20260206T120000Z
+```
+
 ## Outputs
 
 - Run artifacts: `results/synthetic_generation/<packet_id>/<run_id>/`
@@ -58,6 +70,8 @@ Run folder layout:
 - `generation/metrics/`: request metrics + generation datapoint timings
 - `generation/traces/`: raw generation Responses API payloads
 - `validation/`: deterministic checks, LLM reviews, rejection log
+- `validation/llm_consensus_reviews.csv`: flat LLM verifier results table (one row per LLM-reviewed datapoint)
+- `validation/validation_datapoints.csv`: full validation review table for all generated datapoints (deterministic + LLM + rejection + latency/tokens)
 - `validation/metrics/`: request metrics + validation datapoint timings
 - `validation/traces/`: raw validation Responses API payloads
 - `selection/`: selected items and selection report
