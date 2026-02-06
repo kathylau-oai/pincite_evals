@@ -29,7 +29,7 @@ class Packet(BaseModel):
 class DatasetConstraints(BaseModel):
     allowed_sources: List[str]
     require_citations: bool = True
-    cite_format: str = "[{doc_id} ¶{start}-{end}]"
+    cite_format: str = "{doc_id}[{excerpt_id}]"
     required_sections: List[str] = Field(default_factory=list)
     max_words: Optional[int] = None
 

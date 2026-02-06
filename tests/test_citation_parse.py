@@ -5,16 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 
-from pincite_evals.citations import extract_citations, extract_excerpt_citations
-
-
-def test_extract_citations_basic():
-    out = "Rule statement [twombly_2007 ¶12-14]."
-    cites = extract_citations(out)
-    assert len(cites) == 1
-    assert cites[0].doc_id == 'twombly_2007'
-    assert cites[0].start == 12
-    assert cites[0].end == 14
+from pincite_evals.citations import extract_excerpt_citations
 
 
 def test_extract_excerpt_citations_basic():
