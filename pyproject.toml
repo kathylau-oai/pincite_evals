@@ -31,6 +31,7 @@ dev = [
 
 [project.scripts]
 pincite-template-eval = "pincite_evals.template_eval_runner:main"
+pincite-synth = "pincite_evals.synthetic_generation.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

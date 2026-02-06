@@ -287,13 +287,26 @@ def render_clean_text(blocks_df: pd.DataFrame) -> str:
     return "\n".join(lines).strip() + "\n"
 
 
+def format_annotation_block_id(citation_token: str) -> str:
+    # Convert canonical citation token format into a tag-friendly XML block id.
+    token_match = re.fullmatch(r"(DOC\d{3})\[P(\d{3})\.B(\d{2})\]", citation_token)
+    if token_match is None:
+        raise ValueError(f"Invalid citation token for annotation rendering: {citation_token}")
+
+    doc_id, page_number, block_number = token_match.groups()
+    return f"{doc_id}.P{page_number}.B{block_number}"
+
+
 def render_annotated_text(blocks_df: pd.DataFrame) -> str:
     lines: List[str] = []
     for page_number in sorted(blocks_df["page_number"].unique()):
         lines.append(f"[Page {int(page_number)}]")
         page_blocks = blocks_df[blocks_df["page_number"] == page_number]
         for _, row in page_blocks.iterrows():
-            lines.append(f"[CITE_START:{row['citation_token']}] {row['text']} [CITE_END:{row['citation_token']}]")
+            block_id = format_annotation_block_id(str(row["citation_token"]))
+            lines.append(f'<BLOCK id="{block_id}">')
+            lines.append(str(row["text"]))
+            lines.append("</BLOCK>")
         lines.append("")
     return "\n".join(lines).strip() + "\n"
 

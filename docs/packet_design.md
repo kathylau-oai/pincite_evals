@@ -47,8 +47,10 @@ data/case_law_packets/<packet_id>/
 - Citable ID format is block-only: `DOC_ID[P<page>.B<block>]`.
 - Legacy paragraph style (`¶`) is not used.
 - Hash suffixes are not used.
-- Annotated text uses explicit span boundaries:
-  - `[CITE_START:DOC001[P012.B07]] ... [CITE_END:DOC001[P012.B07]]`
+- Annotated text uses XML block wrappers:
+  - `<BLOCK id="DOC001.P012.B07">`
+  - `... block text ...`
+  - `</BLOCK>`
 
 ## Parsing pipeline (current)
 
@@ -61,7 +63,7 @@ data/case_law_packets/<packet_id>/
 5. Assign deterministic excerpt IDs by page/block index (`P012.B07`).
 6. Write artifacts:
    - block table CSV in `blocks/`
-   - plain text and annotated text in `text/`
+   - plain text and annotated text in `text/` (annotated text uses `BLOCK` tags with `id="DOC###.P###.B##"`)
 7. Record packet-level manifests and QA metrics.
 
 ## Block table schema (key fields)
