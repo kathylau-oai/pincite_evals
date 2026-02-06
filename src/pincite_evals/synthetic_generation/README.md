@@ -11,7 +11,7 @@ Mode `B` (wrong span) is intentionally not generated here; it is measured by gra
 ## What it does
 
 1. Reads a packet from `data/case_law_packets/<packet_id>/`.
-2. Builds a packet corpus from full text blocks for up to 8 packet documents.
+2. Loads up to 8 parsed docs from `text/DOC###.annotated.txt` and builds one packet corpus directly from annotated text.
 3. Generates candidates in parallel per mode by giving the model the full packet corpus and letting it choose trap opportunities (no deterministic mode target-bank seeding).
 4. Validates with lightweight deterministic checks + single LLM pass/fail verifier.
 5. Selects a diverse final set per mode.
@@ -53,7 +53,7 @@ pincite-synth validate --config path/to/config.yaml --run-id my_run
 Run folder layout:
 
 - `metadata/`: config snapshot + run manifest
-- `target_bank/`: packet corpus files and target-bank sanity checks
+- `metadata/packet_input_sanity.csv`: packet block input quality checks
 - `generation/candidates/`: per-mode candidate JSONL files
 - `generation/metrics/`: request metrics + generation datapoint timings
 - `generation/traces/`: raw generation Responses API payloads

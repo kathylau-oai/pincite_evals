@@ -23,12 +23,9 @@ def _cmd_generate(args: argparse.Namespace) -> None:
     pipeline = SyntheticGenerationPipeline(config)
     context = pipeline.bootstrap(run_id=args.run_id)
 
-    target_bank_result = pipeline.run_target_bank(context)
     openai_client = None if config.dry_run else build_openai_client(config)
     generation_result = pipeline.run_generation(
         context=context,
-        target_bank=target_bank_result.target_bank,
-        packet_corpus_text=target_bank_result.packet_corpus_text,
         openai_client=openai_client,
     )
 
@@ -36,7 +33,6 @@ def _cmd_generate(args: argparse.Namespace) -> None:
     metrics_summary.to_csv(context.run_paths.summary_dir / "stage_metrics_summary.csv", index=False)
 
     print(f"run_root={context.run_paths.run_root}")
-    print(f"target_bank_rows={target_bank_result.target_bank.shape[0]}")
     print(
         "generated_counts="
         + ",".join([f"{mode}:{len(items)}" for mode, items in generation_result.candidates_by_mode.items()])
@@ -48,7 +44,6 @@ def _cmd_validate(args: argparse.Namespace) -> None:
     pipeline = SyntheticGenerationPipeline(config)
     context = pipeline.bootstrap(run_id=args.run_id)
 
-    target_bank_result = pipeline.run_target_bank(context)
     candidates = load_candidates_from_run(context.run_paths.generation_candidates_dir)
     if not candidates:
         raise ValueError(f"No candidates found in {context.run_paths.generation_candidates_dir}")
@@ -56,7 +51,6 @@ def _cmd_validate(args: argparse.Namespace) -> None:
     openai_client = None if config.dry_run else build_openai_client(config)
     validation_result = pipeline.run_validation(
         context=context,
-        target_bank=target_bank_result.target_bank,
         candidates=candidates,
         openai_client=openai_client,
     )
@@ -97,7 +91,8 @@ def _cmd_run_all(args: argparse.Namespace) -> None:
     summary = pipeline.run_all(context=context, openai_client=openai_client)
 
     print(f"run_root={summary['run_root']}")
-    print(f"target_bank_rows={summary['target_bank_rows']}")
+    print(f"packet_block_rows={summary['packet_block_rows']}")
+    print(f"packet_document_count={summary['packet_document_count']}")
     print(
         "generated_counts="
         + ",".join([f"{mode}:{count}" for mode, count in summary["generated_counts"].items()])
@@ -112,7 +107,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Synthetic generation pipeline CLI.")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    generate_parser = subparsers.add_parser("generate", help="Prepare packet corpus and run candidate generation.")
+    generate_parser = subparsers.add_parser("generate", help="Run candidate generation from packet full text corpus.")
     _add_common_args(generate_parser)
     generate_parser.set_defaults(handler=_cmd_generate)
 

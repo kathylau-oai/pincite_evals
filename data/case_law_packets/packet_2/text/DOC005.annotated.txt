@@ -1,60 +1,113 @@
 [Page 1]
-[CITE_START:DOC005[P001.B01]] FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT [CITE_END:DOC005[P001.B01]]
-[CITE_START:DOC005[P001.B02]] M ICHELLE  R ICHARDS , on behalf of
+<BLOCK id="DOC005.P001.B01">
+FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT
+</BLOCK>
+<BLOCK id="DOC005.P001.B02">
+M ICHELLE  R ICHARDS , on behalf of
 herself and others similarly situated
-and on behalf of the general public, [CITE_END:DOC005[P001.B02]]
-[CITE_START:DOC005[P001.B03]] No. 11-17530 D.C. No.
-5:05-cv-04867- [CITE_END:DOC005[P001.B03]]
-[CITE_START:DOC005[P001.B04]] Plaintiff-Appellee , [CITE_END:DOC005[P001.B04]]
-[CITE_START:DOC005[P001.B05]] RMW [CITE_END:DOC005[P001.B05]]
-[CITE_START:DOC005[P001.B06]] v. [CITE_END:DOC005[P001.B06]]
-[CITE_START:DOC005[P001.B07]] E RNST  & Y OUNG , LLP, [CITE_END:DOC005[P001.B07]]
-[CITE_START:DOC005[P001.B08]] OPINION [CITE_END:DOC005[P001.B08]]
-[CITE_START:DOC005[P001.B09]] Defendant-Appellant . [CITE_END:DOC005[P001.B09]]
-[CITE_START:DOC005[P001.B10]] Appeal from the United States District Court for the Northern District of California
+and on behalf of the general public,
+</BLOCK>
+<BLOCK id="DOC005.P001.B03">
+No. 11-17530 D.C. No.
+5:05-cv-04867-
+</BLOCK>
+<BLOCK id="DOC005.P001.B04">
+Plaintiff-Appellee ,
+</BLOCK>
+<BLOCK id="DOC005.P001.B05">
+RMW
+</BLOCK>
+<BLOCK id="DOC005.P001.B06">
+v.
+</BLOCK>
+<BLOCK id="DOC005.P001.B07">
+E RNST  & Y OUNG , LLP,
+</BLOCK>
+<BLOCK id="DOC005.P001.B08">
+OPINION
+</BLOCK>
+<BLOCK id="DOC005.P001.B09">
+Defendant-Appellant .
+</BLOCK>
+<BLOCK id="DOC005.P001.B10">
+Appeal from the United States District Court for the Northern District of California
 Jeremy D. Fogel, District Judge, Presiding Argued and Submitted
-June 14, 2013—San Francisco, California Filed August 21, 2013 Before: Mary M. Schroeder, Kenneth F. Ripple, * and Consuelo M. Callahan, Circuit Judges. Per Curiam Opinion [CITE_END:DOC005[P001.B10]]
-[CITE_START:DOC005[P001.B11]] *  The Honorable Kenneth F. Ripple, Senior Circuit Judge for the U.S.
-Court of Appeals for the Seventh Circuit, sitting by designation. [CITE_END:DOC005[P001.B11]]
+June 14, 2013—San Francisco, California Filed August 21, 2013 Before: Mary M. Schroeder, Kenneth F. Ripple, * and Consuelo M. Callahan, Circuit Judges. Per Curiam Opinion
+</BLOCK>
+<BLOCK id="DOC005.P001.B11">
+*  The Honorable Kenneth F. Ripple, Senior Circuit Judge for the U.S.
+Court of Appeals for the Seventh Circuit, sitting by designation.
+</BLOCK>
 
 [Page 2]
-[CITE_START:DOC005[P002.B01]] R ICHARDS V . E RNST  & Y OUNG , LLP
-2 [CITE_END:DOC005[P002.B01]]
-[CITE_START:DOC005[P002.B02]] SUMMARY ** [CITE_END:DOC005[P002.B02]]
-[CITE_START:DOC005[P002.B03]] Arbitration [CITE_END:DOC005[P002.B03]]
-[CITE_START:DOC005[P002.B04]] The panel reversed the district court’s denial of Ernst &
+<BLOCK id="DOC005.P002.B01">
+R ICHARDS V . E RNST  & Y OUNG , LLP
+2
+</BLOCK>
+<BLOCK id="DOC005.P002.B02">
+SUMMARY **
+</BLOCK>
+<BLOCK id="DOC005.P002.B03">
+Arbitration
+</BLOCK>
+<BLOCK id="DOC005.P002.B04">
+The panel reversed the district court’s denial of Ernst &
 Young, LLP’s motion to compel arbitration of state wage and
-hour claims asserted by the former employee plaintiff. [CITE_END:DOC005[P002.B04]]
-[CITE_START:DOC005[P002.B05]] The district court determined that Ernst & Young had
+hour claims asserted by the former employee plaintiff.
+</BLOCK>
+<BLOCK id="DOC005.P002.B05">
+The district court determined that Ernst & Young had
 waived its right to arbitration by failing to assert that right as
 a defense in an action brought by two former employees,
 whose action had been consolidated with that of the plaintiff. 
 The panel reversed the district court’s judgment because the
 plaintiff had not established any prejudice as a result of Ernst
-& Yong’s alleged delay in asserting its arbitral rights. [CITE_END:DOC005[P002.B05]]
-[CITE_START:DOC005[P002.B06]] COUNSEL [CITE_END:DOC005[P002.B06]]
-[CITE_START:DOC005[P002.B07]] Rex S. Heinke, Gregory William Knopp, and Katharine Jane
+& Yong’s alleged delay in asserting its arbitral rights.
+</BLOCK>
+<BLOCK id="DOC005.P002.B06">
+COUNSEL
+</BLOCK>
+<BLOCK id="DOC005.P002.B07">
+Rex S. Heinke, Gregory William Knopp, and Katharine Jane
 Galston, Akin Gump Strauss Hauer & Feld LLP, Los
 Angeles, California, for Defendant-Appellant. Max Folkenflik, Folkenflik & McGerity, New York, New
 York; H. Tim Hoffman, Arthur William Lazear, and Ross L.
-Libenson, for Plaintiffs-Appellees. [CITE_END:DOC005[P002.B07]]
-[CITE_START:DOC005[P002.B08]] **  This summary constitutes no part of the opinion of the court.  It has
-been prepared by court staff for the convenience of the reader. [CITE_END:DOC005[P002.B08]]
+Libenson, for Plaintiffs-Appellees.
+</BLOCK>
+<BLOCK id="DOC005.P002.B08">
+**  This summary constitutes no part of the opinion of the court.  It has
+been prepared by court staff for the convenience of the reader.
+</BLOCK>
 
 [Page 3]
-[CITE_START:DOC005[P003.B01]] R ICHARDS V . E RNST & Y OUNG , LLP 3 OPINION PER CURIAM: Defendant Ernst & Young, LLP appeals the district court’s denial of its motion to compel arbitration of state wage and hour claims asserted by its former employee, Michelle Richards. 1 The defendant filed the motion after the Supreme Court’s decision in AT&T Mobility LLC v. Concepcion , 131 S. Ct. 1740 (2011). The district court determined that Ernst & Young had waived its right to arbitration by failing to assert that right as a defense in an action brought by two other former employees, David [CITE_END:DOC005[P003.B01]]
-[CITE_START:DOC005[P003.B02]] Ho and Sarah Fernandez, whose action had been consolidated with that of Ms. Richards. Because Ms. Richards has not established any prejudice as a result of Ernst & Young’s alleged delay in asserting its arbitral rights, we reverse the judgment of the district court. 2 “Waiver of a contractual right to arbitration is not favored,” and, therefore, “any party arguing waiver of arbitration bears a heavy burden of proof.” Fisher v. A.G. Becker Paribas Inc. , 791 F.2d 691, 694 (9th Cir. 1986) (quotation marks omitted). Specifically, “[a] party seeking to prove waiver of a right to arbitration must demonstrate: [CITE_END:DOC005[P003.B02]]
-[CITE_START:DOC005[P003.B03]] (1) knowledge of an existing right to compel arbitration; (2) acts inconsistent with that existing right; and (3) prejudice to the party opposing arbitration resulting from such inconsistent acts.” Id. “Where, as here, the concern is whether the undisputed facts of defendant’s pretrial participation in the [CITE_END:DOC005[P003.B03]]
-[CITE_START:DOC005[P003.B04]] 1  The district court’s jurisdiction was based on 28 U.S.C. § 1332. 2  Our jurisdiction is based on 9 U.S.C. § 16(a)(1)(B). [CITE_END:DOC005[P003.B04]]
+<BLOCK id="DOC005.P003.B01">
+R ICHARDS V . E RNST & Y OUNG , LLP 3 OPINION PER CURIAM: Defendant Ernst & Young, LLP appeals the district court’s denial of its motion to compel arbitration of state wage and hour claims asserted by its former employee, Michelle Richards. 1 The defendant filed the motion after the Supreme Court’s decision in AT&T Mobility LLC v. Concepcion , 131 S. Ct. 1740 (2011). The district court determined that Ernst & Young had waived its right to arbitration by failing to assert that right as a defense in an action brought by two other former employees, David
+</BLOCK>
+<BLOCK id="DOC005.P003.B02">
+Ho and Sarah Fernandez, whose action had been consolidated with that of Ms. Richards. Because Ms. Richards has not established any prejudice as a result of Ernst & Young’s alleged delay in asserting its arbitral rights, we reverse the judgment of the district court. 2 “Waiver of a contractual right to arbitration is not favored,” and, therefore, “any party arguing waiver of arbitration bears a heavy burden of proof.” Fisher v. A.G. Becker Paribas Inc. , 791 F.2d 691, 694 (9th Cir. 1986) (quotation marks omitted). Specifically, “[a] party seeking to prove waiver of a right to arbitration must demonstrate:
+</BLOCK>
+<BLOCK id="DOC005.P003.B03">
+(1) knowledge of an existing right to compel arbitration; (2) acts inconsistent with that existing right; and (3) prejudice to the party opposing arbitration resulting from such inconsistent acts.” Id. “Where, as here, the concern is whether the undisputed facts of defendant’s pretrial participation in the
+</BLOCK>
+<BLOCK id="DOC005.P003.B04">
+1  The district court’s jurisdiction was based on 28 U.S.C. § 1332. 2  Our jurisdiction is based on 9 U.S.C. § 16(a)(1)(B).
+</BLOCK>
 
 [Page 4]
-[CITE_START:DOC005[P004.B01]] R ICHARDS V . E RNST  & Y OUNG , LLP
+<BLOCK id="DOC005.P004.B01">
+R ICHARDS V . E RNST  & Y OUNG , LLP
 4 litigation satisfy the standard for waiver, the question of
 waiver of arbitration is one of law which we review  de novo .” 
-Id.  at 693. [CITE_END:DOC005[P004.B01]]
-[CITE_START:DOC005[P004.B02]] Ms. Richards argues that she was prejudiced because there was litigation on the merits, and, as a result, some of her claims were dismissed. We cannot accept this argument. One of Ms. Richards’ claims—Ernst & Young’s failure to provide meal and rest breaks—was dismissed without prejudice, which is not a decision on the merits. See Oscar v. Alaska Dep’t of Educ. & Early Dev. , 541 F.3d 978, 981 (9th Cir. 2008). The other claim on which the district court ruled—Ms. Richards’s claim for injunctive relief—was resolved by the district court on the basis of standing: Ms. Richards, as a [CITE_END:DOC005[P004.B02]]
-[CITE_START:DOC005[P004.B03]] former employee, could not benefit from prospective relief and therefore did not have standing to assert that claim. We previously have observed that “[t]he jurisdictional question of standing precedes, and does not require, analysis of the merits.” Equity Lifestyle Props., Inc. v. Cnty. of San Luis Obispo , 548 F.3d 1184, 1189 n.10 (9th Cir. 2008). [CITE_END:DOC005[P004.B03]]
-[CITE_START:DOC005[P004.B04]] Ms. Richards also maintains that she was prejudiced
+Id.  at 693.
+</BLOCK>
+<BLOCK id="DOC005.P004.B02">
+Ms. Richards argues that she was prejudiced because there was litigation on the merits, and, as a result, some of her claims were dismissed. We cannot accept this argument. One of Ms. Richards’ claims—Ernst & Young’s failure to provide meal and rest breaks—was dismissed without prejudice, which is not a decision on the merits. See Oscar v. Alaska Dep’t of Educ. & Early Dev. , 541 F.3d 978, 981 (9th Cir. 2008). The other claim on which the district court ruled—Ms. Richards’s claim for injunctive relief—was resolved by the district court on the basis of standing: Ms. Richards, as a
+</BLOCK>
+<BLOCK id="DOC005.P004.B03">
+former employee, could not benefit from prospective relief and therefore did not have standing to assert that claim. We previously have observed that “[t]he jurisdictional question of standing precedes, and does not require, analysis of the merits.” Equity Lifestyle Props., Inc. v. Cnty. of San Luis Obispo , 548 F.3d 1184, 1189 n.10 (9th Cir. 2008).
+</BLOCK>
+<BLOCK id="DOC005.P004.B04">
+Ms. Richards also maintains that she was prejudiced
 because Ernst & Young conducted discovery that caused her
 to incur expenses during the years of litigation prior to the
 motion to compel.  Ms. Richards does not contend, however,
@@ -65,18 +118,26 @@ arbitration.”   Saint Agnes Med. Ctr. v. PacifiCare of Cal. ,
 738 (Cal. 2003) (noting that courts have found prejudice in
 such circumstances).  Moreover, in  Fisher , we rejected the
 notion that “self-inflicted” expenses could be evidence of
-prejudice.  791 F.2d at 698.  Like the plaintiffs in  Fisher , Ms. [CITE_END:DOC005[P004.B04]]
+prejudice.  791 F.2d at 698.  Like the plaintiffs in  Fisher , Ms.
+</BLOCK>
 
 [Page 5]
-[CITE_START:DOC005[P005.B01]] R ICHARDS V . E RNST  & Y OUNG , LLP
+<BLOCK id="DOC005.P005.B01">
+R ICHARDS V . E RNST  & Y OUNG , LLP
 5 Richards was a “part[y] to an agreement making arbitration
 of disputes mandatory,” and therefore “[a]ny extra expense
 incurred as a result of [Ms. Richards’s] deliberate choice of
 an improper forum, in contravention of their contract, cannot
-be charged to” Ernst & Young.   Id. [CITE_END:DOC005[P005.B01]]
-[CITE_START:DOC005[P005.B02]] Alternatively, Ms. Richards urges that we may rely on the decision of the National Labor Relations Board (“NLRB”) decision in D.R. Horton , 357 N.L.R.B. No. 184, 2012 WL 36274 (Jan. 3, 2012), to affirm the district court’s judgment. We decline to do so. Ms. Richards failed to raise the argument that her arbitration agreement with Ernst & Young was unenforceable under the National Labor Relations Act (“NLRA”) until after the parties had briefed, and the district court had denied, Ernst & Young’s motion to compel. “We apply a ‘general rule’ against entertaining arguments on appeal that were not presented [CITE_END:DOC005[P005.B02]]
-[CITE_START:DOC005[P005.B03]] or developed before the district court.” Peterson v. Highland Music, Inc. , 140 F.3d 1313, 1321 (9th Cir. 1998). We also note that the only court of appeals, and the overwhelming majority of the district courts, to have considered the issue have determined that they should not defer to the NLRB’s decision in D.R. Horton because it conflicts with the explicit pronouncements of the Supreme Court concerning the policies undergirding the Federal Arbitration Act (“FAA”), 9 U.S.C. §§ 1–16. 3 Finally, [CITE_END:DOC005[P005.B03]]
-[CITE_START:DOC005[P005.B04]] 3 See, e.g. ,  Owen v. Bristol Care, Inc. , 702 F.3d 1050, 1055 (8th Cir.
+be charged to” Ernst & Young.   Id.
+</BLOCK>
+<BLOCK id="DOC005.P005.B02">
+Alternatively, Ms. Richards urges that we may rely on the decision of the National Labor Relations Board (“NLRB”) decision in D.R. Horton , 357 N.L.R.B. No. 184, 2012 WL 36274 (Jan. 3, 2012), to affirm the district court’s judgment. We decline to do so. Ms. Richards failed to raise the argument that her arbitration agreement with Ernst & Young was unenforceable under the National Labor Relations Act (“NLRA”) until after the parties had briefed, and the district court had denied, Ernst & Young’s motion to compel. “We apply a ‘general rule’ against entertaining arguments on appeal that were not presented
+</BLOCK>
+<BLOCK id="DOC005.P005.B03">
+or developed before the district court.” Peterson v. Highland Music, Inc. , 140 F.3d 1313, 1321 (9th Cir. 1998). We also note that the only court of appeals, and the overwhelming majority of the district courts, to have considered the issue have determined that they should not defer to the NLRB’s decision in D.R. Horton because it conflicts with the explicit pronouncements of the Supreme Court concerning the policies undergirding the Federal Arbitration Act (“FAA”), 9 U.S.C. §§ 1–16. 3 Finally,
+</BLOCK>
+<BLOCK id="DOC005.P005.B04">
+3 See, e.g. ,  Owen v. Bristol Care, Inc. , 702 F.3d 1050, 1055 (8th Cir.
 2013) (“[G]iven the absence of any ‘contrary congressional command’
 from the FLSA that a right to engage in class actions overrides the
 mandate of the FAA in favor of arbitration, we reject Owen’s invitation
@@ -84,29 +145,44 @@ to follow the NLRB’s rationale in  D.R. Horton  . . . .” (quoting
 CompuCredit Corp. v. Greenwood , 132 S. Ct. 665, 669 (2012));  Delock
 v. Securitas Sec. Servs. USA, Inc. , 883 F. Supp. 2d 784, 789 (E.D. Ark.
 2012) (“The Court declines to endorse, however, the Board’s application
-of the Federal Arbitration Act or its reading of the precedent applying that [CITE_END:DOC005[P005.B04]]
+of the Federal Arbitration Act or its reading of the precedent applying that
+</BLOCK>
 
 [Page 6]
-[CITE_START:DOC005[P006.B01]] R ICHARDS V . E RNST  & Y OUNG , LLP
+<BLOCK id="DOC005.P006.B01">
+R ICHARDS V . E RNST  & Y OUNG , LLP
 6 the Supreme Court recently has reiterated that “courts must
 rigorously enforce arbitration agreements according to their
 terms” and that this “holds true for claims that allege a
-violation of a federal statute, unless the FAA’s mandate has [CITE_END:DOC005[P006.B01]]
-[CITE_START:DOC005[P006.B02]] Act. The NLRA, as interpreted in Horton , conflicts with the FAA, as interpreted by the Supreme Court.”); Morvant v. P.F. Chang’s China Bistro, Inc. , 870 F. Supp. 2d 831, 845 (N.D. Cal. 2012) (noting that the Supreme Court had “held that courts are required to enforce agreements to arbitrate according to their terms, unless the FAA’s mandate has been overridden by a contrary congressional command,” but concluding that “Congress did not expressly provide that it was overriding any provision in the FAA when it enacted the NLRA or the Norris-LaGuardia Act” (internal quotation marks omitted)); Jasso v. Money [CITE_END:DOC005[P006.B02]]
-[CITE_START:DOC005[P006.B03]] Mart Express, Inc. , 879 F. Supp. 2d 1038, 1049 (N.D. Cal. 2012) (“Because Congress did not expressly provide that it was overriding any provision in the FAA, the Court cannot read such a provision into the NLRA and is constrained by [ AT&T Mobility LLC v.] Concepcion [, 131 S. Ct. 1740 (2011),] to enforce the instant agreement according to its terms.”); LaVoice v. UBS Fin. Servs., Inc. , No. 11 Civ. 2308 (BSJ) (JLC), 2012 WL 124590, at *6 (S.D.N.Y. Jan. 13, 2012) (holding that “this Court must read AT & T Mobility as standing against any argument [CITE_END:DOC005[P006.B03]]
-[CITE_START:DOC005[P006.B04]] that an absolute right to collective action is consistent with the FAA’s ‘overarching purpose’ of ‘ensur[ing] the enforcement of arbitration agreements according to their terms so as to facilitate streamlined proceedings’” and that, “[t]o the extent that LaVoice relies on . . . the recent decision of the [NLRB] in D.R. Horton, Inc. . . . , as authority to support a conflicting reading of AT&T Mobility , this Court declines to follow th[at] decision[]” (quoting AT&T Mobility , 131 S. Ct. at 1748)). But see Brown v. Citicorp Credit Servs. , No. 1:12-cv-00062-BLW, 2013 WL 645942, at *3 (D. [CITE_END:DOC005[P006.B04]]
-[CITE_START:DOC005[P006.B05]] Idaho Feb. 21, 2013) (deferring to NLRB’s decision in D.R. Horton under Chevron, U.S.A., Inc. v. Natural Res. Def. Council, Inc. , 467 U.S. 837 (1984), as “rational and consistent” with the NLRA, but failing to consider countervailing policies or deference with respect to the FAA); Herrington v. Waterstone Mortg. Corp. , No. 11-cv-779-bbc, 2012 WL 1242318, at *6 (W.D. Wis. Mar. 16, 2012) (finding “the Board’s interpretation of the NLRA in D.R. Horton [] is reasonably defensible” and, therefore, “applying it . . . to invalidate the collective action waiver in the arbitration agreement” (internal quotation marks omitted)). [CITE_END:DOC005[P006.B05]]
+violation of a federal statute, unless the FAA’s mandate has
+</BLOCK>
+<BLOCK id="DOC005.P006.B02">
+Act. The NLRA, as interpreted in Horton , conflicts with the FAA, as interpreted by the Supreme Court.”); Morvant v. P.F. Chang’s China Bistro, Inc. , 870 F. Supp. 2d 831, 845 (N.D. Cal. 2012) (noting that the Supreme Court had “held that courts are required to enforce agreements to arbitrate according to their terms, unless the FAA’s mandate has been overridden by a contrary congressional command,” but concluding that “Congress did not expressly provide that it was overriding any provision in the FAA when it enacted the NLRA or the Norris-LaGuardia Act” (internal quotation marks omitted)); Jasso v. Money
+</BLOCK>
+<BLOCK id="DOC005.P006.B03">
+Mart Express, Inc. , 879 F. Supp. 2d 1038, 1049 (N.D. Cal. 2012) (“Because Congress did not expressly provide that it was overriding any provision in the FAA, the Court cannot read such a provision into the NLRA and is constrained by [ AT&T Mobility LLC v.] Concepcion [, 131 S. Ct. 1740 (2011),] to enforce the instant agreement according to its terms.”); LaVoice v. UBS Fin. Servs., Inc. , No. 11 Civ. 2308 (BSJ) (JLC), 2012 WL 124590, at *6 (S.D.N.Y. Jan. 13, 2012) (holding that “this Court must read AT & T Mobility as standing against any argument
+</BLOCK>
+<BLOCK id="DOC005.P006.B04">
+that an absolute right to collective action is consistent with the FAA’s ‘overarching purpose’ of ‘ensur[ing] the enforcement of arbitration agreements according to their terms so as to facilitate streamlined proceedings’” and that, “[t]o the extent that LaVoice relies on . . . the recent decision of the [NLRB] in D.R. Horton, Inc. . . . , as authority to support a conflicting reading of AT&T Mobility , this Court declines to follow th[at] decision[]” (quoting AT&T Mobility , 131 S. Ct. at 1748)). But see Brown v. Citicorp Credit Servs. , No. 1:12-cv-00062-BLW, 2013 WL 645942, at *3 (D.
+</BLOCK>
+<BLOCK id="DOC005.P006.B05">
+Idaho Feb. 21, 2013) (deferring to NLRB’s decision in D.R. Horton under Chevron, U.S.A., Inc. v. Natural Res. Def. Council, Inc. , 467 U.S. 837 (1984), as “rational and consistent” with the NLRA, but failing to consider countervailing policies or deference with respect to the FAA); Herrington v. Waterstone Mortg. Corp. , No. 11-cv-779-bbc, 2012 WL 1242318, at *6 (W.D. Wis. Mar. 16, 2012) (finding “the Board’s interpretation of the NLRA in D.R. Horton [] is reasonably defensible” and, therefore, “applying it . . . to invalidate the collective action waiver in the arbitration agreement” (internal quotation marks omitted)).
+</BLOCK>
 
 [Page 7]
-[CITE_START:DOC005[P007.B01]] R ICHARDS V . E RNST  & Y OUNG , LLP
+<BLOCK id="DOC005.P007.B01">
+R ICHARDS V . E RNST  & Y OUNG , LLP
 7 been overridden by a contrary congressional command.”   Am.
 Express v. Italian Colors Rest. , 133 S. Ct. 2304, 2309 (2013)
 (internal quotation marks omitted).  “Congress,” however,
 “did not expressly provide that it was overriding any
 provision in the FAA when it enacted the NLRA or the
 Norris-LaGuardia Act.”   Morvant v. P.F. Chang’s China
-Bistro, Inc. , 870 F. Supp. 2d 831, 845 (N.D. Cal. 2012). REVERSED. 4 [CITE_END:DOC005[P007.B01]]
-[CITE_START:DOC005[P007.B02]] 4  Because the district court should have compelled arbitration, and
+Bistro, Inc. , 870 F. Supp. 2d 831, 845 (N.D. Cal. 2012). REVERSED. 4
+</BLOCK>
+<BLOCK id="DOC005.P007.B02">
+4  Because the district court should have compelled arbitration, and
 because the arbitration agreement between Ernst & Young and Ms.
 Richards precludes class arbitration, we also vacate the district court’s
-order certifying a class of litigants with Ms. Richards as its representative. [CITE_END:DOC005[P007.B02]]
+order certifying a class of litigants with Ms. Richards as its representative.
+</BLOCK>

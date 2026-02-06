@@ -25,7 +25,6 @@ def test_build_response_request_includes_temperature_when_reasoning_none():
         reasoning_effort="none",
         temperature=0.2,
         system_prompt="You are a test assistant.",
-        max_output_tokens=500,
     )
 
     request = _build_response_request(model_config, "Test prompt")
@@ -42,7 +41,6 @@ def test_build_response_request_omits_temperature_when_reasoning_enabled():
         reasoning_effort="high",
         temperature=0.7,
         system_prompt="You are a test assistant.",
-        max_output_tokens=500,
     )
 
     request = _build_response_request(model_config, "Test prompt")

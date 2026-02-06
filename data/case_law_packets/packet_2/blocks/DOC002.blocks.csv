@@ -1,6 +1,6 @@
 packet_id,doc_id,source_url,page_number,block_number,excerpt_id,citation_token,word_count,token_count,x0,y0,x1,y1,text
 packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,1,P001.B01,DOC002[P001.B01],13,25,54.0,70.49,329.43,168.44,"FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT TERESA ARMSTRONG,"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,2,P001.B02,DOC002[P001.B02],9,29,253.08,152.28,340.0,251.24,"No.  21-15397  
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,2,P001.B02,DOC002[P001.B02],9,28,253.08,152.28,340.0,251.24,"No. 21-15397  
 D.C. No. 5:17-cv-
 06540-LHK  
 OPINION"

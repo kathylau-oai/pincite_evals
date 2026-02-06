@@ -1,3 +1,16 @@
-Review this candidate item JSON:
+Review this candidate synthetic item JSON and return one verifier object.
 
+## Candidate item
 __ITEM_JSON__
+
+## Packet corpus
+__PACKET_CORPUS__
+
+## Verification instructions
+1. Determine whether this item is high quality and objectively gradable for its declared mode.
+2. Apply strict pass/fail judgment using the system rubric.
+3. Use fail when quality is materially uncertain; do not pass borderline ambiguity.
+4. Check that trigger notes and cautions are detailed enough for a beginner litigator to apply.
+5. Keep reasoning concise and concrete.
+
+Return only the structured output object.

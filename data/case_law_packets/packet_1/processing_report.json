@@ -11,7 +11,7 @@
   "avg_block_words": 64.74,
   "avg_tokens_per_block": 95.03,
   "total_words_all_docs": 73536,
-  "total_tokens_all_docs": 107325,
+  "total_tokens_all_docs": 107323,
   "manifest_path": "data/case_law_packets/packet_1/packet_manifest.csv",
   "quality_summary_path": "data/case_law_packets/packet_1/parsing_quality_summary.csv"
 }

@@ -16,7 +16,6 @@ class CitationOverextensionLLMJudgeGrader(Grader):
         model: str = "gpt-5.2",
         reasoning_effort: str = "none",
         temperature: float = 0.0,
-        max_output_tokens: int = 1200,
         pass_threshold: float = 0.8,
         client: OpenAI | None = None,
     ) -> None:
@@ -25,7 +24,6 @@ class CitationOverextensionLLMJudgeGrader(Grader):
             model=model,
             reasoning_effort=reasoning_effort,
             temperature=temperature,
-            max_output_tokens=max_output_tokens,
         )
         self.pass_threshold = pass_threshold
         self.system_prompt_template = load_prompt_template("citation_overextension_system.md")

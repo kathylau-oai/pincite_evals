@@ -31,6 +31,11 @@ MODE_TO_ERROR = {
 }
 ERROR_TO_MODE = {value: key for key, value in MODE_TO_ERROR.items()}
 PROMPTS_ROOT = Path(__file__).resolve().parent / "prompts"
+ANNOTATED_BLOCK_ID_PATTERN = re.compile(r"<BLOCK\s+id=['\"](DOC\d{3}\.P\d{3}\.B\d{2})['\"]\s*>")
+ANNOTATED_CITE_START_PATTERN = re.compile(r"\[CITE_START:(DOC\d{3}\[P\d{3}\.B\d{2}\]|DOC\d{3}\.P\d{3}\.B\d{2})\]")
+ANNOTATED_CITATION_TOKEN_PATTERN = re.compile(
+    r"<BLOCK\s+id=['\"](DOC\d{3}\.P\d{3}\.B\d{2})['\"]\s*>|\[CITE_START:(DOC\d{3}\[P\d{3}\.B\d{2}\]|DOC\d{3}\.P\d{3}\.B\d{2})\]"
+)
 ParsedModelType = TypeVar("ParsedModelType", bound=BaseModel)
 
 
@@ -38,7 +43,6 @@ ParsedModelType = TypeVar("ParsedModelType", bound=BaseModel)
 class RunPaths:
     run_root: Path
     metadata_dir: Path
-    target_bank_dir: Path
     generation_dir: Path
     generation_candidates_dir: Path
     generation_metrics_dir: Path
@@ -55,16 +59,16 @@ class PipelineContext:
     config: SyntheticGenerationConfig
     packet_root: Path
     manifest_csv: Path
-    blocks_dir: Path
     packet_information_md: Path
     run_paths: RunPaths
 
 
 @dataclass(frozen=True)
-class TargetBankResult:
-    target_bank: pd.DataFrame
+class PacketInputs:
+    source_documents: pd.DataFrame
     packet_corpus_text: str
-    sanity_summary: pd.DataFrame
+    citation_tokens_in_order: list[str]
+    citation_universe: set[str]
 
 
 @dataclass(frozen=True)
@@ -208,18 +212,6 @@ def _json_safe(value: Any) -> Any:
     return value
 
 
-def _normalize_text(raw_text: str) -> str:
-    return " ".join(raw_text.split())
-
-def _citation_token_to_xml_block_id(citation_token: str) -> str:
-    canonical_token = normalize_citation_token(citation_token)
-    token_match = re.fullmatch(r"(DOC\d{3})\[P(\d{3})\.B(\d{2})\]", canonical_token)
-    if token_match is None:
-        raise ValueError(f"Unable to convert citation token into XML block id: {citation_token}")
-    doc_id, page_number, block_number = token_match.groups()
-    return f"{doc_id}.P{page_number}.B{block_number}"
-
-
 def _load_prompt_template(prompt_relative_path: str) -> str:
     prompt_path = PROMPTS_ROOT / prompt_relative_path
     if not prompt_path.exists():
@@ -252,11 +244,14 @@ def _load_mode_prompts(
     return system_prompt, user_prompt
 
 
-def _load_verifier_prompts(item_payload: dict[str, Any]) -> tuple[str, str]:
+def _load_verifier_prompts(item_payload: dict[str, Any], packet_corpus_text: str) -> tuple[str, str]:
     system_prompt = _load_prompt_template("verifier/system.txt")
     user_prompt = _render_prompt_template(
         _load_prompt_template("verifier/user.txt"),
-        {"__ITEM_JSON__": json.dumps(item_payload, ensure_ascii=True)},
+        {
+            "__ITEM_JSON__": json.dumps(item_payload, ensure_ascii=True),
+            "__PACKET_CORPUS__": packet_corpus_text,
+        },
     )
     return system_prompt, user_prompt
 
@@ -272,7 +267,6 @@ def _create_run_paths(output_root: Path, packet_id: str, run_id: str | None) -> 
     run_root = output_root / packet_id / resolved_run_id
 
     metadata_dir = run_root / "metadata"
-    target_bank_dir = run_root / "target_bank"
     generation_dir = run_root / "generation"
     generation_candidates_dir = generation_dir / "candidates"
     generation_metrics_dir = generation_dir / "metrics"
@@ -285,7 +279,6 @@ def _create_run_paths(output_root: Path, packet_id: str, run_id: str | None) -> 
 
     for folder in [
         metadata_dir,
-        target_bank_dir,
         generation_dir,
         generation_candidates_dir,
         generation_metrics_dir,
@@ -301,7 +294,6 @@ def _create_run_paths(output_root: Path, packet_id: str, run_id: str | None) -> 
     return RunPaths(
         run_root=run_root,
         metadata_dir=metadata_dir,
-        target_bank_dir=target_bank_dir,
         generation_dir=generation_dir,
         generation_candidates_dir=generation_candidates_dir,
         generation_metrics_dir=generation_metrics_dir,
@@ -318,19 +310,10 @@ def _load_packet_manifest(manifest_csv: Path) -> pd.DataFrame:
     return pd.read_csv(manifest_csv)
 
 
-def _load_packet_blocks(blocks_dir: Path) -> pd.DataFrame:
-    block_paths = sorted(blocks_dir.glob("*.blocks.csv"))
-    if not block_paths:
-        raise ValueError(f"No .blocks.csv files found in {blocks_dir}")
-    frames = [pd.read_csv(path) for path in block_paths]
-    return pd.concat(frames, ignore_index=True)
-
-
-def _prepare_packet_inputs(
+def _select_source_documents(
     packet_manifest: pd.DataFrame,
-    packet_blocks: pd.DataFrame,
     max_documents: int = 8,
-) -> tuple[pd.DataFrame, pd.DataFrame]:
+) -> pd.DataFrame:
     if "source_order" not in packet_manifest.columns or "doc_id" not in packet_manifest.columns:
         raise ValueError("packet_manifest.csv must include source_order and doc_id columns.")
 
@@ -342,39 +325,54 @@ def _prepare_packet_inputs(
 
     source_documents = manifest_sorted.head(max_documents).copy()
     source_documents["doc_id"] = source_documents["doc_id"].astype(str)
-    source_document_ids = set(source_documents["doc_id"].tolist())
-
-    selected_blocks = packet_blocks[packet_blocks["doc_id"].astype(str).isin(source_document_ids)].copy()
-    if selected_blocks.empty:
-        raise ValueError("No packet blocks found for selected source documents.")
-
-    selected_blocks["doc_id"] = selected_blocks["doc_id"].astype(str)
-    selected_blocks["citation_token"] = selected_blocks["citation_token"].apply(lambda token: normalize_citation_token(str(token)))
-    selected_blocks = selected_blocks.sort_values(["doc_id", "page_number", "block_number"]).reset_index(drop=True)
-
-    return selected_blocks, source_documents
+    return source_documents
 
 
-def _build_packet_corpus(packet_blocks: pd.DataFrame, source_documents: pd.DataFrame) -> str:
+def _load_annotated_document_text(packet_root: Path, doc_id: str) -> str:
+    annotated_path = packet_root / "text" / f"{doc_id}.annotated.txt"
+    if not annotated_path.exists():
+        raise ValueError(f"Annotated text not found for {doc_id}: {annotated_path}")
+    return annotated_path.read_text(encoding="utf-8").strip()
+
+
+def _extract_citation_tokens_from_annotated_text(annotated_text: str, doc_id: str) -> list[str]:
+    citation_tokens_in_order: list[str] = []
+    for token_match in ANNOTATED_CITATION_TOKEN_PATTERN.finditer(annotated_text):
+        raw_token = token_match.group(1) or token_match.group(2)
+        if raw_token:
+            citation_tokens_in_order.append(normalize_citation_token(raw_token))
+
+    if not citation_tokens_in_order:
+        if ANNOTATED_BLOCK_ID_PATTERN.search(annotated_text) or ANNOTATED_CITE_START_PATTERN.search(annotated_text):
+            raise ValueError(f"Annotated text for {doc_id} contained citation markers but no valid tokens.")
+        raise ValueError(f"No supported citation markers found in annotated text for {doc_id}.")
+
+    return citation_tokens_in_order
+
+
+def _build_packet_corpus_from_annotated_text(
+    source_documents: pd.DataFrame,
+    packet_root: Path,
+) -> tuple[str, list[str]]:
     lines: list[str] = []
+    citation_tokens_in_order: list[str] = []
+
     for _, source_row in source_documents.sort_values("source_order").iterrows():
         doc_id = str(source_row["doc_id"])
         source_filename = str(source_row.get("source_filename", ""))
+        annotated_text = _load_annotated_document_text(packet_root, doc_id)
+        citation_tokens_in_order.extend(_extract_citation_tokens_from_annotated_text(annotated_text, doc_id))
         lines.append(f'<DOCUMENT id="{doc_id}" source_filename="{source_filename}">')
-
-        document_blocks = packet_blocks[packet_blocks["doc_id"] == doc_id].sort_values(["page_number", "block_number"])
-        for _, block_row in document_blocks.iterrows():
-            block_id = _citation_token_to_xml_block_id(str(block_row["citation_token"]))
-            lines.append(f'<BLOCK id="{block_id}">')
-            lines.append(str(block_row["text"]))
-            lines.append("</BLOCK>")
+        lines.append(annotated_text)
         lines.append("</DOCUMENT>")
         lines.append("")
 
-    return "\n".join(lines).strip() + "\n"
+    return "\n".join(lines).strip() + "\n", citation_tokens_in_order
 
 
-def _target_bank_sanity(target_bank: pd.DataFrame) -> pd.DataFrame:
+def _packet_input_sanity(packet_inputs: PacketInputs) -> pd.DataFrame:
+    citation_tokens = packet_inputs.citation_tokens_in_order
+
     def has_invalid_citation_token(citation_token: Any) -> bool:
         try:
             normalize_citation_token(str(citation_token))
@@ -382,24 +380,43 @@ def _target_bank_sanity(target_bank: pd.DataFrame) -> pd.DataFrame:
         except ValueError:
             return True
 
-    invalid_tokens = target_bank["citation_token"].fillna("").apply(has_invalid_citation_token)
-    document_count = int(target_bank["doc_id"].astype(str).nunique()) if "doc_id" in target_bank.columns else 0
+    invalid_tokens = pd.Series(citation_tokens, dtype="string").fillna("").apply(has_invalid_citation_token)
+    duplicate_count = int(pd.Series(citation_tokens).duplicated().sum()) if citation_tokens else 0
+    document_count = (
+        int(packet_inputs.source_documents["doc_id"].astype(str).nunique())
+        if "doc_id" in packet_inputs.source_documents.columns
+        else 0
+    )
     avg_blocks_per_document = None
     if document_count > 0:
-        avg_blocks_per_document = float(target_bank.shape[0] / document_count)
-    duplicate_subset = [column_name for column_name in ["doc_id", "page_number", "block_number"] if column_name in target_bank.columns]
-    duplicate_count = int(target_bank.duplicated(subset=duplicate_subset).sum()) if duplicate_subset else int(target_bank.duplicated().sum())
-    missing_text_count = int(target_bank["text"].isna().sum()) if "text" in target_bank.columns else 0
+        avg_blocks_per_document = float(len(citation_tokens) / document_count)
     rows = [
-        {"metric": "row_count", "value": int(target_bank.shape[0])},
-        {"metric": "column_count", "value": int(target_bank.shape[1])},
-        {"metric": "duplicate_rows", "value": duplicate_count},
-        {"metric": "missing_block_text", "value": missing_text_count},
+        {"metric": "packet_block_rows", "value": int(len(citation_tokens))},
+        {"metric": "citation_universe_size", "value": int(len(packet_inputs.citation_universe))},
+        {"metric": "duplicate_citation_tokens", "value": duplicate_count},
         {"metric": "invalid_citation_tokens", "value": int(invalid_tokens.sum())},
         {"metric": "document_count", "value": document_count},
         {"metric": "avg_blocks_per_document", "value": avg_blocks_per_document},
     ]
     return pd.DataFrame(rows)
+
+
+def _load_packet_inputs_for_generation(context: PipelineContext) -> PacketInputs:
+    manifest = _load_packet_manifest(context.manifest_csv)
+    source_documents = _select_source_documents(manifest, max_documents=8)
+    packet_corpus_text, citation_tokens_in_order = _build_packet_corpus_from_annotated_text(
+        source_documents,
+        context.packet_root,
+    )
+    if not citation_tokens_in_order:
+        raise ValueError("No citation tokens found in annotated packet text.")
+
+    return PacketInputs(
+        source_documents=source_documents,
+        packet_corpus_text=packet_corpus_text,
+        citation_tokens_in_order=citation_tokens_in_order,
+        citation_universe=set(citation_tokens_in_order),
+    )
 
 
 def _build_generation_request(
@@ -481,33 +498,69 @@ def _normalize_generated_item(
     else:
         grading_contract["expected_citation_groups"] = [[citation_token]]
 
+    citation_integrity_note = grading_contract.get("citation_integrity_trigger_note")
+    if isinstance(citation_integrity_note, str) and citation_integrity_note.strip():
+        grading_contract["citation_integrity_trigger_note"] = citation_integrity_note.strip()
+    else:
+        grading_contract["citation_integrity_trigger_note"] = None
+
     over_note = grading_contract.get("overextension_trigger_note")
     if mode_name == "overextension":
-        if not isinstance(over_note, str) or not over_note.strip():
-            grading_contract["overextension_trigger_note"] = (
-                "Check whether qualified source language is overstated into categorical claims."
-            )
-    else:
-        if "overextension_trigger_note" not in grading_contract:
+        if isinstance(over_note, str) and over_note.strip():
+            grading_contract["overextension_trigger_note"] = over_note.strip()
+        else:
             grading_contract["overextension_trigger_note"] = None
+    else:
+        grading_contract["overextension_trigger_note"] = None
 
     precedence_note = grading_contract.get("precedence_trigger_note")
     if mode_name == "precedence":
-        if not isinstance(precedence_note, str) or not precedence_note.strip():
-            grading_contract["precedence_trigger_note"] = (
-                "Check whether controlling authority is used over superseded or non-binding sources."
-            )
-    else:
-        if "precedence_trigger_note" not in grading_contract:
+        if isinstance(precedence_note, str) and precedence_note.strip():
+            grading_contract["precedence_trigger_note"] = precedence_note.strip()
+        else:
             grading_contract["precedence_trigger_note"] = None
+    else:
+        grading_contract["precedence_trigger_note"] = None
+
+    citation_integrity_cautions = grading_contract.get("citation_integrity_cautions")
+    if not isinstance(citation_integrity_cautions, list):
+        citation_integrity_cautions = []
+    cleaned_integrity_cautions = [
+        str(caution).strip() for caution in citation_integrity_cautions if isinstance(caution, str) and str(caution).strip()
+    ]
+    if len(cleaned_integrity_cautions) < 3:
+        cleaned_integrity_cautions = [
+            "Do not credit any legal proposition unless a cited packet block directly supports that proposition.",
+            "Do not invent case names, doctrinal tests, quotations, or procedural details not present in packet text.",
+            "When packet evidence is thin, require explicit uncertainty statements rather than fabricated certainty.",
+        ]
+    grading_contract["citation_integrity_cautions"] = cleaned_integrity_cautions
 
     over_cautions = grading_contract.get("overextension_cautions")
     if not isinstance(over_cautions, list):
-        grading_contract["overextension_cautions"] = []
+        over_cautions = []
+    cleaned_over_cautions = [str(caution).strip() for caution in over_cautions if isinstance(caution, str) and str(caution).strip()]
+    if mode_name == "overextension" and len(cleaned_over_cautions) < 3:
+        cleaned_over_cautions = [
+            "Do not reward claims that convert qualified source language into broad categorical legal rules.",
+            "Do not allow omission of factual predicates, exceptions, or posture limits tied to the cited holding.",
+            "Fail when a memo's rule breadth exceeds what the cited authority text actually supports.",
+        ]
+    grading_contract["overextension_cautions"] = cleaned_over_cautions
 
     precedence_cautions = grading_contract.get("precedence_cautions")
     if not isinstance(precedence_cautions, list):
-        grading_contract["precedence_cautions"] = []
+        precedence_cautions = []
+    cleaned_precedence_cautions = [
+        str(caution).strip() for caution in precedence_cautions if isinstance(caution, str) and str(caution).strip()
+    ]
+    if mode_name == "precedence" and len(cleaned_precedence_cautions) < 3:
+        cleaned_precedence_cautions = [
+            "Do not treat persuasive or lower-rank authority as controlling when higher-rank authority exists.",
+            "Do not treat vacated, overruled, or superseded authority as binding without explicit justification.",
+            "Require explicit hierarchy reasoning when packet authorities conflict on the same legal issue.",
+        ]
+    grading_contract["precedence_cautions"] = cleaned_precedence_cautions
 
     if not isinstance(normalized.get("prompt"), str) or not str(normalized.get("prompt", "")).strip():
         normalized["prompt"] = (
@@ -532,12 +585,30 @@ def _default_candidate_from_mode(
     mode_letter = MODE_TO_ERROR[mode_name]
     citation_token = normalize_citation_token(default_citation_token)
 
+    citation_integrity_note = (
+        "A passing answer must ground each legal proposition in packet text and avoid invented authorities, "
+        "invented holdings, or unsupported factual embellishments. Fail if the memo presents a doctrine label, "
+        "controlling test, quotation, or case relationship that the packet does not actually provide. Reward "
+        "answers that explicitly acknowledge uncertainty where the packet is limited instead of filling gaps with "
+        "hallucinated legal detail."
+    )
     over_note = None
     precedence_note = None
     if mode_name == "overextension":
-        over_note = "Checks whether qualified source language is overgeneralized into categorical claims."
+        over_note = (
+            "A passing answer must preserve the source scope limits and qualifiers in the cited packet authorities. "
+            "Fail if the memo converts conditional or fact-bound language into a categorical rule, drops exceptions, "
+            "or treats dicta as controlling doctrine. The grader should compare the claimed rule breadth against the "
+            "exact cited language and mark failure when the proposition exceeds what the authority actually supports."
+        )
     if mode_name == "precedence":
-        precedence_note = "Checks whether the answer follows controlling authority and rejects superseded authority."
+        precedence_note = (
+            "A passing answer must identify which authority is controlling in the stated forum and treat lower-rank, "
+            "vacated, overruled, or merely persuasive authorities accordingly. Fail if the memo relies on a "
+            "non-controlling source over controlling authority, or if it ignores explicit status signals such as "
+            "vacatur or overruling. The grader should verify that hierarchy reasoning matches the packet's stated "
+            "authority relationships."
+        )
 
     candidate = {
         "schema_version": "v1",
@@ -557,10 +628,28 @@ def _default_candidate_from_mode(
         ],
         "grading_contract": {
             "expected_citation_groups": [[citation_token]],
+            "citation_integrity_trigger_note": citation_integrity_note,
+            "citation_integrity_cautions": [
+                "Do not credit any authority, quotation, or doctrinal label that is not explicitly supported in the packet text.",
+                "Do not infer missing elements of a legal test unless the cited packet blocks expressly provide those elements.",
+                "When the packet is incomplete, require the memo to acknowledge the limitation rather than fabricate details.",
+            ],
             "overextension_trigger_note": over_note,
-            "overextension_cautions": ["Do not reward dropped qualifiers or modal inflation."] if over_note else [],
+            "overextension_cautions": [
+                "Do not reward claims that replace qualified source language with categorical legal rules.",
+                "Do not reward omission of factual predicates, exceptions, or procedural posture limits in cited authorities.",
+                "If the memo broadens the holding beyond the cited text, mark failure even if the citation token is valid.",
+            ]
+            if over_note
+            else [],
             "precedence_trigger_note": precedence_note,
-            "precedence_cautions": ["Do not treat vacated or persuasive-only authority as controlling."] if precedence_note else [],
+            "precedence_cautions": [
+                "Do not treat vacated, overruled, or superseded authority as controlling when higher-priority authority exists.",
+                "Do not elevate persuasive or non-binding sources above controlling forum authority.",
+                "Require explicit hierarchy reasoning when authorities conflict across court level or decision status.",
+            ]
+            if precedence_note
+            else [],
         },
     }
 
@@ -699,14 +788,25 @@ def _generate_one_item(
     }
 
 
-def _is_natural_language_criteria(criteria_note: str | None) -> bool:
-    if not isinstance(criteria_note, str):
+def _word_count(text_value: str | None) -> int:
+    if not isinstance(text_value, str):
+        return 0
+    words = [word for word in re.findall(r"[A-Za-z][A-Za-z'-]*", text_value.strip()) if word]
+    return len(words)
+
+
+def _is_detailed_note(criteria_note: str | None, minimum_words: int = 45) -> bool:
+    return _word_count(criteria_note) >= minimum_words
+
+
+def _has_detailed_cautions(cautions: list[str], minimum_items: int = 3, minimum_words_per_item: int = 8) -> bool:
+    if not isinstance(cautions, list) or len(cautions) < minimum_items:
         return False
-    cleaned_note = criteria_note.strip()
-    if not cleaned_note:
-        return False
-    words = [word for word in re.findall(r"[A-Za-z][A-Za-z'-]*", cleaned_note) if word]
-    return len(words) >= 5
+    detailed_items = 0
+    for caution in cautions:
+        if _word_count(caution) >= minimum_words_per_item:
+            detailed_items += 1
+    return detailed_items >= minimum_items
 
 
 def _deterministic_validation(item_payload: dict[str, Any], citation_universe: set[str]) -> tuple[bool, list[str], dict[str, Any]]:
@@ -725,11 +825,21 @@ def _deterministic_validation(item_payload: dict[str, Any], citation_universe: s
         if citation_token not in citation_universe:
             reasons.append("expected_citation_outside_packet")
 
-    if item.target_error_mode == "C" and not _is_natural_language_criteria(item.grading_contract.overextension_trigger_note):
-        reasons.append("missing_overextension_criteria")
+    if not _is_detailed_note(item.grading_contract.citation_integrity_trigger_note):
+        reasons.append("missing_citation_integrity_criteria")
 
-    if item.target_error_mode == "D" and not _is_natural_language_criteria(item.grading_contract.precedence_trigger_note):
+    if not _has_detailed_cautions(item.grading_contract.citation_integrity_cautions):
+        reasons.append("missing_citation_integrity_cautions")
+
+    if item.target_error_mode == "C" and not _is_detailed_note(item.grading_contract.overextension_trigger_note):
+        reasons.append("missing_overextension_criteria")
+    if item.target_error_mode == "C" and not _has_detailed_cautions(item.grading_contract.overextension_cautions):
+        reasons.append("missing_overextension_cautions")
+
+    if item.target_error_mode == "D" and not _is_detailed_note(item.grading_contract.precedence_trigger_note):
         reasons.append("missing_precedence_criteria")
+    if item.target_error_mode == "D" and not _has_detailed_cautions(item.grading_contract.precedence_cautions):
+        reasons.append("missing_precedence_cautions")
 
     deduped_reasons: list[str] = []
     seen_reasons: set[str] = set()
@@ -742,13 +852,26 @@ def _deterministic_validation(item_payload: dict[str, Any], citation_universe: s
     return len(deduped_reasons) == 0, deduped_reasons, {
         "expected_citation_count": len(expected_citations),
         "criteria_checks_passed": not any(
-            reason in {"missing_overextension_criteria", "missing_precedence_criteria"} for reason in deduped_reasons
+            reason
+            in {
+                "missing_citation_integrity_criteria",
+                "missing_citation_integrity_cautions",
+                "missing_overextension_criteria",
+                "missing_overextension_cautions",
+                "missing_precedence_criteria",
+                "missing_precedence_cautions",
+            }
+            for reason in deduped_reasons
         ),
     }
 
 
-def _build_validation_request(config: SyntheticGenerationConfig, item_payload: dict[str, Any]) -> dict[str, Any]:
-    system_prompt, user_prompt = _load_verifier_prompts(item_payload)
+def _build_validation_request(
+    config: SyntheticGenerationConfig,
+    item_payload: dict[str, Any],
+    packet_corpus_text: str,
+) -> dict[str, Any]:
+    system_prompt, user_prompt = _load_verifier_prompts(item_payload, packet_corpus_text)
     return {
         "model": config.validation_model,
         "service_tier": config.service_tier,
@@ -762,6 +885,7 @@ def _validate_one_item(
     *,
     config: SyntheticGenerationConfig,
     item_payload: dict[str, Any],
+    packet_corpus_text: str,
     validation_traces_dir: Path,
     openai_client: OpenAI | None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
@@ -790,7 +914,7 @@ def _validate_one_item(
     if openai_client is None:
         raise ValueError("OpenAI client is required when dry_run is false.")
 
-    request = _build_validation_request(config, item_payload)
+    request = _build_validation_request(config, item_payload, packet_corpus_text)
     try:
         response = _call_openai_parse(openai_client, request, VerifierOutput)
     except ValidationError:
@@ -940,7 +1064,6 @@ class SyntheticGenerationPipeline:
     def bootstrap(self, run_id: str | None = None) -> PipelineContext:
         packet_root = self.config.packet_root / self.config.packet_id
         manifest_csv = packet_root / "packet_manifest.csv"
-        blocks_dir = packet_root / "blocks"
         packet_information_md = packet_root / "packet_information.md"
 
         if not packet_root.exists():
@@ -984,40 +1107,28 @@ class SyntheticGenerationPipeline:
             config=self.config,
             packet_root=packet_root,
             manifest_csv=manifest_csv,
-            blocks_dir=blocks_dir,
             packet_information_md=packet_information_md,
             run_paths=run_paths,
         )
-
-    def run_target_bank(self, context: PipelineContext) -> TargetBankResult:
-        manifest = _load_packet_manifest(context.manifest_csv)
-        blocks = _load_packet_blocks(context.blocks_dir)
-        target_bank, source_documents = _prepare_packet_inputs(manifest, blocks, max_documents=8)
-        packet_corpus_text = _build_packet_corpus(target_bank, source_documents)
-        sanity = _target_bank_sanity(target_bank)
-
-        target_bank.to_csv(context.run_paths.target_bank_dir / "target_bank.csv", index=False)
-        source_documents.to_csv(context.run_paths.target_bank_dir / "source_documents.csv", index=False)
-        (context.run_paths.target_bank_dir / "packet_corpus.txt").write_text(packet_corpus_text, encoding="utf-8")
-        sanity.to_csv(context.run_paths.target_bank_dir / "sanity_checks.csv", index=False)
-        return TargetBankResult(target_bank=target_bank, packet_corpus_text=packet_corpus_text, sanity_summary=sanity)
 
     def run_generation(
         self,
         *,
         context: PipelineContext,
-        target_bank: pd.DataFrame,
-        packet_corpus_text: str,
+        packet_inputs: PacketInputs | None = None,
         openai_client: OpenAI | None = None,
     ) -> GenerationResult:
+        resolved_packet_inputs = packet_inputs or _load_packet_inputs_for_generation(context)
+        packet_corpus_text = resolved_packet_inputs.packet_corpus_text
+
         per_mode_counts = {
             "overextension": context.config.generate_count.overextension,
             "precedence": context.config.generate_count.precedence,
             "fake_citations": context.config.generate_count.fake_citations,
         }
-        if target_bank.empty:
-            raise ValueError("No packet blocks available for generation.")
-        default_citation_token = normalize_citation_token(str(target_bank.iloc[0]["citation_token"]))
+        if not resolved_packet_inputs.citation_tokens_in_order:
+            raise ValueError("No packet citation tokens available for generation.")
+        default_citation_token = resolved_packet_inputs.citation_tokens_in_order[0]
 
         candidates_by_mode: dict[str, list[dict[str, Any]]] = {mode: [] for mode in per_mode_counts}
         metrics_rows: list[dict[str, Any]] = []
@@ -1107,11 +1218,12 @@ class SyntheticGenerationPipeline:
         self,
         *,
         context: PipelineContext,
-        target_bank: pd.DataFrame,
+        packet_inputs: PacketInputs | None = None,
         candidates: list[dict[str, Any]],
         openai_client: OpenAI | None = None,
     ) -> ValidationResult:
-        citation_universe = {normalize_citation_token(str(token)) for token in target_bank["citation_token"].dropna().tolist()}
+        resolved_packet_inputs = packet_inputs or _load_packet_inputs_for_generation(context)
+        citation_universe = resolved_packet_inputs.citation_universe
 
         deterministic_rows: list[dict[str, Any]] = []
         rejection_rows: list[dict[str, Any]] = []
@@ -1150,6 +1262,7 @@ class SyntheticGenerationPipeline:
                         _validate_one_item,
                         config=context.config,
                         item_payload=item,
+                        packet_corpus_text=resolved_packet_inputs.packet_corpus_text,
                         validation_traces_dir=context.run_paths.validation_traces_dir,
                         openai_client=openai_client,
                     ): item
@@ -1311,15 +1424,16 @@ class SyntheticGenerationPipeline:
     def run_all(self, context: PipelineContext, openai_client: OpenAI | None = None) -> dict[str, Any]:
         run_start_time = time.perf_counter()
 
-        target_bank_start_time = time.perf_counter()
-        target_bank_result = self.run_target_bank(context)
-        target_bank_duration_seconds = time.perf_counter() - target_bank_start_time
+        packet_prep_start_time = time.perf_counter()
+        packet_inputs = _load_packet_inputs_for_generation(context)
+        packet_input_sanity = _packet_input_sanity(packet_inputs)
+        packet_input_sanity.to_csv(context.run_paths.metadata_dir / "packet_input_sanity.csv", index=False)
+        packet_prep_duration_seconds = time.perf_counter() - packet_prep_start_time
 
         generation_start_time = time.perf_counter()
         generation_result = self.run_generation(
             context=context,
-            target_bank=target_bank_result.target_bank,
-            packet_corpus_text=target_bank_result.packet_corpus_text,
+            packet_inputs=packet_inputs,
             openai_client=openai_client,
         )
         generation_duration_seconds = time.perf_counter() - generation_start_time
@@ -1331,7 +1445,7 @@ class SyntheticGenerationPipeline:
         validation_start_time = time.perf_counter()
         validation_result = self.run_validation(
             context=context,
-            target_bank=target_bank_result.target_bank,
+            packet_inputs=packet_inputs,
             candidates=all_candidates,
             openai_client=openai_client,
         )
@@ -1364,7 +1478,8 @@ class SyntheticGenerationPipeline:
 
         total_run_duration_seconds = time.perf_counter() - run_start_time
         run_summary = {
-            "target_bank_rows": int(target_bank_result.target_bank.shape[0]),
+            "packet_block_rows": int(len(packet_inputs.citation_tokens_in_order)),
+            "packet_document_count": int(packet_inputs.source_documents.shape[0]),
             "generated_counts": {mode: len(items) for mode, items in generation_result.candidates_by_mode.items()},
             "accepted_items": len(validation_result.accepted_items),
             "selection_fallback_used": selection_fallback_used,
@@ -1372,7 +1487,7 @@ class SyntheticGenerationPipeline:
             "run_root": str(context.run_paths.run_root),
             "dataset_dir": str(dataset_dir),
             "stage_durations_seconds": {
-                "target_bank": target_bank_duration_seconds,
+                "packet_prep": packet_prep_duration_seconds,
                 "generation": generation_duration_seconds,
                 "validation": validation_duration_seconds,
                 "selection": selection_duration_seconds,
@@ -1404,7 +1519,7 @@ class SyntheticGenerationPipeline:
         return run_summary
 
 
-def load_candidates_from_run(candidates_dir: Path) -> list[dict[str, Any]]:
+def _load_candidates_from_directory(candidates_dir: Path) -> list[dict[str, Any]]:
     candidates: list[dict[str, Any]] = []
     for mode_name in ["overextension", "precedence", "fake_citations"]:
         mode_file = candidates_dir / f"{mode_name}_candidates.jsonl"
@@ -1416,6 +1531,19 @@ def load_candidates_from_run(candidates_dir: Path) -> list[dict[str, Any]]:
                 if not line:
                     continue
                 candidates.append(json.loads(line))
+    return candidates
+
+
+def load_candidates_from_run(candidates_dir: Path) -> list[dict[str, Any]]:
+    candidates = _load_candidates_from_directory(candidates_dir)
+    if candidates:
+        return candidates
+
+    # Backward compatibility: older runs wrote candidates under run_root/raw_candidates.
+    legacy_candidates_dir = candidates_dir.parent.parent / "raw_candidates"
+    if legacy_candidates_dir.exists():
+        return _load_candidates_from_directory(legacy_candidates_dir)
+
     return candidates
 
 

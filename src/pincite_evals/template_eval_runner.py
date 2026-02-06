@@ -28,7 +28,6 @@ class ModelConfig:
     reasoning_effort: str
     temperature: float
     system_prompt: str
-    max_output_tokens: int
 
 
 def _parse_args() -> argparse.Namespace:
@@ -86,8 +85,6 @@ def _parse_args() -> argparse.Namespace:
         default=None,
         help="Optional file path for the default single-config system prompt.",
     )
-    parser.add_argument("--max-output-tokens", type=int, default=1800, help="Per-response token cap.")
-
     parser.add_argument(
         "--max-model-workers",
         type=int,
@@ -141,7 +138,6 @@ def _model_config_from_dict(config_data: Dict[str, Any], fallback_prompt: str) -
     reasoning_effort = str(config_data.get("reasoning_effort", "none")).strip()
     temperature_value = float(config_data.get("temperature", 0.0))
     system_prompt = str(config_data.get("system_prompt", fallback_prompt)).strip()
-    max_output_tokens = int(config_data.get("max_output_tokens", 1800))
 
     if not config_name:
         raise ValueError("Each model config must have a non-empty name.")
@@ -154,7 +150,6 @@ def _model_config_from_dict(config_data: Dict[str, Any], fallback_prompt: str) -
         reasoning_effort=reasoning_effort,
         temperature=temperature_value,
         system_prompt=system_prompt,
-        max_output_tokens=max_output_tokens,
     )
 
 
@@ -187,7 +182,6 @@ def _load_model_configs(args: argparse.Namespace, default_prompt: str) -> List[M
                 "reasoning_effort": args.reasoning_effort,
                 "temperature": args.temperature,
                 "system_prompt": default_prompt,
-                "max_output_tokens": args.max_output_tokens,
             }
         )
 
@@ -285,7 +279,6 @@ def _build_response_request(model_config: ModelConfig, prompt_text: str) -> Dict
             {"role": "user", "content": prompt_text},
         ],
         "reasoning": {"effort": model_config.reasoning_effort},
-        "max_output_tokens": model_config.max_output_tokens,
     }
     if model_config.reasoning_effort == "none":
         request["temperature"] = model_config.temperature
@@ -356,14 +349,10 @@ def _build_retrying_caller(*, client: OpenAI, args: argparse.Namespace):
         if final_response.incomplete_details is not None:
             incomplete_reason = final_response.incomplete_details.reason
 
-        if (
-            final_response.status == "incomplete"
-            and incomplete_reason == "max_output_tokens"
-            and not output_text.strip()
-        ):
+        if final_response.status == "incomplete" and not output_text.strip():
             raise RuntimeError(
-                "LLM response was incomplete due to max_output_tokens and had empty output_text. "
-                "Increase max_output_tokens and rerun."
+                "LLM response was incomplete and returned empty output_text. "
+                "Review response.incomplete_details and rerun."
             )
 
         inter_token_latencies: List[float] = []

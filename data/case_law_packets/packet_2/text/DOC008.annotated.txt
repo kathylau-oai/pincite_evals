@@ -1,44 +1,88 @@
 [Page 1]
-[CITE_START:DOC008[P001.B01]] FILED [CITE_END:DOC008[P001.B01]]
-[CITE_START:DOC008[P001.B02]] NOT FOR PUBLICATION [CITE_END:DOC008[P001.B02]]
-[CITE_START:DOC008[P001.B03]] NOV 28 2022 [CITE_END:DOC008[P001.B03]]
-[CITE_START:DOC008[P001.B04]] UNITED STATES COURT OF APPEALS [CITE_END:DOC008[P001.B04]]
-[CITE_START:DOC008[P001.B05]] MOLLY C. DWYER, CLERK [CITE_END:DOC008[P001.B05]]
-[CITE_START:DOC008[P001.B06]] FOR THE NINTH CIRCUIT [CITE_END:DOC008[P001.B06]]
-[CITE_START:DOC008[P001.B07]] U.S. COURT OF APPEALS [CITE_END:DOC008[P001.B07]]
-[CITE_START:DOC008[P001.B08]] BRIAN GILE, an individual, on behalf of 
+<BLOCK id="DOC008.P001.B01">
+FILED
+</BLOCK>
+<BLOCK id="DOC008.P001.B02">
+NOT FOR PUBLICATION
+</BLOCK>
+<BLOCK id="DOC008.P001.B03">
+NOV 28 2022
+</BLOCK>
+<BLOCK id="DOC008.P001.B04">
+UNITED STATES COURT OF APPEALS
+</BLOCK>
+<BLOCK id="DOC008.P001.B05">
+MOLLY C. DWYER, CLERK
+</BLOCK>
+<BLOCK id="DOC008.P001.B06">
+FOR THE NINTH CIRCUIT
+</BLOCK>
+<BLOCK id="DOC008.P001.B07">
+U.S. COURT OF APPEALS
+</BLOCK>
+<BLOCK id="DOC008.P001.B08">
+BRIAN GILE, an individual, on behalf of 
 himself and all others similarly situated; 
 RANDOLPH GALLEGOS, an individual, on 
 behalf of himself and all others similarly 
-situated, [CITE_END:DOC008[P001.B08]]
-[CITE_START:DOC008[P001.B09]] No. 
+situated,
+</BLOCK>
+<BLOCK id="DOC008.P001.B09">
+No. 
 21-56311  
 D.C. No.  
-5:20-cv-01863-MCS-SP MEMORANDUM * [CITE_END:DOC008[P001.B09]]
-[CITE_START:DOC008[P001.B10]] Plaintiffs-Appellees,  
+5:20-cv-01863-MCS-SP MEMORANDUM *
+</BLOCK>
+<BLOCK id="DOC008.P001.B10">
+Plaintiffs-Appellees,  
   v.  
 DOLGEN CALIFORNIA, LLC, a Tennessee 
 limited liability company, Defendant-Appellant,  
 and  
-DOES, 1 through 100, inclusive, Defendant. [CITE_END:DOC008[P001.B10]]
-[CITE_START:DOC008[P001.B11]] Appeal from the United States District Court for the Central District of California 
-Mark C. Scarsi, District Judge, Presiding Argued and Submitted November 15, 2022 Pasadena, California [CITE_END:DOC008[P001.B11]]
-[CITE_START:DOC008[P001.B12]] *
+DOES, 1 through 100, inclusive, Defendant.
+</BLOCK>
+<BLOCK id="DOC008.P001.B11">
+Appeal from the United States District Court for the Central District of California 
+Mark C. Scarsi, District Judge, Presiding Argued and Submitted November 15, 2022 Pasadena, California
+</BLOCK>
+<BLOCK id="DOC008.P001.B12">
+*
 This disposition is not appropriate for publication and is not precedent 
-except as provided by Ninth Circuit Rule 36-3. [CITE_END:DOC008[P001.B12]]
+except as provided by Ninth Circuit Rule 36-3.
+</BLOCK>
 
 [Page 2]
-[CITE_START:DOC008[P002.B01]] Before: NGUYEN and H.A. THOMAS, Circuit Judges, and FITZWATER, ** District Judge. Dolgen California, LLC (“Dollar General”) appeals the district court’s order denying its motion to compel arbitration and stay proceedings. We have jurisdiction under 28 U.S.C. § 1291 and 9 U.S.C. § 16(a)(1). We review de novo the district court’s denial of a motion to compel arbitration, including its determination that a party has waived the right to arbitrate. Newirth by & through Newirth v. Aegis Senior Communities, LLC , 931 F.3d 935, 939 (9th Cir. 2019). We affirm. The right to arbitration, like other contractual rights, can be [CITE_END:DOC008[P002.B01]]
-[CITE_START:DOC008[P002.B02]] waived. Martin v. Yasuda , 829 F.3d 1118, 1124 (9th Cir. 2016). A party seeking to prove waiver of a right to arbitration must demonstrate: (1) knowledge of an existing right to compel arbitration; and (2) acts inconsistent with that existing right. Hoffman Const. Co. of Oregon v. Active Erectors & Installers, Inc. , 969 F.2d 796, 798 (9th Cir. 1992). 1 Dollar General concedes that it had knowledge of its right to compel arbitration, and challenges only whether plaintiffs demonstrated that Dollar ** The Honorable Sidney A. Fitzwater, United States District Judge for the Northern District of Texas, sitting [CITE_END:DOC008[P002.B02]]
-[CITE_START:DOC008[P002.B03]] by designation. 1 We previously required a party seeking to prove waiver of a right to arbitrate to also demonstrate proof of prejudice, but the U.S. Supreme Court has held that this third element is not required. Morgan v. Sundance, Inc. , 142 S. Ct. 1708, 1714 (2022). 2 [CITE_END:DOC008[P002.B03]]
+<BLOCK id="DOC008.P002.B01">
+Before: NGUYEN and H.A. THOMAS, Circuit Judges, and FITZWATER, ** District Judge. Dolgen California, LLC (“Dollar General”) appeals the district court’s order denying its motion to compel arbitration and stay proceedings. We have jurisdiction under 28 U.S.C. § 1291 and 9 U.S.C. § 16(a)(1). We review de novo the district court’s denial of a motion to compel arbitration, including its determination that a party has waived the right to arbitrate. Newirth by & through Newirth v. Aegis Senior Communities, LLC , 931 F.3d 935, 939 (9th Cir. 2019). We affirm. The right to arbitration, like other contractual rights, can be
+</BLOCK>
+<BLOCK id="DOC008.P002.B02">
+waived. Martin v. Yasuda , 829 F.3d 1118, 1124 (9th Cir. 2016). A party seeking to prove waiver of a right to arbitration must demonstrate: (1) knowledge of an existing right to compel arbitration; and (2) acts inconsistent with that existing right. Hoffman Const. Co. of Oregon v. Active Erectors & Installers, Inc. , 969 F.2d 796, 798 (9th Cir. 1992). 1 Dollar General concedes that it had knowledge of its right to compel arbitration, and challenges only whether plaintiffs demonstrated that Dollar ** The Honorable Sidney A. Fitzwater, United States District Judge for the Northern District of Texas, sitting
+</BLOCK>
+<BLOCK id="DOC008.P002.B03">
+by designation. 1 We previously required a party seeking to prove waiver of a right to arbitrate to also demonstrate proof of prejudice, but the U.S. Supreme Court has held that this third element is not required. Morgan v. Sundance, Inc. , 142 S. Ct. 1708, 1714 (2022). 2
+</BLOCK>
 
 [Page 3]
-[CITE_START:DOC008[P003.B01]] General acted inconsistently with its right to arbitrate. In evaluating this second element, we consider “the totality of the parties’ actions,” and ask “whether a party’s actions indicate a conscious decision to seek judicial judgment on the merits of the arbitrable claims, which would be inconsistent with a right to arbitrate.” Newirth , 931 F.3d at 941 (cleaned up). “A party’s extended silence and delay in moving for arbitration may indicate a ‘conscious decision to continue to seek judicial judgment on the merits of [the] arbitrable claims.’” Martin , 829 F.3d at 1125 (quoting Van Ness Townhouses v. Mar Indus. [CITE_END:DOC008[P003.B01]]
-[CITE_START:DOC008[P003.B02]] Corp. , 862 F.2d 754, 759 (9th Cir. 1988)). Additionally, this second element is satisfied “when a party chooses to delay his right to compel arbitration by actively litigating his case to take advantage of being in federal court.” Id. “A statement by a party that it has a right to arbitration in pleadings or motions is not enough to defeat a claim of waiver,” because “[a] party cannot keep its right to demand arbitration in reserve indefinitely while it pursues a decision on the merits before the district court.” Id. (quoting In Re Mirant Corp. v. Castex Energy, Inc. [CITE_END:DOC008[P003.B02]]
-[CITE_START:DOC008[P003.B03]] , 613 F.3d 584, 591 (5th Cir. 2010)). Dollar General filed a motion to compel arbitration over eleven months after it removed this case to federal court. Before filing its motion to compel arbitration, Dollar General had filed two motions to dismiss based largely on arguments going to the merits of plaintiffs’ claims—one seeking full dismissal, the other expressly [CITE_END:DOC008[P003.B03]]
-[CITE_START:DOC008[P003.B04]] 3 [CITE_END:DOC008[P003.B04]]
+<BLOCK id="DOC008.P003.B01">
+General acted inconsistently with its right to arbitrate. In evaluating this second element, we consider “the totality of the parties’ actions,” and ask “whether a party’s actions indicate a conscious decision to seek judicial judgment on the merits of the arbitrable claims, which would be inconsistent with a right to arbitrate.” Newirth , 931 F.3d at 941 (cleaned up). “A party’s extended silence and delay in moving for arbitration may indicate a ‘conscious decision to continue to seek judicial judgment on the merits of [the] arbitrable claims.’” Martin , 829 F.3d at 1125 (quoting Van Ness Townhouses v. Mar Indus.
+</BLOCK>
+<BLOCK id="DOC008.P003.B02">
+Corp. , 862 F.2d 754, 759 (9th Cir. 1988)). Additionally, this second element is satisfied “when a party chooses to delay his right to compel arbitration by actively litigating his case to take advantage of being in federal court.” Id. “A statement by a party that it has a right to arbitration in pleadings or motions is not enough to defeat a claim of waiver,” because “[a] party cannot keep its right to demand arbitration in reserve indefinitely while it pursues a decision on the merits before the district court.” Id. (quoting In Re Mirant Corp. v. Castex Energy, Inc.
+</BLOCK>
+<BLOCK id="DOC008.P003.B03">
+, 613 F.3d 584, 591 (5th Cir. 2010)). Dollar General filed a motion to compel arbitration over eleven months after it removed this case to federal court. Before filing its motion to compel arbitration, Dollar General had filed two motions to dismiss based largely on arguments going to the merits of plaintiffs’ claims—one seeking full dismissal, the other expressly
+</BLOCK>
+<BLOCK id="DOC008.P003.B04">
+3
+</BLOCK>
 
 [Page 4]
-[CITE_START:DOC008[P004.B01]] seeking dismissal with prejudice of many of plaintiffs’ claims. Dollar General had also met and conferred with plaintiffs’ counsel six times prior to filing additional motions to dismiss pursuant to C.D. Cal. Local Rule 7-3 and stipulated five times to plaintiffs filing amended complaints over the course of many months. Additionally, Dollar General signed onto a joint Rule 26(f) report before filing its motion to compel. Because Dollar General’s “extended silence and delay” in moving for arbitration “indicate[s] a conscious decision to continue to seek judicial judgment on the merits of the arbitrable claims,” Martin , 829 F.3d at 1125 [CITE_END:DOC008[P004.B01]]
-[CITE_START:DOC008[P004.B02]] (quoting Van Ness Townhouses , 862 F.2d at 759), we hold that Dollar General acted inconsistently with its intent to arbitrate and therefore waived its right to arbitrate. AFFIRMED. [CITE_END:DOC008[P004.B02]]
-[CITE_START:DOC008[P004.B03]] 4 [CITE_END:DOC008[P004.B03]]
+<BLOCK id="DOC008.P004.B01">
+seeking dismissal with prejudice of many of plaintiffs’ claims. Dollar General had also met and conferred with plaintiffs’ counsel six times prior to filing additional motions to dismiss pursuant to C.D. Cal. Local Rule 7-3 and stipulated five times to plaintiffs filing amended complaints over the course of many months. Additionally, Dollar General signed onto a joint Rule 26(f) report before filing its motion to compel. Because Dollar General’s “extended silence and delay” in moving for arbitration “indicate[s] a conscious decision to continue to seek judicial judgment on the merits of the arbitrable claims,” Martin , 829 F.3d at 1125
+</BLOCK>
+<BLOCK id="DOC008.P004.B02">
+(quoting Van Ness Townhouses , 862 F.2d at 759), we hold that Dollar General acted inconsistently with its intent to arbitrate and therefore waived its right to arbitrate. AFFIRMED.
+</BLOCK>
+<BLOCK id="DOC008.P004.B03">
+4
+</BLOCK>

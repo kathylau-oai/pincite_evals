@@ -35,7 +35,7 @@ final_keep_count:
 
     summary = pipeline.run_all(context=context, openai_client=None)
 
-    assert summary["target_bank_rows"] > 0
+    assert summary["packet_block_rows"] > 0
     assert summary["generated_counts"]["overextension"] == 2
     assert summary["generated_counts"]["precedence"] == 2
     assert summary["generated_counts"]["fake_citations"] == 2

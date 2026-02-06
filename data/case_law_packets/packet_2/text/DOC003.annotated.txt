@@ -1,6 +1,9 @@
 [Page 1]
-[CITE_START:DOC003[P001.B01]] FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT [CITE_END:DOC003[P001.B01]]
-[CITE_START:DOC003[P001.B02]] J UNE  N EWIRTH , by and through
+<BLOCK id="DOC003.P001.B01">
+FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT
+</BLOCK>
+<BLOCK id="DOC003.P001.B02">
+J UNE  N EWIRTH , by and through
 her Guardian ad Litem, Frederick
 J. Newirth, on her own behalf
 and on behalf of others similarly
@@ -10,53 +13,83 @@ B ARDIN , as successors-in-interest
 to the Estate of Margaret Pierce;
 on their own behalves and on
 behalf of others similarly
-situated, [CITE_END:DOC003[P001.B02]]
-[CITE_START:DOC003[P001.B03]] No. 17-17227 D.C. No.
-4:16-cv-03991-JSW [CITE_END:DOC003[P001.B03]]
-[CITE_START:DOC003[P001.B04]] OPINION [CITE_END:DOC003[P001.B04]]
-[CITE_START:DOC003[P001.B05]] Plaintiffs-Appellees , v. A EGIS  S ENIOR  C OMMUNITIES ,
-LLC, DBA Aegis Living, Defendant-Appellant. [CITE_END:DOC003[P001.B05]]
+situated,
+</BLOCK>
+<BLOCK id="DOC003.P001.B03">
+No. 17-17227 D.C. No.
+4:16-cv-03991-JSW
+</BLOCK>
+<BLOCK id="DOC003.P001.B04">
+OPINION
+</BLOCK>
+<BLOCK id="DOC003.P001.B05">
+Plaintiffs-Appellees , v. A EGIS  S ENIOR  C OMMUNITIES ,
+LLC, DBA Aegis Living, Defendant-Appellant.
+</BLOCK>
 
 [Page 2]
-[CITE_START:DOC003[P002.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P002.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 2 Appeal from the United States District Court for the Northern District of California
-Jeffrey S. White, District Judge, Presiding Argued and Submitted May 14, 2019 [CITE_END:DOC003[P002.B01]]
-[CITE_START:DOC003[P002.B02]] San Francisco, California Filed July 24, 2019 Before:  J. Clifford Wallace and Sandra S. Ikuta, Circuit Judges, and Donald W. Molloy, *  District Judge. Opinion by Judge Ikuta [CITE_END:DOC003[P002.B02]]
-[CITE_START:DOC003[P002.B03]] SUMMARY ** [CITE_END:DOC003[P002.B03]]
-[CITE_START:DOC003[P002.B04]] Arbitration [CITE_END:DOC003[P002.B04]]
-[CITE_START:DOC003[P002.B05]] The panel affirmed the district court’s order denying
+Jeffrey S. White, District Judge, Presiding Argued and Submitted May 14, 2019
+</BLOCK>
+<BLOCK id="DOC003.P002.B02">
+San Francisco, California Filed July 24, 2019 Before:  J. Clifford Wallace and Sandra S. Ikuta, Circuit Judges, and Donald W. Molloy, *  District Judge. Opinion by Judge Ikuta
+</BLOCK>
+<BLOCK id="DOC003.P002.B03">
+SUMMARY **
+</BLOCK>
+<BLOCK id="DOC003.P002.B04">
+Arbitration
+</BLOCK>
+<BLOCK id="DOC003.P002.B05">
+The panel affirmed the district court’s order denying
 Aegis Senior Communities, LLC’s motion to compel
 arbitration in a class action alleging that Aegis engaged in a
-scheme to defraud seniors. [CITE_END:DOC003[P002.B05]]
-[CITE_START:DOC003[P002.B06]] The panel applied a federal law standard for determining
+scheme to defraud seniors.
+</BLOCK>
+<BLOCK id="DOC003.P002.B06">
+The panel applied a federal law standard for determining
 whether the arbitration agreement was waived.  Under federal
-law, a party seeking to prove that the right to compel [CITE_END:DOC003[P002.B06]]
-[CITE_START:DOC003[P002.B07]] *  The Honorable Donald W. Molloy, United States District Judge for
+law, a party seeking to prove that the right to compel
+</BLOCK>
+<BLOCK id="DOC003.P002.B07">
+*  The Honorable Donald W. Molloy, United States District Judge for
 the District of Montana, sitting by designation. **  This summary constitutes no part of the opinion of the court.  It has
-been prepared by court staff for the convenience of the reader. [CITE_END:DOC003[P002.B07]]
+been prepared by court staff for the convenience of the reader.
+</BLOCK>
 
 [Page 3]
-[CITE_START:DOC003[P003.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P003.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 3 arbitration has been waived must carry the burden of
 demonstrating: (1) knowledge of an existing right to compel
 arbitration; (2) intentional acts inconsistent with that existing
 right; and (3) prejudice to the person opposing arbitration
 from such inconsistent acts.   Fisher v. A.G. Becker Paribas
-Inc. , 791 F.2d 691, 694 (9th Cir. 1986). [CITE_END:DOC003[P003.B01]]
-[CITE_START:DOC003[P003.B02]] The panel held that because Aegis knew of its right to
+Inc. , 791 F.2d 691, 694 (9th Cir. 1986).
+</BLOCK>
+<BLOCK id="DOC003.P003.B02">
+The panel held that because Aegis knew of its right to
 compel arbitration, but made an intentional decision not to
 compel arbitration in order to take advantage of the judicial
 forum, and because the plaintiffs were prejudiced by
 incurring costs in defending against Aegis’s motion to
 dismiss plaintiffs’ complaint, the district court did not err in
-concluding that Aegis waived its right to arbitrate. [CITE_END:DOC003[P003.B02]]
-[CITE_START:DOC003[P003.B03]] COUNSEL [CITE_END:DOC003[P003.B03]]
-[CITE_START:DOC003[P003.B04]] Lann G. McIntyre (argued), Lewis Brisbois Bisgaard & Smith
+concluding that Aegis waived its right to arbitrate.
+</BLOCK>
+<BLOCK id="DOC003.P003.B03">
+COUNSEL
+</BLOCK>
+<BLOCK id="DOC003.P003.B04">
+Lann G. McIntyre (argued), Lewis Brisbois Bisgaard & Smith
 LLP, San Diego, California; Leona Lam Reddy, Katherine C.
 Den Bleyker, and Jeffrey S. Ranen, Lewis Brisbois Bisgaard
 & Smith LLP, Los Angeles, California; for Defendant-
-Appellant. [CITE_END:DOC003[P003.B04]]
-[CITE_START:DOC003[P003.B05]] Sarah Colby (argued) and Guy B. Wallace, Schneider
+Appellant.
+</BLOCK>
+<BLOCK id="DOC003.P003.B05">
+Sarah Colby (argued) and Guy B. Wallace, Schneider
 Wallace Cottrell Konecky Wotkyns LLP, Emeryville,
 California; Christopher J. Healey, Dentons US LLP, San
 Diego, California; George Kawamoto and Kathryn A.
@@ -65,22 +98,32 @@ Michael D. Thamer, Law Offices of Michael D. Thamer,
 Callahan, California; W. Timothy Needham, Janssen Malloy
 LLP, Eureka, California; Robert S. Arns, The Arns Law Firm,
 San Francisco, California; Kirsten M. Fish, Neeham Kepner
-& Fish LLP, San Jose, California; for Plaintiffs-Appellees. [CITE_END:DOC003[P003.B05]]
+& Fish LLP, San Jose, California; for Plaintiffs-Appellees.
+</BLOCK>
 
 [Page 4]
-[CITE_START:DOC003[P004.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
-4 [CITE_END:DOC003[P004.B01]]
-[CITE_START:DOC003[P004.B02]] OPINION [CITE_END:DOC003[P004.B02]]
-[CITE_START:DOC003[P004.B03]] IKUTA, Circuit Judge: Aegis Senior Communities, LLC, appeals from the
+<BLOCK id="DOC003.P004.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+4
+</BLOCK>
+<BLOCK id="DOC003.P004.B02">
+OPINION
+</BLOCK>
+<BLOCK id="DOC003.P004.B03">
+IKUTA, Circuit Judge: Aegis Senior Communities, LLC, appeals from the
 district court’s order denying its motion to compel arbitration. 
 Because Aegis knew of its right to compel arbitration, but
 made an intentional decision not to compel arbitration in
 order to take advantage of the judicial forum, and because the
 plaintiffs incurred costs as a direct result, the district court did
 not err in concluding that Aegis waived its right to arbitrate. 
-Therefore, we affirm. [CITE_END:DOC003[P004.B03]]
-[CITE_START:DOC003[P004.B04]] I [CITE_END:DOC003[P004.B04]]
-[CITE_START:DOC003[P004.B05]] June Newirth, Margaret Pierce, and Barbara Feinberg
+Therefore, we affirm.
+</BLOCK>
+<BLOCK id="DOC003.P004.B04">
+I
+</BLOCK>
+<BLOCK id="DOC003.P004.B05">
+June Newirth, Margaret Pierce, and Barbara Feinberg
 were residents of three different senior living communities,
 all operated by Aegis Senior Communities, LLC (Aegis). 1
 Each of them (through a representative holding a valid power
@@ -91,34 +134,48 @@ or services provided” by Aegis “will be determined by
 submission to arbitration as provided in accordance with
 California law.” Notwithstanding her arbitration agreement, Newirth filed
 a class action complaint against Aegis in California state
-court in April 2016, alleging that Aegis engaged in a scheme [CITE_END:DOC003[P004.B05]]
-[CITE_START:DOC003[P004.B06]] 1  Newirth resided at Aegis’s Corte Madera community from July 2010
+court in April 2016, alleging that Aegis engaged in a scheme
+</BLOCK>
+<BLOCK id="DOC003.P004.B06">
+1  Newirth resided at Aegis’s Corte Madera community from July 2010
 through July 2014.  Pierce resided at Aegis’s Moraga community from
 April 2013 until January 2015.  Feinberg has resided at Aegis’s Laguna
-Niguel community since October 2013. [CITE_END:DOC003[P004.B06]]
+Niguel community since October 2013.
+</BLOCK>
 
 [Page 5]
-[CITE_START:DOC003[P005.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P005.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 5 to defraud seniors by falsely representing that staffing levels
 would be determined by the overall needs of the residents,
 when in fact staffing was based on budget considerations. 2
 Aegis removed the complaint to district court in July 2016,
 and filed a motion to compel arbitration as well as a motion
-to dismiss a week later. [CITE_END:DOC003[P005.B01]]
-[CITE_START:DOC003[P005.B02]] Instead of pursuing these motions, however, Aegis and Newirth filed a stipulated agreement a week later. Pursuant to the stipulation, Newirth filed a second amended complaint in August 2016, adding additional plaintiffs. 3 For its part, Aegis withdrew its motion to compel arbitration and its motion to dismiss. In September 2016, it filed a new motion to dismiss the second amended complaint, in which it made no mention of arbitration or the arbitration agreements. The following day, the parties filed an agreement stating they were attempting mediation of their dispute. 4 Over the next 11 months, while the second motion [CITE_END:DOC003[P005.B02]]
-[CITE_START:DOC003[P005.B03]] to dismiss was pending, the parties actively engaged in the discovery process. The parties participated in a discovery conference, entered into a court-approved stipulation [CITE_END:DOC003[P005.B03]]
-[CITE_START:DOC003[P005.B04]] 2  Newirth claimed that Aegis’s allegedly fraudulent actions violated
+to dismiss a week later.
+</BLOCK>
+<BLOCK id="DOC003.P005.B02">
+Instead of pursuing these motions, however, Aegis and Newirth filed a stipulated agreement a week later. Pursuant to the stipulation, Newirth filed a second amended complaint in August 2016, adding additional plaintiffs. 3 For its part, Aegis withdrew its motion to compel arbitration and its motion to dismiss. In September 2016, it filed a new motion to dismiss the second amended complaint, in which it made no mention of arbitration or the arbitration agreements. The following day, the parties filed an agreement stating they were attempting mediation of their dispute. 4 Over the next 11 months, while the second motion
+</BLOCK>
+<BLOCK id="DOC003.P005.B03">
+to dismiss was pending, the parties actively engaged in the discovery process. The parties participated in a discovery conference, entered into a court-approved stipulation
+</BLOCK>
+<BLOCK id="DOC003.P005.B04">
+2  Newirth claimed that Aegis’s allegedly fraudulent actions violated
 California’s Consumers Legal Remedies Act (CLRA), Cal. Civ. Code
 § 1750 et seq., California’s Unfair Competition Law (UCL), Cal. Bus. &
 Prof. Code § 17200 et seq., and section 15610.30 of California’s Welfare
-and Institutions Code (which prohibits the financial abuse of an elder). [CITE_END:DOC003[P005.B04]]
-[CITE_START:DOC003[P005.B05]] 3  The second amended complaint added Feinberg as a plaintiff, as
+and Institutions Code (which prohibits the financial abuse of an elder).
+</BLOCK>
+<BLOCK id="DOC003.P005.B05">
+3  The second amended complaint added Feinberg as a plaintiff, as
 well as Elizabeth Barber, Andrew Bardin, and Thomas Bardin, as
 successors-in-interest to Pierce’s estate. 4  The parties began the mediation process on May 29, 2018, but it
-proved unsuccessful. [CITE_END:DOC003[P005.B05]]
+proved unsuccessful.
+</BLOCK>
 
 [Page 6]
-[CITE_START:DOC003[P006.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P006.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 6 regarding the production of documents and electronic records,
 and submitted a proposed joint conference report that
 included a proposed schedule for discovery, class certification
@@ -127,31 +184,43 @@ briefing and hearing dates, and a date for trial.  In December
 stages of discovery, Aegis disclosed a copy of the relevant
 agreements with Newirth, Pierce, and Feinberg; each
 agreement included an arbitration provision initialed by the
-party’s representative. [CITE_END:DOC003[P006.B01]]
-[CITE_START:DOC003[P006.B02]] Feinberg and Aegis entered into a settlement agreement
+party’s representative.
+</BLOCK>
+<BLOCK id="DOC003.P006.B02">
+Feinberg and Aegis entered into a settlement agreement
 later that month. 5   The remaining parties continued to meet
 and confer regarding moving forward with the discovery
-process. [CITE_END:DOC003[P006.B02]]
-[CITE_START:DOC003[P006.B03]] The district court finally denied Aegis’s pending motion
+process.
+</BLOCK>
+<BLOCK id="DOC003.P006.B03">
+The district court finally denied Aegis’s pending motion
 to dismiss Newirth’s second amended complaint in May
 2017.  Aegis filed a new motion to compel arbitration two
 months later, almost a year after it had withdrawn its initial
-motion to compel arbitration. [CITE_END:DOC003[P006.B03]]
-[CITE_START:DOC003[P006.B04]] In September 2017, the district court denied Aegis’s
+motion to compel arbitration.
+</BLOCK>
+<BLOCK id="DOC003.P006.B04">
+In September 2017, the district court denied Aegis’s
 renewed motion to compel arbitration on the ground that
 Aegis had waived its right to arbitrate.  Aegis filed a timely
-notice of appeal. 6 See  Fed. R. App. P. 4(a)(1). [CITE_END:DOC003[P006.B04]]
-[CITE_START:DOC003[P006.B05]] 5  Feinberg was formally removed as a class representative in October
+notice of appeal. 6 See  Fed. R. App. P. 4(a)(1).
+</BLOCK>
+<BLOCK id="DOC003.P006.B05">
+5  Feinberg was formally removed as a class representative in October
 2017, and is not a party to this appeal.  Through the remainder of this
-opinion, we use “Newirth” to refer collectively to plaintiffs-appellees. [CITE_END:DOC003[P006.B05]]
-[CITE_START:DOC003[P006.B06]] 6  The district court denied Aegis’s motion to stay the district court’s
+opinion, we use “Newirth” to refer collectively to plaintiffs-appellees.
+</BLOCK>
+<BLOCK id="DOC003.P006.B06">
+6  The district court denied Aegis’s motion to stay the district court’s
 order pending appeal.  Accordingly, litigation has continued at the district
 court and is ongoing.  This ongoing litigation does not render this appeal
 moot because effective relief remains available to Aegis.  If Aegis
-prevailed in its claim that it was entitled to arbitrate the dispute, “the [CITE_END:DOC003[P006.B06]]
+prevailed in its claim that it was entitled to arbitrate the dispute, “the
+</BLOCK>
 
 [Page 7]
-[CITE_START:DOC003[P007.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P007.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 7 We have jurisdiction under 28 U.S.C. § 1291 because a
 “district court’s denial of a motion to compel arbitration” is
 a final order appealable under the Federal Arbitration Act, 9
@@ -159,33 +228,53 @@ U.S.C. § 16(a)(1)(B).   Cox v. Ocean View Hotel Corp. ,
 533 F.3d 1114, 1117 (9th Cir. 2008).  We review de novo the
 district court’s denial of a motion to compel arbitration,
 including its determination that a party has waived the right
-to arbitrate.   Id.  at 1119. [CITE_END:DOC003[P007.B01]]
-[CITE_START:DOC003[P007.B02]] II [CITE_END:DOC003[P007.B02]]
-[CITE_START:DOC003[P007.B03]] Congress enacted the Federal Arbitration Act (FAA) in 1925 “in response to a perception that courts were unduly hostile to arbitration.” Epic Sys. Corp. v. Lewis , 138 S. Ct. 1612, 1621 (2018). The Act provides that arbitration agreements “shall be valid, irrevocable, and enforceable, save upon such grounds as exist at law or in equity for the revocation of any contract.” 9 U.S.C. § 2. The Supreme Court has “described this provision as reflecting both a ‘liberal federal policy favoring arbitration,’ and the ‘fundamental principle that arbitration is a matter of contract.’” AT&T Mobility LLC v. Concepcion , 563 [CITE_END:DOC003[P007.B03]]
-[CITE_START:DOC003[P007.B04]] U.S. 333, 339 (2011) (first quoting Moses H. Cone Mem’l Hosp. v. Mercury Constr. Corp. , 460 U.S. 1, 24 (1983); then quoting Rent-A-Center, West, Inc. v. Jackson , 561 U.S. 63, 67 (2010)). In light of the FAA’s savings clause and the fundamental principle that contract rules apply to arbitration agreements, the Supreme Court has concluded that “[a] court may invalidate an arbitration agreement based on ‘generally applicable contract defenses,”’ but “any state rule [CITE_END:DOC003[P007.B04]]
-[CITE_START:DOC003[P007.B05]] district court judgment would be vacated and the parties could proceed to
+to arbitrate.   Id.  at 1119.
+</BLOCK>
+<BLOCK id="DOC003.P007.B02">
+II
+</BLOCK>
+<BLOCK id="DOC003.P007.B03">
+Congress enacted the Federal Arbitration Act (FAA) in 1925 “in response to a perception that courts were unduly hostile to arbitration.” Epic Sys. Corp. v. Lewis , 138 S. Ct. 1612, 1621 (2018). The Act provides that arbitration agreements “shall be valid, irrevocable, and enforceable, save upon such grounds as exist at law or in equity for the revocation of any contract.” 9 U.S.C. § 2. The Supreme Court has “described this provision as reflecting both a ‘liberal federal policy favoring arbitration,’ and the ‘fundamental principle that arbitration is a matter of contract.’” AT&T Mobility LLC v. Concepcion , 563
+</BLOCK>
+<BLOCK id="DOC003.P007.B04">
+U.S. 333, 339 (2011) (first quoting Moses H. Cone Mem’l Hosp. v. Mercury Constr. Corp. , 460 U.S. 1, 24 (1983); then quoting Rent-A-Center, West, Inc. v. Jackson , 561 U.S. 63, 67 (2010)). In light of the FAA’s savings clause and the fundamental principle that contract rules apply to arbitration agreements, the Supreme Court has concluded that “[a] court may invalidate an arbitration agreement based on ‘generally applicable contract defenses,”’ but “any state rule
+</BLOCK>
+<BLOCK id="DOC003.P007.B05">
+district court judgment would be vacated and the parties could proceed to
 arbitration.”   Britton v. Co-op Banking Grp. , 916 F.2d 1405, 1410 & n.6
-(9th Cir. 1990). [CITE_END:DOC003[P007.B05]]
+(9th Cir. 1990).
+</BLOCK>
 
 [Page 8]
-[CITE_START:DOC003[P008.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P008.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 8 discriminating on its face against arbitration” or “that
 covertly accomplishes the same objective” is preempted. 
 Kindred Nursing Ctrs. Ltd. P’ship v. Clark , 137 S. Ct. 1421,
-1426 (2017) (quoting  Concepcion , 563 U.S. at 339). [CITE_END:DOC003[P008.B01]]
-[CITE_START:DOC003[P008.B02]] Although arbitration agreements are subject to general contract principles such as waiver, a “[w]aiver of a contractual right to arbitration is not favored,” and “any party arguing waiver of arbitration bears a heavy burden of proof.” 7 Fisher v. A.G. Becker Paribas Inc. , 791 F.2d 691, 694 (9th Cir. 1986) (internal quotation marks omitted). Moreover, where the waiver of the right to compel arbitration implicates questions of arbitrability that “affect the allocation of power” between a court and arbitrator, we have applied a federal law standard for determining whether an arbitration agreement has been waived. Sovak v. Chugai Pharm. [CITE_END:DOC003[P008.B02]]
-[CITE_START:DOC003[P008.B03]] Co. , 280 F.3d 1266, 1270 (9th Cir. 2002) (internal quotation marks omitted); compare id. with Cox , 533 F.3d at 1124–25 & n. 7 (applying California waiver law in lieu of the federal standard). The parties do not dispute that the federal standard applies here. 8 7 Because Newirth does not rely on California’s longstanding rule that a party may waive a contract right, see Roesch v. De Mota , 24 Cal. 2d 563, 572 (1944), or assert that this rule precludes enforcement of the arbitration agreement, we do not reach the question whether this rule would be preempted [CITE_END:DOC003[P008.B03]]
-[CITE_START:DOC003[P008.B04]] by the FAA under the “equal-treatment principle” recognized in Kindred Nursing Centers . 137 S. Ct. at 1426. [CITE_END:DOC003[P008.B04]]
-[CITE_START:DOC003[P008.B05]] 8  The parties also do not dispute that a court, rather than an arbitrator,
+1426 (2017) (quoting  Concepcion , 563 U.S. at 339).
+</BLOCK>
+<BLOCK id="DOC003.P008.B02">
+Although arbitration agreements are subject to general contract principles such as waiver, a “[w]aiver of a contractual right to arbitration is not favored,” and “any party arguing waiver of arbitration bears a heavy burden of proof.” 7 Fisher v. A.G. Becker Paribas Inc. , 791 F.2d 691, 694 (9th Cir. 1986) (internal quotation marks omitted). Moreover, where the waiver of the right to compel arbitration implicates questions of arbitrability that “affect the allocation of power” between a court and arbitrator, we have applied a federal law standard for determining whether an arbitration agreement has been waived. Sovak v. Chugai Pharm.
+</BLOCK>
+<BLOCK id="DOC003.P008.B03">
+Co. , 280 F.3d 1266, 1270 (9th Cir. 2002) (internal quotation marks omitted); compare id. with Cox , 533 F.3d at 1124–25 & n. 7 (applying California waiver law in lieu of the federal standard). The parties do not dispute that the federal standard applies here. 8 7 Because Newirth does not rely on California’s longstanding rule that a party may waive a contract right, see Roesch v. De Mota , 24 Cal. 2d 563, 572 (1944), or assert that this rule precludes enforcement of the arbitration agreement, we do not reach the question whether this rule would be preempted
+</BLOCK>
+<BLOCK id="DOC003.P008.B04">
+by the FAA under the “equal-treatment principle” recognized in Kindred Nursing Centers . 137 S. Ct. at 1426.
+</BLOCK>
+<BLOCK id="DOC003.P008.B05">
+8  The parties also do not dispute that a court, rather than an arbitrator,
 should determine whether Aegis waived the right to arbitration.  If parties
 to a contract want an arbitrator to decide the question of waiver, “they
 must place clear and unmistakable language to that effect in the
 agreement.”   Martin v. Yasuda , 829 F.3d 1118, 1124 (9th Cir. 2016). 
 Here, the parties’ contract does not clearly and unmistakably provide that
-the arbitrator will decide the question of waiver. [CITE_END:DOC003[P008.B05]]
+the arbitrator will decide the question of waiver.
+</BLOCK>
 
 [Page 9]
-[CITE_START:DOC003[P009.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P009.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 9 Under federal law, waiver is “the intentional
 relinquishment or abandonment of a known right.”   Hamer v.
 Neighborhood Hous. Servs. of Chi. , 138 S. Ct. 13, 17 n.1
@@ -195,44 +284,76 @@ must carry the heavy burden of demonstrating: (1) knowledge
 of an existing right to compel arbitration; (2) intentional acts
 inconsistent with that existing right; and (3) prejudice to the
 person opposing arbitration from such inconsistent acts. 
-Fisher , 791 F.2d at 694. [CITE_END:DOC003[P009.B01]]
-[CITE_START:DOC003[P009.B02]] Aegis does not dispute that it knew it had a right to
+Fisher , 791 F.2d at 694.
+</BLOCK>
+<BLOCK id="DOC003.P009.B02">
+Aegis does not dispute that it knew it had a right to
 compel arbitration with Newirth.  Therefore, we consider
-only the second and third elements of waiver. [CITE_END:DOC003[P009.B02]]
-[CITE_START:DOC003[P009.B03]] A [CITE_END:DOC003[P009.B03]]
-[CITE_START:DOC003[P009.B04]] We first consider Newirth’s argument that Aegis intentionally took actions inconsistent with the right to compel arbitration of Newirth’s claims. “There is no concrete test to determine whether a party has engaged in acts that are inconsistent with its right to arbitrate,” Martin v. Yasuda , 829 F.3d 1118, 1125 (9th Cir. 2016); rather, we consider the totality of the parties’ actions, see id. at 1126. Applying this holistic approach, we have generally asked whether a party’s actions “indicate a conscious decision . . . to seek judicial judgment on the merits of [the] arbitrable claims, which would be inconsistent [CITE_END:DOC003[P009.B04]]
-[CITE_START:DOC003[P009.B05]] with a right to arbitrate.” Id. at 1125 (internal quotation marks omitted) (second alteration in original). That is, a party acts inconsistently with exercising the right to arbitrate when it (1) makes an intentional decision not to move to compel arbitration and (2) actively litigates the merits of a case for a [CITE_END:DOC003[P009.B05]]
+only the second and third elements of waiver.
+</BLOCK>
+<BLOCK id="DOC003.P009.B03">
+A
+</BLOCK>
+<BLOCK id="DOC003.P009.B04">
+We first consider Newirth’s argument that Aegis intentionally took actions inconsistent with the right to compel arbitration of Newirth’s claims. “There is no concrete test to determine whether a party has engaged in acts that are inconsistent with its right to arbitrate,” Martin v. Yasuda , 829 F.3d 1118, 1125 (9th Cir. 2016); rather, we consider the totality of the parties’ actions, see id. at 1126. Applying this holistic approach, we have generally asked whether a party’s actions “indicate a conscious decision . . . to seek judicial judgment on the merits of [the] arbitrable claims, which would be inconsistent
+</BLOCK>
+<BLOCK id="DOC003.P009.B05">
+with a right to arbitrate.” Id. at 1125 (internal quotation marks omitted) (second alteration in original). That is, a party acts inconsistently with exercising the right to arbitrate when it (1) makes an intentional decision not to move to compel arbitration and (2) actively litigates the merits of a case for a
+</BLOCK>
 
 [Page 10]
-[CITE_START:DOC003[P010.B01]] N EWIRTH V . A EGIS S ENIOR C OMMUNITIES 10 prolonged period of time in order to take advantage of being in court. Seeking a decision on the merits of a key issue in a case indicates an intentional and strategic decision to take advantage of the judicial forum. Id. at 1126. For example, in Van Ness Townhouses v. Mar Industries Corp. , we concluded that the defendant acted inconsistently with its known arbitration right when it made an intentional decision to refrain from filing a motion to compel arbitration (because it did not want to sever the arbitrable [CITE_END:DOC003[P010.B01]]
-[CITE_START:DOC003[P010.B02]] claims from the nonarbitrable claims), and litigated the arbitrable claims for two years in federal court, including filing a motion to dismiss for failure to state a claim. 862 F.2d 754, 756, 759 (9th Cir. 1988). Similarly, in Martin v. Yasuda , we concluded that the defendants acted inconsistently with pursuing arbitration when they spent seventeen months actively litigating their case in federal court, including filing a motion to dismiss “on a key merits issue.” 829 F.3d at 1126. Again, the record established that the defendants in Martin intentionally refrained from filing a motion to compel arbitration: when the district [CITE_END:DOC003[P010.B02]]
-[CITE_START:DOC003[P010.B03]] court asked defendants’ counsel directly whether he intended to move to compel arbitration, counsel responded: “[W]e haven’t made a decision about that. And frankly . . . I think our view of it is we are probably better off just being here in the court with the procedures of Rule 23 and discovery and federal practice than handling it in arbitration.” Id. at 1122 (alterations in original). 9 [CITE_END:DOC003[P010.B03]]
-[CITE_START:DOC003[P010.B04]] 9  In a slightly different context, we have held that when a defendant
+<BLOCK id="DOC003.P010.B01">
+N EWIRTH V . A EGIS S ENIOR C OMMUNITIES 10 prolonged period of time in order to take advantage of being in court. Seeking a decision on the merits of a key issue in a case indicates an intentional and strategic decision to take advantage of the judicial forum. Id. at 1126. For example, in Van Ness Townhouses v. Mar Industries Corp. , we concluded that the defendant acted inconsistently with its known arbitration right when it made an intentional decision to refrain from filing a motion to compel arbitration (because it did not want to sever the arbitrable
+</BLOCK>
+<BLOCK id="DOC003.P010.B02">
+claims from the nonarbitrable claims), and litigated the arbitrable claims for two years in federal court, including filing a motion to dismiss for failure to state a claim. 862 F.2d 754, 756, 759 (9th Cir. 1988). Similarly, in Martin v. Yasuda , we concluded that the defendants acted inconsistently with pursuing arbitration when they spent seventeen months actively litigating their case in federal court, including filing a motion to dismiss “on a key merits issue.” 829 F.3d at 1126. Again, the record established that the defendants in Martin intentionally refrained from filing a motion to compel arbitration: when the district
+</BLOCK>
+<BLOCK id="DOC003.P010.B03">
+court asked defendants’ counsel directly whether he intended to move to compel arbitration, counsel responded: “[W]e haven’t made a decision about that. And frankly . . . I think our view of it is we are probably better off just being here in the court with the procedures of Rule 23 and discovery and federal practice than handling it in arbitration.” Id. at 1122 (alterations in original). 9
+</BLOCK>
+<BLOCK id="DOC003.P010.B04">
+9  In a slightly different context, we have held that when a defendant
 with a non-mandatory arbitration agreement litigated its claims to a verdict
 in trial court, it acted inconsistently with its known right to timely demand
 arbitration.   See Gutierrez v. Wells Fargo Bank, NA , 704 F.3d 712, 721–22
-(9th Cir. 2012). [CITE_END:DOC003[P010.B04]]
+(9th Cir. 2012).
+</BLOCK>
 
 [Page 11]
-[CITE_START:DOC003[P011.B01]] N EWIRTH V . A EGIS S ENIOR C OMMUNITIES 11 Conversely, parties do not act inconsistently with a right to compel arbitration when they engage in litigation activities that do not evince a decision to take advantage of the judicial forum. Thus Britton v. Co-op Banking Group held that a defendant who resisted discovery requests, pursued a court- appointed attorney, and applied for in forma pauperis status, did not act inconsistently with his right to arbitrate. 916 F.2d 1405, 1413 (9th Cir. 1990). Such actions reflected only a “determination to avoid or frustrate the litigation” rather than a strategic [CITE_END:DOC003[P011.B01]]
-[CITE_START:DOC003[P011.B02]] decision to “active[ly] litigat[e],” i.e., to forgo the right to compel arbitration and take advantage of a judicial forum. Id. Even “filing a motion to dismiss that does not address the merits of the case is not sufficient to constitute an inconsistent act.” Martin , 829 F.3d at 1125; 10 see also In re Mirant Corp. , 613 F.3d 584, 589 (5th Cir. 2010) (concluding that a party did not waive its right to compel arbitration unless that party “at the very least” had engaged “in some overt act in court that evinces a desire to resolve the arbitrable dispute [CITE_END:DOC003[P011.B02]]
-[CITE_START:DOC003[P011.B03]] through litigation rather than arbitration”). Likewise, where it would have been “futile [at the time] to file a motion to compel arbitration” under then-existing law, even a defendant’s active litigation for three and a half years is not inconsistent with a known right to compel arbitration. Fisher , 791 F.2d at 695; accord Letizia v. Prudential Bache Secs., Inc. , 802 F.2d 1185, 1187 & n.3 (9th Cir. 1986). Conversely, when a defendant successfully opposed a plaintiff’s initial demand for arbitration, the plaintiff’s subsequent pursuit of a remedy in federal court was not inconsistent with its known [CITE_END:DOC003[P011.B03]]
-[CITE_START:DOC003[P011.B04]] 10  Thus, moving to dismiss a complaint without prejudice or moving
+<BLOCK id="DOC003.P011.B01">
+N EWIRTH V . A EGIS S ENIOR C OMMUNITIES 11 Conversely, parties do not act inconsistently with a right to compel arbitration when they engage in litigation activities that do not evince a decision to take advantage of the judicial forum. Thus Britton v. Co-op Banking Group held that a defendant who resisted discovery requests, pursued a court- appointed attorney, and applied for in forma pauperis status, did not act inconsistently with his right to arbitrate. 916 F.2d 1405, 1413 (9th Cir. 1990). Such actions reflected only a “determination to avoid or frustrate the litigation” rather than a strategic
+</BLOCK>
+<BLOCK id="DOC003.P011.B02">
+decision to “active[ly] litigat[e],” i.e., to forgo the right to compel arbitration and take advantage of a judicial forum. Id. Even “filing a motion to dismiss that does not address the merits of the case is not sufficient to constitute an inconsistent act.” Martin , 829 F.3d at 1125; 10 see also In re Mirant Corp. , 613 F.3d 584, 589 (5th Cir. 2010) (concluding that a party did not waive its right to compel arbitration unless that party “at the very least” had engaged “in some overt act in court that evinces a desire to resolve the arbitrable dispute
+</BLOCK>
+<BLOCK id="DOC003.P011.B03">
+through litigation rather than arbitration”). Likewise, where it would have been “futile [at the time] to file a motion to compel arbitration” under then-existing law, even a defendant’s active litigation for three and a half years is not inconsistent with a known right to compel arbitration. Fisher , 791 F.2d at 695; accord Letizia v. Prudential Bache Secs., Inc. , 802 F.2d 1185, 1187 & n.3 (9th Cir. 1986). Conversely, when a defendant successfully opposed a plaintiff’s initial demand for arbitration, the plaintiff’s subsequent pursuit of a remedy in federal court was not inconsistent with its known
+</BLOCK>
+<BLOCK id="DOC003.P011.B04">
+10  Thus, moving to dismiss a complaint without prejudice or moving
 to dismiss an action on jurisdictional or res judicata grounds is not
 inconsistent with a known right to compel arbitration because such
 motions do not seek a judicial determination on the merits.   See Martin ,
-829 F.3d at 1125–1126 & n.4. [CITE_END:DOC003[P011.B04]]
+829 F.3d at 1125–1126 & n.4.
+</BLOCK>
 
 [Page 12]
-[CITE_START:DOC003[P012.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P012.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 12 right to arbitrate, and the plaintiff could therefore pursue a
 renewed arbitration demand at a later date.   See United States
 v. Park Place Assocs., Ltd. , 563 F.3d 907, 921 (9th Cir.
 2009).  In context, such actions do not evince an intentional
-decision to forgo arbitration in favor of a judicial forum. [CITE_END:DOC003[P012.B01]]
-[CITE_START:DOC003[P012.B02]] Applying this framework, Newirth carried her burden of showing that Aegis took actions inconsistent with its known right to arbitrate. Although Aegis promptly filed a motion to compel arbitration, Aegis intentionally withdrew the motion and proceeded to take advantage of the federal forum by filing a motion to dismiss Newirth’s arbitrable claims, with prejudice, for failure to state a claim. As we have explained, “[w]hen defendants move for dismissal with prejudice on a key merits issue that would preclude relief as to one or more of plaintiffs’ claims . . . they are seeking a ruling on the merits.” Martin [CITE_END:DOC003[P012.B02]]
-[CITE_START:DOC003[P012.B03]] , 829 F.3d at 1126 n.4. Only after receiving an adverse ruling on this motion did Aegis refile the motion to compel arbitration that it had withdrawn a year earlier. Under the totality of these circumstances, we conclude that Aegis knowingly decided to defer its right to compel arbitration to avail itself of the benefits of the federal court forum, an intentional action inconsistent with its known right to compel arbitration. [CITE_END:DOC003[P012.B03]]
-[CITE_START:DOC003[P012.B04]] Aegis makes several arguments to avoid this conclusion. 
+decision to forgo arbitration in favor of a judicial forum.
+</BLOCK>
+<BLOCK id="DOC003.P012.B02">
+Applying this framework, Newirth carried her burden of showing that Aegis took actions inconsistent with its known right to arbitrate. Although Aegis promptly filed a motion to compel arbitration, Aegis intentionally withdrew the motion and proceeded to take advantage of the federal forum by filing a motion to dismiss Newirth’s arbitrable claims, with prejudice, for failure to state a claim. As we have explained, “[w]hen defendants move for dismissal with prejudice on a key merits issue that would preclude relief as to one or more of plaintiffs’ claims . . . they are seeking a ruling on the merits.” Martin
+</BLOCK>
+<BLOCK id="DOC003.P012.B03">
+, 829 F.3d at 1126 n.4. Only after receiving an adverse ruling on this motion did Aegis refile the motion to compel arbitration that it had withdrawn a year earlier. Under the totality of these circumstances, we conclude that Aegis knowingly decided to defer its right to compel arbitration to avail itself of the benefits of the federal court forum, an intentional action inconsistent with its known right to compel arbitration.
+</BLOCK>
+<BLOCK id="DOC003.P012.B04">
+Aegis makes several arguments to avoid this conclusion. 
 First, it argues that it never expressly waived its right to
 compel arbitration.  But parties to a contract can impliedly
 waive a right, so long as the parties’ actions amount to a
@@ -240,14 +361,18 @@ knowing relinquishment of that right.   See Van Ness ,
 862 F.2d at 759.  Second, Aegis argues that its initial filing of
 a motion to compel arbitration is evidence that it did not
 intend to waive the right.  But again, Aegis’s withdrawal of
-the motion to compel arbitration and failure to renew it for a [CITE_END:DOC003[P012.B04]]
+the motion to compel arbitration and failure to renew it for a
+</BLOCK>
 
 [Page 13]
-[CITE_START:DOC003[P013.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P013.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 13 year while it sought a determination on the merits provides
 strong support for Newirth’s argument that Aegis
-intentionally waived its right to compel arbitration. [CITE_END:DOC003[P013.B01]]
-[CITE_START:DOC003[P013.B02]] Third, Aegis argues that it “engaged in only the minimum
+intentionally waived its right to compel arbitration.
+</BLOCK>
+<BLOCK id="DOC003.P013.B02">
+Third, Aegis argues that it “engaged in only the minimum
 amount of litigation activity required . . .  to comply with its
 obligations under the applicable court rules and orders, and
 therefore did not act inconsistently with its right to arbitrate.” 
@@ -257,46 +382,76 @@ initial motion, but waited a year to do so.  In the meantime,
 Aegis sought a judgment on the merits from the district court. 
 Nor did Aegis avail itself of local rules that would have
 allowed it to seek relief from case management and discovery
-obligations.   See  N.D. Cal. Civil L.R. 16-2(d). [CITE_END:DOC003[P013.B02]]
-[CITE_START:DOC003[P013.B03]] Finally, Aegis argues that the one-year delay in filing its second motion to dismiss was not inconsistent with its arbitration right because the lengthy delay was due to its mistaken belief that Feinberg had not signed an arbitration agreement, and could pursue her claims in court. Rather than defend against the same claims in court and in arbitration proceedings, Aegis asserts, it decided to proceed in court until Feinberg withdrew as a class representative. The record does not support this argument. Aegis provided the plaintiffs with a copy of Feinberg’s signed and initialed arbitration agreement in December 2016, more than [CITE_END:DOC003[P013.B03]]
-[CITE_START:DOC003[P013.B04]] seven months before renewing its motion to compel arbitration. Moreover, Feinberg settled with Aegis on December 19, 2016, again, more than seven months before Aegis renewed its motion to compel arbitration, and Aegis’s renewed motion was filed nearly three months before Feinberg was removed as a class representative. In any event, a decision “to avoid severance of the arbitrable and non-arbitrable claims” by proceeding [CITE_END:DOC003[P013.B04]]
+obligations.   See  N.D. Cal. Civil L.R. 16-2(d).
+</BLOCK>
+<BLOCK id="DOC003.P013.B03">
+Finally, Aegis argues that the one-year delay in filing its second motion to dismiss was not inconsistent with its arbitration right because the lengthy delay was due to its mistaken belief that Feinberg had not signed an arbitration agreement, and could pursue her claims in court. Rather than defend against the same claims in court and in arbitration proceedings, Aegis asserts, it decided to proceed in court until Feinberg withdrew as a class representative. The record does not support this argument. Aegis provided the plaintiffs with a copy of Feinberg’s signed and initialed arbitration agreement in December 2016, more than
+</BLOCK>
+<BLOCK id="DOC003.P013.B04">
+seven months before renewing its motion to compel arbitration. Moreover, Feinberg settled with Aegis on December 19, 2016, again, more than seven months before Aegis renewed its motion to compel arbitration, and Aegis’s renewed motion was filed nearly three months before Feinberg was removed as a class representative. In any event, a decision “to avoid severance of the arbitrable and non-arbitrable claims” by proceeding
+</BLOCK>
 
 [Page 14]
-[CITE_START:DOC003[P014.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P014.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 14 with litigation on all claims may be “inconsistent with the
 agreement to arbitrate [the arbitrable] claims” in some
 circumstances.   Van Ness , 862 F.2d at 759. 11   Accordingly,
 Newirth carried her burden of showing that Aegis took
 actions inconsistent with its known right to compel
-arbitration. [CITE_END:DOC003[P014.B01]]
-[CITE_START:DOC003[P014.B02]] B [CITE_END:DOC003[P014.B02]]
-[CITE_START:DOC003[P014.B03]] Finally, we consider whether appellees were prejudiced by the inconsistent actions taken by Aegis. A party is not prejudiced by self-inflicted wounds “incurred as a direct result of suing in federal court contrary to the provisions of an arbitration agreement.” Martin , 829 F.3d at 1126; see also Fisher , 791 F.2d at 698. When a party agrees to arbitrate disputes, and then breaches that agreement by filing a lawsuit, “[a]ny extra expense incurred as a result of the [plaintiffs’] deliberate choice of an improper forum, in contravention of their contract, cannot be charged to [the defendant].” Fisher , 791 [CITE_END:DOC003[P014.B03]]
-[CITE_START:DOC003[P014.B04]] F.2d at 698. Accordingly, a plaintiff that has breached its arbitration agreement is not prejudiced by costs incurred in preparing the complaint, serving notice, and litigating non- merits issues (such as jurisdiction or venue). See id. Nor is such a plaintiff prejudiced by costs incurred due to substantial discovery in federal court, even though such discovery “would be rendered nugatory by a direction that arbitration now be had.” Britton , 916 F.2d at 1413; see also Lake Commc’ns, Inc. v. ICC Corp. , 738 F.2d 1473, 1477 (9th Cir. 1984) (holding discovery costs resulting from plaintiff’s [CITE_END:DOC003[P014.B04]]
-[CITE_START:DOC003[P014.B05]] 11  Aegis also argues that it “regularly referenced arbitration in its
+arbitration.
+</BLOCK>
+<BLOCK id="DOC003.P014.B02">
+B
+</BLOCK>
+<BLOCK id="DOC003.P014.B03">
+Finally, we consider whether appellees were prejudiced by the inconsistent actions taken by Aegis. A party is not prejudiced by self-inflicted wounds “incurred as a direct result of suing in federal court contrary to the provisions of an arbitration agreement.” Martin , 829 F.3d at 1126; see also Fisher , 791 F.2d at 698. When a party agrees to arbitrate disputes, and then breaches that agreement by filing a lawsuit, “[a]ny extra expense incurred as a result of the [plaintiffs’] deliberate choice of an improper forum, in contravention of their contract, cannot be charged to [the defendant].” Fisher , 791
+</BLOCK>
+<BLOCK id="DOC003.P014.B04">
+F.2d at 698. Accordingly, a plaintiff that has breached its arbitration agreement is not prejudiced by costs incurred in preparing the complaint, serving notice, and litigating non- merits issues (such as jurisdiction or venue). See id. Nor is such a plaintiff prejudiced by costs incurred due to substantial discovery in federal court, even though such discovery “would be rendered nugatory by a direction that arbitration now be had.” Britton , 916 F.2d at 1413; see also Lake Commc’ns, Inc. v. ICC Corp. , 738 F.2d 1473, 1477 (9th Cir. 1984) (holding discovery costs resulting from plaintiff’s
+</BLOCK>
+<BLOCK id="DOC003.P014.B05">
+11  Aegis also argues that it “regularly referenced arbitration in its
 filings and in its correspondence with opposing counsel, and therefore
 continuously reiterated its intention to compel arbitration of this matter.” 
-Aegis points to nothing in the record that supports this argument. [CITE_END:DOC003[P014.B05]]
+Aegis points to nothing in the record that supports this argument.
+</BLOCK>
 
 [Page 15]
-[CITE_START:DOC003[P015.B01]] N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
+<BLOCK id="DOC003.P015.B01">
+N EWIRTH V . A EGIS  S ENIOR  C OMMUNITIES
 15 decision to sue in federal court were insufficient to show
 prejudice).  Finally, a plaintiff is not prejudiced by “the
 possibility that there may be some duplication from . . .
 parallel proceedings” in litigation and arbitration.   Fisher ,
-791 F.2d at 698. [CITE_END:DOC003[P015.B01]]
-[CITE_START:DOC003[P015.B02]] A breaching plaintiff may nevertheless show prejudice when the defendant has engaged in acts that are inconsistent with its right to arbitrate (as explained above), and the plaintiff has incurred costs due to such inconsistent acts. This prejudice requirement is satisfied when plaintiffs would be forced to “relitigate an issue on the merits on which they have already prevailed in court,” or when defendants have sought and “received an advantage from litigating in federal court that they would not have received in arbitration.” Martin , 829 F.3d at 1126, 1128 (prejudice found where plaintiff incurred costs “contesting the defendants’ motion [CITE_END:DOC003[P015.B02]]
-[CITE_START:DOC003[P015.B03]] to dismiss on the merits”); see also Van Ness , 862 F.2d at 759. A plaintiff may also show it was prejudiced by expenses of litigation when it attempts to arbitrate a dispute, but is forced by the defendant to pursue its remedies in court. See Brown v. Dillard’s, Inc. , 430 F.3d 1004, 1012–13 (9th Cir. 2005). Conversely, a defendant may show prejudice due to the expenses of litigation when a plaintiff pursues its claims in state court (pursuant to an agreement with the defendant to waive its arbitration rights), and then demands arbitration of a related claim. See [CITE_END:DOC003[P015.B03]]
-[CITE_START:DOC003[P015.B04]] Hoffman Constr. Co. of Or. v. Active Erectors & Installers, Inc. , 969 F.2d 796, 799 (9th Cir. 1992). [CITE_END:DOC003[P015.B04]]
-[CITE_START:DOC003[P015.B05]] Applying these principles, Newirth was not prejudiced
+791 F.2d at 698.
+</BLOCK>
+<BLOCK id="DOC003.P015.B02">
+A breaching plaintiff may nevertheless show prejudice when the defendant has engaged in acts that are inconsistent with its right to arbitrate (as explained above), and the plaintiff has incurred costs due to such inconsistent acts. This prejudice requirement is satisfied when plaintiffs would be forced to “relitigate an issue on the merits on which they have already prevailed in court,” or when defendants have sought and “received an advantage from litigating in federal court that they would not have received in arbitration.” Martin , 829 F.3d at 1126, 1128 (prejudice found where plaintiff incurred costs “contesting the defendants’ motion
+</BLOCK>
+<BLOCK id="DOC003.P015.B03">
+to dismiss on the merits”); see also Van Ness , 862 F.2d at 759. A plaintiff may also show it was prejudiced by expenses of litigation when it attempts to arbitrate a dispute, but is forced by the defendant to pursue its remedies in court. See Brown v. Dillard’s, Inc. , 430 F.3d 1004, 1012–13 (9th Cir. 2005). Conversely, a defendant may show prejudice due to the expenses of litigation when a plaintiff pursues its claims in state court (pursuant to an agreement with the defendant to waive its arbitration rights), and then demands arbitration of a related claim. See
+</BLOCK>
+<BLOCK id="DOC003.P015.B04">
+Hoffman Constr. Co. of Or. v. Active Erectors & Installers, Inc. , 969 F.2d 796, 799 (9th Cir. 1992).
+</BLOCK>
+<BLOCK id="DOC003.P015.B05">
+Applying these principles, Newirth was not prejudiced
 by Aegis’s participation in discovery and scheduling
 conferences, development of a proposed order regarding
 electronic records, and conferring about alternative dispute
-resolution.  She was prejudiced, however, by the costs [CITE_END:DOC003[P015.B05]]
+resolution.  She was prejudiced, however, by the costs
+</BLOCK>
 
 [Page 16]
-[CITE_START:DOC003[P016.B01]] N EWIRTH V . A EGIS S ENIOR C OMMUNITIES 16 incurred in defending against Aegis’s motion to dismiss her complaint on the merits. Aegis attempted to take advantage of the judicial forum to prevail on the merits of Newirth’s arbitrable claims, and did not file a motion to compel arbitration until after receiving an adverse ruling. If the court had granted the motion to compel arbitration, Newirth would have been forced “to relitigate a key legal issue [on the merits] on which the district court has ruled in [her] favor.” Martin , 829 F.3d at 1128. The costs of [CITE_END:DOC003[P016.B01]]
-[CITE_START:DOC003[P016.B02]] rearguing this ruling are directly traceable to Aegis’s acts that were inconsistent with its known right to compel arbitration. See id. at 1126. [CITE_END:DOC003[P016.B02]]
-[CITE_START:DOC003[P016.B03]] Aegis argues that despite the fact its motion to dismiss on
+<BLOCK id="DOC003.P016.B01">
+N EWIRTH V . A EGIS S ENIOR C OMMUNITIES 16 incurred in defending against Aegis’s motion to dismiss her complaint on the merits. Aegis attempted to take advantage of the judicial forum to prevail on the merits of Newirth’s arbitrable claims, and did not file a motion to compel arbitration until after receiving an adverse ruling. If the court had granted the motion to compel arbitration, Newirth would have been forced “to relitigate a key legal issue [on the merits] on which the district court has ruled in [her] favor.” Martin , 829 F.3d at 1128. The costs of
+</BLOCK>
+<BLOCK id="DOC003.P016.B02">
+rearguing this ruling are directly traceable to Aegis’s acts that were inconsistent with its known right to compel arbitration. See id. at 1126.
+</BLOCK>
+<BLOCK id="DOC003.P016.B03">
+Aegis argues that despite the fact its motion to dismiss on
 the merits directly caused Newirth to incur costs contesting
 that motion, Newirth was not prejudiced because Aegis does
 not intend to make the same challenges in arbitration.  This
@@ -306,4 +461,5 @@ merits,”  id.  at 1128; costs directly traceable to Aegis’s acts
 inconsistent with its known right to compel arbitration.  That
 Aegis intends not to revive its rejected merits arguments once
 sent to arbitration does not alleviate this prejudice. Accordingly, Newirth has carried her heavy burden of
-showing prejudice. AFFIRMED. [CITE_END:DOC003[P016.B03]]
+showing prejudice. AFFIRMED.
+</BLOCK>

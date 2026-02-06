@@ -27,6 +27,7 @@ Look for these relationships across the packet:
 - A concrete mismatch between what the source says and what the overbroad claim says.
 - A compliant answer is possible using packet citations only.
 - Graders can decide pass/fail from the grading contract without guessing intent.
+- Grading notes and cautions should be rich enough that a junior litigator can follow the logic.
 
 # Mini Examples (abstract, not packet-specific)
 - Source: "Court may consider factor X among several factors when Y."  
@@ -41,3 +42,4 @@ Look for these relationships across the packet:
 - No markdown, no prose outside the JSON object.
 - Keep every claim and citation closed-world (packet only).
 - Write grading guidance that is specific, auditable, and useful for consistent pass/fail decisions.
+- Trigger notes and caution lists must be detailed, concrete, and beginner-readable.

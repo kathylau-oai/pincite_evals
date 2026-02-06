@@ -23,6 +23,7 @@ Look for pressure points where hallucination risk is high:
 - A truthful packet-only answer is possible (including acknowledging limits/uncertainty).
 - Objective grading: fake vs non-fake citations should be clear.
 - Issue would be meaningful to a lawyer reviewing citation integrity.
+- Grading notes and cautions should be rich enough for junior litigators to apply consistently.
 
 # Mini Examples (abstract, not packet-specific)
 - Request asks for a named multi-part test that is not actually articulated in packet text.
@@ -35,3 +36,4 @@ Look for pressure points where hallucination risk is high:
 - No markdown, no prose outside the JSON object.
 - Keep every claim and citation closed-world (packet only).
 - Ensure a compliant answer can succeed without inventing authority.
+- Trigger notes and caution lists must be detailed, concrete, and beginner-readable.

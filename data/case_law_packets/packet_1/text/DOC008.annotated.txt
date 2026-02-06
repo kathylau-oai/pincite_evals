@@ -1,27 +1,44 @@
 [Page 1]
-[CITE_START:DOC008[P001.B01]] In the
+<BLOCK id="DOC008.P001.B01">
+In the
 United States Court of Appeals For the Seventh Circuit No. 08-2406 J OHN  F. T AMBURO  doing business as 
 M AN ’ S  B EST  F RIEND  S OFTWARE  and
-V ERSITY  C ORPORATION , [CITE_END:DOC008[P001.B01]]
-[CITE_START:DOC008[P001.B02]] Plaintiffs-Appellants,
-v. [CITE_END:DOC008[P001.B02]]
-[CITE_START:DOC008[P001.B03]] S TEVEN  D WORKIN , K RISTEN  H ENRY ,
+V ERSITY  C ORPORATION ,
+</BLOCK>
+<BLOCK id="DOC008.P001.B02">
+Plaintiffs-Appellants,
+v.
+</BLOCK>
+<BLOCK id="DOC008.P001.B03">
+S TEVEN  D WORKIN , K RISTEN  H ENRY ,
 R OXANNE  H AYES , K AREN  M ILLS , and
 W ILD  S YSTEMS  P TY  L TD ., Defendants-Appellees. Appeal from the United States District Court
-for the Northern District of Illinois, Eastern Division. No. 04 C 3317 — Joan B. Gottschall ,  Judge . A RGUED  F EBRUARY  26, 2009 — D ECIDED  A PRIL  8, 2010 [CITE_END:DOC008[P001.B03]]
-[CITE_START:DOC008[P001.B04]] Before B AUER , K ANNE , and S YKES ,  Circuit Judges . S YKES ,  Circuit Judge . John Tamburo, an Illinois resident
+for the Northern District of Illinois, Eastern Division. No. 04 C 3317 — Joan B. Gottschall ,  Judge . A RGUED  F EBRUARY  26, 2009 — D ECIDED  A PRIL  8, 2010
+</BLOCK>
+<BLOCK id="DOC008.P001.B04">
+Before B AUER , K ANNE , and S YKES ,  Circuit Judges . S YKES ,  Circuit Judge . John Tamburo, an Illinois resident
 who operates a dog-breeding software business in Illinois,
 filed suit in the Northern District of Illinois alleging
-federal and state antitrust violations and several inten- [CITE_END:DOC008[P001.B04]]
+federal and state antitrust violations and several inten-
+</BLOCK>
 
 [Page 2]
-[CITE_START:DOC008[P002.B01]] 2 No. 08-2406 tional tort claims under Illinois law. His claims arise out of a dispute over the contents of a dog-pedigree soft- ware program he developed by lifting data from the defendants’ websites. He alleges the defendants used the Internet to retaliate against him for copying their online data, which he contends was in the public domain. The defendants are a Canadian proprietor of a dog-pedigree website who has never visited or transacted business in Illinois; three Americans who likewise maintain dog- pedigree websites and are residents of Colorado, Michigan, and Ohio with only sporadic contacts with Illinois; and [CITE_END:DOC008[P002.B01]]
-[CITE_START:DOC008[P002.B02]] an Australian software company with insignificant sales in Illinois. This appeal requires us to apply long-estab- lished rules for asserting personal jurisdiction over foreign defendants to the relatively new setting of torts committed over the Internet. [CITE_END:DOC008[P002.B02]]
-[CITE_START:DOC008[P002.B03]] Tamburo alleges that the individual Canadian and American defendants engaged in a concerted campaign of blast emails and postings on their websites accusing him of stealing their data and urging dog enthusiasts to boy- cott his products. He also claims they sent some of these messages to the owner of the Australian company, who reposted them to a private dog-breeder listserve. These emails and Internet postings, Tamburo claims, violate federal and state antitrust laws, were defamatory and tortiously interfered with his software business, and constituted a civil conspiracy to boot. The defendants moved to dismiss for lack of personal jurisdiction [CITE_END:DOC008[P002.B03]]
-[CITE_START:DOC008[P002.B04]] and alternatively for failure to state a claim. The district court dismissed the case against all defendants for lack of personal jurisdiction. [CITE_END:DOC008[P002.B04]]
+<BLOCK id="DOC008.P002.B01">
+2 No. 08-2406 tional tort claims under Illinois law. His claims arise out of a dispute over the contents of a dog-pedigree soft- ware program he developed by lifting data from the defendants’ websites. He alleges the defendants used the Internet to retaliate against him for copying their online data, which he contends was in the public domain. The defendants are a Canadian proprietor of a dog-pedigree website who has never visited or transacted business in Illinois; three Americans who likewise maintain dog- pedigree websites and are residents of Colorado, Michigan, and Ohio with only sporadic contacts with Illinois; and
+</BLOCK>
+<BLOCK id="DOC008.P002.B02">
+an Australian software company with insignificant sales in Illinois. This appeal requires us to apply long-estab- lished rules for asserting personal jurisdiction over foreign defendants to the relatively new setting of torts committed over the Internet.
+</BLOCK>
+<BLOCK id="DOC008.P002.B03">
+Tamburo alleges that the individual Canadian and American defendants engaged in a concerted campaign of blast emails and postings on their websites accusing him of stealing their data and urging dog enthusiasts to boy- cott his products. He also claims they sent some of these messages to the owner of the Australian company, who reposted them to a private dog-breeder listserve. These emails and Internet postings, Tamburo claims, violate federal and state antitrust laws, were defamatory and tortiously interfered with his software business, and constituted a civil conspiracy to boot. The defendants moved to dismiss for lack of personal jurisdiction
+</BLOCK>
+<BLOCK id="DOC008.P002.B04">
+and alternatively for failure to state a claim. The district court dismissed the case against all defendants for lack of personal jurisdiction.
+</BLOCK>
 
 [Page 3]
-[CITE_START:DOC008[P003.B01]] No. 08-2406
+<BLOCK id="DOC008.P003.B01">
+No. 08-2406
 3 We affirm in part and reverse in part. First, Tamburo’s
 federal and state antitrust allegations are woefully inade-
 quate under  Bell Atlantic Corp. v. Twombly , 550 U.S. 544
@@ -32,16 +49,26 @@ mined under Illinois’ long-arm statute, which authorizes
 jurisdiction to the full extent permitted by the United
 States Constitution. 735 I LL . C OMP . S TAT . 5/2-209(c). General
 personal jurisdiction is lacking here; none of the defen-
-dants has continuous and systematic contacts with Illinois. [CITE_END:DOC008[P003.B01]]
-[CITE_START:DOC008[P003.B02]] Applying Calder v. Jones , 465 U.S. 783 (1984), we conclude that specific personal jurisdiction lies in Illinois over the individual Canadian and American defendants on Tamburo’s intentional tort claims. These defendants are alleged to have used their websites — or in the case of the Canadian defendant, blast emails to the online dog- pedigree community — to defame and tortiously generate a consumer boycott against Tamburo, knowing that he lived and operated his software business in Illinois and would be injured there. Indeed, some of the messages specifically listed Tamburo’s Illinois address and urged readers to harass him. This [CITE_END:DOC008[P003.B02]]
-[CITE_START:DOC008[P003.B03]] is enough for a prima facie case of personal jurisdiction under Calder ’s “express aiming” test for personal jurisdiction in intentional-tort cases. The case for personal jurisdiction over the Australian company is much weaker. Tamburo alleged only that the owner of the company received messages from the other defendants and reposted them on a private listserve. There is no allegation that he disseminated the messages more broadly or that he knew that Tamburo operated his business in Illinois. Accordingly, Tamburo’s allega- [CITE_END:DOC008[P003.B03]]
+dants has continuous and systematic contacts with Illinois.
+</BLOCK>
+<BLOCK id="DOC008.P003.B02">
+Applying Calder v. Jones , 465 U.S. 783 (1984), we conclude that specific personal jurisdiction lies in Illinois over the individual Canadian and American defendants on Tamburo’s intentional tort claims. These defendants are alleged to have used their websites — or in the case of the Canadian defendant, blast emails to the online dog- pedigree community — to defame and tortiously generate a consumer boycott against Tamburo, knowing that he lived and operated his software business in Illinois and would be injured there. Indeed, some of the messages specifically listed Tamburo’s Illinois address and urged readers to harass him. This
+</BLOCK>
+<BLOCK id="DOC008.P003.B03">
+is enough for a prima facie case of personal jurisdiction under Calder ’s “express aiming” test for personal jurisdiction in intentional-tort cases. The case for personal jurisdiction over the Australian company is much weaker. Tamburo alleged only that the owner of the company received messages from the other defendants and reposted them on a private listserve. There is no allegation that he disseminated the messages more broadly or that he knew that Tamburo operated his business in Illinois. Accordingly, Tamburo’s allega-
+</BLOCK>
 
 [Page 4]
-[CITE_START:DOC008[P004.B01]] 4
+<BLOCK id="DOC008.P004.B01">
+4
 No. 08-2406 tions are insufficient to establish a prima facie case for
-specific personal jurisdiction over the Australian company. [CITE_END:DOC008[P004.B01]]
-[CITE_START:DOC008[P004.B02]] I.  Background 1 [CITE_END:DOC008[P004.B02]]
-[CITE_START:DOC008[P004.B03]] John Tamburo, doing business as Man’s Best Friend
+specific personal jurisdiction over the Australian company.
+</BLOCK>
+<BLOCK id="DOC008.P004.B02">
+I.  Background 1
+</BLOCK>
+<BLOCK id="DOC008.P004.B03">
+John Tamburo, doing business as Man’s Best Friend
 Software, lives and operates his business in Illinois. He
 designs software for use by dog breeders and noncommer-
 cial dog enthusiasts.  One of his products, an online
@@ -50,13 +77,17 @@ ers with access to dog-pedigree information. To create the
 database, Tamburo developed an automated computer
 program that scanned the Internet for information
 about dog pedigrees. He then incorporated the data he
-retrieved into The Breeder’s Standard. [CITE_END:DOC008[P004.B03]]
-[CITE_START:DOC008[P004.B04]] Defendants Kristen Henry, Roxanne Hayes, Karen Mills,
+retrieved into The Breeder’s Standard.
+</BLOCK>
+<BLOCK id="DOC008.P004.B04">
+Defendants Kristen Henry, Roxanne Hayes, Karen Mills,
 and Steven Dworkin are proprietors of public websites
 that provide free access to dog-pedigree information.
 Henry, a Colorado citizen and resident, also breeds and
-shows dogs. Hayes, a Michigan citizen and resident, raises, [CITE_END:DOC008[P004.B04]]
-[CITE_START:DOC008[P004.B05]] Because this case comes to us from a jurisdictional dismissal
+shows dogs. Hayes, a Michigan citizen and resident, raises,
+</BLOCK>
+<BLOCK id="DOC008.P004.B05">
+Because this case comes to us from a jurisdictional dismissal
 1 on the pleadings, we take the factual background from the Sixth
 Amended Complaint, and where not contradictory, from
 affidavits submitted by the parties in connection with their
@@ -65,49 +96,83 @@ motion to dismiss. Tamburo was also the president and sole shareholder of
 dissolved in May 2004 just before this lawsuit was filed and
 appears as a plaintiff by virtue of 805 I LL . C OMP . S TAT . 5/12.80,
 the Illinois statute authorizing postdissolution survival of
-actions. [CITE_END:DOC008[P004.B05]]
+actions.
+</BLOCK>
 
 [Page 5]
-[CITE_START:DOC008[P005.B01]] No. 08-2406 5 shows, and “places” dogs but does not commercially breed them. Mills, a citizen and resident of Ohio, raises and shows dogs. Dworkin, a Canadian citizen who resides in Ottowa, also raises and shows dogs. 3 Tamburo pulled much of the information included in The Breeder’s Standard from the websites operated by Henry, Hayes, Mills, and Dworkin. In retaliation Henry, Hayes, and Mills posted statements on their websites accusing Tamburo of “theft,” “hacking,” and “selling stolen goods,” and calling on readers to boycott his products. They also posted Tamburo’s Illinois address on their websites and urged readers to [CITE_END:DOC008[P005.B01]]
-[CITE_START:DOC008[P005.B02]] contact him to harass him and otherwise complain. Dworkin retaliated in a different way. First, he emailed Tamburo and demanded that he remove the “blatent [sic] theft of data” from The Breeder’s Standard “within 5 days.” If Tamburo failed to do so, Dworkin threatened to “publish to each and every dog[-]based list the sleazy methods” of Tamburo’s operation. When Tamburo did not comply, Dworkin emailed “all persons who had a free online database of dog pedigrees on the Internet” saying that Tamburo’s product contained pedi- gree data that was “stolen,” “mined,” and “harvested” for improper “commercial use,” and suggested that [CITE_END:DOC008[P005.B02]]
-[CITE_START:DOC008[P005.B03]] all propri- etors of online dog-pedigree databases “band together to stop this theft” of their data. [CITE_END:DOC008[P005.B03]]
-[CITE_START:DOC008[P005.B04]] The fifth defendant is Wild Systems Pty Ltd., an Austra-
+<BLOCK id="DOC008.P005.B01">
+No. 08-2406 5 shows, and “places” dogs but does not commercially breed them. Mills, a citizen and resident of Ohio, raises and shows dogs. Dworkin, a Canadian citizen who resides in Ottowa, also raises and shows dogs. 3 Tamburo pulled much of the information included in The Breeder’s Standard from the websites operated by Henry, Hayes, Mills, and Dworkin. In retaliation Henry, Hayes, and Mills posted statements on their websites accusing Tamburo of “theft,” “hacking,” and “selling stolen goods,” and calling on readers to boycott his products. They also posted Tamburo’s Illinois address on their websites and urged readers to
+</BLOCK>
+<BLOCK id="DOC008.P005.B02">
+contact him to harass him and otherwise complain. Dworkin retaliated in a different way. First, he emailed Tamburo and demanded that he remove the “blatent [sic] theft of data” from The Breeder’s Standard “within 5 days.” If Tamburo failed to do so, Dworkin threatened to “publish to each and every dog[-]based list the sleazy methods” of Tamburo’s operation. When Tamburo did not comply, Dworkin emailed “all persons who had a free online database of dog pedigrees on the Internet” saying that Tamburo’s product contained pedi- gree data that was “stolen,” “mined,” and “harvested” for improper “commercial use,” and suggested that
+</BLOCK>
+<BLOCK id="DOC008.P005.B03">
+all propri- etors of online dog-pedigree databases “band together to stop this theft” of their data.
+</BLOCK>
+<BLOCK id="DOC008.P005.B04">
+The fifth defendant is Wild Systems Pty Ltd., an Austra-
 lian software company that offers a pedigree software
-program called Breedmate. Wild Systems also runs a [CITE_END:DOC008[P005.B04]]
-[CITE_START:DOC008[P005.B05]] Dworkin died during the pendency of this appeal; defendants’
-3 counsel represents his estate. [CITE_END:DOC008[P005.B05]]
+program called Breedmate. Wild Systems also runs a
+</BLOCK>
+<BLOCK id="DOC008.P005.B05">
+Dworkin died during the pendency of this appeal; defendants’
+3 counsel represents his estate.
+</BLOCK>
 
 [Page 6]
-[CITE_START:DOC008[P006.B01]] 6 No. 08-2406 private online Yahoo! email listserve for customers who have purchased the Breedmate software. Ronald DeJong, the owner and president of Wild Systems, manages this email list and must approve any message sent to it. The individual defendants sent DeJong messages for posting on the Breedmate listserve; these messages, like the others, protested that Tamburo had stolen their data. DeJong in turn transmitted these messages to the Breedmate listserve. Later, DeJong and the individual defendants organized a closed Internet chat group — called the “APDUG Group” — for users of Alfirin software, a 4 product used to manage [CITE_END:DOC008[P006.B01]]
-[CITE_START:DOC008[P006.B02]] dog-pedigree databases. In messages posted to the APDUG Group, the individual defendants again accused Tamburo of “theft,” “selling stolen goods,” and “hacking.” Tamburo sued the five defendants in the Northern District of Illinois, seeking a declaratory judgment that he did not violate any federal law by incorporating the defendants’ databases into his software. He also sought damages for federal and state antitrust violations and asserted claims for defamation, tortious interfer- ence with existing contracts and prospective economic advantage, trade libel, and civil conspiracy under Illinois law. 5 The defendants moved to dismiss the complaint for lack of personal jurisdiction and [CITE_END:DOC008[P006.B02]]
-[CITE_START:DOC008[P006.B03]] failure to state a claim. [CITE_END:DOC008[P006.B03]]
-[CITE_START:DOC008[P006.B04]] “APDUG” stands for Alfirin Pedigree Database Users Group.
+<BLOCK id="DOC008.P006.B01">
+6 No. 08-2406 private online Yahoo! email listserve for customers who have purchased the Breedmate software. Ronald DeJong, the owner and president of Wild Systems, manages this email list and must approve any message sent to it. The individual defendants sent DeJong messages for posting on the Breedmate listserve; these messages, like the others, protested that Tamburo had stolen their data. DeJong in turn transmitted these messages to the Breedmate listserve. Later, DeJong and the individual defendants organized a closed Internet chat group — called the “APDUG Group” — for users of Alfirin software, a 4 product used to manage
+</BLOCK>
+<BLOCK id="DOC008.P006.B02">
+dog-pedigree databases. In messages posted to the APDUG Group, the individual defendants again accused Tamburo of “theft,” “selling stolen goods,” and “hacking.” Tamburo sued the five defendants in the Northern District of Illinois, seeking a declaratory judgment that he did not violate any federal law by incorporating the defendants’ databases into his software. He also sought damages for federal and state antitrust violations and asserted claims for defamation, tortious interfer- ence with existing contracts and prospective economic advantage, trade libel, and civil conspiracy under Illinois law. 5 The defendants moved to dismiss the complaint for lack of personal jurisdiction and
+</BLOCK>
+<BLOCK id="DOC008.P006.B03">
+failure to state a claim.
+</BLOCK>
+<BLOCK id="DOC008.P006.B04">
+“APDUG” stands for Alfirin Pedigree Database Users Group.
 4 Tamburo estimates he lost over $525,000 in sales as a result
-5 of the defendants’ conduct. [CITE_END:DOC008[P006.B04]]
+5 of the defendants’ conduct.
+</BLOCK>
 
 [Page 7]
-[CITE_START:DOC008[P007.B01]] No. 08-2406
+<BLOCK id="DOC008.P007.B01">
+No. 08-2406
 7 See  F ED . R. C IV . P. 12(b)(2), 12(b)(6). The district court
 concluded that personal jurisdiction was lacking as to
 all defendants and dismissed the case without con-
 sidering the alternative failure-to-state-a-claim argu-
 ments. Tamburo moved for reconsideration, asking the
 court to transfer the case to the Western District of Michi-
-gan. This motion was denied and Tamburo appealed. [CITE_END:DOC008[P007.B01]]
-[CITE_START:DOC008[P007.B02]] II.  Discussion [CITE_END:DOC008[P007.B02]]
-[CITE_START:DOC008[P007.B03]] A. Antitrust Claims In Bell Atlantic Corp. v. Twombly , 550 U.S. 544 (2007), the Supreme Court clarified the pleading requirements for antitrust claims: “[A] formulaic recitation of the elements of a cause of action will not do. Factual allegations must be enough to raise a right to relief above the speculative level.” Id. at 555-56 (citations and all caps omitted). “Because § 1 of the Sherman Act does not prohibit [all] unreasonable restraints of trade . . . but only restraints effected by a contract, combination, or conspiracy, . . . [t]he crucial question is whether the challenged anticompetitive [CITE_END:DOC008[P007.B03]]
-[CITE_START:DOC008[P007.B04]] conduct stem[s] from independent deci- sion or from an agreement, tacit or express . . . .” Id. at 553 (internal quotation marks and citations omitted) (alter- ations in original). Accordingly, a complaint alleging an antitrust claim must contain “enough factual matter (taken as true) to suggest that an agreement was made .” Id. at 556. In addition, depending on the nature of the claim, the complaint must plausibly plead the existence of an antitrust injury; this requires factual allegations suggesting that the “claimed injuries are of the type the [CITE_END:DOC008[P007.B04]]
+gan. This motion was denied and Tamburo appealed.
+</BLOCK>
+<BLOCK id="DOC008.P007.B02">
+II.  Discussion
+</BLOCK>
+<BLOCK id="DOC008.P007.B03">
+A. Antitrust Claims In Bell Atlantic Corp. v. Twombly , 550 U.S. 544 (2007), the Supreme Court clarified the pleading requirements for antitrust claims: “[A] formulaic recitation of the elements of a cause of action will not do. Factual allegations must be enough to raise a right to relief above the speculative level.” Id. at 555-56 (citations and all caps omitted). “Because § 1 of the Sherman Act does not prohibit [all] unreasonable restraints of trade . . . but only restraints effected by a contract, combination, or conspiracy, . . . [t]he crucial question is whether the challenged anticompetitive
+</BLOCK>
+<BLOCK id="DOC008.P007.B04">
+conduct stem[s] from independent deci- sion or from an agreement, tacit or express . . . .” Id. at 553 (internal quotation marks and citations omitted) (alter- ations in original). Accordingly, a complaint alleging an antitrust claim must contain “enough factual matter (taken as true) to suggest that an agreement was made .” Id. at 556. In addition, depending on the nature of the claim, the complaint must plausibly plead the existence of an antitrust injury; this requires factual allegations suggesting that the “claimed injuries are of the type the
+</BLOCK>
 
 [Page 8]
-[CITE_START:DOC008[P008.B01]] 8
+<BLOCK id="DOC008.P008.B01">
+8
 No. 08-2406 antitrust laws were intended to prevent and reflect the
 anticompetitive effect of either the violation or of
 anticompetitive acts made possible by the violation.”
 Kochert v. Greater Lafayette Health Servs., Inc. , 463 F.3d 710,
-716 (7th Cir. 2006) (internal quotation marks omitted). [CITE_END:DOC008[P008.B01]]
-[CITE_START:DOC008[P008.B02]] Tamburo’s antitrust claims are pleaded in a wholly conclusory fashion; as such, it is hard to tell what kind of antitrust violation he is trying to assert. The com- plaint contains no factual allegations suggesting the existence of an antitrust conspiracy or an antitrust injury. The federal claim alleges only that the defendants pos- sessed “monopoly power in the relevant market of dog breeding data,” which they acquired “by means of anticompetitive and/or predatory conduct,” and that this “violated provisions of Federal Antitrust statutes including 15 U.S.C. [§§] 1, et seq .” This appears to sweep in the entire gamut [CITE_END:DOC008[P008.B02]]
-[CITE_START:DOC008[P008.B03]] of federal antitrust violations, but there are no allegations whatsoever regarding an antitrust injury. The complaint alleges only that Tamburo “has been damaged” as a result of “the wrongful acts of Defendants.” This manner of pleading a federal antitrust claim is plainly improper under Twombly . [CITE_END:DOC008[P008.B03]]
-[CITE_START:DOC008[P008.B04]] Tamburo’s attempt to plead a state-law antitrust viola-
+716 (7th Cir. 2006) (internal quotation marks omitted).
+</BLOCK>
+<BLOCK id="DOC008.P008.B02">
+Tamburo’s antitrust claims are pleaded in a wholly conclusory fashion; as such, it is hard to tell what kind of antitrust violation he is trying to assert. The com- plaint contains no factual allegations suggesting the existence of an antitrust conspiracy or an antitrust injury. The federal claim alleges only that the defendants pos- sessed “monopoly power in the relevant market of dog breeding data,” which they acquired “by means of anticompetitive and/or predatory conduct,” and that this “violated provisions of Federal Antitrust statutes including 15 U.S.C. [§§] 1, et seq .” This appears to sweep in the entire gamut
+</BLOCK>
+<BLOCK id="DOC008.P008.B03">
+of federal antitrust violations, but there are no allegations whatsoever regarding an antitrust injury. The complaint alleges only that Tamburo “has been damaged” as a result of “the wrongful acts of Defendants.” This manner of pleading a federal antitrust claim is plainly improper under Twombly .
+</BLOCK>
+<BLOCK id="DOC008.P008.B04">
+Tamburo’s attempt to plead a state-law antitrust viola-
 tion fares no better. The complaint asserts a claim under
 the Illinois Antitrust Act, 740 I LL . C OMP . S TAT . 10/1  et seq .,
 which parallels the federal Sherman and Clayton Acts.
@@ -115,60 +180,106 @@ But this section of the complaint simply repeats the
 inadequate allegations contained in the federal antitrust
 claim. Because federal pleading standards apply when
 we sit in diversity,  Windy City Metal Fabricators & Supply,
-Inc. v. CIT Tech. Fin. Servs., Inc. , 536 F.3d 663, 670 (7th Cir. [CITE_END:DOC008[P008.B04]]
+Inc. v. CIT Tech. Fin. Servs., Inc. , 536 F.3d 663, 670 (7th Cir.
+</BLOCK>
 
 [Page 9]
-[CITE_START:DOC008[P009.B01]] No. 08-2406
+<BLOCK id="DOC008.P009.B01">
+No. 08-2406
 9 2008), Tamburo’s state antitrust claim, like his federal
 one, fails to state a claim upon which relief can be
 granted. Accordingly, both claims were properly dis-
 missed, though on Rule 12(b)(6) grounds rather than
-Rule 12(b)(2) grounds. [CITE_END:DOC008[P009.B01]]
-[CITE_START:DOC008[P009.B02]] B. Personal Jurisdiction We review a dismissal for lack of personal jurisdiction de novo. GCIU-Employer Ret. Fund v. Goldfarb Corp. , 565 F.3d 1018, 1023 (7th Cir. 2009). The plaintiff has the burden of establishing personal jurisdiction, and where, as here, the issue is raised by a motion to dismiss and decided on the basis of written materials rather than an evidentiary hearing, the plaintiff need only make a prima facie showing of jurisdictional facts. Purdue Research Found. v. Sanofi-Synthelabo, S.A. , 338 F.3d 773, 782 (7th Cir. 2003). At this stage, therefore, we take as true all well-pleaded facts [CITE_END:DOC008[P009.B02]]
-[CITE_START:DOC008[P009.B03]] alleged in the complaint and resolve any factual disputes in the affidavits in favor of the plaintiff. Id. (“In evaluating whether the prima facie standard has been satisfied, the plaintiff is entitled to the resolution in its favor of all disputes concerning relevant facts presented in the record.” (internal quota- tion marks omitted)). Where no federal statute authorizes nationwide service of process, personal jurisdiction is governed by 6 [CITE_END:DOC008[P009.B03]]
-[CITE_START:DOC008[P009.B04]] Tamburo argues that nationwide service of process was
-6 authorized pursuant to Rule 4(k)(1)(c) of the Federal Rules [CITE_END:DOC008[P009.B04]]
-[CITE_START:DOC008[P009.B05]] (continued...) [CITE_END:DOC008[P009.B05]]
+Rule 12(b)(2) grounds.
+</BLOCK>
+<BLOCK id="DOC008.P009.B02">
+B. Personal Jurisdiction We review a dismissal for lack of personal jurisdiction de novo. GCIU-Employer Ret. Fund v. Goldfarb Corp. , 565 F.3d 1018, 1023 (7th Cir. 2009). The plaintiff has the burden of establishing personal jurisdiction, and where, as here, the issue is raised by a motion to dismiss and decided on the basis of written materials rather than an evidentiary hearing, the plaintiff need only make a prima facie showing of jurisdictional facts. Purdue Research Found. v. Sanofi-Synthelabo, S.A. , 338 F.3d 773, 782 (7th Cir. 2003). At this stage, therefore, we take as true all well-pleaded facts
+</BLOCK>
+<BLOCK id="DOC008.P009.B03">
+alleged in the complaint and resolve any factual disputes in the affidavits in favor of the plaintiff. Id. (“In evaluating whether the prima facie standard has been satisfied, the plaintiff is entitled to the resolution in its favor of all disputes concerning relevant facts presented in the record.” (internal quota- tion marks omitted)). Where no federal statute authorizes nationwide service of process, personal jurisdiction is governed by 6
+</BLOCK>
+<BLOCK id="DOC008.P009.B04">
+Tamburo argues that nationwide service of process was
+6 authorized pursuant to Rule 4(k)(1)(c) of the Federal Rules
+</BLOCK>
+<BLOCK id="DOC008.P009.B05">
+(continued...)
+</BLOCK>
 
 [Page 10]
-[CITE_START:DOC008[P010.B01]] 10 No. 08-2406 the law of the forum state. F ED . R. C IV . P. 4(k)(1)(A); see also Citadel Group Ltd. v. Wash. Reg’l Med. Ctr. , 536 F.3d 757, 760 (7th Cir. 2008). A court’s exercise of personal jurisdiction may be limited by the applicable state statute or the federal Constitution; the Illinois long-arm statute permits the exercise of jurisdiction to the full extent permitted by the Fourteenth Amendment’s Due Process Clause, 735 I LL . C OMP . S TAT . 5/2-209(c), so here the state statutory and federal constitutional inquiries merge. See Citadel Group Ltd. [CITE_END:DOC008[P010.B01]]
-[CITE_START:DOC008[P010.B02]] , 536 F.3d at 761. The key question is therefore whether the defendants have sufficient “mini- mum contacts” with Illinois such that the maintenance [CITE_END:DOC008[P010.B02]]
-[CITE_START:DOC008[P010.B03]] (...continued) 6 of Civil Procedure, together with § 22 of the Clayton Act, 15 U.S.C. § 22, or alternatively, under Rule 4(k)(2). Both juris- dictional bases, however, require a claim arising under federal law. Because Tamburo failed to adequately plead a federal antitrust claim, these jurisdictional options drop out of the case. We note for completeness that the circuits are divided over the proper interpretation of the venue and service-of- process language in § 22 of the Clayton Act. See In re Auto. Refinishing Paint Antitrust Litig. , 358 F.3d 288, 293-97 (3d Cir. 2004) (describing the circuit split). This [CITE_END:DOC008[P010.B03]]
-[CITE_START:DOC008[P010.B04]] circuit has not yet addressed the matter, and because we are affirming the dis- missal of the federal antitrust claim for failure to state a claim, we need not do so here. Moreover, as Tamburo’s counsel properly conceded at oral argument, the presence of a claim under the Declaratory Judgment Act, 28 U.S.C. § 2201, does not supply a basis for acquiring personal jurisdiction over the defendants under Rule 4(k)(1)(C) or Rule 4(k)(2). See Commercial Nat’l Bank of Chi. v. Demos , 18 F.3d 485, 490 (7th Cir. 1994). [CITE_END:DOC008[P010.B04]]
+<BLOCK id="DOC008.P010.B01">
+10 No. 08-2406 the law of the forum state. F ED . R. C IV . P. 4(k)(1)(A); see also Citadel Group Ltd. v. Wash. Reg’l Med. Ctr. , 536 F.3d 757, 760 (7th Cir. 2008). A court’s exercise of personal jurisdiction may be limited by the applicable state statute or the federal Constitution; the Illinois long-arm statute permits the exercise of jurisdiction to the full extent permitted by the Fourteenth Amendment’s Due Process Clause, 735 I LL . C OMP . S TAT . 5/2-209(c), so here the state statutory and federal constitutional inquiries merge. See Citadel Group Ltd.
+</BLOCK>
+<BLOCK id="DOC008.P010.B02">
+, 536 F.3d at 761. The key question is therefore whether the defendants have sufficient “mini- mum contacts” with Illinois such that the maintenance
+</BLOCK>
+<BLOCK id="DOC008.P010.B03">
+(...continued) 6 of Civil Procedure, together with § 22 of the Clayton Act, 15 U.S.C. § 22, or alternatively, under Rule 4(k)(2). Both juris- dictional bases, however, require a claim arising under federal law. Because Tamburo failed to adequately plead a federal antitrust claim, these jurisdictional options drop out of the case. We note for completeness that the circuits are divided over the proper interpretation of the venue and service-of- process language in § 22 of the Clayton Act. See In re Auto. Refinishing Paint Antitrust Litig. , 358 F.3d 288, 293-97 (3d Cir. 2004) (describing the circuit split). This
+</BLOCK>
+<BLOCK id="DOC008.P010.B04">
+circuit has not yet addressed the matter, and because we are affirming the dis- missal of the federal antitrust claim for failure to state a claim, we need not do so here. Moreover, as Tamburo’s counsel properly conceded at oral argument, the presence of a claim under the Declaratory Judgment Act, 28 U.S.C. § 2201, does not supply a basis for acquiring personal jurisdiction over the defendants under Rule 4(k)(1)(C) or Rule 4(k)(2). See Commercial Nat’l Bank of Chi. v. Demos , 18 F.3d 485, 490 (7th Cir. 1994).
+</BLOCK>
 
 [Page 11]
-[CITE_START:DOC008[P011.B01]] No. 08-2406
+<BLOCK id="DOC008.P011.B01">
+No. 08-2406
 11 of the suit “does not offend traditional notions of fair
 play and substantial justice.”  Int’l Shoe Co. v. Washington ,
-326 U.S. 310, 316 (1945) (internal quotation marks omitted). [CITE_END:DOC008[P011.B01]]
-[CITE_START:DOC008[P011.B02]] Stated differently, each defendant must have pur- posely established minimum contacts with the forum state such that he or she “should reasonably anticipate being haled into court” there. Burger King Corp. v. Rudzewicz , 471 U.S. 462, 474 (1985) (quotation marks omitted). But jurisdiction cannot be avoided “merely because the defendant did not physically enter the forum State.” Id. at 476. The Supreme Court has observed that “a substantial amount of business is transacted solely by mail and wire communications across state lines, thus obviating the need for physical presence within a State in which business is conducted.” Id. Still, [CITE_END:DOC008[P011.B02]]
-[CITE_START:DOC008[P011.B03]] we have said that “[p]otential defendants should have some control over — and certainly should not be surprised by — the jurisdictional consequences of their actions.” RAR, Inc. v. Turner Diesel, Ltd. , 107 F.3d 1272, 1278 (7th Cir. 1997). The Due Process Clause “gives some minimum assurance as to where that conduct will and will not render them liable to suit.” World-Wide Volkswagen v, Woodson , 444 U.S. 286, 297 (1980). [CITE_END:DOC008[P011.B03]]
-[CITE_START:DOC008[P011.B04]] 1.  General Personal Jurisdiction The nature of the defendant’s contacts with the forum
+326 U.S. 310, 316 (1945) (internal quotation marks omitted).
+</BLOCK>
+<BLOCK id="DOC008.P011.B02">
+Stated differently, each defendant must have pur- posely established minimum contacts with the forum state such that he or she “should reasonably anticipate being haled into court” there. Burger King Corp. v. Rudzewicz , 471 U.S. 462, 474 (1985) (quotation marks omitted). But jurisdiction cannot be avoided “merely because the defendant did not physically enter the forum State.” Id. at 476. The Supreme Court has observed that “a substantial amount of business is transacted solely by mail and wire communications across state lines, thus obviating the need for physical presence within a State in which business is conducted.” Id. Still,
+</BLOCK>
+<BLOCK id="DOC008.P011.B03">
+we have said that “[p]otential defendants should have some control over — and certainly should not be surprised by — the jurisdictional consequences of their actions.” RAR, Inc. v. Turner Diesel, Ltd. , 107 F.3d 1272, 1278 (7th Cir. 1997). The Due Process Clause “gives some minimum assurance as to where that conduct will and will not render them liable to suit.” World-Wide Volkswagen v, Woodson , 444 U.S. 286, 297 (1980).
+</BLOCK>
+<BLOCK id="DOC008.P011.B04">
+1.  General Personal Jurisdiction The nature of the defendant’s contacts with the forum
 state determines the propriety of personal jurisdiction
 and also its scope — that is, whether jurisdiction is
-proper at all, and if so, whether it is general or specific to [CITE_END:DOC008[P011.B04]]
+proper at all, and if so, whether it is general or specific to
+</BLOCK>
 
 [Page 12]
-[CITE_START:DOC008[P012.B01]] 12 No. 08-2406 the claims made in the case. A defendant with “contin- uous and systematic” contacts with a state is subject to general jurisdiction there in any action, even if the action is unrelated to those contacts. Helicopteros Nacionales de Colombia, S.A. v. Hall , 466 U.S. 408, 416 (1984). The threshold for general jurisdiction is high; the contacts must be sufficiently extensive and pervasive to approxi- mate physical presence. Purdue Research Found. , 338 F.3d at 787 & n.16. As such, isolated or sporadic contacts — such as occasional visits to the forum state — are insufficient for [CITE_END:DOC008[P012.B01]]
-[CITE_START:DOC008[P012.B02]] general jurisdiction. Burger King , 471 U.S. at 475. Nor is the maintenance of a public Internet website suf- ficient, without more, to establish general jurisdiction. See Bird v. Parsons , 289 F.3d 865, 874 (6th Cir. 2002). [CITE_END:DOC008[P012.B02]]
-[CITE_START:DOC008[P012.B03]] Illinois cannot exercise general personal jurisdiction over any of the defendants in this case. Henry has been to Illinois only twice in ten years. Hayes has been to Illinois approximately 5 times and has placed 13 dogs with families in Illinois but did not receive any profits from these placements. She sold three copies of her book to individuals in Illinois through her website. Mills grew up in Illinois but moved away in 1979 and has only trav- eled back twice since then. Dworkin, the Canadian defen- dant, has never “been to, stopped in or passed through” Illinois. Each of [CITE_END:DOC008[P012.B03]]
-[CITE_START:DOC008[P012.B04]] the individual defendants maintains a public website obviously accessible by Illinois residents, but as we have noted, that is not enough to establish general personal jurisdiction. Finally, Wild Systems, the corporate defendant, is an Australian company located in New South Wales, Australia. It has no offices in Illinois (or anywhere in the United States, for that matter), [CITE_END:DOC008[P012.B04]]
+<BLOCK id="DOC008.P012.B01">
+12 No. 08-2406 the claims made in the case. A defendant with “contin- uous and systematic” contacts with a state is subject to general jurisdiction there in any action, even if the action is unrelated to those contacts. Helicopteros Nacionales de Colombia, S.A. v. Hall , 466 U.S. 408, 416 (1984). The threshold for general jurisdiction is high; the contacts must be sufficiently extensive and pervasive to approxi- mate physical presence. Purdue Research Found. , 338 F.3d at 787 & n.16. As such, isolated or sporadic contacts — such as occasional visits to the forum state — are insufficient for
+</BLOCK>
+<BLOCK id="DOC008.P012.B02">
+general jurisdiction. Burger King , 471 U.S. at 475. Nor is the maintenance of a public Internet website suf- ficient, without more, to establish general jurisdiction. See Bird v. Parsons , 289 F.3d 865, 874 (6th Cir. 2002).
+</BLOCK>
+<BLOCK id="DOC008.P012.B03">
+Illinois cannot exercise general personal jurisdiction over any of the defendants in this case. Henry has been to Illinois only twice in ten years. Hayes has been to Illinois approximately 5 times and has placed 13 dogs with families in Illinois but did not receive any profits from these placements. She sold three copies of her book to individuals in Illinois through her website. Mills grew up in Illinois but moved away in 1979 and has only trav- eled back twice since then. Dworkin, the Canadian defen- dant, has never “been to, stopped in or passed through” Illinois. Each of
+</BLOCK>
+<BLOCK id="DOC008.P012.B04">
+the individual defendants maintains a public website obviously accessible by Illinois residents, but as we have noted, that is not enough to establish general personal jurisdiction. Finally, Wild Systems, the corporate defendant, is an Australian company located in New South Wales, Australia. It has no offices in Illinois (or anywhere in the United States, for that matter),
+</BLOCK>
 
 [Page 13]
-[CITE_START:DOC008[P013.B01]] No. 08-2406
+<BLOCK id="DOC008.P013.B01">
+No. 08-2406
 13 nor has it ever had a distributor in Illinois. Since it was
 incorporated in 1996, Wild Systems has had a total of
 $8,634 in sales to customers in Illinois. These sporadic
 contacts with Illinois do not approach the level of “contin-
 uous and systematic” contacts necessary to establish
-general personal jurisdiction. [CITE_END:DOC008[P013.B01]]
-[CITE_START:DOC008[P013.B02]] 2. Specific Personal Jurisdiction The question of specific personal jurisdiction is much more difficult. To support an exercise of specific per- sonal jurisdiction, the defendant’s contacts with the forum state must directly relate to the challenged con- duct or transaction; we therefore evaluate specific per- sonal jurisdiction by reference to the particular conduct underlying the claims made in the lawsuit. See GCIU- Employer Ret. Fund , 565 F.3d at 1024. Specific personal jurisdiction is appropriate where (1) the defendant has purposefully directed his activities at the forum state or purposefully availed himself of the privilege of con- ducting business in [CITE_END:DOC008[P013.B02]]
-[CITE_START:DOC008[P013.B03]] that state, and (2) the alleged injury arises out of the defendant’s forum-related activities. Burger King , 471 U.S. at 472. The exercise of specific per- sonal jurisdiction must also comport with traditional notions of fair play and substantial justice as required by the Fourteenth Amendment’s Due Process Clause. Int’l Shoe , 326 U.S. at 316. This case primarily concerns the question whether the defendants “purposefully directed” their conduct at the forum state. [CITE_END:DOC008[P013.B03]]
+general personal jurisdiction.
+</BLOCK>
+<BLOCK id="DOC008.P013.B02">
+2. Specific Personal Jurisdiction The question of specific personal jurisdiction is much more difficult. To support an exercise of specific per- sonal jurisdiction, the defendant’s contacts with the forum state must directly relate to the challenged con- duct or transaction; we therefore evaluate specific per- sonal jurisdiction by reference to the particular conduct underlying the claims made in the lawsuit. See GCIU- Employer Ret. Fund , 565 F.3d at 1024. Specific personal jurisdiction is appropriate where (1) the defendant has purposefully directed his activities at the forum state or purposefully availed himself of the privilege of con- ducting business in
+</BLOCK>
+<BLOCK id="DOC008.P013.B03">
+that state, and (2) the alleged injury arises out of the defendant’s forum-related activities. Burger King , 471 U.S. at 472. The exercise of specific per- sonal jurisdiction must also comport with traditional notions of fair play and substantial justice as required by the Fourteenth Amendment’s Due Process Clause. Int’l Shoe , 326 U.S. at 316. This case primarily concerns the question whether the defendants “purposefully directed” their conduct at the forum state.
+</BLOCK>
 
 [Page 14]
-[CITE_START:DOC008[P014.B01]] 14 No. 08-2406 a. Conduct “purposefully directed” at the forum state The purposeful-direction inquiry “can appear in dif- ferent guises.” Dudnikov v. Chalk & Vermilion Fine Arts, Inc. , 514 F.3d 1063, 1071 (10th Cir. 2008). Personal jurisdiction in breach-of-contract actions often turns on whether the defendant “purposefully availed” himself of the privilege of conducting business or engaging in a transaction in the forum state. See id. ; Schwarzenegger v. Fred Martin Motor Co. , 374 F.3d 797, 802 (9th Cir. 2004). But where, as here, the plaintiff’s claims are for intentional torts, the inquiry focuses on whether the conduct [CITE_END:DOC008[P014.B01]]
-[CITE_START:DOC008[P014.B02]] underlying the claims was purposely directed at the forum state. Dudnikov , 514 F.3d at 1071; see also Calder v. Jones , 465 U.S. 783, 790 (1984). In all cases the point of the pur- poseful-direction requirement is to “ensure that an out-of- state defendant is not bound to appear to account for merely ‘random, fortuitous, or attenuated contacts’ with the forum state.” Dudnikov , 514 F.3d at 1071 (quoting Burger King , 471 U.S. at 475). [CITE_END:DOC008[P014.B02]]
-[CITE_START:DOC008[P014.B03]] The Supreme Court’s decision in  Calder  provides some
+<BLOCK id="DOC008.P014.B01">
+14 No. 08-2406 a. Conduct “purposefully directed” at the forum state The purposeful-direction inquiry “can appear in dif- ferent guises.” Dudnikov v. Chalk & Vermilion Fine Arts, Inc. , 514 F.3d 1063, 1071 (10th Cir. 2008). Personal jurisdiction in breach-of-contract actions often turns on whether the defendant “purposefully availed” himself of the privilege of conducting business or engaging in a transaction in the forum state. See id. ; Schwarzenegger v. Fred Martin Motor Co. , 374 F.3d 797, 802 (9th Cir. 2004). But where, as here, the plaintiff’s claims are for intentional torts, the inquiry focuses on whether the conduct
+</BLOCK>
+<BLOCK id="DOC008.P014.B02">
+underlying the claims was purposely directed at the forum state. Dudnikov , 514 F.3d at 1071; see also Calder v. Jones , 465 U.S. 783, 790 (1984). In all cases the point of the pur- poseful-direction requirement is to “ensure that an out-of- state defendant is not bound to appear to account for merely ‘random, fortuitous, or attenuated contacts’ with the forum state.” Dudnikov , 514 F.3d at 1071 (quoting Burger King , 471 U.S. at 475).
+</BLOCK>
+<BLOCK id="DOC008.P014.B03">
+The Supreme Court’s decision in  Calder  provides some
 contours for the “purposeful direction” requirement in the
 context of a suit alleging intentional torts.  Calder  gave
 significant weight to the “effects” of a foreign defendant’s
@@ -178,15 +289,23 @@ show  The Partridge Family — filed suit in California
 against the  National Enquirer , its local distributor, and the
 writer and editor of an allegedly libelous article that
 appeared in the  Enquirer . 465 U.S. at 785-86. The  Enquirer
-is a Florida corporation headquartered in Florida, and [CITE_END:DOC008[P014.B03]]
+is a Florida corporation headquartered in Florida, and
+</BLOCK>
 
 [Page 15]
-[CITE_START:DOC008[P015.B01]] No. 08-2406 15 the writer and editor were Florida residents; the individual defendants challenged personal jurisdiction in California. They argued that they were not responsible for the tabloid’s distribution in California and had no economic stake in the publication’s sales there, and the fact that they could foresee the article would be distrib- uted and have an effect on Jones in California was not sufficient to confer personal jurisdiction. The Supreme Court disagreed, focusing on the effects of the article on its target in California: “[P]etitioners are not charged with mere untargeted negligence. Rather, their intentional, and allegedly tortious, actions [CITE_END:DOC008[P015.B01]]
-[CITE_START:DOC008[P015.B02]] were expressly aimed at Cali- fornia.” Id. As the Court explained, Petitioner South wrote and petitioner Calder edited an article that they knew would have a potentially devas- tating impact upon [Jones]. And they knew that the brunt of that injury would be felt by respondent in the State in which she lives and works and in which the National Enquirer has its largest circulation. Under these circumstances, petitioners must reason- ably anticipate being haled into court there to answer for the truth of the statements made in their article. An individual injured in California need not go to Florida [CITE_END:DOC008[P015.B02]]
-[CITE_START:DOC008[P015.B03]] to seek redress from persons who, though remaining in Florida, knowingly cause[d] the injury in California. Id. at 789-90 (internal quotation marks and citations omitted). Calder thus suggests three requirements for personal jurisdiction in this context: (1) intentional conduct (or [CITE_END:DOC008[P015.B03]]
+<BLOCK id="DOC008.P015.B01">
+No. 08-2406 15 the writer and editor were Florida residents; the individual defendants challenged personal jurisdiction in California. They argued that they were not responsible for the tabloid’s distribution in California and had no economic stake in the publication’s sales there, and the fact that they could foresee the article would be distrib- uted and have an effect on Jones in California was not sufficient to confer personal jurisdiction. The Supreme Court disagreed, focusing on the effects of the article on its target in California: “[P]etitioners are not charged with mere untargeted negligence. Rather, their intentional, and allegedly tortious, actions
+</BLOCK>
+<BLOCK id="DOC008.P015.B02">
+were expressly aimed at Cali- fornia.” Id. As the Court explained, Petitioner South wrote and petitioner Calder edited an article that they knew would have a potentially devas- tating impact upon [Jones]. And they knew that the brunt of that injury would be felt by respondent in the State in which she lives and works and in which the National Enquirer has its largest circulation. Under these circumstances, petitioners must reason- ably anticipate being haled into court there to answer for the truth of the statements made in their article. An individual injured in California need not go to Florida
+</BLOCK>
+<BLOCK id="DOC008.P015.B03">
+to seek redress from persons who, though remaining in Florida, knowingly cause[d] the injury in California. Id. at 789-90 (internal quotation marks and citations omitted). Calder thus suggests three requirements for personal jurisdiction in this context: (1) intentional conduct (or
+</BLOCK>
 
 [Page 16]
-[CITE_START:DOC008[P016.B01]] 16
+<BLOCK id="DOC008.P016.B01">
+16
 No. 08-2406 “intentional and allegedly tortious” conduct); (2) expressly
 aimed at the forum state; (3) with the defendant’s knowl-
 edge that the effects would be felt — that is, the plaintiff
@@ -196,21 +315,33 @@ F.3d at 1072;  IMO Indus., Inc. v. Kiekert AG , 155 F.3d 254,
 Calder  is reasonably straightforward; applying them in
 specific cases — especially cases like this one alleging
 tortious acts committed over the Internet — is more chal-
-lenging. 7 [CITE_END:DOC008[P016.B01]]
-[CITE_START:DOC008[P016.B02]] The parties and the district court have approached the 7 jurisdictional question in this case by reference to the specialized framework proposed in Zippo Manufacturing Co. v. Zippo Dot Com, Inc. , 952 F. Supp. 1119 (W.D. Pa. 1997), for cases in which the challenged conduct occurs over the Internet. Zippo devised an alternative minimum-contacts test for Internet-based claims. As a general matter, the court in Zippo suggested that “the likelihood that personal jurisdiction can be constitutionally exercised is directly proportionate to the nature and quality of commercial activity that an entity conducts over the Internet.” Id. at 1124. More [CITE_END:DOC008[P016.B02]]
-[CITE_START:DOC008[P016.B03]] specifically, the court articulated a sliding- scale analysis that considers the degree of “interactivity” of a website to determine whether the electronic contacts with the forum are sufficient to satisfy International Shoe ’s standard: [CITE_END:DOC008[P016.B03]]
-[CITE_START:DOC008[P016.B04]] At one end of the spectrum are situations where a defendant
+lenging. 7
+</BLOCK>
+<BLOCK id="DOC008.P016.B02">
+The parties and the district court have approached the 7 jurisdictional question in this case by reference to the specialized framework proposed in Zippo Manufacturing Co. v. Zippo Dot Com, Inc. , 952 F. Supp. 1119 (W.D. Pa. 1997), for cases in which the challenged conduct occurs over the Internet. Zippo devised an alternative minimum-contacts test for Internet-based claims. As a general matter, the court in Zippo suggested that “the likelihood that personal jurisdiction can be constitutionally exercised is directly proportionate to the nature and quality of commercial activity that an entity conducts over the Internet.” Id. at 1124. More
+</BLOCK>
+<BLOCK id="DOC008.P016.B03">
+specifically, the court articulated a sliding- scale analysis that considers the degree of “interactivity” of a website to determine whether the electronic contacts with the forum are sufficient to satisfy International Shoe ’s standard:
+</BLOCK>
+<BLOCK id="DOC008.P016.B04">
+At one end of the spectrum are situations where a defendant
 clearly does business over the Internet. If the defendant
 enters into contracts with residents of a foreign jurisdiction
 that involve the knowing and repeated transmission of
 computer files over the Internet, personal jurisdiction is
-proper. At the opposite end are situations where a defen- [CITE_END:DOC008[P016.B04]]
-[CITE_START:DOC008[P016.B05]] (continued...) [CITE_END:DOC008[P016.B05]]
+proper. At the opposite end are situations where a defen-
+</BLOCK>
+<BLOCK id="DOC008.P016.B05">
+(continued...)
+</BLOCK>
 
 [Page 17]
-[CITE_START:DOC008[P017.B01]] No. 08-2406
-17 [CITE_END:DOC008[P017.B01]]
-[CITE_START:DOC008[P017.B02]] (...continued)
+<BLOCK id="DOC008.P017.B01">
+No. 08-2406
+17
+</BLOCK>
+<BLOCK id="DOC008.P017.B02">
+(...continued)
 7 dant has simply posted information on an Internet Web
 site which is accessible to users in foreign jurisdictions. A
 passive Web site that does little more than make infor-
@@ -221,15 +352,27 @@ where a user can exchange information with the host
 computer. In these cases, the exercise of jurisdiction is
 determined by examining the level of interactivity and
 commercial nature of the exchange of information that
-occurs on the Web site. 952 F. Supp. at 1124 (citations omitted). [CITE_END:DOC008[P017.B02]]
-[CITE_START:DOC008[P017.B03]] Some circuits have followed Zippo when “electronic contacts” over the Internet are at issue. See, e.g. , Revel v. Lidov , 317 F.3d 467, 470 (5th Cir. 2002) (“This circuit has drawn upon the approach of Zippo . . . in determining whether the operation of an internet site can support minimum contacts necessary for the exercise of personal jurisdiction.”); ALS Scan, Inc. v. Digital Serv. Consultants, Inc. , 293 F.3d 707, 713 (4th Cir. 2002) (“we adopt today the model developed in Zippo ”); Cybersell, Inc. v. Cybersell, Inc. , 130 F.3d 414, 418 (9th Cir. 1997) (examining a [CITE_END:DOC008[P017.B03]]
-[CITE_START:DOC008[P017.B04]] website’s level of interactivity in order to conduct the minimum-contacts analysis). We have not specifically done so, although we have considered a website’s degree of interactivity in at least one personal-jurisdiction case. See Jennings v. AC Hydraulic A/S , 383 F.3d 546, 549-50 (7th Cir. 2004). Jennings did not involve intentional-tort claims, however, and therefore has limited relevance here. As a more general matter, we hesitate to fashion a special jurisdictional test for Internet- based cases. Calder speaks directly to personal jurisdiction in [CITE_END:DOC008[P017.B04]]
-[CITE_START:DOC008[P017.B05]] (continued...) [CITE_END:DOC008[P017.B05]]
+occurs on the Web site. 952 F. Supp. at 1124 (citations omitted).
+</BLOCK>
+<BLOCK id="DOC008.P017.B03">
+Some circuits have followed Zippo when “electronic contacts” over the Internet are at issue. See, e.g. , Revel v. Lidov , 317 F.3d 467, 470 (5th Cir. 2002) (“This circuit has drawn upon the approach of Zippo . . . in determining whether the operation of an internet site can support minimum contacts necessary for the exercise of personal jurisdiction.”); ALS Scan, Inc. v. Digital Serv. Consultants, Inc. , 293 F.3d 707, 713 (4th Cir. 2002) (“we adopt today the model developed in Zippo ”); Cybersell, Inc. v. Cybersell, Inc. , 130 F.3d 414, 418 (9th Cir. 1997) (examining a
+</BLOCK>
+<BLOCK id="DOC008.P017.B04">
+website’s level of interactivity in order to conduct the minimum-contacts analysis). We have not specifically done so, although we have considered a website’s degree of interactivity in at least one personal-jurisdiction case. See Jennings v. AC Hydraulic A/S , 383 F.3d 546, 549-50 (7th Cir. 2004). Jennings did not involve intentional-tort claims, however, and therefore has limited relevance here. As a more general matter, we hesitate to fashion a special jurisdictional test for Internet- based cases. Calder speaks directly to personal jurisdiction in
+</BLOCK>
+<BLOCK id="DOC008.P017.B05">
+(continued...)
+</BLOCK>
 
 [Page 18]
-[CITE_START:DOC008[P018.B01]] 18 No. 08-2406 1. “Intentional” acts or “intentional and allegedly tortious” acts The circuits are divided over whether Calder’ s “express aiming” inquiry includes all jurisdictionally relevant intentional acts of the defendant or only those acts that are intentional and alleged to be tortious or otherwise wrongful. Compare Marten v. Godwin , 499 F.3d 290, 297 (3d Cir. 2007) (focusing on defendant’s intentional and alleg- edly tortious or wrongful acts), with Yahoo! Inc. v. La Ligue Contre Le Racisme et L’Antisemitisme , 433 F.3d 1199, 1206 (9th Cir. 2006) (en banc) (considering all jurisdictionally relevant intentional acts); see also Dudnikov [CITE_END:DOC008[P018.B01]]
-[CITE_START:DOC008[P018.B02]] , 514 F.3d at 1072-73 (outlining this conflict). We need not take sides in this debate. Tamburo alleges that the individual defen- dants intentionally published defamatory statements on their websites or in blast emails. He further alleges that this conduct tortiously interfered with his business, constituted a trade libel, and that the defendants entered [CITE_END:DOC008[P018.B02]]
-[CITE_START:DOC008[P018.B03]] (...continued)
+<BLOCK id="DOC008.P018.B01">
+18 No. 08-2406 1. “Intentional” acts or “intentional and allegedly tortious” acts The circuits are divided over whether Calder’ s “express aiming” inquiry includes all jurisdictionally relevant intentional acts of the defendant or only those acts that are intentional and alleged to be tortious or otherwise wrongful. Compare Marten v. Godwin , 499 F.3d 290, 297 (3d Cir. 2007) (focusing on defendant’s intentional and alleg- edly tortious or wrongful acts), with Yahoo! Inc. v. La Ligue Contre Le Racisme et L’Antisemitisme , 433 F.3d 1199, 1206 (9th Cir. 2006) (en banc) (considering all jurisdictionally relevant intentional acts); see also Dudnikov
+</BLOCK>
+<BLOCK id="DOC008.P018.B02">
+, 514 F.3d at 1072-73 (outlining this conflict). We need not take sides in this debate. Tamburo alleges that the individual defen- dants intentionally published defamatory statements on their websites or in blast emails. He further alleges that this conduct tortiously interfered with his business, constituted a trade libel, and that the defendants entered
+</BLOCK>
+<BLOCK id="DOC008.P018.B03">
+(...continued)
 7 intentional-tort cases; the principles articulated there can be
 applied to cases involving tortious conduct committed over
 the Internet.  See Hy Cite Corp. v. Badbusinessbureau.com, L.L.C. ,
@@ -240,16 +383,20 @@ Toward a Unified Test of Personal Jurisdiction in an Era of Widely
 Diffused Wrongs: The Relevance of Purpose and Effects , 81 I ND . L.J.
 601, 657-58 (2006) (arguing that “a unique test of personal
 jurisdiction should not be adopted for cases involving wrongs
-committed by means of the Internet”). [CITE_END:DOC008[P018.B03]]
+committed by means of the Internet”).
+</BLOCK>
 
 [Page 19]
-[CITE_START:DOC008[P019.B01]] No. 08-2406
+<BLOCK id="DOC008.P019.B01">
+No. 08-2406
 19 into a conspiracy to commit these wrongful acts against
 him. These are intentional-tort allegations, bringing this
 case squarely within the  Calder  formula even if the scope
 of the inquiry is more narrowly focused on the alleged
-tortious acts. [CITE_END:DOC008[P019.B01]]
-[CITE_START:DOC008[P019.B02]] 2.
+tortious acts.
+</BLOCK>
+<BLOCK id="DOC008.P019.B02">
+2.
 “Express aiming” and knowledge that plaintiff
 would be injured in forum state In  Calder  the Supreme Court emphasized that the defen-
 dants were not “charged with mere untargeted negli-
@@ -260,8 +407,10 @@ worked and would suffer the “brunt of th[e] injury.”
 press aiming” inquiry overlaps with the question
 whether the defendant knew the plaintiff would suffer
 the injury in the forum state, so we consider the two
-requirements together. [CITE_END:DOC008[P019.B02]]
-[CITE_START:DOC008[P019.B03]] Some circuits have read  Calder’ s “express aiming”
+requirements together.
+</BLOCK>
+<BLOCK id="DOC008.P019.B03">
+Some circuits have read  Calder’ s “express aiming”
 requirement fairly broadly, requiring only conduct that
 is “targeted at a plaintiff whom the defendant knows to
 be a resident of the forum state .” Bancroft & Masters, Inc. v.
@@ -271,10 +420,12 @@ forum state be the “focal point of the tort.”  Dudnikov ,
 514 F.3d at 1074 n.9;  see also IMO Indus., Inc. , 155 F.3d at
 263-65 (“the  Calder  ‘effects test’ can only be satisfied if
 the plaintiff can point to contacts which demonstrate that
-the defendant  expressly aimed  its tortious conduct at the [CITE_END:DOC008[P019.B03]]
+the defendant  expressly aimed  its tortious conduct at the
+</BLOCK>
 
 [Page 20]
-[CITE_START:DOC008[P020.B01]] 20
+<BLOCK id="DOC008.P020.B01">
+20
 No. 08-2406 forum, and thereby made the forum the focal point of the
 tortious activity”);  ESAB Group, Inc. v. Centricut, Inc. , 126
 F.3d 617, 625 (4th Cir. 1997) (conduct must be “intention-
@@ -284,20 +435,34 @@ standings of  Calder ’s “express aiming” requirement.
 Indeed, two of our decisions — Wallace v. Herron , 778 F.2d
 391 (7th Cir. 1985), and  Janmark, Inc. v. Reidy , 132 F.3d 1200
 (7th Cir. 1997) — are in some tension regarding the
-proper reading of  Calder . [CITE_END:DOC008[P020.B01]]
-[CITE_START:DOC008[P020.B02]] In Wallace the question was whether Indiana could exercise jurisdiction over California defendants who were sued by an Indiana resident for malicious prosecution when the allegedly tortious conduct occurred exclusively in California. Applying Calder , we held that jurisdiction was not proper in Indiana; in so holding we focused on the relationship between the defendants’ actions and the forum state itself, not just on the relationship between those actions and the plaintiff’s injury. 778 F.2d at 395 (noting that the defendants did not undertake any “action that created the necessary connection with Indiana”). We concluded that Calder did not alter [CITE_END:DOC008[P020.B02]]
-[CITE_START:DOC008[P020.B03]] the prevailing jurisdictional requirement that the defendant must engage in conduct that “create[s] a ‘substantial connec- tion’ with the forum State.” Id. [CITE_END:DOC008[P020.B03]]
-[CITE_START:DOC008[P020.B04]] Janmark  took a broader view of  Calder . There, shopping-
+proper reading of  Calder .
+</BLOCK>
+<BLOCK id="DOC008.P020.B02">
+In Wallace the question was whether Indiana could exercise jurisdiction over California defendants who were sued by an Indiana resident for malicious prosecution when the allegedly tortious conduct occurred exclusively in California. Applying Calder , we held that jurisdiction was not proper in Indiana; in so holding we focused on the relationship between the defendants’ actions and the forum state itself, not just on the relationship between those actions and the plaintiff’s injury. 778 F.2d at 395 (noting that the defendants did not undertake any “action that created the necessary connection with Indiana”). We concluded that Calder did not alter
+</BLOCK>
+<BLOCK id="DOC008.P020.B03">
+the prevailing jurisdictional requirement that the defendant must engage in conduct that “create[s] a ‘substantial connec- tion’ with the forum State.” Id.
+</BLOCK>
+<BLOCK id="DOC008.P020.B04">
+Janmark  took a broader view of  Calder . There, shopping-
 cart competitors Janmark and Dreamkeeper sold mini
 shopping carts throughout the United States — Dream-
 keeper from California and Janmark from Illinois. 132 F.3d
-at 1202. Dreamkeeper accused Janmark of infringing its [CITE_END:DOC008[P020.B04]]
+at 1202. Dreamkeeper accused Janmark of infringing its
+</BLOCK>
 
 [Page 21]
-[CITE_START:DOC008[P021.B01]] No. 08-2406 21 copyright in a particular shopping-cart design, but Janmark refused Dreamkeeper’s demand to stop manu- facturing the carts. Dreamkeeper contacted a Janmark customer in New Jersey and threatened the customer with a contributory-infringement suit if it did not stop purchasing carts from Janmark. Janmark sued Dream- keeper in Illinois on a variety of intentional-tort and intellectual-property theories, and we held that Illinois could exercise personal jurisdiction over Dreamkeeper. Id. Noting first that “the location of the injury . . . is vital to understanding where the tort occurred,” we made this observation about Calder : “[T]here can be [CITE_END:DOC008[P021.B01]]
-[CITE_START:DOC008[P021.B02]] no serious doubt after Calder . . . that the state in which the victim of a tort suffers the injury may entertain a suit against the accused tortfeasor.” Id. We then concluded that “inducing the customers of an Illinois firm to drop their orders can be a tort in Illinois[,] and . . . whether or not it is a tort in Illinois, it is actionable in Illinois.” Id. at 1203. In other words, jurisdiction was proper in Janmark be- cause the defendant’s express aim was to tortiously interfere with an Illinois company’s sales and because the injury occurred [CITE_END:DOC008[P021.B02]]
-[CITE_START:DOC008[P021.B03]] in Illinois. [CITE_END:DOC008[P021.B03]]
-[CITE_START:DOC008[P021.B04]] Another case — one specifically relied on in  Janmark — is
+<BLOCK id="DOC008.P021.B01">
+No. 08-2406 21 copyright in a particular shopping-cart design, but Janmark refused Dreamkeeper’s demand to stop manu- facturing the carts. Dreamkeeper contacted a Janmark customer in New Jersey and threatened the customer with a contributory-infringement suit if it did not stop purchasing carts from Janmark. Janmark sued Dream- keeper in Illinois on a variety of intentional-tort and intellectual-property theories, and we held that Illinois could exercise personal jurisdiction over Dreamkeeper. Id. Noting first that “the location of the injury . . . is vital to understanding where the tort occurred,” we made this observation about Calder : “[T]here can be
+</BLOCK>
+<BLOCK id="DOC008.P021.B02">
+no serious doubt after Calder . . . that the state in which the victim of a tort suffers the injury may entertain a suit against the accused tortfeasor.” Id. We then concluded that “inducing the customers of an Illinois firm to drop their orders can be a tort in Illinois[,] and . . . whether or not it is a tort in Illinois, it is actionable in Illinois.” Id. at 1203. In other words, jurisdiction was proper in Janmark be- cause the defendant’s express aim was to tortiously interfere with an Illinois company’s sales and because the injury occurred
+</BLOCK>
+<BLOCK id="DOC008.P021.B03">
+in Illinois.
+</BLOCK>
+<BLOCK id="DOC008.P021.B04">
+Another case — one specifically relied on in  Janmark — is
 also instructive here.  Indianapolis Colts, Inc. v. Metropolitan
 Baltimore Football Club Ltd. Partnership , 34 F.3d 410, 412
 (7th Cir. 1994), involved a suit for copyright infringe-
@@ -305,10 +470,12 @@ ment by the National Football League’s Indianapolis
 Colts against the Canadian Football League’s Baltimore
 Colts — the latter team having been established after the
 NFL Colts moved from Baltimore to Indianapolis. We held
-that jurisdiction in Indiana was proper under  Calder [CITE_END:DOC008[P021.B04]]
+that jurisdiction in Indiana was proper under  Calder
+</BLOCK>
 
 [Page 22]
-[CITE_START:DOC008[P022.B01]] 22
+<BLOCK id="DOC008.P022.B01">
+22
 No. 08-2406 because the Indianapolis team’s injury occurred in that
 state and because the cable-television broadcasts of the
 Canadian team’s games could be considered an “entry”
@@ -318,8 +485,10 @@ California in  Calder .  Id.  We noted that in  Calder  and in
 other cases finding jurisdiction based on the  Calder  ap-
 proach, “the defendant had done more than brought
 about an injury to an interest located in a particular
-state.”  Id. [CITE_END:DOC008[P022.B01]]
-[CITE_START:DOC008[P022.B02]] Janmark  is hard to reconcile with  Wallace  and to a lesser
+state.”  Id.
+</BLOCK>
+<BLOCK id="DOC008.P022.B02">
+Janmark  is hard to reconcile with  Wallace  and to a lesser
 extent, with  Indianapolis Colts — at least if  Janmark  is under-
 stood as broadly authorizing personal jurisdiction wher-
 ever a tort victim is injured.  Both  Wallace  and  Indianapolis
@@ -327,8 +496,10 @@ ever a tort victim is injured.  Both  Wallace  and  Indianapolis
 “something more” directed at that state before jurisdic-
 tion over a foreign defendant may be considered proper.
 Importantly, however, the holding in  Janmark  ultimately
-focused on more than the fact that the injury had [CITE_END:DOC008[P022.B02]]
-[CITE_START:DOC008[P022.B03]] To the extent  Janmark  is understood to hold that jurisdiction is
+focused on more than the fact that the injury had
+</BLOCK>
+<BLOCK id="DOC008.P022.B03">
+To the extent  Janmark  is understood to hold that jurisdiction is
 8 proper wherever the injury occurs, at least one of our sister
 circuits has questioned it.  See IMO Indus., Inc. , 155 F.3d at 263-64
 (“We believe [ Janmark ] interpreted  Calder  too broadly when it
@@ -338,10 +509,12 @@ tortfeasor. . . . [S]uch a broad sweep fails to accommodate
 Calder ’s emphasis on the fact that the forum must be the focal
 point of the harm and that the defendant must expressly aim
 the tortious activity at the forum.” (internal quotation marks
-and citation omitted)). [CITE_END:DOC008[P022.B03]]
+and citation omitted)).
+</BLOCK>
 
 [Page 23]
-[CITE_START:DOC008[P023.B01]] No. 08-2406
+<BLOCK id="DOC008.P023.B01">
+No. 08-2406
 23 occurred in Illinois;  Janmark ’s jurisdictional conclusion
 was premised on the Illinois-based injury  and  the fact
 that the defendant acted with the purpose of interfering
@@ -353,8 +526,10 @@ Call, Inc. (California) , 598 F. Supp. 2d 913, 919 (S.D. Ind.
 2008) (Hamilton, J.) (“In [ Janmark ], the injury was in
 Illinois, but Janmark was specifically targeted by a Cali-
 fornia company who induced a New Jersey party to
-break its contract with Janmark.”). [CITE_END:DOC008[P023.B01]]
-[CITE_START:DOC008[P023.B02]] This case involves both a forum-state injury  and  tortious
+break its contract with Janmark.”).
+</BLOCK>
+<BLOCK id="DOC008.P023.B02">
+This case involves both a forum-state injury  and  tortious
 conduct specifically directed at the forum, making the
 forum state the focal point of the tort — at least with
 respect to the individual defendants. (We will discuss
@@ -366,23 +541,39 @@ polis Colts , then the individual defendants’ use of their
 public websites to defame an Illinois-based businessman
 and exhort readers to boycott his products can likewise
 be conceptualized as an electronic “entry” into Illinois
-for jurisdictional purposes. [CITE_END:DOC008[P023.B02]]
-[CITE_START:DOC008[P023.B03]] More specifically, Dworkin, Henry, Hayes, and Mills are
+for jurisdictional purposes.
+</BLOCK>
+<BLOCK id="DOC008.P023.B03">
+More specifically, Dworkin, Henry, Hayes, and Mills are
 each alleged to have published false and defamatory
 statements about Tamburo, either on their public websites
 or in blast emails to other proprietors of online dog-
-pedigree databases. In some of these messages, readers [CITE_END:DOC008[P023.B03]]
+pedigree databases. In some of these messages, readers
+</BLOCK>
 
 [Page 24]
-[CITE_START:DOC008[P024.B01]] 24 No. 08-2406 were encouraged to boycott Tamburo’s products; in others, Tamburo’s Illinois address was supplied and readers were urged to contact and harass him. The com- plaint also alleges that Dworkin personally contacted Tamburo by email, accusing him of “theft” and demanding that he remove the “stolen” data from The Breeder’s Standard. Dworkin threatened to expose Tamburo’s “theft” to the online dog-pedigree community if he did not comply. Dworkin, Henry, Hayes, and Mills engaged in this conduct with the knowledge that Tamburo lived in Illinois and operated his business there; their affidavits do not deny this. Thus, although they [CITE_END:DOC008[P024.B01]]
-[CITE_START:DOC008[P024.B02]] acted from points outside the forum state, these defendants specifically aimed their tortious conduct at Tamburo and his business in Illinois with the knowledge that he lived, worked, and would suffer the “brunt of the injury” there. 9 These allegations suffice to establish personal jurisdic- [CITE_END:DOC008[P024.B02]]
-[CITE_START:DOC008[P024.B03]] We note the circuits are also divided on the proper way to 9 understand Calder ’s emphasis on the defendant’s knowledge of where the “brunt of the injury” would be suffered. Compare Dudnikov , 514 F.3d at 1072 (requiring the defendant to have “knowledge that the brunt of the injury would be felt in the forum state”) and IMO Indus., Inc. , 155 F.3d at 265 (same), with Yahoo! , 433 F.3d at 1207 (“[T]he ‘brunt’ of the harm need not be suffered in the forum state. If a jurisdictionally sufficient amount of harm is suffered in the forum state, [CITE_END:DOC008[P024.B03]]
-[CITE_START:DOC008[P024.B04]] it does not matter that even more harm might have been suffered in another state.”). Again, we need not enter the fray; here, the whole of the injury was suffered in Illinois, and the individual defendants knew that would be the case. As we explain later , however, the same cannot be said of Wild Systems, the Austra- lian corporate defendant. [CITE_END:DOC008[P024.B04]]
+<BLOCK id="DOC008.P024.B01">
+24 No. 08-2406 were encouraged to boycott Tamburo’s products; in others, Tamburo’s Illinois address was supplied and readers were urged to contact and harass him. The com- plaint also alleges that Dworkin personally contacted Tamburo by email, accusing him of “theft” and demanding that he remove the “stolen” data from The Breeder’s Standard. Dworkin threatened to expose Tamburo’s “theft” to the online dog-pedigree community if he did not comply. Dworkin, Henry, Hayes, and Mills engaged in this conduct with the knowledge that Tamburo lived in Illinois and operated his business there; their affidavits do not deny this. Thus, although they
+</BLOCK>
+<BLOCK id="DOC008.P024.B02">
+acted from points outside the forum state, these defendants specifically aimed their tortious conduct at Tamburo and his business in Illinois with the knowledge that he lived, worked, and would suffer the “brunt of the injury” there. 9 These allegations suffice to establish personal jurisdic-
+</BLOCK>
+<BLOCK id="DOC008.P024.B03">
+We note the circuits are also divided on the proper way to 9 understand Calder ’s emphasis on the defendant’s knowledge of where the “brunt of the injury” would be suffered. Compare Dudnikov , 514 F.3d at 1072 (requiring the defendant to have “knowledge that the brunt of the injury would be felt in the forum state”) and IMO Indus., Inc. , 155 F.3d at 265 (same), with Yahoo! , 433 F.3d at 1207 (“[T]he ‘brunt’ of the harm need not be suffered in the forum state. If a jurisdictionally sufficient amount of harm is suffered in the forum state,
+</BLOCK>
+<BLOCK id="DOC008.P024.B04">
+it does not matter that even more harm might have been suffered in another state.”). Again, we need not enter the fray; here, the whole of the injury was suffered in Illinois, and the individual defendants knew that would be the case. As we explain later , however, the same cannot be said of Wild Systems, the Austra- lian corporate defendant.
+</BLOCK>
 
 [Page 25]
-[CITE_START:DOC008[P025.B01]] No. 08-2406 25 tion over these defendants under either a broad or a more restrictive view of Calder . The Tenth Circuit’s decision in Dudnikov supports this conclusion. In Dudnikov a Connecticut-based company notified the online auction host eBay, based in California, that a line of prints featured in an eBay auction infringed its copyright. eBay responded by cancelling the auction for the prints. The online sellers of the prints lived and operated their business in Colorado; they filed a copy- right suit in Colorado against the Connecticut-based company. The district court dismissed the case for lack of personal jurisdiction. [CITE_END:DOC008[P025.B01]]
-[CITE_START:DOC008[P025.B02]] 514 F.3d at 1068-69. In a compre- hensive decision, the Tenth Circuit reversed. Although the Connecticut company’s conduct originated outside of Colorado and was technically directed at eBay in California, its express goal was to halt sales of an online auction item originating in Colorado. This satisfied Calder’ s “express aiming” requirement and was sufficient to establish personal jurisdiction over the Connecticut company in Colorado. Id. at 1075. The court offered the following analogy to help explain its decision: [CITE_END:DOC008[P025.B02]]
-[CITE_START:DOC008[P025.B03]] [The defendant’s conduct] is something like a bank
+<BLOCK id="DOC008.P025.B01">
+No. 08-2406 25 tion over these defendants under either a broad or a more restrictive view of Calder . The Tenth Circuit’s decision in Dudnikov supports this conclusion. In Dudnikov a Connecticut-based company notified the online auction host eBay, based in California, that a line of prints featured in an eBay auction infringed its copyright. eBay responded by cancelling the auction for the prints. The online sellers of the prints lived and operated their business in Colorado; they filed a copy- right suit in Colorado against the Connecticut-based company. The district court dismissed the case for lack of personal jurisdiction.
+</BLOCK>
+<BLOCK id="DOC008.P025.B02">
+514 F.3d at 1068-69. In a compre- hensive decision, the Tenth Circuit reversed. Although the Connecticut company’s conduct originated outside of Colorado and was technically directed at eBay in California, its express goal was to halt sales of an online auction item originating in Colorado. This satisfied Calder’ s “express aiming” requirement and was sufficient to establish personal jurisdiction over the Connecticut company in Colorado. Id. at 1075. The court offered the following analogy to help explain its decision:
+</BLOCK>
+<BLOCK id="DOC008.P025.B03">
+[The defendant’s conduct] is something like a bank
 shot in basketball. A player who shoots the ball off of
 the backboard intends to hit the backboard, but he
 does so in the service of his further intention of
@@ -390,15 +581,19 @@ putting the ball into the basket. Here, defendants
 intended to send the [copyright notice] to eBay in
 California, but they did so with the ultimate purpose
 of cancelling plaintiffs’ auction in Colorado. Their
-“express aim” thus can be said to have reached into [CITE_END:DOC008[P025.B03]]
+“express aim” thus can be said to have reached into
+</BLOCK>
 
 [Page 26]
-[CITE_START:DOC008[P026.B01]] 26
+<BLOCK id="DOC008.P026.B01">
+26
 No. 08-2406 Colorado in much the same way that a basketball
 player’s express aim in shooting off of the backboard
 is not simply to hit the backboard, but to make
-a basket. Id. [CITE_END:DOC008[P026.B01]]
-[CITE_START:DOC008[P026.B02]] Although the circumstances here are not easily
+a basket. Id.
+</BLOCK>
+<BLOCK id="DOC008.P026.B02">
+Although the circumstances here are not easily
 analogized to a basketball bank shot, we take the Tenth
 Circuit’s point and agree with its analysis. Here, the
 individual defendants purposely targeted Tamburo and
@@ -407,21 +602,41 @@ commercial and reputational harm on him there, even
 though their alleged defamatory and otherwise tortious
 statements were circulated more diffusely across the
 Internet.  Tortious acts aimed at a target in the forum
-10 [CITE_END:DOC008[P026.B02]]
-[CITE_START:DOC008[P026.B03]] In a case involving a stand-alone Internet-based defamation, 10 Calder might require a showing that the defendant intended to reach forum-state readers. See Young v. New Haven Advocate , 315 F.3d 256, 263 (4th Cir. 2002) (In a suit filed by a Virginia resident in Virginia district court against Connecticut newspapers for a defamatory online news article, “[s]omething more than posting and accessibility is needed . . . . The newspapers must, through the Internet postings, manifest an intent to target and focus on [forum-state] readers.”). Because the newspaper in Young — the New Haven Advocate — clearly targeted a [CITE_END:DOC008[P026.B03]]
-[CITE_START:DOC008[P026.B04]] local audience, the case suggests that when a local publication posts an article on its website, jurisdiction in another state may be proper only if the publication specifically targets forum-state readers. But the analysis may be more complex when, for example, a truly national publication, such as USA Today , is [CITE_END:DOC008[P026.B04]]
-[CITE_START:DOC008[P026.B05]] (continued...) [CITE_END:DOC008[P026.B05]]
+10
+</BLOCK>
+<BLOCK id="DOC008.P026.B03">
+In a case involving a stand-alone Internet-based defamation, 10 Calder might require a showing that the defendant intended to reach forum-state readers. See Young v. New Haven Advocate , 315 F.3d 256, 263 (4th Cir. 2002) (In a suit filed by a Virginia resident in Virginia district court against Connecticut newspapers for a defamatory online news article, “[s]omething more than posting and accessibility is needed . . . . The newspapers must, through the Internet postings, manifest an intent to target and focus on [forum-state] readers.”). Because the newspaper in Young — the New Haven Advocate — clearly targeted a
+</BLOCK>
+<BLOCK id="DOC008.P026.B04">
+local audience, the case suggests that when a local publication posts an article on its website, jurisdiction in another state may be proper only if the publication specifically targets forum-state readers. But the analysis may be more complex when, for example, a truly national publication, such as USA Today , is
+</BLOCK>
+<BLOCK id="DOC008.P026.B05">
+(continued...)
+</BLOCK>
 
 [Page 27]
-[CITE_START:DOC008[P027.B01]] No. 08-2406 27 state and undertaken for the express purpose of causing injury there are sufficient to satisfy Calder ’s express-aiming requirement. See Dudnikov , 514 F.3d at 1078 (“actions that ‘are performed for the very purpose of having their consequences felt in the forum state’ are more than sufficient to support a finding of purposeful direction under Calder ” (quoting Finley v. River N. Records, Inc. , 148 F.3d 913, 916 (8th Cir. 1998))). Accordingly, we conclude that Dworkin, Henry, Hayes, and Mills “purposefully directed” their activities at Illinois; this prerequisite for the exercise of personal jurisdiction in Illinois [CITE_END:DOC008[P027.B01]]
-[CITE_START:DOC008[P027.B02]] has been met. The same is not true, however, of Wild Systems, the Australian corporate defendant. Recall that DeJong, the owner and president of Wild Systems, allegedly [CITE_END:DOC008[P027.B02]]
-[CITE_START:DOC008[P027.B03]] (...continued) 10 sued for defamation arising out of an article on its website. In that context the Supreme Court’s decision in Keeton v. Hustler Magazine, Inc. , 465 U.S. 770 (1984), is instructive. In Keeton the Court held that New Hampshire could exercise jurisdiction over a nationally circulated magazine, based in Ohio, when an article in the magazine defamed a New York resident. Empha- sizing that the magazine “was a national publication aimed at a nationwide audience” and that it “continuously and deliber- ately exploited the [New Hampshire] market,” the Court concluded that “[t]here is no unfairness in calling [the [CITE_END:DOC008[P027.B03]]
-[CITE_START:DOC008[P027.B04]] magazine] to answer for [its] contents . . . wherever a substantial number of copies are regularly sold and distributed.” Id. We note, however, that the very broad conception of jurisdiction envi- sioned in Keeton likely applies only rarely. [CITE_END:DOC008[P027.B04]]
+<BLOCK id="DOC008.P027.B01">
+No. 08-2406 27 state and undertaken for the express purpose of causing injury there are sufficient to satisfy Calder ’s express-aiming requirement. See Dudnikov , 514 F.3d at 1078 (“actions that ‘are performed for the very purpose of having their consequences felt in the forum state’ are more than sufficient to support a finding of purposeful direction under Calder ” (quoting Finley v. River N. Records, Inc. , 148 F.3d 913, 916 (8th Cir. 1998))). Accordingly, we conclude that Dworkin, Henry, Hayes, and Mills “purposefully directed” their activities at Illinois; this prerequisite for the exercise of personal jurisdiction in Illinois
+</BLOCK>
+<BLOCK id="DOC008.P027.B02">
+has been met. The same is not true, however, of Wild Systems, the Australian corporate defendant. Recall that DeJong, the owner and president of Wild Systems, allegedly
+</BLOCK>
+<BLOCK id="DOC008.P027.B03">
+(...continued) 10 sued for defamation arising out of an article on its website. In that context the Supreme Court’s decision in Keeton v. Hustler Magazine, Inc. , 465 U.S. 770 (1984), is instructive. In Keeton the Court held that New Hampshire could exercise jurisdiction over a nationally circulated magazine, based in Ohio, when an article in the magazine defamed a New York resident. Empha- sizing that the magazine “was a national publication aimed at a nationwide audience” and that it “continuously and deliber- ately exploited the [New Hampshire] market,” the Court concluded that “[t]here is no unfairness in calling [the
+</BLOCK>
+<BLOCK id="DOC008.P027.B04">
+magazine] to answer for [its] contents . . . wherever a substantial number of copies are regularly sold and distributed.” Id. We note, however, that the very broad conception of jurisdiction envi- sioned in Keeton likely applies only rarely.
+</BLOCK>
 
 [Page 28]
-[CITE_START:DOC008[P028.B01]] 28 No. 08-2406 facilitated the posting of some of the individual defen- dants’ tortious messages on the company’s private Breedmate Yahoo! email listserve. The complaint does not say how many, nor does it describe the content of the messages that were reposted onto the listserve. It does not allege, for example, that DeJong reposted emails specifically calling for a boycott of Tamburo’s Illinois-based business. And unlike the individual defen- dants, there are no allegations that DeJong or anyone else associated with Wild Systems acted with the knowl- edge that Tamburo operated his business in Illinois or with the specific purpose [CITE_END:DOC008[P028.B01]]
-[CITE_START:DOC008[P028.B02]] of inflicting injury there. In short, we cannot conclude that DeJong’s reposting of an unspecified number of messages of unspecified (but tortious) content to a private listserve of unspecified scope and reach is enough to establish that Wild Systems “expressly aimed” its allegedly tortious con- duct at Illinois. As such, the claims against Wild Systems were properly dismissed for lack of personal jurisdiction. [CITE_END:DOC008[P028.B02]]
-[CITE_START:DOC008[P028.B03]] b.
+<BLOCK id="DOC008.P028.B01">
+28 No. 08-2406 facilitated the posting of some of the individual defen- dants’ tortious messages on the company’s private Breedmate Yahoo! email listserve. The complaint does not say how many, nor does it describe the content of the messages that were reposted onto the listserve. It does not allege, for example, that DeJong reposted emails specifically calling for a boycott of Tamburo’s Illinois-based business. And unlike the individual defen- dants, there are no allegations that DeJong or anyone else associated with Wild Systems acted with the knowl- edge that Tamburo operated his business in Illinois or with the specific purpose
+</BLOCK>
+<BLOCK id="DOC008.P028.B02">
+of inflicting injury there. In short, we cannot conclude that DeJong’s reposting of an unspecified number of messages of unspecified (but tortious) content to a private listserve of unspecified scope and reach is enough to establish that Wild Systems “expressly aimed” its allegedly tortious con- duct at Illinois. As such, the claims against Wild Systems were properly dismissed for lack of personal jurisdiction.
+</BLOCK>
+<BLOCK id="DOC008.P028.B03">
+b.
 Injury “arises out of” the defendants’ contacts
 with forum state Our conclusion that the individual defendants’ conduct
 was “purposely directed” at the forum state does not end
@@ -429,12 +644,18 @@ the jurisdictional inquiry. Tamburo’s injury must “arise
 out of” or “relate to” the conduct that comprises the
 defendants’ contacts with the forum.  See Burger King , 471
 U.S. at 472. The Supreme Court has not elaborated on this
-requirement,  see Helicopteros , 466 U.S. at 415 n.10, and the [CITE_END:DOC008[P028.B03]]
+requirement,  see Helicopteros , 466 U.S. at 415 n.10, and the
+</BLOCK>
 
 [Page 29]
-[CITE_START:DOC008[P029.B01]] No. 08-2406 29 occasional difficulty in applying it has led to conflict among the circuits. 11 The First Circuit has held that at least with respect to intentional tort claims, the defendant’s contacts with the forum must constitute both the cause in fact and the proximate cause of the injury. Mass. Sch. of Law at Andover, Inc. v. Am. Bar Ass’n , 142 F.3d 26, 35 (1st Cir. 1998). The Ninth and Fifth Circuits, on the other hand, require only that the contacts constitute a but-for cause of the injury. Doe v. Am. Nat’l Red Cross , 112 F.3d 1048, [CITE_END:DOC008[P029.B01]]
-[CITE_START:DOC008[P029.B02]] 1051 n.7 (9th Cir. 1997) ; Prejean v. Sonatrach, Inc. , 652 F.2d 1260, 1270 n.21 (5th Cir. 1981); see generally Dudnikov , 514 F.3d at 1078 (outlining this conflict); Miller Yacht Sales, Inc. v. Smith , 384 F.3d 93, 102-05 (3d Cir. 2004) (Scirica, C.J., concurring in part and dissenting in part) (same). [CITE_END:DOC008[P029.B02]]
-[CITE_START:DOC008[P029.B03]] The Third Circuit has taken a middle-ground approach,
+<BLOCK id="DOC008.P029.B01">
+No. 08-2406 29 occasional difficulty in applying it has led to conflict among the circuits. 11 The First Circuit has held that at least with respect to intentional tort claims, the defendant’s contacts with the forum must constitute both the cause in fact and the proximate cause of the injury. Mass. Sch. of Law at Andover, Inc. v. Am. Bar Ass’n , 142 F.3d 26, 35 (1st Cir. 1998). The Ninth and Fifth Circuits, on the other hand, require only that the contacts constitute a but-for cause of the injury. Doe v. Am. Nat’l Red Cross , 112 F.3d 1048,
+</BLOCK>
+<BLOCK id="DOC008.P029.B02">
+1051 n.7 (9th Cir. 1997) ; Prejean v. Sonatrach, Inc. , 652 F.2d 1260, 1270 n.21 (5th Cir. 1981); see generally Dudnikov , 514 F.3d at 1078 (outlining this conflict); Miller Yacht Sales, Inc. v. Smith , 384 F.3d 93, 102-05 (3d Cir. 2004) (Scirica, C.J., concurring in part and dissenting in part) (same).
+</BLOCK>
+<BLOCK id="DOC008.P029.B03">
+The Third Circuit has taken a middle-ground approach,
 holding that “specific jurisdiction requires a closer and
 more direct causal connection than that provided by the
 but-for test,” but has not adopted a precise rule, opting
@@ -444,25 +665,43 @@ Because personal jurisdiction can be conceptualized as a
 quid pro quo by which the defendant submits to the
 forum’s jurisdiction in exchange for the benefit of its
 laws, the Third Circuit suggests that “[t]he causal con-
-nection can be somewhat looser than the tort concept of [CITE_END:DOC008[P029.B03]]
-[CITE_START:DOC008[P029.B04]] The Supreme Court granted certiorari on this issue in
+nection can be somewhat looser than the tort concept of
+</BLOCK>
+<BLOCK id="DOC008.P029.B04">
+The Supreme Court granted certiorari on this issue in
 11 Carnival Cruise Lines, Inc. v. Shute , 499 U.S. 585, 589 (1991), but
-decided the case on other grounds. [CITE_END:DOC008[P029.B04]]
+decided the case on other grounds.
+</BLOCK>
 
 [Page 30]
-[CITE_START:DOC008[P030.B01]] 30 No. 08-2406 proximate causation, but it must nonetheless be intimate enough to keep the quid pro quo proportional and per- sonal jurisdiction reasonably foreseeable .” Id. (citation omitted). We have not weighed in on this conflict and need not do so here. Under even the most rigorous approach to the 12 determination of whether the plaintiff’s injury “arises out of” the defendant’s contacts with the forum state, Tamburo’s injury clearly does. We have already concluded that Dworkin, Henry, Hayes, and Mills expressly aimed their allegedly tortious conduct at Tamburo and his Illinois-based business for the purpose of causing him [CITE_END:DOC008[P030.B01]]
-[CITE_START:DOC008[P030.B02]] injury there; these “contacts” with the forum state are the cause in fact and the legal cause of Tamburo’s in- jury. That is, Tamburo’s claims arise directly out of the individual defendants’ contacts with Illinois. See RAR , 107 F.3d at 1278 (in a contract case, holding that “the action must directly arise out of the specific contacts between [CITE_END:DOC008[P030.B02]]
-[CITE_START:DOC008[P030.B03]] An additional approach, adopted by the Second Circuit, is a 12 sliding-scale analysis that considers the connection between the contacts and the lawsuit. See Chew v. Dietrich , 143 F.3d 24, 29 (2d Cir. 1998). Under this analytical framework, “the rela- tionship between the contacts and the suit can be weaker when the contacts themselves are more extensive.” Dudnikov , 514 F.3d at 1078 (discussing this approach). We rejected this approach in RAR , instead concluding that aggregating con- tacts in this manner would not provide a defendant adequate notice that a particular transaction or act would subject him to [CITE_END:DOC008[P030.B03]]
-[CITE_START:DOC008[P030.B04]] the forum state’s jurisdiction. 107 F.3d at 1277; see also Hyatt Int’l Corp. v. Coco , 302 F.3d 707, 716-17 (7th Cir. 2002). [CITE_END:DOC008[P030.B04]]
+<BLOCK id="DOC008.P030.B01">
+30 No. 08-2406 proximate causation, but it must nonetheless be intimate enough to keep the quid pro quo proportional and per- sonal jurisdiction reasonably foreseeable .” Id. (citation omitted). We have not weighed in on this conflict and need not do so here. Under even the most rigorous approach to the 12 determination of whether the plaintiff’s injury “arises out of” the defendant’s contacts with the forum state, Tamburo’s injury clearly does. We have already concluded that Dworkin, Henry, Hayes, and Mills expressly aimed their allegedly tortious conduct at Tamburo and his Illinois-based business for the purpose of causing him
+</BLOCK>
+<BLOCK id="DOC008.P030.B02">
+injury there; these “contacts” with the forum state are the cause in fact and the legal cause of Tamburo’s in- jury. That is, Tamburo’s claims arise directly out of the individual defendants’ contacts with Illinois. See RAR , 107 F.3d at 1278 (in a contract case, holding that “the action must directly arise out of the specific contacts between
+</BLOCK>
+<BLOCK id="DOC008.P030.B03">
+An additional approach, adopted by the Second Circuit, is a 12 sliding-scale analysis that considers the connection between the contacts and the lawsuit. See Chew v. Dietrich , 143 F.3d 24, 29 (2d Cir. 1998). Under this analytical framework, “the rela- tionship between the contacts and the suit can be weaker when the contacts themselves are more extensive.” Dudnikov , 514 F.3d at 1078 (discussing this approach). We rejected this approach in RAR , instead concluding that aggregating con- tacts in this manner would not provide a defendant adequate notice that a particular transaction or act would subject him to
+</BLOCK>
+<BLOCK id="DOC008.P030.B04">
+the forum state’s jurisdiction. 107 F.3d at 1277; see also Hyatt Int’l Corp. v. Coco , 302 F.3d 707, 716-17 (7th Cir. 2002).
+</BLOCK>
 
 [Page 31]
-[CITE_START:DOC008[P031.B01]] No. 08-2406
+<BLOCK id="DOC008.P031.B01">
+No. 08-2406
 31 the defendant and the forum state’ ” (quoting  Sawtelle v.
 Farrell , 70 F.3d 1381, 1389 (1st Cir. 1999) (emphasis
-added in  RAR ))). [CITE_END:DOC008[P031.B01]]
-[CITE_START:DOC008[P031.B02]] c. Traditional notions of fair play and substantial justice Our final inquiry is whether Illinois’ exercise of personal jurisdiction over Dworkin, Henry, Hayes, and Mills would offend traditional notions of fair play and substantial justice. See Int’l Shoe , 326 U.S. at 316. The following factors are relevant: “the burden on the defendant, the forum State’s interest in adjudicating the dispute, the plaintiff’s interest in obtaining convenient and effective relief, the interstate judicial system’s interest in obtaining the most efficient resolution of controversies, and the shared interest of the several States in furthering funda- mental substantive social policies .” Burger [CITE_END:DOC008[P031.B02]]
-[CITE_START:DOC008[P031.B03]] King , 471 U.S. at 477 (internal quotation marks omitted). Applying these factors here, we see no unfairness in permitting this suit to proceed against the individual defendants in Illinois. [CITE_END:DOC008[P031.B03]]
-[CITE_START:DOC008[P031.B04]] First, Illinois has a strong interest in providing a
+added in  RAR ))).
+</BLOCK>
+<BLOCK id="DOC008.P031.B02">
+c. Traditional notions of fair play and substantial justice Our final inquiry is whether Illinois’ exercise of personal jurisdiction over Dworkin, Henry, Hayes, and Mills would offend traditional notions of fair play and substantial justice. See Int’l Shoe , 326 U.S. at 316. The following factors are relevant: “the burden on the defendant, the forum State’s interest in adjudicating the dispute, the plaintiff’s interest in obtaining convenient and effective relief, the interstate judicial system’s interest in obtaining the most efficient resolution of controversies, and the shared interest of the several States in furthering funda- mental substantive social policies .” Burger
+</BLOCK>
+<BLOCK id="DOC008.P031.B03">
+King , 471 U.S. at 477 (internal quotation marks omitted). Applying these factors here, we see no unfairness in permitting this suit to proceed against the individual defendants in Illinois.
+</BLOCK>
+<BLOCK id="DOC008.P031.B04">
+First, Illinois has a strong interest in providing a
 forum for its residents and local businesses to seek redress
 for tort injuries suffered within the state and inflicted
 by out-of-state actors. Although Tamburo could have
@@ -470,17 +709,26 @@ sued the individual defendants in their home jurisdic-
 tions, that would have been cumbersome and impractical;
 the American defendants live in separate states and
 Dworkin lives in Canada. Neither Canada nor any of the
-states where the American defendants live (Colorado, [CITE_END:DOC008[P031.B04]]
+states where the American defendants live (Colorado,
+</BLOCK>
 
 [Page 32]
-[CITE_START:DOC008[P032.B01]] 32 No. 08-2406 Michigan, or Ohio) has a substantial interest at stake here. And it would be unreasonable to expect Tamburo to file separate lawsuits to give each defendant the privilege of defending this litigation in his or her home state when jurisdiction is otherwise proper in Illinois. Under these circumstances, it is far more reasonable to conclude that the defendants should anticipate being haled into court in Tamburo’s home state of Illinois than a court in a codefendant’s home jurisdiction. A single suit in Illinois also promotes the most efficient resolution of these claims. See Logan Prods., Inc. v. [CITE_END:DOC008[P032.B01]]
-[CITE_START:DOC008[P032.B02]] Optibase, Inc. , 103 F.3d 49, 54 (7th Cir. 1996). Accordingly, we conclude that the exer- cise of personal jurisdiction in Illinois over Dworkin, Henry, Hayes, and Mills comports with traditional notions of fair play and substantial justice. [CITE_END:DOC008[P032.B02]]
-[CITE_START:DOC008[P032.B03]] For the foregoing reasons, we A FFIRM  the district court’s
+<BLOCK id="DOC008.P032.B01">
+32 No. 08-2406 Michigan, or Ohio) has a substantial interest at stake here. And it would be unreasonable to expect Tamburo to file separate lawsuits to give each defendant the privilege of defending this litigation in his or her home state when jurisdiction is otherwise proper in Illinois. Under these circumstances, it is far more reasonable to conclude that the defendants should anticipate being haled into court in Tamburo’s home state of Illinois than a court in a codefendant’s home jurisdiction. A single suit in Illinois also promotes the most efficient resolution of these claims. See Logan Prods., Inc. v.
+</BLOCK>
+<BLOCK id="DOC008.P032.B02">
+Optibase, Inc. , 103 F.3d 49, 54 (7th Cir. 1996). Accordingly, we conclude that the exer- cise of personal jurisdiction in Illinois over Dworkin, Henry, Hayes, and Mills comports with traditional notions of fair play and substantial justice.
+</BLOCK>
+<BLOCK id="DOC008.P032.B03">
+For the foregoing reasons, we A FFIRM  the district court’s
 order dismissing all counts against Wild Systems for lack
 of personal jurisdiction and also A FFIRM  the dismissal of
 the antitrust claims against all defendants for failure to
 state a claim. We R EVERSE  the district court’s order dis-
 missing the state-law tort claims against Dworkin, Henry,
 Hayes, and Mills for lack of personal jurisdiction and
-R EMAND  the case for further proceedings. [CITE_END:DOC008[P032.B03]]
-[CITE_START:DOC008[P032.B04]] 4-8-10 [CITE_END:DOC008[P032.B04]]
+R EMAND  the case for further proceedings.
+</BLOCK>
+<BLOCK id="DOC008.P032.B04">
+4-8-10
+</BLOCK>

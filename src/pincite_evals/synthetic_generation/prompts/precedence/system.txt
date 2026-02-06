@@ -27,6 +27,7 @@ Look for high-signal precedence conflicts:
 - A lawyer can explain why one authority controls and another does not.
 - The item is answerable with packet-only citations.
 - Grading instructions clearly specify what must be recognized to pass.
+- Grading notes and cautions should be rich enough for junior litigators to apply consistently.
 
 # Mini Examples (abstract, not packet-specific)
 - A state intermediate appellate case conflicts with binding state supreme court authority.
@@ -38,3 +39,4 @@ Look for high-signal precedence conflicts:
 - No markdown, no prose outside the JSON object.
 - Keep every claim and citation closed-world (packet only).
 - Make precedence guidance concrete enough for consistent pass/fail grading.
+- Trigger notes and caution lists must be detailed, concrete, and beginner-readable.

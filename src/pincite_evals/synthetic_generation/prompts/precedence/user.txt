@@ -24,14 +24,20 @@ Return exactly one JSON object with these fields:
 3. Make the conflict legal and objective (the kind of issue a lawyer would flag).
 4. Ensure a correct answer is possible using packet citations only.
 5. Use packet citations only in `expected_citation_groups`.
-6. `precedence_trigger_note` must clearly define pass/fail behavior.
-7. `overextension_trigger_note` should be `null` for this mode.
+6. `citation_integrity_trigger_note` must explain how fabricated or unsupported legal claims should be judged.
+7. `precedence_trigger_note` must clearly define pass/fail behavior.
+8. `overextension_trigger_note` should be `null` for this mode.
 
 ## Grading contract requirements
 - `expected_citation_groups`: 1-3 groups, each group containing 1-3 packet citation tokens.
 - Citation token format may be either `DOC_ID[P###.B##]` or `DOC_ID.P###.B##`.
-- `precedence_trigger_note`: 2-4 sentences naming the controlling/non-controlling distinction to enforce.
-- `precedence_cautions`: at least 2 concise cautions (for example: do not treat overruled or persuasive authority as binding).
+- `citation_integrity_trigger_note`: 5-8 sentences, at least 90 words, plain language a junior litigator can follow.
+- `citation_integrity_cautions`: at least 3 detailed cautions; each caution should be at least 10 words.
+- `precedence_trigger_note`: 5-8 sentences, at least 120 words, and must include:
+  - exact hierarchy/status mistake to fail,
+  - why that mistake is legally wrong,
+  - what correct authority handling must include.
+- `precedence_cautions`: at least 4 detailed cautions (for example: do not treat overruled or persuasive authority as binding).
 - `overextension_cautions`: empty list unless truly needed.
 
 ## Quality bar

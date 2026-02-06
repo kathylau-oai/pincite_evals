@@ -1,6 +1,9 @@
 [Page 1]
-[CITE_START:DOC006[P001.B01]] FOR PUBLICATION [CITE_END:DOC006[P001.B01]]
-[CITE_START:DOC006[P001.B02]] UNITED STATES COURT OF APPEALS
+<BLOCK id="DOC006.P001.B01">
+FOR PUBLICATION
+</BLOCK>
+<BLOCK id="DOC006.P001.B02">
+UNITED STATES COURT OF APPEALS
 FOR THE NINTH CIRCUIT
 
 S TEPHANIE  B ROWN ,
@@ -22,28 +25,44 @@ corporation,
 Defendant.   Appeal from the United States District Court
 for the Central District of California
 Nora M. Manella, District Judge, Presiding Argued and Submitted
-April 7, 2005—Pasadena, California [CITE_END:DOC006[P001.B02]]
-[CITE_START:DOC006[P001.B03]] Filed December 6, 2005 Before: Thomas G. Nelson, William A. Fletcher, and
-Carlos T. Bea, Circuit Judges. Opinion by Judge William A. Fletcher [CITE_END:DOC006[P001.B03]]
-[CITE_START:DOC006[P001.B04]] 15753 [CITE_END:DOC006[P001.B04]]
+April 7, 2005—Pasadena, California
+</BLOCK>
+<BLOCK id="DOC006.P001.B03">
+Filed December 6, 2005 Before: Thomas G. Nelson, William A. Fletcher, and
+Carlos T. Bea, Circuit Judges. Opinion by Judge William A. Fletcher
+</BLOCK>
+<BLOCK id="DOC006.P001.B04">
+15753
+</BLOCK>
 
 [Page 2]
-[CITE_START:DOC006[P002.B01]] 15755
-B ROWN  v. D ILLARD ’ S COUNSEL [CITE_END:DOC006[P002.B01]]
-[CITE_START:DOC006[P002.B02]] David Raizman, Bryan Cave LLP, Santa Monica, California,
-for the appellant. [CITE_END:DOC006[P002.B02]]
+<BLOCK id="DOC006.P002.B01">
+15755
+B ROWN  v. D ILLARD ’ S COUNSEL
+</BLOCK>
+<BLOCK id="DOC006.P002.B02">
+David Raizman, Bryan Cave LLP, Santa Monica, California,
+for the appellant.
+</BLOCK>
 
 [Page 3]
-[CITE_START:DOC006[P003.B01]] 15756
-B ROWN  v. D ILLARD ’ S Lisa A. Jordan, Van Nuys, California, for the appellee. [CITE_END:DOC006[P003.B01]]
-[CITE_START:DOC006[P003.B02]] OPINION [CITE_END:DOC006[P003.B02]]
-[CITE_START:DOC006[P003.B03]] W. FLETCHER, Circuit Judge: Defendants Dillard’s Department Store and Dillard’s Store
+<BLOCK id="DOC006.P003.B01">
+15756
+B ROWN  v. D ILLARD ’ S Lisa A. Jordan, Van Nuys, California, for the appellee.
+</BLOCK>
+<BLOCK id="DOC006.P003.B02">
+OPINION
+</BLOCK>
+<BLOCK id="DOC006.P003.B03">
+W. FLETCHER, Circuit Judge: Defendants Dillard’s Department Store and Dillard’s Store
 Services (collectively “Dillard’s”) require employees to agree
 to arbitrate employment-related claims under what it calls
 “Dillard’s Fairness in Action Program.” Plaintiff Stephanie
 Brown was an employee at one of Dillard’s department stores
-in California until she was fired. [CITE_END:DOC006[P003.B03]]
-[CITE_START:DOC006[P003.B04]] Brown filed a notice of intent to arbitrate a wrongful termi-
+in California until she was fired.
+</BLOCK>
+<BLOCK id="DOC006.P003.B04">
+Brown filed a notice of intent to arbitrate a wrongful termi-
 nation claim under the Fairness in Action Program. Dillard’s
 refused to participate in the arbitration proceedings. Brown
 then filed suit in Los Angeles County Superior Court. At that
@@ -52,8 +71,10 @@ Dillard’s removed Brown’s suit to federal court and moved to
 compel arbitration. Assuming the truth of Brown’s allega-
 tions, the district court denied the motion, holding that the
 arbitration agreement was unconscionable and thus unen-
-forceable under California law. [CITE_END:DOC006[P003.B04]]
-[CITE_START:DOC006[P003.B05]] We conditionally affirm on a different ground, and we
+forceable under California law.
+</BLOCK>
+<BLOCK id="DOC006.P003.B05">
+We conditionally affirm on a different ground, and we
 remand to the district court. We do not express a view on
 whether the agreement was unconscionable under California
 law. Rather, assuming the truth of Brown’s allegations, we
@@ -62,15 +83,23 @@ ment with its employees, it must itself participate in properly
 initiated arbitration proceedings or forego its right to compel
 arbitration. That is, we hold that Dillard’s cannot compel
 Brown to honor an arbitration agreement of which it is itself
-in material breach. [CITE_END:DOC006[P003.B05]]
-[CITE_START:DOC006[P003.B06]] I [CITE_END:DOC006[P003.B06]]
-[CITE_START:DOC006[P003.B07]] This case comes to us in a somewhat unusual procedural
-posture. After Dillard’s removed Brown’s suit to federal dis- [CITE_END:DOC006[P003.B07]]
+in material breach.
+</BLOCK>
+<BLOCK id="DOC006.P003.B06">
+I
+</BLOCK>
+<BLOCK id="DOC006.P003.B07">
+This case comes to us in a somewhat unusual procedural
+posture. After Dillard’s removed Brown’s suit to federal dis-
+</BLOCK>
 
 [Page 4]
-[CITE_START:DOC006[P004.B01]] 15757
-B ROWN  v. D ILLARD ’ S [CITE_END:DOC006[P004.B01]]
-[CITE_START:DOC006[P004.B02]] trict court, it moved to compel arbitration. The district court
+<BLOCK id="DOC006.P004.B01">
+15757
+B ROWN  v. D ILLARD ’ S
+</BLOCK>
+<BLOCK id="DOC006.P004.B02">
+trict court, it moved to compel arbitration. The district court
 had before it plaintiff’s complaint and defendants’ answer.
 Defendants’ answer admitted and denied a few of plaintiff’s
 allegations. For most allegations, it asserted that it lacked suf-
@@ -78,26 +107,36 @@ ficient information to admit or deny. The district court also
 had before it declarations from five individuals — Brown,
 Brown’s attorney, an employee from Dillard’s Legal Office,
 the Dillard’s store manager, and an attorney representing Dil-
-lard’s in this litigation. [CITE_END:DOC006[P004.B02]]
-[CITE_START:DOC006[P004.B03]] For the limited purpose of ruling on Dillard’s motion to
+lard’s in this litigation.
+</BLOCK>
+<BLOCK id="DOC006.P004.B03">
+For the limited purpose of ruling on Dillard’s motion to
 compel arbitration, the district court assumed the truth of alle-
 gations in plaintiff’s complaint. For the limited purpose of
 reviewing the district court’s ruling, we, too, assume the truth
 of those allegations. To the degree that our conclusion that
 Dillard’s breached its arbitration agreement with Brown
 depends on disputed facts, Dillard’s is free on remand to con-
-test those facts. [CITE_END:DOC006[P004.B03]]
-[CITE_START:DOC006[P004.B04]] Stephanie Brown started working for Dillard’s Store Ser- vices as a sales associate in the Juniors Department at a Dil- lard’s Department Store in Palmdale, California, sometime around April 2001. On July 21, 2001, Brown was summoned to the office of her supervisor, Andrea Howard, along with several coworkers. Howard told the employees that the com- pany was starting the “Dillard’s Fairness in Action Program.” In effect, the Fairness in Action Program is an arbitration agreement, which employees like Brown were deemed to have accepted simply by continuing their employment. A guide to the program told employees that “[t]he Fairness [CITE_END:DOC006[P004.B04]]
-[CITE_START:DOC006[P004.B05]] in Action Program is fast, straightforward, and much less expen- sive than taking a dispute to a court of law — but most of all, it is fair to both you and Dillard’s.” (Emphasis in original.) The guide further explained that [a]cross the country, many companies and their employees are electing to settle disputes using this method, and in doing so are avoiding long, drawn- [CITE_END:DOC006[P004.B05]]
+test those facts.
+</BLOCK>
+<BLOCK id="DOC006.P004.B04">
+Stephanie Brown started working for Dillard’s Store Ser- vices as a sales associate in the Juniors Department at a Dil- lard’s Department Store in Palmdale, California, sometime around April 2001. On July 21, 2001, Brown was summoned to the office of her supervisor, Andrea Howard, along with several coworkers. Howard told the employees that the com- pany was starting the “Dillard’s Fairness in Action Program.” In effect, the Fairness in Action Program is an arbitration agreement, which employees like Brown were deemed to have accepted simply by continuing their employment. A guide to the program told employees that “[t]he Fairness
+</BLOCK>
+<BLOCK id="DOC006.P004.B05">
+in Action Program is fast, straightforward, and much less expen- sive than taking a dispute to a court of law — but most of all, it is fair to both you and Dillard’s.” (Emphasis in original.) The guide further explained that [a]cross the country, many companies and their employees are electing to settle disputes using this method, and in doing so are avoiding long, drawn-
+</BLOCK>
 
 [Page 5]
-[CITE_START:DOC006[P005.B01]] 15758
+<BLOCK id="DOC006.P005.B01">
+15758
 B ROWN  v. D ILLARD ’ S out court battles where attorney’s fees may be over-
 whelming for both parties. And more than just sav-
 ing time and money, the Fairness in Action Program
 assures that each party gets a fair deal — that’s what
-justice is about, after all. [CITE_END:DOC006[P005.B01]]
-[CITE_START:DOC006[P005.B02]] Contrary to the guide’s representation, Dillard’s did not
+justice is about, after all.
+</BLOCK>
+<BLOCK id="DOC006.P005.B02">
+Contrary to the guide’s representation, Dillard’s did not
 allow its employees to “elect” — in the sense of “choose
 voluntarily”— to settle disputes through arbitration. Rather,
 they were required to arbitrate. Howard told Brown and the
@@ -110,8 +149,10 @@ shall be subject to the RULES OF ARBITRATION
 (the “Rules”) described below. Employees are
 deemed to have agreed to the provisions of the Rules
 by virtue of accepting employment with the Com-
-pany and/or continuing employment therewith. [CITE_END:DOC006[P005.B02]]
-[CITE_START:DOC006[P005.B03]] One of Brown’s coworkers, Monika Gonzales, asked How-
+pany and/or continuing employment therewith.
+</BLOCK>
+<BLOCK id="DOC006.P005.B03">
+One of Brown’s coworkers, Monika Gonzales, asked How-
 ard if she could take the agreement home and discuss it with
 her parents. Howard responded that Gonzalez’s job would be
 in jeopardy if she did not sign the acknowledgment form
@@ -119,18 +160,28 @@ immediately. Along with her coworkers, Brown signed the
 form acknowledging receipt of the rules for arbitration and
 returned it to Howard. Brown says that she was not provided
 with a copy of the rules. The meeting with Howard lasted less
-than five minutes. [CITE_END:DOC006[P005.B03]]
-[CITE_START:DOC006[P005.B04]] Dillard’s admits that Brown worked for its Palmdale store,
+than five minutes.
+</BLOCK>
+<BLOCK id="DOC006.P005.B04">
+Dillard’s admits that Brown worked for its Palmdale store,
 that she signed the “Fairness in Action Program” arbitration
 agreement, and that she gave it to Howard. At the Palmdale store, Dillard’s required employees to
-“punch” in and out on a computer system at the beginning and [CITE_END:DOC006[P005.B04]]
+“punch” in and out on a computer system at the beginning and
+</BLOCK>
 
 [Page 6]
-[CITE_START:DOC006[P006.B01]] 15759
-B ROWN  v. D ILLARD ’ S [CITE_END:DOC006[P006.B01]]
-[CITE_START:DOC006[P006.B02]] end of their shifts. At shift changes, many people needed to use the computer, so employees were given a six-minute grace period during which they could clock in and still be considered on time. The computer system was frequently down, so a stack of paper time sheets next to the computer served as a backup. The paper time sheets allowed Dillard’s to manipulate employees’ work hours. When working the evening shift, Brown was scheduled to get off work at 9:15 p.m., but she was often not dismissed until as much as forty minutes later when the store was fully cleaned. [CITE_END:DOC006[P006.B02]]
-[CITE_START:DOC006[P006.B03]] Brown would fill in a time sheet on some of these occasions, stating that she had stopped working at 9:15 p.m., because Dillard’s did not want her to qualify for overtime pay. [CITE_END:DOC006[P006.B03]]
-[CITE_START:DOC006[P006.B04]] On April 29, 2002, Brown informed Howard that she had
+<BLOCK id="DOC006.P006.B01">
+15759
+B ROWN  v. D ILLARD ’ S
+</BLOCK>
+<BLOCK id="DOC006.P006.B02">
+end of their shifts. At shift changes, many people needed to use the computer, so employees were given a six-minute grace period during which they could clock in and still be considered on time. The computer system was frequently down, so a stack of paper time sheets next to the computer served as a backup. The paper time sheets allowed Dillard’s to manipulate employees’ work hours. When working the evening shift, Brown was scheduled to get off work at 9:15 p.m., but she was often not dismissed until as much as forty minutes later when the store was fully cleaned.
+</BLOCK>
+<BLOCK id="DOC006.P006.B03">
+Brown would fill in a time sheet on some of these occasions, stating that she had stopped working at 9:15 p.m., because Dillard’s did not want her to qualify for overtime pay.
+</BLOCK>
+<BLOCK id="DOC006.P006.B04">
+On April 29, 2002, Brown informed Howard that she had
 received a job offer from an employer called Countrywide.
 Brown told Howard that she intended to work at both Dil-
 lard’s and Countrywide so that she could save money to
@@ -140,27 +191,43 @@ day, Brown spoke to the store manager, Tricia Alvillar, who
 told her that she was not willing to help Brown arrange a
 schedule that would allow her to work both jobs. Brown told
 the store manager that she would ask Countrywide to accom-
-modate her Dillard’s work schedule. [CITE_END:DOC006[P006.B04]]
-[CITE_START:DOC006[P006.B05]] On May 2, 2002, Brown received a phone call from an assistant to Howard. Brown was not scheduled to work that evening, but the assistant told her the store was shorthanded and asked her to work the evening shift. Brown agreed to report to work at 6 p.m. Brown says that she was told not to report before 6 p.m., because, if she did, she would work enough hours to qualify for overtime. Brown says that she arrived at the store at 5:58 p.m. and that upon arriving she spoke to a coworker (described only as “Sue”) whose shift ended [CITE_END:DOC006[P006.B05]]
-[CITE_START:DOC006[P006.B06]] at 6:00 p.m. Brown clocked in on the computer. At work the following day, Brown was asked to report to Sue Porter, secretary to the operations manager at the store. [CITE_END:DOC006[P006.B06]]
+modate her Dillard’s work schedule.
+</BLOCK>
+<BLOCK id="DOC006.P006.B05">
+On May 2, 2002, Brown received a phone call from an assistant to Howard. Brown was not scheduled to work that evening, but the assistant told her the store was shorthanded and asked her to work the evening shift. Brown agreed to report to work at 6 p.m. Brown says that she was told not to report before 6 p.m., because, if she did, she would work enough hours to qualify for overtime. Brown says that she arrived at the store at 5:58 p.m. and that upon arriving she spoke to a coworker (described only as “Sue”) whose shift ended
+</BLOCK>
+<BLOCK id="DOC006.P006.B06">
+at 6:00 p.m. Brown clocked in on the computer. At work the following day, Brown was asked to report to Sue Porter, secretary to the operations manager at the store.
+</BLOCK>
 
 [Page 7]
-[CITE_START:DOC006[P007.B01]] 15760
+<BLOCK id="DOC006.P007.B01">
+15760
 B ROWN  v. D ILLARD ’ S Porter asked Brown what time she had arrived at work the day
 before, and she asked her to fill out a time entry form. Brown
 told Porter that she had clocked in on the computer and asked
 why she needed to fill in a paper form. Porter told Brown that
 the “punch had not taken,” and told Brown that it was “no big
 deal.” This was the first time that Brown had been summoned
-to complete a time entry form. [CITE_END:DOC006[P007.B01]]
-[CITE_START:DOC006[P007.B02]] Dillard’s admits that Brown spoke to Alvillar about her new job, and states that Brown told Alvillar that she would discuss scheduling conflicts between the two jobs with her new employer. Dillard’s also admits that Porter’s shift ended at 6:00 p.m. on May 2, and that Porter saw Brown arrive at work that evening. Dillard’s also admits that Brown was asked to report to Porter on May 3, and that she was asked to fill out a time entry form on the ground that the computer “had not recorded each of her arrivals and departures on May 2.” Later that [CITE_END:DOC006[P007.B02]]
-[CITE_START:DOC006[P007.B03]] same day, Brown was summoned to the office of Karen Burke, the store’s operation manager. Howard and her assistant were present upon Brown’s arrival. Burke told Brown that they had reviewed a videotape of the previous day and that she had arrived at 6:10 p.m., not 6:00 p.m. as she had recorded on the time form. Burke told Brown that she was being terminated for falsifying documents to defraud Dillard’s out of pay for ten minutes of time. Burke told Brown that “people like you cost the company money.” When Brown began to cry, Burke said, “You already got another [CITE_END:DOC006[P007.B03]]
-[CITE_START:DOC006[P007.B04]] job, right? Then everything should be okay. This won’t be a problem for you will it?” Dillard’s admits that Brown met with Burke on May 3, and that Burke asked Brown what time she had arrived at work on the previous evening. Dillard’s admits that when Brown replied that she had arrived at 6:00 p.m., Burke responded that she had reviewed the videotape of her arrival and told her that [CITE_END:DOC006[P007.B04]]
+to complete a time entry form.
+</BLOCK>
+<BLOCK id="DOC006.P007.B02">
+Dillard’s admits that Brown spoke to Alvillar about her new job, and states that Brown told Alvillar that she would discuss scheduling conflicts between the two jobs with her new employer. Dillard’s also admits that Porter’s shift ended at 6:00 p.m. on May 2, and that Porter saw Brown arrive at work that evening. Dillard’s also admits that Brown was asked to report to Porter on May 3, and that she was asked to fill out a time entry form on the ground that the computer “had not recorded each of her arrivals and departures on May 2.” Later that
+</BLOCK>
+<BLOCK id="DOC006.P007.B03">
+same day, Brown was summoned to the office of Karen Burke, the store’s operation manager. Howard and her assistant were present upon Brown’s arrival. Burke told Brown that they had reviewed a videotape of the previous day and that she had arrived at 6:10 p.m., not 6:00 p.m. as she had recorded on the time form. Burke told Brown that she was being terminated for falsifying documents to defraud Dillard’s out of pay for ten minutes of time. Burke told Brown that “people like you cost the company money.” When Brown began to cry, Burke said, “You already got another
+</BLOCK>
+<BLOCK id="DOC006.P007.B04">
+job, right? Then everything should be okay. This won’t be a problem for you will it?” Dillard’s admits that Brown met with Burke on May 3, and that Burke asked Brown what time she had arrived at work on the previous evening. Dillard’s admits that when Brown replied that she had arrived at 6:00 p.m., Burke responded that she had reviewed the videotape of her arrival and told her that
+</BLOCK>
 
 [Page 8]
-[CITE_START:DOC006[P008.B01]] 15761
-B ROWN  v. D ILLARD ’ S [CITE_END:DOC006[P008.B01]]
-[CITE_START:DOC006[P008.B02]] she had arrived at 6:10 p.m. Dillard’s admits that Burke then
+<BLOCK id="DOC006.P008.B01">
+15761
+B ROWN  v. D ILLARD ’ S
+</BLOCK>
+<BLOCK id="DOC006.P008.B02">
+she had arrived at 6:10 p.m. Dillard’s admits that Burke then
 fired Brown. On May 5, 2002, Brown requested information about the
 Fairness in Action Program. Dillard’s faxed her a copy of the
 program brochure. On or about July 1, 2002, Brown filed a
@@ -169,45 +236,71 @@ Association (AAA), as required under the Fairness in Action
 Program. In her notice, she described the nature of her dispute
 as follows: I was wrongfully terminated from Dillards Dept.
 Store in Palmdale, CA on May 3, 2002 for falsifying
-documents, (a time entry form). [CITE_END:DOC006[P008.B02]]
-[CITE_START:DOC006[P008.B03]] Brown claimed $710 in actual damages. She also requested
+documents, (a time entry form).
+</BLOCK>
+<BLOCK id="DOC006.P008.B03">
+Brown claimed $710 in actual damages. She also requested
 the removal of negative statements related to her termination
 from her personnel records, a letter of apology, and punitive
-damages as deemed appropriate. [CITE_END:DOC006[P008.B03]]
-[CITE_START:DOC006[P008.B04]] Under the Fairness in Action Program, a non-management employee’s share of the arbitration fee was $100. Brown paid her share of the fee when she filed her notice of intent to arbi- trate. Shortly after filing, Brown was informed by AAA that Dillard’s had not responded to its request for information. Brown says that in or about July, 2002, she contacted Dil- lard’s legal department and spoke with Nannette Savage, who blamed the problem on AAA. Savage said she would contact AAA and get back to Brown. Savage did not get back to Brown and did not respond to Brown’s [CITE_END:DOC006[P008.B04]]
-[CITE_START:DOC006[P008.B05]] subsequent attempts to contact her. Dillard’s admits that Brown spoke to Savage in its legal department in or about July, 2002. [CITE_END:DOC006[P008.B05]]
-[CITE_START:DOC006[P008.B06]] On July 12 and July 18, 2002, AAA sent letters to Dil-
+damages as deemed appropriate.
+</BLOCK>
+<BLOCK id="DOC006.P008.B04">
+Under the Fairness in Action Program, a non-management employee’s share of the arbitration fee was $100. Brown paid her share of the fee when she filed her notice of intent to arbi- trate. Shortly after filing, Brown was informed by AAA that Dillard’s had not responded to its request for information. Brown says that in or about July, 2002, she contacted Dil- lard’s legal department and spoke with Nannette Savage, who blamed the problem on AAA. Savage said she would contact AAA and get back to Brown. Savage did not get back to Brown and did not respond to Brown’s
+</BLOCK>
+<BLOCK id="DOC006.P008.B05">
+subsequent attempts to contact her. Dillard’s admits that Brown spoke to Savage in its legal department in or about July, 2002.
+</BLOCK>
+<BLOCK id="DOC006.P008.B06">
+On July 12 and July 18, 2002, AAA sent letters to Dil-
 lard’s, with faxed copies to Brown. The July 18 letter
-requested Dillard’s to pay its portion of the filing fee, in the [CITE_END:DOC006[P008.B06]]
+requested Dillard’s to pay its portion of the filing fee, in the
+</BLOCK>
 
 [Page 9]
-[CITE_START:DOC006[P009.B01]] 15762
+<BLOCK id="DOC006.P009.B01">
+15762
 B ROWN  v. D ILLARD ’ S sum of $400. The letter stated that Brown had already paid
 her portion of the fee. Dillard’s did not respond to the AAA
 letters, nor did it pay its share of the filing fee. On July 25,
 2002, AAA wrote to Brown to inform her that it had not
 received Dillard’s share of the filing fee. According to its own
 procedures, AAA returned Brown’s notice of intent to arbi-
-trate. [CITE_END:DOC006[P009.B01]]
-[CITE_START:DOC006[P009.B02]] For more than two months, Brown tried to contact Dillard’s
+trate.
+</BLOCK>
+<BLOCK id="DOC006.P009.B02">
+For more than two months, Brown tried to contact Dillard’s
 to discuss its refusal to participate in arbitration. She was not
 successful until October 2002, when she enlisted the aid of
 her mother and arranged a telephone conference call with
 Savage. During that call, Savage told Brown that her com-
-plaint had no merit and that Dillard’s refused to arbitrate. [CITE_END:DOC006[P009.B02]]
-[CITE_START:DOC006[P009.B03]] Dillard’s admits that Brown, her mother, and Savage had a conference call, and that Savage stated during that call that she had “reviewed plaintiff’s arbitration.” Stymied in her attempt to participate in the Fairness in Action Program, Brown filed suit in Los Angeles County Superior Court on April 18, 2003. Brown pleaded twelve causes of action: (1) breach of employment contract (implied in fact); (2) breach of employment contract (oral); (3) viola- tion of California’s Labor Code; (4) tortious termination in violation of public policy; (5) breach of covenant of good faith and fair dealing; (6) fraud and deceit — [CITE_END:DOC006[P009.B03]]
-[CITE_START:DOC006[P009.B04]] intentional mis- representation; (7) negligent misrepresentation; (8) intentional infliction of emotional distress; (9) negligent infliction of emotional distress; (10) defamation — slander per se; (11) defamation — false light; (12) and unfair and deceptive busi- ness practices. Dillard’s removed the case to federal district court and moved to compel arbitration. [CITE_END:DOC006[P009.B04]]
-[CITE_START:DOC006[P009.B05]] On September 3, 2003, the district court denied Dillard’s
+plaint had no merit and that Dillard’s refused to arbitrate.
+</BLOCK>
+<BLOCK id="DOC006.P009.B03">
+Dillard’s admits that Brown, her mother, and Savage had a conference call, and that Savage stated during that call that she had “reviewed plaintiff’s arbitration.” Stymied in her attempt to participate in the Fairness in Action Program, Brown filed suit in Los Angeles County Superior Court on April 18, 2003. Brown pleaded twelve causes of action: (1) breach of employment contract (implied in fact); (2) breach of employment contract (oral); (3) viola- tion of California’s Labor Code; (4) tortious termination in violation of public policy; (5) breach of covenant of good faith and fair dealing; (6) fraud and deceit —
+</BLOCK>
+<BLOCK id="DOC006.P009.B04">
+intentional mis- representation; (7) negligent misrepresentation; (8) intentional infliction of emotional distress; (9) negligent infliction of emotional distress; (10) defamation — slander per se; (11) defamation — false light; (12) and unfair and deceptive busi- ness practices. Dillard’s removed the case to federal district court and moved to compel arbitration.
+</BLOCK>
+<BLOCK id="DOC006.P009.B05">
+On September 3, 2003, the district court denied Dillard’s
 motion. The district court held that the arbitration agreement
 was unconscionable and thus unenforceable under California
-law. The district court held that Dillard’s method of obtaining [CITE_END:DOC006[P009.B05]]
+law. The district court held that Dillard’s method of obtaining
+</BLOCK>
 
 [Page 10]
-[CITE_START:DOC006[P010.B01]] 15763
-B ROWN  v. D ILLARD ’ S [CITE_END:DOC006[P010.B01]]
-[CITE_START:DOC006[P010.B02]] its employee’s “agreement” to arbitrate was procedurally unconscionable, and that the agreement itself was substan- tively unconscionable. The district court noted that the Fair- ness in Action Program requires the employee to pay a filing fee, but does not provide for waiver of the fee upon a showing of indigence, as would typically be available in a court of law. The district court also held that the agreement lacked the “modicum of bilaterality” necessary for enforcement under California law. The court noted that the claims Dillard’s was most likely to bring against an employee — claims relating to unfair competition [CITE_END:DOC006[P010.B02]]
-[CITE_START:DOC006[P010.B03]] and disclosure of trade secrets or other confidential information — are exempt from arbitration under the agreement. Thus, it is not clear that the agreement binds Dillard’s to arbitrate its own employment-related claims in any meaningful sense. [CITE_END:DOC006[P010.B03]]
-[CITE_START:DOC006[P010.B04]] Dillard’s filed a timely notice of appeal from the district
+<BLOCK id="DOC006.P010.B01">
+15763
+B ROWN  v. D ILLARD ’ S
+</BLOCK>
+<BLOCK id="DOC006.P010.B02">
+its employee’s “agreement” to arbitrate was procedurally unconscionable, and that the agreement itself was substan- tively unconscionable. The district court noted that the Fair- ness in Action Program requires the employee to pay a filing fee, but does not provide for waiver of the fee upon a showing of indigence, as would typically be available in a court of law. The district court also held that the agreement lacked the “modicum of bilaterality” necessary for enforcement under California law. The court noted that the claims Dillard’s was most likely to bring against an employee — claims relating to unfair competition
+</BLOCK>
+<BLOCK id="DOC006.P010.B03">
+and disclosure of trade secrets or other confidential information — are exempt from arbitration under the agreement. Thus, it is not clear that the agreement binds Dillard’s to arbitrate its own employment-related claims in any meaningful sense.
+</BLOCK>
+<BLOCK id="DOC006.P010.B04">
+Dillard’s filed a timely notice of appeal from the district
 court’s order denying its motion to compel arbitration, and the
 district court stayed proceedings pending the outcome of the
 appeal. The denial of a motion to compel arbitration is
@@ -215,9 +308,13 @@ reviewed de novo.  Ingle v. Circuit City Stores, Inc. , 328 F.3d
 1165, 1169 (9th Cir. 2003). We may affirm on any ground
 supported by the record.  Recording Indus. Ass’n of Am. v.
 Diamond Multimedia Sys., Inc. , 180 F.3d 1072, 1077 n.3 (9th
-Cir. 1999). [CITE_END:DOC006[P010.B04]]
-[CITE_START:DOC006[P010.B05]] II [CITE_END:DOC006[P010.B05]]
-[CITE_START:DOC006[P010.B06]] Despite misgivings about both the substance of Dillard’s
+Cir. 1999).
+</BLOCK>
+<BLOCK id="DOC006.P010.B05">
+II
+</BLOCK>
+<BLOCK id="DOC006.P010.B06">
+Despite misgivings about both the substance of Dillard’s
 Fairness in Action Program and the way in which Dillard’s
 obtained its employees’ “agreement,” we assume for present
 purposes that Dillard’s and Brown formed an enforceable
@@ -226,12 +323,18 @@ assumption, we hold that the district court acted properly in
 denying Dillard’s motion to compel arbitration. Dillard’s
 breached its agreement with Brown by refusing to participate
 in the arbitration proceedings Brown initiated. Having
-breached the agreement, Dillard’s cannot now enforce it. [CITE_END:DOC006[P010.B06]]
+breached the agreement, Dillard’s cannot now enforce it.
+</BLOCK>
 
 [Page 11]
-[CITE_START:DOC006[P011.B01]] 15764 B ROWN v. D ILLARD ’ S [1] The Federal Arbitration Act (“FAA”) provides that written agreements to arbitrate disputes arising out of transac- tions involving interstate commerce “shall be valid, irrevoca- ble, and enforceable, save upon such grounds as exist in law or equity for the revocation of any contract.” 9 U.S.C. § 2. Thus, a party seeking to avoid enforcement of an arbitration agreement can only invoke a defense that would be available to a party seeking to avoid the enforcement of any contract. Stated differently, under the FAA, an arbitration agreement cannot be avoided by a [CITE_END:DOC006[P011.B01]]
-[CITE_START:DOC006[P011.B02]] defense that is only applicable to arbi- tration agreements. See Doctor’s Assocs. v. Casarotto , 517 U.S. 681, 687 (1996); Circuit City Stores, Inc. v. Adams , 279 F.3d 889, 892 (9th Cir. 2002). [CITE_END:DOC006[P011.B02]]
-[CITE_START:DOC006[P011.B03]] [2]  A bedrock principle of California contract law is that
+<BLOCK id="DOC006.P011.B01">
+15764 B ROWN v. D ILLARD ’ S [1] The Federal Arbitration Act (“FAA”) provides that written agreements to arbitrate disputes arising out of transac- tions involving interstate commerce “shall be valid, irrevoca- ble, and enforceable, save upon such grounds as exist in law or equity for the revocation of any contract.” 9 U.S.C. § 2. Thus, a party seeking to avoid enforcement of an arbitration agreement can only invoke a defense that would be available to a party seeking to avoid the enforcement of any contract. Stated differently, under the FAA, an arbitration agreement cannot be avoided by a
+</BLOCK>
+<BLOCK id="DOC006.P011.B02">
+defense that is only applicable to arbi- tration agreements. See Doctor’s Assocs. v. Casarotto , 517 U.S. 681, 687 (1996); Circuit City Stores, Inc. v. Adams , 279 F.3d 889, 892 (9th Cir. 2002).
+</BLOCK>
+<BLOCK id="DOC006.P011.B03">
+[2]  A bedrock principle of California contract law is that
 “[h]e who seeks to enforce a contract must show that he has
 complied with the conditions and agreements of the contract
 on his part to be performed.”  Pry Corp. of Am. v. Leach , 2
@@ -241,8 +344,10 @@ v. Moyes , 219 Cal. Rptr. 836, 844 (Cal. Ct. App. 1985) (“The
 requirement of performance may be excused by the other
 party’s breach.”). This is a contract rule of general application
 and is thus available to Brown as a defense against an
-attempted enforcement of the arbitration agreement. [CITE_END:DOC006[P011.B03]]
-[CITE_START:DOC006[P011.B04]] [3]  Dillard’s clearly breached the arbitration agreement.
+attempted enforcement of the arbitration agreement.
+</BLOCK>
+<BLOCK id="DOC006.P011.B04">
+[3]  Dillard’s clearly breached the arbitration agreement.
 The Rules of Arbitration comprising the agreement explicitly
 require Dillard’s to arbitrate “claims of wrongful discharge.”
 Brown filed a notice of intent to arbitrate and stated her claim
@@ -251,33 +356,47 @@ Store in Palmdale, CA on May 3, 2002 for falsifying docu-
 ments, (a time entry form).” Before the district court, Dillard’s admitted that it refused
 to arbitrate Brown’s claim. However, Dillard’s “contend[ed]
 that their refusal to arbitrate the ‘claims’ made in Plaintiff’s
-July 2002 Arbitration Notice [was] not ‘inconsistent’ with the [CITE_END:DOC006[P011.B04]]
+July 2002 Arbitration Notice [was] not ‘inconsistent’ with the
+</BLOCK>
 
 [Page 12]
-[CITE_START:DOC006[P012.B01]] 15765
-B ROWN  v. D ILLARD ’ S [CITE_END:DOC006[P012.B01]]
-[CITE_START:DOC006[P012.B02]] right to arbitrate Plaintiff’s claims in the Complaint because
+<BLOCK id="DOC006.P012.B01">
+15765
+B ROWN  v. D ILLARD ’ S
+</BLOCK>
+<BLOCK id="DOC006.P012.B02">
+right to arbitrate Plaintiff’s claims in the Complaint because
 the prior claims merely alleged that Defendants had acted
 unfairly in terminating her and thus did not contain a color-
 able claim subject to arbitration.” The district court flatly
 rejected this contention, calling it “demonstrably false.”
 Brown’s notice clearly alleged that she was “wrongfully ter-
 minated,” and wrongful termination claims were explicitly
-covered by the arbitration agreement. [CITE_END:DOC006[P012.B02]]
-[CITE_START:DOC006[P012.B03]] [4]  If Dillard’s believed Brown’s claim was meritless, its
+covered by the arbitration agreement.
+</BLOCK>
+<BLOCK id="DOC006.P012.B03">
+[4]  If Dillard’s believed Brown’s claim was meritless, its
 proper course of action was to make that argument in arbitra-
 tion. Instead, Dillard’s refused to participate in the arbitration
 process at all. Under general principles of California contract
 law, Dillard’s breach of its obligations under the arbitration
-agreement deprives it of the right to enforce that agreement. [CITE_END:DOC006[P012.B03]]
-[CITE_START:DOC006[P012.B04]] Dillard’s argues that it can compel arbitration notwithstand- ing any possible breach of the arbitration agreement. Dillard’s cites two cases in support of its view, neither of which is apposite. The first case is Local Union No. 721 v. Needham Packing Co. , 376 U.S. 247 (1964). In Needham Packing , a union sought to compel the Needham Packing Company to arbitrate grievances pursuant to a collective bargaining agree- ment. The company argued that it was released from its obli- gation to arbitrate the grievances because the union had breached the no-strike provision of the collective bargaining agreement by staging [CITE_END:DOC006[P012.B04]]
-[CITE_START:DOC006[P012.B05]] a walkout of 190 employees. In holding that the union had not lost its right to compel arbitration of the grievances, the Court explained that “[a]rbitration provisions, which themselves have not been repudiated , are meant to sur- vive breaches of contract, in many contexts . . . .” Id . at 251- 52 (emphasis added) (quoting Drake Bakeries, Inc., v. Local 50, American Bakery & Confectionary Workers Int’l , 370 U.S. 254, 262 (1962). [CITE_END:DOC006[P012.B05]]
-[CITE_START:DOC006[P012.B06]] In  Needham Packing , only the question of whether the
+agreement deprives it of the right to enforce that agreement.
+</BLOCK>
+<BLOCK id="DOC006.P012.B04">
+Dillard’s argues that it can compel arbitration notwithstand- ing any possible breach of the arbitration agreement. Dillard’s cites two cases in support of its view, neither of which is apposite. The first case is Local Union No. 721 v. Needham Packing Co. , 376 U.S. 247 (1964). In Needham Packing , a union sought to compel the Needham Packing Company to arbitrate grievances pursuant to a collective bargaining agree- ment. The company argued that it was released from its obli- gation to arbitrate the grievances because the union had breached the no-strike provision of the collective bargaining agreement by staging
+</BLOCK>
+<BLOCK id="DOC006.P012.B05">
+a walkout of 190 employees. In holding that the union had not lost its right to compel arbitration of the grievances, the Court explained that “[a]rbitration provisions, which themselves have not been repudiated , are meant to sur- vive breaches of contract, in many contexts . . . .” Id . at 251- 52 (emphasis added) (quoting Drake Bakeries, Inc., v. Local 50, American Bakery & Confectionary Workers Int’l , 370 U.S. 254, 262 (1962).
+</BLOCK>
+<BLOCK id="DOC006.P012.B06">
+In  Needham Packing , only the question of whether the
 union had breached the no-strike provision was subject to dis-
-pute, and the Court held that the intent behind the collective [CITE_END:DOC006[P012.B06]]
+pute, and the Court held that the intent behind the collective
+</BLOCK>
 
 [Page 13]
-[CITE_START:DOC006[P013.B01]] 15766
+<BLOCK id="DOC006.P013.B01">
+15766
 B ROWN  v. D ILLARD ’ S bargaining agreement was to have such disputes settled in
 arbitration. Even assuming that  Needham Packing  is relevant
 to an interpretation of California contract law,  see Textile
@@ -288,15 +407,25 @@ the arbitration agreement itself. In this case, by contrast, Dil-
 lard’s breached the arbitration agreement by refusing to par-
 ticipate in properly initiated arbitration proceedings. Dillard’s
 breach was tantamount to a repudiation of the arbitration
-agreement. [CITE_END:DOC006[P013.B01]]
-[CITE_START:DOC006[P013.B02]] The second case is New Linen Supply v. Eastern Environ- mental Controls, Inc. , 158 Cal. Rptr. 251 (Cal. Ct. App. 1979). In that case, New Linen Supply, doing business as Western, filed an unfair competition action against Eastern Environmental Controls, Inc. (“EEC”). The parties had previ- ously entered into an agreement that contained an arbitration provision. When their business relationship turned sour, EEC wrote a letter to Western saying that it was obliged to cancel the contract due to Western’s nonperformance. Western acknowledged receipt of the cancellation and indicated that it wished to seek arbitration in accord with the [CITE_END:DOC006[P013.B02]]
-[CITE_START:DOC006[P013.B03]] procedures of the AAA. However, Western did not initiate arbitration proceed- ings. The parties continued to do business together and EEC wrote to Western, stating, “We understand your continuing to do business with us to be a withdrawal of your request for arbitration.” Id . at 253. Western later filed suit in California Superior Court alleging unfair competition, and EEC moved to compel arbitration. The question the court confronted was whether “once having declared the contracts to be terminated because of the alleged breach by Western, may [EEC] now invoke a provision within the contract requiring arbitration.” Id . at [CITE_END:DOC006[P013.B03]]
-[CITE_START:DOC006[P013.B04]] 254. The court held that EEC could compel arbitration notwithstanding the fact that it had earlier declared the con- tracts to be terminated. In so holding, the court quoted approvingly the following language from Heyman v. Darwins, Ltd. , [1942] A.C. 356, 373-75: [CITE_END:DOC006[P013.B04]]
+agreement.
+</BLOCK>
+<BLOCK id="DOC006.P013.B02">
+The second case is New Linen Supply v. Eastern Environ- mental Controls, Inc. , 158 Cal. Rptr. 251 (Cal. Ct. App. 1979). In that case, New Linen Supply, doing business as Western, filed an unfair competition action against Eastern Environmental Controls, Inc. (“EEC”). The parties had previ- ously entered into an agreement that contained an arbitration provision. When their business relationship turned sour, EEC wrote a letter to Western saying that it was obliged to cancel the contract due to Western’s nonperformance. Western acknowledged receipt of the cancellation and indicated that it wished to seek arbitration in accord with the
+</BLOCK>
+<BLOCK id="DOC006.P013.B03">
+procedures of the AAA. However, Western did not initiate arbitration proceed- ings. The parties continued to do business together and EEC wrote to Western, stating, “We understand your continuing to do business with us to be a withdrawal of your request for arbitration.” Id . at 253. Western later filed suit in California Superior Court alleging unfair competition, and EEC moved to compel arbitration. The question the court confronted was whether “once having declared the contracts to be terminated because of the alleged breach by Western, may [EEC] now invoke a provision within the contract requiring arbitration.” Id . at
+</BLOCK>
+<BLOCK id="DOC006.P013.B04">
+254. The court held that EEC could compel arbitration notwithstanding the fact that it had earlier declared the con- tracts to be terminated. In so holding, the court quoted approvingly the following language from Heyman v. Darwins, Ltd. , [1942] A.C. 356, 373-75:
+</BLOCK>
 
 [Page 14]
-[CITE_START:DOC006[P014.B01]] 15767
-B ROWN  v. D ILLARD ’ S [CITE_END:DOC006[P014.B01]]
-[CITE_START:DOC006[P014.B02]] The key is to be found in the distinction . . . between
+<BLOCK id="DOC006.P014.B01">
+15767
+B ROWN  v. D ILLARD ’ S
+</BLOCK>
+<BLOCK id="DOC006.P014.B02">
+The key is to be found in the distinction . . . between
 the arbitration clause in a contract and the executive
 obligations undertaken by each party to the other.
 [There is] nothing shocking or repugnant to law in
@@ -305,8 +434,10 @@ finds himself unable to go on with his deliveries
 under a contract between them and at the same time
 asking the other to join with him in a reference under
 an arbitration clause in their contract to ascertain
-what compensation is to be paid for his default. [CITE_END:DOC006[P014.B02]]
-[CITE_START:DOC006[P014.B03]] We understand the California Court of Appeal to have held
+what compensation is to be paid for his default.
+</BLOCK>
+<BLOCK id="DOC006.P014.B03">
+We understand the California Court of Appeal to have held
 that repudiation of a contract which contains an arbitration
 clause does not waive one’s right to arbitrate disputes within
 the scope of the clause. That is,  New Linen  is distinguishable
@@ -314,31 +445,60 @@ from the facts of this case in much the same way as  Needham
 Packing . Dillard’s did not repudiate its obligations under a
 contract that contained a clause providing for arbitration of
 breach of that contract. Rather, Dillard’s breached the arbitra-
-tion agreement itself by refusing to arbitrate. [CITE_END:DOC006[P014.B03]]
-[CITE_START:DOC006[P014.B04]] If we took Dillard’s view and allowed it to compel arbitra- tion notwithstanding its breach of the arbitration agreement, we would set up a perverse incentive scheme. Employers like Dillard’s would have an incentive to refuse to arbitrate claims brought by employees in the hope that the frustrated employ- ees would simply abandon them. This tactic would be costless to employers if they were allowed to compel arbitration whenever a frustrated but persistent employee eventually ini- tiated litigation. We decline to adopt a rule that would encour- age companies to refuse to participate in properly initiated arbitration proceedings. To promote [CITE_END:DOC006[P014.B04]]
-[CITE_START:DOC006[P014.B05]] our national policy in favor of arbitration, see Southland Corp. v. Keating , 465 U.S. 1, 10 (1984), we must decline to compel it in this case. [CITE_END:DOC006[P014.B05]]
-[CITE_START:DOC006[P014.B06]] III [CITE_END:DOC006[P014.B06]]
-[CITE_START:DOC006[P014.B07]] [5]  Dillard’s urges us to analyze this case under the doc-
-trines governing waiver of the right to arbitrate, rather than as [CITE_END:DOC006[P014.B07]]
+tion agreement itself by refusing to arbitrate.
+</BLOCK>
+<BLOCK id="DOC006.P014.B04">
+If we took Dillard’s view and allowed it to compel arbitra- tion notwithstanding its breach of the arbitration agreement, we would set up a perverse incentive scheme. Employers like Dillard’s would have an incentive to refuse to arbitrate claims brought by employees in the hope that the frustrated employ- ees would simply abandon them. This tactic would be costless to employers if they were allowed to compel arbitration whenever a frustrated but persistent employee eventually ini- tiated litigation. We decline to adopt a rule that would encour- age companies to refuse to participate in properly initiated arbitration proceedings. To promote
+</BLOCK>
+<BLOCK id="DOC006.P014.B05">
+our national policy in favor of arbitration, see Southland Corp. v. Keating , 465 U.S. 1, 10 (1984), we must decline to compel it in this case.
+</BLOCK>
+<BLOCK id="DOC006.P014.B06">
+III
+</BLOCK>
+<BLOCK id="DOC006.P014.B07">
+[5]  Dillard’s urges us to analyze this case under the doc-
+trines governing waiver of the right to arbitrate, rather than as
+</BLOCK>
 
 [Page 15]
-[CITE_START:DOC006[P015.B01]] 15768 B ROWN v. D ILLARD ’ S a breach-of-contract case. We believe that it is more accurate to describe Dillard’s behavior as breach of contract. However, we briefly note that if we were to approach this as a waiver case, we would have no difficulty finding that Dillard’s waived its right to arbitrate Brown’s claims. “A party seeking to prove waiver of a right to arbitrate must demonstrate (1) knowledge of an existing right to compel arbitration; (2) acts inconsistent with that existing right; and (3) prejudice to the party opposing arbitration resulting from such inconsistent acts.” Britton v. [CITE_END:DOC006[P015.B01]]
-[CITE_START:DOC006[P015.B02]] Co-op Banking Group , 916 F.2d 1405, 1412 (9th Cir. 1990). Dillard’s concedes that it knew of its right to arbitrate, and its refusal to arbitrate after being served with Brown’s notice of intent to arbitrate was an act inconsistent with that right. Thus, the first two prongs of the waiver test are easily satisfied. [CITE_END:DOC006[P015.B02]]
-[CITE_START:DOC006[P015.B03]] As to the third prong, Dillard’s argues that Brown did not suffer any cognizable prejudice as a result of its refusal to arbitrate. Brown alleges three forms of prejudice: (1) delay due to Dillard’s refusal to arbitrate; (2) costs and attorneys’ fees incurred due to Dillard’s refusal; and (3) the loss of potential evidence and witnesses due to the passage of time. Dillard’s responds by citing cases in which no prejudice was found despite the fact that the non-moving party had incurred costs or attorneys’ fees, or had otherwise suffered as a result of delay. See e.g. , Britton , [CITE_END:DOC006[P015.B03]]
-[CITE_START:DOC006[P015.B04]] 916 F.2d at 1413; Lake Comm., Inc. v. ICC Corp. , 738 F.2d 1473, 1477 (9th Cir. 1984), over- ruled on other grounds by Mitsubishi Motors Corp. v. Soler Chrysler-Plymouth, Inc. , 473 U.S. 614, 632-35 (1985). The problem for Dillard’s is that the question in these cases was whether a delay by a defendant in moving to compel arbitra- tion after the initiation of litigation caused cognizable preju- dice to the plaintiff. Unsurprisingly, courts are reluctant to find prejudice to the plaintiff who has chosen to litigate, sim- ply because the defendant litigated briefly (e.g., by filing a motion [CITE_END:DOC006[P015.B04]]
-[CITE_START:DOC006[P015.B05]] to dismiss or requesting limited discovery) before moving to compel arbitration. [CITE_END:DOC006[P015.B05]]
+<BLOCK id="DOC006.P015.B01">
+15768 B ROWN v. D ILLARD ’ S a breach-of-contract case. We believe that it is more accurate to describe Dillard’s behavior as breach of contract. However, we briefly note that if we were to approach this as a waiver case, we would have no difficulty finding that Dillard’s waived its right to arbitrate Brown’s claims. “A party seeking to prove waiver of a right to arbitrate must demonstrate (1) knowledge of an existing right to compel arbitration; (2) acts inconsistent with that existing right; and (3) prejudice to the party opposing arbitration resulting from such inconsistent acts.” Britton v.
+</BLOCK>
+<BLOCK id="DOC006.P015.B02">
+Co-op Banking Group , 916 F.2d 1405, 1412 (9th Cir. 1990). Dillard’s concedes that it knew of its right to arbitrate, and its refusal to arbitrate after being served with Brown’s notice of intent to arbitrate was an act inconsistent with that right. Thus, the first two prongs of the waiver test are easily satisfied.
+</BLOCK>
+<BLOCK id="DOC006.P015.B03">
+As to the third prong, Dillard’s argues that Brown did not suffer any cognizable prejudice as a result of its refusal to arbitrate. Brown alleges three forms of prejudice: (1) delay due to Dillard’s refusal to arbitrate; (2) costs and attorneys’ fees incurred due to Dillard’s refusal; and (3) the loss of potential evidence and witnesses due to the passage of time. Dillard’s responds by citing cases in which no prejudice was found despite the fact that the non-moving party had incurred costs or attorneys’ fees, or had otherwise suffered as a result of delay. See e.g. , Britton ,
+</BLOCK>
+<BLOCK id="DOC006.P015.B04">
+916 F.2d at 1413; Lake Comm., Inc. v. ICC Corp. , 738 F.2d 1473, 1477 (9th Cir. 1984), over- ruled on other grounds by Mitsubishi Motors Corp. v. Soler Chrysler-Plymouth, Inc. , 473 U.S. 614, 632-35 (1985). The problem for Dillard’s is that the question in these cases was whether a delay by a defendant in moving to compel arbitra- tion after the initiation of litigation caused cognizable preju- dice to the plaintiff. Unsurprisingly, courts are reluctant to find prejudice to the plaintiff who has chosen to litigate, sim- ply because the defendant litigated briefly (e.g., by filing a motion
+</BLOCK>
+<BLOCK id="DOC006.P015.B05">
+to dismiss or requesting limited discovery) before moving to compel arbitration.
+</BLOCK>
 
 [Page 16]
-[CITE_START:DOC006[P016.B01]] 15769
-B ROWN  v. D ILLARD ’ S [CITE_END:DOC006[P016.B01]]
-[CITE_START:DOC006[P016.B02]] [6]  Dillard’s does not cite a case in which costs have been
+<BLOCK id="DOC006.P016.B01">
+15769
+B ROWN  v. D ILLARD ’ S
+</BLOCK>
+<BLOCK id="DOC006.P016.B02">
+[6]  Dillard’s does not cite a case in which costs have been
 incurred by the plaintiff due to the defendant’s refusal to par-
 ticipate in properly initiated arbitration proceedings. Brown
 did not choose to litigate. She chose to arbitrate, and when she
 was rebuffed by Dillard’s, she sued as a last resort. In this cir-
 cumstance, we have no trouble concluding that the delay and
 costs incurred by Brown are prejudicial for the purpose of
-waiver analysis. [CITE_END:DOC006[P016.B02]]
-[CITE_START:DOC006[P016.B03]] IV [CITE_END:DOC006[P016.B03]]
-[CITE_START:DOC006[P016.B04]] [7] On the assumption that Brown’s narrative is true, this case displays a dark side of our nation’s policy in favor of arbitration. When a defendant in a judicial forum refuses to respond to a complaint that is properly filed and served, the court has the power to enter and enforce a default judgment. Arbitration works differently. The American Arbitration Association could not compel Dillard’s to pay its share of the filing fee, and in the absence of the fee it could not proceed. Brown had no choice but to come to court. Many people in Brown’s position would simply [CITE_END:DOC006[P016.B04]]
-[CITE_START:DOC006[P016.B05]] have given up. Because she did not, we have the occasion to make clear that when an employer enters into an agreement requiring its employees to arbitrate, it must participate in the process or lose its right to arbitrate. Conditionally AFFIRMED . REMANDED to the district court. Attorney’s fees on appeal to Brown. [CITE_END:DOC006[P016.B05]]
+waiver analysis.
+</BLOCK>
+<BLOCK id="DOC006.P016.B03">
+IV
+</BLOCK>
+<BLOCK id="DOC006.P016.B04">
+[7] On the assumption that Brown’s narrative is true, this case displays a dark side of our nation’s policy in favor of arbitration. When a defendant in a judicial forum refuses to respond to a complaint that is properly filed and served, the court has the power to enter and enforce a default judgment. Arbitration works differently. The American Arbitration Association could not compel Dillard’s to pay its share of the filing fee, and in the absence of the fee it could not proceed. Brown had no choice but to come to court. Many people in Brown’s position would simply
+</BLOCK>
+<BLOCK id="DOC006.P016.B05">
+have given up. Because she did not, we have the occasion to make clear that when an employer enters into an agreement requiring its employees to arbitrate, it must participate in the process or lose its right to arbitrate. Conditionally AFFIRMED . REMANDED to the district court. Attorney’s fees on appeal to Brown.
+</BLOCK>

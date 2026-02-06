@@ -1,7 +1,7 @@
 packet_id,doc_id,source_url,page_number,block_number,excerpt_id,citation_token,word_count,token_count,x0,y0,x1,y1,text
 packet_1,DOC003,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/11/28/22-15815.pdf,1,1,P001.B01,DOC003[P001.B01],21,36,54.0,70.49,329.43,183.2,"FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT BRANDON BRISKIN, on behalf of 
 himself and those similarly situated,"
-packet_1,DOC003,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/11/28/22-15815.pdf,1,2,P001.B02,DOC003[P001.B02],9,30,253.08,152.28,340.0,256.76,"No.  22-15815  
+packet_1,DOC003,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/11/28/22-15815.pdf,1,2,P001.B02,DOC003[P001.B02],9,29,253.08,152.28,340.0,256.76,"No. 22-15815  
 D.C. No. 4:21-cv-
 06269-PJH  
 OPINION"

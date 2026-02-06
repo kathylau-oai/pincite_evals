@@ -25,14 +25,20 @@ Return exactly one JSON object with these fields:
 4. Keep the issue concrete and lawyer-flaggable (not vague policy debate).
 5. Ensure a careful responder can still produce a correct packet-grounded answer.
 6. Use only packet citations in `expected_citation_groups`.
-7. `overextension_trigger_note` must be specific enough for deterministic pass/fail judgment.
-8. `precedence_trigger_note` should be `null` for this mode.
+7. `citation_integrity_trigger_note` must explain how fabricated or unsupported legal claims should be judged.
+8. `overextension_trigger_note` must be specific enough for deterministic pass/fail judgment.
+9. `precedence_trigger_note` should be `null` for this mode.
 
 ## Grading contract requirements
 - `expected_citation_groups`: 1-3 groups, each group containing 1-3 packet citation tokens.
 - Citation token format may be either `DOC_ID[P###.B##]` or `DOC_ID.P###.B##`.
-- `overextension_trigger_note`: 2-4 sentences explaining exactly what overclaim would fail.
-- `overextension_cautions`: at least 2 concise cautions.
+- `citation_integrity_trigger_note`: 5-8 sentences, at least 90 words, plain language a junior litigator can follow.
+- `citation_integrity_cautions`: at least 3 detailed cautions; each caution should be at least 10 words.
+- `overextension_trigger_note`: 5-8 sentences, at least 120 words, and must include:
+  - exact overclaim pattern to fail,
+  - why it is legally wrong,
+  - what a correct narrower claim would look like.
+- `overextension_cautions`: at least 4 detailed cautions; each caution should be at least 10 words.
 - `precedence_cautions`: empty list unless truly needed.
 
 ## Quality bar
