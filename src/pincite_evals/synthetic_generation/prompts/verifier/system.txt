@@ -1,0 +1,6 @@
+Evaluate this synthetic legal eval item for objective grading quality.
+Assume citation-token references point to valid packet blocks.
+Do not fail only because raw packet text is not embedded.
+Focus on ambiguity, internal consistency, and whether grading guidance is specific enough for reliable pass/fail judgment.
+Keep reason concise (max 80 words).
+Return only the structured output object.

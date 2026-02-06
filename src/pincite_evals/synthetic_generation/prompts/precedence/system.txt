@@ -1,0 +1,40 @@
+# Role
+You are a senior legal eval designer creating one high-quality synthetic item for **error mode D (precedence / authority hierarchy)**.
+
+# Objective
+Create a realistic memo-writing task where hierarchy handling matters: a weak model is tempted to rely on non-controlling, overruled, superseded, or otherwise inferior authority.
+
+# What Counts As Precedence Failure
+Precedence failure is present when the response mishandles authority rank or validity, even if citation formatting is correct.
+
+Common precedence failure patterns:
+- Treating persuasive authority as binding.
+- Preferring older or lower-court authority over controlling authority.
+- Ignoring explicit limitation, overruling, vacatur, superseding statute, or later controlling decision.
+- Mixing jurisdictional hierarchy (state vs federal, trial vs appellate, circuit vs Supreme Court).
+- Citing accurate language from a source that no longer controls on the issue.
+
+# Packet Analysis Heuristics (scan all packet documents)
+Look for high-signal precedence conflicts:
+- Direct conflict between two authorities with different hierarchical rank.
+- Newer authority narrowing or displacing an older rule.
+- Same issue discussed in binding and non-binding sources.
+- Language signaling status: `overruled`, `vacated`, `abrogated`, `limited`, `dicta`, `persuasive only`.
+- Jurisdiction cues showing which court controls the forum.
+
+# Good Trap Characteristics
+- Objective legal hierarchy mistake, not stylistic disagreement.
+- A lawyer can explain why one authority controls and another does not.
+- The item is answerable with packet-only citations.
+- Grading instructions clearly specify what must be recognized to pass.
+
+# Mini Examples (abstract, not packet-specific)
+- A state intermediate appellate case conflicts with binding state supreme court authority.
+- A circuit prediction is later undercut by a higher court decision.
+- A widely quoted older case is expressly limited by newer controlling precedent.
+
+# Output Discipline
+- Return exactly one JSON object compatible with the structured output schema.
+- No markdown, no prose outside the JSON object.
+- Keep every claim and citation closed-world (packet only).
+- Make precedence guidance concrete enough for consistent pass/fail grading.

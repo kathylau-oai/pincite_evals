@@ -3,9 +3,9 @@ import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, TypeVar
 
 import pandas as pd
 from openai import (
@@ -16,89 +16,38 @@ from openai import (
     OpenAIError,
     RateLimitError,
 )
+from pydantic import BaseModel, ValidationError
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
 
-from .config import ModeCountConfig, SyntheticGenerationConfig
-from .schema import SyntheticItem
+from .config import SyntheticGenerationConfig
+from .schema import SyntheticItem, normalize_citation_token
+from .structured_outputs import GeneratedSyntheticItemOutput, VerifierOutput
 
 
-CITATION_TOKEN_PATTERN = re.compile(r"^DOC\d{3}\[P\d{3}\.B\d{2}\]$")
 MODE_TO_ERROR = {
     "overextension": "C",
     "precedence": "D",
     "fake_citations": "A",
 }
 ERROR_TO_MODE = {value: key for key, value in MODE_TO_ERROR.items()}
-QUALIFIER_TERMS = {
-    "may",
-    "generally",
-    "usually",
-    "sometimes",
-    "unless",
-    "except",
-    "however",
-    "not",
-    "must",
-    "only",
-    "if",
-    "when",
-}
-PRECEDENCE_TERMS = {
-    "overrule",
-    "overruled",
-    "vacated",
-    "vacate",
-    "en banc",
-    "controlling",
-    "binding",
-    "persuasive",
-    "precedent",
-    "circuit",
-    "supreme",
-}
-NEGATION_TERMS = {"not", "however", "unless", "except", "vacated", "overruled"}
-STOPWORDS = {
-    "the",
-    "and",
-    "that",
-    "with",
-    "from",
-    "this",
-    "where",
-    "which",
-    "their",
-    "there",
-    "would",
-    "about",
-    "were",
-    "been",
-    "have",
-    "shall",
-    "could",
-    "should",
-    "into",
-    "your",
-    "them",
-    "only",
-    "also",
-    "than",
-    "such",
-    "each",
-    "while",
-    "state",
-    "court",
-}
-TOKEN_PATTERN = re.compile(r"[A-Za-z][A-Za-z\-']+")
+PROMPTS_ROOT = Path(__file__).resolve().parent / "prompts"
+ParsedModelType = TypeVar("ParsedModelType", bound=BaseModel)
 
 
 @dataclass(frozen=True)
 class RunPaths:
     run_root: Path
+    metadata_dir: Path
     target_bank_dir: Path
-    raw_candidates_dir: Path
+    generation_dir: Path
+    generation_candidates_dir: Path
+    generation_metrics_dir: Path
+    generation_traces_dir: Path
     validation_dir: Path
+    validation_metrics_dir: Path
+    validation_traces_dir: Path
     selection_dir: Path
-    traces_dir: Path
+    summary_dir: Path
 
 
 @dataclass(frozen=True)
@@ -114,6 +63,7 @@ class PipelineContext:
 @dataclass(frozen=True)
 class TargetBankResult:
     target_bank: pd.DataFrame
+    packet_corpus_text: str
     sanity_summary: pd.DataFrame
 
 
@@ -189,44 +139,178 @@ def summarize_request_metrics(metrics_dataframe: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(summary_rows)
 
 
+def _augment_with_latency_milliseconds(metrics_dataframe: pd.DataFrame) -> pd.DataFrame:
+    if metrics_dataframe.empty:
+        return metrics_dataframe
+
+    augmented_dataframe = metrics_dataframe.copy()
+    latency_series = pd.to_numeric(augmented_dataframe["latency_seconds"], errors="coerce")
+    augmented_dataframe["latency_milliseconds"] = latency_series * 1000.0
+    return augmented_dataframe
+
+
+def _build_datapoint_timing_table(
+    generation_metrics: pd.DataFrame,
+    validation_metrics: pd.DataFrame,
+) -> pd.DataFrame:
+    generation_columns = [
+        "item_id",
+        "mode_name",
+        "request_id",
+        "status",
+        "latency_seconds",
+        "latency_milliseconds",
+    ]
+    validation_columns = [
+        "item_id",
+        "status",
+        "latency_seconds",
+        "latency_milliseconds",
+        "verdict",
+    ]
+    generation_slice = generation_metrics.reindex(columns=generation_columns).rename(
+        columns={
+            "status": "generation_status",
+            "latency_seconds": "generation_latency_seconds",
+            "latency_milliseconds": "generation_latency_milliseconds",
+        }
+    )
+    validation_slice = validation_metrics.reindex(columns=validation_columns).rename(
+        columns={
+            "status": "validation_status",
+            "latency_seconds": "validation_latency_seconds",
+            "latency_milliseconds": "validation_latency_milliseconds",
+            "verdict": "validation_verdict",
+        }
+    )
+    merged = generation_slice.merge(validation_slice, on="item_id", how="left")
+    merged["end_to_end_latency_seconds"] = (
+        pd.to_numeric(merged["generation_latency_seconds"], errors="coerce")
+        + pd.to_numeric(merged["validation_latency_seconds"], errors="coerce")
+    )
+    merged["end_to_end_latency_milliseconds"] = merged["end_to_end_latency_seconds"] * 1000.0
+    if merged.empty:
+        return merged
+    return merged.sort_values(["mode_name", "item_id"]).reset_index(drop=True)
+
+
+def _utc_now_iso() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+
+def _json_safe(value: Any) -> Any:
+    if isinstance(value, Path):
+        return str(value)
+    if isinstance(value, dict):
+        return {str(key): _json_safe(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [_json_safe(item) for item in value]
+    return value
+
+
 def _normalize_text(raw_text: str) -> str:
     return " ".join(raw_text.split())
 
+def _citation_token_to_xml_block_id(citation_token: str) -> str:
+    canonical_token = normalize_citation_token(citation_token)
+    token_match = re.fullmatch(r"(DOC\d{3})\[P(\d{3})\.B(\d{2})\]", canonical_token)
+    if token_match is None:
+        raise ValueError(f"Unable to convert citation token into XML block id: {citation_token}")
+    doc_id, page_number, block_number = token_match.groups()
+    return f"{doc_id}.P{page_number}.B{block_number}"
 
-def _extract_terms(text_value: str) -> set[str]:
-    return {term.lower() for term in TOKEN_PATTERN.findall(text_value)}
+
+def _load_prompt_template(prompt_relative_path: str) -> str:
+    prompt_path = PROMPTS_ROOT / prompt_relative_path
+    if not prompt_path.exists():
+        raise ValueError(f"Prompt template not found: {prompt_path}")
+    return prompt_path.read_text(encoding="utf-8").strip()
 
 
-def _extract_keywords(text_value: str) -> set[str]:
-    terms = _extract_terms(text_value)
-    return {term for term in terms if len(term) >= 6 and term not in STOPWORDS}
+def _render_prompt_template(prompt_text: str, replacements: dict[str, str]) -> str:
+    rendered_prompt = prompt_text
+    for token_name, token_value in replacements.items():
+        rendered_prompt = rendered_prompt.replace(token_name, token_value)
+    return rendered_prompt
 
 
-def _extract_qualifiers(text_value: str) -> list[str]:
-    text_terms = _extract_terms(text_value)
-    return [term for term in sorted(QUALIFIER_TERMS) if term in text_terms]
+def _load_mode_prompts(
+    mode_name: str,
+    packet_id: str,
+    as_of_date: str,
+    item_index: int,
+    packet_corpus_text: str,
+) -> tuple[str, str]:
+    replacements = {
+        "__PACKET_ID__": packet_id,
+        "__AS_OF_DATE__": as_of_date,
+        "__ITEM_INDEX__": str(item_index),
+        "__PACKET_CORPUS__": packet_corpus_text,
+    }
+    system_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/system.txt"), replacements)
+    user_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/user.txt"), replacements)
+    return system_prompt, user_prompt
+
+
+def _load_verifier_prompts(item_payload: dict[str, Any]) -> tuple[str, str]:
+    system_prompt = _load_prompt_template("verifier/system.txt")
+    user_prompt = _render_prompt_template(
+        _load_prompt_template("verifier/user.txt"),
+        {"__ITEM_JSON__": json.dumps(item_payload, ensure_ascii=True)},
+    )
+    return system_prompt, user_prompt
+
+
+def _extract_reasoning_tokens(usage: Any) -> int | None:
+    if usage is None or usage.output_tokens_details is None:
+        return None
+    return usage.output_tokens_details.reasoning_tokens
 
 
 def _create_run_paths(output_root: Path, packet_id: str, run_id: str | None) -> RunPaths:
     resolved_run_id = run_id or datetime.utcnow().strftime("%Y%m%d_%H%M%S")
     run_root = output_root / packet_id / resolved_run_id
 
+    metadata_dir = run_root / "metadata"
     target_bank_dir = run_root / "target_bank"
-    raw_candidates_dir = run_root / "raw_candidates"
+    generation_dir = run_root / "generation"
+    generation_candidates_dir = generation_dir / "candidates"
+    generation_metrics_dir = generation_dir / "metrics"
+    generation_traces_dir = generation_dir / "traces"
     validation_dir = run_root / "validation"
+    validation_metrics_dir = validation_dir / "metrics"
+    validation_traces_dir = validation_dir / "traces"
     selection_dir = run_root / "selection"
-    traces_dir = run_root / "traces"
+    summary_dir = run_root / "summary"
 
-    for folder in [target_bank_dir, raw_candidates_dir, validation_dir, selection_dir, traces_dir]:
+    for folder in [
+        metadata_dir,
+        target_bank_dir,
+        generation_dir,
+        generation_candidates_dir,
+        generation_metrics_dir,
+        generation_traces_dir,
+        validation_dir,
+        validation_metrics_dir,
+        validation_traces_dir,
+        selection_dir,
+        summary_dir,
+    ]:
         folder.mkdir(parents=True, exist_ok=True)
 
     return RunPaths(
         run_root=run_root,
+        metadata_dir=metadata_dir,
         target_bank_dir=target_bank_dir,
-        raw_candidates_dir=raw_candidates_dir,
+        generation_dir=generation_dir,
+        generation_candidates_dir=generation_candidates_dir,
+        generation_metrics_dir=generation_metrics_dir,
+        generation_traces_dir=generation_traces_dir,
         validation_dir=validation_dir,
+        validation_metrics_dir=validation_metrics_dir,
+        validation_traces_dir=validation_traces_dir,
         selection_dir=selection_dir,
-        traces_dir=traces_dir,
+        summary_dir=summary_dir,
     )
 
 
@@ -242,152 +326,79 @@ def _load_packet_blocks(blocks_dir: Path) -> pd.DataFrame:
     return pd.concat(frames, ignore_index=True)
 
 
-def _extract_authority_edges(packet_manifest: pd.DataFrame) -> pd.DataFrame:
-    rows: list[dict[str, str]] = []
-    grouped = packet_manifest.groupby("source_filename", dropna=False)
-    for source_filename, group in grouped:
-        if pd.isna(source_filename):
-            continue
-        if len(group) <= 1:
-            continue
-        ordered = group.sort_values("source_order")
-        higher_doc_id = str(ordered.iloc[0]["doc_id"])
-        for row_index in range(1, len(ordered)):
-            rows.append(
-                {
-                    "lower_doc_id": str(ordered.iloc[row_index]["doc_id"]),
-                    "higher_doc_id": higher_doc_id,
-                    "relationship": "same_docket_newer_version",
-                    "source": "manifest_filename_group",
-                }
-            )
-    return pd.DataFrame(rows)
+def _prepare_packet_inputs(
+    packet_manifest: pd.DataFrame,
+    packet_blocks: pd.DataFrame,
+    max_documents: int = 8,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    if "source_order" not in packet_manifest.columns or "doc_id" not in packet_manifest.columns:
+        raise ValueError("packet_manifest.csv must include source_order and doc_id columns.")
+
+    manifest_sorted = packet_manifest.sort_values("source_order")
+    if "parse_status" in manifest_sorted.columns:
+        manifest_sorted = manifest_sorted[manifest_sorted["parse_status"] == "parsed"]
+    if manifest_sorted.empty:
+        raise ValueError("No parsed documents are available for synthetic generation.")
+
+    source_documents = manifest_sorted.head(max_documents).copy()
+    source_documents["doc_id"] = source_documents["doc_id"].astype(str)
+    source_document_ids = set(source_documents["doc_id"].tolist())
+
+    selected_blocks = packet_blocks[packet_blocks["doc_id"].astype(str).isin(source_document_ids)].copy()
+    if selected_blocks.empty:
+        raise ValueError("No packet blocks found for selected source documents.")
+
+    selected_blocks["doc_id"] = selected_blocks["doc_id"].astype(str)
+    selected_blocks["citation_token"] = selected_blocks["citation_token"].apply(lambda token: normalize_citation_token(str(token)))
+    selected_blocks = selected_blocks.sort_values(["doc_id", "page_number", "block_number"]).reset_index(drop=True)
+
+    return selected_blocks, source_documents
 
 
-def _build_counterevidence_lookup(packet_blocks: pd.DataFrame) -> dict[str, list[tuple[str, set[str], str]]]:
-    lookup: dict[str, list[tuple[str, set[str], str]]] = {}
-    for _, row in packet_blocks.iterrows():
-        doc_id = str(row["doc_id"])
-        citation_token = str(row["citation_token"])
-        block_text = _normalize_text(str(row["text"]))
-        block_keywords = _extract_keywords(block_text)
-        lookup.setdefault(doc_id, []).append((citation_token, block_keywords, block_text.lower()))
-    return lookup
+def _build_packet_corpus(packet_blocks: pd.DataFrame, source_documents: pd.DataFrame) -> str:
+    lines: list[str] = []
+    for _, source_row in source_documents.sort_values("source_order").iterrows():
+        doc_id = str(source_row["doc_id"])
+        source_filename = str(source_row.get("source_filename", ""))
+        lines.append(f'<DOCUMENT id="{doc_id}" source_filename="{source_filename}">')
 
+        document_blocks = packet_blocks[packet_blocks["doc_id"] == doc_id].sort_values(["page_number", "block_number"])
+        for _, block_row in document_blocks.iterrows():
+            block_id = _citation_token_to_xml_block_id(str(block_row["citation_token"]))
+            lines.append(f'<BLOCK id="{block_id}">')
+            lines.append(str(block_row["text"]))
+            lines.append("</BLOCK>")
+        lines.append("</DOCUMENT>")
+        lines.append("")
 
-def _find_counterevidence_tokens(row_doc_id: str, row_text: str, lookup: dict[str, list[tuple[str, set[str], str]]]) -> list[str]:
-    query_keywords = _extract_keywords(row_text)
-    if not query_keywords:
-        return []
-
-    matched_tokens: list[str] = []
-    for doc_id, blocks in lookup.items():
-        if doc_id == row_doc_id:
-            continue
-
-        for citation_token, block_keywords, block_text_lower in blocks:
-            if len(query_keywords & block_keywords) < 2:
-                continue
-            if not any(negation_term in block_text_lower for negation_term in NEGATION_TERMS):
-                continue
-
-            matched_tokens.append(citation_token)
-            if len(matched_tokens) >= 3:
-                return matched_tokens
-
-    return matched_tokens
-
-
-def _build_target_bank_rows(packet_id: str, packet_blocks: pd.DataFrame, edge_doc_ids: set[str]) -> pd.DataFrame:
-    rows: list[dict[str, Any]] = []
-
-    for _, row in packet_blocks.iterrows():
-        block_text = _normalize_text(str(row["text"]))
-        if not block_text:
-            continue
-
-        doc_id = str(row["doc_id"])
-        citation_token = str(row["citation_token"])
-        qualifiers = _extract_qualifiers(block_text)
-        precedence_hits = [term for term in PRECEDENCE_TERMS if term in block_text.lower()]
-
-        if qualifiers and len(block_text.split()) >= 12:
-            rows.append(
-                {
-                    "packet_id": packet_id,
-                    "mode_name": "overextension",
-                    "target_error_mode": "C",
-                    "doc_id": doc_id,
-                    "citation_token": citation_token,
-                    "claim_candidate": block_text,
-                    "mode_reason": "qualifier_rich_language",
-                    "qualifier_terms": "|".join(qualifiers),
-                    "authority_edge_type": "",
-                }
-            )
-
-        if precedence_hits or doc_id in edge_doc_ids:
-            rows.append(
-                {
-                    "packet_id": packet_id,
-                    "mode_name": "precedence",
-                    "target_error_mode": "D",
-                    "doc_id": doc_id,
-                    "citation_token": citation_token,
-                    "claim_candidate": block_text,
-                    "mode_reason": "precedence_signal" if precedence_hits else "authority_edge_doc",
-                    "qualifier_terms": "|".join(sorted(precedence_hits)),
-                    "authority_edge_type": "same_docket_newer_version" if doc_id in edge_doc_ids else "",
-                }
-            )
-
-        if len(block_text.split()) >= 18:
-            rows.append(
-                {
-                    "packet_id": packet_id,
-                    "mode_name": "fake_citations",
-                    "target_error_mode": "A",
-                    "doc_id": doc_id,
-                    "citation_token": citation_token,
-                    "claim_candidate": block_text,
-                    "mode_reason": "substantial_proposition_text",
-                    "qualifier_terms": "",
-                    "authority_edge_type": "",
-                }
-            )
-
-    if not rows:
-        raise ValueError("No target bank rows were generated.")
-
-    target_bank = pd.DataFrame(rows)
-    target_bank = target_bank.drop_duplicates(subset=["mode_name", "citation_token", "mode_reason"]).reset_index(drop=True)
-
-    counterevidence_lookup = _build_counterevidence_lookup(packet_blocks)
-    counterevidence_tokens: list[str] = []
-    for _, row in target_bank.iterrows():
-        tokens = _find_counterevidence_tokens(str(row["doc_id"]), str(row["claim_candidate"]), counterevidence_lookup)
-        counterevidence_tokens.append("|".join(tokens))
-
-    target_bank["counterevidence_tokens"] = counterevidence_tokens
-    target_bank["counterevidence_count"] = target_bank["counterevidence_tokens"].apply(
-        lambda value: 0 if value == "" else len(value.split("|"))
-    )
-    target_bank["target_id"] = [f"tb_{index:05d}" for index in range(1, len(target_bank) + 1)]
-
-    return target_bank
+    return "\n".join(lines).strip() + "\n"
 
 
 def _target_bank_sanity(target_bank: pd.DataFrame) -> pd.DataFrame:
-    invalid_tokens = target_bank["citation_token"].fillna("").apply(lambda value: CITATION_TOKEN_PATTERN.match(value) is None)
+    def has_invalid_citation_token(citation_token: Any) -> bool:
+        try:
+            normalize_citation_token(str(citation_token))
+            return False
+        except ValueError:
+            return True
+
+    invalid_tokens = target_bank["citation_token"].fillna("").apply(has_invalid_citation_token)
+    document_count = int(target_bank["doc_id"].astype(str).nunique()) if "doc_id" in target_bank.columns else 0
+    avg_blocks_per_document = None
+    if document_count > 0:
+        avg_blocks_per_document = float(target_bank.shape[0] / document_count)
+    duplicate_subset = [column_name for column_name in ["doc_id", "page_number", "block_number"] if column_name in target_bank.columns]
+    duplicate_count = int(target_bank.duplicated(subset=duplicate_subset).sum()) if duplicate_subset else int(target_bank.duplicated().sum())
+    missing_text_count = int(target_bank["text"].isna().sum()) if "text" in target_bank.columns else 0
     rows = [
         {"metric": "row_count", "value": int(target_bank.shape[0])},
         {"metric": "column_count", "value": int(target_bank.shape[1])},
-        {"metric": "duplicate_rows", "value": int(target_bank.duplicated().sum())},
-        {"metric": "missing_claim_candidate", "value": int(target_bank["claim_candidate"].isna().sum())},
+        {"metric": "duplicate_rows", "value": duplicate_count},
+        {"metric": "missing_block_text", "value": missing_text_count},
         {"metric": "invalid_citation_tokens", "value": int(invalid_tokens.sum())},
+        {"metric": "document_count", "value": document_count},
+        {"metric": "avg_blocks_per_document", "value": avg_blocks_per_document},
     ]
-    for mode_name, count in target_bank.groupby("mode_name")["target_id"].count().to_dict().items():
-        rows.append({"metric": f"mode_count_{mode_name}", "value": int(count)})
     return pd.DataFrame(rows)
 
 
@@ -395,16 +406,16 @@ def _build_generation_request(
     model: str,
     reasoning_effort: str,
     temperature: float | None,
+    service_tier: str,
     system_prompt: str,
     user_prompt: str,
-    max_output_tokens: int,
 ) -> dict[str, Any]:
     request: dict[str, Any] = {
         "model": model,
+        "service_tier": service_tier,
         "instructions": system_prompt,
         "input": [{"role": "user", "content": [{"type": "input_text", "text": user_prompt}]}],
         "reasoning": {"effort": reasoning_effort},
-        "max_output_tokens": max_output_tokens,
     }
     if reasoning_effort == "none" and temperature is not None:
         request["temperature"] = temperature
@@ -416,16 +427,8 @@ def _build_generation_request(
     wait=wait_exponential(multiplier=1, min=1, max=20),
     stop=stop_after_attempt(4),
 )
-def _call_openai_response(client: OpenAI, request: dict[str, Any]) -> Any:
-    return client.responses.create(**request)
-
-
-def _safe_json_object(raw_text: str) -> dict[str, Any]:
-    text_value = raw_text.strip()
-    parsed = json.loads(text_value)
-    if not isinstance(parsed, dict):
-        raise ValueError("Expected JSON object from model output.")
-    return parsed
+def _call_openai_parse(client: OpenAI, request: dict[str, Any], text_format: type[ParsedModelType]) -> Any:
+    return client.responses.parse(text_format=text_format, **request)
 
 
 def _normalize_generated_item(
@@ -519,36 +522,15 @@ def _normalize_generated_item(
     return normalized
 
 
-def _mode_system_prompt(mode_name: str) -> str:
-    if mode_name == "overextension":
-        return (
-            "Generate one closed-world legal memo eval item for overextension. "
-            "Return JSON only and keep the trap objective."
-        )
-    if mode_name == "precedence":
-        return (
-            "Generate one closed-world legal memo eval item for authority hierarchy and precedence. "
-            "Return JSON only and keep controlling authority explicit."
-        )
-    return (
-        "Generate one closed-world legal memo eval item for fake citation pressure. "
-        "Return JSON only and ensure a compliant answer is possible using packet citations."
-    )
-
-
-def _mode_user_prompt(target_row: pd.Series, packet_id: str, as_of_date: str) -> str:
-    return (
-        "Return one JSON object with fields: schema_version,item_id,packet_id,target_error_mode,query_id,as_of_date,prompt,scenario_facts,grading_contract. "
-        "Use citation tokens in DOC_ID[P###.B##] format. "
-        f"packet_id={packet_id}; as_of_date={as_of_date}; mode={target_row['mode_name']}; "
-        f"citation_token={target_row['citation_token']}; claim_candidate={str(target_row['claim_candidate'])[:1200]}"
-    )
-
-
-def _default_candidate_from_row(target_row: pd.Series, packet_id: str, as_of_date: str, item_index: int) -> dict[str, Any]:
-    mode_name = str(target_row["mode_name"])
+def _default_candidate_from_mode(
+    mode_name: str,
+    packet_id: str,
+    as_of_date: str,
+    item_index: int,
+    default_citation_token: str,
+) -> dict[str, Any]:
     mode_letter = MODE_TO_ERROR[mode_name]
-    citation_token = str(target_row["citation_token"])
+    citation_token = normalize_citation_token(default_citation_token)
 
     over_note = None
     precedence_note = None
@@ -587,22 +569,35 @@ def _default_candidate_from_row(target_row: pd.Series, packet_id: str, as_of_dat
 
 def _generate_one_item(
     *,
-    target_row: pd.Series,
+    mode_name: str,
+    request_id: str,
+    default_citation_token: str,
+    packet_corpus_text: str,
     config: SyntheticGenerationConfig,
     item_index: int,
-    traces_dir: Path,
+    generation_traces_dir: Path,
     openai_client: OpenAI | None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
-    mode_name = str(target_row["mode_name"])
     start_time = time.perf_counter()
+    mode_letter = MODE_TO_ERROR[mode_name]
+    item_id = f"{config.packet_id}_{mode_letter}_{item_index:02d}"
+    query_id = f"q_{mode_name[:3]}_{item_index:04d}"
 
     if config.dry_run:
-        candidate = _default_candidate_from_row(target_row, config.packet_id, config.as_of_date, item_index)
+        candidate = _default_candidate_from_mode(
+            mode_name,
+            config.packet_id,
+            config.as_of_date,
+            item_index,
+            default_citation_token,
+        )
         latency = time.perf_counter() - start_time
         return candidate, {
             "stage": "generation",
+            "item_id": item_id,
+            "item_index": item_index,
             "mode_name": mode_name,
-            "target_id": str(target_row["target_id"]),
+            "request_id": request_id,
             "status": "completed",
             "latency_seconds": latency,
             "input_tokens": None,
@@ -614,77 +609,107 @@ def _generate_one_item(
     if openai_client is None:
         raise ValueError("OpenAI client is required when dry_run is false.")
 
+    system_prompt, user_prompt = _load_mode_prompts(
+        mode_name=mode_name,
+        packet_id=config.packet_id,
+        as_of_date=config.as_of_date,
+        item_index=item_index,
+        packet_corpus_text=packet_corpus_text,
+    )
     request = _build_generation_request(
         model=config.generation_model,
         reasoning_effort=config.generation_reasoning_effort,
         temperature=config.generation_temperature,
-        system_prompt=_mode_system_prompt(mode_name),
-        user_prompt=_mode_user_prompt(target_row, packet_id=config.packet_id, as_of_date=config.as_of_date),
-        max_output_tokens=1800,
+        service_tier=config.service_tier,
+        system_prompt=system_prompt,
+        user_prompt=user_prompt,
     )
 
-    response = _call_openai_response(openai_client, request)
+    try:
+        response = _call_openai_parse(openai_client, request, GeneratedSyntheticItemOutput)
+    except ValidationError:
+        latency = time.perf_counter() - start_time
+        validated_candidate = _default_candidate_from_mode(
+            mode_name,
+            config.packet_id,
+            config.as_of_date,
+            item_index,
+            default_citation_token,
+        )
+        return validated_candidate, {
+            "stage": "generation",
+            "item_id": item_id,
+            "item_index": item_index,
+            "mode_name": mode_name,
+            "request_id": request_id,
+            "status": "invalid_structured_output_fallback_default_candidate",
+            "latency_seconds": latency,
+            "input_tokens": None,
+            "output_tokens": None,
+            "reasoning_tokens": None,
+            "total_tokens": None,
+        }
+
     latency = time.perf_counter() - start_time
 
-    if response.status == "incomplete" and response.incomplete_details and response.incomplete_details.reason == "max_output_tokens":
-        if not response.output_text:
-            validated_candidate = _default_candidate_from_row(target_row, config.packet_id, config.as_of_date, item_index)
-            usage = response.usage
-            return validated_candidate, {
-                "stage": "generation",
-                "mode_name": mode_name,
-                "target_id": str(target_row["target_id"]),
-                "status": "incomplete_fallback_default_candidate",
-                "latency_seconds": latency,
-                "input_tokens": usage.input_tokens if usage else None,
-                "output_tokens": usage.output_tokens if usage else None,
-                "reasoning_tokens": usage.output_tokens_details.reasoning_tokens if usage else None,
-                "total_tokens": usage.total_tokens if usage else None,
-            }
+    trace_path = generation_traces_dir / f"{mode_name}_{request_id}.json"
+    trace_path.parent.mkdir(parents=True, exist_ok=True)
+    trace_path.write_text(response.model_dump_json(indent=2), encoding="utf-8")
 
+    generation_status = response.status
     try:
-        parsed_candidate = _safe_json_object(response.output_text)
+        if response.output_parsed is None:
+            raise ValueError("Missing parsed structured output.")
+        parsed_candidate = response.output_parsed.model_dump(mode="python", exclude_none=True)
         normalized_candidate = _normalize_generated_item(
             parsed_candidate,
             mode_name=mode_name,
-            citation_token=str(target_row["citation_token"]),
+            citation_token=normalize_citation_token(default_citation_token),
             packet_id=config.packet_id,
             as_of_date=config.as_of_date,
         )
         validated_candidate = SyntheticItem.model_validate(normalized_candidate).model_dump()
-        generation_status = response.status
-    except (json.JSONDecodeError, ValueError):
-        # Fallback keeps the run moving when model JSON is malformed.
-        validated_candidate = _default_candidate_from_row(target_row, config.packet_id, config.as_of_date, item_index)
+    except (ValueError, ValidationError):
+        # Fallback keeps the run moving when model output cannot be validated.
+        validated_candidate = _default_candidate_from_mode(
+            mode_name,
+            config.packet_id,
+            config.as_of_date,
+            item_index,
+            default_citation_token,
+        )
         generation_status = "fallback_default_candidate"
-    mode_letter = MODE_TO_ERROR[mode_name]
-    validated_candidate["item_id"] = f"{config.packet_id}_{mode_letter}_{item_index:02d}"
-    validated_candidate["query_id"] = f"q_{mode_name[:3]}_{item_index:04d}"
 
-    trace_path = traces_dir / "raw_generation_responses" / f"{mode_name}_{target_row['target_id']}.json"
-    trace_path.parent.mkdir(parents=True, exist_ok=True)
-    trace_path.write_text(response.model_dump_json(indent=2), encoding="utf-8")
+    validated_candidate["item_id"] = item_id
+    validated_candidate["query_id"] = query_id
 
     usage = response.usage
     return validated_candidate, {
         "stage": "generation",
+        "item_id": item_id,
+        "item_index": item_index,
         "mode_name": mode_name,
-        "target_id": str(target_row["target_id"]),
+        "request_id": request_id,
         "status": generation_status,
         "latency_seconds": latency,
         "input_tokens": usage.input_tokens if usage else None,
         "output_tokens": usage.output_tokens if usage else None,
-        "reasoning_tokens": usage.output_tokens_details.reasoning_tokens if usage else None,
+        "reasoning_tokens": _extract_reasoning_tokens(usage),
         "total_tokens": usage.total_tokens if usage else None,
     }
 
 
-def _deterministic_validation(
-    item_payload: dict[str, Any],
-    citation_universe: set[str],
-    counterevidence_map: dict[str, list[str]],
-    edge_doc_ids: set[str],
-) -> tuple[bool, list[str], dict[str, Any]]:
+def _is_natural_language_criteria(criteria_note: str | None) -> bool:
+    if not isinstance(criteria_note, str):
+        return False
+    cleaned_note = criteria_note.strip()
+    if not cleaned_note:
+        return False
+    words = [word for word in re.findall(r"[A-Za-z][A-Za-z'-]*", cleaned_note) if word]
+    return len(words) >= 5
+
+
+def _deterministic_validation(item_payload: dict[str, Any], citation_universe: set[str]) -> tuple[bool, list[str], dict[str, Any]]:
     reasons: list[str] = []
     item = SyntheticItem.model_validate(item_payload)
 
@@ -693,23 +718,18 @@ def _deterministic_validation(
         for citation_group in item.grading_contract.expected_citation_groups
         for citation_token in citation_group
     ]
+    if not expected_citations:
+        reasons.append("missing_expected_citations")
 
     for citation_token in expected_citations:
         if citation_token not in citation_universe:
             reasons.append("expected_citation_outside_packet")
 
-        if counterevidence_map.get(citation_token):
-            reasons.append("holding_vs_dicta_mismatch")
+    if item.target_error_mode == "C" and not _is_natural_language_criteria(item.grading_contract.overextension_trigger_note):
+        reasons.append("missing_overextension_criteria")
 
-        citation_doc_id = citation_token.split("[")[0]
-        if item.target_error_mode == "D" and citation_doc_id in edge_doc_ids and counterevidence_map.get(citation_token):
-            reasons.append("same_name_case_misattribution")
-
-    if item.target_error_mode == "C" and not item.grading_contract.overextension_trigger_note:
-        reasons.append("missing_overextension_trigger_note")
-
-    if item.target_error_mode == "D" and not item.grading_contract.precedence_trigger_note:
-        reasons.append("missing_precedence_trigger_note")
+    if item.target_error_mode == "D" and not _is_natural_language_criteria(item.grading_contract.precedence_trigger_note):
+        reasons.append("missing_precedence_criteria")
 
     deduped_reasons: list[str] = []
     seen_reasons: set[str] = set()
@@ -721,22 +741,20 @@ def _deterministic_validation(
 
     return len(deduped_reasons) == 0, deduped_reasons, {
         "expected_citation_count": len(expected_citations),
-        "counterevidence_matches": sum(1 for token in expected_citations if counterevidence_map.get(token)),
+        "criteria_checks_passed": not any(
+            reason in {"missing_overextension_criteria", "missing_precedence_criteria"} for reason in deduped_reasons
+        ),
     }
 
 
 def _build_validation_request(config: SyntheticGenerationConfig, item_payload: dict[str, Any]) -> dict[str, Any]:
+    system_prompt, user_prompt = _load_verifier_prompts(item_payload)
     return {
         "model": config.validation_model,
-        "instructions": (
-            "Evaluate this synthetic legal eval item for objective consensus grading quality. "
-            "Assume citation-token references point to real packet blocks and do not fail only because raw packet text is not embedded in the item JSON. "
-            "Focus on ambiguity, internal consistency, and whether grading guidance is specific enough for reliable pass/fail judgment. "
-            "Return JSON only with keys verdict, reason, risk_flags, suggested_fix. verdict must be pass or fail."
-        ),
-        "input": [{"role": "user", "content": [{"type": "input_text", "text": json.dumps(item_payload, ensure_ascii=True)}]}],
+        "service_tier": config.service_tier,
+        "instructions": system_prompt,
+        "input": [{"role": "user", "content": [{"type": "input_text", "text": user_prompt}]}],
         "reasoning": {"effort": config.validation_reasoning_effort},
-        "max_output_tokens": 600,
     }
 
 
@@ -744,7 +762,7 @@ def _validate_one_item(
     *,
     config: SyntheticGenerationConfig,
     item_payload: dict[str, Any],
-    traces_dir: Path,
+    validation_traces_dir: Path,
     openai_client: OpenAI | None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     start_time = time.perf_counter()
@@ -761,6 +779,7 @@ def _validate_one_item(
             "stage": "validation",
             "item_id": item_payload["item_id"],
             "status": "completed",
+            "verdict": "pass",
             "latency_seconds": time.perf_counter() - start_time,
             "input_tokens": None,
             "output_tokens": None,
@@ -772,37 +791,53 @@ def _validate_one_item(
         raise ValueError("OpenAI client is required when dry_run is false.")
 
     request = _build_validation_request(config, item_payload)
-    response = _call_openai_response(openai_client, request)
+    try:
+        response = _call_openai_parse(openai_client, request, VerifierOutput)
+    except ValidationError:
+        latency = time.perf_counter() - start_time
+        return {
+            "item_id": item_payload["item_id"],
+            "verdict": "fail",
+            "reason": "Verifier response failed structured-output parsing.",
+            "risk_flags": ["invalid_verifier_output"],
+            "suggested_fix": "Ensure verifier returns strict JSON object matching schema.",
+            "full_response": {"parse_error": True},
+        }, {
+            "stage": "validation",
+            "item_id": item_payload["item_id"],
+            "status": "invalid_structured_output",
+            "verdict": "fail",
+            "latency_seconds": latency,
+            "input_tokens": None,
+            "output_tokens": None,
+            "reasoning_tokens": None,
+            "total_tokens": None,
+        }
+
     latency = time.perf_counter() - start_time
 
-    try:
-        parsed = _safe_json_object(response.output_text)
-        verdict = str(parsed.get("verdict", "")).strip().lower()
-        if verdict not in {"pass", "fail"}:
-            verdict = "fail"
-            parsed = {
-                "reason": "Verifier returned invalid verdict format.",
-                "risk_flags": ["invalid_verifier_output"],
-                "suggested_fix": "Return JSON with verdict=pass|fail.",
-            }
-    except (json.JSONDecodeError, ValueError):
+    parsed_output = response.output_parsed
+    if parsed_output is None:
         verdict = "fail"
-        parsed = {
+        parsed_review = {
             "reason": "Verifier response was not valid JSON.",
             "risk_flags": ["invalid_verifier_output"],
             "suggested_fix": "Ensure verifier returns strict JSON object.",
         }
+    else:
+        parsed_review = parsed_output.model_dump(mode="python")
+        verdict = parsed_output.verdict
 
     review = {
         "item_id": item_payload["item_id"],
         "verdict": verdict,
-        "reason": str(parsed.get("reason", "")).strip(),
-        "risk_flags": parsed.get("risk_flags", []),
-        "suggested_fix": str(parsed.get("suggested_fix", "")).strip(),
+        "reason": str(parsed_review.get("reason", "")).strip(),
+        "risk_flags": parsed_review.get("risk_flags", []),
+        "suggested_fix": str(parsed_review.get("suggested_fix", "")).strip(),
         "full_response": response.model_dump(),
     }
 
-    trace_path = traces_dir / "raw_validation_responses" / f"{item_payload['item_id']}.json"
+    trace_path = validation_traces_dir / f"{item_payload['item_id']}.json"
     trace_path.parent.mkdir(parents=True, exist_ok=True)
     trace_path.write_text(response.model_dump_json(indent=2), encoding="utf-8")
 
@@ -811,10 +846,11 @@ def _validate_one_item(
         "stage": "validation",
         "item_id": item_payload["item_id"],
         "status": response.status,
+        "verdict": verdict,
         "latency_seconds": latency,
         "input_tokens": usage.input_tokens if usage else None,
         "output_tokens": usage.output_tokens if usage else None,
-        "reasoning_tokens": usage.output_tokens_details.reasoning_tokens if usage else None,
+        "reasoning_tokens": _extract_reasoning_tokens(usage),
         "total_tokens": usage.total_tokens if usage else None,
     }
     return review, metrics
@@ -835,6 +871,35 @@ def _trap_signature(prompt_text: str) -> str:
 def _primary_doc_id(item_payload: dict[str, Any]) -> str:
     first_citation = item_payload["grading_contract"]["expected_citation_groups"][0][0]
     return first_citation.split("[")[0]
+
+
+def build_items_for_selection(
+    accepted_items: list[dict[str, Any]],
+    deterministic_pass_items: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    required_modes = {"overextension", "precedence", "fake_citations"}
+    selected_items = list(accepted_items)
+    selected_item_ids = {item["item_id"] for item in selected_items}
+    selected_modes = {ERROR_TO_MODE[item["target_error_mode"]] for item in selected_items}
+
+    missing_modes = required_modes - selected_modes
+    if not missing_modes:
+        return selected_items
+
+    for item in deterministic_pass_items:
+        mode_name = ERROR_TO_MODE[item["target_error_mode"]]
+        if mode_name not in missing_modes:
+            continue
+        if item["item_id"] in selected_item_ids:
+            continue
+        selected_items.append(item)
+        selected_item_ids.add(item["item_id"])
+        selected_modes.add(mode_name)
+        missing_modes = required_modes - selected_modes
+        if not missing_modes:
+            break
+
+    return selected_items
 
 
 def _select_mode_items(mode_rows: pd.DataFrame, keep_count: int) -> list[dict[str, Any]]:
@@ -884,7 +949,7 @@ class SyntheticGenerationPipeline:
             raise ValueError(f"Packet manifest not found: {manifest_csv}")
 
         run_paths = _create_run_paths(self.config.output_root, self.config.packet_id, run_id)
-        (run_paths.run_root / "config_snapshot.md").write_text(
+        (run_paths.metadata_dir / "config_snapshot.md").write_text(
             "\n".join(
                 [
                     f"packet_id: {self.config.packet_id}",
@@ -892,8 +957,24 @@ class SyntheticGenerationPipeline:
                     f"generation_reasoning_effort: {self.config.generation_reasoning_effort}",
                     f"validation_model: {self.config.validation_model}",
                     f"validation_reasoning_effort: {self.config.validation_reasoning_effort}",
+                    f"service_tier: {self.config.service_tier}",
+                    f"request_timeout_seconds: {self.config.request_timeout_seconds}",
                     f"dry_run: {self.config.dry_run}",
                 ]
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        (run_paths.metadata_dir / "run_manifest.json").write_text(
+            json.dumps(
+                {
+                    "packet_id": self.config.packet_id,
+                    "run_root": str(run_paths.run_root),
+                    "created_at_utc": _utc_now_iso(),
+                    "layout_version": "v2",
+                    "paths": _json_safe(run_paths.__dict__),
+                },
+                indent=2,
             )
             + "\n",
             encoding="utf-8",
@@ -911,31 +992,22 @@ class SyntheticGenerationPipeline:
     def run_target_bank(self, context: PipelineContext) -> TargetBankResult:
         manifest = _load_packet_manifest(context.manifest_csv)
         blocks = _load_packet_blocks(context.blocks_dir)
-        authority_edges = _extract_authority_edges(manifest)
-        edge_doc_ids = set(authority_edges["lower_doc_id"].astype(str).tolist()) | set(
-            authority_edges["higher_doc_id"].astype(str).tolist()
-        )
-
-        target_bank = _build_target_bank_rows(context.config.packet_id, blocks, edge_doc_ids)
+        target_bank, source_documents = _prepare_packet_inputs(manifest, blocks, max_documents=8)
+        packet_corpus_text = _build_packet_corpus(target_bank, source_documents)
         sanity = _target_bank_sanity(target_bank)
 
         target_bank.to_csv(context.run_paths.target_bank_dir / "target_bank.csv", index=False)
+        source_documents.to_csv(context.run_paths.target_bank_dir / "source_documents.csv", index=False)
+        (context.run_paths.target_bank_dir / "packet_corpus.txt").write_text(packet_corpus_text, encoding="utf-8")
         sanity.to_csv(context.run_paths.target_bank_dir / "sanity_checks.csv", index=False)
-        authority_edges.to_csv(context.run_paths.target_bank_dir / "authority_edges.csv", index=False)
-
-        # Guardrail: ensure each required mode exists before generation.
-        counts = target_bank.groupby("mode_name")["target_id"].count().to_dict()
-        for required_mode in ["overextension", "precedence", "fake_citations"]:
-            if counts.get(required_mode, 0) == 0:
-                raise ValueError(f"Target bank has no rows for mode {required_mode}")
-
-        return TargetBankResult(target_bank=target_bank, sanity_summary=sanity)
+        return TargetBankResult(target_bank=target_bank, packet_corpus_text=packet_corpus_text, sanity_summary=sanity)
 
     def run_generation(
         self,
         *,
         context: PipelineContext,
         target_bank: pd.DataFrame,
+        packet_corpus_text: str,
         openai_client: OpenAI | None = None,
     ) -> GenerationResult:
         per_mode_counts = {
@@ -943,47 +1015,58 @@ class SyntheticGenerationPipeline:
             "precedence": context.config.generate_count.precedence,
             "fake_citations": context.config.generate_count.fake_citations,
         }
+        if target_bank.empty:
+            raise ValueError("No packet blocks available for generation.")
+        default_citation_token = normalize_citation_token(str(target_bank.iloc[0]["citation_token"]))
 
         candidates_by_mode: dict[str, list[dict[str, Any]]] = {mode: [] for mode in per_mode_counts}
         metrics_rows: list[dict[str, Any]] = []
 
         def generate_mode(mode_name: str) -> tuple[str, list[dict[str, Any]], list[dict[str, Any]]]:
-            mode_targets = (
-                target_bank[target_bank["mode_name"] == mode_name]
-                .sort_values(["counterevidence_count", "target_id"], ascending=[True, True])
-                .head(per_mode_counts[mode_name])
-            )
-            if mode_targets.empty:
-                raise ValueError(f"No targets available for mode {mode_name}")
-
             mode_candidates: list[dict[str, Any]] = []
             mode_metrics: list[dict[str, Any]] = []
-
-            with ThreadPoolExecutor(max_workers=min(context.config.parallelism.generation_workers, len(mode_targets))) as item_pool:
-                futures = {}
-                for item_index, (_, row) in enumerate(mode_targets.iterrows(), start=1):
+            item_count = per_mode_counts[mode_name]
+            with ThreadPoolExecutor(max_workers=min(context.config.parallelism.generation_workers, item_count)) as item_pool:
+                futures: dict[Any, dict[str, Any]] = {}
+                for item_index in range(1, item_count + 1):
+                    request_id = f"req_{mode_name[:3]}_{item_index:04d}"
                     futures[
                         item_pool.submit(
                             _generate_one_item,
-                            target_row=row,
+                            mode_name=mode_name,
+                            request_id=request_id,
+                            default_citation_token=default_citation_token,
+                            packet_corpus_text=packet_corpus_text,
                             config=context.config,
                             item_index=item_index,
-                            traces_dir=context.run_paths.traces_dir,
+                            generation_traces_dir=context.run_paths.generation_traces_dir,
                             openai_client=openai_client,
                         )
-                    ] = str(row["target_id"])
+                    ] = {"request_id": request_id, "item_index": item_index}
 
                 for future in as_completed(futures):
-                    target_id = futures[future]
+                    request_info = futures[future]
+                    request_id = str(request_info["request_id"])
+                    item_index = int(request_info["item_index"])
                     try:
                         candidate, metric = future.result()
                     except OpenAIError as error:
+                        fallback_candidate = _default_candidate_from_mode(
+                            mode_name=mode_name,
+                            packet_id=context.config.packet_id,
+                            as_of_date=context.config.as_of_date,
+                            item_index=item_index,
+                            default_citation_token=default_citation_token,
+                        )
+                        mode_candidates.append(fallback_candidate)
                         mode_metrics.append(
                             {
                                 "stage": "generation",
+                                "item_id": fallback_candidate["item_id"],
+                                "item_index": item_index,
                                 "mode_name": mode_name,
-                                "target_id": target_id,
-                                "status": "error",
+                                "request_id": request_id,
+                                "status": "error_fallback_default_candidate",
                                 "latency_seconds": None,
                                 "input_tokens": None,
                                 "output_tokens": None,
@@ -1008,12 +1091,17 @@ class SyntheticGenerationPipeline:
 
         metrics_df = pd.DataFrame(metrics_rows)
         for mode_name, candidates in candidates_by_mode.items():
-            with (context.run_paths.raw_candidates_dir / f"{mode_name}_candidates.jsonl").open("w", encoding="utf-8") as file_handle:
+            with (context.run_paths.generation_candidates_dir / f"{mode_name}_candidates.jsonl").open(
+                "w",
+                encoding="utf-8",
+            ) as file_handle:
                 for candidate in candidates:
                     file_handle.write(json.dumps(candidate, ensure_ascii=True) + "\n")
 
-        metrics_df.to_csv(context.run_paths.traces_dir / "generation_metrics.csv", index=False)
-        return GenerationResult(candidates_by_mode=candidates_by_mode, request_metrics=metrics_df)
+        augmented_metrics_df = _augment_with_latency_milliseconds(metrics_df)
+        augmented_metrics_df.to_csv(context.run_paths.generation_metrics_dir / "request_metrics.csv", index=False)
+        augmented_metrics_df.to_csv(context.run_paths.generation_metrics_dir / "datapoint_timings.csv", index=False)
+        return GenerationResult(candidates_by_mode=candidates_by_mode, request_metrics=augmented_metrics_df)
 
     def run_validation(
         self,
@@ -1023,33 +1111,21 @@ class SyntheticGenerationPipeline:
         candidates: list[dict[str, Any]],
         openai_client: OpenAI | None = None,
     ) -> ValidationResult:
-        citation_universe = set(target_bank["citation_token"].dropna().astype(str).tolist())
-        counterevidence_map = {
-            str(row["citation_token"]): (
-                str(row["counterevidence_tokens"]).split("|") if str(row["counterevidence_tokens"]) else []
-            )
-            for _, row in target_bank.iterrows()
-        }
-        edge_doc_ids = set(target_bank[target_bank["authority_edge_type"] != ""]["doc_id"].astype(str).tolist())
+        citation_universe = {normalize_citation_token(str(token)) for token in target_bank["citation_token"].dropna().tolist()}
 
         deterministic_rows: list[dict[str, Any]] = []
         rejection_rows: list[dict[str, Any]] = []
         items_for_llm: list[dict[str, Any]] = []
 
         for item in candidates:
-            deterministic_pass, reasons, details = _deterministic_validation(
-                item,
-                citation_universe,
-                counterevidence_map,
-                edge_doc_ids,
-            )
+            deterministic_pass, reasons, details = _deterministic_validation(item, citation_universe)
             deterministic_rows.append(
                 {
                     "item_id": item["item_id"],
                     "deterministic_pass": deterministic_pass,
                     "reason_codes": "|".join(reasons),
                     "expected_citation_count": details["expected_citation_count"],
-                    "counterevidence_matches": details["counterevidence_matches"],
+                    "criteria_checks_passed": details["criteria_checks_passed"],
                 }
             )
             if deterministic_pass:
@@ -1074,7 +1150,7 @@ class SyntheticGenerationPipeline:
                         _validate_one_item,
                         config=context.config,
                         item_payload=item,
-                        traces_dir=context.run_paths.traces_dir,
+                        validation_traces_dir=context.run_paths.validation_traces_dir,
                         openai_client=openai_client,
                     ): item
                     for item in items_for_llm
@@ -1098,6 +1174,7 @@ class SyntheticGenerationPipeline:
                                 "stage": "validation",
                                 "item_id": item_id,
                                 "status": "error",
+                                "verdict": "fail",
                                 "latency_seconds": None,
                                 "input_tokens": None,
                                 "output_tokens": None,
@@ -1129,7 +1206,9 @@ class SyntheticGenerationPipeline:
             for review in llm_reviews:
                 file_handle.write(json.dumps(review, ensure_ascii=True) + "\n")
         rejection_df.to_csv(context.run_paths.validation_dir / "rejection_log.csv", index=False)
-        metrics_df.to_csv(context.run_paths.traces_dir / "validation_metrics.csv", index=False)
+        augmented_metrics_df = _augment_with_latency_milliseconds(metrics_df)
+        augmented_metrics_df.to_csv(context.run_paths.validation_metrics_dir / "request_metrics.csv", index=False)
+        augmented_metrics_df.to_csv(context.run_paths.validation_metrics_dir / "datapoint_timings.csv", index=False)
 
         return ValidationResult(
             accepted_items=accepted_items,
@@ -1137,7 +1216,7 @@ class SyntheticGenerationPipeline:
             deterministic_checks=deterministic_df,
             llm_reviews=llm_reviews,
             rejection_log=rejection_df,
-            request_metrics=metrics_df,
+            request_metrics=augmented_metrics_df,
         )
 
     def run_selection(self, *, context: PipelineContext, accepted_items: list[dict[str, Any]]) -> SelectionResult:
@@ -1230,51 +1309,105 @@ class SyntheticGenerationPipeline:
         return dataset_dir
 
     def run_all(self, context: PipelineContext, openai_client: OpenAI | None = None) -> dict[str, Any]:
+        run_start_time = time.perf_counter()
+
+        target_bank_start_time = time.perf_counter()
         target_bank_result = self.run_target_bank(context)
+        target_bank_duration_seconds = time.perf_counter() - target_bank_start_time
+
+        generation_start_time = time.perf_counter()
         generation_result = self.run_generation(
             context=context,
             target_bank=target_bank_result.target_bank,
+            packet_corpus_text=target_bank_result.packet_corpus_text,
             openai_client=openai_client,
         )
+        generation_duration_seconds = time.perf_counter() - generation_start_time
 
         all_candidates: list[dict[str, Any]] = []
         for mode_items in generation_result.candidates_by_mode.values():
             all_candidates.extend(mode_items)
 
+        validation_start_time = time.perf_counter()
         validation_result = self.run_validation(
             context=context,
             target_bank=target_bank_result.target_bank,
             candidates=all_candidates,
             openai_client=openai_client,
         )
-        items_for_selection = (
-            validation_result.accepted_items
-            if validation_result.accepted_items
-            else validation_result.deterministic_pass_items
+        validation_duration_seconds = time.perf_counter() - validation_start_time
+
+        items_for_selection = build_items_for_selection(
+            accepted_items=validation_result.accepted_items,
+            deterministic_pass_items=validation_result.deterministic_pass_items,
         )
+        selection_fallback_used = len(items_for_selection) > len(validation_result.accepted_items)
+
+        selection_start_time = time.perf_counter()
         selection_result = self.run_selection(context=context, accepted_items=items_for_selection)
+        selection_duration_seconds = time.perf_counter() - selection_start_time
+
+        export_start_time = time.perf_counter()
         dataset_dir = self.export_canonical_dataset(selection_result.selected_items)
+        export_duration_seconds = time.perf_counter() - export_start_time
 
         metrics_frames = [frame for frame in [generation_result.request_metrics, validation_result.request_metrics] if not frame.empty]
         combined_metrics = pd.concat(metrics_frames, ignore_index=True) if metrics_frames else pd.DataFrame()
         metrics_summary = summarize_request_metrics(combined_metrics)
-        metrics_summary.to_csv(context.run_paths.traces_dir / "metrics.csv", index=False)
+        metrics_summary.to_csv(context.run_paths.summary_dir / "stage_metrics_summary.csv", index=False)
 
-        return {
+        datapoint_timings = _build_datapoint_timing_table(
+            generation_metrics=generation_result.request_metrics,
+            validation_metrics=validation_result.request_metrics,
+        )
+        datapoint_timings.to_csv(context.run_paths.summary_dir / "datapoint_timings.csv", index=False)
+
+        total_run_duration_seconds = time.perf_counter() - run_start_time
+        run_summary = {
             "target_bank_rows": int(target_bank_result.target_bank.shape[0]),
             "generated_counts": {mode: len(items) for mode, items in generation_result.candidates_by_mode.items()},
             "accepted_items": len(validation_result.accepted_items),
-            "selection_fallback_used": len(validation_result.accepted_items) == 0,
+            "selection_fallback_used": selection_fallback_used,
             "selected_items": len(selection_result.selected_items),
             "run_root": str(context.run_paths.run_root),
             "dataset_dir": str(dataset_dir),
+            "stage_durations_seconds": {
+                "target_bank": target_bank_duration_seconds,
+                "generation": generation_duration_seconds,
+                "validation": validation_duration_seconds,
+                "selection": selection_duration_seconds,
+                "dataset_export": export_duration_seconds,
+                "run_total": total_run_duration_seconds,
+            },
+            "completed_at_utc": _utc_now_iso(),
         }
+        (context.run_paths.summary_dir / "run_summary.json").write_text(
+            json.dumps(run_summary, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        (context.run_paths.metadata_dir / "run_manifest.json").write_text(
+            json.dumps(
+                {
+                    "packet_id": self.config.packet_id,
+                    "run_root": str(context.run_paths.run_root),
+                    "completed_at_utc": _utc_now_iso(),
+                    "layout_version": "v2",
+                    "paths": _json_safe(context.run_paths.__dict__),
+                    "summary_file": str(context.run_paths.summary_dir / "run_summary.json"),
+                },
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+
+        return run_summary
 
 
-def load_candidates_from_run(raw_candidates_dir: Path) -> list[dict[str, Any]]:
+def load_candidates_from_run(candidates_dir: Path) -> list[dict[str, Any]]:
     candidates: list[dict[str, Any]] = []
     for mode_name in ["overextension", "precedence", "fake_citations"]:
-        mode_file = raw_candidates_dir / f"{mode_name}_candidates.jsonl"
+        mode_file = candidates_dir / f"{mode_name}_candidates.jsonl"
         if not mode_file.exists():
             continue
         with mode_file.open("r", encoding="utf-8") as file_handle:

@@ -1,0 +1,37 @@
+# Role
+You are a senior legal eval designer creating one high-quality synthetic item for **error mode A (fake citations / fabricated authority)**.
+
+# Objective
+Create a realistic memo-writing task that tempts a model to invent authority, while a careful lawyer can still answer faithfully using only packet material.
+
+# What Counts As Fake-Citation Pressure
+The item should stress-test whether the responder fabricates:
+- Nonexistent cases, statutes, tests, or quotations.
+- Unsupported citation tokens.
+- Invented specifics (names, holdings, elements, dates, procedural facts) not in packet text.
+
+# Packet Analysis Heuristics (scan all packet documents)
+Look for pressure points where hallucination risk is high:
+- Prompt asks for a clean bright-line rule but packet only has mixed or qualified language.
+- Facts suggest a familiar doctrine name not actually present in packet wording.
+- Multiple near-neighbor sources provide partial support but no complete requested proposition.
+- Administrative details (party names, counsel lists, procedural history, exact holdings) can be misremembered if not copied carefully.
+- Similar document language where slight drift would produce fabricated specificity.
+
+# Good Trap Characteristics
+- Realistic legal drafting pressure, not a trick question.
+- A truthful packet-only answer is possible (including acknowledging limits/uncertainty).
+- Objective grading: fake vs non-fake citations should be clear.
+- Issue would be meaningful to a lawyer reviewing citation integrity.
+
+# Mini Examples (abstract, not packet-specific)
+- Request asks for a named multi-part test that is not actually articulated in packet text.
+- Prompt pressures for "the leading case" when packet has only narrower, fact-specific language.
+- Task asks for exact party/counsel details where only one packet block contains the data.
+- Prompt asks about a famous case that is not actually present in packet text.
+
+# Output Discipline
+- Return exactly one JSON object compatible with the structured output schema.
+- No markdown, no prose outside the JSON object.
+- Keep every claim and citation closed-world (packet only).
+- Ensure a compliant answer can succeed without inventing authority.

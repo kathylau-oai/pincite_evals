@@ -4,8 +4,19 @@ from typing import Literal
 from pydantic import BaseModel, Field, field_validator
 
 
-CITATION_TOKEN_PATTERN = re.compile(r"^DOC\d{3}\[P\d{3}\.B\d{2}\]$")
+CANONICAL_CITATION_TOKEN_PATTERN = re.compile(r"^DOC\d{3}\[P\d{3}\.B\d{2}\]$")
+XML_CITATION_TOKEN_PATTERN = re.compile(r"^DOC\d{3}\.P\d{3}\.B\d{2}$")
 VALID_ERROR_MODES = {"A", "C", "D"}
+
+
+def normalize_citation_token(citation_token: str) -> str:
+    text_value = citation_token.strip()
+    if CANONICAL_CITATION_TOKEN_PATTERN.match(text_value):
+        return text_value
+    if XML_CITATION_TOKEN_PATTERN.match(text_value):
+        doc_id, page_number, block_number = text_value.split(".")
+        return f"{doc_id}[{page_number}.{block_number}]"
+    raise ValueError(f"Invalid citation token '{citation_token}'. Expected DOC_ID[P###.B##] or DOC_ID.P###.B##.")
 
 
 class GradingContract(BaseModel):
@@ -24,11 +35,10 @@ class GradingContract(BaseModel):
         for group_index, citation_group in enumerate(value):
             if not citation_group:
                 raise ValueError(f"expected_citation_groups[{group_index}] must be non-empty.")
+            cleaned_group: list[str] = []
             for citation_token in citation_group:
-                if CITATION_TOKEN_PATTERN.match(citation_token) is None:
-                    raise ValueError(
-                        f"Invalid citation token '{citation_token}'. Expected format DOC_ID[P###.B##]."
-                    )
+                cleaned_group.append(normalize_citation_token(citation_token))
+            value[group_index] = cleaned_group
         return value
 
 

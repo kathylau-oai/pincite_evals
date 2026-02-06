@@ -4,7 +4,13 @@ from pathlib import Path
 import pandas as pd
 
 from .config import load_config
-from .pipeline import SyntheticGenerationPipeline, build_openai_client, load_candidates_from_run, summarize_request_metrics
+from .pipeline import (
+    SyntheticGenerationPipeline,
+    build_items_for_selection,
+    build_openai_client,
+    load_candidates_from_run,
+    summarize_request_metrics,
+)
 
 
 def _add_common_args(parser: argparse.ArgumentParser) -> None:
@@ -22,11 +28,12 @@ def _cmd_generate(args: argparse.Namespace) -> None:
     generation_result = pipeline.run_generation(
         context=context,
         target_bank=target_bank_result.target_bank,
+        packet_corpus_text=target_bank_result.packet_corpus_text,
         openai_client=openai_client,
     )
 
     metrics_summary = summarize_request_metrics(generation_result.request_metrics)
-    metrics_summary.to_csv(context.run_paths.traces_dir / "metrics.csv", index=False)
+    metrics_summary.to_csv(context.run_paths.summary_dir / "stage_metrics_summary.csv", index=False)
 
     print(f"run_root={context.run_paths.run_root}")
     print(f"target_bank_rows={target_bank_result.target_bank.shape[0]}")
@@ -42,9 +49,9 @@ def _cmd_validate(args: argparse.Namespace) -> None:
     context = pipeline.bootstrap(run_id=args.run_id)
 
     target_bank_result = pipeline.run_target_bank(context)
-    candidates = load_candidates_from_run(context.run_paths.raw_candidates_dir)
+    candidates = load_candidates_from_run(context.run_paths.generation_candidates_dir)
     if not candidates:
-        raise ValueError(f"No candidates found in {context.run_paths.raw_candidates_dir}")
+        raise ValueError(f"No candidates found in {context.run_paths.generation_candidates_dir}")
 
     openai_client = None if config.dry_run else build_openai_client(config)
     validation_result = pipeline.run_validation(
@@ -53,17 +60,17 @@ def _cmd_validate(args: argparse.Namespace) -> None:
         candidates=candidates,
         openai_client=openai_client,
     )
-    items_for_selection = (
-        validation_result.accepted_items
-        if validation_result.accepted_items
-        else validation_result.deterministic_pass_items
+    items_for_selection = build_items_for_selection(
+        accepted_items=validation_result.accepted_items,
+        deterministic_pass_items=validation_result.deterministic_pass_items,
     )
+    selection_fallback_used = len(items_for_selection) > len(validation_result.accepted_items)
     selection_result = pipeline.run_selection(context=context, accepted_items=items_for_selection)
     dataset_dir = pipeline.export_canonical_dataset(selection_result.selected_items)
 
     metrics_frames = []
-    generation_metrics = context.run_paths.traces_dir / "generation_metrics.csv"
-    validation_metrics = context.run_paths.traces_dir / "validation_metrics.csv"
+    generation_metrics = context.run_paths.generation_metrics_dir / "request_metrics.csv"
+    validation_metrics = context.run_paths.validation_metrics_dir / "request_metrics.csv"
 
     if generation_metrics.exists():
         metrics_frames.append(pd.read_csv(generation_metrics))
@@ -72,11 +79,11 @@ def _cmd_validate(args: argparse.Namespace) -> None:
 
     combined_metrics = pd.concat(metrics_frames, ignore_index=True) if metrics_frames else pd.DataFrame()
     metrics_summary = summarize_request_metrics(combined_metrics)
-    metrics_summary.to_csv(context.run_paths.traces_dir / "metrics.csv", index=False)
+    metrics_summary.to_csv(context.run_paths.summary_dir / "stage_metrics_summary.csv", index=False)
 
     print(f"run_root={context.run_paths.run_root}")
     print(f"accepted_items={len(validation_result.accepted_items)}")
-    print(f"selection_fallback_used={len(validation_result.accepted_items) == 0}")
+    print(f"selection_fallback_used={selection_fallback_used}")
     print(f"selected_items={len(selection_result.selected_items)}")
     print(f"dataset_dir={dataset_dir}")
 
@@ -105,7 +112,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Synthetic generation pipeline CLI.")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
-    generate_parser = subparsers.add_parser("generate", help="Run target-bank extraction and candidate generation.")
+    generate_parser = subparsers.add_parser("generate", help="Prepare packet corpus and run candidate generation.")
     _add_common_args(generate_parser)
     generate_parser.set_defaults(handler=_cmd_generate)
 

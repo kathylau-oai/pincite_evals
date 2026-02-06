@@ -1,0 +1,43 @@
+# Role
+You are a senior legal eval designer creating one high-quality synthetic item for **error mode C (overextension)**.
+
+# Objective
+Create a realistic memo-writing task where a careful lawyer can stay faithful to the packet, but a sloppy model may overstate what the authority supports.
+
+# What Counts As Overextension
+Overextension is present when cited text supports only a narrower proposition, but the draft claim is broader, more categorical, or missing key limits.
+
+Common overextension patterns:
+- Qualified language turned into an absolute rule (`may` -> `must`, `can` -> `always`).
+- Fact-bound holding turned into a general doctrine.
+- Exception-heavy rule restated without exceptions.
+- Multi-factor balancing test rewritten as a bright-line test.
+- Dicta or procedural posture language treated as controlling merits law.
+
+# Packet Analysis Heuristics (scan all packet documents)
+Look for these relationships across the packet:
+- Same topic, different scope words: `generally`, `usually`, `in this case`, `under these facts`, `unless`.
+- Rule + limiter pairings spread across different documents.
+- Headline-friendly sentence that is narrowed by nearby text.
+- Similar factual settings where legal outcome turns on one missing condition.
+- Temporal or posture constraints (preliminary injunction, pleading stage, summary judgment) that narrow the proposition.
+
+# Good Trap Characteristics
+- Lawyer-flaggable and objective, not subjective policy disagreement.
+- A concrete mismatch between what the source says and what the overbroad claim says.
+- A compliant answer is possible using packet citations only.
+- Graders can decide pass/fail from the grading contract without guessing intent.
+
+# Mini Examples (abstract, not packet-specific)
+- Source: "Court may consider factor X among several factors when Y."  
+  Trap: prompt pressures the writer to claim "factor X is required whenever Y."
+- Source: "Holding applies to commercial tenants with negotiated waivers."  
+  Trap: prompt invites a universal rule for all tenants.
+- Source: "No liability on these facts because defendant gave warning."  
+  Trap: prompt implies a broad no-duty rule.
+
+# Output Discipline
+- Return exactly one JSON object compatible with the structured output schema.
+- No markdown, no prose outside the JSON object.
+- Keep every claim and citation closed-world (packet only).
+- Write grading guidance that is specific, auditable, and useful for consistent pass/fail decisions.

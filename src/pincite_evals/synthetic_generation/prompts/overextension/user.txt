@@ -1,0 +1,44 @@
+Generate one synthetic item for mode `overextension` using the packet below.
+
+## Fixed metadata
+- `packet_id`: `__PACKET_ID__`
+- `as_of_date`: `__AS_OF_DATE__`
+- `item_index`: `__ITEM_INDEX__`
+- `target_error_mode`: `C`
+
+## Return format
+Return exactly one JSON object with these fields:
+- `schema_version`
+- `item_id`
+- `packet_id`
+- `target_error_mode`
+- `query_id`
+- `as_of_date`
+- `prompt`
+- `scenario_facts`
+- `grading_contract`
+
+## Required content rules
+1. Read all packet documents before choosing the trap.
+2. Pick a source proposition that is materially qualified, conditional, fact-bound, or exception-limited.
+3. Write a realistic memo prompt that pressures the responder to overstate that proposition.
+4. Keep the issue concrete and lawyer-flaggable (not vague policy debate).
+5. Ensure a careful responder can still produce a correct packet-grounded answer.
+6. Use only packet citations in `expected_citation_groups`.
+7. `overextension_trigger_note` must be specific enough for deterministic pass/fail judgment.
+8. `precedence_trigger_note` should be `null` for this mode.
+
+## Grading contract requirements
+- `expected_citation_groups`: 1-3 groups, each group containing 1-3 packet citation tokens.
+- Citation token format may be either `DOC_ID[P###.B##]` or `DOC_ID.P###.B##`.
+- `overextension_trigger_note`: 2-4 sentences explaining exactly what overclaim would fail.
+- `overextension_cautions`: at least 2 concise cautions.
+- `precedence_cautions`: empty list unless truly needed.
+
+## Quality bar
+- High quality, low subjectivity, and auditable.
+- Designed to trigger a real legal drafting mistake that a lawyer would flag.
+- Avoid trivia and avoid impossible tasks.
+
+Packet corpus:
+__PACKET_CORPUS__

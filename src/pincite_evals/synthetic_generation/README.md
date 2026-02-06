@@ -11,18 +11,24 @@ Mode `B` (wrong span) is intentionally not generated here; it is measured by gra
 ## What it does
 
 1. Reads a packet from `data/case_law_packets/<packet_id>/`.
-2. Builds a deterministic target bank from block-level text.
-3. Generates candidates in parallel (default: `gpt-5.2` with high reasoning, or dry-run mode).
-4. Validates with deterministic checks + single LLM pass/fail verifier.
+2. Builds a packet corpus from full text blocks for up to 8 packet documents.
+3. Generates candidates in parallel per mode by giving the model the full packet corpus and letting it choose trap opportunities (no deterministic mode target-bank seeding).
+4. Validates with lightweight deterministic checks + single LLM pass/fail verifier.
 5. Selects a diverse final set per mode.
 6. Writes canonical dataset files under `data/datasets/<packet_id>/`.
+
+Citation format compatibility: generation and validation accept both `DOC001[P001.B01]` and XML-style `DOC001.P001.B01` citation IDs and normalize to canonical token form in saved items.
+
+Generation/verifier requests do not set `max_output_tokens`; outputs are controlled by prompt constraints and structured-output schema parsing.
 
 ## Main files
 
 - `config.py`: typed config loader and defaults.
 - `schema.py`: item schema and citation token validation.
-- `pipeline.py`: end-to-end logic (target bank, generation, validation, selection, metrics).
+- `structured_outputs.py`: structured output model classes used by Responses API parsing.
+- `pipeline.py`: end-to-end logic (packet corpus prep, generation, validation, selection, metrics).
 - `cli.py`: CLI entrypoint (`generate`, `validate`, `run-all`).
+- `prompts/`: editable prompt templates per generation mode plus verifier prompts.
 
 ## CLI usage
 
@@ -41,4 +47,29 @@ pincite-synth validate --config path/to/config.yaml --run-id my_run
 
 - Run artifacts: `results/synthetic_generation/<packet_id>/<run_id>/`
 - Final dataset: `data/datasets/<packet_id>/synthetic_items.jsonl` and `.csv`
-- Metrics summary: `results/synthetic_generation/<packet_id>/<run_id>/traces/metrics.csv`
+- Stage summary metrics: `results/synthetic_generation/<packet_id>/<run_id>/summary/stage_metrics_summary.csv`
+- Per-datapoint timing table: `results/synthetic_generation/<packet_id>/<run_id>/summary/datapoint_timings.csv`
+
+Run folder layout:
+
+- `metadata/`: config snapshot + run manifest
+- `target_bank/`: packet corpus files and target-bank sanity checks
+- `generation/candidates/`: per-mode candidate JSONL files
+- `generation/metrics/`: request metrics + generation datapoint timings
+- `generation/traces/`: raw generation Responses API payloads
+- `validation/`: deterministic checks, LLM reviews, rejection log
+- `validation/metrics/`: request metrics + validation datapoint timings
+- `validation/traces/`: raw validation Responses API payloads
+- `selection/`: selected items and selection report
+- `summary/`: cross-stage summaries (`run_summary.json`, stage metrics, datapoint timings)
+
+## Prompt layout
+
+- `prompts/overextension/system.txt`
+- `prompts/overextension/user.txt`
+- `prompts/precedence/system.txt`
+- `prompts/precedence/user.txt`
+- `prompts/fake_citations/system.txt`
+- `prompts/fake_citations/user.txt`
+- `prompts/verifier/system.txt`
+- `prompts/verifier/user.txt`
