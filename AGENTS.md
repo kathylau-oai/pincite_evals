@@ -4,6 +4,11 @@
 - Run evaluations in parallel whenever possible to reduce end-to-end runtime.
 - Support running multiple model configurations in a single evaluation run (for example: different models, reasoning effort levels, temperatures, or prompts in one pass).
 - Keep run configuration explicit and reproducible so each model config can be compared apples-to-apples on the same inputs.
+- Use the OpenAI Responses API (not Chat Completions) for evaluation runs.
+- Use `tenacity` for retries with explicit retry policy settings (attempt limits, backoff, and retriable error types).
+- Use `tqdm` progress bars for long-running evaluation and grading jobs so progress is visible.
+- Use pandas DataFrames for tabular loading, transformation, and metric aggregation.
+- Use Plotly for analysis and plotting outputs (especially for slice-level and comparison charts).
 
 ## Results and experiment structure
 - Store all outputs under `results/` and organize each run under an experiment-specific subfolder.

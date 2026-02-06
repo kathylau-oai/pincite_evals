@@ -11,12 +11,19 @@ requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [{name = "OpenAI Solutions", email = "noreply@example.com"}]
 dependencies = [
-  "openai>=1.0.0",
+  "openai>=2.17.0",
   "pydantic>=2.0.0",
   "PyYAML>=6.0.0",
   "python-dotenv>=1.0.0",
   "tqdm>=4.66.0",
   "pandas>=2.0.0",
+  "tenacity>=8.2.0",
+  "plotly>=5.22.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
 ]
 
 [tool.setuptools]

@@ -31,10 +31,20 @@ The planned evaluation targets four core failure modes:
 ### Setup
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+# Install uv (macOS/Linux)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Verify installation
+uv --version
+
+# Create/update .venv from the project lockfile and install dev deps
+uv sync --extra dev
+
+# Run tests inside the uv-managed environment
+uv run pytest
 ```
+
+Dependency updates are managed with `uv` commands (for example `uv add ...` and `uv lock`).
 
 Create a `.env` file:
 
