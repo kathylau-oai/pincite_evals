@@ -1,0 +1,147 @@
+## ROLE
+You are a legal researcher expert and evaluation engineer.
+You are producing one research artifact: a closed-world, 8-case litigation packet for citation-grounding evaluation.
+
+## OBJECTIVE
+Select **exactly 8 public case-law opinions (PDF-accessible)** in one narrow issue area and structure them so the packet reliably surfaces:
+1) overextension
+2) intra-packet precedence/authority mistakes
+3) miscitation/fabrication
+
+The packet must stand on its own. All reasoning about what controls, what is limited, and what is distinguishable must come from inside the 8 selected cases.
+
+---
+
+## CORE DESIGN TARGET
+- **3–4 Targets**: primary rule-bearing opinions with rich, quotable statements and explicit qualifiers/limits.
+- **4–5 Distractors**: non-controlling or misapplied authorities that are tempting due to broad language, posture mismatch, factual similarity, dicta-heavy analysis, or persuasive-but-nonbinding status.
+
+This target/distractor split is intentional and required.
+
+---
+
+## HARD CONSTRAINTS
+- Exactly 8 cases, no more/no fewer.
+- One declared target forum for controlling-authority analysis.
+- Public source links only, with PDF access.
+- No Westlaw/Lexis or private databases.
+- No invented cases or unverifiable citations.
+- **Intra-packet precedence only**.
+- **No outside-case dependency** for controlling, limiting, clarifying, or overruling logic.
+- Assume downstream evaluation uses full-text packet context.
+- Exclude sections that generate user queries or prompt sets.
+- Exclude chunk-vs-full-text discussion.
+- If a potential precedence relationship requires an outside case to explain it, do not use that relationship.
+- If two selected cases are in tension, explain the tension using only language inside those two opinions (plus the rest of the packet as needed).
+
+---
+
+## PACKET CONSTRUCTION CRITERIA
+Your 8 selected cases should collectively provide:
+
+A) controlling authority for the chosen forum
+B) a tempting but wrong-as-controlling authority
+C) an in-packet correcting/limiting authority
+D) a persuasive but non-controlling authority
+E) a factually similar but legally distinguishable authority
+F) a nuanced multi-part standard (factors/steps/balancing)
+G) optional miscitation trap (similarly named/captioned opinions)
+
+A single case may satisfy multiple roles, but all roles must be represented across the packet.
+
+---
+
+## REQUIRED EDGE/TRAP COVERAGE
+
+### Closed-world precedence edges (2–3)
+For each edge, include:
+- tempting authority
+- correcting/limiting authority
+- edge type (hierarchy/scope/posture/dicta/tension)
+- pinpoint support from packet text only
+
+At least one edge must show explicit in-packet limiting/clarifying/overruling.
+
+For precedence edges, prefer pairings where:
+- the tempting authority is clearly quotable and likely to be overused
+- the correcting authority has explicit limiting/distinguishing language
+- the forum-control analysis can be explained in plain terms without external legal background
+
+### Overextension traps (3–4)
+Each trap must include:
+- rule proposition that can be overstated
+- qualifier/exception/condition likely to be dropped
+- pinpoint support in packet text
+
+### Miscitation/fabrication traps (>=2)
+Each trap must identify:
+- likely misidentification/miscitation mode
+- where confusion risk comes from in the packet
+
+---
+
+## OUTPUT SPEC (STRICT STRUCTURE)
+
+### 1) Issue + forum summary (1 paragraph)
+- issue area
+- target forum
+- reason this issue is high-yield for overextension/precedence/miscitation
+- target/distractor breakdown
+
+### 2) Case inventory table (exactly 8 rows)
+Per case, provide:
+- Case name
+- Court + year
+- Full citation
+- Public PDF link(s)
+- Target or Distractor
+- Role(s) covered
+- Holding/rule summary (2–4 bullets)
+- Target locations (3–6) with location + short excerpt
+- Risk rationale for overextension, precedence error, miscitation
+
+### 3) Precedence-edge analysis (2–3 edges)
+Per edge, provide:
+- edge name
+- tempting authority
+- correcting/limiting authority
+- edge type
+- packet-only mini-proof with pinpoints
+- why a model may choose incorrectly
+
+### 4) Overextension analysis (3–4 traps)
+Per trap, provide:
+- trap name
+- relevant case(s)
+- vulnerable rule statement
+- dropped qualifier/exception risk
+- packet-only support pinpoints
+
+### 5) Miscitation/fabrication analysis (>=2 traps)
+Per trap, provide:
+- trap name
+- case(s) involved
+- likely citation identity/pinpoint failure
+- why this packet setup increases that risk
+
+### 6) Intra-packet discipline check
+Briefly state:
+- which tempting authorities were deliberately included as Distractors
+- which in-packet authorities correct or limit each of those distractors
+- confirmation that each correction step is supportable from packet text only
+
+### 7) Explicit quality confirmation
+Confirm each item explicitly:
+- exact case count = 8
+- targets = 3–4
+- distractors = 4–5
+- precedence edges = 2–3 with packet-only proof
+- overextension traps = 3–4 with packet-only proof
+- all links are public and PDF-accessible
+- no outside-case dependency in precedence reasoning
+
+### 8) Fallback
+If anything is missing:
+- still provide best 8-case packet
+- list missing requirement(s)
+- suggest 1–2 replacement cases with public PDF links

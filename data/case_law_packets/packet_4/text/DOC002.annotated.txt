@@ -1,83 +1,138 @@
 [Page 1]
-[CITE_START:DOC002[P001.B01]] 662 
-OCTOBER TERM, 2008 [CITE_END:DOC002[P001.B01]]
-[CITE_START:DOC002[P001.B02]] Syllabus [CITE_END:DOC002[P001.B02]]
-[CITE_START:DOC002[P001.B03]] ASHCROFT, FORMER ATTORNEY GENERAL,  et al. [CITE_END:DOC002[P001.B03]]
-[CITE_START:DOC002[P001.B04]] v.  IQBAL  et al. [CITE_END:DOC002[P001.B04]]
-[CITE_START:DOC002[P001.B05]] certiorari to the united states court of appeals for the second circuit No. 07–1015. Argued December 10, 2008—Decided May 18, 2009 Following the September 11, 2001, terrorist attacks, respondent Iqbal, a Pakistani Muslim, was arrested on criminal charges and detained by federal ofﬁcials under restrictive conditions. Iqbal ﬁled a Bivens action against numerous federal ofﬁcials, including petitioner Ashcroft, the for mer Attorney General, and petitioner Mueller, the Director of the Fed eral Bureau of Investigation (FBI). See Bivens v. Six Unknown Fed. Narcotics Agents, 403 U. S. 388. The complaint alleged, inter alia, that petitioners designated Iqbal a person “of [CITE_END:DOC002[P001.B05]]
-[CITE_START:DOC002[P001.B06]] high interest” on account of his race, religion, or national origin, in contravention of the First and Fifth Amendments; that the FBI, under Mueller’s direction, arrested and detained thousands of Arab Muslim men as part of its September 11 investigation; that petitioners knew of, condoned, and willfully and maliciously agreed to subject Iqbal to harsh conditions of conﬁnement as a matter of policy, solely on account of the prohibited factors and for no legitimate penological interest; and that Ashcroft was the policy’s “principal architect” and Mueller was “instrumental” in its adoption and execution. After the District Court denied petitioners’ motion [CITE_END:DOC002[P001.B06]]
-[CITE_START:DOC002[P001.B07]] to dis miss on qualiﬁed-immunity grounds, they invoked the collateral-order doctrine to ﬁle an interlocutory appeal in the Second Circuit. Afﬁrm ing, that court assumed without discussion that it had jurisdiction and focused on the standard set forth in Bell Atlantic Corp. v. Twombly, 550 U. S. 544, for evaluating whether a complaint is sufﬁcient to survive a motion to dismiss. Concluding that Twombly ’s “ﬂexible plausibility standard” obliging a pleader to amplify a claim with factual allegations where necessary to render it plausible was inapplicable in the context of petitioners’ appeal, the court held that Iqbal’s complaint was adequate [CITE_END:DOC002[P001.B07]]
-[CITE_START:DOC002[P001.B08]] to allege petitioners’ personal involvement in discriminatory decisions which, if true, violated clearly established constitutional law. Held: 1. The Second Circuit had subject-matter jurisdiction to afﬁrm the District Court’s order denying petitioners’ motion to dismiss. Pp. 671–675. (a) Denial of a qualiﬁed-immunity claim can fall within the narrow class of prejudgment orders reviewable under the collateral-order doc [CITE_END:DOC002[P001.B08]]
+<BLOCK id="DOC002.P001.B01">
+662 
+OCTOBER TERM, 2008
+</BLOCK>
+<BLOCK id="DOC002.P001.B02">
+Syllabus
+</BLOCK>
+<BLOCK id="DOC002.P001.B03">
+ASHCROFT, FORMER ATTORNEY GENERAL,  et al.
+</BLOCK>
+<BLOCK id="DOC002.P001.B04">
+v.  IQBAL  et al.
+</BLOCK>
+<BLOCK id="DOC002.P001.B05">
+certiorari to the united states court of appeals for the second circuit No. 07–1015. Argued December 10, 2008—Decided May 18, 2009 Following the September 11, 2001, terrorist attacks, respondent Iqbal, a Pakistani Muslim, was arrested on criminal charges and detained by federal ofﬁcials under restrictive conditions. Iqbal ﬁled a Bivens action against numerous federal ofﬁcials, including petitioner Ashcroft, the for mer Attorney General, and petitioner Mueller, the Director of the Fed eral Bureau of Investigation (FBI). See Bivens v. Six Unknown Fed. Narcotics Agents, 403 U. S. 388. The complaint alleged, inter alia, that petitioners designated Iqbal a person “of
+</BLOCK>
+<BLOCK id="DOC002.P001.B06">
+high interest” on account of his race, religion, or national origin, in contravention of the First and Fifth Amendments; that the FBI, under Mueller’s direction, arrested and detained thousands of Arab Muslim men as part of its September 11 investigation; that petitioners knew of, condoned, and willfully and maliciously agreed to subject Iqbal to harsh conditions of conﬁnement as a matter of policy, solely on account of the prohibited factors and for no legitimate penological interest; and that Ashcroft was the policy’s “principal architect” and Mueller was “instrumental” in its adoption and execution. After the District Court denied petitioners’ motion
+</BLOCK>
+<BLOCK id="DOC002.P001.B07">
+to dis miss on qualiﬁed-immunity grounds, they invoked the collateral-order doctrine to ﬁle an interlocutory appeal in the Second Circuit. Afﬁrm ing, that court assumed without discussion that it had jurisdiction and focused on the standard set forth in Bell Atlantic Corp. v. Twombly, 550 U. S. 544, for evaluating whether a complaint is sufﬁcient to survive a motion to dismiss. Concluding that Twombly ’s “ﬂexible plausibility standard” obliging a pleader to amplify a claim with factual allegations where necessary to render it plausible was inapplicable in the context of petitioners’ appeal, the court held that Iqbal’s complaint was adequate
+</BLOCK>
+<BLOCK id="DOC002.P001.B08">
+to allege petitioners’ personal involvement in discriminatory decisions which, if true, violated clearly established constitutional law. Held: 1. The Second Circuit had subject-matter jurisdiction to afﬁrm the District Court’s order denying petitioners’ motion to dismiss. Pp. 671–675. (a) Denial of a qualiﬁed-immunity claim can fall within the narrow class of prejudgment orders reviewable under the collateral-order doc
+</BLOCK>
 
 [Page 2]
-[CITE_START:DOC002[P002.B01]] 663 
-Cite as: 556 U. S. 662 (2009) Syllabus [CITE_END:DOC002[P002.B01]]
-[CITE_START:DOC002[P002.B02]] trine so long as the order “turns on an issue of law.”  Mitchell  v.  For
+<BLOCK id="DOC002.P002.B01">
+663 
+Cite as: 556 U. S. 662 (2009) Syllabus
+</BLOCK>
+<BLOCK id="DOC002.P002.B02">
+trine so long as the order “turns on an issue of law.”  Mitchell  v.  For
 syth,  472 U. S. 511, 530. The doctrine’s applicability in this context is 
 well established; an order rejecting qualiﬁed immunity at the motion
 to-dismiss stage is a “ﬁnal decision” under 28 U. S. C. § 1291, which 
 vests courts of appeals with “jurisdiction of appeals from all ﬁnal de
 cisions of the district courts.”  Behrens  v.  Pelletier,  516 U. S. 299, 307. 
-Pp. 671–672. [CITE_END:DOC002[P002.B02]]
-[CITE_START:DOC002[P002.B03]] (b) Under these principles, the Court of Appeals had, and this 
+Pp. 671–672.
+</BLOCK>
+<BLOCK id="DOC002.P002.B03">
+(b) Under these principles, the Court of Appeals had, and this 
 Court has, jurisdiction over the District Court’s order. Because the 
 order turned on an issue of law and rejected the qualiﬁed-immunity 
 defense, it was a ﬁnal decision “subject to immediate appeal.”  Behrens, 
 supra,  at 307. Pp. 672–675. 2. Iqbal’s complaint fails to plead sufﬁcient facts to state a claim for 
-purposeful and unlawful discrimination. Pp. 675–687. [CITE_END:DOC002[P002.B03]]
-[CITE_START:DOC002[P002.B04]] (a) This Court assumes, without deciding, that Iqbal’s First Amend ment claim is actionable in a Bivens action, see Hartman v. Moore, 547 U. S. 250, 254, n. 2. Because vicarious liability is inapplicable to Bivens and § 1983 suits, see, e. g., Monell v. New York City Dept. of Social Servs., 436 U. S. 658, 691, the plaintiff in a suit such as the present one must plead that each Government-ofﬁcial defendant, through his own individual actions, has violated the Constitution. Purposeful discrim ination requires more than “intent as volition or intent as aware ness of consequences”; it involves [CITE_END:DOC002[P002.B04]]
-[CITE_START:DOC002[P002.B05]] a decisionmaker’s undertaking a course of action “ ‘because of,’ not merely ‘in spite of,’ [the action’s] ad verse effects upon an identiﬁable group.” Personnel Administrator of Mass. v. Feeney, 442 U. S. 256, 279. Iqbal must plead sufﬁcient factual matter to show that petitioners adopted and implemented the detention policies at issue not for a neutral, investigative reason, but for the pur pose of discriminating on account of race, religion, or national origin. Pp. 675–677. [CITE_END:DOC002[P002.B05]]
-[CITE_START:DOC002[P002.B06]] (b) Under Federal Rule of Civil Procedure 8(a)(2), a complaint must contain a “short and plain statement of the claim showing that the pleader is entitled to relief.” “[D]etailed factual allegations” are not required, Twombly, 550 U. S., at 555, but the Rule does call for sufﬁ cient factual matter, accepted as true, to “state a claim to relief that is plausible on its face,” id., at 570. A claim has facial plausibility when the pleaded factual content allows the court to draw the reasonable in ference that the defendant is liable for the misconduct alleged. Id., at 556. Two [CITE_END:DOC002[P002.B06]]
-[CITE_START:DOC002[P002.B07]] working principles underlie Twombly. First, the tenet that a court must accept a complaint’s allegations as true is inapplicable to threadbare recitals of a cause of action’s elements, supported by mere conclusory statements. Id., at 555. Second, determining whether a complaint states a plausible claim is context speciﬁc, requiring the [CITE_END:DOC002[P002.B07]]
+purposeful and unlawful discrimination. Pp. 675–687.
+</BLOCK>
+<BLOCK id="DOC002.P002.B04">
+(a) This Court assumes, without deciding, that Iqbal’s First Amend ment claim is actionable in a Bivens action, see Hartman v. Moore, 547 U. S. 250, 254, n. 2. Because vicarious liability is inapplicable to Bivens and § 1983 suits, see, e. g., Monell v. New York City Dept. of Social Servs., 436 U. S. 658, 691, the plaintiff in a suit such as the present one must plead that each Government-ofﬁcial defendant, through his own individual actions, has violated the Constitution. Purposeful discrim ination requires more than “intent as volition or intent as aware ness of consequences”; it involves
+</BLOCK>
+<BLOCK id="DOC002.P002.B05">
+a decisionmaker’s undertaking a course of action “ ‘because of,’ not merely ‘in spite of,’ [the action’s] ad verse effects upon an identiﬁable group.” Personnel Administrator of Mass. v. Feeney, 442 U. S. 256, 279. Iqbal must plead sufﬁcient factual matter to show that petitioners adopted and implemented the detention policies at issue not for a neutral, investigative reason, but for the pur pose of discriminating on account of race, religion, or national origin. Pp. 675–677.
+</BLOCK>
+<BLOCK id="DOC002.P002.B06">
+(b) Under Federal Rule of Civil Procedure 8(a)(2), a complaint must contain a “short and plain statement of the claim showing that the pleader is entitled to relief.” “[D]etailed factual allegations” are not required, Twombly, 550 U. S., at 555, but the Rule does call for sufﬁ cient factual matter, accepted as true, to “state a claim to relief that is plausible on its face,” id., at 570. A claim has facial plausibility when the pleaded factual content allows the court to draw the reasonable in ference that the defendant is liable for the misconduct alleged. Id., at 556. Two
+</BLOCK>
+<BLOCK id="DOC002.P002.B07">
+working principles underlie Twombly. First, the tenet that a court must accept a complaint’s allegations as true is inapplicable to threadbare recitals of a cause of action’s elements, supported by mere conclusory statements. Id., at 555. Second, determining whether a complaint states a plausible claim is context speciﬁc, requiring the
+</BLOCK>
 
 [Page 3]
-[CITE_START:DOC002[P003.B01]] 664 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P003.B01]]
-[CITE_START:DOC002[P003.B02]] Syllabus [CITE_END:DOC002[P003.B02]]
-[CITE_START:DOC002[P003.B03]] reviewing court to draw on its experience and common sense.  Id.,  at 
+<BLOCK id="DOC002.P003.B01">
+664 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P003.B02">
+Syllabus
+</BLOCK>
+<BLOCK id="DOC002.P003.B03">
+reviewing court to draw on its experience and common sense.  Id.,  at 
 556. A court considering a motion to dismiss may begin by identifying 
 allegations that, because they are mere conclusions, are not entitled to 
 the assumption of truth. While legal conclusions can provide the com
 plaint’s framework, they must be supported by factual allegations. 
 When there are well-pleaded factual allegations, a court should assume 
 their veracity and then determine whether they plausibly give rise to 
-an entitlement to relief. Pp. 677–680. [CITE_END:DOC002[P003.B03]]
-[CITE_START:DOC002[P003.B04]] (c) Iqbal’s pleadings do not comply with Rule 8 under Twombly. Several of his allegations—that petitioners agreed to subject him to harsh conditions as a matter of policy, solely on account of discriminatory factors and for no legitimate penological interest; that Ashcroft was that policy’s “principal architect”; and that Mueller was “instrumental” in its adoption and execution—are conclusory and not entitled to be assumed true. Moreover, the factual allegations that the FBI, under Mueller, arrested and detained thousands of Arab Muslim men, and that he and Ashcroft approved the detention policy, do not plausibly suggest that petitioners purposefully discriminated on [CITE_END:DOC002[P003.B04]]
-[CITE_START:DOC002[P003.B05]] prohibited grounds. Given that the September 11 attacks were perpetrated by Arab Muslims, it is not surprising that a legitimate policy directing law enforcement to ar rest and detain individuals because of their suspected link to the attacks would produce a disparate, incidental impact on Arab Muslims, even though the policy’s purpose was to target neither Arabs nor Muslims. Even if the complaint’s well-pleaded facts gave rise to a plausible infer ence that Iqbal’s arrest was the result of unconstitutional discrimina tion, that inference alone would not entitle him to relief: His claims against petitioners rest solely on their ostensible [CITE_END:DOC002[P003.B05]]
-[CITE_START:DOC002[P003.B06]] policy of holding de tainees categorized as “of high interest,” but the complaint does not contain facts plausibly showing that their policy was based on discrimi natory factors. Pp. 680–684. (d) Three of Iqbal’s arguments are rejected. Pp. 684–687. [CITE_END:DOC002[P003.B06]]
-[CITE_START:DOC002[P003.B07]] (i) His claim that  Twombly  should be limited to its antitrust con
+an entitlement to relief. Pp. 677–680.
+</BLOCK>
+<BLOCK id="DOC002.P003.B04">
+(c) Iqbal’s pleadings do not comply with Rule 8 under Twombly. Several of his allegations—that petitioners agreed to subject him to harsh conditions as a matter of policy, solely on account of discriminatory factors and for no legitimate penological interest; that Ashcroft was that policy’s “principal architect”; and that Mueller was “instrumental” in its adoption and execution—are conclusory and not entitled to be assumed true. Moreover, the factual allegations that the FBI, under Mueller, arrested and detained thousands of Arab Muslim men, and that he and Ashcroft approved the detention policy, do not plausibly suggest that petitioners purposefully discriminated on
+</BLOCK>
+<BLOCK id="DOC002.P003.B05">
+prohibited grounds. Given that the September 11 attacks were perpetrated by Arab Muslims, it is not surprising that a legitimate policy directing law enforcement to ar rest and detain individuals because of their suspected link to the attacks would produce a disparate, incidental impact on Arab Muslims, even though the policy’s purpose was to target neither Arabs nor Muslims. Even if the complaint’s well-pleaded facts gave rise to a plausible infer ence that Iqbal’s arrest was the result of unconstitutional discrimina tion, that inference alone would not entitle him to relief: His claims against petitioners rest solely on their ostensible
+</BLOCK>
+<BLOCK id="DOC002.P003.B06">
+policy of holding de tainees categorized as “of high interest,” but the complaint does not contain facts plausibly showing that their policy was based on discrimi natory factors. Pp. 680–684. (d) Three of Iqbal’s arguments are rejected. Pp. 684–687.
+</BLOCK>
+<BLOCK id="DOC002.P003.B07">
+(i) His claim that  Twombly  should be limited to its antitrust con
 text is not supported by that case or the Federal Rules. Because 
 Twombly  interpreted and applied Rule 8, which in turn governs the 
 pleading standard “in all civil actions,” Rule 1, the case applies to anti
 trust and discrimination suits alike, see 550 U. S., at 555–556, and n. 3. 
-P. 684. [CITE_END:DOC002[P003.B07]]
-[CITE_START:DOC002[P003.B08]] (ii) Rule 8’s pleading requirements need not be relaxed based on 
+P. 684.
+</BLOCK>
+<BLOCK id="DOC002.P003.B08">
+(ii) Rule 8’s pleading requirements need not be relaxed based on 
 the Second Circuit’s instruction that the District Court cabin discovery 
 to preserve petitioners’ qualiﬁed-immunity defense in anticipation of a 
 summary judgment motion. The question presented by a motion to 
 dismiss for insufﬁcient pleadings does not turn on the controls placed on 
-the discovery process.  Twombly, supra,  at 559. And because Iqbal’s [CITE_END:DOC002[P003.B08]]
+the discovery process.  Twombly, supra,  at 559. And because Iqbal’s
+</BLOCK>
 
 [Page 4]
-[CITE_START:DOC002[P004.B01]] 665 
-Cite as: 556 U. S. 662 (2009) Syllabus [CITE_END:DOC002[P004.B01]]
-[CITE_START:DOC002[P004.B02]] complaint is deﬁcient under Rule 8, he is not entitled to discovery, cab
+<BLOCK id="DOC002.P004.B01">
+665 
+Cite as: 556 U. S. 662 (2009) Syllabus
+</BLOCK>
+<BLOCK id="DOC002.P004.B02">
+complaint is deﬁcient under Rule 8, he is not entitled to discovery, cab
 ined or otherwise. Pp. 684–686. (iii) Rule 9(b)—which requires particularity when pleading “fraud 
 or mistake” but allows “other conditions of a person’s mind [to] be al
 leged generally”—does not require courts to credit a complaint’s conclu
 sory statements without reference to its factual context. Rule 9 merely 
 excuses a party from pleading discriminatory intent under an elevated 
 pleading standard. It does not give him license to evade Rule 8’s less 
-rigid, though still operative, strictures. Pp. 686–687. [CITE_END:DOC002[P004.B02]]
-[CITE_START:DOC002[P004.B03]] (e) The Second Circuit should decide in the ﬁrst instance whether 
+rigid, though still operative, strictures. Pp. 686–687.
+</BLOCK>
+<BLOCK id="DOC002.P004.B03">
+(e) The Second Circuit should decide in the ﬁrst instance whether 
 to remand to the District Court to allow Iqbal to seek leave to amend 
 his deﬁcient complaint. P. 687. 
-490 F. 3d 143, reversed and remanded. [CITE_END:DOC002[P004.B03]]
-[CITE_START:DOC002[P004.B04]] Kennedy, J., delivered the opinion of the Court, in which  Roberts,
+490 F. 3d 143, reversed and remanded.
+</BLOCK>
+<BLOCK id="DOC002.P004.B04">
+Kennedy, J., delivered the opinion of the Court, in which  Roberts,
 C. J., and  Scalia, Thomas, and  Alito, JJ., joined.  Souter, J., ﬁled a 
 dissenting opinion, in which  Stevens, Ginsburg, and  Breyer, JJ.,
-joined,  post,  p. 687.  Breyer, J., ﬁled a dissenting opinion,  post,  p. 699. [CITE_END:DOC002[P004.B04]]
-[CITE_START:DOC002[P004.B05]] Former  Solicitor General Garre  argued the cause for peti
+joined,  post,  p. 687.  Breyer, J., ﬁled a dissenting opinion,  post,  p. 699.
+</BLOCK>
+<BLOCK id="DOC002.P004.B05">
+Former  Solicitor General Garre  argued the cause for peti
 tioners. With him on the briefs were  Assistant Attorney 
 General Katsas, Deputy Assistant Attorney General Cohn, 
 Curtis E. Gannon, Barbara L. Herwig,  and  Robert M. Loeb. 
@@ -86,26 +141,40 @@ lato  ﬁled briefs for Dennis Hasty as respondent under this
 Court’s Rule 12.6 urging reversal.  Brett M. Schuman, 
 Lauren J. Resnick,  and  Thomas D. Warren  ﬁled briefs for 
 Michael Rolince et al. as respondents under this Court’s Rule 
-12.6 urging reversal. [CITE_END:DOC002[P004.B05]]
-[CITE_START:DOC002[P004.B06]] Alexander A. Reinert  argued the cause for respondents. 
+12.6 urging reversal.
+</BLOCK>
+<BLOCK id="DOC002.P004.B06">
+Alexander A. Reinert  argued the cause for respondents. 
 With him on the brief for respondent Javaid Iqbal were  Joan 
 M. Magoolaghan, Elizabeth L. Koob,  and  Rima J. Oken. * * Daniel J. Popeo, Richard A. Samp,  and  Paul J. Larkin, Jr.,  ﬁled a 
-brief for William P. Barr et al. as  amici curiae  urging reversal. [CITE_END:DOC002[P004.B06]]
-[CITE_START:DOC002[P004.B07]] Briefs of  amici curiae  urging afﬁrmance were ﬁled for the American 
+brief for William P. Barr et al. as  amici curiae  urging reversal.
+</BLOCK>
+<BLOCK id="DOC002.P004.B07">
+Briefs of  amici curiae  urging afﬁrmance were ﬁled for the American 
 Association for Justice by  Stephen B. Pershing  and  Les Weisbrod;  for the 
 Japanese American Citizens League et al. by  John E. Higgins;  for Na
 tional Civil Rights Organizations by  Harold Hongju Koh  and  Cristo´bal 
 Joshua Alex;  for Professors of Civil Procedure and Federal Practice by 
 Allan Ides  and  David L. Shapiro;  for the Sikh Coalition et al. by  Brian 
-E. Robinson;  and for Ibrahim Turkmen et al. by  Michael Winger. [CITE_END:DOC002[P004.B07]]
+E. Robinson;  and for Ibrahim Turkmen et al. by  Michael Winger.
+</BLOCK>
 
 [Page 5]
-[CITE_START:DOC002[P005.B01]] 666 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P005.B01]]
-[CITE_START:DOC002[P005.B02]] Opinion of the Court [CITE_END:DOC002[P005.B02]]
-[CITE_START:DOC002[P005.B03]] Justice Kennedy delivered the opinion of the Court. Javaid Iqbal (hereinafter respondent) is a citizen of Paki stan and a Muslim. In the wake of the September 11, 2001, terrorist attacks he was arrested in the United States on criminal charges and detained by federal ofﬁcials. Respond ent claims he was deprived of various constitutional protec tions while in federal custody. To redress the alleged depri vations, respondent ﬁled a complaint against numerous federal ofﬁcials, including John Ashcroft, the former Attor ney General of the United States, and Robert Mueller, the Director of the Federal Bureau of Investigation (FBI). Ashcroft [CITE_END:DOC002[P005.B03]]
-[CITE_START:DOC002[P005.B04]] and Mueller are the petitioners in the case now before us. As to these two petitioners, the complaint al leges that they adopted an unconstitutional policy that sub jected respondent to harsh conditions of conﬁnement on ac count of his race, religion, or national origin. [CITE_END:DOC002[P005.B04]]
-[CITE_START:DOC002[P005.B05]] In the District Court petitioners raised the defense of 
+<BLOCK id="DOC002.P005.B01">
+666 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P005.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P005.B03">
+Justice Kennedy delivered the opinion of the Court. Javaid Iqbal (hereinafter respondent) is a citizen of Paki stan and a Muslim. In the wake of the September 11, 2001, terrorist attacks he was arrested in the United States on criminal charges and detained by federal ofﬁcials. Respond ent claims he was deprived of various constitutional protec tions while in federal custody. To redress the alleged depri vations, respondent ﬁled a complaint against numerous federal ofﬁcials, including John Ashcroft, the former Attor ney General of the United States, and Robert Mueller, the Director of the Federal Bureau of Investigation (FBI). Ashcroft
+</BLOCK>
+<BLOCK id="DOC002.P005.B04">
+and Mueller are the petitioners in the case now before us. As to these two petitioners, the complaint al leges that they adopted an unconstitutional policy that sub jected respondent to harsh conditions of conﬁnement on ac count of his race, religion, or national origin.
+</BLOCK>
+<BLOCK id="DOC002.P005.B05">
+In the District Court petitioners raised the defense of 
 qualiﬁed immunity and moved to dismiss the suit, contending 
 the complaint was not sufﬁcient to state a claim against 
 them. The District Court denied the motion to dismiss, con
@@ -114,8 +183,10 @@ petitioners’ ofﬁcial status at the times in question. Petition
 ers brought an interlocutory appeal in the Court of Appeals 
 for the Second Circuit. The court, without discussion, as
 sumed it had jurisdiction over the order denying the motion 
-to dismiss; and it afﬁrmed the District Court’s decision. [CITE_END:DOC002[P005.B05]]
-[CITE_START:DOC002[P005.B06]] Respondent’s account of his prison ordeal could, if proved, 
+to dismiss; and it afﬁrmed the District Court’s decision.
+</BLOCK>
+<BLOCK id="DOC002.P005.B06">
+Respondent’s account of his prison ordeal could, if proved, 
 demonstrate unconstitutional misconduct by some govern
 mental actors. But the allegations and pleadings with re
 spect to these actors are not before us here. This case in
@@ -123,14 +194,22 @@ stead turns on a narrower question: Did respondent, as the
 plaintiff in the District Court, plead factual matter that, if 
 taken as true, states a claim that petitioners deprived him 
 of his clearly established constitutional rights. We hold re
-spondent’s pleadings are insufﬁcient. [CITE_END:DOC002[P005.B06]]
+spondent’s pleadings are insufﬁcient.
+</BLOCK>
 
 [Page 6]
-[CITE_START:DOC002[P006.B01]] 667 
-Cite as: 556 U. S. 662 (2009) Opinion of the Court I [CITE_END:DOC002[P006.B01]]
-[CITE_START:DOC002[P006.B02]] Following the 2001 attacks, the FBI and other entities within the Department of Justice began an investigation of vast reach to identify the assailants and prevent them from attacking anew. The FBI dedicated more than 4,000 special agents and 3,000 support personnel to the endeavor. By September 18 “the FBI had received more than 96,000 tips or potential leads from the public.” Dept. of Justice, Ofﬁce of Inspector General, The September 11 Detainees: A Re view of the Treatment of Aliens Held on Immigration Charges in Connection with the Investigation of the Septem ber 11 Attacks 1, 11–12 (Apr. 2003), [CITE_END:DOC002[P006.B02]]
-[CITE_START:DOC002[P006.B03]] http://www.usdoj.gov/oig/ special/0306/full.pdf ?bcsi_scan_61073EC0F74759AD=0& bcsi_scan_ﬁlename=full.pdf (as visited May 14, 2009, and available in Clerk of Court’s case ﬁle). [CITE_END:DOC002[P006.B03]]
-[CITE_START:DOC002[P006.B04]] In the ensuing months the FBI questioned more than 1,000 
+<BLOCK id="DOC002.P006.B01">
+667 
+Cite as: 556 U. S. 662 (2009) Opinion of the Court I
+</BLOCK>
+<BLOCK id="DOC002.P006.B02">
+Following the 2001 attacks, the FBI and other entities within the Department of Justice began an investigation of vast reach to identify the assailants and prevent them from attacking anew. The FBI dedicated more than 4,000 special agents and 3,000 support personnel to the endeavor. By September 18 “the FBI had received more than 96,000 tips or potential leads from the public.” Dept. of Justice, Ofﬁce of Inspector General, The September 11 Detainees: A Re view of the Treatment of Aliens Held on Immigration Charges in Connection with the Investigation of the Septem ber 11 Attacks 1, 11–12 (Apr. 2003),
+</BLOCK>
+<BLOCK id="DOC002.P006.B03">
+http://www.usdoj.gov/oig/ special/0306/full.pdf ?bcsi_scan_61073EC0F74759AD=0& bcsi_scan_ﬁlename=full.pdf (as visited May 14, 2009, and available in Clerk of Court’s case ﬁle).
+</BLOCK>
+<BLOCK id="DOC002.P006.B04">
+In the ensuing months the FBI questioned more than 1,000 
 people with suspected links to the attacks in particular or to 
 terrorism in general.  Id.,  at 1. Of those individuals, some 
 762 were held on immigration charges; and a 184-member 
@@ -138,8 +217,10 @@ subset of that group was deemed to be “of ‘high interest’ ” to
 the investigation.  Id.,  at 111. The high-interest detainees 
 were held under restrictive conditions designed to prevent 
 them from communicating with the general prison population 
-or the outside world.  Id.,  at 112–113. [CITE_END:DOC002[P006.B04]]
-[CITE_START:DOC002[P006.B05]] Respondent was one of the detainees. According to his 
+or the outside world.  Id.,  at 112–113.
+</BLOCK>
+<BLOCK id="DOC002.P006.B05">
+Respondent was one of the detainees. According to his 
 complaint, in November 2001 agents of the FBI and Immi
 gration and Naturalization Service arrested him on charges 
 of fraud in relation to identiﬁcation documents and conspir
@@ -149,45 +230,85 @@ spondent was housed at the Metropolitan Detention Center
 (MDC) in Brooklyn, New York. Respondent was designated 
 a person “of high interest” to the September 11 investigation 
 and in January 2002 was placed in a section of the MDC 
-known as the Administrative Maximum Special Housing Unit [CITE_END:DOC002[P006.B05]]
+known as the Administrative Maximum Special Housing Unit
+</BLOCK>
 
 [Page 7]
-[CITE_START:DOC002[P007.B01]] 668 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P007.B01]]
-[CITE_START:DOC002[P007.B02]] Opinion of the Court [CITE_END:DOC002[P007.B02]]
-[CITE_START:DOC002[P007.B03]] (ADMAX SHU).  Id.,  at 148. As the facility’s name indi
+<BLOCK id="DOC002.P007.B01">
+668 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P007.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P007.B03">
+(ADMAX SHU).  Id.,  at 148. As the facility’s name indi
 cates, the ADMAX SHU incorporates the maximum security 
 conditions allowable under Federal Bureau of Prisons regu
 lations.  Ibid.  ADMAX SHU detainees were kept in lock
 down 23 hours a day, spending the remaining hour outside 
 their cells in handcuffs and leg irons accompanied by a four
-ofﬁcer escort.  Ibid. [CITE_END:DOC002[P007.B03]]
-[CITE_START:DOC002[P007.B04]] Respondent pleaded guilty to the criminal charges, served a term of imprisonment, and was removed to his native Paki stan. Id., at 149. He then ﬁled a Bivens action in the United States District Court for the Eastern District of New York against 34 current and former federal ofﬁcials and 19 “John Doe” federal corrections ofﬁcers. See Bivens v. Six Unknown Fed. Narcotics Agents, 403 U. S. 388 (1971). The defendants range from the correctional ofﬁcers who had day-to-day contact with respondent during the term of his conﬁnement, to the wardens of the MDC facility, all the way to petitioners—ofﬁcials [CITE_END:DOC002[P007.B04]]
-[CITE_START:DOC002[P007.B05]] who were at the highest level of the federal law enforcement hierarchy. First Amended Com plaint in No. 04–CV–1809 (JG)(JA), ¶¶ 10–11, App. to Pet. for Cert. 157a (hereinafter Complaint). [CITE_END:DOC002[P007.B05]]
-[CITE_START:DOC002[P007.B06]] The 21-cause-of-action complaint does not challenge re spondent’s arrest or his conﬁnement in the MDC’s general prison population. Rather, it concentrates on his treatment while conﬁned to the ADMAX SHU. The complaint sets forth various claims against defendants who are not before us. For instance, the complaint alleges that respondent’s jailors “kicked him in the stomach, punched him in the face, and dragged him across” his cell without justiﬁcation, id., ¶ 113, at 176a; subjected him to serial strip and body-cavity searches when he posed no safety risk to himself or others, id., ¶¶ 143–145, at 182a; and refused to [CITE_END:DOC002[P007.B06]]
-[CITE_START:DOC002[P007.B07]] let him and other Muslims pray because there would be “[n]o prayers for ter rorists,” id., ¶ 154, at 184a. The allegations against petitioners are the only ones rele vant here. The complaint contends that petitioners desig [CITE_END:DOC002[P007.B07]]
+ofﬁcer escort.  Ibid.
+</BLOCK>
+<BLOCK id="DOC002.P007.B04">
+Respondent pleaded guilty to the criminal charges, served a term of imprisonment, and was removed to his native Paki stan. Id., at 149. He then ﬁled a Bivens action in the United States District Court for the Eastern District of New York against 34 current and former federal ofﬁcials and 19 “John Doe” federal corrections ofﬁcers. See Bivens v. Six Unknown Fed. Narcotics Agents, 403 U. S. 388 (1971). The defendants range from the correctional ofﬁcers who had day-to-day contact with respondent during the term of his conﬁnement, to the wardens of the MDC facility, all the way to petitioners—ofﬁcials
+</BLOCK>
+<BLOCK id="DOC002.P007.B05">
+who were at the highest level of the federal law enforcement hierarchy. First Amended Com plaint in No. 04–CV–1809 (JG)(JA), ¶¶ 10–11, App. to Pet. for Cert. 157a (hereinafter Complaint).
+</BLOCK>
+<BLOCK id="DOC002.P007.B06">
+The 21-cause-of-action complaint does not challenge re spondent’s arrest or his conﬁnement in the MDC’s general prison population. Rather, it concentrates on his treatment while conﬁned to the ADMAX SHU. The complaint sets forth various claims against defendants who are not before us. For instance, the complaint alleges that respondent’s jailors “kicked him in the stomach, punched him in the face, and dragged him across” his cell without justiﬁcation, id., ¶ 113, at 176a; subjected him to serial strip and body-cavity searches when he posed no safety risk to himself or others, id., ¶¶ 143–145, at 182a; and refused to
+</BLOCK>
+<BLOCK id="DOC002.P007.B07">
+let him and other Muslims pray because there would be “[n]o prayers for ter rorists,” id., ¶ 154, at 184a. The allegations against petitioners are the only ones rele vant here. The complaint contends that petitioners desig
+</BLOCK>
 
 [Page 8]
-[CITE_START:DOC002[P008.B01]] 669 
-Cite as: 556 U. S. 662 (2009) Opinion of the Court [CITE_END:DOC002[P008.B01]]
-[CITE_START:DOC002[P008.B02]] nated respondent a person of high interest on account of his race, religion, or national origin, in contravention of the First and Fifth Amendments to the Constitution. The complaint alleges that “the [FBI], under the direction of Defendant MUELLER, arrested and detained thousands of Arab Mus lim men . . . as part of its investigation of the events of Sep tember 11.” Id., ¶ 47, at 164a. It further alleges that “[t]he policy of holding post-September-11th detainees in highly re strictive conditions of conﬁnement until they were ‘cleared’ by the FBI was approved by Defendants ASHCROFT and MUELLER in [CITE_END:DOC002[P008.B02]]
-[CITE_START:DOC002[P008.B03]] discussions in the weeks after September 11, 2001.” Id., ¶ 69, at 168a. Lastly, the complaint posits that petitioners “each knew of, condoned, and willfully and mali ciously agreed to subject” respondent to harsh conditions of conﬁnement “as a matter of policy, solely on account of [his] religion, race, and/or national origin and for no legitimate penological interest.” Id., ¶ 96, at 172a–173a. The pleading names Ashcroft as the “principal architect” of the policy, id., ¶ 10, at 157a, and identiﬁes Mueller as “instrumental in [its] adoption, promulgation, and implementation,” id., ¶ 11, at 157a. [CITE_END:DOC002[P008.B03]]
-[CITE_START:DOC002[P008.B04]] Petitioners moved to dismiss the complaint for failure to state sufﬁcient allegations to show their own involvement in clearly established unconstitutional conduct. The District Court denied their motion. Accepting all of the allegations in respondent’s complaint as true, the court held that “it can not be said that there [is] no set of facts on which [respond ent] would be entitled to relief as against” petitioners. Id., at 136a–137a (relying on Conley v. Gibson, 355 U. S. 41 (1957)). Invoking the collateral-order doctrine petitioners ﬁled an interlocutory appeal in the United States Court of Appeals for the Second Circuit. While [CITE_END:DOC002[P008.B04]]
-[CITE_START:DOC002[P008.B05]] that appeal was pending, this Court decided Bell Atlantic Corp. v. Twombly, 550 U. S. 544 (2007), which discussed the standard for evalu ating whether a complaint is sufﬁcient to survive a motion to dismiss. [CITE_END:DOC002[P008.B05]]
+<BLOCK id="DOC002.P008.B01">
+669 
+Cite as: 556 U. S. 662 (2009) Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P008.B02">
+nated respondent a person of high interest on account of his race, religion, or national origin, in contravention of the First and Fifth Amendments to the Constitution. The complaint alleges that “the [FBI], under the direction of Defendant MUELLER, arrested and detained thousands of Arab Mus lim men . . . as part of its investigation of the events of Sep tember 11.” Id., ¶ 47, at 164a. It further alleges that “[t]he policy of holding post-September-11th detainees in highly re strictive conditions of conﬁnement until they were ‘cleared’ by the FBI was approved by Defendants ASHCROFT and MUELLER in
+</BLOCK>
+<BLOCK id="DOC002.P008.B03">
+discussions in the weeks after September 11, 2001.” Id., ¶ 69, at 168a. Lastly, the complaint posits that petitioners “each knew of, condoned, and willfully and mali ciously agreed to subject” respondent to harsh conditions of conﬁnement “as a matter of policy, solely on account of [his] religion, race, and/or national origin and for no legitimate penological interest.” Id., ¶ 96, at 172a–173a. The pleading names Ashcroft as the “principal architect” of the policy, id., ¶ 10, at 157a, and identiﬁes Mueller as “instrumental in [its] adoption, promulgation, and implementation,” id., ¶ 11, at 157a.
+</BLOCK>
+<BLOCK id="DOC002.P008.B04">
+Petitioners moved to dismiss the complaint for failure to state sufﬁcient allegations to show their own involvement in clearly established unconstitutional conduct. The District Court denied their motion. Accepting all of the allegations in respondent’s complaint as true, the court held that “it can not be said that there [is] no set of facts on which [respond ent] would be entitled to relief as against” petitioners. Id., at 136a–137a (relying on Conley v. Gibson, 355 U. S. 41 (1957)). Invoking the collateral-order doctrine petitioners ﬁled an interlocutory appeal in the United States Court of Appeals for the Second Circuit. While
+</BLOCK>
+<BLOCK id="DOC002.P008.B05">
+that appeal was pending, this Court decided Bell Atlantic Corp. v. Twombly, 550 U. S. 544 (2007), which discussed the standard for evalu ating whether a complaint is sufﬁcient to survive a motion to dismiss.
+</BLOCK>
 
 [Page 9]
-[CITE_START:DOC002[P009.B01]] 670 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P009.B01]]
-[CITE_START:DOC002[P009.B02]] Opinion of the Court [CITE_END:DOC002[P009.B02]]
-[CITE_START:DOC002[P009.B03]] The Court of Appeals considered Twombly’ s applicability to this case. Acknowledging that Twombly retired the Con ley no-set-of-facts test relied upon by the District Court, the Court of Appeals’ opinion discussed at length how to apply this Court’s “standard for assessing the adequacy of plead ings.” 490 F. 3d, at 155. It concluded that Twombly called for a “ﬂexible ‘plausibility standard,’ which obliges a pleader to amplify a claim with some factual allegations in those con texts where such ampliﬁcation is needed to render the claim plausible. ” Id., at 157–158. The court found that petition ers’ appeal did [CITE_END:DOC002[P009.B03]]
-[CITE_START:DOC002[P009.B04]] not present one of “those contexts” requiring ampliﬁcation. As a consequence, it held respondent’s plead ing adequate to allege petitioners’ personal involvement in discriminatory decisions which, if true, violated clearly es tablished constitutional law. Id., at 174. [CITE_END:DOC002[P009.B04]]
-[CITE_START:DOC002[P009.B05]] Judge Cabranes concurred. He agreed that the majority’s “discussion of the relevant pleading standards reﬂect[ed] the uneasy compromise . . . between a qualiﬁed immunity privi lege rooted in the need to preserve the effectiveness of gov ernment as contemplated by our constitutional structure and the pleading requirements of Rule 8(a) of the Federal Rules of Civil Procedure.” Id., at 178 (internal quotation marks and citations omitted). Judge Cabranes nonetheless ex pressed concern at the prospect of subjecting high-ranking Government ofﬁcials—entitled to assert the defense of quali ﬁed immunity and charged with responding to “a national and international security emergency [CITE_END:DOC002[P009.B05]]
-[CITE_START:DOC002[P009.B06]] unprecedented in the history of the American Republic”—to the burdens of discov ery on the basis of a complaint as nonspeciﬁc as respondent’s. Id., at 179. Reluctant to vindicate that concern as a member of the Court of Appeals, ibid., Judge Cabranes urged this Court to address the appropriate pleading standard “at the earliest opportunity,” id., at 178. We granted certiorari, 554 U. S. 902 (2008), and now reverse. [CITE_END:DOC002[P009.B06]]
+<BLOCK id="DOC002.P009.B01">
+670 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P009.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P009.B03">
+The Court of Appeals considered Twombly’ s applicability to this case. Acknowledging that Twombly retired the Con ley no-set-of-facts test relied upon by the District Court, the Court of Appeals’ opinion discussed at length how to apply this Court’s “standard for assessing the adequacy of plead ings.” 490 F. 3d, at 155. It concluded that Twombly called for a “ﬂexible ‘plausibility standard,’ which obliges a pleader to amplify a claim with some factual allegations in those con texts where such ampliﬁcation is needed to render the claim plausible. ” Id., at 157–158. The court found that petition ers’ appeal did
+</BLOCK>
+<BLOCK id="DOC002.P009.B04">
+not present one of “those contexts” requiring ampliﬁcation. As a consequence, it held respondent’s plead ing adequate to allege petitioners’ personal involvement in discriminatory decisions which, if true, violated clearly es tablished constitutional law. Id., at 174.
+</BLOCK>
+<BLOCK id="DOC002.P009.B05">
+Judge Cabranes concurred. He agreed that the majority’s “discussion of the relevant pleading standards reﬂect[ed] the uneasy compromise . . . between a qualiﬁed immunity privi lege rooted in the need to preserve the effectiveness of gov ernment as contemplated by our constitutional structure and the pleading requirements of Rule 8(a) of the Federal Rules of Civil Procedure.” Id., at 178 (internal quotation marks and citations omitted). Judge Cabranes nonetheless ex pressed concern at the prospect of subjecting high-ranking Government ofﬁcials—entitled to assert the defense of quali ﬁed immunity and charged with responding to “a national and international security emergency
+</BLOCK>
+<BLOCK id="DOC002.P009.B06">
+unprecedented in the history of the American Republic”—to the burdens of discov ery on the basis of a complaint as nonspeciﬁc as respondent’s. Id., at 179. Reluctant to vindicate that concern as a member of the Court of Appeals, ibid., Judge Cabranes urged this Court to address the appropriate pleading standard “at the earliest opportunity,” id., at 178. We granted certiorari, 554 U. S. 902 (2008), and now reverse.
+</BLOCK>
 
 [Page 10]
-[CITE_START:DOC002[P010.B01]] Cite as: 556 U. S. 662 (2009) 
-671 Opinion of the Court II [CITE_END:DOC002[P010.B01]]
-[CITE_START:DOC002[P010.B02]] We ﬁrst address whether the Court of Appeals had 
+<BLOCK id="DOC002.P010.B01">
+Cite as: 556 U. S. 662 (2009) 
+671 Opinion of the Court II
+</BLOCK>
+<BLOCK id="DOC002.P010.B02">
+We ﬁrst address whether the Court of Appeals had 
 subject-matter jurisdiction to afﬁrm the District Court’s 
 order denying petitioners’ motion to dismiss. Respondent 
 disputed subject-matter jurisdiction in the Court of Appeals, 
@@ -198,80 +319,150 @@ in doubt.  Arbaugh  v.  Y & H Corp.,   546 U. S. 500, 514 (2006)
 (citing  United States  v.  Cotton,  535 U. S. 625, 630 (2002)). 
 According to respondent, the District Court’s order denying 
 petitioners’ motion to dismiss is not appealable under the 
-collateral-order doctrine. We disagree. [CITE_END:DOC002[P010.B02]]
-[CITE_START:DOC002[P010.B03]] A [CITE_END:DOC002[P010.B03]]
-[CITE_START:DOC002[P010.B04]] With exceptions inapplicable here, Congress has vested the courts of appeals with “jurisdiction of appeals from all ﬁnal decisions of the district courts of the United States.” 28 U. S. C. § 1291. Though the statute’s ﬁnality requirement ensures that “interlocutory appeals—appeals before the end of district court proceedings—are the exception, not the rule,” Johnson v. Jones, 515 U. S. 304, 309 (1995), it does not prevent “review of all prejudgment orders,” Behrens v. Pel letier, 516 U. S. 299, 305 (1996). Under the collateral-order doctrine a limited set of district-court orders are reviewable “though short of ﬁnal judgment.” Ibid. [CITE_END:DOC002[P010.B04]]
-[CITE_START:DOC002[P010.B05]] The orders within this narrow category “are immediately appeal able because they ‘ﬁnally determine claims of right separable from, and collateral to, rights asserted in the action, too im portant to be denied review and too independent of the cause itself to require that appellate consideration be deferred until the whole case is adjudicated.’ ” Ibid. (quoting Cohen v. Beneﬁcial Industrial Loan Corp., 337 U. S. 541, 546 (1949)). A district-court decision denying a Government ofﬁcer’s claim of qualiﬁed immunity can fall within the narrow class [CITE_END:DOC002[P010.B05]]
+collateral-order doctrine. We disagree.
+</BLOCK>
+<BLOCK id="DOC002.P010.B03">
+A
+</BLOCK>
+<BLOCK id="DOC002.P010.B04">
+With exceptions inapplicable here, Congress has vested the courts of appeals with “jurisdiction of appeals from all ﬁnal decisions of the district courts of the United States.” 28 U. S. C. § 1291. Though the statute’s ﬁnality requirement ensures that “interlocutory appeals—appeals before the end of district court proceedings—are the exception, not the rule,” Johnson v. Jones, 515 U. S. 304, 309 (1995), it does not prevent “review of all prejudgment orders,” Behrens v. Pel letier, 516 U. S. 299, 305 (1996). Under the collateral-order doctrine a limited set of district-court orders are reviewable “though short of ﬁnal judgment.” Ibid.
+</BLOCK>
+<BLOCK id="DOC002.P010.B05">
+The orders within this narrow category “are immediately appeal able because they ‘ﬁnally determine claims of right separable from, and collateral to, rights asserted in the action, too im portant to be denied review and too independent of the cause itself to require that appellate consideration be deferred until the whole case is adjudicated.’ ” Ibid. (quoting Cohen v. Beneﬁcial Industrial Loan Corp., 337 U. S. 541, 546 (1949)). A district-court decision denying a Government ofﬁcer’s claim of qualiﬁed immunity can fall within the narrow class
+</BLOCK>
 
 [Page 11]
-[CITE_START:DOC002[P011.B01]] 672 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P011.B01]]
-[CITE_START:DOC002[P011.B02]] Opinion of the Court [CITE_END:DOC002[P011.B02]]
-[CITE_START:DOC002[P011.B03]] of appealable orders despite “the absence of a ﬁnal judg ment.” Mitchell v. Forsyth, 472 U. S. 511, 530 (1985). This is so because qualiﬁed immunity—which shields Government ofﬁcials “from liability for civil damages insofar as their con duct does not violate clearly established statutory or consti tutional rights,” Harlow v. Fitzgerald, 457 U. S. 800, 818 (1982)—is both a defense to liability and a limited “entitle ment not to stand trial or face the other burdens of litiga tion.” Mitchell, 472 U. S., at 526. Provided it “turns on an issue of law,” id., at 530, a district-court order [CITE_END:DOC002[P011.B03]]
-[CITE_START:DOC002[P011.B04]] denying qualiﬁed immunity “ ‘conclusively determine[s]’ ” that the de fendant must bear the burdens of discovery; is “conceptually distinct from the merits of the plaintiff’s claim”; and would prove “effectively unreviewable on appeal from a ﬁnal judg ment,” id., at 527–528 (citing Cohen, supra, at 546). As a general matter, the collateral-order doctrine may have ex panded beyond the limits dictated by its internal logic and the strict application of the criteria set out in Cohen. But the applicability of the doctrine in the context of qualiﬁed immunity claims is well established; and this Court has been careful to [CITE_END:DOC002[P011.B04]]
-[CITE_START:DOC002[P011.B05]] say that a district court’s order rejecting qualiﬁed immunity at the motion-to-dismiss stage of a proceeding is a “ﬁnal decision” within the meaning of § 1291. Behrens, 516 U. S., at 307. B Applying these principles, we conclude that the Court of Appeals had jurisdiction to hear petitioners’ appeal. The District Court’s order denying petitioners’ motion to dismiss turned on an issue of law and rejected the defense of quali ﬁed immunity. It was therefore a ﬁnal decision “subject to immediate appeal.” Ibid. Respondent says that “a quali ﬁed immunity appeal based solely on the complaint’s failure to state a [CITE_END:DOC002[P011.B05]]
-[CITE_START:DOC002[P011.B06]] claim, and not on the ultimate issues relevant to the qualiﬁed immunity defense itself, is not a proper subject of interlocutory jurisdiction.” Brief for Respondent Iqbal 15 (hereinafter Iqbal Brief). In other words, respondent [CITE_END:DOC002[P011.B06]]
+<BLOCK id="DOC002.P011.B01">
+672 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P011.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P011.B03">
+of appealable orders despite “the absence of a ﬁnal judg ment.” Mitchell v. Forsyth, 472 U. S. 511, 530 (1985). This is so because qualiﬁed immunity—which shields Government ofﬁcials “from liability for civil damages insofar as their con duct does not violate clearly established statutory or consti tutional rights,” Harlow v. Fitzgerald, 457 U. S. 800, 818 (1982)—is both a defense to liability and a limited “entitle ment not to stand trial or face the other burdens of litiga tion.” Mitchell, 472 U. S., at 526. Provided it “turns on an issue of law,” id., at 530, a district-court order
+</BLOCK>
+<BLOCK id="DOC002.P011.B04">
+denying qualiﬁed immunity “ ‘conclusively determine[s]’ ” that the de fendant must bear the burdens of discovery; is “conceptually distinct from the merits of the plaintiff’s claim”; and would prove “effectively unreviewable on appeal from a ﬁnal judg ment,” id., at 527–528 (citing Cohen, supra, at 546). As a general matter, the collateral-order doctrine may have ex panded beyond the limits dictated by its internal logic and the strict application of the criteria set out in Cohen. But the applicability of the doctrine in the context of qualiﬁed immunity claims is well established; and this Court has been careful to
+</BLOCK>
+<BLOCK id="DOC002.P011.B05">
+say that a district court’s order rejecting qualiﬁed immunity at the motion-to-dismiss stage of a proceeding is a “ﬁnal decision” within the meaning of § 1291. Behrens, 516 U. S., at 307. B Applying these principles, we conclude that the Court of Appeals had jurisdiction to hear petitioners’ appeal. The District Court’s order denying petitioners’ motion to dismiss turned on an issue of law and rejected the defense of quali ﬁed immunity. It was therefore a ﬁnal decision “subject to immediate appeal.” Ibid. Respondent says that “a quali ﬁed immunity appeal based solely on the complaint’s failure to state a
+</BLOCK>
+<BLOCK id="DOC002.P011.B06">
+claim, and not on the ultimate issues relevant to the qualiﬁed immunity defense itself, is not a proper subject of interlocutory jurisdiction.” Brief for Respondent Iqbal 15 (hereinafter Iqbal Brief). In other words, respondent
+</BLOCK>
 
 [Page 12]
-[CITE_START:DOC002[P012.B01]] 673 
-Cite as: 556 U. S. 662 (2009) Opinion of the Court [CITE_END:DOC002[P012.B01]]
-[CITE_START:DOC002[P012.B02]] contends the Court of Appeals had jurisdiction to determine 
+<BLOCK id="DOC002.P012.B01">
+673 
+Cite as: 556 U. S. 662 (2009) Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P012.B02">
+contends the Court of Appeals had jurisdiction to determine 
 whether his complaint avers a clearly established constitu
 tional violation but that it lacked jurisdiction to pass on the 
 sufﬁciency of his pleadings. Our opinions, however, make 
-clear that appellate jurisdiction is not so strictly conﬁned. [CITE_END:DOC002[P012.B02]]
-[CITE_START:DOC002[P012.B03]] In Hartman v. Moore, 547 U. S. 250 (2006), the Court re viewed an interlocutory decision denying qualiﬁed im munity. The legal issue decided in Hartman concerned the elements a plaintiff “must plead and prove in order to win” a First Amendment retaliation claim. Id., at 257, n. 5. Similarly, two Terms ago in Wilkie v. Robbins, 551 U. S. 537 (2007), the Court considered another interlocutory order denying qualiﬁed immunity. The legal issue there was whether a Bivens action can be employed to challenge inter ference with property rights. 551 U. S., at 549, n. 4. These cases cannot [CITE_END:DOC002[P012.B03]]
-[CITE_START:DOC002[P012.B04]] be squared with respondent’s argument that the collateral-order doctrine restricts appellate jurisdiction to the “ultimate issu[e]” whether the legal wrong asserted was a violation of clearly established law while excluding the question whether the facts pleaded establish such a violation. Iqbal Brief 15. Indeed, the latter question is even more clearly within the category of appealable decisions than the questions presented in Hartman and Wilkie, since whether a particular complaint sufﬁciently alleges a clearly established violation of law cannot be decided in isolation from the facts pleaded. In that sense the sufﬁciency of respondent’s plead ings is both “inextricably intertwined [CITE_END:DOC002[P012.B04]]
-[CITE_START:DOC002[P012.B05]] with,” Swint v. Cham bers County Comm’n, 514 U. S. 35, 51 (1995), and “directly implicated by,” Hartman, supra, at 257, n. 5, the qualiﬁed immunity defense. [CITE_END:DOC002[P012.B05]]
-[CITE_START:DOC002[P012.B06]] Respondent counters that our holding in  Johnson,  515 
+clear that appellate jurisdiction is not so strictly conﬁned.
+</BLOCK>
+<BLOCK id="DOC002.P012.B03">
+In Hartman v. Moore, 547 U. S. 250 (2006), the Court re viewed an interlocutory decision denying qualiﬁed im munity. The legal issue decided in Hartman concerned the elements a plaintiff “must plead and prove in order to win” a First Amendment retaliation claim. Id., at 257, n. 5. Similarly, two Terms ago in Wilkie v. Robbins, 551 U. S. 537 (2007), the Court considered another interlocutory order denying qualiﬁed immunity. The legal issue there was whether a Bivens action can be employed to challenge inter ference with property rights. 551 U. S., at 549, n. 4. These cases cannot
+</BLOCK>
+<BLOCK id="DOC002.P012.B04">
+be squared with respondent’s argument that the collateral-order doctrine restricts appellate jurisdiction to the “ultimate issu[e]” whether the legal wrong asserted was a violation of clearly established law while excluding the question whether the facts pleaded establish such a violation. Iqbal Brief 15. Indeed, the latter question is even more clearly within the category of appealable decisions than the questions presented in Hartman and Wilkie, since whether a particular complaint sufﬁciently alleges a clearly established violation of law cannot be decided in isolation from the facts pleaded. In that sense the sufﬁciency of respondent’s plead ings is both “inextricably intertwined
+</BLOCK>
+<BLOCK id="DOC002.P012.B05">
+with,” Swint v. Cham bers County Comm’n, 514 U. S. 35, 51 (1995), and “directly implicated by,” Hartman, supra, at 257, n. 5, the qualiﬁed immunity defense.
+</BLOCK>
+<BLOCK id="DOC002.P012.B06">
+Respondent counters that our holding in  Johnson,  515 
 U. S. 304, conﬁrms the want of subject-matter jurisdiction 
 here. That is incorrect. The allegation in  Johnson  was 
 that ﬁve defendants, all of them police ofﬁcers, unlawfully 
 beat the plaintiff.  Johnson  considered “the appealability of 
-a portion of” the District Court’s summary judgment order [CITE_END:DOC002[P012.B06]]
+a portion of” the District Court’s summary judgment order
+</BLOCK>
 
 [Page 13]
-[CITE_START:DOC002[P013.B01]] 674 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P013.B01]]
-[CITE_START:DOC002[P013.B02]] Opinion of the Court [CITE_END:DOC002[P013.B02]]
-[CITE_START:DOC002[P013.B03]] that, “though entered in a ‘qualiﬁed immunity’ case, deter
+<BLOCK id="DOC002.P013.B01">
+674 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P013.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P013.B03">
+that, “though entered in a ‘qualiﬁed immunity’ case, deter
 mine[d] only” that there was a genuine issue of material fact 
 that three of the defendants participated in the beating. 
-Id.,  at 313. [CITE_END:DOC002[P013.B03]]
-[CITE_START:DOC002[P013.B04]] In ﬁnding that order not a “ﬁnal decision” for purposes of § 1291, the Johnson Court cited Mitchell for the proposition that only decisions turning “ ‘ on an issue of law ’ ” are subject to immediate appeal. 515 U. S., at 313. Though determin ing whether there is a genuine issue of material fact at sum mary judgment is a question of law, it is a legal question that sits near the law-fact divide. Or as we said in Johnson, it is a “fact-related” legal inquiry. Id., at 314. To conduct it, a court of appeals may be [CITE_END:DOC002[P013.B04]]
-[CITE_START:DOC002[P013.B05]] required to consult a “vast pretrial record, with numerous conﬂicting afﬁdavits, depositions, and other discovery materials.” Id., at 316. That process gen erally involves matters more within a district court’s ken and may replicate inefﬁciently questions that will arise on appeal following ﬁnal judgment. Ibid. Finding those concerns predominant, Johnson held that the collateral orders that are “ﬁnal” under Mitchell turn on “abstract,” rather than “fact based,” issues of law. 515 U. S., at 317. [CITE_END:DOC002[P013.B05]]
-[CITE_START:DOC002[P013.B06]] The concerns that animated the decision in Johnson are absent when an appellate court considers the disposition of a motion to dismiss a complaint for insufﬁcient pleadings. True, the categories of “fact-based” and “abstract” legal questions used to guide the Court’s decision in Johnson are not well deﬁned. Here, however, the order denying peti tioners’ motion to dismiss falls well within the latter class. Reviewing that order, the Court of Appeals considered only the allegations contained within the four corners of respond ent’s complaint; resort to a “vast pretrial record” on petition ers’ motion to dismiss was unnecessary. Id., at [CITE_END:DOC002[P013.B06]]
-[CITE_START:DOC002[P013.B07]] 316. And determining whether respondent’s complaint has the “heft” to state a claim is a task well within an appellate court’s core competency. Twombly, 550 U. S., at 557. Evaluating the sufﬁciency of a complaint is not a “fact-based” question of law, so the problem the Court sought to avoid in Johnson [CITE_END:DOC002[P013.B07]]
+Id.,  at 313.
+</BLOCK>
+<BLOCK id="DOC002.P013.B04">
+In ﬁnding that order not a “ﬁnal decision” for purposes of § 1291, the Johnson Court cited Mitchell for the proposition that only decisions turning “ ‘ on an issue of law ’ ” are subject to immediate appeal. 515 U. S., at 313. Though determin ing whether there is a genuine issue of material fact at sum mary judgment is a question of law, it is a legal question that sits near the law-fact divide. Or as we said in Johnson, it is a “fact-related” legal inquiry. Id., at 314. To conduct it, a court of appeals may be
+</BLOCK>
+<BLOCK id="DOC002.P013.B05">
+required to consult a “vast pretrial record, with numerous conﬂicting afﬁdavits, depositions, and other discovery materials.” Id., at 316. That process gen erally involves matters more within a district court’s ken and may replicate inefﬁciently questions that will arise on appeal following ﬁnal judgment. Ibid. Finding those concerns predominant, Johnson held that the collateral orders that are “ﬁnal” under Mitchell turn on “abstract,” rather than “fact based,” issues of law. 515 U. S., at 317.
+</BLOCK>
+<BLOCK id="DOC002.P013.B06">
+The concerns that animated the decision in Johnson are absent when an appellate court considers the disposition of a motion to dismiss a complaint for insufﬁcient pleadings. True, the categories of “fact-based” and “abstract” legal questions used to guide the Court’s decision in Johnson are not well deﬁned. Here, however, the order denying peti tioners’ motion to dismiss falls well within the latter class. Reviewing that order, the Court of Appeals considered only the allegations contained within the four corners of respond ent’s complaint; resort to a “vast pretrial record” on petition ers’ motion to dismiss was unnecessary. Id., at
+</BLOCK>
+<BLOCK id="DOC002.P013.B07">
+316. And determining whether respondent’s complaint has the “heft” to state a claim is a task well within an appellate court’s core competency. Twombly, 550 U. S., at 557. Evaluating the sufﬁciency of a complaint is not a “fact-based” question of law, so the problem the Court sought to avoid in Johnson
+</BLOCK>
 
 [Page 14]
-[CITE_START:DOC002[P014.B01]] 675 
-Cite as: 556 U. S. 662 (2009) Opinion of the Court [CITE_END:DOC002[P014.B01]]
-[CITE_START:DOC002[P014.B02]] is not implicated here. The District Court’s order denying 
+<BLOCK id="DOC002.P014.B01">
+675 
+Cite as: 556 U. S. 662 (2009) Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P014.B02">
+is not implicated here. The District Court’s order denying 
 petitioners’ motion to dismiss is a ﬁnal decision under the 
 collateral-order doctrine over which the Court of Appeals 
 had, and this Court has, jurisdiction. We proceed to con
-sider the merits of petitioners’ appeal. [CITE_END:DOC002[P014.B02]]
-[CITE_START:DOC002[P014.B03]] III [CITE_END:DOC002[P014.B03]]
-[CITE_START:DOC002[P014.B04]] In  Twombly, supra,  at 553–554, the Court found it neces
+sider the merits of petitioners’ appeal.
+</BLOCK>
+<BLOCK id="DOC002.P014.B03">
+III
+</BLOCK>
+<BLOCK id="DOC002.P014.B04">
+In  Twombly, supra,  at 553–554, the Court found it neces
 sary ﬁrst to discuss the antitrust principles implicated by the 
 complaint. Here too we begin by taking note of the ele
 ments a plaintiff must plead to state a claim of unconstitu
 tional discrimination against ofﬁcials entitled to assert the 
-defense of qualiﬁed immunity. [CITE_END:DOC002[P014.B04]]
-[CITE_START:DOC002[P014.B05]] In Bivens —proceeding on the theory that a right suggests a remedy—this Court “recognized for the ﬁrst time an im plied private action for damages against federal ofﬁcers al leged to have violated a citizen’s constitutional rights.” Correctional Services Corp. v. Malesko, 534 U. S. 61, 66 (2001). Because implied causes of action are disfavored, the Court has been reluctant to extend Bivens liability “to any new context or new category of defendants.” 534 U. S., at 68. See also Wilkie, 551 U. S., at 549–550. That reluc tance might well have disposed of respondent’s First Amend ment claim of [CITE_END:DOC002[P014.B05]]
-[CITE_START:DOC002[P014.B06]] religious discrimination. For while we have allowed a Bivens action to redress a violation of the equal protection component of the Due Process Clause of the Fifth Amendment, see Davis v. Passman, 442 U. S. 228 (1979), we have not found an implied damages remedy under the Free Exercise Clause. Indeed, we have declined to extend Bivens to a claim sounding in the First Amendment. Bush v. Lucas, 462 U. S. 367 (1983). Petitioners do not press this argument, however, so we assume, without deciding, that respondent’s First Amendment claim is actionable under Bivens. [CITE_END:DOC002[P014.B06]]
-[CITE_START:DOC002[P014.B07]] In the limited settings where  Bivens  does apply, the im
+defense of qualiﬁed immunity.
+</BLOCK>
+<BLOCK id="DOC002.P014.B05">
+In Bivens —proceeding on the theory that a right suggests a remedy—this Court “recognized for the ﬁrst time an im plied private action for damages against federal ofﬁcers al leged to have violated a citizen’s constitutional rights.” Correctional Services Corp. v. Malesko, 534 U. S. 61, 66 (2001). Because implied causes of action are disfavored, the Court has been reluctant to extend Bivens liability “to any new context or new category of defendants.” 534 U. S., at 68. See also Wilkie, 551 U. S., at 549–550. That reluc tance might well have disposed of respondent’s First Amend ment claim of
+</BLOCK>
+<BLOCK id="DOC002.P014.B06">
+religious discrimination. For while we have allowed a Bivens action to redress a violation of the equal protection component of the Due Process Clause of the Fifth Amendment, see Davis v. Passman, 442 U. S. 228 (1979), we have not found an implied damages remedy under the Free Exercise Clause. Indeed, we have declined to extend Bivens to a claim sounding in the First Amendment. Bush v. Lucas, 462 U. S. 367 (1983). Petitioners do not press this argument, however, so we assume, without deciding, that respondent’s First Amendment claim is actionable under Bivens.
+</BLOCK>
+<BLOCK id="DOC002.P014.B07">
+In the limited settings where  Bivens  does apply, the im
 plied cause of action is the “federal analog to suits brought 
-against state ofﬁcials under Rev. Stat. § 1979, 42 U. S. C. [CITE_END:DOC002[P014.B07]]
+against state ofﬁcials under Rev. Stat. § 1979, 42 U. S. C.
+</BLOCK>
 
 [Page 15]
-[CITE_START:DOC002[P015.B01]] 676 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P015.B01]]
-[CITE_START:DOC002[P015.B02]] Opinion of the Court [CITE_END:DOC002[P015.B02]]
-[CITE_START:DOC002[P015.B03]] § 1983.” Hartman, 547 U. S., at 254, n. 2. Cf. Wilson v. Layne, 526 U. S. 603, 609 (1999). Based on the rules our precedents establish, respondent correctly concedes that Government ofﬁcials may not be held liable for the unconsti tutional conduct of their subordinates under a theory of re spondeat superior. Iqbal Brief 46 (“[I]t is undisputed that supervisory Bivens liability cannot be established solely on a theory of respondeat superior ”). See Monell v. New York City Dept. of Social Servs., 436 U. S. 658, 691 (1978) (ﬁnding no vicarious liability for a municipal “person” under 42 [CITE_END:DOC002[P015.B03]]
-[CITE_START:DOC002[P015.B04]] U. S. C. § 1983); see also Dunlop v. Munroe, 7 Cranch 242, 269 (1812) (a federal ofﬁcial’s liability “will only result from his own neglect in not properly superintending the dis charge” of his subordinates’ duties); Robertson v. Sichel, 127 U. S. 507, 515–516 (1888) (“A public ofﬁcer or agent is not responsible for the misfeasances or positive wrongs, or for the nonfeasances, or negligences, or omissions of duty, of the subagents or servants or other persons properly employed by or under him, in the discharge of his ofﬁcial duties”). Be cause vicarious liability is inapplicable to Bivens and [CITE_END:DOC002[P015.B04]]
-[CITE_START:DOC002[P015.B05]] § 1983 suits, a plaintiff must plead that each Government-ofﬁcial de fendant, through the ofﬁcial’s own individual actions, has vio lated the Constitution. [CITE_END:DOC002[P015.B05]]
-[CITE_START:DOC002[P015.B06]] The factors necessary to establish a  Bivens  violation will 
+<BLOCK id="DOC002.P015.B01">
+676 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P015.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P015.B03">
+§ 1983.” Hartman, 547 U. S., at 254, n. 2. Cf. Wilson v. Layne, 526 U. S. 603, 609 (1999). Based on the rules our precedents establish, respondent correctly concedes that Government ofﬁcials may not be held liable for the unconsti tutional conduct of their subordinates under a theory of re spondeat superior. Iqbal Brief 46 (“[I]t is undisputed that supervisory Bivens liability cannot be established solely on a theory of respondeat superior ”). See Monell v. New York City Dept. of Social Servs., 436 U. S. 658, 691 (1978) (ﬁnding no vicarious liability for a municipal “person” under 42
+</BLOCK>
+<BLOCK id="DOC002.P015.B04">
+U. S. C. § 1983); see also Dunlop v. Munroe, 7 Cranch 242, 269 (1812) (a federal ofﬁcial’s liability “will only result from his own neglect in not properly superintending the dis charge” of his subordinates’ duties); Robertson v. Sichel, 127 U. S. 507, 515–516 (1888) (“A public ofﬁcer or agent is not responsible for the misfeasances or positive wrongs, or for the nonfeasances, or negligences, or omissions of duty, of the subagents or servants or other persons properly employed by or under him, in the discharge of his ofﬁcial duties”). Be cause vicarious liability is inapplicable to Bivens and
+</BLOCK>
+<BLOCK id="DOC002.P015.B05">
+§ 1983 suits, a plaintiff must plead that each Government-ofﬁcial de fendant, through the ofﬁcial’s own individual actions, has vio lated the Constitution.
+</BLOCK>
+<BLOCK id="DOC002.P015.B06">
+The factors necessary to establish a  Bivens  violation will 
 vary with the constitutional provision at issue. Where the 
 claim is invidious discrimination in contravention of the First 
 and Fifth Amendments, our decisions make clear that the 
@@ -283,31 +474,49 @@ U. S. 229, 240 (1976) (Fifth Amendment). Under extant
 precedent purposeful discrimination requires more than “in
 tent as volition or intent as awareness of consequences.” 
 Personnel Administrator of Mass.  v.  Feeney,  442 U. S. 256, 
-279 (1979). It instead involves a decisionmaker’s undertak [CITE_END:DOC002[P015.B06]]
+279 (1979). It instead involves a decisionmaker’s undertak
+</BLOCK>
 
 [Page 16]
-[CITE_START:DOC002[P016.B01]] 677 
-Cite as: 556 U. S. 662 (2009) Opinion of the Court [CITE_END:DOC002[P016.B01]]
-[CITE_START:DOC002[P016.B02]] ing a course of action “ ‘because of,’ not merely ‘in spite of,’ 
+<BLOCK id="DOC002.P016.B01">
+677 
+Cite as: 556 U. S. 662 (2009) Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P016.B02">
+ing a course of action “ ‘because of,’ not merely ‘in spite of,’ 
 [the action’s] adverse effects upon an identiﬁable group.” 
 Ibid.  It follows that, to state a claim based on a violation of 
 a clearly established right, respondent must plead sufﬁcient 
 factual matter to show that petitioners adopted and imple
 mented the detention policies at issue not for a neutral, in
 vestigative reason but for the purpose of discriminating on 
-account of race, religion, or national origin. [CITE_END:DOC002[P016.B02]]
-[CITE_START:DOC002[P016.B03]] Respondent disagrees. He argues that, under a theory of “supervisory liability,” petitioners can be liable for “knowl edge and acquiescence in their subordinates’ use of dis criminatory criteria to make classiﬁcation decisions among detainees.” Iqbal Brief 45–46. That is to say, respondent believes a supervisor’s mere knowledge of his subordinate’s discriminatory purpose amounts to the supervisor’s violating the Constitution. We reject this argument. Respondent’s conception of “supervisory liability” is inconsistent with his accurate stipulation that petitioners may not be held ac countable for the misdeeds of their agents. In a § 1983 suit or a Bivens action—where masters do not [CITE_END:DOC002[P016.B03]]
-[CITE_START:DOC002[P016.B04]] answer for the torts of their servants—the term “supervisory liability” is a misnomer. Absent vicarious liability, each Government of ﬁcial, his or her title notwithstanding, is only liable for his or her own misconduct. In the context of determining whether there is a violation of a clearly established right to over come qualiﬁed immunity, purpose rather than knowledge is required to impose Bivens liability on the subordinate for unconstitutional discrimination; the same holds true for an ofﬁcial charged with violations arising from his or her superintendent responsibilities. [CITE_END:DOC002[P016.B04]]
-[CITE_START:DOC002[P016.B05]] IV A [CITE_END:DOC002[P016.B05]]
-[CITE_START:DOC002[P016.B06]] We turn to respondent’s complaint. Under Federal Rule 
+account of race, religion, or national origin.
+</BLOCK>
+<BLOCK id="DOC002.P016.B03">
+Respondent disagrees. He argues that, under a theory of “supervisory liability,” petitioners can be liable for “knowl edge and acquiescence in their subordinates’ use of dis criminatory criteria to make classiﬁcation decisions among detainees.” Iqbal Brief 45–46. That is to say, respondent believes a supervisor’s mere knowledge of his subordinate’s discriminatory purpose amounts to the supervisor’s violating the Constitution. We reject this argument. Respondent’s conception of “supervisory liability” is inconsistent with his accurate stipulation that petitioners may not be held ac countable for the misdeeds of their agents. In a § 1983 suit or a Bivens action—where masters do not
+</BLOCK>
+<BLOCK id="DOC002.P016.B04">
+answer for the torts of their servants—the term “supervisory liability” is a misnomer. Absent vicarious liability, each Government of ﬁcial, his or her title notwithstanding, is only liable for his or her own misconduct. In the context of determining whether there is a violation of a clearly established right to over come qualiﬁed immunity, purpose rather than knowledge is required to impose Bivens liability on the subordinate for unconstitutional discrimination; the same holds true for an ofﬁcial charged with violations arising from his or her superintendent responsibilities.
+</BLOCK>
+<BLOCK id="DOC002.P016.B05">
+IV A
+</BLOCK>
+<BLOCK id="DOC002.P016.B06">
+We turn to respondent’s complaint. Under Federal Rule 
 of Civil Procedure 8(a)(2), a pleading must contain a “short 
-and plain statement of the claim showing that the pleader is [CITE_END:DOC002[P016.B06]]
+and plain statement of the claim showing that the pleader is
+</BLOCK>
 
 [Page 17]
-[CITE_START:DOC002[P017.B01]] 678 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P017.B01]]
-[CITE_START:DOC002[P017.B02]] Opinion of the Court [CITE_END:DOC002[P017.B02]]
-[CITE_START:DOC002[P017.B03]] entitled to relief.” As the Court held in  Twombly,  550 U. S. 
+<BLOCK id="DOC002.P017.B01">
+678 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P017.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P017.B03">
+entitled to relief.” As the Court held in  Twombly,  550 U. S. 
 544, the pleading standard Rule 8 announces does not require 
 “detailed factual allegations,” but it demands more than an 
 unadorned, the-defendant-unlawfully-harmed-me accusation. 
@@ -316,16 +525,28 @@ Id.,  at 555 (citing  Papasan  v.  Allain,  478 U. S. 265, 286
 “a formulaic recitation of the elements of a cause of action 
 will not do.” 550 U. S., at 555. Nor does a complaint sufﬁce 
 if it tenders “naked assertion[s]” devoid of “further factual 
-enhancement.”  Id.,  at 557. [CITE_END:DOC002[P017.B03]]
-[CITE_START:DOC002[P017.B04]] To survive a motion to dismiss, a complaint must contain sufﬁcient factual matter, accepted as true, to “state a claim to relief that is plausible on its face.” Id., at 570. A claim has facial plausibility when the plaintiff pleads factual con tent that allows the court to draw the reasonable inference that the defendant is liable for the misconduct alleged. Id., at 556. The plausibility standard is not akin to a “probabil ity requirement,” but it asks for more than a sheer possibil ity that a defendant has acted unlawfully. Ibid. Where a complaint pleads facts that are “merely [CITE_END:DOC002[P017.B04]]
-[CITE_START:DOC002[P017.B05]] consistent with” a defendant’s liability, it “stops short of the line between possi bility and plausibility of ‘entitlement to relief.’ ” Id., at 557 (brackets omitted). [CITE_END:DOC002[P017.B05]]
-[CITE_START:DOC002[P017.B06]] Two working principles underlie our decision in Twombly. First, the tenet that a court must accept as true all of the allegations contained in a complaint is inapplicable to legal conclusions. Threadbare recitals of the elements of a cause of action, supported by mere conclusory statements, do not sufﬁce. Id., at 555 (Although for the purposes of a motion to dismiss we must take all of the factual allegations in the complaint as true, we “are not bound to accept as true a legal conclusion couched as a factual allegation” (internal quota tion marks omitted)). Rule 8 marks a notable [CITE_END:DOC002[P017.B06]]
-[CITE_START:DOC002[P017.B07]] and generous departure from the hypertechnical, code-pleading regime of a prior era, but it does not unlock the doors of discovery for [CITE_END:DOC002[P017.B07]]
+enhancement.”  Id.,  at 557.
+</BLOCK>
+<BLOCK id="DOC002.P017.B04">
+To survive a motion to dismiss, a complaint must contain sufﬁcient factual matter, accepted as true, to “state a claim to relief that is plausible on its face.” Id., at 570. A claim has facial plausibility when the plaintiff pleads factual con tent that allows the court to draw the reasonable inference that the defendant is liable for the misconduct alleged. Id., at 556. The plausibility standard is not akin to a “probabil ity requirement,” but it asks for more than a sheer possibil ity that a defendant has acted unlawfully. Ibid. Where a complaint pleads facts that are “merely
+</BLOCK>
+<BLOCK id="DOC002.P017.B05">
+consistent with” a defendant’s liability, it “stops short of the line between possi bility and plausibility of ‘entitlement to relief.’ ” Id., at 557 (brackets omitted).
+</BLOCK>
+<BLOCK id="DOC002.P017.B06">
+Two working principles underlie our decision in Twombly. First, the tenet that a court must accept as true all of the allegations contained in a complaint is inapplicable to legal conclusions. Threadbare recitals of the elements of a cause of action, supported by mere conclusory statements, do not sufﬁce. Id., at 555 (Although for the purposes of a motion to dismiss we must take all of the factual allegations in the complaint as true, we “are not bound to accept as true a legal conclusion couched as a factual allegation” (internal quota tion marks omitted)). Rule 8 marks a notable
+</BLOCK>
+<BLOCK id="DOC002.P017.B07">
+and generous departure from the hypertechnical, code-pleading regime of a prior era, but it does not unlock the doors of discovery for
+</BLOCK>
 
 [Page 18]
-[CITE_START:DOC002[P018.B01]] 679 
-Cite as: 556 U. S. 662 (2009) Opinion of the Court [CITE_END:DOC002[P018.B01]]
-[CITE_START:DOC002[P018.B02]] a plaintiff armed with nothing more than conclusions. Sec
+<BLOCK id="DOC002.P018.B01">
+679 
+Cite as: 556 U. S. 662 (2009) Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P018.B02">
+a plaintiff armed with nothing more than conclusions. Sec
 ond, only a complaint that states a plausible claim for relief 
 survives a motion to dismiss.  Id.,  at 556. Determining 
 whether a complaint states a plausible claim for relief will, 
@@ -335,8 +556,10 @@ perience and common sense. 490 F. 3d, at 157–158. But
 where the well-pleaded facts do not permit the court to infer 
 more than the mere possibility of misconduct, the complaint 
 has alleged—but it has not “show[n]”—“that the pleader is 
-entitled to relief.” Fed. Rule Civ. Proc. 8(a)(2). [CITE_END:DOC002[P018.B02]]
-[CITE_START:DOC002[P018.B03]] In keeping with these principles a court considering a mo
+entitled to relief.” Fed. Rule Civ. Proc. 8(a)(2).
+</BLOCK>
+<BLOCK id="DOC002.P018.B03">
+In keeping with these principles a court considering a mo
 tion to dismiss can choose to begin by identifying pleadings 
 that, because they are no more than conclusions, are not enti
 tled to the assumption of truth. While legal conclusions can 
@@ -344,22 +567,40 @@ provide the framework of a complaint, they must be sup
 ported by factual allegations. When there are well-pleaded 
 factual allegations, a court should assume their veracity and 
 then determine whether they plausibly give rise to an enti
-tlement to relief. [CITE_END:DOC002[P018.B03]]
-[CITE_START:DOC002[P018.B04]] Our decision in Twombly illustrates the two-pronged ap proach. There, we considered the sufﬁciency of a complaint alleging that incumbent telecommunications providers had entered an agreement not to compete and to forestall com petitive entry, in violation of the Sherman Act, 15 U. S. C. § 1. Recognizing that § 1 enjoins only anticompetitive con duct “effected by a contract, combination, or conspiracy,” Copperweld Corp. v. Independence Tube Corp., 467 U. S. 752, 775 (1984), the plaintiffs in Twombly ﬂatly pleaded that the defendants “ha[d] entered into a contract, combination or conspiracy to prevent competitive entry . . . and [CITE_END:DOC002[P018.B04]]
-[CITE_START:DOC002[P018.B05]] ha[d] agreed not to compete with one another.” 550 U. S., at 551 (internal quotation marks omitted). The complaint also al leged that the defendants’ “parallel course of conduct . . . to prevent competition” and inﬂate prices was indicative of the [CITE_END:DOC002[P018.B05]]
+tlement to relief.
+</BLOCK>
+<BLOCK id="DOC002.P018.B04">
+Our decision in Twombly illustrates the two-pronged ap proach. There, we considered the sufﬁciency of a complaint alleging that incumbent telecommunications providers had entered an agreement not to compete and to forestall com petitive entry, in violation of the Sherman Act, 15 U. S. C. § 1. Recognizing that § 1 enjoins only anticompetitive con duct “effected by a contract, combination, or conspiracy,” Copperweld Corp. v. Independence Tube Corp., 467 U. S. 752, 775 (1984), the plaintiffs in Twombly ﬂatly pleaded that the defendants “ha[d] entered into a contract, combination or conspiracy to prevent competitive entry . . . and
+</BLOCK>
+<BLOCK id="DOC002.P018.B05">
+ha[d] agreed not to compete with one another.” 550 U. S., at 551 (internal quotation marks omitted). The complaint also al leged that the defendants’ “parallel course of conduct . . . to prevent competition” and inﬂate prices was indicative of the
+</BLOCK>
 
 [Page 19]
-[CITE_START:DOC002[P019.B01]] 680 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P019.B01]]
-[CITE_START:DOC002[P019.B02]] Opinion of the Court [CITE_END:DOC002[P019.B02]]
-[CITE_START:DOC002[P019.B03]] unlawful agreement alleged. Ibid. (internal quotation marks omitted). The Court held the plaintiffs’ complaint deﬁcient under Rule 8. In doing so it ﬁrst noted that the plaintiffs’ asser tion of an unlawful agreement was a “ ‘legal conclusion’ ” and, as such, was not entitled to the assumption of truth. Id., at 555. Had the Court simply credited the allegation of a conspiracy, the plaintiffs would have stated a claim for relief and been entitled to proceed perforce. The Court next addressed the “nub” of the plaintiffs’ complaint—the well pleaded, nonconclusory factual allegation of parallel behav ior—to determine whether it [CITE_END:DOC002[P019.B03]]
-[CITE_START:DOC002[P019.B04]] gave rise to a “plausible sug gestion of conspiracy.” Id., at 565–566. Acknowledging that parallel conduct was consistent with an unlawful agree ment, the Court nevertheless concluded that it did not plausi bly suggest an illicit accord because it was not only compati ble with, but indeed was more likely explained by, lawful, unchoreographed free-market behavior. Id., at 567. Be cause the well-pleaded fact of parallel conduct, accepted as true, did not plausibly suggest an unlawful agreement, the Court held the plaintiffs’ complaint must be dismissed. Id., at 570. [CITE_END:DOC002[P019.B04]]
-[CITE_START:DOC002[P019.B05]] B [CITE_END:DOC002[P019.B05]]
-[CITE_START:DOC002[P019.B06]] Under  Twombly ’s construction of Rule 8, we conclude that 
+<BLOCK id="DOC002.P019.B01">
+680 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P019.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P019.B03">
+unlawful agreement alleged. Ibid. (internal quotation marks omitted). The Court held the plaintiffs’ complaint deﬁcient under Rule 8. In doing so it ﬁrst noted that the plaintiffs’ asser tion of an unlawful agreement was a “ ‘legal conclusion’ ” and, as such, was not entitled to the assumption of truth. Id., at 555. Had the Court simply credited the allegation of a conspiracy, the plaintiffs would have stated a claim for relief and been entitled to proceed perforce. The Court next addressed the “nub” of the plaintiffs’ complaint—the well pleaded, nonconclusory factual allegation of parallel behav ior—to determine whether it
+</BLOCK>
+<BLOCK id="DOC002.P019.B04">
+gave rise to a “plausible sug gestion of conspiracy.” Id., at 565–566. Acknowledging that parallel conduct was consistent with an unlawful agree ment, the Court nevertheless concluded that it did not plausi bly suggest an illicit accord because it was not only compati ble with, but indeed was more likely explained by, lawful, unchoreographed free-market behavior. Id., at 567. Be cause the well-pleaded fact of parallel conduct, accepted as true, did not plausibly suggest an unlawful agreement, the Court held the plaintiffs’ complaint must be dismissed. Id., at 570.
+</BLOCK>
+<BLOCK id="DOC002.P019.B05">
+B
+</BLOCK>
+<BLOCK id="DOC002.P019.B06">
+Under  Twombly ’s construction of Rule 8, we conclude that 
 respondent’s complaint has not “nudged [his] claims” of invid
 ious discrimination “across the line from conceivable to plau
-sible.”  Ibid. [CITE_END:DOC002[P019.B06]]
-[CITE_START:DOC002[P019.B07]] We begin our analysis by identifying the allegations in the 
+sible.”  Ibid.
+</BLOCK>
+<BLOCK id="DOC002.P019.B07">
+We begin our analysis by identifying the allegations in the 
 complaint that are not entitled to the assumption of truth. 
 Respondent pleads that petitioners “knew of, condoned, and 
 willfully and maliciously agreed to subject [him]” to harsh 
@@ -367,85 +608,153 @@ conditions of conﬁnement “as a matter of policy, solely on
 account of [his] religion, race, and/or national origin and for 
 no legitimate penological interest.” Complaint ¶ 96, App. to 
 Pet. for Cert. 173a–174a. The complaint alleges that Ash
-croft was the “principal architect” of this invidious policy, [CITE_END:DOC002[P019.B07]]
+croft was the “principal architect” of this invidious policy,
+</BLOCK>
 
 [Page 20]
-[CITE_START:DOC002[P020.B01]] 681 
-Cite as: 556 U. S. 662 (2009) Opinion of the Court [CITE_END:DOC002[P020.B01]]
-[CITE_START:DOC002[P020.B02]] id., ¶ 10, at 157a, and that Mueller was “instrumental” in adopting and executing it, id., ¶ 11, at 157a. These bare as sertions, much like the pleading of conspiracy in Twombly, amount to nothing more than a “formulaic recitation of the elements” of a constitutional discrimination claim, 550 U. S., at 555, namely, that petitioners adopted a policy “ ‘because of,’ not merely ‘in spite of,’ its adverse effects upon an identi ﬁable group,” Feeney, 442 U. S., at 279. As such, the allega tions are conclusory and not entitled to be assumed true. Twombly, 550 U. S., at [CITE_END:DOC002[P020.B02]]
-[CITE_START:DOC002[P020.B03]] 554–555. To be clear, we do not re ject these bald allegations on the ground that they are unre alistic or nonsensical. We do not so characterize them any more than the Court in Twombly rejected the plaintiffs’ ex press allegation of a “ ‘contract, combination or conspiracy to prevent competitive entry,’ ” id., at 551, because it thought that claim too chimerical to be maintained. It is the con clusory nature of respondent’s allegations, rather than their extravagantly fanciful nature, that disentitles them to the presumption of truth. [CITE_END:DOC002[P020.B03]]
-[CITE_START:DOC002[P020.B04]] We next consider the factual allegations in respondent’s complaint to determine if they plausibly suggest an entitle ment to relief. The complaint alleges that “the [FBI], under the direction of Defendant MUELLER, arrested and de tained thousands of Arab Muslim men . . . as part of its inves tigation of the events of September 11.” Complaint ¶ 47, App. to Pet. for Cert. 164a. It further claims that “[t]he policy of holding post-September-11th detainees in highly re strictive conditions of conﬁnement until they were ‘cleared’ by the FBI was approved by Defendants ASHCROFT and MUELLER in discussions in the [CITE_END:DOC002[P020.B04]]
-[CITE_START:DOC002[P020.B05]] weeks after September 11, 2001.” Id., ¶ 69, at 168a. Taken as true, these allegations are consistent with petitioners’ purposefully designating de tainees “of high interest” because of their race, religion, or national origin. But given more likely explanations, they do not plausibly establish this purpose. [CITE_END:DOC002[P020.B05]]
+<BLOCK id="DOC002.P020.B01">
+681 
+Cite as: 556 U. S. 662 (2009) Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P020.B02">
+id., ¶ 10, at 157a, and that Mueller was “instrumental” in adopting and executing it, id., ¶ 11, at 157a. These bare as sertions, much like the pleading of conspiracy in Twombly, amount to nothing more than a “formulaic recitation of the elements” of a constitutional discrimination claim, 550 U. S., at 555, namely, that petitioners adopted a policy “ ‘because of,’ not merely ‘in spite of,’ its adverse effects upon an identi ﬁable group,” Feeney, 442 U. S., at 279. As such, the allega tions are conclusory and not entitled to be assumed true. Twombly, 550 U. S., at
+</BLOCK>
+<BLOCK id="DOC002.P020.B03">
+554–555. To be clear, we do not re ject these bald allegations on the ground that they are unre alistic or nonsensical. We do not so characterize them any more than the Court in Twombly rejected the plaintiffs’ ex press allegation of a “ ‘contract, combination or conspiracy to prevent competitive entry,’ ” id., at 551, because it thought that claim too chimerical to be maintained. It is the con clusory nature of respondent’s allegations, rather than their extravagantly fanciful nature, that disentitles them to the presumption of truth.
+</BLOCK>
+<BLOCK id="DOC002.P020.B04">
+We next consider the factual allegations in respondent’s complaint to determine if they plausibly suggest an entitle ment to relief. The complaint alleges that “the [FBI], under the direction of Defendant MUELLER, arrested and de tained thousands of Arab Muslim men . . . as part of its inves tigation of the events of September 11.” Complaint ¶ 47, App. to Pet. for Cert. 164a. It further claims that “[t]he policy of holding post-September-11th detainees in highly re strictive conditions of conﬁnement until they were ‘cleared’ by the FBI was approved by Defendants ASHCROFT and MUELLER in discussions in the
+</BLOCK>
+<BLOCK id="DOC002.P020.B05">
+weeks after September 11, 2001.” Id., ¶ 69, at 168a. Taken as true, these allegations are consistent with petitioners’ purposefully designating de tainees “of high interest” because of their race, religion, or national origin. But given more likely explanations, they do not plausibly establish this purpose.
+</BLOCK>
 
 [Page 21]
-[CITE_START:DOC002[P021.B01]] 682 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P021.B01]]
-[CITE_START:DOC002[P021.B02]] Opinion of the Court [CITE_END:DOC002[P021.B02]]
-[CITE_START:DOC002[P021.B03]] The September 11 attacks were perpetrated by 19 Arab Muslim hijackers who counted themselves members in good standing of al Qaeda, an Islamic fundamentalist group. Al Qaeda was headed by another Arab Muslim—Osama bin Laden—and composed in large part of his Arab Muslim disci ples. It should come as no surprise that a legitimate policy directing law enforcement to arrest and detain individuals because of their suspected link to the attacks would produce a disparate, incidental impact on Arab Muslims, even though the purpose of the policy was to target neither Arabs nor Muslims. On the facts respondent alleges the [CITE_END:DOC002[P021.B03]]
-[CITE_START:DOC002[P021.B04]] arrests Muel ler oversaw were likely lawful and justiﬁed by his nondis criminatory intent to detain aliens who were illegally pres ent in the United States and who had potential connections to those who committed terrorist acts. As between that “obvious alternative explanation” for the arrests, Twombly, supra, at 567, and the purposeful, invidious discrimination respondent asks us to infer, discrimination is not a plausible conclusion. [CITE_END:DOC002[P021.B04]]
-[CITE_START:DOC002[P021.B05]] But even if the complaint’s well-pleaded facts give rise to a plausible inference that respondent’s arrest was the re sult of unconstitutional discrimination, that inference alone would not entitle respondent to relief. It is important to recall that respondent’s complaint challenges neither the con stitutionality of his arrest nor his initial detention in the MDC. Respondent’s constitutional claims against petition ers rest solely on their ostensible “policy of holding post September-11th detainees” in the ADMAX SHU once they were categorized as “of high interest.” Complaint ¶ 69, App. to Pet. for Cert. 168a. To prevail on that theory, the complaint [CITE_END:DOC002[P021.B05]]
-[CITE_START:DOC002[P021.B06]] must contain facts plausibly showing that peti tioners purposefully adopted a policy of classifying post September-11 detainees as “of high interest” because of their race, religion, or national origin. This the complaint fails to do. Though respondent alleges that various other defendants, who are not before us, may [CITE_END:DOC002[P021.B06]]
+<BLOCK id="DOC002.P021.B01">
+682 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P021.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P021.B03">
+The September 11 attacks were perpetrated by 19 Arab Muslim hijackers who counted themselves members in good standing of al Qaeda, an Islamic fundamentalist group. Al Qaeda was headed by another Arab Muslim—Osama bin Laden—and composed in large part of his Arab Muslim disci ples. It should come as no surprise that a legitimate policy directing law enforcement to arrest and detain individuals because of their suspected link to the attacks would produce a disparate, incidental impact on Arab Muslims, even though the purpose of the policy was to target neither Arabs nor Muslims. On the facts respondent alleges the
+</BLOCK>
+<BLOCK id="DOC002.P021.B04">
+arrests Muel ler oversaw were likely lawful and justiﬁed by his nondis criminatory intent to detain aliens who were illegally pres ent in the United States and who had potential connections to those who committed terrorist acts. As between that “obvious alternative explanation” for the arrests, Twombly, supra, at 567, and the purposeful, invidious discrimination respondent asks us to infer, discrimination is not a plausible conclusion.
+</BLOCK>
+<BLOCK id="DOC002.P021.B05">
+But even if the complaint’s well-pleaded facts give rise to a plausible inference that respondent’s arrest was the re sult of unconstitutional discrimination, that inference alone would not entitle respondent to relief. It is important to recall that respondent’s complaint challenges neither the con stitutionality of his arrest nor his initial detention in the MDC. Respondent’s constitutional claims against petition ers rest solely on their ostensible “policy of holding post September-11th detainees” in the ADMAX SHU once they were categorized as “of high interest.” Complaint ¶ 69, App. to Pet. for Cert. 168a. To prevail on that theory, the complaint
+</BLOCK>
+<BLOCK id="DOC002.P021.B06">
+must contain facts plausibly showing that peti tioners purposefully adopted a policy of classifying post September-11 detainees as “of high interest” because of their race, religion, or national origin. This the complaint fails to do. Though respondent alleges that various other defendants, who are not before us, may
+</BLOCK>
 
 [Page 22]
-[CITE_START:DOC002[P022.B01]] 683 
-Cite as: 556 U. S. 662 (2009) Opinion of the Court [CITE_END:DOC002[P022.B01]]
-[CITE_START:DOC002[P022.B02]] have labeled him a person “of high interest” for impermissi ble reasons, his only factual allegation against petitioners ac cuses them of adopting a policy approving “restrictive conditions of conﬁnement” for post-September-11 detainees until they were “ ‘cleared’ by the FBI.” Ibid. Accepting the truth of that allegation, the complaint does not show, or even intimate, that petitioners purposefully housed detain ees in the ADMAX SHU due to their race, religion, or na tional origin. All it plausibly suggests is that the Nation’s top law enforcement ofﬁcers, in the aftermath of a devastat ing terrorist attack, sought to keep suspected [CITE_END:DOC002[P022.B02]]
-[CITE_START:DOC002[P022.B03]] terrorists in the most secure conditions available until the suspects could be cleared of terrorist activity. Respondent does not argue, nor can he, that such a motive would violate petitioners’ con stitutional obligations. He would need to allege more by way of factual content to “nudg[e]” his claim of purposeful discrimination “across the line from conceivable to plausi ble.” Twombly, 550 U. S., at 570. [CITE_END:DOC002[P022.B03]]
-[CITE_START:DOC002[P022.B04]] To be sure, respondent can attempt to draw certain con trasts between the pleadings the Court considered in Twom bly and the pleadings at issue here. In Twombly, the complaint alleged general wrongdoing that extended over a period of years, id., at 551, whereas here the complaint alleges discrete wrongs—for instance, beatings—by lower level Government actors. The allegations here, if true, and if condoned by petitioners, could be the basis for some infer ence of wrongful intent on petitioners’ part. Despite these distinctions, respondent’s pleadings do not sufﬁce to state a claim. Unlike in Twombly, where the doctrine of respon [CITE_END:DOC002[P022.B04]]
-[CITE_START:DOC002[P022.B05]] deat superior could bind the corporate defendant, here, as we have noted, petitioners cannot be held liable unless they themselves acted on account of a constitutionally protected characteristic. Yet respondent’s complaint does not contain any factual allegation sufﬁcient to plausibly suggest petition ers’ discriminatory state of mind. His pleadings thus do not meet the standard necessary to comply with Rule 8. [CITE_END:DOC002[P022.B05]]
+<BLOCK id="DOC002.P022.B01">
+683 
+Cite as: 556 U. S. 662 (2009) Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P022.B02">
+have labeled him a person “of high interest” for impermissi ble reasons, his only factual allegation against petitioners ac cuses them of adopting a policy approving “restrictive conditions of conﬁnement” for post-September-11 detainees until they were “ ‘cleared’ by the FBI.” Ibid. Accepting the truth of that allegation, the complaint does not show, or even intimate, that petitioners purposefully housed detain ees in the ADMAX SHU due to their race, religion, or na tional origin. All it plausibly suggests is that the Nation’s top law enforcement ofﬁcers, in the aftermath of a devastat ing terrorist attack, sought to keep suspected
+</BLOCK>
+<BLOCK id="DOC002.P022.B03">
+terrorists in the most secure conditions available until the suspects could be cleared of terrorist activity. Respondent does not argue, nor can he, that such a motive would violate petitioners’ con stitutional obligations. He would need to allege more by way of factual content to “nudg[e]” his claim of purposeful discrimination “across the line from conceivable to plausi ble.” Twombly, 550 U. S., at 570.
+</BLOCK>
+<BLOCK id="DOC002.P022.B04">
+To be sure, respondent can attempt to draw certain con trasts between the pleadings the Court considered in Twom bly and the pleadings at issue here. In Twombly, the complaint alleged general wrongdoing that extended over a period of years, id., at 551, whereas here the complaint alleges discrete wrongs—for instance, beatings—by lower level Government actors. The allegations here, if true, and if condoned by petitioners, could be the basis for some infer ence of wrongful intent on petitioners’ part. Despite these distinctions, respondent’s pleadings do not sufﬁce to state a claim. Unlike in Twombly, where the doctrine of respon
+</BLOCK>
+<BLOCK id="DOC002.P022.B05">
+deat superior could bind the corporate defendant, here, as we have noted, petitioners cannot be held liable unless they themselves acted on account of a constitutionally protected characteristic. Yet respondent’s complaint does not contain any factual allegation sufﬁcient to plausibly suggest petition ers’ discriminatory state of mind. His pleadings thus do not meet the standard necessary to comply with Rule 8.
+</BLOCK>
 
 [Page 23]
-[CITE_START:DOC002[P023.B01]] 684 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P023.B01]]
-[CITE_START:DOC002[P023.B02]] Opinion of the Court [CITE_END:DOC002[P023.B02]]
-[CITE_START:DOC002[P023.B03]] It is important to note, however, that we express no opin
+<BLOCK id="DOC002.P023.B01">
+684 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P023.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P023.B03">
+It is important to note, however, that we express no opin
 ion concerning the sufﬁciency of respondent’s complaint 
 against the defendants who are not before us. Respondent’s 
 account of his prison ordeal alleges serious ofﬁcial miscon
 duct that we need not address here. Our decision is limited 
 to the determination that respondent’s complaint does not 
-entitle him to relief from petitioners. [CITE_END:DOC002[P023.B03]]
-[CITE_START:DOC002[P023.B04]] C [CITE_END:DOC002[P023.B04]]
-[CITE_START:DOC002[P023.B05]] Respondent offers three arguments that bear on our dispo
-sition of his case, but none is persuasive. [CITE_END:DOC002[P023.B05]]
-[CITE_START:DOC002[P023.B06]] 1 [CITE_END:DOC002[P023.B06]]
-[CITE_START:DOC002[P023.B07]] Respondent ﬁrst says that our decision in Twombly should be limited to pleadings made in the context of an antitrust dispute. Iqbal Brief 37–38. This argument is not sup ported by Twombly and is incompatible with the Federal Rules of Civil Procedure. Though Twombly determined the sufﬁciency of a complaint sounding in antitrust, the decision was based on our interpretation and application of Rule 8. 550 U. S., at 554. That Rule in turn governs the pleading standard “in all civil actions and proceedings in the United States district courts.” Fed. Rule Civ. Proc. 1. Our deci sion in Twombly [CITE_END:DOC002[P023.B07]]
-[CITE_START:DOC002[P023.B08]] expounded the pleading standard for “all civil actions,” ibid., and it applies to antitrust and discrimina tion suits alike, see 550 U. S., at 555–556, and n. 3. [CITE_END:DOC002[P023.B08]]
-[CITE_START:DOC002[P023.B09]] 2 [CITE_END:DOC002[P023.B09]]
-[CITE_START:DOC002[P023.B10]] Respondent next implies that our construction of Rule 8 
+entitle him to relief from petitioners.
+</BLOCK>
+<BLOCK id="DOC002.P023.B04">
+C
+</BLOCK>
+<BLOCK id="DOC002.P023.B05">
+Respondent offers three arguments that bear on our dispo
+sition of his case, but none is persuasive.
+</BLOCK>
+<BLOCK id="DOC002.P023.B06">
+1
+</BLOCK>
+<BLOCK id="DOC002.P023.B07">
+Respondent ﬁrst says that our decision in Twombly should be limited to pleadings made in the context of an antitrust dispute. Iqbal Brief 37–38. This argument is not sup ported by Twombly and is incompatible with the Federal Rules of Civil Procedure. Though Twombly determined the sufﬁciency of a complaint sounding in antitrust, the decision was based on our interpretation and application of Rule 8. 550 U. S., at 554. That Rule in turn governs the pleading standard “in all civil actions and proceedings in the United States district courts.” Fed. Rule Civ. Proc. 1. Our deci sion in Twombly
+</BLOCK>
+<BLOCK id="DOC002.P023.B08">
+expounded the pleading standard for “all civil actions,” ibid., and it applies to antitrust and discrimina tion suits alike, see 550 U. S., at 555–556, and n. 3.
+</BLOCK>
+<BLOCK id="DOC002.P023.B09">
+2
+</BLOCK>
+<BLOCK id="DOC002.P023.B10">
+Respondent next implies that our construction of Rule 8 
 should be tempered where, as here, the Court of Appeals has 
 “instructed the district court to cabin discovery in such a 
 way as to preserve” petitioners’ defense of qualiﬁed immu
 nity “as much as possible in anticipation of a summary judg
 ment motion.” Iqbal Brief 27. We have held, however, 
 that the question presented by a motion to dismiss a com
-plaint for insufﬁcient pleadings does not turn on the controls [CITE_END:DOC002[P023.B10]]
+plaint for insufﬁcient pleadings does not turn on the controls
+</BLOCK>
 
 [Page 24]
-[CITE_START:DOC002[P024.B01]] Cite as: 556 U. S. 662 (2009) 
-685 Opinion of the Court [CITE_END:DOC002[P024.B01]]
-[CITE_START:DOC002[P024.B02]] placed upon the discovery process.  Twombly, supra,  at 559 
+<BLOCK id="DOC002.P024.B01">
+Cite as: 556 U. S. 662 (2009) 
+685 Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P024.B02">
+placed upon the discovery process.  Twombly, supra,  at 559 
 (“It is no answer to say that a claim just shy of a plausible 
 entitlement to relief can, if groundless, be weeded out early 
 in the discovery process through careful case management 
 given the common lament that the success of judicial supervi
 sion in checking discovery abuse has been on the modest 
-side” (internal quotation marks and citation omitted)). [CITE_END:DOC002[P024.B02]]
-[CITE_START:DOC002[P024.B03]] Our rejection of the careful-case-management approach is especially important in suits where Government-ofﬁcial de fendants are entitled to assert the defense of qualiﬁed immu nity. The basic thrust of the qualiﬁed-immunity doctrine is to free ofﬁcials from the concerns of litigation, including “avoidance of disruptive discovery.” Siegert v. Gilley, 500 U. S. 226, 236 (1991) ( Kennedy, J., concurring in judgment). There are serious and legitimate reasons for this. If a Gov ernment ofﬁcial is to devote time to his or her duties, and to the formulation of sound and responsible policies, it is coun terproductive to require the substantial [CITE_END:DOC002[P024.B03]]
-[CITE_START:DOC002[P024.B04]] diversion that is at tendant to participating in litigation and making informed decisions as to how it should proceed. Litigation, though necessary to ensure that ofﬁcials comply with the law, exacts heavy costs in terms of efﬁciency and expenditure of valuable time and resources that might otherwise be directed to the proper execution of the work of the Government. The costs of diversion are only magniﬁed when Government ofﬁcials are charged with responding to, as Judge Cabranes aptly put it, “a national and international security emergency un precedented in the history of the American Republic.” 490 F. 3d, at 179. [CITE_END:DOC002[P024.B04]]
-[CITE_START:DOC002[P024.B05]] It is no answer to these concerns to say that discovery for 
+side” (internal quotation marks and citation omitted)).
+</BLOCK>
+<BLOCK id="DOC002.P024.B03">
+Our rejection of the careful-case-management approach is especially important in suits where Government-ofﬁcial de fendants are entitled to assert the defense of qualiﬁed immu nity. The basic thrust of the qualiﬁed-immunity doctrine is to free ofﬁcials from the concerns of litigation, including “avoidance of disruptive discovery.” Siegert v. Gilley, 500 U. S. 226, 236 (1991) ( Kennedy, J., concurring in judgment). There are serious and legitimate reasons for this. If a Gov ernment ofﬁcial is to devote time to his or her duties, and to the formulation of sound and responsible policies, it is coun terproductive to require the substantial
+</BLOCK>
+<BLOCK id="DOC002.P024.B04">
+diversion that is at tendant to participating in litigation and making informed decisions as to how it should proceed. Litigation, though necessary to ensure that ofﬁcials comply with the law, exacts heavy costs in terms of efﬁciency and expenditure of valuable time and resources that might otherwise be directed to the proper execution of the work of the Government. The costs of diversion are only magniﬁed when Government ofﬁcials are charged with responding to, as Judge Cabranes aptly put it, “a national and international security emergency un precedented in the history of the American Republic.” 490 F. 3d, at 179.
+</BLOCK>
+<BLOCK id="DOC002.P024.B05">
+It is no answer to these concerns to say that discovery for 
 petitioners can be deferred while pretrial proceedings con
 tinue for other defendants. It is quite likely that, when dis
 covery as to the other parties proceeds, it would prove neces
 sary for petitioners and their counsel to participate in the 
 process to ensure the case does not develop in a misleading 
-or slanted way that causes prejudice to their position. Even [CITE_END:DOC002[P024.B05]]
+or slanted way that causes prejudice to their position. Even
+</BLOCK>
 
 [Page 25]
-[CITE_START:DOC002[P025.B01]] 686 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P025.B01]]
-[CITE_START:DOC002[P025.B02]] Opinion of the Court [CITE_END:DOC002[P025.B02]]
-[CITE_START:DOC002[P025.B03]] if petitioners are not yet themselves subject to discovery 
+<BLOCK id="DOC002.P025.B01">
+686 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P025.B02">
+Opinion of the Court
+</BLOCK>
+<BLOCK id="DOC002.P025.B03">
+if petitioners are not yet themselves subject to discovery 
 orders, then, they would not be free from the burdens of 
 discovery. We decline respondent’s invitation to relax the pleading 
 requirements on the ground that the Court of Appeals prom
@@ -456,9 +765,13 @@ qualiﬁed immunity for high-level ofﬁcials who must be nei
 ther deterred nor detracted from the vigorous performance 
 of their duties. Because respondent’s complaint is deﬁcient 
 under Rule 8, he is not entitled to discovery, cabined or 
-otherwise. [CITE_END:DOC002[P025.B03]]
-[CITE_START:DOC002[P025.B04]] 3 [CITE_END:DOC002[P025.B04]]
-[CITE_START:DOC002[P025.B05]] Respondent ﬁnally maintains that the Federal Rules ex
+otherwise.
+</BLOCK>
+<BLOCK id="DOC002.P025.B04">
+3
+</BLOCK>
+<BLOCK id="DOC002.P025.B05">
+Respondent ﬁnally maintains that the Federal Rules ex
 pressly allow him to allege petitioners’ discriminatory intent 
 “generally,” which he equates with a conclusory allegation. 
 Iqbal Brief 32 (citing Fed. Rule Civ. Proc. 9). It follows, 
@@ -471,32 +784,48 @@ required to accept this allegation as true, respondent’s
 complaint would survive petitioners’ motion to dismiss. But 
 the Federal Rules do not require courts to credit a com
 plaint’s conclusory statements without reference to its fac
-tual context. [CITE_END:DOC002[P025.B05]]
-[CITE_START:DOC002[P025.B06]] It is true that Rule 9(b) requires particularity when plead
+tual context.
+</BLOCK>
+<BLOCK id="DOC002.P025.B06">
+It is true that Rule 9(b) requires particularity when plead
 ing “fraud or mistake,” while allowing “[m]alice, intent, 
 knowledge, and other conditions of a person’s mind [to] be 
 alleged generally.” But “generally” is a relative term. In 
 the context of Rule 9, it is to be compared to the particularity 
 requirement applicable to fraud or mistake. Rule 9 merely 
 excuses a party from pleading discriminatory intent under 
-an elevated pleading standard. It does not give him license [CITE_END:DOC002[P025.B06]]
+an elevated pleading standard. It does not give him license
+</BLOCK>
 
 [Page 26]
-[CITE_START:DOC002[P026.B01]] 687 
-Cite as: 556 U. S. 662 (2009) Souter, J., dissenting [CITE_END:DOC002[P026.B01]]
-[CITE_START:DOC002[P026.B02]] to evade the less rigid—though still operative—strictures of Rule 8. See 5A C. Wright & A. Miller, Federal Practice and Procedure § 1301, p. 291 (3d ed. 2004) (“[A] rigid rule requir ing the detailed pleading of a condition of mind would be undesirable because, absent overriding considerations press ing for a speciﬁcity requirement, as in the case of averments of fraud or mistake, the general ‘short and plain statement of the claim’ mandate in Rule 8(a) . . . should control the second sentence of Rule 9(b)”). And Rule 8 does not em power respondent to plead the bare [CITE_END:DOC002[P026.B02]]
-[CITE_START:DOC002[P026.B03]] elements of his cause of action, afﬁx the label “general allegation,” and expect his complaint to survive a motion to dismiss. [CITE_END:DOC002[P026.B03]]
-[CITE_START:DOC002[P026.B04]] V [CITE_END:DOC002[P026.B04]]
-[CITE_START:DOC002[P026.B05]] We hold that respondent’s complaint fails to plead sufﬁ
+<BLOCK id="DOC002.P026.B01">
+687 
+Cite as: 556 U. S. 662 (2009) Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P026.B02">
+to evade the less rigid—though still operative—strictures of Rule 8. See 5A C. Wright & A. Miller, Federal Practice and Procedure § 1301, p. 291 (3d ed. 2004) (“[A] rigid rule requir ing the detailed pleading of a condition of mind would be undesirable because, absent overriding considerations press ing for a speciﬁcity requirement, as in the case of averments of fraud or mistake, the general ‘short and plain statement of the claim’ mandate in Rule 8(a) . . . should control the second sentence of Rule 9(b)”). And Rule 8 does not em power respondent to plead the bare
+</BLOCK>
+<BLOCK id="DOC002.P026.B03">
+elements of his cause of action, afﬁx the label “general allegation,” and expect his complaint to survive a motion to dismiss.
+</BLOCK>
+<BLOCK id="DOC002.P026.B04">
+V
+</BLOCK>
+<BLOCK id="DOC002.P026.B05">
+We hold that respondent’s complaint fails to plead sufﬁ
 cient facts to state a claim for purposeful and unlawful dis
 crimination against petitioners. The Court of Appeals 
 should decide in the ﬁrst instance whether to remand to the 
 District Court so that respondent can seek leave to amend 
 his deﬁcient complaint. The judgment of the Court of Appeals is reversed, and 
 the case is remanded for further proceedings consistent with 
-this opinion. [CITE_END:DOC002[P026.B05]]
-[CITE_START:DOC002[P026.B06]] It is so ordered. [CITE_END:DOC002[P026.B06]]
-[CITE_START:DOC002[P026.B07]] Justice Souter, with whom  Justice Stevens, Justice
+this opinion.
+</BLOCK>
+<BLOCK id="DOC002.P026.B06">
+It is so ordered.
+</BLOCK>
+<BLOCK id="DOC002.P026.B07">
+Justice Souter, with whom  Justice Stevens, Justice
 Ginsburg, and  Justice Breyer join, dissenting. This case is here on the uncontested assumption that 
 Bivens  v.  Six Unknown Fed. Narcotics Agents,  403 U. S. 388 
 (1971), allows personal liability based on a federal ofﬁcer’s 
@@ -505,13 +834,19 @@ Amendments, and it comes to us with the explicit concession
 of petitioners Ashcroft and Mueller that an ofﬁcer may be 
 subject to  Bivens  liability as a supervisor on grounds other 
 than  respondeat superior.  The Court apparently rejects 
-this concession and, although it has no bearing on the ma [CITE_END:DOC002[P026.B07]]
+this concession and, although it has no bearing on the ma
+</BLOCK>
 
 [Page 27]
-[CITE_START:DOC002[P027.B01]] 688 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P027.B01]]
-[CITE_START:DOC002[P027.B02]] Souter, J., dissenting [CITE_END:DOC002[P027.B02]]
-[CITE_START:DOC002[P027.B03]] jority’s resolution of this case, does away with supervisory 
+<BLOCK id="DOC002.P027.B01">
+688 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P027.B02">
+Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P027.B03">
+jority’s resolution of this case, does away with supervisory 
 liability under  Bivens.  The majority then misapplies the 
 pleading standard under  Bell Atlantic Corp.  v.  Twombly, 
 550 U. S. 544 (2007), to conclude that the complaint fails to 
@@ -519,57 +854,95 @@ state a claim. I respectfully dissent from both the rejection
 of supervisory liability as a cognizable claim in the face of 
 petitioners’ concession, and from the holding that the com
 plaint fails to satisfy Rule 8(a)(2) of the Federal Rules of 
-Civil Procedure. [CITE_END:DOC002[P027.B03]]
-[CITE_START:DOC002[P027.B04]] I  
-A [CITE_END:DOC002[P027.B04]]
-[CITE_START:DOC002[P027.B05]] Respondent Iqbal was arrested in November 2001 on charges of conspiracy to defraud the United States and fraud in relation to identiﬁcation documents, and was placed in pre trial detention at the Metropolitan Detention Center in Brooklyn, New York. Iqbal v. Hasty, 490 F. 3d 143, 147–148 (CA2 2007). He alleges that Federal Bureau of Investiga tion (FBI) ofﬁcials carried out a discriminatory policy by des ignating him as a person “ ‘of high interest’ ” in the investiga tion of the September 11 attacks solely because of his race, religion, or national origin. Owing to this designation he was [CITE_END:DOC002[P027.B05]]
-[CITE_START:DOC002[P027.B06]] placed in the detention center’s Administrative Maxi mum Special Housing Unit for over six months while await ing the fraud trial. Id., at 148. As I will mention more fully below, Iqbal contends that Ashcroft and Mueller were at the very least aware of the discriminatory detention policy and condoned it (and perhaps even took part in devising it), thereby violating his First and Fifth Amendment rights. 1 Iqbal claims that on the day he was transferred to the special unit, prison guards, without provocation, “picked him up and threw him against the wall, kicked him in the stom 1 [CITE_END:DOC002[P027.B06]]
-[CITE_START:DOC002[P027.B07]] Iqbal makes no claim against Ashcroft and Mueller based simply on his right, as a pretrial detainee, to be free from punishment prior to an adjudication of guilt on the fraud charges. See Bell v. Wolﬁsh, 441 U. S. 520, 535 (1979). [CITE_END:DOC002[P027.B07]]
+Civil Procedure.
+</BLOCK>
+<BLOCK id="DOC002.P027.B04">
+I  
+A
+</BLOCK>
+<BLOCK id="DOC002.P027.B05">
+Respondent Iqbal was arrested in November 2001 on charges of conspiracy to defraud the United States and fraud in relation to identiﬁcation documents, and was placed in pre trial detention at the Metropolitan Detention Center in Brooklyn, New York. Iqbal v. Hasty, 490 F. 3d 143, 147–148 (CA2 2007). He alleges that Federal Bureau of Investiga tion (FBI) ofﬁcials carried out a discriminatory policy by des ignating him as a person “ ‘of high interest’ ” in the investiga tion of the September 11 attacks solely because of his race, religion, or national origin. Owing to this designation he was
+</BLOCK>
+<BLOCK id="DOC002.P027.B06">
+placed in the detention center’s Administrative Maxi mum Special Housing Unit for over six months while await ing the fraud trial. Id., at 148. As I will mention more fully below, Iqbal contends that Ashcroft and Mueller were at the very least aware of the discriminatory detention policy and condoned it (and perhaps even took part in devising it), thereby violating his First and Fifth Amendment rights. 1 Iqbal claims that on the day he was transferred to the special unit, prison guards, without provocation, “picked him up and threw him against the wall, kicked him in the stom 1
+</BLOCK>
+<BLOCK id="DOC002.P027.B07">
+Iqbal makes no claim against Ashcroft and Mueller based simply on his right, as a pretrial detainee, to be free from punishment prior to an adjudication of guilt on the fraud charges. See Bell v. Wolﬁsh, 441 U. S. 520, 535 (1979).
+</BLOCK>
 
 [Page 28]
-[CITE_START:DOC002[P028.B01]] 689 
-Cite as: 556 U. S. 662 (2009) Souter, J., dissenting [CITE_END:DOC002[P028.B01]]
-[CITE_START:DOC002[P028.B02]] ach, punched him in the face, and dragged him across the room.” First Amended Complaint in No. 04–CV–1809 (JG) (JA), ¶ 113, App. to Pet. for Cert. 176a (hereinafter Com plaint). He says that after being attacked a second time he sought medical attention but was denied care for two weeks. Id., ¶¶ 187–188, at 189a. According to Iqbal’s complaint, prison staff in the special unit subjected him to unjustiﬁed strip and body cavity searches, id., ¶¶ 136–140, at 181a, ver bally berated him as a “ ‘terrorist’ ” and “ ‘Muslim killer,’ ” id., ¶ 87, at 170a–171a, refused [CITE_END:DOC002[P028.B02]]
-[CITE_START:DOC002[P028.B03]] to give him adequate food, id., ¶ 91, at 171a–172a, and intentionally turned on air condi tioning during the winter and heating during the summer, id., ¶ 84, at 170a. He claims that prison staff interfered with his attempts to pray and engage in religious study, id., ¶¶ 153–154, at 183a–184a, and with his access to counsel, id., ¶¶ 168, 171, at 186a–187a. [CITE_END:DOC002[P028.B03]]
-[CITE_START:DOC002[P028.B04]] The District Court denied Ashcroft and Mueller’s motion 
+<BLOCK id="DOC002.P028.B01">
+689 
+Cite as: 556 U. S. 662 (2009) Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P028.B02">
+ach, punched him in the face, and dragged him across the room.” First Amended Complaint in No. 04–CV–1809 (JG) (JA), ¶ 113, App. to Pet. for Cert. 176a (hereinafter Com plaint). He says that after being attacked a second time he sought medical attention but was denied care for two weeks. Id., ¶¶ 187–188, at 189a. According to Iqbal’s complaint, prison staff in the special unit subjected him to unjustiﬁed strip and body cavity searches, id., ¶¶ 136–140, at 181a, ver bally berated him as a “ ‘terrorist’ ” and “ ‘Muslim killer,’ ” id., ¶ 87, at 170a–171a, refused
+</BLOCK>
+<BLOCK id="DOC002.P028.B03">
+to give him adequate food, id., ¶ 91, at 171a–172a, and intentionally turned on air condi tioning during the winter and heating during the summer, id., ¶ 84, at 170a. He claims that prison staff interfered with his attempts to pray and engage in religious study, id., ¶¶ 153–154, at 183a–184a, and with his access to counsel, id., ¶¶ 168, 171, at 186a–187a.
+</BLOCK>
+<BLOCK id="DOC002.P028.B04">
+The District Court denied Ashcroft and Mueller’s motion 
 to dismiss Iqbal’s discrimination claim, and the Court of Ap
 peals afﬁrmed. Ashcroft and Mueller then asked this Court 
-to grant certiorari on two questions: [CITE_END:DOC002[P028.B04]]
-[CITE_START:DOC002[P028.B05]] “1. Whether a conclusory allegation that a cabinet-level 
+to grant certiorari on two questions:
+</BLOCK>
+<BLOCK id="DOC002.P028.B05">
+“1. Whether a conclusory allegation that a cabinet-level 
 ofﬁcer or other high-ranking ofﬁcial knew of, condoned, 
 or agreed to subject a plaintiff to allegedly uncon
 stitutional acts purportedly committed by subordinate 
 ofﬁcials is sufﬁcient to state individual-capacity claims 
-against those ofﬁcials under  Bivens. [CITE_END:DOC002[P028.B05]]
-[CITE_START:DOC002[P028.B06]] “2. Whether a cabinet-level officer or other high
+against those ofﬁcials under  Bivens.
+</BLOCK>
+<BLOCK id="DOC002.P028.B06">
+“2. Whether a cabinet-level officer or other high
 ranking ofﬁcial may be held personally liable for the al
 legedly unconstitutional acts of subordinate ofﬁcials on 
 the ground that, as high-level supervisors, they had con
 structive notice of the discrimination allegedly carried 
 out by such subordinate ofﬁcials.” Pet. for Cert. I. The Court granted certiorari on both questions. The ﬁrst 
-is about pleading; the second goes to the liability standard. [CITE_END:DOC002[P028.B06]]
+is about pleading; the second goes to the liability standard.
+</BLOCK>
 
 [Page 29]
-[CITE_START:DOC002[P029.B01]] 690 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P029.B01]]
-[CITE_START:DOC002[P029.B02]] Souter, J., dissenting [CITE_END:DOC002[P029.B02]]
-[CITE_START:DOC002[P029.B03]] In the ﬁrst question, Ashcroft and Mueller did not ask whether “a cabinet-level ofﬁcer or other high-ranking ofﬁ cial” who “knew of, condoned, or agreed to subject a plaintiff to allegedly unconstitutional acts committed by subordinate ofﬁcials” was subject to liability under Bivens. In fact, they conceded in their petition for certiorari that they would be liable if they had “actual knowledge” of discrimination by their subordinates and exhibited “ ‘deliberate indifference’ ” to that discrimination. Pet. for Cert. 29 (quoting Farmer v. Brennan, 511 U. S. 825, 837 (1994)). Instead, they asked the Court to address whether Iqbal’s allegations [CITE_END:DOC002[P029.B03]]
-[CITE_START:DOC002[P029.B04]] against them (which they call conclusory) were sufﬁcient to satisfy Rule 8(a)(2), and in particular whether the Court of Appeals mis applied our decision in Twombly construing that rule. Pet. for Cert. 11–24. [CITE_END:DOC002[P029.B04]]
-[CITE_START:DOC002[P029.B05]] In the second question, Ashcroft and Mueller asked this Court to say whether they could be held personally liable for the actions of their subordinates based on the theory that they had constructive notice of their subordinates’ unconsti tutional conduct. Id., at 25–33. This was an odd question to pose, since Iqbal has never claimed that Ashcroft and Mueller are liable on a constructive notice theory. Be that as it may, the second question challenged only one possible ground for imposing supervisory liability under Bivens. In sum, both questions assumed that a defendant could raise a Bivens claim on theories [CITE_END:DOC002[P029.B05]]
-[CITE_START:DOC002[P029.B06]] of supervisory liability other than constructive notice, and neither question asked the parties or the Court to address the elements of such liability. [CITE_END:DOC002[P029.B06]]
-[CITE_START:DOC002[P029.B07]] The brieﬁng at the merits stage was no different. Ash
+<BLOCK id="DOC002.P029.B01">
+690 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P029.B02">
+Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P029.B03">
+In the ﬁrst question, Ashcroft and Mueller did not ask whether “a cabinet-level ofﬁcer or other high-ranking ofﬁ cial” who “knew of, condoned, or agreed to subject a plaintiff to allegedly unconstitutional acts committed by subordinate ofﬁcials” was subject to liability under Bivens. In fact, they conceded in their petition for certiorari that they would be liable if they had “actual knowledge” of discrimination by their subordinates and exhibited “ ‘deliberate indifference’ ” to that discrimination. Pet. for Cert. 29 (quoting Farmer v. Brennan, 511 U. S. 825, 837 (1994)). Instead, they asked the Court to address whether Iqbal’s allegations
+</BLOCK>
+<BLOCK id="DOC002.P029.B04">
+against them (which they call conclusory) were sufﬁcient to satisfy Rule 8(a)(2), and in particular whether the Court of Appeals mis applied our decision in Twombly construing that rule. Pet. for Cert. 11–24.
+</BLOCK>
+<BLOCK id="DOC002.P029.B05">
+In the second question, Ashcroft and Mueller asked this Court to say whether they could be held personally liable for the actions of their subordinates based on the theory that they had constructive notice of their subordinates’ unconsti tutional conduct. Id., at 25–33. This was an odd question to pose, since Iqbal has never claimed that Ashcroft and Mueller are liable on a constructive notice theory. Be that as it may, the second question challenged only one possible ground for imposing supervisory liability under Bivens. In sum, both questions assumed that a defendant could raise a Bivens claim on theories
+</BLOCK>
+<BLOCK id="DOC002.P029.B06">
+of supervisory liability other than constructive notice, and neither question asked the parties or the Court to address the elements of such liability.
+</BLOCK>
+<BLOCK id="DOC002.P029.B07">
+The brieﬁng at the merits stage was no different. Ash
 croft and Mueller argued that the factual allegations in Iq
 bal’s complaint were insufﬁcient to overcome their claim of 
 qualiﬁed immunity; they also contended that they could not 
 be held liable on a theory of constructive notice. Again they 
 conceded, however, that they would be subject to supervi
 sory liability if they “had actual knowledge of the assertedly 
-discriminatory nature of the classiﬁcation of suspects as [CITE_END:DOC002[P029.B07]]
+discriminatory nature of the classiﬁcation of suspects as
+</BLOCK>
 
 [Page 30]
-[CITE_START:DOC002[P030.B01]] 691 
-Cite as: 556 U. S. 662 (2009) Souter, J., dissenting [CITE_END:DOC002[P030.B01]]
-[CITE_START:DOC002[P030.B02]] being ‘of high interest’ and they were deliberately indifferent 
+<BLOCK id="DOC002.P030.B01">
+691 
+Cite as: 556 U. S. 662 (2009) Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P030.B02">
+being ‘of high interest’ and they were deliberately indifferent 
 to that discrimination.” Brief for Petitioners 50; see also 
 Reply Brief for Petitioners 21–22. Iqbal argued that the al
 legations in his complaint were sufﬁcient under Rule 8(a)(2) 
@@ -577,8 +950,10 @@ and  Twombly,  and conceded that as a matter of law he could
 not recover under a theory of  respondeat superior.  See 
 Brief for Respondent Iqbal 46. Thus, the parties agreed as 
 to a proper standard of supervisory liability, and the disputed 
-question was whether Iqbal’s complaint satisﬁed Rule 8(a)(2). [CITE_END:DOC002[P030.B02]]
-[CITE_START:DOC002[P030.B03]] Without acknowledging the parties’ agreement as to the 
+question was whether Iqbal’s complaint satisﬁed Rule 8(a)(2).
+</BLOCK>
+<BLOCK id="DOC002.P030.B03">
+Without acknowledging the parties’ agreement as to the 
 standard of supervisory liability, the Court asserts that it 
 must  sua sponte  decide the scope of supervisory liability 
 here.  Ante,  at 675–677. I agree that, absent Ashcroft and 
@@ -590,43 +965,67 @@ for relief on that claim. See  Twombly,  550 U. S., at 557–558.
 But deciding the scope of supervisory  Bivens  liability in this 
 case is uncalled for. There are several reasons, starting 
 with the position Ashcroft and Mueller have taken and fol
-lowing from it. [CITE_END:DOC002[P030.B03]]
-[CITE_START:DOC002[P030.B04]] First, Ashcroft and Mueller have, as noted, made the criti cal concession that a supervisor’s knowledge of a subordi nate’s unconstitutional conduct and deliberate indifference to that conduct are grounds for Bivens liability. Iqbal seeks to recover on a theory that Ashcroft and Mueller at least knowingly acquiesced (and maybe more than acquiesced) in the discriminatory acts of their subordinates; if he can show this, he will satisfy Ashcroft and Mueller’s own test for su pervisory liability. See Farmer, supra, at 842 (explaining that a prison ofﬁcial acts with “deliberate indifference” if “the ofﬁcial acted or failed to act despite [CITE_END:DOC002[P030.B04]]
-[CITE_START:DOC002[P030.B05]] his knowledge of a substantial risk of serious harm”). We do not normally override a party’s concession, see, e. g., United States v. In ternational Business Machines Corp., 517 U. S. 843, 855 [CITE_END:DOC002[P030.B05]]
+lowing from it.
+</BLOCK>
+<BLOCK id="DOC002.P030.B04">
+First, Ashcroft and Mueller have, as noted, made the criti cal concession that a supervisor’s knowledge of a subordi nate’s unconstitutional conduct and deliberate indifference to that conduct are grounds for Bivens liability. Iqbal seeks to recover on a theory that Ashcroft and Mueller at least knowingly acquiesced (and maybe more than acquiesced) in the discriminatory acts of their subordinates; if he can show this, he will satisfy Ashcroft and Mueller’s own test for su pervisory liability. See Farmer, supra, at 842 (explaining that a prison ofﬁcial acts with “deliberate indifference” if “the ofﬁcial acted or failed to act despite
+</BLOCK>
+<BLOCK id="DOC002.P030.B05">
+his knowledge of a substantial risk of serious harm”). We do not normally override a party’s concession, see, e. g., United States v. In ternational Business Machines Corp., 517 U. S. 843, 855
+</BLOCK>
 
 [Page 31]
-[CITE_START:DOC002[P031.B01]] 692 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P031.B01]]
-[CITE_START:DOC002[P031.B02]] Souter, J., dissenting [CITE_END:DOC002[P031.B02]]
-[CITE_START:DOC002[P031.B03]] (1996) (holding that “[i]t would be inappropriate for us to 
+<BLOCK id="DOC002.P031.B01">
+692 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P031.B02">
+Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P031.B03">
+(1996) (holding that “[i]t would be inappropriate for us to 
 [e]xamine in this case, without the beneﬁt of the parties’ 
 brieﬁng,” an issue the Government had conceded), and doing 
 so is especially inappropriate when, as here, the issue is un
 necessary to decide the case, see  infra,  at 694. I would 
 therefore accept Ashcroft and Mueller’s concession for pur
 poses of this case and proceed to consider whether the com
-plaint alleges at least knowledge and deliberate indifference. [CITE_END:DOC002[P031.B03]]
-[CITE_START:DOC002[P031.B04]] Second, because of the concession, we have received no brieﬁng or argument on the proper scope of supervisory lia bility, much less the full-dress argument we normally re quire. Mapp v. Ohio, 367 U. S. 643, 676–677 (1961) (Harlan, J., dissenting). We consequently are in no position to decide the precise contours of supervisory liability here, this issue being a complicated one that has divided the Courts of Ap peals. See infra, at 693–694. This Court recently re marked on the danger of “bad decisionmaking” when the brieﬁng on a question is “woefully inadequate,” Pearson v. Callahan, 555 U. S. [CITE_END:DOC002[P031.B04]]
-[CITE_START:DOC002[P031.B05]] 223, 239 (2009), yet today the majority answers a question with no brieﬁng at all. The attendant risk of error is palpable. [CITE_END:DOC002[P031.B05]]
-[CITE_START:DOC002[P031.B06]] Finally, the Court’s approach is most unfair to Iqbal. He 
+plaint alleges at least knowledge and deliberate indifference.
+</BLOCK>
+<BLOCK id="DOC002.P031.B04">
+Second, because of the concession, we have received no brieﬁng or argument on the proper scope of supervisory lia bility, much less the full-dress argument we normally re quire. Mapp v. Ohio, 367 U. S. 643, 676–677 (1961) (Harlan, J., dissenting). We consequently are in no position to decide the precise contours of supervisory liability here, this issue being a complicated one that has divided the Courts of Ap peals. See infra, at 693–694. This Court recently re marked on the danger of “bad decisionmaking” when the brieﬁng on a question is “woefully inadequate,” Pearson v. Callahan, 555 U. S.
+</BLOCK>
+<BLOCK id="DOC002.P031.B05">
+223, 239 (2009), yet today the majority answers a question with no brieﬁng at all. The attendant risk of error is palpable.
+</BLOCK>
+<BLOCK id="DOC002.P031.B06">
+Finally, the Court’s approach is most unfair to Iqbal. He 
 was entitled to rely on Ashcroft and Mueller’s concession, 
 both in their petition for certiorari and in their merits briefs, 
 that they could be held liable on a theory of knowledge and 
 deliberate indifference. By overriding that concession, the 
-Court denies Iqbal a fair chance to be heard on the question. [CITE_END:DOC002[P031.B06]]
-[CITE_START:DOC002[P031.B07]] B [CITE_END:DOC002[P031.B07]]
-[CITE_START:DOC002[P031.B08]] The majority, however, does ignore the concession. Ac
+Court denies Iqbal a fair chance to be heard on the question.
+</BLOCK>
+<BLOCK id="DOC002.P031.B07">
+B
+</BLOCK>
+<BLOCK id="DOC002.P031.B08">
+The majority, however, does ignore the concession. Ac
 cording to the majority, because Iqbal concededly cannot re
 cover on a theory of  respondeat superior,  it follows that he 
 cannot recover under any theory of supervisory liability. 
 Ante,  at 677. The majority says that in a  Bivens  action, 
 “where masters do not answer for the torts of their serv
-ants,” “the term ‘supervisory liability’ is a misnomer,” and [CITE_END:DOC002[P031.B08]]
+ants,” “the term ‘supervisory liability’ is a misnomer,” and
+</BLOCK>
 
 [Page 32]
-[CITE_START:DOC002[P032.B01]] 693 
-Cite as: 556 U. S. 662 (2009) Souter, J., dissenting [CITE_END:DOC002[P032.B01]]
-[CITE_START:DOC002[P032.B02]] that “[a]bsent vicarious liability, each Government ofﬁcial, 
+<BLOCK id="DOC002.P032.B01">
+693 
+Cite as: 556 U. S. 662 (2009) Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P032.B02">
+that “[a]bsent vicarious liability, each Government ofﬁcial, 
 his or her title notwithstanding, is only liable for his or her 
 own misconduct.”  Ibid.  Lest there be any mistake, in 
 these words the majority is not narrowing the scope of su
@@ -636,22 +1035,34 @@ that the supervisor may be liable, under certain conditions,
 for the wrongdoing of his subordinates, and it is this very 
 principle that the majority rejects.  Ante,  at 683 (“[P]eti
 tioners cannot be held liable unless they themselves acted on 
-account of a constitutionally protected characteristic”). [CITE_END:DOC002[P032.B02]]
-[CITE_START:DOC002[P032.B03]] The dangers of the majority’s readiness to proceed without brieﬁng and argument are apparent in its cursory analysis, which rests on the assumption that only two outcomes are possible here: respondeat superior liability, in which “[a]n employer is subject to liability for torts committed by em ployees while acting within the scope of their employment,” Restatement (Third) of Agency § 2.04 (2005), or no supervi sory liability at all. The dichotomy is false. Even if an em ployer is not liable for the actions of his employee solely because the employee was acting within the scope of employ ment, there [CITE_END:DOC002[P032.B03]]
-[CITE_START:DOC002[P032.B04]] still might be conditions to render a supervisor liable for the conduct of his subordinate. See, e. g., Whitﬁeld v. Mele´ndez-Rivera, 431 F. 3d 1, 14 (CA1 2005) (distinguish ing between respondeat superior liability and supervisory liability); Bennett v. Eastpointe, 410 F. 3d 810, 818 (CA6 2005) (same); Richardson v. Goord, 347 F. 3d 431, 435 (CA2 2003) (same); Hall v. Lombardi, 996 F. 2d 954, 961 (CA8 1993) (same). [CITE_END:DOC002[P032.B04]]
-[CITE_START:DOC002[P032.B05]] In fact, there is quite a spectrum of possible tests for su
+account of a constitutionally protected characteristic”).
+</BLOCK>
+<BLOCK id="DOC002.P032.B03">
+The dangers of the majority’s readiness to proceed without brieﬁng and argument are apparent in its cursory analysis, which rests on the assumption that only two outcomes are possible here: respondeat superior liability, in which “[a]n employer is subject to liability for torts committed by em ployees while acting within the scope of their employment,” Restatement (Third) of Agency § 2.04 (2005), or no supervi sory liability at all. The dichotomy is false. Even if an em ployer is not liable for the actions of his employee solely because the employee was acting within the scope of employ ment, there
+</BLOCK>
+<BLOCK id="DOC002.P032.B04">
+still might be conditions to render a supervisor liable for the conduct of his subordinate. See, e. g., Whitﬁeld v. Mele´ndez-Rivera, 431 F. 3d 1, 14 (CA1 2005) (distinguish ing between respondeat superior liability and supervisory liability); Bennett v. Eastpointe, 410 F. 3d 810, 818 (CA6 2005) (same); Richardson v. Goord, 347 F. 3d 431, 435 (CA2 2003) (same); Hall v. Lombardi, 996 F. 2d 954, 961 (CA8 1993) (same).
+</BLOCK>
+<BLOCK id="DOC002.P032.B05">
+In fact, there is quite a spectrum of possible tests for su
 pervisory liability: it could be imposed where a supervisor 
 has actual knowledge of a subordinate’s constitutional viola
 tion and acquiesces, see,  e. g., Baker  v.  Monroe Twp.,  50 F. 3d 
 1186, 1994 (CA3 1995);  Woodward  v.  Worland,  977 F. 2d 1392, 
 1400 (CA10 1992); or where supervisors “ ‘know about the 
-conduct and facilitate it, approve it, condone it, or turn a [CITE_END:DOC002[P032.B05]]
+conduct and facilitate it, approve it, condone it, or turn a
+</BLOCK>
 
 [Page 33]
-[CITE_START:DOC002[P033.B01]] 694 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P033.B01]]
-[CITE_START:DOC002[P033.B02]] Souter, J., dissenting [CITE_END:DOC002[P033.B02]]
-[CITE_START:DOC002[P033.B03]] blind eye for fear of what they might see,’ ”  International 
+<BLOCK id="DOC002.P033.B01">
+694 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P033.B02">
+Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P033.B03">
+blind eye for fear of what they might see,’ ”  International 
 Action Center  v.  United States,  365 F. 3d 20, 28 (CADC 2004) 
 (Roberts, J.) (quoting  Jones  v.  Chicago,  856 F. 2d 985, 992 
 (CA7 1988) (Posner, J.)); or where the supervisor has no ac
@@ -661,94 +1072,167 @@ where the supervisor was grossly negligent, see,  e. g., Lipsett
 v.  University of Puerto Rico,  864 F. 2d 881, 902 (CA1 1988). 
 I am unsure what the general test for supervisory liability 
 should be, and in the absence of brieﬁng and argument I am 
-in no position to choose or devise one. [CITE_END:DOC002[P033.B03]]
-[CITE_START:DOC002[P033.B04]] Neither is the majority, but what is most remarkable about its foray into supervisory liability is that its conclusion has no bearing on its resolution of the case. The majority says that all of the allegations in the complaint that Ashcroft and Mueller authorized, condoned, or even were aware of their subordinates’ discriminatory conduct are “conclusory” and therefore are “not entitled to be assumed true.” Ante, at 681. As I explain below, this conclusion is unsound, but on the majority’s understanding of Rule 8(a)(2) pleading stand ards, even if the majority accepted Ashcroft and Mueller’s concession and asked whether the [CITE_END:DOC002[P033.B04]]
-[CITE_START:DOC002[P033.B05]] complaint sufﬁciently al leges knowledge and deliberate indifference, it presumably would still conclude that the complaint fails to plead sufﬁ cient facts and must be dismissed. 2 [CITE_END:DOC002[P033.B05]]
-[CITE_START:DOC002[P033.B06]] II [CITE_END:DOC002[P033.B06]]
-[CITE_START:DOC002[P033.B07]] Given petitioners’ concession, the complaint satisﬁes Rule 
+in no position to choose or devise one.
+</BLOCK>
+<BLOCK id="DOC002.P033.B04">
+Neither is the majority, but what is most remarkable about its foray into supervisory liability is that its conclusion has no bearing on its resolution of the case. The majority says that all of the allegations in the complaint that Ashcroft and Mueller authorized, condoned, or even were aware of their subordinates’ discriminatory conduct are “conclusory” and therefore are “not entitled to be assumed true.” Ante, at 681. As I explain below, this conclusion is unsound, but on the majority’s understanding of Rule 8(a)(2) pleading stand ards, even if the majority accepted Ashcroft and Mueller’s concession and asked whether the
+</BLOCK>
+<BLOCK id="DOC002.P033.B05">
+complaint sufﬁciently al leges knowledge and deliberate indifference, it presumably would still conclude that the complaint fails to plead sufﬁ cient facts and must be dismissed. 2
+</BLOCK>
+<BLOCK id="DOC002.P033.B06">
+II
+</BLOCK>
+<BLOCK id="DOC002.P033.B07">
+Given petitioners’ concession, the complaint satisﬁes Rule 
 8(a)(2). Ashcroft and Mueller admit they are liable for their 
 subordinates’ conduct if they “had actual knowledge of the 
 assertedly discriminatory nature of the classiﬁcation of sus 2  If I am mistaken, and the majority’s rejection of the concession is some
 how outcome determinative, then its approach is even more unfair to Iqbal 
 than previously explained, see  supra,  at 692, for Iqbal had no reason to 
 argue the (apparently dispositive) supervisory liability standard in light of 
-the concession. [CITE_END:DOC002[P033.B07]]
+the concession.
+</BLOCK>
 
 [Page 34]
-[CITE_START:DOC002[P034.B01]] 695 
-Cite as: 556 U. S. 662 (2009) Souter, J., dissenting [CITE_END:DOC002[P034.B01]]
-[CITE_START:DOC002[P034.B02]] pects as being ‘of high interest’ and they were deliberately indifferent to that discrimination.” Brief for Petitioners 50. Iqbal alleges that after the September 11 attacks the FBI “arrested and detained thousands of Arab Muslim men,” Complaint ¶ 47, App. to Pet. for Cert. 164a, that many of these men were designated by high-ranking FBI ofﬁcials as being “ ‘of high interest,’ ” id., ¶¶ 48, 50, at 164a, and that in many cases, including Iqbal’s, this designation was made “because of the race, religion, and national origin of the de tainees, and not because of any evidence of the [CITE_END:DOC002[P034.B02]]
-[CITE_START:DOC002[P034.B03]] detainees’ involvement in supporting terrorist activity,” id., ¶ 49, at 164a. The complaint further alleges that Ashcroft was the “principal architect of the policies and practices challenged,” id., ¶ 10, at 157a, and that Mueller “was instrumental in the adoption, promulgation, and implementation of the policies and practices challenged,” id., ¶ 11, at 157a. According to the complaint, Ashcroft and Mueller “knew of, condoned, and willfully and maliciously agreed to subject [Iqbal] to these conditions of conﬁnement as a matter of policy, solely on ac count of [his] religion, race, and/or national origin and for no legitimate penological interest.” Id., [CITE_END:DOC002[P034.B03]]
-[CITE_START:DOC002[P034.B04]] ¶ 96, at 172a–173a. The complaint thus alleges, at a bare minimum, that Ashcroft and Mueller knew of and condoned the discriminatory policy their subordinates carried out. Actually, the complaint goes further in alleging that Ashcroft and Mueller afﬁrmatively acted to create the discriminatory detention policy. If these factual allegations are true, Ashcroft and Mueller were, at the very least, aware of the discriminatory policy being im plemented and deliberately indifferent to it. [CITE_END:DOC002[P034.B04]]
-[CITE_START:DOC002[P034.B05]] Ashcroft and Mueller argue that these allegations fail to 
+<BLOCK id="DOC002.P034.B01">
+695 
+Cite as: 556 U. S. 662 (2009) Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P034.B02">
+pects as being ‘of high interest’ and they were deliberately indifferent to that discrimination.” Brief for Petitioners 50. Iqbal alleges that after the September 11 attacks the FBI “arrested and detained thousands of Arab Muslim men,” Complaint ¶ 47, App. to Pet. for Cert. 164a, that many of these men were designated by high-ranking FBI ofﬁcials as being “ ‘of high interest,’ ” id., ¶¶ 48, 50, at 164a, and that in many cases, including Iqbal’s, this designation was made “because of the race, religion, and national origin of the de tainees, and not because of any evidence of the
+</BLOCK>
+<BLOCK id="DOC002.P034.B03">
+detainees’ involvement in supporting terrorist activity,” id., ¶ 49, at 164a. The complaint further alleges that Ashcroft was the “principal architect of the policies and practices challenged,” id., ¶ 10, at 157a, and that Mueller “was instrumental in the adoption, promulgation, and implementation of the policies and practices challenged,” id., ¶ 11, at 157a. According to the complaint, Ashcroft and Mueller “knew of, condoned, and willfully and maliciously agreed to subject [Iqbal] to these conditions of conﬁnement as a matter of policy, solely on ac count of [his] religion, race, and/or national origin and for no legitimate penological interest.” Id.,
+</BLOCK>
+<BLOCK id="DOC002.P034.B04">
+¶ 96, at 172a–173a. The complaint thus alleges, at a bare minimum, that Ashcroft and Mueller knew of and condoned the discriminatory policy their subordinates carried out. Actually, the complaint goes further in alleging that Ashcroft and Mueller afﬁrmatively acted to create the discriminatory detention policy. If these factual allegations are true, Ashcroft and Mueller were, at the very least, aware of the discriminatory policy being im plemented and deliberately indifferent to it.
+</BLOCK>
+<BLOCK id="DOC002.P034.B05">
+Ashcroft and Mueller argue that these allegations fail to 
 satisfy the “plausibility standard” of  Twombly.  They con
 tend that Iqbal’s claims are implausible because such high
 ranking ofﬁcials “tend not to be personally involved in the 
 speciﬁc actions of lower-level ofﬁcers down the bureaucratic 
 chain of command.” Brief for Petitioners 28. But this re
-sponse bespeaks a fundamental misunderstanding of the en [CITE_END:DOC002[P034.B05]]
+sponse bespeaks a fundamental misunderstanding of the en
+</BLOCK>
 
 [Page 35]
-[CITE_START:DOC002[P035.B01]] 696 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P035.B01]]
-[CITE_START:DOC002[P035.B02]] Souter, J., dissenting [CITE_END:DOC002[P035.B02]]
-[CITE_START:DOC002[P035.B03]] quiry that Twombly demands. Twombly does not require a court at the motion-to-dismiss stage to consider whether the factual allegations are probably true. We made it clear, on the contrary, that a court must take the allegations as true, no matter how skeptical the court may be. See 550 U. S., at 555 (a court must proceed “on the assumption that all the allegations in the complaint are true (even if doubtful in fact)”); id., at 556 (“[A] well-pleaded complaint may proceed even if it strikes a savvy judge that actual proof of the facts alleged is improbable”); see also [CITE_END:DOC002[P035.B03]]
-[CITE_START:DOC002[P035.B04]] Neitzke v. Williams, 490 U. S. 319, 327 (1989) (“Rule 12(b)(6) does not countenance . . . dismissals based on a judge’s disbelief of a complaint’s factual allegations”). The sole exception to this rule lies with alle gations that are sufﬁciently fantastic to defy reality as we know it: claims about little green men, or the plaintiff’s re cent trip to Pluto, or experiences in time travel. That is not what we have here. [CITE_END:DOC002[P035.B04]]
-[CITE_START:DOC002[P035.B05]] Under Twombly, the relevant question is whether, assum ing the factual allegations are true, the plaintiff has stated a ground for relief that is plausible. That is, in Twombly ’s words, a plaintiff must “allege facts” that, taken as true, are “suggestive of illegal conduct.” 550 U. S., at 564, n. 8. In Twombly, we were faced with allegations of a conspiracy to violate § 1 of the Sherman Act through parallel conduct. The difﬁculty was that the conduct alleged was “consistent with conspiracy, but just as much in line with a wide swath of rational and competitive business strategy [CITE_END:DOC002[P035.B05]]
-[CITE_START:DOC002[P035.B06]] unilaterally prompted by common perceptions of the market.” Id., at 554. We held that in that sort of circumstance, “[a]n allega tion of parallel conduct is . . . much like a naked assertion of conspiracy in a § 1 complaint: it gets the complaint close to stating a claim, but without some further factual enhance ment it stops short of the line between possibility and plausi bility of ‘entitlement to relief.’ ” Id., at 557 (brackets omit ted). Here, by contrast, the allegations in the complaint are neither conﬁned to naked legal conclusions nor consistent [CITE_END:DOC002[P035.B06]]
+<BLOCK id="DOC002.P035.B01">
+696 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P035.B02">
+Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P035.B03">
+quiry that Twombly demands. Twombly does not require a court at the motion-to-dismiss stage to consider whether the factual allegations are probably true. We made it clear, on the contrary, that a court must take the allegations as true, no matter how skeptical the court may be. See 550 U. S., at 555 (a court must proceed “on the assumption that all the allegations in the complaint are true (even if doubtful in fact)”); id., at 556 (“[A] well-pleaded complaint may proceed even if it strikes a savvy judge that actual proof of the facts alleged is improbable”); see also
+</BLOCK>
+<BLOCK id="DOC002.P035.B04">
+Neitzke v. Williams, 490 U. S. 319, 327 (1989) (“Rule 12(b)(6) does not countenance . . . dismissals based on a judge’s disbelief of a complaint’s factual allegations”). The sole exception to this rule lies with alle gations that are sufﬁciently fantastic to defy reality as we know it: claims about little green men, or the plaintiff’s re cent trip to Pluto, or experiences in time travel. That is not what we have here.
+</BLOCK>
+<BLOCK id="DOC002.P035.B05">
+Under Twombly, the relevant question is whether, assum ing the factual allegations are true, the plaintiff has stated a ground for relief that is plausible. That is, in Twombly ’s words, a plaintiff must “allege facts” that, taken as true, are “suggestive of illegal conduct.” 550 U. S., at 564, n. 8. In Twombly, we were faced with allegations of a conspiracy to violate § 1 of the Sherman Act through parallel conduct. The difﬁculty was that the conduct alleged was “consistent with conspiracy, but just as much in line with a wide swath of rational and competitive business strategy
+</BLOCK>
+<BLOCK id="DOC002.P035.B06">
+unilaterally prompted by common perceptions of the market.” Id., at 554. We held that in that sort of circumstance, “[a]n allega tion of parallel conduct is . . . much like a naked assertion of conspiracy in a § 1 complaint: it gets the complaint close to stating a claim, but without some further factual enhance ment it stops short of the line between possibility and plausi bility of ‘entitlement to relief.’ ” Id., at 557 (brackets omit ted). Here, by contrast, the allegations in the complaint are neither conﬁned to naked legal conclusions nor consistent
+</BLOCK>
 
 [Page 36]
-[CITE_START:DOC002[P036.B01]] 697 
-Cite as: 556 U. S. 662 (2009) Souter, J., dissenting [CITE_END:DOC002[P036.B01]]
-[CITE_START:DOC002[P036.B02]] with legal conduct. The complaint alleges that FBI ofﬁcials 
+<BLOCK id="DOC002.P036.B01">
+697 
+Cite as: 556 U. S. 662 (2009) Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P036.B02">
+with legal conduct. The complaint alleges that FBI ofﬁcials 
 discriminated against Iqbal solely on account of his race, reli
 gion, and national origin, and it alleges the knowledge and 
 deliberate indifference that, by Ashcroft and Mueller’s own 
 admission, are sufﬁcient to make them liable for the illegal 
 action. Iqbal’s complaint therefore contains “enough facts 
 to state a claim to relief that is plausible on its face.”  Id., 
-at 570. [CITE_END:DOC002[P036.B02]]
-[CITE_START:DOC002[P036.B03]] I do not understand the majority to disagree with this understanding of “plausibility” under Twombly. Rather, the majority discards the allegations discussed above with regard to Ashcroft and Mueller as conclusory, and is left considering only two statements in the complaint: that “the [FBI], under the direction of Defendant MUELLER, ar rested and detained thousands of Arab Muslim men . . . as part of its investigation of the events of September 11,” Com plaint ¶ 47, App. to Pet. for Cert. 164a, and that “[t]he policy of holding post-September-11th detainees in highly restric tive conditions of conﬁnement until they [CITE_END:DOC002[P036.B03]]
-[CITE_START:DOC002[P036.B04]] were ‘cleared’ by the FBI was approved by Defendants ASHCROFT and MUELLER in discussions in the weeks after September 11, 2001,” id., ¶ 69, at 168a. See ante, at 681. I think the ma jority is right in saying that these allegations suggest only that Ashcroft and Mueller “sought to keep suspected terror ists in the most secure conditions available until the suspects could be cleared of terrorist activity,” ante, at 683, and that this produced “a disparate, incidental impact on Arab Mus lims,” ante, at 682. And I agree that the two allegations selected by the majority, standing alone, [CITE_END:DOC002[P036.B04]]
-[CITE_START:DOC002[P036.B05]] do not state a plau sible entitlement to relief for unconstitutional discrimination. [CITE_END:DOC002[P036.B05]]
-[CITE_START:DOC002[P036.B06]] But these allegations do not stand alone as the only sig
+at 570.
+</BLOCK>
+<BLOCK id="DOC002.P036.B03">
+I do not understand the majority to disagree with this understanding of “plausibility” under Twombly. Rather, the majority discards the allegations discussed above with regard to Ashcroft and Mueller as conclusory, and is left considering only two statements in the complaint: that “the [FBI], under the direction of Defendant MUELLER, ar rested and detained thousands of Arab Muslim men . . . as part of its investigation of the events of September 11,” Com plaint ¶ 47, App. to Pet. for Cert. 164a, and that “[t]he policy of holding post-September-11th detainees in highly restric tive conditions of conﬁnement until they
+</BLOCK>
+<BLOCK id="DOC002.P036.B04">
+were ‘cleared’ by the FBI was approved by Defendants ASHCROFT and MUELLER in discussions in the weeks after September 11, 2001,” id., ¶ 69, at 168a. See ante, at 681. I think the ma jority is right in saying that these allegations suggest only that Ashcroft and Mueller “sought to keep suspected terror ists in the most secure conditions available until the suspects could be cleared of terrorist activity,” ante, at 683, and that this produced “a disparate, incidental impact on Arab Mus lims,” ante, at 682. And I agree that the two allegations selected by the majority, standing alone,
+</BLOCK>
+<BLOCK id="DOC002.P036.B05">
+do not state a plau sible entitlement to relief for unconstitutional discrimination.
+</BLOCK>
+<BLOCK id="DOC002.P036.B06">
+But these allegations do not stand alone as the only sig
 niﬁcant, nonconclusory statements in the complaint, for the 
 complaint contains many allegations linking Ashcroft and 
 Mueller to the discriminatory practices of their subordinates. 
 See Complaint ¶ 10, App. to Pet. for Cert. 157a (Ashcroft 
-was the “principal architect” of the discriminatory policy); [CITE_END:DOC002[P036.B06]]
+was the “principal architect” of the discriminatory policy);
+</BLOCK>
 
 [Page 37]
-[CITE_START:DOC002[P037.B01]] 698 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P037.B01]]
-[CITE_START:DOC002[P037.B02]] Souter, J., dissenting [CITE_END:DOC002[P037.B02]]
-[CITE_START:DOC002[P037.B03]] id.,  ¶ 11, at 157a (Mueller was “instrumental” in adopting and 
+<BLOCK id="DOC002.P037.B01">
+698 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P037.B02">
+Souter, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P037.B03">
+id.,  ¶ 11, at 157a (Mueller was “instrumental” in adopting and 
 executing the discriminatory policy);  id.,  ¶ 96, at 172a–173a 
 (Ashcroft and Mueller “knew of, condoned, and willfully and 
 maliciously agreed to subject” Iqbal to harsh conditions “as 
 a matter of policy, solely on account of [his] religion, race, 
 and/or national origin and for no legitimate penological 
-interest”). [CITE_END:DOC002[P037.B03]]
-[CITE_START:DOC002[P037.B04]] The majority says that these are “bare assertions” that, “much like the pleading of conspiracy in Twombly, amount to nothing more than a ‘formulaic recitation of the elements’ of a constitutional discrimination claim” and therefore are “not entitled to be assumed true.” Ante, at 681 (quoting Twombly, supra, at 555). The fallacy of the majority’s posi tion, however, lies in looking at the relevant assertions in isolation. The complaint contains speciﬁc allegations that, in the aftermath of the September 11 attacks, the Chief of the FBI’s International Terrorism Operations Section and the Assistant Special Agent in Charge for the FBI’s [CITE_END:DOC002[P037.B04]]
-[CITE_START:DOC002[P037.B05]] New York Field Ofﬁce implemented a policy that discriminated against Arab Muslim men, including Iqbal, solely on account of their race, religion, or national origin. See Complaint ¶¶ 47–53, supra , at 164a–165a. Viewed in light of these sub sidiary allegations, the allegations singled out by the major ity as “conclusory” are no such thing. Iqbal’s claim is not that Ashcroft and Mueller “knew of, condoned, and willfully and maliciously agreed to subject” him to a discriminatory practice that is left undeﬁned; his allegation is that “they knew of, condoned, and willfully and maliciously agreed to subject” him to a [CITE_END:DOC002[P037.B05]]
-[CITE_START:DOC002[P037.B06]] particular, discrete, discriminatory policy detailed in the complaint. Iqbal does not say merely that Ashcroft was the architect of some amorphous discrimina tion, or that Mueller was instrumental in an ill-deﬁned con stitutional violation; he alleges that they helped to create the discriminatory policy he has described. Taking the com plaint as a whole, it gives Ashcroft and Mueller “ ‘fair notice of what the . . . claim is and the grounds upon which it [CITE_END:DOC002[P037.B06]]
+interest”).
+</BLOCK>
+<BLOCK id="DOC002.P037.B04">
+The majority says that these are “bare assertions” that, “much like the pleading of conspiracy in Twombly, amount to nothing more than a ‘formulaic recitation of the elements’ of a constitutional discrimination claim” and therefore are “not entitled to be assumed true.” Ante, at 681 (quoting Twombly, supra, at 555). The fallacy of the majority’s posi tion, however, lies in looking at the relevant assertions in isolation. The complaint contains speciﬁc allegations that, in the aftermath of the September 11 attacks, the Chief of the FBI’s International Terrorism Operations Section and the Assistant Special Agent in Charge for the FBI’s
+</BLOCK>
+<BLOCK id="DOC002.P037.B05">
+New York Field Ofﬁce implemented a policy that discriminated against Arab Muslim men, including Iqbal, solely on account of their race, religion, or national origin. See Complaint ¶¶ 47–53, supra , at 164a–165a. Viewed in light of these sub sidiary allegations, the allegations singled out by the major ity as “conclusory” are no such thing. Iqbal’s claim is not that Ashcroft and Mueller “knew of, condoned, and willfully and maliciously agreed to subject” him to a discriminatory practice that is left undeﬁned; his allegation is that “they knew of, condoned, and willfully and maliciously agreed to subject” him to a
+</BLOCK>
+<BLOCK id="DOC002.P037.B06">
+particular, discrete, discriminatory policy detailed in the complaint. Iqbal does not say merely that Ashcroft was the architect of some amorphous discrimina tion, or that Mueller was instrumental in an ill-deﬁned con stitutional violation; he alleges that they helped to create the discriminatory policy he has described. Taking the com plaint as a whole, it gives Ashcroft and Mueller “ ‘fair notice of what the . . . claim is and the grounds upon which it
+</BLOCK>
 
 [Page 38]
-[CITE_START:DOC002[P038.B01]] 699 
-Cite as: 556 U. S. 662 (2009) Breyer, J., dissenting [CITE_END:DOC002[P038.B01]]
-[CITE_START:DOC002[P038.B02]] rests.’ ” Twombly , 550 U. S., at 555 (quoting Conley v. Gib son, 355 U. S. 41, 47 (1957) (omission in original)). That aside, the majority’s holding that the statements it selects are conclusory cannot be squared with its treatment of certain other allegations in the complaint as nonconclu sory. For example, the majority takes as true the statement that “[t]he policy of holding post-September-11th detainees in highly restrictive conditions of conﬁnement until they were ‘cleared’ by the FBI was approved by Defendants ASHCROFT and MUELLER in discussions in the weeks after September 11, 2001.” Complaint ¶ 69, supra [CITE_END:DOC002[P038.B02]]
-[CITE_START:DOC002[P038.B03]] , at 168a; see ante, at 681. This statement makes two points: (1) after September 11, the FBI held certain detainees in highly re strictive conditions, and (2) Ashcroft and Mueller discussed and approved these conditions. If, as the majority says, these allegations are not conclusory, then I cannot see why the majority deems it merely conclusory when Iqbal alleges that (1) after September 11, the FBI designated Arab Mus lim detainees as being of “ ‘high interest’ ” “because of the race, religion, and national origin of the detainees, and not because of any evidence of the detainees’ involvement [CITE_END:DOC002[P038.B03]]
-[CITE_START:DOC002[P038.B04]] in sup porting terrorist activity,” Complaint ¶¶ 48–50, App. to Pet. for Cert. 164a, and (2) Ashcroft and Mueller “knew of, con doned, and willfully and maliciously agreed” to that discrimi nation, id., ¶ 96, at 172a. By my lights, there is no principled basis for the majority’s disregard of the allegations linking Ashcroft and Mueller to their subordinates’ discrimination. I respectfully dissent. Justice Breyer, dissenting. [CITE_END:DOC002[P038.B04]]
-[CITE_START:DOC002[P038.B05]] I agree with  Justice Souter and join his dissent. 
+<BLOCK id="DOC002.P038.B01">
+699 
+Cite as: 556 U. S. 662 (2009) Breyer, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P038.B02">
+rests.’ ” Twombly , 550 U. S., at 555 (quoting Conley v. Gib son, 355 U. S. 41, 47 (1957) (omission in original)). That aside, the majority’s holding that the statements it selects are conclusory cannot be squared with its treatment of certain other allegations in the complaint as nonconclu sory. For example, the majority takes as true the statement that “[t]he policy of holding post-September-11th detainees in highly restrictive conditions of conﬁnement until they were ‘cleared’ by the FBI was approved by Defendants ASHCROFT and MUELLER in discussions in the weeks after September 11, 2001.” Complaint ¶ 69, supra
+</BLOCK>
+<BLOCK id="DOC002.P038.B03">
+, at 168a; see ante, at 681. This statement makes two points: (1) after September 11, the FBI held certain detainees in highly re strictive conditions, and (2) Ashcroft and Mueller discussed and approved these conditions. If, as the majority says, these allegations are not conclusory, then I cannot see why the majority deems it merely conclusory when Iqbal alleges that (1) after September 11, the FBI designated Arab Mus lim detainees as being of “ ‘high interest’ ” “because of the race, religion, and national origin of the detainees, and not because of any evidence of the detainees’ involvement
+</BLOCK>
+<BLOCK id="DOC002.P038.B04">
+in sup porting terrorist activity,” Complaint ¶¶ 48–50, App. to Pet. for Cert. 164a, and (2) Ashcroft and Mueller “knew of, con doned, and willfully and maliciously agreed” to that discrimi nation, id., ¶ 96, at 172a. By my lights, there is no principled basis for the majority’s disregard of the allegations linking Ashcroft and Mueller to their subordinates’ discrimination. I respectfully dissent. Justice Breyer, dissenting.
+</BLOCK>
+<BLOCK id="DOC002.P038.B05">
+I agree with  Justice Souter and join his dissent. 
 I write separately to point out that, like the Court, I believe 
 it important to prevent unwarranted litigation from inter
 fering with “the proper execution of the work of the Gov
 ernment.”  Ante,  at 685. But I cannot ﬁnd in that need 
-adequate justiﬁcation for the Court’s interpretation of  Bell [CITE_END:DOC002[P038.B05]]
+adequate justiﬁcation for the Court’s interpretation of  Bell
+</BLOCK>
 
 [Page 39]
-[CITE_START:DOC002[P039.B01]] 700 
-ASHCROFT  v.  IQBAL [CITE_END:DOC002[P039.B01]]
-[CITE_START:DOC002[P039.B02]] Breyer, J., dissenting [CITE_END:DOC002[P039.B02]]
-[CITE_START:DOC002[P039.B03]] Atlantic Corp. v. Twombly, 550 U. S. 544 (2007), and Federal Rule of Civil Procedure 8. The law, after all, provides trial courts with other legal weapons designed to prevent un warranted interference. As the Second Circuit explained, where a Government defendant asserts a qualiﬁed immunity defense, a trial court, responsible for managing a case and “mindful of the need to vindicate the purpose of the qualiﬁed immunity defense,” can structure discovery in ways that di minish the risk of imposing unwarranted burdens upon pub lic ofﬁcials. See Iqbal v. Hasty, 490 F. 3d 143, 158 (2007). A district court, [CITE_END:DOC002[P039.B03]]
-[CITE_START:DOC002[P039.B04]] for example, can begin discovery with lower level Government defendants before determining whether a case can be made to allow discovery related to higher level Government ofﬁcials. See ibid. Neither the briefs nor the Court’s opinion provides convincing grounds for ﬁnding these alternative case-management tools inadequate, either in general or in the case before us. For this reason, as well as for the independently sufﬁcient reasons set forth in Jus tice Souter ’s opinion, I would afﬁrm the Second Circuit. [CITE_END:DOC002[P039.B04]]
+<BLOCK id="DOC002.P039.B01">
+700 
+ASHCROFT  v.  IQBAL
+</BLOCK>
+<BLOCK id="DOC002.P039.B02">
+Breyer, J., dissenting
+</BLOCK>
+<BLOCK id="DOC002.P039.B03">
+Atlantic Corp. v. Twombly, 550 U. S. 544 (2007), and Federal Rule of Civil Procedure 8. The law, after all, provides trial courts with other legal weapons designed to prevent un warranted interference. As the Second Circuit explained, where a Government defendant asserts a qualiﬁed immunity defense, a trial court, responsible for managing a case and “mindful of the need to vindicate the purpose of the qualiﬁed immunity defense,” can structure discovery in ways that di minish the risk of imposing unwarranted burdens upon pub lic ofﬁcials. See Iqbal v. Hasty, 490 F. 3d 143, 158 (2007). A district court,
+</BLOCK>
+<BLOCK id="DOC002.P039.B04">
+for example, can begin discovery with lower level Government defendants before determining whether a case can be made to allow discovery related to higher level Government ofﬁcials. See ibid. Neither the briefs nor the Court’s opinion provides convincing grounds for ﬁnding these alternative case-management tools inadequate, either in general or in the case before us. For this reason, as well as for the independently sufﬁcient reasons set forth in Jus tice Souter ’s opinion, I would afﬁrm the Second Circuit.
+</BLOCK>
