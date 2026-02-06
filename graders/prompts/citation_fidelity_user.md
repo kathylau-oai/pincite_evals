@@ -1,0 +1,3 @@
+Evaluate citation fidelity for the following payload.
+
+{{judge_payload_json}}
