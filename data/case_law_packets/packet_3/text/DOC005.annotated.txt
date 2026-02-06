@@ -1,26 +1,47 @@
 [Page 1]
-[CITE_START:DOC005[P001.B01]] FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT [CITE_END:DOC005[P001.B01]]
-[CITE_START:DOC005[P001.B02]] S ERGIO  L. R AMIREZ , [CITE_END:DOC005[P001.B02]]
-[CITE_START:DOC005[P001.B03]] No. 17-17244 [CITE_END:DOC005[P001.B03]]
-[CITE_START:DOC005[P001.B04]] Plaintiff-Appellee , [CITE_END:DOC005[P001.B04]]
-[CITE_START:DOC005[P001.B05]] D.C. No. 
-3:12-cv-00632-JSC [CITE_END:DOC005[P001.B05]]
-[CITE_START:DOC005[P001.B06]] v. 
-T RANS U NION  LLC, [CITE_END:DOC005[P001.B06]]
-[CITE_START:DOC005[P001.B07]] OPINION [CITE_END:DOC005[P001.B07]]
-[CITE_START:DOC005[P001.B08]] Defendant-Appellant. Appeal from the United States District Court for the Northern District of California 
+<BLOCK id="DOC005.P001.B01">
+FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT
+</BLOCK>
+<BLOCK id="DOC005.P001.B02">
+S ERGIO  L. R AMIREZ ,
+</BLOCK>
+<BLOCK id="DOC005.P001.B03">
+No. 17-17244
+</BLOCK>
+<BLOCK id="DOC005.P001.B04">
+Plaintiff-Appellee ,
+</BLOCK>
+<BLOCK id="DOC005.P001.B05">
+D.C. No. 
+3:12-cv-00632-JSC
+</BLOCK>
+<BLOCK id="DOC005.P001.B06">
+v. 
+T RANS U NION  LLC,
+</BLOCK>
+<BLOCK id="DOC005.P001.B07">
+OPINION
+</BLOCK>
+<BLOCK id="DOC005.P001.B08">
+Defendant-Appellant. Appeal from the United States District Court for the Northern District of California 
 Jacqueline Scott Corley, Magistrate Judge, Presiding Argued and Submitted February 14, 2019 San Francisco, California Filed February 27, 2020 Before:  M. Margaret McKeown, William A. Fletcher, and Mary H. Murguia, Circuit Judges. Opinion by Judge Murguia; 
 Partial Concurrence and Partial Dissent by 
-Judge McKeown [CITE_END:DOC005[P001.B08]]
+Judge McKeown
+</BLOCK>
 
 [Page 2]
-[CITE_START:DOC005[P002.B01]] 2 
-R AMIREZ V . T RANS U NION [CITE_END:DOC005[P002.B01]]
-[CITE_START:DOC005[P002.B02]] SUMMARY * Fair Credit Reporting Act The panel affirmed in part and reversed and vacated in 
+<BLOCK id="DOC005.P002.B01">
+2 
+R AMIREZ V . T RANS U NION
+</BLOCK>
+<BLOCK id="DOC005.P002.B02">
+SUMMARY * Fair Credit Reporting Act The panel affirmed in part and reversed and vacated in 
 part the district court’s judgment against credit reporting 
 agency TransUnion LLC following a jury trial in a consumer 
-class action brought under the Fair Credit Reporting Act. [CITE_END:DOC005[P002.B02]]
-[CITE_START:DOC005[P002.B03]] TransUnion, aware that its practice was unlawful, 
+class action brought under the Fair Credit Reporting Act.
+</BLOCK>
+<BLOCK id="DOC005.P002.B03">
+TransUnion, aware that its practice was unlawful, 
 incorrectly placed terrorist alerts on the front page of the 
 consumers’ credit reports and subsequently sent the 
 consumers confusing and incomplete information about the 
@@ -32,8 +53,10 @@ accuracy of the terrorist alerts in violation of 15 U.S.C.
 members their entire credit reports by excluding the alerts 
 from the reports in violation of § 1681g(a)(1); and (3) willful 
 failure to provide a summary of rights in violation of 
-§ 1681g(c)(2). [CITE_END:DOC005[P002.B03]]
-[CITE_START:DOC005[P002.B04]] Affirming in part, the panel held that every member of a 
+§ 1681g(c)(2).
+</BLOCK>
+<BLOCK id="DOC005.P002.B04">
+Affirming in part, the panel held that every member of a 
 class certified under Fed. R. Civ. P. 23, rather than only the 
 class representative, must satisfy the basic requirements of 
 Article III standing at the final stage of a money damages 
@@ -41,10 +64,12 @@ suit when class members are to be awarded individual
 monetary damages.  The panel concluded that each of the 
 8,185 class members had standing on each of the class 
 claims because TransUnion’s reckless handling of *  This summary constitutes no part of the opinion of the court.  It 
-has been prepared by court staff for the convenience of the reader. [CITE_END:DOC005[P002.B04]]
+has been prepared by court staff for the convenience of the reader.
+</BLOCK>
 
 [Page 3]
-[CITE_START:DOC005[P003.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P003.B01">
+R AMIREZ V . T RANS U NION
 3 
 information from the Department of the Treasury’s Office of 
 Foreign Assets Control exposed every class member to a real 
@@ -55,8 +80,10 @@ D.C. Circuit, the panel held that the violation of a statutory
 right constituted a concrete injury under the test set forth in 
 Robins v. Spokeo Inc. , 867 F.3d 1108 (9th Cir. 2017).  The 
 panel held that each class member also established standing 
-on the disclosure and summary-of-rights claims. [CITE_END:DOC005[P003.B01]]
-[CITE_START:DOC005[P003.B02]] The panel rejected TransUnion’s arguments regarding 
+on the disclosure and summary-of-rights claims.
+</BLOCK>
+<BLOCK id="DOC005.P003.B02">
+The panel rejected TransUnion’s arguments regarding 
 the sufficiency of the evidence, Rule 23 certification, and 
 statutory damages.  The panel held that TransUnion was not 
 entitled to judgment as a matter of law or to a new trial on 
@@ -66,31 +93,41 @@ district court did not abuse its discretion in finding that the
 class representative’s claims were typical of the class’s 
 claims and in certifying and refusing to decertify the class.  
 In addition, the jury’s award of statutory damages near the 
-high end of the range was clearly justified. [CITE_END:DOC005[P003.B02]]
-[CITE_START:DOC005[P003.B03]] Reversing and vacating in part, the panel held that the 
+high end of the range was clearly justified.
+</BLOCK>
+<BLOCK id="DOC005.P003.B03">
+Reversing and vacating in part, the panel held that the 
 punitive damages award was excessive in violation of 
 constitutional due process.  The panel remanded with 
 instructions to reduce the punitive-damages award from 
-$6,353.08 per class member to $3,936.88 per class member. [CITE_END:DOC005[P003.B03]]
-[CITE_START:DOC005[P003.B04]] Concurring in part and dissenting in part, Judge 
+$6,353.08 per class member to $3,936.88 per class member.
+</BLOCK>
+<BLOCK id="DOC005.P003.B04">
+Concurring in part and dissenting in part, Judge 
 McKeown agreed with the majority that Article III and the 
 Rules Enabling Act require all members of a damages class 
 to have standing at trial, and so the 1,853 class members 
 whose inaccurate information was disclosed to a third party 
 had standing to assert a reasonable procedures claim.  Judge 
-McKeown also agreed that the punitive damages award was [CITE_END:DOC005[P003.B04]]
+McKeown also agreed that the punitive damages award was
+</BLOCK>
 
 [Page 4]
-[CITE_START:DOC005[P004.B01]] 4 
+<BLOCK id="DOC005.P004.B01">
+4 
 R AMIREZ V . T RANS U NION
 impermissibly excessive.  She dissented in part because, in 
 her view, no one but the class representative and the class 
 members whose information was disclosed to a third party 
 had standing to assert a reasonable procedures claim, and 
 only the class representative had standing to bring the 
-disclosure and summary-of-rights claims. [CITE_END:DOC005[P004.B01]]
-[CITE_START:DOC005[P004.B02]] COUNSEL [CITE_END:DOC005[P004.B02]]
-[CITE_START:DOC005[P004.B03]] Paul D. Clement (argued), Erin E. Murphy, Robert M. 
+disclosure and summary-of-rights claims.
+</BLOCK>
+<BLOCK id="DOC005.P004.B02">
+COUNSEL
+</BLOCK>
+<BLOCK id="DOC005.P004.B03">
+Paul D. Clement (argued), Erin E. Murphy, Robert M. 
 Bernstein, and Matthew D. Rowen, Kirkland & Ellis LLP, 
 Washington, D.C.; Julia B. Strickland, Stephen J. Newman, 
 Christine E. Ellice, and Jason Yoo, Stroock & Stroock & 
@@ -105,21 +142,29 @@ Andrew J. Pincus, Archis A. Parasharami, and Daniel E.
 Jones, Mayer Brown LLP, Washington, D.C.; Steven P. 
 Lehotsky and Warren Postman, U.S. Chamber Litigation 
 Center Inc., Washington, D.C.; for Amicus Curiae Chamber 
-of Commerce of the United States of America. [CITE_END:DOC005[P004.B03]]
+of Commerce of the United States of America.
+</BLOCK>
 
 [Page 5]
-[CITE_START:DOC005[P005.B01]] R AMIREZ V . T RANS U NION
-5 [CITE_END:DOC005[P005.B01]]
-[CITE_START:DOC005[P005.B02]] OPINION [CITE_END:DOC005[P005.B02]]
-[CITE_START:DOC005[P005.B03]] MURGUIA, Circuit Judge: This case asks us to resolve whether a class of consumers 
+<BLOCK id="DOC005.P005.B01">
+R AMIREZ V . T RANS U NION
+5
+</BLOCK>
+<BLOCK id="DOC005.P005.B02">
+OPINION
+</BLOCK>
+<BLOCK id="DOC005.P005.B03">
+MURGUIA, Circuit Judge: This case asks us to resolve whether a class of consumers 
 may sue and recover damages from a credit reporting agency 
 pursuant to the Fair Credit Reporting Act (“FCRA”), where 
 the agency—aware that its practice was unlawful—
 incorrectly placed terrorist alerts on the front page of the 
 consumers’ credit reports and subsequently sent the 
 consumers confusing and incomplete information about the 
-alerts and how to get them removed. [CITE_END:DOC005[P005.B03]]
-[CITE_START:DOC005[P005.B04]] The United States Department of the Treasury’s Office 
+alerts and how to get them removed.
+</BLOCK>
+<BLOCK id="DOC005.P005.B04">
+The United States Department of the Treasury’s Office 
 of Foreign Assets Control (“OFAC”) maintains a list of 
 Specially Designated Nationals (“SDNs”), i.e., individuals 
 who are prohibited from transacting business in the United 
@@ -128,8 +173,10 @@ transact with an SDN can face harsh fines, TransUnion LLC
 (“TransUnion”), one of the three largest credit reporting 
 agencies, saw a business opportunity in developing a product 
 for its clients that “matched” consumers’ names to 
-individuals on the OFAC list. [CITE_END:DOC005[P005.B04]]
-[CITE_START:DOC005[P005.B05]] In producing these purported matches, TransUnion 
+individuals on the OFAC list.
+</BLOCK>
+<BLOCK id="DOC005.P005.B05">
+In producing these purported matches, TransUnion 
 coordinated with a third-party vendor and used a software 
 that conducted basic first-and-last-name searches—despite 
 having the capability to conduct more accurate searches and 
@@ -140,18 +187,26 @@ page of the credit reports of thousands of consumers.  When
 consumers began discovering the alerts and trying to have 
 them removed, TransUnion both sent them confusing 
 information falsely suggesting that the alerts had been 
-removed and withheld information about how to dispute the [CITE_END:DOC005[P005.B05]]
+removed and withheld information about how to dispute the
+</BLOCK>
 
 [Page 6]
-[CITE_START:DOC005[P006.B01]] 6 
+<BLOCK id="DOC005.P006.B01">
+6 
 R AMIREZ V . T RANS U NION
 alerts.  TransUnion’s practice triggered significant concern 
 among affected consumers, such that a number of them 
 contacted the Department of the Treasury directly to inquire 
-about the terrorist labels. [CITE_END:DOC005[P006.B01]]
-[CITE_START:DOC005[P006.B02]] The consumers brought this class action against TransUnion pursuant to the FCRA, and a jury assessed $60 million in damages for three willful violations of the statute. In this appeal, TransUnion claims that the verdict cannot stand because only Sergio Ramirez, the representative plaintiff, suffered a concrete and particularized injury as a result of TransUnion’s unlawful practice. According to TransUnion, the other thousands of class members whose credit reports contained the inaccurate terrorist alerts and received the confusing and incomplete mailings did not suffer the irreducible constitutional minimum showing of harm that Article III standing requires. Ramirez, on the other [CITE_END:DOC005[P006.B02]]
-[CITE_START:DOC005[P006.B03]] hand, argues that the class members do not need to demonstrate standing at all because, in a class action, only the representative plaintiff must have standing. The issue of who must show standing in a class action at the final stage of a damages suit is a question of first impression in this circuit. [CITE_END:DOC005[P006.B03]]
-[CITE_START:DOC005[P006.B04]] For the reasons explained below, we hold that every 
+about the terrorist labels.
+</BLOCK>
+<BLOCK id="DOC005.P006.B02">
+The consumers brought this class action against TransUnion pursuant to the FCRA, and a jury assessed $60 million in damages for three willful violations of the statute. In this appeal, TransUnion claims that the verdict cannot stand because only Sergio Ramirez, the representative plaintiff, suffered a concrete and particularized injury as a result of TransUnion’s unlawful practice. According to TransUnion, the other thousands of class members whose credit reports contained the inaccurate terrorist alerts and received the confusing and incomplete mailings did not suffer the irreducible constitutional minimum showing of harm that Article III standing requires. Ramirez, on the other
+</BLOCK>
+<BLOCK id="DOC005.P006.B03">
+hand, argues that the class members do not need to demonstrate standing at all because, in a class action, only the representative plaintiff must have standing. The issue of who must show standing in a class action at the final stage of a damages suit is a question of first impression in this circuit.
+</BLOCK>
+<BLOCK id="DOC005.P006.B04">
+For the reasons explained below, we hold that every 
 member of a class certified under Rule 23 must satisfy the 
 basic requirements of Article III standing at the final stage 
 of a money damages suit when class members are to be 
@@ -159,10 +214,12 @@ awarded individual monetary damages. 1   Therefore, the
 dispositive question in this case is whether each of the 8,185 
 class members had standing on each of the class claims.  We 1  Our holding does not alter the showing required at the class 
 certification stage or other early stages of a case, and it does not apply to 
-cases involving only injunctive relief. [CITE_END:DOC005[P006.B04]]
+cases involving only injunctive relief.
+</BLOCK>
 
 [Page 7]
-[CITE_START:DOC005[P007.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P007.B01">
+R AMIREZ V . T RANS U NION
 7 
 conclude that they did.  We also reject TransUnion’s 
 arguments regarding the sufficiency of the evidence, Rule 23 
@@ -171,23 +228,37 @@ the punitive damages award is excessive in violation of
 constitutional due process.  We reduce the punitive-damages 
 award from $6,353.08 per class member to $3,936.88 per 
 class member, but otherwise affirm the verdict and 
-judgment. [CITE_END:DOC005[P007.B01]]
-[CITE_START:DOC005[P007.B02]] I. Background A. Factual History [CITE_END:DOC005[P007.B02]]
-[CITE_START:DOC005[P007.B03]] In February 2011, Sergio Ramirez went to a Nissan car dealership with his wife and father-in-law to purchase a car. After the Ramirezes selected a car and negotiated the terms, the dealership ran a joint credit check on Ramirez and his wife. But once the dealership obtained the credit reports, the salesman told Ramirez that Nissan would not sell the car to Ramirez because he was on “a terrorist list.” The credit report had been prepared by TransUnion, one of the nation’s three largest consumer reporting agencies (“CRA”). The report contained the following statement on the first page: “***OFAC ADVISOR [CITE_END:DOC005[P007.B03]]
-[CITE_START:DOC005[P007.B04]] ALERT - INPUT NAME MATCHES NAME ON THE OFAC DATABASE[.]” The report also listed the names and birthdates of the two prohibited Specially Designated Nationals who purportedly “matched” Ramirez: Sergio Humberto Ramirez Aguirre (born 11/22/1951) and Sergio Alberto Cedula Ramirez Rivera (born 01/14/196*). The report indicated that Ramirez’s middle initial was “L” and his birth year was 1976. The salesman refused to take further steps to verify whether Ramirez was in fact on the OFAC list. He also [CITE_END:DOC005[P007.B04]]
+judgment.
+</BLOCK>
+<BLOCK id="DOC005.P007.B02">
+I. Background A. Factual History
+</BLOCK>
+<BLOCK id="DOC005.P007.B03">
+In February 2011, Sergio Ramirez went to a Nissan car dealership with his wife and father-in-law to purchase a car. After the Ramirezes selected a car and negotiated the terms, the dealership ran a joint credit check on Ramirez and his wife. But once the dealership obtained the credit reports, the salesman told Ramirez that Nissan would not sell the car to Ramirez because he was on “a terrorist list.” The credit report had been prepared by TransUnion, one of the nation’s three largest consumer reporting agencies (“CRA”). The report contained the following statement on the first page: “***OFAC ADVISOR
+</BLOCK>
+<BLOCK id="DOC005.P007.B04">
+ALERT - INPUT NAME MATCHES NAME ON THE OFAC DATABASE[.]” The report also listed the names and birthdates of the two prohibited Specially Designated Nationals who purportedly “matched” Ramirez: Sergio Humberto Ramirez Aguirre (born 11/22/1951) and Sergio Alberto Cedula Ramirez Rivera (born 01/14/196*). The report indicated that Ramirez’s middle initial was “L” and his birth year was 1976. The salesman refused to take further steps to verify whether Ramirez was in fact on the OFAC list. He also
+</BLOCK>
 
 [Page 8]
-[CITE_START:DOC005[P008.B01]] 8 
+<BLOCK id="DOC005.P008.B01">
+8 
 R AMIREZ V . T RANS U NION
 refused to provide Ramirez a copy of his credit report, 
 instead recommending to Ramirez that he contact 
 TransUnion directly.  Eventually, however, the salesman 
 agreed to sell the car to Ramirez’s wife.  Ramirez’s wife 
 completed a credit application on her own behalf, and, after 
-another hour, she was able to purchase the car. [CITE_END:DOC005[P008.B01]]
-[CITE_START:DOC005[P008.B02]] Ramirez testified that he was embarrassed, shocked, and scared when he learned his name was on a terrorist watch list. Ramirez was also disappointed and embarrassed that he was unable to purchase the car because he and his wife always made major purchases jointly. Confused and not knowing what to do, Ramirez began researching what the alert meant and how to have it removed. Ramirez first called the Department of the Treasury, but they advised him that he would need to contact TransUnion. When Ramirez called TransUnion, he was repeatedly told that there was no OFAC alert on his credit [CITE_END:DOC005[P008.B02]]
-[CITE_START:DOC005[P008.B03]] report. Ultimately, Ramirez requested a copy of his credit report so he could verify whether it contained an OFAC alert. On February 28, 2011, TransUnion sent Ramirez a copy of his credit report. The first page of the mailing stated: [CITE_END:DOC005[P008.B03]]
-[CITE_START:DOC005[P008.B04]] Enclosed is the TransUnion Personal Credit 
+another hour, she was able to purchase the car.
+</BLOCK>
+<BLOCK id="DOC005.P008.B02">
+Ramirez testified that he was embarrassed, shocked, and scared when he learned his name was on a terrorist watch list. Ramirez was also disappointed and embarrassed that he was unable to purchase the car because he and his wife always made major purchases jointly. Confused and not knowing what to do, Ramirez began researching what the alert meant and how to have it removed. Ramirez first called the Department of the Treasury, but they advised him that he would need to contact TransUnion. When Ramirez called TransUnion, he was repeatedly told that there was no OFAC alert on his credit
+</BLOCK>
+<BLOCK id="DOC005.P008.B03">
+report. Ultimately, Ramirez requested a copy of his credit report so he could verify whether it contained an OFAC alert. On February 28, 2011, TransUnion sent Ramirez a copy of his credit report. The first page of the mailing stated:
+</BLOCK>
+<BLOCK id="DOC005.P008.B04">
+Enclosed is the TransUnion Personal Credit 
 Report that you requested. As a trusted leader 
 in the consumer credit information industry, 
 TransUnion takes the accuracy of your credit 
@@ -200,12 +271,18 @@ committed to providing the complete and
 reliable credit information that you need to 
 participate in everyday transactions and 
 purchases. If you believe an item of information to be 
-incomplete or inaccurate, please alert us [CITE_END:DOC005[P008.B04]]
+incomplete or inaccurate, please alert us
+</BLOCK>
 
 [Page 9]
-[CITE_START:DOC005[P009.B01]] R AMIREZ V . T RANS U NION 9 immediately. We will investigate the data and notify you of the results of our investigation. The remainder of the page included information about and instructions for an online request for investigation. The following pages contained a copy of Ramirez’s credit report, information regarding how to dispute inaccurate information, and a “Summary of Rights” under the FCRA. The credit report contained no mention of OFAC. Ramirez was confused by the report’s lack of any information regarding OFAC, but he thought perhaps the problem had been resolved. The next day, on March 1, [CITE_END:DOC005[P009.B01]]
-[CITE_START:DOC005[P009.B02]] 2011, TransUnion sent Ramirez a separate letter (the “OFAC Letter”). The OFAC Letter stated: Thank you for contacting TransUnion. Our goal is to maintain complete and accurate information on consumer credit reports. [CITE_END:DOC005[P009.B02]]
-[CITE_START:DOC005[P009.B03]] Our records show that you recently requested 
+<BLOCK id="DOC005.P009.B01">
+R AMIREZ V . T RANS U NION 9 immediately. We will investigate the data and notify you of the results of our investigation. The remainder of the page included information about and instructions for an online request for investigation. The following pages contained a copy of Ramirez’s credit report, information regarding how to dispute inaccurate information, and a “Summary of Rights” under the FCRA. The credit report contained no mention of OFAC. Ramirez was confused by the report’s lack of any information regarding OFAC, but he thought perhaps the problem had been resolved. The next day, on March 1,
+</BLOCK>
+<BLOCK id="DOC005.P009.B02">
+2011, TransUnion sent Ramirez a separate letter (the “OFAC Letter”). The OFAC Letter stated: Thank you for contacting TransUnion. Our goal is to maintain complete and accurate information on consumer credit reports.
+</BLOCK>
+<BLOCK id="DOC005.P009.B03">
+Our records show that you recently requested 
 a disclosure of your TransUnion credit report. 
 That report has been mailed to you 
 separately.  As a courtesy to you, we also 
@@ -216,15 +293,23 @@ potential match to information listed on the
 United States Department of Treasury’s 
 Office of Foreign Asset Control (“OFAC”) 
 Database. The OFAC Database contains a list of 
-individuals and entities that are prohibited by [CITE_END:DOC005[P009.B03]]
+individuals and entities that are prohibited by
+</BLOCK>
 
 [Page 10]
-[CITE_START:DOC005[P010.B01]] 10 R AMIREZ V . T RANS U NION the U.S. Department of Treasury from doing business in or with the United States. Financial institutions are required to check customers’ names against the OFAC Database, and if a potential name match is found, to verify whether their potential customer is the person on the OFAC Database. For this reason, some financial institutions may ask for your date of birth, or they may ask to a see a copy of a government- issued form of identification . . . . Some financial institutions will search names against this database themselves, or [CITE_END:DOC005[P010.B01]]
-[CITE_START:DOC005[P010.B02]] they may ask another company, such as TransUnion, to do so on their behalf. We want you to know that this information may be provided to such authorized parties. The OFAC record that is considered a potential match to the name on your credit file is: [OFAC records for the two prohibited SDNs who purportedly matched Ramirez, which include first, middle, and last names, dates of birth, and passport information] For more details regarding the OFAC Database, please visit [the U.S. Department of the Treasury’s website]. If you have additional questions or concerns, you can contact TransUnion at [phone number [CITE_END:DOC005[P010.B02]]
-[CITE_START:DOC005[P010.B03]] and mailing address]. [CITE_END:DOC005[P010.B03]]
+<BLOCK id="DOC005.P010.B01">
+10 R AMIREZ V . T RANS U NION the U.S. Department of Treasury from doing business in or with the United States. Financial institutions are required to check customers’ names against the OFAC Database, and if a potential name match is found, to verify whether their potential customer is the person on the OFAC Database. For this reason, some financial institutions may ask for your date of birth, or they may ask to a see a copy of a government- issued form of identification . . . . Some financial institutions will search names against this database themselves, or
+</BLOCK>
+<BLOCK id="DOC005.P010.B02">
+they may ask another company, such as TransUnion, to do so on their behalf. We want you to know that this information may be provided to such authorized parties. The OFAC record that is considered a potential match to the name on your credit file is: [OFAC records for the two prohibited SDNs who purportedly matched Ramirez, which include first, middle, and last names, dates of birth, and passport information] For more details regarding the OFAC Database, please visit [the U.S. Department of the Treasury’s website]. If you have additional questions or concerns, you can contact TransUnion at [phone number
+</BLOCK>
+<BLOCK id="DOC005.P010.B03">
+and mailing address].
+</BLOCK>
 
 [Page 11]
-[CITE_START:DOC005[P011.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P011.B01">
+R AMIREZ V . T RANS U NION
 11 
 Unlike the credit-report mailing, there was no summary-of-
 rights form attached to the OFAC Letter. Ramirez testified that he was confused by the two 
@@ -235,17 +320,25 @@ not know how to remedy the issue because the OFAC Letter
 did not include instructions for initiating a dispute.  
 Concerned about possible consequences of the OFAC 
 match, Ramirez canceled an international vacation he had 
-planned with his family. [CITE_END:DOC005[P011.B01]]
-[CITE_START:DOC005[P011.B02]] Finally, Ramirez consulted with a lawyer and, at the 
+planned with his family.
+</BLOCK>
+<BLOCK id="DOC005.P011.B02">
+Finally, Ramirez consulted with a lawyer and, at the 
 lawyer’s advice, wrote a letter to TransUnion in March 2011 
 requesting that the OFAC alert be removed from his report.  
 TransUnion responded in writing that the alert had been 
-removed. [CITE_END:DOC005[P011.B02]]
-[CITE_START:DOC005[P011.B03]] Ramirez was not the only consumer who TransUnion incorrectly labeled as a prohibited SDN. TransUnion sent the same OFAC Letter to 8,184 other consumers who also requested copies of their credit reports between January 2011 and July 2011. In February 2012, Ramirez sued TransUnion on behalf of himself and the 8,184 other consumers who were falsely labeled as prohibited SDNs. Ramirez alleged that TransUnion violated the FCRA by placing the false OFAC alerts on their credit reports and later sending misleading and incomplete disclosures about the alerts. B. TransUnion’s “OFAC Advisor” Product The class’s claims trace back to TransUnion’s launch [CITE_END:DOC005[P011.B03]]
-[CITE_START:DOC005[P011.B04]] of a new product in 2002 and its erroneous belief that the new product was exempt from the FCRA. TransUnion saw a [CITE_END:DOC005[P011.B04]]
+removed.
+</BLOCK>
+<BLOCK id="DOC005.P011.B03">
+Ramirez was not the only consumer who TransUnion incorrectly labeled as a prohibited SDN. TransUnion sent the same OFAC Letter to 8,184 other consumers who also requested copies of their credit reports between January 2011 and July 2011. In February 2012, Ramirez sued TransUnion on behalf of himself and the 8,184 other consumers who were falsely labeled as prohibited SDNs. Ramirez alleged that TransUnion violated the FCRA by placing the false OFAC alerts on their credit reports and later sending misleading and incomplete disclosures about the alerts. B. TransUnion’s “OFAC Advisor” Product The class’s claims trace back to TransUnion’s launch
+</BLOCK>
+<BLOCK id="DOC005.P011.B04">
+of a new product in 2002 and its erroneous belief that the new product was exempt from the FCRA. TransUnion saw a
+</BLOCK>
 
 [Page 12]
-[CITE_START:DOC005[P012.B01]] 12 
+<BLOCK id="DOC005.P012.B01">
+12 
 R AMIREZ V . T RANS U NION
 business opportunity because its clients—who purchase 
 consumer credit reports from TransUnion because they are 
@@ -255,26 +348,40 @@ prohibited SDN appearing on the OFAC list.  TransUnion
 therefore developed a product it called “OFAC Advisor,” 
 which added an alert to a consumer’s credit report indicating 
 whether the consumer was a prohibited SDN on the OFAC 
-list. [CITE_END:DOC005[P012.B01]]
-[CITE_START:DOC005[P012.B02]] TransUnion obtained the information about whether consumers were OFAC matches from a third-party company, Accuity, Inc. Accuity’s software conducted a “name-only” search, running a consumer’s first and last name against the names on the OFAC list. A search would result in a match if the consumer’s first and last name were either identical or similar to a name on the OFAC list ( e.g. , “Cortez” would match with “Cortes”). 2 When TransUnion first began offering the OFAC Advisor product, it determined that the OFAC alerts being placed on consumer credit reports were exempt from the FCRA, including the FCRA’s [CITE_END:DOC005[P012.B02]]
-[CITE_START:DOC005[P012.B03]] requirement that TransUnion “follow reasonable procedures to assure maximum possible accuracy of the information” it placed on consumer credit reports. 15 U.S.C. § 1681e(b). Specifically, TransUnion determined the OFAC alerts were not governed by the FCRA because the OFAC list was not stored in TransUnion’s database; the data was stored in a separate file 2 In collecting other types of data for use on consumer reports—such as tax liens or bankruptcy judgments—TransUnion used at least one additional identifier other than the consumer’s name ( e.g. , address, date of birth, or social security number). OFAC information was the only consumer-report [CITE_END:DOC005[P012.B03]]
-[CITE_START:DOC005[P012.B04]] data that TransUnion collected using name alone. [CITE_END:DOC005[P012.B04]]
+list.
+</BLOCK>
+<BLOCK id="DOC005.P012.B02">
+TransUnion obtained the information about whether consumers were OFAC matches from a third-party company, Accuity, Inc. Accuity’s software conducted a “name-only” search, running a consumer’s first and last name against the names on the OFAC list. A search would result in a match if the consumer’s first and last name were either identical or similar to a name on the OFAC list ( e.g. , “Cortez” would match with “Cortes”). 2 When TransUnion first began offering the OFAC Advisor product, it determined that the OFAC alerts being placed on consumer credit reports were exempt from the FCRA, including the FCRA’s
+</BLOCK>
+<BLOCK id="DOC005.P012.B03">
+requirement that TransUnion “follow reasonable procedures to assure maximum possible accuracy of the information” it placed on consumer credit reports. 15 U.S.C. § 1681e(b). Specifically, TransUnion determined the OFAC alerts were not governed by the FCRA because the OFAC list was not stored in TransUnion’s database; the data was stored in a separate file 2 In collecting other types of data for use on consumer reports—such as tax liens or bankruptcy judgments—TransUnion used at least one additional identifier other than the consumer’s name ( e.g. , address, date of birth, or social security number). OFAC information was the only consumer-report
+</BLOCK>
+<BLOCK id="DOC005.P012.B04">
+data that TransUnion collected using name alone.
+</BLOCK>
 
 [Page 13]
-[CITE_START:DOC005[P013.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P013.B01">
+R AMIREZ V . T RANS U NION
 13 
 and software supplied by TransUnion’s third-party vendor, 
 Accuity.  Therefore, TransUnion did not follow its normal 
-procedures to ensure accuracy. [CITE_END:DOC005[P013.B01]]
-[CITE_START:DOC005[P013.B02]] TransUnion also adopted a policy of not disclosing 
+procedures to ensure accuracy.
+</BLOCK>
+<BLOCK id="DOC005.P013.B02">
+TransUnion also adopted a policy of not disclosing 
 OFAC matches to affected consumers when the consumers 
 requested a copy of their credit reports.  Although 
 TransUnion received a number of consumer complaints after 
 it launched OFAC Advisor and adopted these policies, 
 TransUnion remained mostly unscathed for these practices 
-until 2005 when a consumer sued. [CITE_END:DOC005[P013.B02]]
-[CITE_START:DOC005[P013.B03]] C. The  Cortez  Litigation [CITE_END:DOC005[P013.B03]]
-[CITE_START:DOC005[P013.B04]] In 2005, Sandra Cortez, a consumer, sued TransUnion in 
+until 2005 when a consumer sued.
+</BLOCK>
+<BLOCK id="DOC005.P013.B03">
+C. The  Cortez  Litigation
+</BLOCK>
+<BLOCK id="DOC005.P013.B04">
+In 2005, Sandra Cortez, a consumer, sued TransUnion in 
 the Eastern District of Pennsylvania under circumstances 
 similar to Ramirez’s.   See Cortez v. Trans Union, LLC , 
 617 F.3d 688, 696–706 (3d Cir. 2010).  Cortez attempted to 
@@ -283,8 +390,10 @@ TransUnion sent the car dealership a credit report with a
 false OFAC alert on it.   Id . at 697–99.  When Cortez 
 attempted to resolve the issue, TransUnion repeatedly told 
 her that there was no OFAC alert on her report and refused 
-to investigate or remove the alert.   Id.  at 699–700. [CITE_END:DOC005[P013.B04]]
-[CITE_START:DOC005[P013.B05]] A jury found in Cortez’s favor on four FCRA claims:  
+to investigate or remove the alert.   Id.  at 699–700.
+</BLOCK>
+<BLOCK id="DOC005.P013.B05">
+A jury found in Cortez’s favor on four FCRA claims:  
 (1) TransUnion negligently failed to follow reasonable 
 procedures to ensure maximum possible accuracy in 
 producing Cortez’s credit report, in violation of 15 U.S.C. 
@@ -294,22 +403,34 @@ violation of § 1681g(a); (3) TransUnion willfully failed to
 reinvestigate the OFAC alert after Cortez informed 
 TransUnion of the false alert, in violation of § 1681i(a); and 
 (4) TransUnion willfully failed to note Cortez’s dispute on 
-subsequent reports, in violation of § 1681i(c).   Id.  at 705. [CITE_END:DOC005[P013.B05]]
+subsequent reports, in violation of § 1681i(c).   Id.  at 705.
+</BLOCK>
 
 [Page 14]
-[CITE_START:DOC005[P014.B01]] 14 
+<BLOCK id="DOC005.P014.B01">
+14 
 R AMIREZ V . T RANS U NION
 The jury awarded Cortez $50,000 in actual damages and 
 $750,000 in punitive damages.   Id.   The district court 
 remitted the punitive damages to $100,000, but otherwise 
-upheld the verdict.   Id.  at 705–06. [CITE_END:DOC005[P014.B01]]
-[CITE_START:DOC005[P014.B02]] On appeal, TransUnion argued that OFAC information was not covered by the FCRA because it was not part of the “consumer report” as defined by the statute. Id. at 706. 3 In August 2010, the Third Circuit flatly rejected this argument, noting that it was “difficult to imagine an inquiry more central to a consumer’s ‘eligibility’ for credit than whether federal law prohibits extending credit to that consumer in the first instance.” Id. at 707–08 (quoting 15 U.S.C. § 1681a(d)(1)). The court upheld the jury’s verdict on the reasonable procedures claim, explaining: “The jury could reasonably conclude that [TransUnion] could [CITE_END:DOC005[P014.B02]]
-[CITE_START:DOC005[P014.B03]] have taken steps to minimize the possibility that it would erroneously place an OFAC alert on a credit report, such as checking the birth date of the consumer against the birth date of the person on the SDN List.” Id. at 709. [CITE_END:DOC005[P014.B03]]
-[CITE_START:DOC005[P014.B04]] With respect to Cortez’s second claim, that TransUnion willfully failed to disclose all of the information in Cortez’s file when she requested it, TransUnion argued that OFAC 3 Under the FCRA, a consumer report is defined as “any written, oral, or other communication of any information by a [CRA] bearing on a consumer’s credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics, or mode of living which is used or expected to be used or collected in whole or in part for the purpose of serving as a factor in establishing the consumer’s eligibility for” credit, employment, or [CITE_END:DOC005[P014.B04]]
-[CITE_START:DOC005[P014.B05]] another purpose authorized by the statute. 15 U.S.C. § 1681a(d)(1). We use the terms “consumer report” and “credit report” interchangeably in this Opinion. [CITE_END:DOC005[P014.B05]]
+upheld the verdict.   Id.  at 705–06.
+</BLOCK>
+<BLOCK id="DOC005.P014.B02">
+On appeal, TransUnion argued that OFAC information was not covered by the FCRA because it was not part of the “consumer report” as defined by the statute. Id. at 706. 3 In August 2010, the Third Circuit flatly rejected this argument, noting that it was “difficult to imagine an inquiry more central to a consumer’s ‘eligibility’ for credit than whether federal law prohibits extending credit to that consumer in the first instance.” Id. at 707–08 (quoting 15 U.S.C. § 1681a(d)(1)). The court upheld the jury’s verdict on the reasonable procedures claim, explaining: “The jury could reasonably conclude that [TransUnion] could
+</BLOCK>
+<BLOCK id="DOC005.P014.B03">
+have taken steps to minimize the possibility that it would erroneously place an OFAC alert on a credit report, such as checking the birth date of the consumer against the birth date of the person on the SDN List.” Id. at 709.
+</BLOCK>
+<BLOCK id="DOC005.P014.B04">
+With respect to Cortez’s second claim, that TransUnion willfully failed to disclose all of the information in Cortez’s file when she requested it, TransUnion argued that OFAC 3 Under the FCRA, a consumer report is defined as “any written, oral, or other communication of any information by a [CRA] bearing on a consumer’s credit worthiness, credit standing, credit capacity, character, general reputation, personal characteristics, or mode of living which is used or expected to be used or collected in whole or in part for the purpose of serving as a factor in establishing the consumer’s eligibility for” credit, employment, or
+</BLOCK>
+<BLOCK id="DOC005.P014.B05">
+another purpose authorized by the statute. 15 U.S.C. § 1681a(d)(1). We use the terms “consumer report” and “credit report” interchangeably in this Opinion.
+</BLOCK>
 
 [Page 15]
-[CITE_START:DOC005[P015.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P015.B01">
+R AMIREZ V . T RANS U NION
 15 
 information was not part of the consumer “file” because 
 TransUnion did not store OFAC information in its usual 
@@ -320,35 +441,55 @@ that Congress intended to allow credit reporting companies
 to escape the disclosure requirement in § 1681a(g) by simply 
 contracting with a third party to store and maintain 
 information that would otherwise clearly be part of the 
-consumer’s file and is included in a credit report.”   Id. [CITE_END:DOC005[P015.B01]]
-[CITE_START:DOC005[P015.B02]] Finally, the court upheld Cortez’s reinvestigation and dispute claims, and affirmed the district court’s rulings as to damages. Id. at 712–24. However, the court expressed concern over the district court’s reduction of the punitive- damages award because “the record certainly support[ed] a jury becoming ‘incensed’ over [TransUnion’s] ‘insensitivity’ to Cortez’s claim[.]” Id. at 718 n.37. D. TransUnion’s OFAC Practices After the Cortez Litigation After being slammed with an $800,000 jury verdict (subsequently remitted to $150,000) in Cortez , TransUnion made surprisingly few changes to its practices regarding OFAC alerts. In November 2010, TransUnion changed the language of the OFAC alert [CITE_END:DOC005[P015.B02]]
-[CITE_START:DOC005[P015.B03]] used on credit reports. Instead of stating that a consumer was a “match” to the OFAC list, the reports would state that a consumer was a “potential match.” TransUnion also made some adjustments to its matching algorithm, including requiring an exact match between first and last names, reducing the false-positive rate [CITE_END:DOC005[P015.B03]]
+consumer’s file and is included in a credit report.”   Id.
+</BLOCK>
+<BLOCK id="DOC005.P015.B02">
+Finally, the court upheld Cortez’s reinvestigation and dispute claims, and affirmed the district court’s rulings as to damages. Id. at 712–24. However, the court expressed concern over the district court’s reduction of the punitive- damages award because “the record certainly support[ed] a jury becoming ‘incensed’ over [TransUnion’s] ‘insensitivity’ to Cortez’s claim[.]” Id. at 718 n.37. D. TransUnion’s OFAC Practices After the Cortez Litigation After being slammed with an $800,000 jury verdict (subsequently remitted to $150,000) in Cortez , TransUnion made surprisingly few changes to its practices regarding OFAC alerts. In November 2010, TransUnion changed the language of the OFAC alert
+</BLOCK>
+<BLOCK id="DOC005.P015.B03">
+used on credit reports. Instead of stating that a consumer was a “match” to the OFAC list, the reports would state that a consumer was a “potential match.” TransUnion also made some adjustments to its matching algorithm, including requiring an exact match between first and last names, reducing the false-positive rate
+</BLOCK>
 
 [Page 16]
-[CITE_START:DOC005[P016.B01]] 16 
+<BLOCK id="DOC005.P016.B01">
+16 
 R AMIREZ V . T RANS U NION
 from about 5 percent to about 0.5 percent. 4   TransUnion 
 requested additional software enhancements from Accuity, 
-but these were not implemented until 2013. [CITE_END:DOC005[P016.B01]]
-[CITE_START:DOC005[P016.B02]] Within the timeframe of the Cortez litigation, TransUnion received warnings about its OFAC practices from officials at the Department of the Treasury’s OFAC. In an October 2010 letter to TransUnion, OFAC officials noted that they continued to hear from TransUnion customers and individual consumers who had been adversely affected by false OFAC alerts on TransUnion credit reports. OFAC officials expressed concern that a product “that does not include rudimentary checks to avoid false positive reporting can create more confusion than clarity and cause harm to innocent consumers.” OFAC officials were particularly worried by OFAC alerts being “disseminated broadly in conjunction [CITE_END:DOC005[P016.B02]]
-[CITE_START:DOC005[P016.B03]] with credit reports.” As a result of these warnings from OFAC officials and the Cortez litigation, TransUnion also changed how it communicated with consumers about the OFAC alerts on their credit reports. Beginning in January 2011, when consumers flagged as OFAC matches requested copies of their credit reports, TransUnion would send them two mailings: (1) the consumer’s credit report with the OFAC alert redacted , and (2) a separately mailed OFAC Letter. The OFAC Letters were sent within one day of the credit reports. These letters were substantially similar to the one described above that Ramirez received. TransUnion did not [CITE_END:DOC005[P016.B03]]
-[CITE_START:DOC005[P016.B04]] include a summary-of-rights form in the mailings containing 4 TransUnion presented no data showing that any of its name matches through OFAC Advisor were correct. In other words, TransUnion could not confirm that a single OFAC alert sold to its customers was accurate. [CITE_END:DOC005[P016.B04]]
+but these were not implemented until 2013.
+</BLOCK>
+<BLOCK id="DOC005.P016.B02">
+Within the timeframe of the Cortez litigation, TransUnion received warnings about its OFAC practices from officials at the Department of the Treasury’s OFAC. In an October 2010 letter to TransUnion, OFAC officials noted that they continued to hear from TransUnion customers and individual consumers who had been adversely affected by false OFAC alerts on TransUnion credit reports. OFAC officials expressed concern that a product “that does not include rudimentary checks to avoid false positive reporting can create more confusion than clarity and cause harm to innocent consumers.” OFAC officials were particularly worried by OFAC alerts being “disseminated broadly in conjunction
+</BLOCK>
+<BLOCK id="DOC005.P016.B03">
+with credit reports.” As a result of these warnings from OFAC officials and the Cortez litigation, TransUnion also changed how it communicated with consumers about the OFAC alerts on their credit reports. Beginning in January 2011, when consumers flagged as OFAC matches requested copies of their credit reports, TransUnion would send them two mailings: (1) the consumer’s credit report with the OFAC alert redacted , and (2) a separately mailed OFAC Letter. The OFAC Letters were sent within one day of the credit reports. These letters were substantially similar to the one described above that Ramirez received. TransUnion did not
+</BLOCK>
+<BLOCK id="DOC005.P016.B04">
+include a summary-of-rights form in the mailings containing 4 TransUnion presented no data showing that any of its name matches through OFAC Advisor were correct. In other words, TransUnion could not confirm that a single OFAC alert sold to its customers was accurate.
+</BLOCK>
 
 [Page 17]
-[CITE_START:DOC005[P017.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P017.B01">
+R AMIREZ V . T RANS U NION
 17 
 the OFAC Letters.  In July 2011, TransUnion finally stopped 
 sending OFAC Letters and began including OFAC alerts 
-directly on the credit reports it sent to consumers. [CITE_END:DOC005[P017.B01]]
-[CITE_START:DOC005[P017.B02]] E. Procedural History [CITE_END:DOC005[P017.B02]]
-[CITE_START:DOC005[P017.B03]] In February 2012, Ramirez filed a putative class action 
+directly on the credit reports it sent to consumers.
+</BLOCK>
+<BLOCK id="DOC005.P017.B02">
+E. Procedural History
+</BLOCK>
+<BLOCK id="DOC005.P017.B03">
+In February 2012, Ramirez filed a putative class action 
 against TransUnion alleging that TransUnion’s OFAC 
 practices violated multiple provisions of the FCRA.  The 
 district court certified a class action under Rule 23 of the 
 Federal Rules of Civil Procedure over TransUnion’s 
 objection and denied TransUnion’s motion to decertify the 
-class. [CITE_END:DOC005[P017.B03]]
-[CITE_START:DOC005[P017.B04]] The class included “all natural persons in the United 
+class.
+</BLOCK>
+<BLOCK id="DOC005.P017.B04">
+The class included “all natural persons in the United 
 States and its Territories to whom TransUnion sent a letter 
 similar in form to the March 1, 2011 [OFAC Letter] 
 TransUnion sent to [Ramirez] . . . from January 1, 2011-July 
@@ -357,8 +498,10 @@ falsely labeled by TransUnion’s name-only software as a
 potential OFAC match; (2) requested a copy of his or her 
 credit report from TransUnion; and (3) in response, received 
 a credit-report mailing with the OFAC alert redacted and a 
-separate OFAC Letter mailing with no summary of rights. [CITE_END:DOC005[P017.B04]]
-[CITE_START:DOC005[P017.B05]] Based on TransUnion’s records, the parties stipulated 
+separate OFAC Letter mailing with no summary of rights.
+</BLOCK>
+<BLOCK id="DOC005.P017.B05">
+Based on TransUnion’s records, the parties stipulated 
 that there were 8,185 consumers, including Ramirez, who 
 fell within this class.  Out of those 8,185, the records 
 reflected that 1,853 had their credit reports requested by a 
@@ -366,10 +509,12 @@ potential credit grantor during the class period (January 2011
 to July 2011).  TransUnion did not furnish credit reports to 
 third parties during the class period for the remaining 6,332 
 class members. The case proceeded to a jury trial on three claims.  First, 
-the class alleged that TransUnion willfully failed to follow [CITE_END:DOC005[P017.B05]]
+the class alleged that TransUnion willfully failed to follow
+</BLOCK>
 
 [Page 18]
-[CITE_START:DOC005[P018.B01]] 18 
+<BLOCK id="DOC005.P018.B01">
+18 
 R AMIREZ V . T RANS U NION
 reasonable procedures to assure accuracy of the OFAC alerts 
 because TransUnion used rudimentary name-only matching 
@@ -380,8 +525,10 @@ class members their entire credit reports by excluding the
 OFAC alerts from the reports.   See id . § 1681g(a)(1).  Third, 
 the class alleged that TransUnion willfully failed to provide 
 a summary of rights as required under the FCRA when it sent 
-consumers the OFAC Letters.   See id . § 1681g(c)(2). [CITE_END:DOC005[P018.B01]]
-[CITE_START:DOC005[P018.B02]] The jury found in favor of the class on all three claims 
+consumers the OFAC Letters.   See id . § 1681g(c)(2).
+</BLOCK>
+<BLOCK id="DOC005.P018.B02">
+The jury found in favor of the class on all three claims 
 and awarded each class member $984.22 in statutory 
 damages (about $8 million classwide) and $6,353.08 in 
 punitive 
@@ -395,54 +542,86 @@ of law, and moved alternatively for a new trial, remittitur, or
 an amended judgment, all of which the district court denied.  
 TransUnion appealed, raising four arguments.  We have 
 jurisdiction pursuant to 28 U.S.C. § 1291.  We address each 
-argument in turn. [CITE_END:DOC005[P018.B02]]
-[CITE_START:DOC005[P018.B03]] II. Article III Standing [CITE_END:DOC005[P018.B03]]
-[CITE_START:DOC005[P018.B04]] TransUnion first argues that the verdict cannot stand 
+argument in turn.
+</BLOCK>
+<BLOCK id="DOC005.P018.B03">
+II. Article III Standing
+</BLOCK>
+<BLOCK id="DOC005.P018.B04">
+TransUnion first argues that the verdict cannot stand 
 because none of the class members—other than Ramirez—
 had standing under Article III of the United States 
 Constitution.  We review the district court’s rulings 
 regarding standing  de novo .   Fair Hous. of Marin v. Combs , 
-285 F.3d 899, 902 (9th Cir. 2002). [CITE_END:DOC005[P018.B04]]
-[CITE_START:DOC005[P018.B05]] Standing is an “essential and unchanging part of the 
+285 F.3d 899, 902 (9th Cir. 2002).
+</BLOCK>
+<BLOCK id="DOC005.P018.B05">
+Standing is an “essential and unchanging part of the 
 case-or-controversy requirement of Article III.”   Lujan v. 
 Defs. of Wildlife , 504 U.S. 555, 560 (1992).  The “irreducible 
 constitutional minimum” of standing requires a plaintiff to 
-establish three elements: (1) “the plaintiff must have [CITE_END:DOC005[P018.B05]]
+establish three elements: (1) “the plaintiff must have
+</BLOCK>
 
 [Page 19]
-[CITE_START:DOC005[P019.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P019.B01">
+R AMIREZ V . T RANS U NION
 19 
 suffered an ‘injury in fact’” that is “concrete and 
 particularized” and “actual or imminent;” (2) “there must be 
 a causal connection between the injury and the conduct 
 complained of;” and (3) “it must be ‘likely,’ as opposed to 
 merely ‘speculative,’ that the injury will be ‘redressed by a 
-favorable decision.’”   Id.  at 560–61 (citations omitted). [CITE_END:DOC005[P019.B01]]
-[CITE_START:DOC005[P019.B02]] A. Who Needs Standing [CITE_END:DOC005[P019.B02]]
-[CITE_START:DOC005[P019.B03]] The parties first dispute who must demonstrate standing to recover damages—only the class representative (i.e., only Ramirez) or every class member. This Court has previously held that only the representative plaintiff need allege standing at the motion to dismiss and class certification stages, see In re Zappos.com, Inc. , 888 F.3d 1020, 1028 n.11 (9th Cir. 2018); Melendres v. Arpaio , 784 F.3d 1254, 1262 (9th Cir. 2015), 5 and even at the final judgment stage in class actions involving only injunctive relief, see Bates v. United Parcel Serv., Inc. , 511 F.3d 974, 985 (9th Cir. 2007) (en banc); [CITE_END:DOC005[P019.B03]]
-[CITE_START:DOC005[P019.B04]] Casey v. Lewis , 4 F.3d 1516, 1519–20 (9th Cir. 1993). But we have never addressed the question of who must have standing at the final stage of a money damages suit when class members are to be awarded individual monetary damages. [CITE_END:DOC005[P019.B04]]
-[CITE_START:DOC005[P019.B05]] We address that question today and hold that each 
+favorable decision.’”   Id.  at 560–61 (citations omitted).
+</BLOCK>
+<BLOCK id="DOC005.P019.B02">
+A. Who Needs Standing
+</BLOCK>
+<BLOCK id="DOC005.P019.B03">
+The parties first dispute who must demonstrate standing to recover damages—only the class representative (i.e., only Ramirez) or every class member. This Court has previously held that only the representative plaintiff need allege standing at the motion to dismiss and class certification stages, see In re Zappos.com, Inc. , 888 F.3d 1020, 1028 n.11 (9th Cir. 2018); Melendres v. Arpaio , 784 F.3d 1254, 1262 (9th Cir. 2015), 5 and even at the final judgment stage in class actions involving only injunctive relief, see Bates v. United Parcel Serv., Inc. , 511 F.3d 974, 985 (9th Cir. 2007) (en banc);
+</BLOCK>
+<BLOCK id="DOC005.P019.B04">
+Casey v. Lewis , 4 F.3d 1516, 1519–20 (9th Cir. 1993). But we have never addressed the question of who must have standing at the final stage of a money damages suit when class members are to be awarded individual monetary damages.
+</BLOCK>
+<BLOCK id="DOC005.P019.B05">
+We address that question today and hold that each 
 member of a class certified under Rule 23 must satisfy the 
 bare minimum of Article III standing at the final judgment 
 stage of a class action in order to recover monetary damages 
 in federal court.  Although this is an issue of first impression 
 for this Court, our holding today clearly follows from 5 See also Neale v. Volvo Cars of N. Am. , 794 F.3d 353, 362 (3d Cir. 
 2015) (holding that “unnamed, putative class members need not establish 
-Article III standing” in damages action at class certification stage). [CITE_END:DOC005[P019.B05]]
+Article III standing” in damages action at class certification stage).
+</BLOCK>
 
 [Page 20]
-[CITE_START:DOC005[P020.B01]] 20 R AMIREZ V . T RANS U NION Supreme Court precedent, as well as the fundamental nature of our judicial system. 6 The Supreme Court has held, albeit in a different context, that all parties seeking to recover a monetary award in their own name must show Article III standing. See Town of Chester, N.Y. v. Laroe Estates, Inc. , 137 S. Ct. 1645, 1651 (2017) (holding that “an intervenor of right” under Federal Rule of Civil Procedure 24(a)(2) “must have Article III standing in order to pursue relief that is different from that which is sought by a [CITE_END:DOC005[P020.B01]]
-[CITE_START:DOC005[P020.B02]] party with standing[,]” including where “both the plaintiff and the intervenor seek separate money judgments in their own names.”); see also Tyson Foods, Inc. v. Bouaphakeo , 136 S. Ct. 1036, 1053 (2016) (Roberts, C.J., concurring) (“Article III does not give federal courts the power to order relief to any uninjured plaintiff, class action or not. The Judiciary’s role is limited ‘to provid[ing] relief to claimants, in individual or class actions, who have suffered, or will imminently suffer, actual harm.’” (quoting Lewis v. Casey , 518 U.S. 343, 349 (1996))). [CITE_END:DOC005[P020.B02]]
-[CITE_START:DOC005[P020.B03]] 6 Our holding does not apply to class actions involving only injunctive relief. Nor does our holding alter the showing required at the class certification stage or other early stages of a case. We address only the circumstances of this case: court-awarded, individual monetary awards for class members at the final judgment stage of a class action. We note that, although the standing inquiry in the early stages of a case focuses on the representative plaintiffs, district courts and parties should keep in mind that they will need a mechanism for identifying class members who lack standing at the damages [CITE_END:DOC005[P020.B03]]
-[CITE_START:DOC005[P020.B04]] phase. See Torres v. Mercer Canyons Inc. , 835 F.3d 1125, 1137 (9th Cir. 2016) (“[F]ortuitous non- injury to a subset of class members does not necessarily defeat certification of the entire class, particularly as the district court is well situated to winnow out those non-injured members at the damages phase of the litigation, or to refine the class definition.” (citing 1 W. Rubenstein, Newberg on Class Actions § 2:3 (5th ed. 2019))). [CITE_END:DOC005[P020.B04]]
+<BLOCK id="DOC005.P020.B01">
+20 R AMIREZ V . T RANS U NION Supreme Court precedent, as well as the fundamental nature of our judicial system. 6 The Supreme Court has held, albeit in a different context, that all parties seeking to recover a monetary award in their own name must show Article III standing. See Town of Chester, N.Y. v. Laroe Estates, Inc. , 137 S. Ct. 1645, 1651 (2017) (holding that “an intervenor of right” under Federal Rule of Civil Procedure 24(a)(2) “must have Article III standing in order to pursue relief that is different from that which is sought by a
+</BLOCK>
+<BLOCK id="DOC005.P020.B02">
+party with standing[,]” including where “both the plaintiff and the intervenor seek separate money judgments in their own names.”); see also Tyson Foods, Inc. v. Bouaphakeo , 136 S. Ct. 1036, 1053 (2016) (Roberts, C.J., concurring) (“Article III does not give federal courts the power to order relief to any uninjured plaintiff, class action or not. The Judiciary’s role is limited ‘to provid[ing] relief to claimants, in individual or class actions, who have suffered, or will imminently suffer, actual harm.’” (quoting Lewis v. Casey , 518 U.S. 343, 349 (1996))).
+</BLOCK>
+<BLOCK id="DOC005.P020.B03">
+6 Our holding does not apply to class actions involving only injunctive relief. Nor does our holding alter the showing required at the class certification stage or other early stages of a case. We address only the circumstances of this case: court-awarded, individual monetary awards for class members at the final judgment stage of a class action. We note that, although the standing inquiry in the early stages of a case focuses on the representative plaintiffs, district courts and parties should keep in mind that they will need a mechanism for identifying class members who lack standing at the damages
+</BLOCK>
+<BLOCK id="DOC005.P020.B04">
+phase. See Torres v. Mercer Canyons Inc. , 835 F.3d 1125, 1137 (9th Cir. 2016) (“[F]ortuitous non- injury to a subset of class members does not necessarily defeat certification of the entire class, particularly as the district court is well situated to winnow out those non-injured members at the damages phase of the litigation, or to refine the class definition.” (citing 1 W. Rubenstein, Newberg on Class Actions § 2:3 (5th ed. 2019))).
+</BLOCK>
 
 [Page 21]
-[CITE_START:DOC005[P021.B01]] R AMIREZ V . T RANS U NION 21 The same rule applies here. To hold otherwise would directly contravene the Rules Enabling Act, because it would transform the class action—a mere procedural device—into a vehicle for individuals to obtain money judgments in federal court even though they could not show sufficient injury to recover those judgments individually. See 28 U.S.C. § 2072(b) (“[Rules of procedure] shall not abridge, enlarge or modify any substantive right.”). B. Merits of the Standing Inquiry Having concluded that each class member must have standing to recover damages, we turn to the dispositive and more [CITE_END:DOC005[P021.B01]]
-[CITE_START:DOC005[P021.B02]] difficult question in this case: Did each of the 8,185 class members have standing? TransUnion challenges only the first standing requirement—injury in fact. Because a “plaintiff must demonstrate standing for each claim he seeks to press,” DaimlerChrysler Corp. v. Cuno , 547 U.S. 332, 335 (2006), we address standing for each of the class’s three claims. Plaintiffs bore the burden of proving standing through evidence at trial. See Lujan , 504 U.S. at 561. 1. Reasonable Procedures Claim Under § 1681e(b) of the FCRA, “[w]henever a [CRA] prepares a consumer report it shall follow reasonable procedures to assure maximum possible [CITE_END:DOC005[P021.B02]]
-[CITE_START:DOC005[P021.B03]] accuracy of the information concerning the individual about whom the report relates.” 15 U.S.C. § 1681e(b). The class’s first claim is that TransUnion willfully failed to follow reasonable procedures to assure maximum possible accuracy when it collected OFAC information using rudimentary name-only searches and placed the inaccurate information on the class members’ credit reports without further verification. [CITE_END:DOC005[P021.B03]]
+<BLOCK id="DOC005.P021.B01">
+R AMIREZ V . T RANS U NION 21 The same rule applies here. To hold otherwise would directly contravene the Rules Enabling Act, because it would transform the class action—a mere procedural device—into a vehicle for individuals to obtain money judgments in federal court even though they could not show sufficient injury to recover those judgments individually. See 28 U.S.C. § 2072(b) (“[Rules of procedure] shall not abridge, enlarge or modify any substantive right.”). B. Merits of the Standing Inquiry Having concluded that each class member must have standing to recover damages, we turn to the dispositive and more
+</BLOCK>
+<BLOCK id="DOC005.P021.B02">
+difficult question in this case: Did each of the 8,185 class members have standing? TransUnion challenges only the first standing requirement—injury in fact. Because a “plaintiff must demonstrate standing for each claim he seeks to press,” DaimlerChrysler Corp. v. Cuno , 547 U.S. 332, 335 (2006), we address standing for each of the class’s three claims. Plaintiffs bore the burden of proving standing through evidence at trial. See Lujan , 504 U.S. at 561. 1. Reasonable Procedures Claim Under § 1681e(b) of the FCRA, “[w]henever a [CRA] prepares a consumer report it shall follow reasonable procedures to assure maximum possible
+</BLOCK>
+<BLOCK id="DOC005.P021.B03">
+accuracy of the information concerning the individual about whom the report relates.” 15 U.S.C. § 1681e(b). The class’s first claim is that TransUnion willfully failed to follow reasonable procedures to assure maximum possible accuracy when it collected OFAC information using rudimentary name-only searches and placed the inaccurate information on the class members’ credit reports without further verification.
+</BLOCK>
 
 [Page 22]
-[CITE_START:DOC005[P022.B01]] 22 
+<BLOCK id="DOC005.P022.B01">
+22 
 R AMIREZ V . T RANS U NION TransUnion argues that, to have suffered a concrete 
 injury from the § 1681e(b) violation, each class member 
 must show that TransUnion disclosed his or her credit report 
@@ -450,10 +629,16 @@ to a third party.  In other words, TransUnion argues no injury
 results from a false OFAC alert until someone other than 
 TransUnion and the consumer sees it.  For support, 
 TransUnion relies on the Supreme Court’s decision in 
-Spokeo, Inc. v. Robins  ( Spokeo II ), 136 S. Ct. 1540 (2016). [CITE_END:DOC005[P022.B01]]
-[CITE_START:DOC005[P022.B02]] Prior to Spokeo II , we held that the violation of a “statutory right”—including an FCRA violation—“is usually a sufficient injury in fact to confer standing” without any showing of actual harm. See Robins v. Spokeo, Inc. ( Spokeo I ), 742 F.3d 409, 412 (9th Cir. 2014), vacated and remanded , 136 S. Ct. 1540 (2016). The Supreme Court granted certiorari and reversed, explaining that “Congress cannot erase Article III’s standing requirements by statutorily granting the right to sue to a plaintiff who would not otherwise have standing.” Spokeo II , 136 S. Ct. at 1547– 48 (quoting Raines [CITE_END:DOC005[P022.B02]]
-[CITE_START:DOC005[P022.B03]] v. Byrd , 521 U.S. 811, 820 n.3 (1997)). Rather, “Article III standing requires a concrete injury even in the context of a statutory violation.” Id. at 1549. [CITE_END:DOC005[P022.B03]]
-[CITE_START:DOC005[P022.B04]] The Supreme Court recognized, however, that an injury 
+Spokeo, Inc. v. Robins  ( Spokeo II ), 136 S. Ct. 1540 (2016).
+</BLOCK>
+<BLOCK id="DOC005.P022.B02">
+Prior to Spokeo II , we held that the violation of a “statutory right”—including an FCRA violation—“is usually a sufficient injury in fact to confer standing” without any showing of actual harm. See Robins v. Spokeo, Inc. ( Spokeo I ), 742 F.3d 409, 412 (9th Cir. 2014), vacated and remanded , 136 S. Ct. 1540 (2016). The Supreme Court granted certiorari and reversed, explaining that “Congress cannot erase Article III’s standing requirements by statutorily granting the right to sue to a plaintiff who would not otherwise have standing.” Spokeo II , 136 S. Ct. at 1547– 48 (quoting Raines
+</BLOCK>
+<BLOCK id="DOC005.P022.B03">
+v. Byrd , 521 U.S. 811, 820 n.3 (1997)). Rather, “Article III standing requires a concrete injury even in the context of a statutory violation.” Id. at 1549.
+</BLOCK>
+<BLOCK id="DOC005.P022.B04">
+The Supreme Court recognized, however, that an injury 
 may still be concrete even if intangible.   Id.   And there is 
 sufficient injury in fact when a defendant’s statutory 
 violation creates a “risk of real harm” to a plaintiff’s concrete 
@@ -464,12 +649,18 @@ to history to determine “whether an alleged intangible harm
 has a close relationship to a harm that has traditionally been 
 regarded as providing a basis for a lawsuit in English or 
 American courts.”   Id.   And we are guided by Congress’s 
-judgment because “Congress is well positioned to identify [CITE_END:DOC005[P022.B04]]
+judgment because “Congress is well positioned to identify
+</BLOCK>
 
 [Page 23]
-[CITE_START:DOC005[P023.B01]] R AMIREZ V . T RANS U NION 23 intangible harms that meet minimum Article III requirements[.]” Id. Spokeo also involved a consumer’s claim against a CRA under § 1681e(b). Robins, a consumer, alleged that Spokeo, a CRA that operated a people-search website, published a profile about him on its website that contained inaccurate information regarding his age, marital status, wealth, employment, and education. Robins v. Spokeo, Inc. ( Spokeo III ), 867 F.3d 1108, 1111 (9th Cir. 2017). With respect to injury in fact, Robins alleged that the presence of the false information on Spokeo’s website “harmed his employment [CITE_END:DOC005[P023.B01]]
-[CITE_START:DOC005[P023.B02]] prospects at a time when he was out of work” and caused him emotional distress. Id. The Supreme Court declined to decide whether Robins sufficiently alleged a concrete injury, but it provided the following guidance: [CITE_END:DOC005[P023.B02]]
-[CITE_START:DOC005[P023.B03]] On the one hand, Congress plainly sought to 
+<BLOCK id="DOC005.P023.B01">
+R AMIREZ V . T RANS U NION 23 intangible harms that meet minimum Article III requirements[.]” Id. Spokeo also involved a consumer’s claim against a CRA under § 1681e(b). Robins, a consumer, alleged that Spokeo, a CRA that operated a people-search website, published a profile about him on its website that contained inaccurate information regarding his age, marital status, wealth, employment, and education. Robins v. Spokeo, Inc. ( Spokeo III ), 867 F.3d 1108, 1111 (9th Cir. 2017). With respect to injury in fact, Robins alleged that the presence of the false information on Spokeo’s website “harmed his employment
+</BLOCK>
+<BLOCK id="DOC005.P023.B02">
+prospects at a time when he was out of work” and caused him emotional distress. Id. The Supreme Court declined to decide whether Robins sufficiently alleged a concrete injury, but it provided the following guidance:
+</BLOCK>
+<BLOCK id="DOC005.P023.B03">
+On the one hand, Congress plainly sought to 
 curb the dissemination of false information 
 by adopting procedures designed to decrease 
 that risk. On the other hand, Robins cannot 
@@ -484,13 +675,17 @@ be entirely accurate.  In addition, not all
 inaccuracies cause harm or present any 
 material risk of harm.  An example that 
 comes readily to mind is an incorrect zip 
-code.  It is difficult to imagine how the [CITE_END:DOC005[P023.B03]]
+code.  It is difficult to imagine how the
+</BLOCK>
 
 [Page 24]
-[CITE_START:DOC005[P024.B01]] 24 
+<BLOCK id="DOC005.P024.B01">
+24 
 R AMIREZ V . T RANS U NION dissemination of an incorrect zip code, 
-without more, could work any concrete harm. Spokeo II , 136 S. Ct. at 1550. [CITE_END:DOC005[P024.B01]]
-[CITE_START:DOC005[P024.B02]] On remand, we held that Robins alleged a material risk 
+without more, could work any concrete harm. Spokeo II , 136 S. Ct. at 1550.
+</BLOCK>
+<BLOCK id="DOC005.P024.B02">
+On remand, we held that Robins alleged a material risk 
 of harm to his concrete interests sufficient to satisfy Article 
 III standing.   Spokeo III , 867 F.3d at 1118.  We adopted a 
 two-part inquiry for determining whether the violation of a 
@@ -499,19 +694,31 @@ statutory provisions at issue were established to protect [the
 plaintiff’s] concrete interests (as opposed to purely 
 procedural rights), and if so, (2) whether the specific 
 procedural violations alleged . . . actually harm, or present a 
-material risk of harm to, such interests.”   Id.  at 1113. [CITE_END:DOC005[P024.B02]]
-[CITE_START:DOC005[P024.B03]] In Robins’s case, we held at step one that § 1681e(b) was enacted to protect consumers’ concrete interests in avoiding the very real-world harms that result from inaccurate credit reporting—such as the inability to obtain credit and employment and “the uncertainty and stress” that consumers experience when they discover inaccurate information in their credit reports. Id. at 1114. We noted that “the interests that [the] FCRA protects also resemble other reputational and privacy interests that have long been protected in the law.” Id . At step two, we concluded that Robins had been exposed to a material risk of harm [CITE_END:DOC005[P024.B03]]
-[CITE_START:DOC005[P024.B04]] to that concrete interest because Spokeo published inaccurate information on its website that was far more material than a mere incorrect zip code. Id. at 1116–17. [CITE_END:DOC005[P024.B04]]
-[CITE_START:DOC005[P024.B05]] Applying the test to the facts of this case, we conclude 
+material risk of harm to, such interests.”   Id.  at 1113.
+</BLOCK>
+<BLOCK id="DOC005.P024.B03">
+In Robins’s case, we held at step one that § 1681e(b) was enacted to protect consumers’ concrete interests in avoiding the very real-world harms that result from inaccurate credit reporting—such as the inability to obtain credit and employment and “the uncertainty and stress” that consumers experience when they discover inaccurate information in their credit reports. Id. at 1114. We noted that “the interests that [the] FCRA protects also resemble other reputational and privacy interests that have long been protected in the law.” Id . At step two, we concluded that Robins had been exposed to a material risk of harm
+</BLOCK>
+<BLOCK id="DOC005.P024.B04">
+to that concrete interest because Spokeo published inaccurate information on its website that was far more material than a mere incorrect zip code. Id. at 1116–17.
+</BLOCK>
+<BLOCK id="DOC005.P024.B05">
+Applying the test to the facts of this case, we conclude 
 that all 8,185 class members suffered a material risk of harm 
 to their concrete interests protected by § 1681e(b) as a result 
 of TransUnion’s failure to follow reasonable procedures to 
-assure maximum possible accuracy of OFAC information. [CITE_END:DOC005[P024.B05]]
+assure maximum possible accuracy of OFAC information.
+</BLOCK>
 
 [Page 25]
-[CITE_START:DOC005[P025.B01]] R AMIREZ V . T RANS U NION 25 Step one is clear. Congress enacted the FCRA, including § 1681e(b), “to protect consumers’ concrete interests.” Id. at 1113. “[G]iven the ubiquity and importance of consumer reports in modern life—in employment decisions, in loan applications, in home purchases, and much more—the real- world implications of material inaccuracies in those reports seem patent on their face.” Id. at 1114. The FCRA’s reasonable procedures requirement is particularly important because the “threat to a consumer’s livelihood is caused by the very existence of inaccurate information in his credit report and the likelihood that such [CITE_END:DOC005[P025.B01]]
-[CITE_START:DOC005[P025.B02]] information will be important to one of the many entities who make use of such reports[.]” Id. at 1114; see also 15 U.S.C. § 1681(a)(4) (explaining that Congress enacted the FCRA “to insure that consumer reporting agencies exercise their grave responsibilities with fairness, impartiality, and a respect for the consumer’s right to privacy”). “Courts have long entertained causes of action to vindicate intangible harms caused by certain untruthful disclosures about individuals, and we respect Congress’s judgment that a similar harm would result from inaccurate credit reporting.” Spokeo III , 867 F.3d at 1115. [CITE_END:DOC005[P025.B02]]
-[CITE_START:DOC005[P025.B03]] At step two, standing is also clear for all class members 
+<BLOCK id="DOC005.P025.B01">
+R AMIREZ V . T RANS U NION 25 Step one is clear. Congress enacted the FCRA, including § 1681e(b), “to protect consumers’ concrete interests.” Id. at 1113. “[G]iven the ubiquity and importance of consumer reports in modern life—in employment decisions, in loan applications, in home purchases, and much more—the real- world implications of material inaccuracies in those reports seem patent on their face.” Id. at 1114. The FCRA’s reasonable procedures requirement is particularly important because the “threat to a consumer’s livelihood is caused by the very existence of inaccurate information in his credit report and the likelihood that such
+</BLOCK>
+<BLOCK id="DOC005.P025.B02">
+information will be important to one of the many entities who make use of such reports[.]” Id. at 1114; see also 15 U.S.C. § 1681(a)(4) (explaining that Congress enacted the FCRA “to insure that consumer reporting agencies exercise their grave responsibilities with fairness, impartiality, and a respect for the consumer’s right to privacy”). “Courts have long entertained causes of action to vindicate intangible harms caused by certain untruthful disclosures about individuals, and we respect Congress’s judgment that a similar harm would result from inaccurate credit reporting.” Spokeo III , 867 F.3d at 1115.
+</BLOCK>
+<BLOCK id="DOC005.P025.B03">
+At step two, standing is also clear for all class members 
 for a number of reasons.  First, the nature of the inaccuracy 
 is severe.  TransUnion inaccurately identified and labeled all 
 class members as potential terrorists, drug traffickers, and 
@@ -522,34 +729,54 @@ TransUnion sent all class members a letter informing them
 that they were considered potential SDNs.  This practice ran 
 a real risk of causing the uncertainty and stress that Congress 
 aimed to prevent in enacting the FCRA.   See Drew v. Equifax 
-Info. Servs., LLC , 690 F.3d 1100, 1109 (9th Cir. 2012) (“The [CITE_END:DOC005[P025.B03]]
+Info. Servs., LLC , 690 F.3d 1100, 1109 (9th Cir. 2012) (“The
+</BLOCK>
 
 [Page 26]
-[CITE_START:DOC005[P026.B01]] 26 
+<BLOCK id="DOC005.P026.B01">
+26 
 R AMIREZ V . T RANS U NION
 FCRA permits ‘recovery for emotional distress and 
 humiliation.’” (quoting  Guimond v. Trans Union Credit 
-Info. Co. , 45 F.3d 1329, 1333 (9th Cir. 1995)). [CITE_END:DOC005[P026.B01]]
-[CITE_START:DOC005[P026.B02]] In Spokeo III , we stated that it was “clear” that the plaintiff was exposed to a material risk of harm because a CRA made inaccurate information about his age, marital status, education, and wealth available to third parties. 867 F.3d at 1117. The risk here was far graver. The OFAC labels are the type of information that risks triggering significant concern, confusion, and even potential contact with a federal intelligence agency. And the record here shows this risk is far from hypothetical; indeed, the Department of the Treasury informed TransUnion that it “continue[d]” to hear from a number of [CITE_END:DOC005[P026.B02]]
-[CITE_START:DOC005[P026.B03]] concerned individuals who had been inaccurately labeled as OFAC matches by TransUnion, and that TransUnion’s practice was “creating unnecessary confusion” among affected consumers. As Ramirez testified at trial: “[I]if somebody tells you you’re on a terrorist list, what are you going to do?” Second, TransUnion engaged a third-party vendor— Accuity, Inc.—to develop the software and database containing the underlying information for the OFAC alerts. As a result, TransUnion and Accuity communicated about the database information and OFAC matches. And TransUnion concedes that OFAC matches were not housed by TransUnion; the OFAC list was stored in a separate database operated and [CITE_END:DOC005[P026.B03]]
-[CITE_START:DOC005[P026.B04]] maintained by Accuity. It is precisely for this reason that TransUnion purportedly determined that the OFAC alerts were not governed by the FCRA. 7 This 7 In an effort to avoid the FCRA’s reach to its unlawful conduct, TransUnion similarly argued in Cortez that the OFAC information was maintained and stored by Accuity and, therefore, the information was not [CITE_END:DOC005[P026.B04]]
+Info. Co. , 45 F.3d 1329, 1333 (9th Cir. 1995)).
+</BLOCK>
+<BLOCK id="DOC005.P026.B02">
+In Spokeo III , we stated that it was “clear” that the plaintiff was exposed to a material risk of harm because a CRA made inaccurate information about his age, marital status, education, and wealth available to third parties. 867 F.3d at 1117. The risk here was far graver. The OFAC labels are the type of information that risks triggering significant concern, confusion, and even potential contact with a federal intelligence agency. And the record here shows this risk is far from hypothetical; indeed, the Department of the Treasury informed TransUnion that it “continue[d]” to hear from a number of
+</BLOCK>
+<BLOCK id="DOC005.P026.B03">
+concerned individuals who had been inaccurately labeled as OFAC matches by TransUnion, and that TransUnion’s practice was “creating unnecessary confusion” among affected consumers. As Ramirez testified at trial: “[I]if somebody tells you you’re on a terrorist list, what are you going to do?” Second, TransUnion engaged a third-party vendor— Accuity, Inc.—to develop the software and database containing the underlying information for the OFAC alerts. As a result, TransUnion and Accuity communicated about the database information and OFAC matches. And TransUnion concedes that OFAC matches were not housed by TransUnion; the OFAC list was stored in a separate database operated and
+</BLOCK>
+<BLOCK id="DOC005.P026.B04">
+maintained by Accuity. It is precisely for this reason that TransUnion purportedly determined that the OFAC alerts were not governed by the FCRA. 7 This 7 In an effort to avoid the FCRA’s reach to its unlawful conduct, TransUnion similarly argued in Cortez that the OFAC information was maintained and stored by Accuity and, therefore, the information was not
+</BLOCK>
 
 [Page 27]
-[CITE_START:DOC005[P027.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P027.B01">
+R AMIREZ V . T RANS U NION
 27 
 type of access to and information sharing with a third party 
 certainly compounds the risk of harm to all class members’ 
 privacy and reputational interests.  The practice created a 
 significant risk that third parties other than the affected 
 consumers would learn about the inaccurate and highly 
-embarrassing OFAC matches. [CITE_END:DOC005[P027.B01]]
-[CITE_START:DOC005[P027.B02]] Finally, TransUnion—one of the nation’s largest consumer reporting agencies—made all class members’ reports available to potential creditors or employers at a moment’s notice, even without the consumers’ knowledge in some instances. See 15 U.S.C. §§ 1681b(b)(2)(A) (requiring notice to the consumer only when a credit report is requested for employment purposes), 1681b(c)(1)(B) (allowing credit reports to be furnished before the consumer has initiated a transaction in certain circumstances). Credit reports exist for the very purpose of being disseminated to third parties. Like in Spokeo , where false information was made available to third parties on the Internet, TransUnion created a [CITE_END:DOC005[P027.B02]]
-[CITE_START:DOC005[P027.B03]] risk of harm to all class members by allowing third parties to readily access the reports. [CITE_END:DOC005[P027.B03]]
-[CITE_START:DOC005[P027.B04]] Indeed, the 1,853 class members whose reports were disseminated to potential creditors have shown even greater injuries because we know those third parties, which are in part of consumers’ “file[s]” in TransUnion’s control. See Cortez , 617 F.3d at 711. The Third Circuit unequivocally rejected that argument. Id . at 711 (“We do not believe that Congress intended to allow credit reporting companies to escape the disclosure requirement in § 1681a(g) by simply contracting with a third party to store and maintain information that would otherwise clearly be part of the consumer’s file and is included in a credit report.”) [CITE_END:DOC005[P027.B04]]
-[CITE_START:DOC005[P027.B05]] (emphasis added); see also id . at 703 (noting that “TransUnion decided not to include the underlying information for its OFAC product in TransUnion’s own database” and “decided to use Accuity rather than maintain the information itself.”). [CITE_END:DOC005[P027.B05]]
+embarrassing OFAC matches.
+</BLOCK>
+<BLOCK id="DOC005.P027.B02">
+Finally, TransUnion—one of the nation’s largest consumer reporting agencies—made all class members’ reports available to potential creditors or employers at a moment’s notice, even without the consumers’ knowledge in some instances. See 15 U.S.C. §§ 1681b(b)(2)(A) (requiring notice to the consumer only when a credit report is requested for employment purposes), 1681b(c)(1)(B) (allowing credit reports to be furnished before the consumer has initiated a transaction in certain circumstances). Credit reports exist for the very purpose of being disseminated to third parties. Like in Spokeo , where false information was made available to third parties on the Internet, TransUnion created a
+</BLOCK>
+<BLOCK id="DOC005.P027.B03">
+risk of harm to all class members by allowing third parties to readily access the reports.
+</BLOCK>
+<BLOCK id="DOC005.P027.B04">
+Indeed, the 1,853 class members whose reports were disseminated to potential creditors have shown even greater injuries because we know those third parties, which are in part of consumers’ “file[s]” in TransUnion’s control. See Cortez , 617 F.3d at 711. The Third Circuit unequivocally rejected that argument. Id . at 711 (“We do not believe that Congress intended to allow credit reporting companies to escape the disclosure requirement in § 1681a(g) by simply contracting with a third party to store and maintain information that would otherwise clearly be part of the consumer’s file and is included in a credit report.”)
+</BLOCK>
+<BLOCK id="DOC005.P027.B05">
+(emphasis added); see also id . at 703 (noting that “TransUnion decided not to include the underlying information for its OFAC product in TransUnion’s own database” and “decided to use Accuity rather than maintain the information itself.”).
+</BLOCK>
 
 [Page 28]
-[CITE_START:DOC005[P028.B01]] 28 
+<BLOCK id="DOC005.P028.B01">
+28 
 R AMIREZ V . T RANS U NION
 the business of denying or approving credit-related requests, 
 actually accessed those class members’ reports containing 
@@ -560,27 +787,55 @@ prohibited from transacting business in the United States
 because the consumer is a criminal or a threat to national 
 security.  This is not to mention the reputational harm that 
 inevitably results from disseminating this information to a 
-potential creditor. [CITE_END:DOC005[P028.B01]]
-[CITE_START:DOC005[P028.B02]] As to the remaining 6,332 class members, TransUnion argues these class members cannot show any injury because their reports were not disseminated to third parties. However, this reading of the injury-in-fact requirement is too narrow. True, Spokeo III did not “consider whether a plaintiff would allege a concrete harm if he alleged only that a materially inaccurate report about him was prepared but never published.” 867 F.3d at 1116 n.3 (emphases omitted). But that situation is not this case. Here, the fact that TransUnion made the reports available to numerous potential creditors and employers—coupled with the highly sensitive and distressing [CITE_END:DOC005[P028.B02]]
-[CITE_START:DOC005[P028.B03]] nature of the OFAC alerts disclosed to the consumers, the risk of third-party access TransUnion created through its dealings with Accuity, and the federal government’s awareness of the alerts—is sufficient to show a material risk of harm to the concrete interests of all class members. 8 8 Our dissenting colleague argues that the risk of harm to class members other than Ramirez is too speculative. According to the dissent, “counsel presented no evidence about the consequences of dissemination of the reports for any class member other than Ramirez” and could have offered “expert testimony, representative class members, [CITE_END:DOC005[P028.B03]]
+potential creditor.
+</BLOCK>
+<BLOCK id="DOC005.P028.B02">
+As to the remaining 6,332 class members, TransUnion argues these class members cannot show any injury because their reports were not disseminated to third parties. However, this reading of the injury-in-fact requirement is too narrow. True, Spokeo III did not “consider whether a plaintiff would allege a concrete harm if he alleged only that a materially inaccurate report about him was prepared but never published.” 867 F.3d at 1116 n.3 (emphases omitted). But that situation is not this case. Here, the fact that TransUnion made the reports available to numerous potential creditors and employers—coupled with the highly sensitive and distressing
+</BLOCK>
+<BLOCK id="DOC005.P028.B03">
+nature of the OFAC alerts disclosed to the consumers, the risk of third-party access TransUnion created through its dealings with Accuity, and the federal government’s awareness of the alerts—is sufficient to show a material risk of harm to the concrete interests of all class members. 8 8 Our dissenting colleague argues that the risk of harm to class members other than Ramirez is too speculative. According to the dissent, “counsel presented no evidence about the consequences of dissemination of the reports for any class member other than Ramirez” and could have offered “expert testimony, representative class members,
+</BLOCK>
 
 [Page 29]
-[CITE_START:DOC005[P029.B01]] R AMIREZ V . T RANS U NION 29 This case is distinguishable from Owner-Operator Independent Drivers Ass’n, Inc., et al., v. United States Department of Transportation et al. , 879 F.3d 339 (D.C. Cir. 2018), a case relied on heavily by the dissent. There, the plaintiffs argued that they were injured “by the mere existence of inaccurate information” in a database operated by the Federal Motor Carrier Safety Administration, but they conceded that their information was not at risk of dissemination, and the record showed that any risk of future disclosure of inaccurate information was “virtually eliminated by the [CITE_END:DOC005[P029.B01]]
-[CITE_START:DOC005[P029.B02]] Department’s adoption of an interpretive rule.” Id . at 343, 346. The court held that, although “it is possible that the mere existence of inaccurate information in a government database could cause concrete harm depending on how that information is to be used,” no such harm or risk of future harm existed because the record showed there was no risk of disclosure for the absent class members. Id . at 347. Here, by contrast, the class’s claim of injury does not simply rest on TransUnion’s maintenance of and credit agency protocol to fill this gap.” To the extent the dissent [CITE_END:DOC005[P029.B02]]
-[CITE_START:DOC005[P029.B03]] suggests that there is no evidence about dissemination of any of the class members’ reports other than Ramirez’s, that is inaccurate; indeed, as the dissent recognizes, the parties stipulated that at least a portion of the class had their credit reports requested by a potential credit grantor. As noted above, this evidence coupled with other evidence shows that the remainder of the class members were subject to a material risk of harm. To the extent the dissent suggests that class counsel had to show that all class members suffered adverse consequences as a result of dissemination of their reports, this [CITE_END:DOC005[P029.B03]]
-[CITE_START:DOC005[P029.B04]] is also incorrect. See Spokeo III , 867 F.3d at 1118 (“[I]n the context of [the] FCRA, [an] intangible injury is itself sufficiently concrete. It is of no consequence how likely [the plaintiff] is to suffer additional concrete harm as well (such as the loss of a specific job opportunity).”). The dissent offers no support for the proposition that counsel was required to introduce expert testimony and the other type of evidence that the dissent identifies, precisely because none exists. [CITE_END:DOC005[P029.B04]]
+<BLOCK id="DOC005.P029.B01">
+R AMIREZ V . T RANS U NION 29 This case is distinguishable from Owner-Operator Independent Drivers Ass’n, Inc., et al., v. United States Department of Transportation et al. , 879 F.3d 339 (D.C. Cir. 2018), a case relied on heavily by the dissent. There, the plaintiffs argued that they were injured “by the mere existence of inaccurate information” in a database operated by the Federal Motor Carrier Safety Administration, but they conceded that their information was not at risk of dissemination, and the record showed that any risk of future disclosure of inaccurate information was “virtually eliminated by the
+</BLOCK>
+<BLOCK id="DOC005.P029.B02">
+Department’s adoption of an interpretive rule.” Id . at 343, 346. The court held that, although “it is possible that the mere existence of inaccurate information in a government database could cause concrete harm depending on how that information is to be used,” no such harm or risk of future harm existed because the record showed there was no risk of disclosure for the absent class members. Id . at 347. Here, by contrast, the class’s claim of injury does not simply rest on TransUnion’s maintenance of and credit agency protocol to fill this gap.” To the extent the dissent
+</BLOCK>
+<BLOCK id="DOC005.P029.B03">
+suggests that there is no evidence about dissemination of any of the class members’ reports other than Ramirez’s, that is inaccurate; indeed, as the dissent recognizes, the parties stipulated that at least a portion of the class had their credit reports requested by a potential credit grantor. As noted above, this evidence coupled with other evidence shows that the remainder of the class members were subject to a material risk of harm. To the extent the dissent suggests that class counsel had to show that all class members suffered adverse consequences as a result of dissemination of their reports, this
+</BLOCK>
+<BLOCK id="DOC005.P029.B04">
+is also incorrect. See Spokeo III , 867 F.3d at 1118 (“[I]n the context of [the] FCRA, [an] intangible injury is itself sufficiently concrete. It is of no consequence how likely [the plaintiff] is to suffer additional concrete harm as well (such as the loss of a specific job opportunity).”). The dissent offers no support for the proposition that counsel was required to introduce expert testimony and the other type of evidence that the dissent identifies, precisely because none exists.
+</BLOCK>
 
 [Page 30]
-[CITE_START:DOC005[P030.B01]] 30 R AMIREZ V . T RANS U NION an inaccurate database, with conclusive evidence that there is no risk of dissemination. 9 We are not faced with a mere technical or procedural FCRA violation here. There may be a case where the nature of the inaccurate information is such that no risk of harm arises until the credit report information of all class members 9 The other out-of-circuit cases cited by the dissent are similarly distinguishable. See Gubala v. Time Warner Cable, Inc. , 846 F.3d 909, 912 (7th Cir. 2017) (“Had [plaintiff] reason to believe the company intends [CITE_END:DOC005[P030.B01]]
-[CITE_START:DOC005[P030.B02]] to release any of that information or cannot be trusted to retain it, he would have grounds for obtaining injunctive relief; but he doesn’t even argue that there is a risk of such leakage.”); Braitberg v. Charter Commc’ns, Inc. , 836 F.3d 925, 930 (8th Cir. 2016) (holding that plaintiff had no standing to sue under the Cable Communications Policy Act, where he merely alleged that defendant failed to destroy plaintiff’s personally identifiable information and retained certain information longer than the company should have kept it). This case is also distinguishable from Bassett v. ABM Parking Servs., Inc. , 883 [CITE_END:DOC005[P030.B02]]
-[CITE_START:DOC005[P030.B03]] F.3d 776 (9th Cir. 2018). Bassett involved a vendor that printed the expiration date of the plaintiff’s credit card on the plaintiff’s receipt for a one-time transaction, in violation of another FCRA provision. Id. at 777. There was no material risk of harm because only the cardholder himself ever saw the receipt. Id. at 783. This case involves credit reports, not receipts. Credit reports, unlike receipts, exist for the purpose of being disseminated to third parties. Moreover, the risk of harm is much more direct here. An OFAC alert placed on a credit report runs an almost inevitable risk of [CITE_END:DOC005[P030.B03]]
-[CITE_START:DOC005[P030.B04]] reputational harm, emotional distress, and/or denial of credit or employment if disclosed to a third party—real-world harms. In contrast, printing the expiration date of a credit card does not pose such inevitable risk; rather, harm would only materialize if a number of other contingencies occurred. Bassett also did not involve a third-party vendor with access to the inaccurate information or evidence that the defendant’s practice created confusion and interaction with an intelligence agency among consumers receiving the inaccurate information. This case is more analogous to Spokeo III , 867 F.3d 1108, and Pedro v. Equifax, Inc. , 868 F.3d 1275 [CITE_END:DOC005[P030.B04]]
-[CITE_START:DOC005[P030.B05]] (11th Cir. 2017) (holding that the plaintiff had standing where credit reporting agency included a debt the plaintiff did not owe in the plaintiff’s consumer report). [CITE_END:DOC005[P030.B05]]
+<BLOCK id="DOC005.P030.B01">
+30 R AMIREZ V . T RANS U NION an inaccurate database, with conclusive evidence that there is no risk of dissemination. 9 We are not faced with a mere technical or procedural FCRA violation here. There may be a case where the nature of the inaccurate information is such that no risk of harm arises until the credit report information of all class members 9 The other out-of-circuit cases cited by the dissent are similarly distinguishable. See Gubala v. Time Warner Cable, Inc. , 846 F.3d 909, 912 (7th Cir. 2017) (“Had [plaintiff] reason to believe the company intends
+</BLOCK>
+<BLOCK id="DOC005.P030.B02">
+to release any of that information or cannot be trusted to retain it, he would have grounds for obtaining injunctive relief; but he doesn’t even argue that there is a risk of such leakage.”); Braitberg v. Charter Commc’ns, Inc. , 836 F.3d 925, 930 (8th Cir. 2016) (holding that plaintiff had no standing to sue under the Cable Communications Policy Act, where he merely alleged that defendant failed to destroy plaintiff’s personally identifiable information and retained certain information longer than the company should have kept it). This case is also distinguishable from Bassett v. ABM Parking Servs., Inc. , 883
+</BLOCK>
+<BLOCK id="DOC005.P030.B03">
+F.3d 776 (9th Cir. 2018). Bassett involved a vendor that printed the expiration date of the plaintiff’s credit card on the plaintiff’s receipt for a one-time transaction, in violation of another FCRA provision. Id. at 777. There was no material risk of harm because only the cardholder himself ever saw the receipt. Id. at 783. This case involves credit reports, not receipts. Credit reports, unlike receipts, exist for the purpose of being disseminated to third parties. Moreover, the risk of harm is much more direct here. An OFAC alert placed on a credit report runs an almost inevitable risk of
+</BLOCK>
+<BLOCK id="DOC005.P030.B04">
+reputational harm, emotional distress, and/or denial of credit or employment if disclosed to a third party—real-world harms. In contrast, printing the expiration date of a credit card does not pose such inevitable risk; rather, harm would only materialize if a number of other contingencies occurred. Bassett also did not involve a third-party vendor with access to the inaccurate information or evidence that the defendant’s practice created confusion and interaction with an intelligence agency among consumers receiving the inaccurate information. This case is more analogous to Spokeo III , 867 F.3d 1108, and Pedro v. Equifax, Inc. , 868 F.3d 1275
+</BLOCK>
+<BLOCK id="DOC005.P030.B05">
+(11th Cir. 2017) (holding that the plaintiff had standing where credit reporting agency included a debt the plaintiff did not owe in the plaintiff’s consumer report).
+</BLOCK>
 
 [Page 31]
-[CITE_START:DOC005[P031.B01]] R AMIREZ V . T RANS U NION 31 is actually disseminated to a third party, but this is not it. On the facts of this case, we hold that a real risk of harm arose when TransUnion prepared the inaccurate reports and made them readily available to third parties, and certainly once TransUnion sent the inaccurate information to the class members and some class members’ reports were disseminated to third parties. This risk of harm was directly caused by TransUnion’s failure to follow reasonable procedures to ensure maximum possible accuracy of its OFAC information, and an award of damages [CITE_END:DOC005[P031.B01]]
-[CITE_START:DOC005[P031.B02]] would redress the harm caused by the risk. 2. Disclosure and Summary-of-Rights Claims The class’s second and third claims were that TransUnion failed to: (a) disclose that the class members had been identified as potential OFAC matches when the consumers requested their credit reports, in violation of § 1681g(a); and (b) include a summary-of-rights form when TransUnion mailed the separate OFAC Letters, in violation of § 1681g(c)(2). Although we must analyze standing on a claim-by-claim basis, the injuries produced by these two violations are closely intertwined. [CITE_END:DOC005[P031.B02]]
-[CITE_START:DOC005[P031.B03]] Subsections (a) and (c)(2) work together to protect 
+<BLOCK id="DOC005.P031.B01">
+R AMIREZ V . T RANS U NION 31 is actually disseminated to a third party, but this is not it. On the facts of this case, we hold that a real risk of harm arose when TransUnion prepared the inaccurate reports and made them readily available to third parties, and certainly once TransUnion sent the inaccurate information to the class members and some class members’ reports were disseminated to third parties. This risk of harm was directly caused by TransUnion’s failure to follow reasonable procedures to ensure maximum possible accuracy of its OFAC information, and an award of damages
+</BLOCK>
+<BLOCK id="DOC005.P031.B02">
+would redress the harm caused by the risk. 2. Disclosure and Summary-of-Rights Claims The class’s second and third claims were that TransUnion failed to: (a) disclose that the class members had been identified as potential OFAC matches when the consumers requested their credit reports, in violation of § 1681g(a); and (b) include a summary-of-rights form when TransUnion mailed the separate OFAC Letters, in violation of § 1681g(c)(2). Although we must analyze standing on a claim-by-claim basis, the injuries produced by these two violations are closely intertwined.
+</BLOCK>
+<BLOCK id="DOC005.P031.B03">
+Subsections (a) and (c)(2) work together to protect 
 consumers’ interests in having access to the information in 
 their credit reports upon request and understanding how to 
 correct inaccurate information in their credit reports upon 
@@ -591,10 +846,12 @@ in enacting the FCRA:  “to protect consumers from the
 transmission of inaccurate information about them[.]”  
 Guimond , 45 F.3d at 1333;  see also Gillespie v. Equifax Info. 
 Servs., LLC , 484 F.3d 938, 941 (7th Cir. 2007) (“A primary 
-purpose of the statutory scheme provided by the disclosure [CITE_END:DOC005[P031.B03]]
+purpose of the statutory scheme provided by the disclosure
+</BLOCK>
 
 [Page 32]
-[CITE_START:DOC005[P032.B01]] 32 
+<BLOCK id="DOC005.P032.B01">
+32 
 R AMIREZ V . T RANS U NION
 in § 1681g(a)(1) is to allow consumers to identify inaccurate 
 information in their credit files and correct this information 
@@ -607,72 +864,106 @@ protection procedure established by Congress under the
 FCRA.”).  We have previously acknowledged that the rights 
 created by the FCRA to accomplish this purpose “resemble 
 other reputational and privacy interests that have long been 
-protected in the law.”   Spokeo III , 867 F.3d at 1114. [CITE_END:DOC005[P032.B01]]
-[CITE_START:DOC005[P032.B02]] These are not mere procedural or technical requirements. They protect consumers’ concrete interest in accessing important information about themselves and understanding how to dispute inaccurate information before it reaches potential creditors. Cf. Syed v. M-I, LLC , 853 F.3d 492, 499– 500 (9th Cir. 2017) (holding that the FCRA provision requiring prospective employers to obtain a consumer’s consent before obtaining a credit report in a standalone document protected a concrete informational and privacy interest); Nayab v. Capital One Bank (USA), N.A. , 942 F.3d 480, 490–93 (9th Cir. 2019) (holding that every violation of the FCRA provision that prohibits obtaining [CITE_END:DOC005[P032.B02]]
-[CITE_START:DOC005[P032.B03]] a credit report for an unauthorized purpose violates the consumer’s substantive privacy interest, and the consumer has standing “regardless whether the credit report is published or otherwise used by [a] third-party” and “need not allege any further harm” (quoting Eichenberger v. ESPN, Inc ., 876 F.3d 979, 983–84 (9th Cir. 2017))). And although the FCRA’s disclosure requirements may seem “procedural” in nature, Congress enacted them because they are the only practical way to protect consumers’ interests in fair and accurate credit reporting. See Spokeo III , 867 F.3d at 1113. [CITE_END:DOC005[P032.B03]]
+protected in the law.”   Spokeo III , 867 F.3d at 1114.
+</BLOCK>
+<BLOCK id="DOC005.P032.B02">
+These are not mere procedural or technical requirements. They protect consumers’ concrete interest in accessing important information about themselves and understanding how to dispute inaccurate information before it reaches potential creditors. Cf. Syed v. M-I, LLC , 853 F.3d 492, 499– 500 (9th Cir. 2017) (holding that the FCRA provision requiring prospective employers to obtain a consumer’s consent before obtaining a credit report in a standalone document protected a concrete informational and privacy interest); Nayab v. Capital One Bank (USA), N.A. , 942 F.3d 480, 490–93 (9th Cir. 2019) (holding that every violation of the FCRA provision that prohibits obtaining
+</BLOCK>
+<BLOCK id="DOC005.P032.B03">
+a credit report for an unauthorized purpose violates the consumer’s substantive privacy interest, and the consumer has standing “regardless whether the credit report is published or otherwise used by [a] third-party” and “need not allege any further harm” (quoting Eichenberger v. ESPN, Inc ., 876 F.3d 979, 983–84 (9th Cir. 2017))). And although the FCRA’s disclosure requirements may seem “procedural” in nature, Congress enacted them because they are the only practical way to protect consumers’ interests in fair and accurate credit reporting. See Spokeo III , 867 F.3d at 1113.
+</BLOCK>
 
 [Page 33]
-[CITE_START:DOC005[P033.B01]] R AMIREZ V . T RANS U NION 33 Therefore, step one of the Spokeo III framework is satisfied for both claims. At step two, we have no trouble concluding that TransUnion’s disclosure violations exposed all class members to a material risk of harm to their concrete informational interests. TransUnion sent the class members a document that purported to be their entire credit report, containing no mention of OFAC. This put every class member at a risk of real harm: not knowing that they were falsely being labeled as terrorists, drug dealers, and threats to national security. Then, TransUnion sent [CITE_END:DOC005[P033.B01]]
-[CITE_START:DOC005[P033.B02]] the class members the separate OFAC Letter without a summary-of- rights form. This conduct posed a serious risk that consumers not only would be unaware that this damaging label was on their credit reports, but also would be left completely in the dark about how they could get the label off their reports. 10 TransUnion’s conduct therefore exposed 10 The dissent suggests that, to establish standing for these two claims under Section 1681g, every class member must have shown evidence of shock or confusion. However, all members of the class were falsely labeled by TransUnion as terrorists and national security [CITE_END:DOC005[P033.B02]]
-[CITE_START:DOC005[P033.B03]] threats and requested a copy of their credit reports, and TransUnion sent the confusing mailings to all class members. The mailings that TransUnion provided to class members were inherently shocking and confusing, and Ramirez, as the class representative, testified to that effect. To require further individualized evidence of shock or confusion would defeat the purpose of class actions. And while there may exist a case where additional evidence would be required to ascertain whether the absent class members were indeed shocked or confused, this case is not it. See also Fed. Election Comm’n v. Akins , 524 U.S. 11, 21 [CITE_END:DOC005[P033.B03]]
-[CITE_START:DOC005[P033.B04]] (1998) (“[T]his Court has previously held that a plaintiff suffers an ‘injury in fact’ when the plaintiff fails to obtain information which must be publicly disclosed pursuant to a statute.”); Pub. Citizen v. U.S. Dep’t of Justice, 491 U.S. 440, 449 (1989) (holding that failure to obtain information subject to disclosure under Federal Advisory Committee Act was sufficient injury to confer standing); Havens Realty Corp. v. Coleman, 455 U.S. 363, 374 [CITE_END:DOC005[P033.B04]]
+<BLOCK id="DOC005.P033.B01">
+R AMIREZ V . T RANS U NION 33 Therefore, step one of the Spokeo III framework is satisfied for both claims. At step two, we have no trouble concluding that TransUnion’s disclosure violations exposed all class members to a material risk of harm to their concrete informational interests. TransUnion sent the class members a document that purported to be their entire credit report, containing no mention of OFAC. This put every class member at a risk of real harm: not knowing that they were falsely being labeled as terrorists, drug dealers, and threats to national security. Then, TransUnion sent
+</BLOCK>
+<BLOCK id="DOC005.P033.B02">
+the class members the separate OFAC Letter without a summary-of- rights form. This conduct posed a serious risk that consumers not only would be unaware that this damaging label was on their credit reports, but also would be left completely in the dark about how they could get the label off their reports. 10 TransUnion’s conduct therefore exposed 10 The dissent suggests that, to establish standing for these two claims under Section 1681g, every class member must have shown evidence of shock or confusion. However, all members of the class were falsely labeled by TransUnion as terrorists and national security
+</BLOCK>
+<BLOCK id="DOC005.P033.B03">
+threats and requested a copy of their credit reports, and TransUnion sent the confusing mailings to all class members. The mailings that TransUnion provided to class members were inherently shocking and confusing, and Ramirez, as the class representative, testified to that effect. To require further individualized evidence of shock or confusion would defeat the purpose of class actions. And while there may exist a case where additional evidence would be required to ascertain whether the absent class members were indeed shocked or confused, this case is not it. See also Fed. Election Comm’n v. Akins , 524 U.S. 11, 21
+</BLOCK>
+<BLOCK id="DOC005.P033.B04">
+(1998) (“[T]his Court has previously held that a plaintiff suffers an ‘injury in fact’ when the plaintiff fails to obtain information which must be publicly disclosed pursuant to a statute.”); Pub. Citizen v. U.S. Dep’t of Justice, 491 U.S. 440, 449 (1989) (holding that failure to obtain information subject to disclosure under Federal Advisory Committee Act was sufficient injury to confer standing); Havens Realty Corp. v. Coleman, 455 U.S. 363, 374
+</BLOCK>
 
 [Page 34]
-[CITE_START:DOC005[P034.B01]] 34 
+<BLOCK id="DOC005.P034.B01">
+34 
 R AMIREZ V . T RANS U NION
 every class member to a material risk of harm to the core 
 interests the FCRA was designed to protect—their interests 
 in being able to monitor their credit reports and promptly 
-correct inaccuracies. 11 [CITE_END:DOC005[P034.B01]]
-[CITE_START:DOC005[P034.B02]] C. Standing Conclusion [CITE_END:DOC005[P034.B02]]
-[CITE_START:DOC005[P034.B03]] We agree with TransUnion that every class member 
+correct inaccuracies. 11
+</BLOCK>
+<BLOCK id="DOC005.P034.B02">
+C. Standing Conclusion
+</BLOCK>
+<BLOCK id="DOC005.P034.B03">
+We agree with TransUnion that every class member 
 needs standing to recover damages at the final judgment 
 stage.  But we also agree with Ramirez and the class that 
 every class member has standing on each of the claims in 
 this case.  We therefore affirm the district court’s denial of 
 TransUnion’s motion to decertify the class for lack of 
 standing and TransUnion’s post-trial motions based on the 
-same grounds. [CITE_END:DOC005[P034.B03]]
-[CITE_START:DOC005[P034.B04]] III. Willfulness [CITE_END:DOC005[P034.B04]]
-[CITE_START:DOC005[P034.B05]] TransUnion next contends that it was entitled to 
+same grounds.
+</BLOCK>
+<BLOCK id="DOC005.P034.B04">
+III. Willfulness
+</BLOCK>
+<BLOCK id="DOC005.P034.B05">
+TransUnion next contends that it was entitled to 
 judgment as a matter of law or to a new trial because 
-Ramirez failed to prove that any of TransUnion’s FCRA [CITE_END:DOC005[P034.B05]]
-[CITE_START:DOC005[P034.B06]] (1982) (holding that disclosure of false information about housing 
+Ramirez failed to prove that any of TransUnion’s FCRA
+</BLOCK>
+<BLOCK id="DOC005.P034.B06">
+(1982) (holding that disclosure of false information about housing 
 availability was sufficient injury to confer standing under the Fair 
 Housing Act, even where plaintiff “may have approached the real estate 
 agent fully expecting that he would receive false information, and 
-without any intention of buying or renting a home”). [CITE_END:DOC005[P034.B06]]
-[CITE_START:DOC005[P034.B07]] 11  We note that in many instances a violation of §§ 1681g(a) or 
+without any intention of buying or renting a home”).
+</BLOCK>
+<BLOCK id="DOC005.P034.B07">
+11  We note that in many instances a violation of §§ 1681g(a) or 
 1681g(c)(2) might pose no risk of harm.  For example, there likely would 
 be no risk of harm if the information excluded from the file disclosure 
 were an inaccurate zip code rather than an inaccurate OFAC alert.  And 
 a failure to include a summary of rights might pose no risk of harm if 
-there was no inaccurate information in the consumer’s file to begin with. [CITE_END:DOC005[P034.B07]]
+there was no inaccurate information in the consumer’s file to begin with.
+</BLOCK>
 
 [Page 35]
-[CITE_START:DOC005[P035.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P035.B01">
+R AMIREZ V . T RANS U NION
 35 
 violations were  willful . 12   TransUnion argues that its conduct 
 complied with the statute as a matter of law, or, in the 
 alternative, that its conduct was based on reasonable but 
 mistaken interpretations of the statute. 13   The district court 
 rejected these arguments and found that substantial evidence 
-supported the jury’s findings. [CITE_END:DOC005[P035.B01]]
-[CITE_START:DOC005[P035.B02]] We review the denial of a motion for judgment as a 
+supported the jury’s findings.
+</BLOCK>
+<BLOCK id="DOC005.P035.B02">
+We review the denial of a motion for judgment as a 
 matter of law  de novo ,  Josephs v. Pac. Bell , 443 F.3d 1050, 
 1062 (9th Cir. 2006), and we review the denial of a motion 
 for a new trial for abuse of discretion,  Guy v. City of San 
 Diego , 608 F.3d 582, 585 (9th Cir. 2010).  We affirm the 
-district court. [CITE_END:DOC005[P035.B02]]
-[CITE_START:DOC005[P035.B03]] Judgment as a matter of law is appropriate only when the 
+district court.
+</BLOCK>
+<BLOCK id="DOC005.P035.B03">
+Judgment as a matter of law is appropriate only when the 
 evidence—viewed in the light most favorable to the non-
 moving party—permits a reasonable jury to reach only one 
 conclusion, and that conclusion is contrary to the jury’s 
 verdict.   Martin v. Cal. Dep’t of Veterans Affairs , 560 F.3d 
 1042, 1046 (9th Cir. 2009).  Similarly, a new trial is 
 appropriate only if “the verdict is against the clear weight of 
-the evidence[.]”   Id. [CITE_END:DOC005[P035.B03]]
-[CITE_START:DOC005[P035.B04]] An FCRA violation is willful when a CRA either 
+the evidence[.]”   Id.
+</BLOCK>
+<BLOCK id="DOC005.P035.B04">
+An FCRA violation is willful when a CRA either 
 knowingly violates the statute or recklessly disregards its 
 requirements.   Safeco Ins. Co. of Am. v. Burr , 551 U.S. 47, 
 56–57 (2007).  A CRA recklessly disregards the statute if it 
@@ -680,40 +971,74 @@ adopts an objectively unreasonable interpretation that runs 12  Ramirez and the 
 of their three claims, presumably because statutory and punitive damages 
 are available for willful, but not negligent, FCRA violations.   See
 15 U.S.C. §§ 1681n, 1681o. 13  TransUnion does not challenge the verdict form or jury 
-instructions, which closely tracked the text of the FCRA. [CITE_END:DOC005[P035.B04]]
+instructions, which closely tracked the text of the FCRA.
+</BLOCK>
 
 [Page 36]
-[CITE_START:DOC005[P036.B01]] 36 R AMIREZ V . T RANS U NION “a risk of violating the law substantially greater than the risk associated with a reading that [is] merely careless.” Id. at 69. When “conduct is so patently violative” of the FCRA that any reasonable person would know without guidance that its interpretation was erroneous, “closely analogous pre- existing” guidance from the courts is unnecessary. Syed , 853 F.3d at 504 (quoting Boyd v. Benton Cty. , 374 F.3d 773, 781 (9th Cir. 2004)). A. Reasonable Procedures Claim Plaintiffs presented evidence that—despite being told in 2010 by another circuit court that OFAC [CITE_END:DOC005[P036.B01]]
-[CITE_START:DOC005[P036.B02]] alerts were covered by the FCRA and subject to § 1681e(b)’s reasonable procedures requirement—TransUnion continued to utilize name-only searches to produce OFAC “matches.” Most notably, the Third Circuit specifically reprimanded TransUnion for failing to use an additional identifier such as date of birth to verify the accuracy of OFAC matches. See Cortez , 617 F.3d at 723 (“Given the severe potential consequences of [associating a consumer with an SDN, TransUnion’s] failure to take the utmost care in ensuring the information’s accuracy—at the very least, comparing birth dates when they are available—is reprehensible.”). Nonetheless, TransUnion continued to use only first and [CITE_END:DOC005[P036.B02]]
-[CITE_START:DOC005[P036.B03]] last names to identify OFAC matches until 2013. A reasonable jury could conclude that this was objectively unreasonable and ran a risk of error substantially greater than a merely careless interpretation. See Safeco Ins. Co. of Am. , 551 U.S. at 70 (noting that a finding of recklessness is more appropriate when the defendant had “guidance from the courts of appeals . . . that might have warned it away from the view it took”). [CITE_END:DOC005[P036.B03]]
+<BLOCK id="DOC005.P036.B01">
+36 R AMIREZ V . T RANS U NION “a risk of violating the law substantially greater than the risk associated with a reading that [is] merely careless.” Id. at 69. When “conduct is so patently violative” of the FCRA that any reasonable person would know without guidance that its interpretation was erroneous, “closely analogous pre- existing” guidance from the courts is unnecessary. Syed , 853 F.3d at 504 (quoting Boyd v. Benton Cty. , 374 F.3d 773, 781 (9th Cir. 2004)). A. Reasonable Procedures Claim Plaintiffs presented evidence that—despite being told in 2010 by another circuit court that OFAC
+</BLOCK>
+<BLOCK id="DOC005.P036.B02">
+alerts were covered by the FCRA and subject to § 1681e(b)’s reasonable procedures requirement—TransUnion continued to utilize name-only searches to produce OFAC “matches.” Most notably, the Third Circuit specifically reprimanded TransUnion for failing to use an additional identifier such as date of birth to verify the accuracy of OFAC matches. See Cortez , 617 F.3d at 723 (“Given the severe potential consequences of [associating a consumer with an SDN, TransUnion’s] failure to take the utmost care in ensuring the information’s accuracy—at the very least, comparing birth dates when they are available—is reprehensible.”). Nonetheless, TransUnion continued to use only first and
+</BLOCK>
+<BLOCK id="DOC005.P036.B03">
+last names to identify OFAC matches until 2013. A reasonable jury could conclude that this was objectively unreasonable and ran a risk of error substantially greater than a merely careless interpretation. See Safeco Ins. Co. of Am. , 551 U.S. at 70 (noting that a finding of recklessness is more appropriate when the defendant had “guidance from the courts of appeals . . . that might have warned it away from the view it took”).
+</BLOCK>
 
 [Page 37]
-[CITE_START:DOC005[P037.B01]] R AMIREZ V . T RANS U NION
-37 [CITE_END:DOC005[P037.B01]]
-[CITE_START:DOC005[P037.B02]] B. Disclosure Claim [CITE_END:DOC005[P037.B02]]
-[CITE_START:DOC005[P037.B03]] Section 1681g(a) required TransUnion to “clearly and accurately” disclose “[a]ll information in the consumer’s file” when the class members requested their reports. 15 U.S.C. § 1681g(a)(1). Plaintiffs presented evidence that TransUnion adopted a policy of not including OFAC information on the credit reports it sent to consumers who requested their files, even though TransUnion included the OFAC information on the credit reports it sent to third parties regarding those same consumers. Instead, TransUnion sent the class members vague “courtesy” letters informing them that their names were “considered a potential match” to names on the OFAC list. Nowhere did the OFAC [CITE_END:DOC005[P037.B03]]
-[CITE_START:DOC005[P037.B04]] Letter disclose that the version of the class members’ credit reports sent to third parties contained an OFAC alert on the first page. [CITE_END:DOC005[P037.B04]]
-[CITE_START:DOC005[P037.B05]] TransUnion’s interpretation of § 1681g(a) as allowing this conduct is “unambiguously foreclose[d]” by the language of the statute itself, Syed , 853 F.3d at 505, which required TransUnion to clearly and accurately disclose all information in the consumers’ reports. 15 U.S.C. § 1681g(a)(1). TransUnion did not disclose all information. It left out the OFAC alerts. TransUnion argues that it did not omit the OFAC alerts from the reports, but simply mailed the OFAC alerts in separate envelopes. This contention is belied by the record. The reports themselves had a clearly indicated beginning and end, and the OFAC Letters explicitly stated [CITE_END:DOC005[P037.B05]]
-[CITE_START:DOC005[P037.B06]] that they were “separate[]” from the reports. And even if the OFAC Letters did sufficiently disclose that the OFAC alerts were part of the consumers’ reports (which they did not), no reasonable person could conclude that the OFAC Letters were a clear and accurate method of disclosure. See Syed , 853 F.3d at 504–06. [CITE_END:DOC005[P037.B06]]
+<BLOCK id="DOC005.P037.B01">
+R AMIREZ V . T RANS U NION
+37
+</BLOCK>
+<BLOCK id="DOC005.P037.B02">
+B. Disclosure Claim
+</BLOCK>
+<BLOCK id="DOC005.P037.B03">
+Section 1681g(a) required TransUnion to “clearly and accurately” disclose “[a]ll information in the consumer’s file” when the class members requested their reports. 15 U.S.C. § 1681g(a)(1). Plaintiffs presented evidence that TransUnion adopted a policy of not including OFAC information on the credit reports it sent to consumers who requested their files, even though TransUnion included the OFAC information on the credit reports it sent to third parties regarding those same consumers. Instead, TransUnion sent the class members vague “courtesy” letters informing them that their names were “considered a potential match” to names on the OFAC list. Nowhere did the OFAC
+</BLOCK>
+<BLOCK id="DOC005.P037.B04">
+Letter disclose that the version of the class members’ credit reports sent to third parties contained an OFAC alert on the first page.
+</BLOCK>
+<BLOCK id="DOC005.P037.B05">
+TransUnion’s interpretation of § 1681g(a) as allowing this conduct is “unambiguously foreclose[d]” by the language of the statute itself, Syed , 853 F.3d at 505, which required TransUnion to clearly and accurately disclose all information in the consumers’ reports. 15 U.S.C. § 1681g(a)(1). TransUnion did not disclose all information. It left out the OFAC alerts. TransUnion argues that it did not omit the OFAC alerts from the reports, but simply mailed the OFAC alerts in separate envelopes. This contention is belied by the record. The reports themselves had a clearly indicated beginning and end, and the OFAC Letters explicitly stated
+</BLOCK>
+<BLOCK id="DOC005.P037.B06">
+that they were “separate[]” from the reports. And even if the OFAC Letters did sufficiently disclose that the OFAC alerts were part of the consumers’ reports (which they did not), no reasonable person could conclude that the OFAC Letters were a clear and accurate method of disclosure. See Syed , 853 F.3d at 504–06.
+</BLOCK>
 
 [Page 38]
-[CITE_START:DOC005[P038.B01]] 38 
+<BLOCK id="DOC005.P038.B01">
+38 
 R AMIREZ V . T RANS U NION Moreover, the jury also heard evidence that the Third 
 Circuit had told TransUnion in 2010 that it could not 
 continue to treat OFAC information as somehow separate 
 from the other information included on consumer reports.  
 Accordingly, TransUnion had “guidance from the courts of 
 appeals” suggesting that its interpretation was erroneous.  
-Safeco Ins. Co. of Am. , 551 U.S. at 70. [CITE_END:DOC005[P038.B01]]
-[CITE_START:DOC005[P038.B02]] In sum, a reasonable jury could find that TransUnion was objectively unreasonable and ran a risk of error substantially greater than mere carelessness when it excluded arguably the most important piece of information in the class members’ files—the OFAC alerts—from the reports it sent to them and instead sent this information in a separate, confusing “courtesy” letter. C. Summary-of-Rights Claim Under 15 U.S.C. § 1681g(c)(2), TransUnion was required to provide a summary of rights “with each written disclosure” it sent to consumers pursuant to a consumer file request. TransUnion argues that it was reasonable to send the summary of rights [CITE_END:DOC005[P038.B02]]
-[CITE_START:DOC005[P038.B03]] with the first mailing, the consumer report, and assume that the class members would understand that the summary of rights also applied to the second mailing, the OFAC Letter. But as explained above, the two mailings clearly indicated that they were separate, rather than components of one disclosure. And the language of the statute is clear: A summary of rights must be sent with each written disclosure. Therefore, there was sufficient evidence to find a willful violation of § 1681g(c)(2) because any reasonable CRA would have known that TransUnion’s interpretation was in error. See Syed , 853 F.3d at 504–06. [CITE_END:DOC005[P038.B03]]
+Safeco Ins. Co. of Am. , 551 U.S. at 70.
+</BLOCK>
+<BLOCK id="DOC005.P038.B02">
+In sum, a reasonable jury could find that TransUnion was objectively unreasonable and ran a risk of error substantially greater than mere carelessness when it excluded arguably the most important piece of information in the class members’ files—the OFAC alerts—from the reports it sent to them and instead sent this information in a separate, confusing “courtesy” letter. C. Summary-of-Rights Claim Under 15 U.S.C. § 1681g(c)(2), TransUnion was required to provide a summary of rights “with each written disclosure” it sent to consumers pursuant to a consumer file request. TransUnion argues that it was reasonable to send the summary of rights
+</BLOCK>
+<BLOCK id="DOC005.P038.B03">
+with the first mailing, the consumer report, and assume that the class members would understand that the summary of rights also applied to the second mailing, the OFAC Letter. But as explained above, the two mailings clearly indicated that they were separate, rather than components of one disclosure. And the language of the statute is clear: A summary of rights must be sent with each written disclosure. Therefore, there was sufficient evidence to find a willful violation of § 1681g(c)(2) because any reasonable CRA would have known that TransUnion’s interpretation was in error. See Syed , 853 F.3d at 504–06.
+</BLOCK>
 
 [Page 39]
-[CITE_START:DOC005[P039.B01]] R AMIREZ V . T RANS U NION 39 D. Willfulness Conclusion Had this case been filed before the Third Circuit’s decision in Cortez , we might have been faced with a difficult question as to willfulness. But in light of Cortez , we have no difficulty upholding the verdict. TransUnion was provided with much of the guidance it needed to interpret its obligations under the FCRA with respect to OFAC alerts in 2010 when Cortez was decided. 617 F.3d at 695. Despite this warning, TransUnion continued to use problematic matching technology and to treat OFAC information as separate from [CITE_END:DOC005[P039.B01]]
-[CITE_START:DOC005[P039.B02]] other types of information on consumer reports. In doing so, it ran an unjustifiably high risk of error. The jury’s verdict is consistent with the law and supported by substantial evidence. Accordingly, we affirm the district court’s denial of TransUnion’s motion for judgment as a matter of law or a new trial. See Harper v. City of Los Angeles , 533 F.3d 1010, 1021 (9th Cir. 2008) (“A jury’s verdict must be upheld if it is supported by substantial evidence, which is evidence adequate to support the jury’s conclusion, even if it is also possible to draw a contrary conclusion.” [CITE_END:DOC005[P039.B02]]
-[CITE_START:DOC005[P039.B03]] (quoting Pavao v. Pagay , 307 F.3d 915, 918 (9th Cir. 2002))). [CITE_END:DOC005[P039.B03]]
-[CITE_START:DOC005[P039.B04]] IV. Rule 23 [CITE_END:DOC005[P039.B04]]
-[CITE_START:DOC005[P039.B05]] TransUnion next contends that the district court should 
+<BLOCK id="DOC005.P039.B01">
+R AMIREZ V . T RANS U NION 39 D. Willfulness Conclusion Had this case been filed before the Third Circuit’s decision in Cortez , we might have been faced with a difficult question as to willfulness. But in light of Cortez , we have no difficulty upholding the verdict. TransUnion was provided with much of the guidance it needed to interpret its obligations under the FCRA with respect to OFAC alerts in 2010 when Cortez was decided. 617 F.3d at 695. Despite this warning, TransUnion continued to use problematic matching technology and to treat OFAC information as separate from
+</BLOCK>
+<BLOCK id="DOC005.P039.B02">
+other types of information on consumer reports. In doing so, it ran an unjustifiably high risk of error. The jury’s verdict is consistent with the law and supported by substantial evidence. Accordingly, we affirm the district court’s denial of TransUnion’s motion for judgment as a matter of law or a new trial. See Harper v. City of Los Angeles , 533 F.3d 1010, 1021 (9th Cir. 2008) (“A jury’s verdict must be upheld if it is supported by substantial evidence, which is evidence adequate to support the jury’s conclusion, even if it is also possible to draw a contrary conclusion.”
+</BLOCK>
+<BLOCK id="DOC005.P039.B03">
+(quoting Pavao v. Pagay , 307 F.3d 915, 918 (9th Cir. 2002))).
+</BLOCK>
+<BLOCK id="DOC005.P039.B04">
+IV. Rule 23
+</BLOCK>
+<BLOCK id="DOC005.P039.B05">
+TransUnion next contends that the district court should 
 not have certified the class in this case because Ramirez’s 
 claims were not typical of the class’s claims, as required by 
 Federal Rule of Civil Procedure 23(a)(3).  We review the 
@@ -722,26 +1047,50 @@ discretion.   Wolin v. Jaguar Land Rover N. Am., LLC ,
 617 F.3d 1168, 1171 (9th Cir. 2010).  Our review is limited 
 to “whether the district court correctly selected and applied 
 Rule 23’s criteria.”   Parra v. Bashas’, Inc. , 536 F.3d 975, 
-977 (9th Cir. 2008). [CITE_END:DOC005[P039.B05]]
+977 (9th Cir. 2008).
+</BLOCK>
 
 [Page 40]
-[CITE_START:DOC005[P040.B01]] 40 R AMIREZ V . T RANS U NION TransUnion argues that Ramirez was not typical of the class because his injuries were more severe than the injuries suffered by the rest of the class. Ramirez’s credit report with the false OFAC alert was sent to a third party; Ramirez’s alert stated that he was a match instead of a potential match; Ramirez was denied credit because of the alert; he canceled a vacation because of the alert; and he spent significant time and energy trying to remove the alert, including hiring a lawyer. In contrast, only a quarter of [CITE_END:DOC005[P040.B01]]
-[CITE_START:DOC005[P040.B02]] the other class members had their credit reports sent to a third party during the class period, and there was no evidence regarding whether other class members had experiences similar to Ramirez’s as a result of the alerts. [CITE_END:DOC005[P040.B02]]
-[CITE_START:DOC005[P040.B03]] But these differences do not defeat typicality. The typicality inquiry focuses on “the nature of the claim . . . of the class representative, and not . . . the specific facts from which it arose.” Ellis v. Costco Wholesale Corp. , 657 F.3d 970, 984 (9th Cir. 2011) (quoting Hanon v. Dataproducts Corp. , 976 F.2d 497, 508 (9th Cir. 1992)). Even if Ramirez’s injuries were slightly more severe than some class members’ injuries, Ramirez’s injuries still arose “from the same event or practice or course of conduct that [gave] rise to the claims of other class members and [CITE_END:DOC005[P040.B03]]
-[CITE_START:DOC005[P040.B04]] [his claims were] based on the same legal theory.” Lacy v. Cook Cty., Ill. , 897 F.3d 847, 866 (7th Cir. 2018) (quoting Rosario v. Livaditi s, 963 F.2d 1013, 1018 (7th Cir. 1992)); see also Parsons v. Ryan , 754 F.3d 657, 685 (9th Cir. 2014) (“We do not insist that the named plaintiffs’ injuries be identical with those of the other class members, only that the unnamed class members have injuries similar to those of the named plaintiffs and that the injuries result from the same, injurious course of conduct.” (quoting Armstrong v. Davis , 275 F.3d 849, [CITE_END:DOC005[P040.B04]]
-[CITE_START:DOC005[P040.B05]] 869 (9th Cir. 2001))). [CITE_END:DOC005[P040.B05]]
+<BLOCK id="DOC005.P040.B01">
+40 R AMIREZ V . T RANS U NION TransUnion argues that Ramirez was not typical of the class because his injuries were more severe than the injuries suffered by the rest of the class. Ramirez’s credit report with the false OFAC alert was sent to a third party; Ramirez’s alert stated that he was a match instead of a potential match; Ramirez was denied credit because of the alert; he canceled a vacation because of the alert; and he spent significant time and energy trying to remove the alert, including hiring a lawyer. In contrast, only a quarter of
+</BLOCK>
+<BLOCK id="DOC005.P040.B02">
+the other class members had their credit reports sent to a third party during the class period, and there was no evidence regarding whether other class members had experiences similar to Ramirez’s as a result of the alerts.
+</BLOCK>
+<BLOCK id="DOC005.P040.B03">
+But these differences do not defeat typicality. The typicality inquiry focuses on “the nature of the claim . . . of the class representative, and not . . . the specific facts from which it arose.” Ellis v. Costco Wholesale Corp. , 657 F.3d 970, 984 (9th Cir. 2011) (quoting Hanon v. Dataproducts Corp. , 976 F.2d 497, 508 (9th Cir. 1992)). Even if Ramirez’s injuries were slightly more severe than some class members’ injuries, Ramirez’s injuries still arose “from the same event or practice or course of conduct that [gave] rise to the claims of other class members and
+</BLOCK>
+<BLOCK id="DOC005.P040.B04">
+[his claims were] based on the same legal theory.” Lacy v. Cook Cty., Ill. , 897 F.3d 847, 866 (7th Cir. 2018) (quoting Rosario v. Livaditi s, 963 F.2d 1013, 1018 (7th Cir. 1992)); see also Parsons v. Ryan , 754 F.3d 657, 685 (9th Cir. 2014) (“We do not insist that the named plaintiffs’ injuries be identical with those of the other class members, only that the unnamed class members have injuries similar to those of the named plaintiffs and that the injuries result from the same, injurious course of conduct.” (quoting Armstrong v. Davis , 275 F.3d 849,
+</BLOCK>
+<BLOCK id="DOC005.P040.B05">
+869 (9th Cir. 2001))).
+</BLOCK>
 
 [Page 41]
-[CITE_START:DOC005[P041.B01]] R AMIREZ V . T RANS U NION 41 Ramirez’s injuries were not so unique, unusual, or severe to make him an atypical representative of the class. A class representative satisfies typicality when his “personal narrative is somewhat more colorful” than other class members’ experiences, as long as his claim “falls within the common contours of” the class-wide theory of liability. Torres , 835 F.3d at 1142; see also Ellis , 657 F.3d at 985 n.9 (“Differing factual scenarios resulting in a claim of the same nature as other class members does not defeat typicality.”). Nor were the unique aspects [CITE_END:DOC005[P041.B01]]
-[CITE_START:DOC005[P041.B02]] of Ramirez’s claims significant to the point that they “threaten[ed] to become the focus of the litigation[.]” Torres , 835 F.3d at 1142 (quoting Hanon , 976 F.2d at 508). Accordingly, the district court did not abuse its discretion in certifying (and refusing to decertify) the class. 14 14 The dissent suggests that “the district court made compounding errors regarding class certification and standing” at earlier stages of the case. Indeed, TransUnion moved to decertify the class nearly a year before trial commenced, primarily on the basis that individualized issues of Article III standing predominated. The district court properly denied [CITE_END:DOC005[P041.B02]]
-[CITE_START:DOC005[P041.B03]] the motion, however, because only the class representative must show standing at the class certification stage. See Melendres , 784 F.3d at 1262; see also Vaquero v. Ashley Furniture Indus., Inc. , 824 F.3d 1150, 1155 (9th Cir. 2016) (“[T]he need for individual damages calculations does not, alone, defeat class certification.”). More importantly, the differences between Ramirez’s injuries and those of other class members are a matter of degree, not standing. In fact, the district court attempted to distinguish between the class members’ degrees of injury at the final pretrial conference. Specifically, the district court suggested to TransUnion that it [CITE_END:DOC005[P041.B03]]
-[CITE_START:DOC005[P041.B04]] could object at the charging conference to the aggregation of damages in the verdict form, such that if the jury found TransUnion liable, it could award damages proportional to the number of class members who suffered certain injuries, such as disclosure of their consumer reports to third parties. But TransUnion did not object to the verdict form at the charging conference, allowing the [CITE_END:DOC005[P041.B04]]
+<BLOCK id="DOC005.P041.B01">
+R AMIREZ V . T RANS U NION 41 Ramirez’s injuries were not so unique, unusual, or severe to make him an atypical representative of the class. A class representative satisfies typicality when his “personal narrative is somewhat more colorful” than other class members’ experiences, as long as his claim “falls within the common contours of” the class-wide theory of liability. Torres , 835 F.3d at 1142; see also Ellis , 657 F.3d at 985 n.9 (“Differing factual scenarios resulting in a claim of the same nature as other class members does not defeat typicality.”). Nor were the unique aspects
+</BLOCK>
+<BLOCK id="DOC005.P041.B02">
+of Ramirez’s claims significant to the point that they “threaten[ed] to become the focus of the litigation[.]” Torres , 835 F.3d at 1142 (quoting Hanon , 976 F.2d at 508). Accordingly, the district court did not abuse its discretion in certifying (and refusing to decertify) the class. 14 14 The dissent suggests that “the district court made compounding errors regarding class certification and standing” at earlier stages of the case. Indeed, TransUnion moved to decertify the class nearly a year before trial commenced, primarily on the basis that individualized issues of Article III standing predominated. The district court properly denied
+</BLOCK>
+<BLOCK id="DOC005.P041.B03">
+the motion, however, because only the class representative must show standing at the class certification stage. See Melendres , 784 F.3d at 1262; see also Vaquero v. Ashley Furniture Indus., Inc. , 824 F.3d 1150, 1155 (9th Cir. 2016) (“[T]he need for individual damages calculations does not, alone, defeat class certification.”). More importantly, the differences between Ramirez’s injuries and those of other class members are a matter of degree, not standing. In fact, the district court attempted to distinguish between the class members’ degrees of injury at the final pretrial conference. Specifically, the district court suggested to TransUnion that it
+</BLOCK>
+<BLOCK id="DOC005.P041.B04">
+could object at the charging conference to the aggregation of damages in the verdict form, such that if the jury found TransUnion liable, it could award damages proportional to the number of class members who suffered certain injuries, such as disclosure of their consumer reports to third parties. But TransUnion did not object to the verdict form at the charging conference, allowing the
+</BLOCK>
 
 [Page 42]
-[CITE_START:DOC005[P042.B01]] 42 
-R AMIREZ V . T RANS U NION [CITE_END:DOC005[P042.B01]]
-[CITE_START:DOC005[P042.B02]] V. Damages [CITE_END:DOC005[P042.B02]]
-[CITE_START:DOC005[P042.B03]] Finally, TransUnion argues that the jury’s statutory and 
+<BLOCK id="DOC005.P042.B01">
+42 
+R AMIREZ V . T RANS U NION
+</BLOCK>
+<BLOCK id="DOC005.P042.B02">
+V. Damages
+</BLOCK>
+<BLOCK id="DOC005.P042.B03">
+Finally, TransUnion argues that the jury’s statutory and 
 punitive damages awards were grossly excessive in violation 
 of the U.S. Constitution.  We review  de novo  the 
 constitutionality of punitive damages,  Cooper Indus. v. 
@@ -752,17 +1101,27 @@ for a new trial on damages for abuse of discretion,  Guy ,
 608 F.3d at 585.  We agree with the district court that there 
 is no basis to disturb the statutory damages award, but we 
 conclude that the punitive damages were unconstitutionally 
-excessive. [CITE_END:DOC005[P042.B03]]
-[CITE_START:DOC005[P042.B04]] A. Statutory Damages [CITE_END:DOC005[P042.B04]]
-[CITE_START:DOC005[P042.B05]] Under the FCRA, a plaintiff is entitled to statutory damages between $100 and $1,000 for any willful violation. 15 U.S.C. § 1681n(a)(1)(A). Here, the jury awarded $984.22 per class member for a total of about $8 million class-wide. TransUnion argues that this amount violates due process because it is “so severe and oppressive as to be wholly disproportioned to the offense and obviously unreasonable.” United States v. Citrin , 972 F.2d 1044, 1051 (9th Cir. 1992) (quoting St. Louis, I.M. & S. Ry. Co. v. Williams , 251 U.S. 63, 67 (1919)). 15 court to instruct the jury to award [CITE_END:DOC005[P042.B05]]
-[CITE_START:DOC005[P042.B06]] the same amount of damages to all class members—regardless of their degree of injury. [CITE_END:DOC005[P042.B06]]
-[CITE_START:DOC005[P042.B07]] 15  TransUnion also argued below for remittitur on the theory that the 
+excessive.
+</BLOCK>
+<BLOCK id="DOC005.P042.B04">
+A. Statutory Damages
+</BLOCK>
+<BLOCK id="DOC005.P042.B05">
+Under the FCRA, a plaintiff is entitled to statutory damages between $100 and $1,000 for any willful violation. 15 U.S.C. § 1681n(a)(1)(A). Here, the jury awarded $984.22 per class member for a total of about $8 million class-wide. TransUnion argues that this amount violates due process because it is “so severe and oppressive as to be wholly disproportioned to the offense and obviously unreasonable.” United States v. Citrin , 972 F.2d 1044, 1051 (9th Cir. 1992) (quoting St. Louis, I.M. & S. Ry. Co. v. Williams , 251 U.S. 63, 67 (1919)). 15 court to instruct the jury to award
+</BLOCK>
+<BLOCK id="DOC005.P042.B06">
+the same amount of damages to all class members—regardless of their degree of injury.
+</BLOCK>
+<BLOCK id="DOC005.P042.B07">
+15  TransUnion also argued below for remittitur on the theory that the 
 damages were “clearly not supported by the evidence, or only based on 
 speculation or guesswork.”   Guy , 608 F.3d at 585 (internal quotation 
-marks and citation omitted). [CITE_END:DOC005[P042.B07]]
+marks and citation omitted).
+</BLOCK>
 
 [Page 43]
-[CITE_START:DOC005[P043.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P043.B01">
+R AMIREZ V . T RANS U NION
 43 TransUnion’s argument is somewhat of a moving target, 
 but it relies primarily on this Court’s decision in  Six (6) 
 Mexican Workers v. Arizona Citrus Growers , 904 F.2d 1301 
@@ -772,8 +1131,10 @@ Farm Labor Contractor Registration Act (“FLCRA”).   Id .
 at 1303, 1312.  We explained that the “individual awards 
 exceeded what was necessary to compensate any potential 
 injury from the violations,”  id . at 1309, and the “aggregate 
-amount of [the] award was unprecedented,”  id.  at 1309–10. [CITE_END:DOC005[P043.B01]]
-[CITE_START:DOC005[P043.B02]] Six (6) Mexican Workers  is distinguishable from this 
+amount of [the] award was unprecedented,”  id.  at 1309–10.
+</BLOCK>
+<BLOCK id="DOC005.P043.B02">
+Six (6) Mexican Workers  is distinguishable from this 
 case for a number of reasons.  First, it involved a district 
 court’s determination of damages, which we reviewed for 
 abuse of discretion—rather than a jury’s determination, to 
@@ -784,8 +1145,10 @@ analysis that was specific to the now-repealed FLCRA, and
 it contained no discussion of constitutional due process.  
 Third, it involved an award of damages within the statutory 
 range for  each  FLCRA violation, rather than one award 
-within the statutory range for all violations combined. [CITE_END:DOC005[P043.B02]]
-[CITE_START:DOC005[P043.B03]] In any event, the jury’s award—which falls within the 
+within the statutory range for all violations combined.
+</BLOCK>
+<BLOCK id="DOC005.P043.B03">
+In any event, the jury’s award—which falls within the 
 statutory range—is proportionate to TransUnion’s offenses 
 and reasonable in light of the evidence.  Indeed, if we were 
 to envision a case that might warrant the high end of the 
@@ -795,10 +1158,12 @@ consumers as potential terrorists and other sanctioned
 individuals without taking even basic steps to verify the 
 accuracy of these labels.  And then it hid the ball from these 
 consumers when they asked for their files and withheld 
-important information about their right to dispute the labels. [CITE_END:DOC005[P043.B03]]
+important information about their right to dispute the labels.
+</BLOCK>
 
 [Page 44]
-[CITE_START:DOC005[P044.B01]] 44 
+<BLOCK id="DOC005.P044.B01">
+44 
 R AMIREZ V . T RANS U NION Congress provided for a set range of damages for FCRA 
 violations because the “actual harm that a willful violation 
 of [the FCRA] will inflict on a consumer will often be small 
@@ -808,17 +1173,23 @@ whether courts have the authority to disturb a jury’s
 statutory-damages award when it falls within Congress’s 
 prescribed range because in this case the jury’s award is 
 clearly proportionate to the offense and consistent with the 
-evidence. 16 [CITE_END:DOC005[P044.B01]]
-[CITE_START:DOC005[P044.B02]] B. Punitive Damages [CITE_END:DOC005[P044.B02]]
-[CITE_START:DOC005[P044.B03]] The FCRA also permits an award of punitive damages in 
+evidence. 16
+</BLOCK>
+<BLOCK id="DOC005.P044.B02">
+B. Punitive Damages
+</BLOCK>
+<BLOCK id="DOC005.P044.B03">
+The FCRA also permits an award of punitive damages in 
 an amount “as the court may allow[.]”  15 U.S.C. 
 § 1681n(a)(2).  The jury awarded each class member 
 $6,353.08 in punitive damages for a class-wide total of about 
 $52 million.  TransUnion argues that this award is 
 constitutionally infirm because:  (1) it is duplicative, (2) it 
 punishes for injuries to third parties not involved in this suit, 
-and (3) it is excessive in violation of due process. [CITE_END:DOC005[P044.B03]]
-[CITE_START:DOC005[P044.B04]] TransUnion’s first argument is that the statutory 
+and (3) it is excessive in violation of due process.
+</BLOCK>
+<BLOCK id="DOC005.P044.B04">
+TransUnion’s first argument is that the statutory 
 damages were sufficient to accomplish deterrence, so the 
 punitive damages, which also aim to deter, were duplicative.  
 But the statute explicitly allows for both types of damages:  
@@ -828,42 +1199,58 @@ damages to punish and deter willful FCRA violations.
 TransUnion does not challenge the jury instructions 
 regarding damages, nor does TransUnion point to anything 16  TransUnion does not seriously argue that the aggregate award—
 representing about a half percent of TransUnion’s total net worth—is 
-“oppressive.”   See Citrin , 972 F.2d at 1051. [CITE_END:DOC005[P044.B04]]
+“oppressive.”   See Citrin , 972 F.2d at 1051.
+</BLOCK>
 
 [Page 45]
-[CITE_START:DOC005[P045.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P045.B01">
+R AMIREZ V . T RANS U NION
 45 
 specific in the record suggesting that the jury might have 
 misunderstood the distinct purposes of statutory and punitive 
-damages.  We will not disturb the jury’s award on this basis. [CITE_END:DOC005[P045.B01]]
-[CITE_START:DOC005[P045.B02]] TransUnion next argues that the jury awarded punitive damages because it wanted to punish TransUnion for injuring nonparties, which violates due process. See Philip Morris USA v. Williams , 549 U.S. 346, 353–55 (2007). But “[a] jury may consider evidence of actual harm to nonparties as part of its reprehensibility determination,” even though it “may not ‘use a punitive damages verdict to punish a defendant directly’” for injury inflicted upon non-parties. White v. Ford Motor Co. , 500 F.3d 963, 972 (9th Cir. 2007) (quoting Williams , 549 U.S. at 355). “Where there is a significant risk that jurors will [CITE_END:DOC005[P045.B02]]
-[CITE_START:DOC005[P045.B03]] misapprehend the distinction, the court must upon request protect against that risk by ‘avoid[ing] procedure that unnecessarily deprives juries of proper legal guidance.’” Id . [CITE_END:DOC005[P045.B03]]
-[CITE_START:DOC005[P045.B04]] To begin with, TransUnion does not challenge, or even 
+damages.  We will not disturb the jury’s award on this basis.
+</BLOCK>
+<BLOCK id="DOC005.P045.B02">
+TransUnion next argues that the jury awarded punitive damages because it wanted to punish TransUnion for injuring nonparties, which violates due process. See Philip Morris USA v. Williams , 549 U.S. 346, 353–55 (2007). But “[a] jury may consider evidence of actual harm to nonparties as part of its reprehensibility determination,” even though it “may not ‘use a punitive damages verdict to punish a defendant directly’” for injury inflicted upon non-parties. White v. Ford Motor Co. , 500 F.3d 963, 972 (9th Cir. 2007) (quoting Williams , 549 U.S. at 355). “Where there is a significant risk that jurors will
+</BLOCK>
+<BLOCK id="DOC005.P045.B03">
+misapprehend the distinction, the court must upon request protect against that risk by ‘avoid[ing] procedure that unnecessarily deprives juries of proper legal guidance.’” Id .
+</BLOCK>
+<BLOCK id="DOC005.P045.B04">
+To begin with, TransUnion does not challenge, or even 
 discuss, the jury instructions regarding punitive damages.  
 Nor did TransUnion object to the instructions or class 
 counsel’s arguments regarding punitive damages below.  
 Our review of the record reflects nothing that would lend 
 support to TransUnion’s argument beyond very limited 
 references to nonparties in counsel’s arguments.  We reject 
-this challenge. [CITE_END:DOC005[P045.B04]]
-[CITE_START:DOC005[P045.B05]] Finally, TransUnion argues that $6,353.08 in punitive 
+this challenge.
+</BLOCK>
+<BLOCK id="DOC005.P045.B05">
+Finally, TransUnion argues that $6,353.08 in punitive 
 damages per class member is “grossly excessive” in 
 violation of constitutional due process.   State Farm , 538 U.S. 
 at 416.  In reviewing the constitutionality of punitive 
 damages, we consider three guideposts:  “(1) the degree of 
 reprehensibility of the defendant’s misconduct; (2) the 
 disparity between the actual or potential harm suffered by 
-the plaintiff and the punitive damages award; and (3) the [CITE_END:DOC005[P045.B05]]
+the plaintiff and the punitive damages award; and (3) the
+</BLOCK>
 
 [Page 46]
-[CITE_START:DOC005[P046.B01]] 46 
+<BLOCK id="DOC005.P046.B01">
+46 
 R AMIREZ V . T RANS U NION
 difference between the punitive damages awarded by the 
 jury and the civil penalties authorized or imposed in 
 comparable cases.”   Id.  at 418 (citing  BMW of N. Am., Inc. 
-v. Gore , 517 U.S. 559, 575 (1996)). [CITE_END:DOC005[P046.B01]]
-[CITE_START:DOC005[P046.B02]] 1. Reprehensibility [CITE_END:DOC005[P046.B02]]
-[CITE_START:DOC005[P046.B03]] The reprehensibility of TransUnion’s conduct is the most 
+v. Gore , 517 U.S. 559, 575 (1996)).
+</BLOCK>
+<BLOCK id="DOC005.P046.B02">
+1. Reprehensibility
+</BLOCK>
+<BLOCK id="DOC005.P046.B03">
+The reprehensibility of TransUnion’s conduct is the most 
 important guidepost.   State Farm , 538 U.S. at 419.  We must 
 consider whether: the harm caused was physical as opposed to 
 economic; the tortious conduct evinced an 
@@ -873,8 +1260,10 @@ conduct had financial vulnerability; the
 conduct involved repeated actions or was an 
 isolated incident; and the harm was the result 
 of intentional malice, trickery, or deceit, or 
-mere accident. Id. [CITE_END:DOC005[P046.B03]]
-[CITE_START:DOC005[P046.B04]] Here, there was no physical harm, and TransUnion’s 
+mere accident. Id.
+</BLOCK>
+<BLOCK id="DOC005.P046.B04">
+Here, there was no physical harm, and TransUnion’s 
 conduct did not evince an indifference to health or safety.  
 However, “the gravity of harm that could result from 
 [TransUnion’s matching] of [a consumer] with an individual 
@@ -884,23 +1273,41 @@ in the sense that their ability to obtain credit depended on the
 care that TransUnion—a billion-dollar company—took in 
 gathering data about them. But most importantly, TransUnion’s misconduct was 
 repeated and willful.  TransUnion used name-only OFAC 
-searches for more than a decade, resulting in thousands of [CITE_END:DOC005[P046.B04]]
+searches for more than a decade, resulting in thousands of
+</BLOCK>
 
 [Page 47]
-[CITE_START:DOC005[P047.B01]] R AMIREZ V . T RANS U NION 47 false positives and not a single known actual match identified. TransUnion’s conduct probably was not “the result of intentional malice, trickery, or deceit,” but it was far from “mere accident.” State Farm , 538 U.S. at 419. TransUnion began receiving consumer complaints regarding false OFAC alerts in 2006; a jury found it liable for hundreds of thousands of dollars for a false OFAC alert in 2007; and the Third Circuit told TransUnion in 2010 that false OFAC alerts were a serious matter and that its “cavalier[]” reliance on a name-only screening [CITE_END:DOC005[P047.B01]]
-[CITE_START:DOC005[P047.B02]] software and treatment of OFAC information as exempt from the FCRA were inexcusable. Cortez , 617 F.3d at 710. TransUnion’s conduct demonstrated a disregard for the gravity of an OFAC match and what a false positive would mean, emotionally and practically, for each consumer. [CITE_END:DOC005[P047.B02]]
-[CITE_START:DOC005[P047.B03]] 2. Ratio [CITE_END:DOC005[P047.B03]]
-[CITE_START:DOC005[P047.B04]] There is no bright-line rule about the maximum ratio due process permits between the harm suffered by the plaintiff (i.e., the compensatory damages) and the punitive damages. State Farm , 538 U.S. at 425. However, the Supreme Court has noted that punitive “awards exceeding a single-digit ratio” will rarely satisfy due process, and punitive awards exceeding four times the amount of compensatory damages “might be close to the line of constitutional impropriety.” Id. A ratio higher than 4 to 1 may be upheld where “a particularly egregious act has resulted in only a small amount of economic damages.” Id. (quoting [CITE_END:DOC005[P047.B04]]
-[CITE_START:DOC005[P047.B05]] Gore , 517 U.S. at 582). But “[w]hen compensatory damages are substantial,” a ratio lower than 4 to 1 may be the limit. Id. [CITE_END:DOC005[P047.B05]]
-[CITE_START:DOC005[P047.B06]] In this case, the ratio between the punitive and statutory 
+<BLOCK id="DOC005.P047.B01">
+R AMIREZ V . T RANS U NION 47 false positives and not a single known actual match identified. TransUnion’s conduct probably was not “the result of intentional malice, trickery, or deceit,” but it was far from “mere accident.” State Farm , 538 U.S. at 419. TransUnion began receiving consumer complaints regarding false OFAC alerts in 2006; a jury found it liable for hundreds of thousands of dollars for a false OFAC alert in 2007; and the Third Circuit told TransUnion in 2010 that false OFAC alerts were a serious matter and that its “cavalier[]” reliance on a name-only screening
+</BLOCK>
+<BLOCK id="DOC005.P047.B02">
+software and treatment of OFAC information as exempt from the FCRA were inexcusable. Cortez , 617 F.3d at 710. TransUnion’s conduct demonstrated a disregard for the gravity of an OFAC match and what a false positive would mean, emotionally and practically, for each consumer.
+</BLOCK>
+<BLOCK id="DOC005.P047.B03">
+2. Ratio
+</BLOCK>
+<BLOCK id="DOC005.P047.B04">
+There is no bright-line rule about the maximum ratio due process permits between the harm suffered by the plaintiff (i.e., the compensatory damages) and the punitive damages. State Farm , 538 U.S. at 425. However, the Supreme Court has noted that punitive “awards exceeding a single-digit ratio” will rarely satisfy due process, and punitive awards exceeding four times the amount of compensatory damages “might be close to the line of constitutional impropriety.” Id. A ratio higher than 4 to 1 may be upheld where “a particularly egregious act has resulted in only a small amount of economic damages.” Id. (quoting
+</BLOCK>
+<BLOCK id="DOC005.P047.B05">
+Gore , 517 U.S. at 582). But “[w]hen compensatory damages are substantial,” a ratio lower than 4 to 1 may be the limit. Id.
+</BLOCK>
+<BLOCK id="DOC005.P047.B06">
+In this case, the ratio between the punitive and statutory 
 awards is 6.45 to 1.  Although TransUnion’s conduct was 
 egregious for the reasons explained above, the jury’s 
-compensatory award was substantial—near the high end of [CITE_END:DOC005[P047.B06]]
+compensatory award was substantial—near the high end of
+</BLOCK>
 
 [Page 48]
-[CITE_START:DOC005[P048.B01]] 48 R AMIREZ V . T RANS U NION the statutory range. Moreover, when viewed in the aggregate, $8 million in statutory damages is quite substantial. Under the circumstances of this case, we conclude that a ratio of 4 to 1 is the most the Constitution permits. 3. Comparable Civil Penalties We agree with our sister circuits that consideration of civil penalties is not useful in the FCRA context because there is no “truly comparable” civil penalty to an FCRA punitive-damages award. Cortez , 617 F.3d at 724; see Saunders v. Branch Banking & Tr. Co. of Va. , 526 [CITE_END:DOC005[P048.B01]]
-[CITE_START:DOC005[P048.B02]] F.3d 142, 152 (4th Cir. 2008); Bach v. First Union Nat. Bank , 486 F.3d 150, 154 n.1 (6th Cir. 2007). Therefore, we do not consider this factor. 4. Punitive-Damages Conclusion We conclude that the punitive-damages award was constitutionally excessive in light of the Gore guideposts because, although TransUnion’s conduct was reprehensible, it was not so egregious as to justify a punitive award of more than six times an already substantial compensatory award. [CITE_END:DOC005[P048.B02]]
-[CITE_START:DOC005[P048.B03]] “When a punitive damage award exceeds the 
+<BLOCK id="DOC005.P048.B01">
+48 R AMIREZ V . T RANS U NION the statutory range. Moreover, when viewed in the aggregate, $8 million in statutory damages is quite substantial. Under the circumstances of this case, we conclude that a ratio of 4 to 1 is the most the Constitution permits. 3. Comparable Civil Penalties We agree with our sister circuits that consideration of civil penalties is not useful in the FCRA context because there is no “truly comparable” civil penalty to an FCRA punitive-damages award. Cortez , 617 F.3d at 724; see Saunders v. Branch Banking & Tr. Co. of Va. , 526
+</BLOCK>
+<BLOCK id="DOC005.P048.B02">
+F.3d 142, 152 (4th Cir. 2008); Bach v. First Union Nat. Bank , 486 F.3d 150, 154 n.1 (6th Cir. 2007). Therefore, we do not consider this factor. 4. Punitive-Damages Conclusion We conclude that the punitive-damages award was constitutionally excessive in light of the Gore guideposts because, although TransUnion’s conduct was reprehensible, it was not so egregious as to justify a punitive award of more than six times an already substantial compensatory award.
+</BLOCK>
+<BLOCK id="DOC005.P048.B03">
+“When a punitive damage award exceeds the 
 constitutional maximum, we decide on a case-by-case basis 
 whether to remand for a new trial or simply to order a 
 remittitur.”   Southern Union Co. v. Irvin , 563 F.3d 788, 792 
@@ -909,29 +1316,49 @@ number of years, and we do not think a new trial would bring
 to light any new evidence that might permit a ratio higher 
 than 4 to 1.  We therefore reverse the district court’s 
 judgment regarding punitive damages, vacate the punitive 
-damages award, and remand with instructions to reduce the [CITE_END:DOC005[P048.B03]]
+damages award, and remand with instructions to reduce the
+</BLOCK>
 
 [Page 49]
-[CITE_START:DOC005[P049.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P049.B01">
+R AMIREZ V . T RANS U NION
 49 
 punitive damages to $3,936.88 per class member, which 
-represents four times the statutory damages. [CITE_END:DOC005[P049.B01]]
-[CITE_START:DOC005[P049.B02]] VI. Conclusion [CITE_END:DOC005[P049.B02]]
-[CITE_START:DOC005[P049.B03]] We hold that every member of a class action certified under Rule 23 must demonstrate Article III standing at the final stage of a money damages suit when class members are to be awarded individual monetary damages. And we hold that, on this record, every class member had standing because TransUnion’s reckless handling of OFAC information exposed every class member to a real risk of harm to their concrete privacy, reputational, and informational interests protected by the FCRA. We also uphold the jury’s verdict finding willful violations of sections 1681e(b), 1681g(a)(1), and 1681g(c)(2) of the FCRA because the verdict was [CITE_END:DOC005[P049.B03]]
-[CITE_START:DOC005[P049.B04]] supported by substantial evidence. We conclude that the jury’s award of statutory damages near the high end of the range was clearly justified. [CITE_END:DOC005[P049.B04]]
-[CITE_START:DOC005[P049.B05]] With respect to punitive damages, we agree with the Third Circuit that it is unsurprising that a jury was “incensed” by TransUnion’s flippant placement of terrorist alerts on consumer credit reports and its consistent refusal to take responsibility or acknowledge the harm it has caused. Indeed, even on appeal, TransUnion continues to take the position that labeling someone a terrorist causes them no harm . Nonetheless, despite the reprehensibility of TransUnion’s conduct, we are compelled to reduce the punitive damages in this case because the jury’s award is unconstitutionally excessive. We conclude that a ratio of 4 to 1 between [CITE_END:DOC005[P049.B05]]
-[CITE_START:DOC005[P049.B06]] the statutory and punitive damages is the most the Constitution permits on this record. We vacate the punitive damages and remand for a reduction, but otherwise affirm the district court. [CITE_END:DOC005[P049.B06]]
+represents four times the statutory damages.
+</BLOCK>
+<BLOCK id="DOC005.P049.B02">
+VI. Conclusion
+</BLOCK>
+<BLOCK id="DOC005.P049.B03">
+We hold that every member of a class action certified under Rule 23 must demonstrate Article III standing at the final stage of a money damages suit when class members are to be awarded individual monetary damages. And we hold that, on this record, every class member had standing because TransUnion’s reckless handling of OFAC information exposed every class member to a real risk of harm to their concrete privacy, reputational, and informational interests protected by the FCRA. We also uphold the jury’s verdict finding willful violations of sections 1681e(b), 1681g(a)(1), and 1681g(c)(2) of the FCRA because the verdict was
+</BLOCK>
+<BLOCK id="DOC005.P049.B04">
+supported by substantial evidence. We conclude that the jury’s award of statutory damages near the high end of the range was clearly justified.
+</BLOCK>
+<BLOCK id="DOC005.P049.B05">
+With respect to punitive damages, we agree with the Third Circuit that it is unsurprising that a jury was “incensed” by TransUnion’s flippant placement of terrorist alerts on consumer credit reports and its consistent refusal to take responsibility or acknowledge the harm it has caused. Indeed, even on appeal, TransUnion continues to take the position that labeling someone a terrorist causes them no harm . Nonetheless, despite the reprehensibility of TransUnion’s conduct, we are compelled to reduce the punitive damages in this case because the jury’s award is unconstitutionally excessive. We conclude that a ratio of 4 to 1 between
+</BLOCK>
+<BLOCK id="DOC005.P049.B06">
+the statutory and punitive damages is the most the Constitution permits on this record. We vacate the punitive damages and remand for a reduction, but otherwise affirm the district court.
+</BLOCK>
 
 [Page 50]
-[CITE_START:DOC005[P050.B01]] 50 
+<BLOCK id="DOC005.P050.B01">
+50 
 R AMIREZ V . T RANS U NION REVERSED  and  VACATED  as to the amount of 
 punitive damages;  REMANDED  with instructions to reduce 
 the punitive damages to $3,936.88 per class member; 
 AFFIRMED  in all other respects.  The parties shall bear 
-their own costs on appeal. [CITE_END:DOC005[P050.B01]]
-[CITE_START:DOC005[P050.B02]] McKEOWN, Circuit Judge, concurring in part and dissenting in part: A class action jury trial is a high-stakes affair more common in cinema than an actual courtroom. But no screenwriter would feature the complex issue raised in this appeal: a standing infirmity during a time of flux in the doctrine. In its otherwise deft handling of a difficult case, the district court made compounding errors regarding class certification and standing, leading to a jury verdict of nearly $60 million based on the unenviable experience of a single, atypical class representative. The bottom line is that for judgment at trial, every [CITE_END:DOC005[P050.B02]]
-[CITE_START:DOC005[P050.B03]] member of the class must have Article III standing. Conjecture based on an unrepresentative plaintiff does not meet the constitutional minimum. [CITE_END:DOC005[P050.B03]]
-[CITE_START:DOC005[P050.B04]] The majority paints a dramatic story of corporate 
+their own costs on appeal.
+</BLOCK>
+<BLOCK id="DOC005.P050.B02">
+McKEOWN, Circuit Judge, concurring in part and dissenting in part: A class action jury trial is a high-stakes affair more common in cinema than an actual courtroom. But no screenwriter would feature the complex issue raised in this appeal: a standing infirmity during a time of flux in the doctrine. In its otherwise deft handling of a difficult case, the district court made compounding errors regarding class certification and standing, leading to a jury verdict of nearly $60 million based on the unenviable experience of a single, atypical class representative. The bottom line is that for judgment at trial, every
+</BLOCK>
+<BLOCK id="DOC005.P050.B03">
+member of the class must have Article III standing. Conjecture based on an unrepresentative plaintiff does not meet the constitutional minimum.
+</BLOCK>
+<BLOCK id="DOC005.P050.B04">
+The majority paints a dramatic story of corporate 
 indifference.  And, indeed, Sergio Ramirez was the victim of 
 unforgivable circumstances at the hands of TransUnion.  But 
 his misfortune alone cannot justify damages for the entire 
@@ -941,18 +1368,32 @@ whose credit report was disclosed to third parties, there was
 no evidence of any harm or damages to remaining class 
 members.  Instead, the trial focused on Ramirez and his 
 unique circumstances.  Missing at trial was evidence related 
-to other members of the class, a deficiency that cannot be [CITE_END:DOC005[P050.B04]]
+to other members of the class, a deficiency that cannot be
+</BLOCK>
 
 [Page 51]
-[CITE_START:DOC005[P051.B01]] R AMIREZ V . T RANS U NION 51 cured by speculation. Unfortunately, neither the district court nor the parties followed this dictate. Let me first note my points of agreement with the majority. It is well established that Article III and the Rules Enabling Act require all members of a damages class to have standing at trial, so here the 1,853 class members whose inaccurate information was disclosed to a third party had standing to assert a reasonable procedures claim. I also agree that the punitive damages award was impermissibly excessive. In my view, however, no one but Ramirez [CITE_END:DOC005[P051.B01]]
-[CITE_START:DOC005[P051.B02]] and the class members whose information was disclosed to a third party had standing to assert a reasonable procedures claim, and only Ramirez had standing to bring the disclosure and summary of rights claims. I therefore respectfully dissent in part. I. Class Certification The standing issues at trial germinated from seeds sown during class certification. The only asserted uniform class- wide experience was the existence of TransUnion’s internal terrorist watch list alerts and the mailing of separate letters— faint allegations that strain Rule 23’s typicality requirements. Absent class members simply rode Ramirez’s coattails, while his stark atypicality as the lone [CITE_END:DOC005[P051.B02]]
-[CITE_START:DOC005[P051.B03]] class representative ensured that he would “‘become the focus of the litigation.’” Hanon v. Dataproducts Corp. , 976 F.2d 497, 508 (9th Cir. 1992) (citation omitted); see also Melendres v. Arpaio , 784 F.3d 1254, 1263 (9th Cir. 2015) (quoting Gratz v. Bollinger , 539 U.S. 244, 265 (2003) (named plaintiffs were adequate class representatives because their “claims do not ‘implicate a significantly different set of concerns’ than the unnamed plaintiffs' claims”). When it came time for trial, the certification error was only compounded. [CITE_END:DOC005[P051.B03]]
+<BLOCK id="DOC005.P051.B01">
+R AMIREZ V . T RANS U NION 51 cured by speculation. Unfortunately, neither the district court nor the parties followed this dictate. Let me first note my points of agreement with the majority. It is well established that Article III and the Rules Enabling Act require all members of a damages class to have standing at trial, so here the 1,853 class members whose inaccurate information was disclosed to a third party had standing to assert a reasonable procedures claim. I also agree that the punitive damages award was impermissibly excessive. In my view, however, no one but Ramirez
+</BLOCK>
+<BLOCK id="DOC005.P051.B02">
+and the class members whose information was disclosed to a third party had standing to assert a reasonable procedures claim, and only Ramirez had standing to bring the disclosure and summary of rights claims. I therefore respectfully dissent in part. I. Class Certification The standing issues at trial germinated from seeds sown during class certification. The only asserted uniform class- wide experience was the existence of TransUnion’s internal terrorist watch list alerts and the mailing of separate letters— faint allegations that strain Rule 23’s typicality requirements. Absent class members simply rode Ramirez’s coattails, while his stark atypicality as the lone
+</BLOCK>
+<BLOCK id="DOC005.P051.B03">
+class representative ensured that he would “‘become the focus of the litigation.’” Hanon v. Dataproducts Corp. , 976 F.2d 497, 508 (9th Cir. 1992) (citation omitted); see also Melendres v. Arpaio , 784 F.3d 1254, 1263 (9th Cir. 2015) (quoting Gratz v. Bollinger , 539 U.S. 244, 265 (2003) (named plaintiffs were adequate class representatives because their “claims do not ‘implicate a significantly different set of concerns’ than the unnamed plaintiffs' claims”). When it came time for trial, the certification error was only compounded.
+</BLOCK>
 
 [Page 52]
-[CITE_START:DOC005[P052.B01]] 52 R AMIREZ V . T RANS U NION II. Ramirez and the Class The majority declares that “each member of a class certified under Rule 23 must satisfy the bare minimum of Article III standing at the final-judgment stage of a class action in order to recover monetary damages in federal court.” This principle, though, does not square with what happened at the trial, which opened with class counsel telling jurors that they would learn “the story of Mr. Ramirez.” And indeed they did. Jurors learned that a car dealership refused to grant Ramirez financing because his credit report [CITE_END:DOC005[P052.B01]]
-[CITE_START:DOC005[P052.B02]] flagged him as a “match” to a terrorist watch list, and that he was frightened, humiliated, and confused. He contacted TransUnion and was informed he was not on the watch list, but then received two separate mailings: one purporting to be his full credit report and making no mention of the terrorist watch list, and a subsequent letter informing Ramirez that he was a potential match for the terrorist watch list. The second letter omitted the summary of FCRA rights and grievance instructions contained in the first mailing. After closely reviewing both letters, Ramirez was at a loss, and cancelled [CITE_END:DOC005[P052.B02]]
-[CITE_START:DOC005[P052.B03]] a planned family vacation to Mexico. Only after consulting with an attorney and the Treasury Department did he finally compel TransUnion to remove his watch list designation. [CITE_END:DOC005[P052.B03]]
-[CITE_START:DOC005[P052.B04]] The story of the absent class members, in contrast, went 
+<BLOCK id="DOC005.P052.B01">
+52 R AMIREZ V . T RANS U NION II. Ramirez and the Class The majority declares that “each member of a class certified under Rule 23 must satisfy the bare minimum of Article III standing at the final-judgment stage of a class action in order to recover monetary damages in federal court.” This principle, though, does not square with what happened at the trial, which opened with class counsel telling jurors that they would learn “the story of Mr. Ramirez.” And indeed they did. Jurors learned that a car dealership refused to grant Ramirez financing because his credit report
+</BLOCK>
+<BLOCK id="DOC005.P052.B02">
+flagged him as a “match” to a terrorist watch list, and that he was frightened, humiliated, and confused. He contacted TransUnion and was informed he was not on the watch list, but then received two separate mailings: one purporting to be his full credit report and making no mention of the terrorist watch list, and a subsequent letter informing Ramirez that he was a potential match for the terrorist watch list. The second letter omitted the summary of FCRA rights and grievance instructions contained in the first mailing. After closely reviewing both letters, Ramirez was at a loss, and cancelled
+</BLOCK>
+<BLOCK id="DOC005.P052.B03">
+a planned family vacation to Mexico. Only after consulting with an attorney and the Treasury Department did he finally compel TransUnion to remove his watch list designation.
+</BLOCK>
+<BLOCK id="DOC005.P052.B04">
+The story of the absent class members, in contrast, went 
 largely untold.  The jury learned class members requested a 
 credit report from TransUnion and were sent separate 
 mailings.  The trial featured no evidence that absent class 
@@ -960,31 +1401,55 @@ members received, opened, or read the mailings, nor that
 they were confused, distressed, or relied on the information 
 in any way.  There was no evidence that absent class 
 members were denied credit, or expended any time or energy 
-attempting to clear their name.  It’s possible that other class [CITE_END:DOC005[P052.B04]]
+attempting to clear their name.  It’s possible that other class
+</BLOCK>
 
 [Page 53]
-[CITE_START:DOC005[P053.B01]] R AMIREZ V . T RANS U NION 53 members—perhaps many others—had these experiences. But the hallmark of the trial was the absence of evidence about absent class members, or any evidence that they were in the same boat as Ramirez. The jury was left to assume that the absent class members suffered the same injury. But such conjecture is insufficient to confer Article III standing. III. Claims A. Reasonable Procedures Claim The parties stipulated at trial that, like Ramirez, a quarter of the class had their inaccurate credit reports sent to a third party, affording them clear standing for [CITE_END:DOC005[P053.B01]]
-[CITE_START:DOC005[P053.B02]] the claim that TransUnion failed to follow reasonable procedures to assure maximum accuracy on their credit reports. For the overwhelming majority of the class, though, we face the open question of whether there is “concrete harm” when “a materially inaccurate report . . . was prepared but never published ” to a third party. Robins v. Spokeo, Inc. , 867 F.3d 1108, 1116 & n.3 (9th Cir. 2017) (“ Spokeo III ”) (emphasis in original). On this record, there is not. Class members do not argue that they have an interest “that [has] long been protected in the law.” Id. [CITE_END:DOC005[P053.B02]]
-[CITE_START:DOC005[P053.B03]] at 1114. And although “publication of defamatory information . . . has long provided the basis for a lawsuit,” Pedro v. Equifax, Inc. , 868 F.3d 1275, 1280 (11th Cir. 2017), there is no common law analogue for a suit “absent dissemination,” Owner- Operator Indep. Drivers Ass’n, Inc. v. U.S. Dep’t of Transp. , 879 F.3d 339, 344–45 (D.C. Cir. 2018). [CITE_END:DOC005[P053.B03]]
-[CITE_START:DOC005[P053.B04]] Nor is there any indication that Congress sought to 
+<BLOCK id="DOC005.P053.B01">
+R AMIREZ V . T RANS U NION 53 members—perhaps many others—had these experiences. But the hallmark of the trial was the absence of evidence about absent class members, or any evidence that they were in the same boat as Ramirez. The jury was left to assume that the absent class members suffered the same injury. But such conjecture is insufficient to confer Article III standing. III. Claims A. Reasonable Procedures Claim The parties stipulated at trial that, like Ramirez, a quarter of the class had their inaccurate credit reports sent to a third party, affording them clear standing for
+</BLOCK>
+<BLOCK id="DOC005.P053.B02">
+the claim that TransUnion failed to follow reasonable procedures to assure maximum accuracy on their credit reports. For the overwhelming majority of the class, though, we face the open question of whether there is “concrete harm” when “a materially inaccurate report . . . was prepared but never published ” to a third party. Robins v. Spokeo, Inc. , 867 F.3d 1108, 1116 & n.3 (9th Cir. 2017) (“ Spokeo III ”) (emphasis in original). On this record, there is not. Class members do not argue that they have an interest “that [has] long been protected in the law.” Id.
+</BLOCK>
+<BLOCK id="DOC005.P053.B03">
+at 1114. And although “publication of defamatory information . . . has long provided the basis for a lawsuit,” Pedro v. Equifax, Inc. , 868 F.3d 1275, 1280 (11th Cir. 2017), there is no common law analogue for a suit “absent dissemination,” Owner- Operator Indep. Drivers Ass’n, Inc. v. U.S. Dep’t of Transp. , 879 F.3d 339, 344–45 (D.C. Cir. 2018).
+</BLOCK>
+<BLOCK id="DOC005.P053.B04">
+Nor is there any indication that Congress sought to 
 protect a consumer’s interest in an error-free credit database 
 itself.  Rather, Congress’s concern was with the 
 “ dissemination  of inaccurate information, not its mere 
-existence in the . . . database.”   Owner-Operator , 879 F.3d [CITE_END:DOC005[P053.B04]]
+existence in the . . . database.”   Owner-Operator , 879 F.3d
+</BLOCK>
 
 [Page 54]
-[CITE_START:DOC005[P054.B01]] 54 R AMIREZ V . T RANS U NION at 45 (emphasis added). As we have recognized, Congress enacted the reasonable procedures requirements “‘to protect consumers from the transmission of inaccurate information about them.’” Spokeo III , 867 F.3d at 1113 (quoting Guimond v. TransUnion , 45 F.3d 1329, 1333 (9th Cir. 1995)). Any “concrete interest in accurate credit reporting” is implicated only upon disclosure to a third party. See Spokeo III , 867 F.3d at 1115. Nothing in the text, structure, or history of FCRA suggests that Congress sought to afford consumers with plenary police powers over the information [CITE_END:DOC005[P054.B01]]
-[CITE_START:DOC005[P054.B02]] contained in credit reporting agencies’ internal databases, and “the mere existence of inaccurate database information is not sufficient to confer Article III standing.” Owner- Operator , 879 F.3d at 345. [CITE_END:DOC005[P054.B02]]
-[CITE_START:DOC005[P054.B03]] The majority does not dispute these points. Instead, it holds that TransUnion’s inaccurate reports, once created and stored, were “made available,” which—combined with the “distressing nature” of TransUnion’s mailings to consumers and the “risk of third-party access” constituted a “material risk” of harm to the entire class. See Spokeo, Inc. v. Robins , 136 S. Ct. 1540, 1550 (2016), as revised (May 24, 2016) (“ Spokeo II ”). This statement makes for a good closing argument, but counsel presented no evidence about the consequences of dissemination of the reports for any class member other than Ramirez. The majority observes that [CITE_END:DOC005[P054.B03]]
-[CITE_START:DOC005[P054.B04]] a credit report may be divulged “to potential creditors or employers at a moment’s notice.” This possibility, however, does not amount to a material risk—one of Spokeo II ’s core teachings is that Article III requires a discernable, non- conjectural likelihood of harm. Without doubt, counsel could have offered expert testimony, representative class members, and credit agency protocol to fill this gap. But none was proffered. This does not mean that evidence must be proffered as to each class member, and I reiterate that the [CITE_END:DOC005[P054.B04]]
+<BLOCK id="DOC005.P054.B01">
+54 R AMIREZ V . T RANS U NION at 45 (emphasis added). As we have recognized, Congress enacted the reasonable procedures requirements “‘to protect consumers from the transmission of inaccurate information about them.’” Spokeo III , 867 F.3d at 1113 (quoting Guimond v. TransUnion , 45 F.3d 1329, 1333 (9th Cir. 1995)). Any “concrete interest in accurate credit reporting” is implicated only upon disclosure to a third party. See Spokeo III , 867 F.3d at 1115. Nothing in the text, structure, or history of FCRA suggests that Congress sought to afford consumers with plenary police powers over the information
+</BLOCK>
+<BLOCK id="DOC005.P054.B02">
+contained in credit reporting agencies’ internal databases, and “the mere existence of inaccurate database information is not sufficient to confer Article III standing.” Owner- Operator , 879 F.3d at 345.
+</BLOCK>
+<BLOCK id="DOC005.P054.B03">
+The majority does not dispute these points. Instead, it holds that TransUnion’s inaccurate reports, once created and stored, were “made available,” which—combined with the “distressing nature” of TransUnion’s mailings to consumers and the “risk of third-party access” constituted a “material risk” of harm to the entire class. See Spokeo, Inc. v. Robins , 136 S. Ct. 1540, 1550 (2016), as revised (May 24, 2016) (“ Spokeo II ”). This statement makes for a good closing argument, but counsel presented no evidence about the consequences of dissemination of the reports for any class member other than Ramirez. The majority observes that
+</BLOCK>
+<BLOCK id="DOC005.P054.B04">
+a credit report may be divulged “to potential creditors or employers at a moment’s notice.” This possibility, however, does not amount to a material risk—one of Spokeo II ’s core teachings is that Article III requires a discernable, non- conjectural likelihood of harm. Without doubt, counsel could have offered expert testimony, representative class members, and credit agency protocol to fill this gap. But none was proffered. This does not mean that evidence must be proffered as to each class member, and I reiterate that the
+</BLOCK>
 
 [Page 55]
-[CITE_START:DOC005[P055.B01]] R AMIREZ V . T RANS U NION 55 1,853 individuals whose report was disclosed to third parties have standing. Rather, Ramirez was required to present something other than his own story; not only was he not typical of the class, but without additional testimony, harm as to the bulk of the class was conjectural. In analogous circumstances, other circuits have determined that similar chains of events are too speculative and attenuated to establish a “material risk of harm.” See Owner-Operator , 879 F.3d at 347 (determining “prospect of future injury” was purely speculative when “nothing in the record indicates [CITE_END:DOC005[P055.B01]]
-[CITE_START:DOC005[P055.B02]] that anyone has recently accessed or used the information at issue”); Gubala v. Time Warner Cable, Inc. , 846 F.3d 909, 910–11 (7th Cir. 2017) (concluding mere retention of customer data, in violation of a federal statute but without dissemination to a third party, did not confer standing); Braitberg v. Charter Commc’ns, Inc. , 836 F.3d 925, 930–31 (8th Cir. 2016) (same). Because no evidence in the record establishes a serious likelihood of disclosure, we cannot simply presume a material risk of concrete harm, and three- quarters of the class lacks standing for the reasonable procedures claim. B. Disclosure and [CITE_END:DOC005[P055.B02]]
-[CITE_START:DOC005[P055.B03]] Summary of Rights Claims The lack of evidence of concrete harm to absent class members is even more stark when considering the disclosure and summary of rights claims. The first alleges that TransUnion willfully failed to disclose class members’ full credit reports by not including the OFAC information when sending consumers’ credit files—that is to say, by sending the information in a separate mailing. The second claim relates to TransUnion’s failure to include a summary of rights in the envelope containing the OFAC letter. Notably, TransUnion sent the credit reports and OFAC alerts contemporaneously. Omitting the OFAC information [CITE_END:DOC005[P055.B03]]
+<BLOCK id="DOC005.P055.B01">
+R AMIREZ V . T RANS U NION 55 1,853 individuals whose report was disclosed to third parties have standing. Rather, Ramirez was required to present something other than his own story; not only was he not typical of the class, but without additional testimony, harm as to the bulk of the class was conjectural. In analogous circumstances, other circuits have determined that similar chains of events are too speculative and attenuated to establish a “material risk of harm.” See Owner-Operator , 879 F.3d at 347 (determining “prospect of future injury” was purely speculative when “nothing in the record indicates
+</BLOCK>
+<BLOCK id="DOC005.P055.B02">
+that anyone has recently accessed or used the information at issue”); Gubala v. Time Warner Cable, Inc. , 846 F.3d 909, 910–11 (7th Cir. 2017) (concluding mere retention of customer data, in violation of a federal statute but without dissemination to a third party, did not confer standing); Braitberg v. Charter Commc’ns, Inc. , 836 F.3d 925, 930–31 (8th Cir. 2016) (same). Because no evidence in the record establishes a serious likelihood of disclosure, we cannot simply presume a material risk of concrete harm, and three- quarters of the class lacks standing for the reasonable procedures claim. B. Disclosure and
+</BLOCK>
+<BLOCK id="DOC005.P055.B03">
+Summary of Rights Claims The lack of evidence of concrete harm to absent class members is even more stark when considering the disclosure and summary of rights claims. The first alleges that TransUnion willfully failed to disclose class members’ full credit reports by not including the OFAC information when sending consumers’ credit files—that is to say, by sending the information in a separate mailing. The second claim relates to TransUnion’s failure to include a summary of rights in the envelope containing the OFAC letter. Notably, TransUnion sent the credit reports and OFAC alerts contemporaneously. Omitting the OFAC information
+</BLOCK>
 
 [Page 56]
-[CITE_START:DOC005[P056.B01]] 56 
+<BLOCK id="DOC005.P056.B01">
+56 
 R AMIREZ V . T RANS U NION
 from the credit summary and instead sending it “within 
 hours,” may be a technical violation of FCRA’s disclosure 
@@ -993,13 +1458,21 @@ upon receiving the separate OFAC communication is
 sufficient to confer Article III standing upon him.  There was 
 no evidence, however, that a single other class member so 
 much as opened the dual mailings, or that anyone other than 
-Ramirez was surprised to receive them. [CITE_END:DOC005[P056.B01]]
-[CITE_START:DOC005[P056.B02]] Similarly, TransUnion’s OFAC letter failed to inform him how to dispute being a potential watch list match, an omission that confused Ramirez, who plainly has standing to bring a summary of rights claim. But whether any other absent class member was confused, suffered the adverse consequences that befell Ramirez, or even opened the letter, is pure conjecture. For the absent class members, evidence of disclosure and summary of rights violations were only “a bare procedural violation, divorced from any concrete harm,” Spokeo II , 136 S. Ct. at 1549, and no common law analogue or clear congressional directive suggests that [CITE_END:DOC005[P056.B02]]
-[CITE_START:DOC005[P056.B03]] Article III requirements are satisfied in the face of such an absence of evidence. IV. Conclusion Trial attorneys understand the importance of a narrative, and “the story of Mr. Ramirez” has all the compelling elements: a sympathetic protagonist, a corporate antihero, and thousands of unseen victims. The purpose of a trial, however, is to evaluate evidence, not produce a satisfying plot. Although the strategy behind presenting only Ramirez’s unusually sympathetic case to the jury was self- evident, the nature of his claims likely bore little resemblance to experiences of the absent class members. Or perhaps they did. But based on [CITE_END:DOC005[P056.B03]]
-[CITE_START:DOC005[P056.B04]] the evidence at trial, it is impossible to know. [CITE_END:DOC005[P056.B04]]
+Ramirez was surprised to receive them.
+</BLOCK>
+<BLOCK id="DOC005.P056.B02">
+Similarly, TransUnion’s OFAC letter failed to inform him how to dispute being a potential watch list match, an omission that confused Ramirez, who plainly has standing to bring a summary of rights claim. But whether any other absent class member was confused, suffered the adverse consequences that befell Ramirez, or even opened the letter, is pure conjecture. For the absent class members, evidence of disclosure and summary of rights violations were only “a bare procedural violation, divorced from any concrete harm,” Spokeo II , 136 S. Ct. at 1549, and no common law analogue or clear congressional directive suggests that
+</BLOCK>
+<BLOCK id="DOC005.P056.B03">
+Article III requirements are satisfied in the face of such an absence of evidence. IV. Conclusion Trial attorneys understand the importance of a narrative, and “the story of Mr. Ramirez” has all the compelling elements: a sympathetic protagonist, a corporate antihero, and thousands of unseen victims. The purpose of a trial, however, is to evaluate evidence, not produce a satisfying plot. Although the strategy behind presenting only Ramirez’s unusually sympathetic case to the jury was self- evident, the nature of his claims likely bore little resemblance to experiences of the absent class members. Or perhaps they did. But based on
+</BLOCK>
+<BLOCK id="DOC005.P056.B04">
+the evidence at trial, it is impossible to know.
+</BLOCK>
 
 [Page 57]
-[CITE_START:DOC005[P057.B01]] R AMIREZ V . T RANS U NION
+<BLOCK id="DOC005.P057.B01">
+R AMIREZ V . T RANS U NION
 57 At trial, class members lacking a constitutionally 
 cognizable injury should not have been permitted to recover 
 damages, yet TransUnion now owes 8,185 class members 
@@ -1015,4 +1488,5 @@ some class members, but we are limited to the evidence in
 the record—evidence that fails to establish a concrete injury-
 in-fact for most class members on most claims.  Speculation 
 can complete a story, but it cannot cure this infirmity.  I 
-respectfully dissent in part. [CITE_END:DOC005[P057.B01]]
+respectfully dissent in part.
+</BLOCK>
