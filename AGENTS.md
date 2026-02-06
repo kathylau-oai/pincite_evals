@@ -41,4 +41,5 @@
   - Token-by-token latency (inter-token latency) with distribution stats
 
 ## Recent learnings
-- Problem -> Excerpt citation parsing accepted overly broad IDs and legacy styles -> Fix -> Enforce only `DOC_ID[P<page>.B<block>(#<hash>)?]` in parser/tests and reject legacy paragraph citations -> Why -> Keeps citations block-level, deterministic, and consistent with the current grading format.
+- Problem -> Excerpt citation parsing accepted overly broad IDs and legacy styles -> Fix -> Enforce only `DOC_ID[P<page>.B<block>]` in parser/tests and reject legacy paragraph citations -> Why -> Keeps citations block-level, deterministic, and consistent with the current grading format.
+- Problem -> Citable block text needed explicit span boundaries for reliable post-processing -> Fix -> Write annotated text with `[CITE_START:...] ... [CITE_END:...]` markers per block -> Why -> Makes block extraction and audit checks deterministic.

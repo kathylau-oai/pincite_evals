@@ -1,0 +1,9 @@
+packet_id,doc_id,page_count,scanned_like_page_count,scanned_ratio,pdf_type,block_count,total_words_pdf,total_tokens_pdf,avg_block_words,avg_tokens_per_block,p50_block_words,p90_block_words,tiny_block_count_lt_15,large_block_count_gt_160
+packet_1,DOC001,16,0,0.0,native,88,5115,7160,58.12,81.36,68.5,102.3,29,0
+packet_1,DOC002,73,0,0.0,native,307,20923,30422,68.15,99.09,79.0,104.0,34,0
+packet_1,DOC003,34,0,0.0,native,148,9519,13947,64.32,94.24,65.0,105.0,15,0
+packet_1,DOC004,23,0,0.0,native,94,6518,9606,69.34,102.19,78.0,105.0,11,0
+packet_1,DOC005,15,0,0.0,native,59,3687,5739,62.49,97.27,69.0,102.2,10,0
+packet_1,DOC006,45,0,0.0,native,205,12773,18373,62.31,89.62,66.0,105.0,31,0
+packet_1,DOC007,22,0,0.0,native,101,6662,10057,65.96,99.57,78.0,102.0,14,0
+packet_1,DOC008,32,0,0.0,native,124,8339,12021,67.25,96.94,77.5,103.0,12,0

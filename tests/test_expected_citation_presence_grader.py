@@ -12,13 +12,13 @@ from graders.expected_citation_presence import ExpectedCitationPresenceGrader
 def test_expected_citation_presence_grader_perfect_match():
     grader = ExpectedCitationPresenceGrader()
     output = (
-        "Rule text (DOC1[P001.B01#AAAA]). "
-        "Second rule text (DOC2[P002.B03#BBBB])."
+        "Rule text (DOC1[P001.B01]). "
+        "Second rule text (DOC2[P002.B03])."
     )
     context = {
         "expected_citations": [
-            "DOC1[P001.B01#AAAA]",
-            "DOC2[P002.B03#BBBB]",
+            "DOC1[P001.B01]",
+            "DOC2[P002.B03]",
         ]
     }
 
@@ -31,26 +31,26 @@ def test_expected_citation_presence_grader_perfect_match():
 
 def test_expected_citation_presence_grader_missing_and_unexpected():
     grader = ExpectedCitationPresenceGrader()
-    output = "Text (DOC1[P001.B01#AAAA]) and extra (DOC9[P004.B09#ZZZZ])."
+    output = "Text (DOC1[P001.B01]) and extra (DOC9[P004.B09])."
     context = {
         "expected_citations": [
-            "DOC1[P001.B01#AAAA]",
-            "DOC2[P002.B03#BBBB]",
+            "DOC1[P001.B01]",
+            "DOC2[P002.B03]",
         ]
     }
 
     result = grader.grade(prompt="p", output=output, context=context)
     assert result.passed is False
-    assert result.details["missing_groups"] == [["DOC2[P002.B03#BBBB]"]]
-    assert result.details["unexpected_predictions"] == ["DOC9[P004.B09#ZZZZ]"]
+    assert result.details["missing_groups"] == [["DOC2[P002.B03]"]]
+    assert result.details["unexpected_predictions"] == ["DOC9[P004.B09]"]
 
 
 def test_expected_citation_presence_with_alternative_group():
     grader = ExpectedCitationPresenceGrader()
-    output = "Text (DOC1[P001.B02#BBBB])."
+    output = "Text (DOC1[P001.B02])."
     context = {
         "expected_citation_groups": [
-            ["DOC1[P001.B01#AAAA]", "DOC1[P001.B02#BBBB]"],
+            ["DOC1[P001.B01]", "DOC1[P001.B02]"],
         ]
     }
 

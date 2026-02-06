@@ -1,0 +1,1096 @@
+packet_id,doc_id,source_url,page_number,block_number,excerpt_id,citation_token,word_count,token_count,x0,y0,x1,y1,text
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,1,1,P001.B01,DOC002[P001.B01],21,36,54.0,70.49,329.43,182.24,"FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT BRANDON BRISKIN, on behalf of 
+himself and those similarly situated,"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,1,2,P001.B02,DOC002[P001.B02],9,30,253.08,152.28,340.0,251.24,"No.  22-15815  
+D.C. No. 4:21-cv-
+06269-PJH  
+OPINION"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,1,3,P001.B03,DOC002[P001.B03],39,80,54.0,193.68,327.0,410.96,"Plaintiff-Appellant ,  
+  v.  
+SHOPIFY, INC.; SHOPIFY (USA), 
+INC.; SHOPIFY PAYMENTS (USA), 
+INC., Defendants-Appellees . Appeal from the United States District Court for the Northern District of California 
+Phyllis J. Hamilton, District Judge, Presiding Argued and Submitted En Banc September 26, 2024"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,1,4,P001.B04,DOC002[P001.B04],46,93,57.36,408.6,341.52,535.16,"San Francisco, California Filed April 21, 2025 Before:  Mary H. Murguia, Chief Judge, and Kim McLane 
+Wardlaw, Johnnie B. Rawlinson, Consuelo M. Callahan, 
+Morgan Christen, Michelle T. Friedland, Mark J. Bennett, 
+Daniel P. Collins, Patrick J. Bumatay, Holly A. Thomas 
+and Roopali H. Desai, Circuit Judges."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,2,1,P002.B01,DOC002[P002.B01],24,46,54.0,35.0,279.48,157.28,"2 
+B RISKIN V . S HOPIFY , I NC . Opinion by Judge Wardlaw; 
+Concurrence by Judge Collins; 
+Concurrence by Judge Bumatay; Dissent by Judge Callahan"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,2,2,P002.B02,DOC002[P002.B02],1,2,163.68,154.73,235.2,171.34,SUMMARY *
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,2,3,P002.B03,DOC002[P002.B03],43,62,54.0,197.69,345.0,310.64,"Personal Jurisdiction The en banc court reversed the district court’s dismissal 
+for lack of personal jurisdiction, and applying traditional 
+specific personal jurisdiction precedent to e-commerce, 
+concluded that jurisdiction was proper because Defendants’ 
+allegedly tortious actions deliberately targeted Plaintiff 
+Brandon Briskin in California."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,2,4,P002.B04,DOC002[P002.B04],103,144,53.99,314.28,345.0,540.9,"Briskin, a California resident, used his iPhone’s Safari browser to purchase clothing from the brand IABMFG at https://www.iambecoming.com. When he pressed the “Pay now” button, he had no way of knowing that by doing so he submitted his personal data not to IABMFG, but to Shopify, an e-commerce platform that facilitates online sales for merchants with whom it contracts. Briskin filed his putative class action alleging privacy-related torts in the Northern District of California against Shopify, Inc., a Canadian corporation, and two of its wholly-owned United States subsidiaries, Shopify (USA), Inc., and Shopify Payments (USA), Inc., Delaware corporations. * This"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,2,5,P002.B05,DOC002[P002.B05],23,25,53.99,314.28,345.0,540.9,summary constitutes no part of the opinion of the court. It has been prepared by court staff for the convenience of the reader.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,3,1,P003.B01,DOC002[P003.B01],117,166,54.0,35.0,345.0,252.44,"B RISKIN V . S HOPIFY , I NC . 
+3 The en banc court concluded that Shopify is subject to 
+specific personal jurisdiction in California because 
+Shopify’s allegedly tortious actions deliberately targeted 
+Briskin in California where: (1) Shopify conceded that its 
+geolocation technology allowed it to know that Briskin’s 
+device was located in California when it installed cookies on 
+Briskin’s device; and (2) Briskin’s complaint alleged that 
+Shopify used the data gathered by its cookies to compile 
+consumer profiles and then sold them without the 
+consumer’s knowledge or consent.  The en banc court 
+overruled precedent requiring defendants’ conduct to evince 
+“differential targeting” of a specific forum to establish 
+specific personal jurisdiction in that forum."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,3,2,P003.B02,DOC002[P003.B02],84,111,54.0,256.08,348.0,368.84,"The en banc court also held that the district court erred 
+in dismissing Briskin’s complaint on vagueness grounds.  
+Fed. R. Civ. P. 8(a)(2) requires a short and plain statement 
+of the claim in order to give the defendant fair notice of what 
+the claim is and the grounds upon which it rests.  The en banc 
+court held that complaint satisfied Rule 8(a)(2) because it 
+provided sufficient information to give the Shopify entities 
+fair notice of the claims against them."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,3,3,P003.B03,DOC002[P003.B03],106,142,54.0,372.48,345.0,540.44,"Concurring in the judgment, Judge Collins agreed that 
+the district court erred in dismissing this action for lack of 
+jurisdiction over the Shopify defendants, but his reasoning 
+differed in some respects from that of the majority.  To 
+establish personal jurisdiction over Defendants in California, 
+Briskin must show that each Defendant’s suit-related 
+conduct created a substantial connection with California, 
+which entails a showing that Briskin’s claims arose out of or 
+related to some action by which a given Defendant 
+purposefully availed itself of the privilege of conducting 
+activities within the forum State.  In his view, this standard 
+is readily satisfied here, because each Defendant allegedly"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,4,1,P004.B01,DOC002[P004.B01],41,66,54.0,35.0,345.0,128.24,"4 
+B RISKIN V . S HOPIFY , I NC . committed, or is responsible for, tortious conduct within 
+California.  He also agreed with the majority that Briskin’s 
+pleading was sufficient to avoid dismissal on the ground that 
+it was an impermissible group-pleading."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,4,2,P004.B02,DOC002[P004.B02],71,94,54.0,131.88,348.0,258.44,"Concurring, Judge Bumatay would hold that in 
+determining personal jurisdiction over out-of-state corporate 
+defendants, the analysis must focus on an analogy to 
+physical presence, and it does not matter whether the 
+defendant also targeted the forum State over other States.  
+Given the allegations made against the Shopify entities, the 
+Shopify entities were sufficiently present in California to not 
+require any targeting of the State to assert personal 
+jurisdiction over them."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,4,3,P004.B03,DOC002[P004.B03],36,52,54.0,262.08,345.0,333.44,"Dissenting, Judge Callahan would hold that Supreme 
+Court precedent precludes the majority’s expansive view of 
+specific personal jurisdiction in this case.  In her view, 
+Shopify’s allegedly tortious conduct was not expressly 
+aimed at California."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,4,4,P004.B04,DOC002[P004.B04],1,2,168.96,346.13,229.92,376.54,COUNSEL
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,4,5,P004.B05,DOC002[P004.B05],36,71,54.0,385.92,345.0,457.28,"Nicolas A. Sansone (argued), Allison M. Zieve, and Scott L. 
+Nelson, Public Citizen Litigation Group, Washington, D.C.; 
+Seth A. Safier, Matthew T. McCrary, and Todd Kennedy, 
+Gutride Safier LLP, San Francisco, California; for Plaintiff-
+Appellant."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,4,6,P004.B06,DOC002[P004.B06],31,74,54.0,460.92,345.0,532.28,"Moez Kaba (argued), Hueston Hennigan LLP, Los Angeles, 
+California; Allison Libeu and Sourabh Mishra, Hueston 
+Hennigan LLP, Newport Beach, California; Adam 
+Minchew, Hueston Hennigan LLP, New York, New York; 
+for Defendants-Appellees."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,5,1,P005.B01,DOC002[P005.B01],45,86,54.0,35.0,345.0,161.84,"B RISKIN V . S HOPIFY , I NC . 
+5 Alan B. Morrison, George Washington University Law 
+School, Washington, D.C., for Amicus Curiae Alan B. 
+Morrison. Jonathan M. Rotter, Glancy Prongay & Murray LLP, Los 
+Angeles, California, for Amici Curiae Professors Patrick J. 
+Borchers and Peter Hay."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,5,2,P005.B02,DOC002[P005.B02],100,147,54.0,165.48,345.0,540.44,"Jeffrey M. Conner, Chief Deputy Assistant Attorney General; Heidi P. Stern, Solicitor General; Aaron D. Ford, Nevada Attorney General; Office of the Nevada Attorney General, Carson City, Nevada; Crystal U. Secoy, Director, Assistant Attorney General, Consumer Protection Division; Lynn Fitch, Mississippi Attorney General; Office of the Mississippi Attorney General, Jackson, Mississippi; Kris Mayes, Arizona Attorney General, Office of the Arizona Attorney General, Phoenix, Arizona; Tim Griffin, Arkansas Attorney General, Office of the Arkansas Attorney General, Little Rock, Arkansas; Rob Bonta, California Attorney General, Office of the California Attorney General, San Francisco, California; Philip J. Weiser, Colorado Attorney General, Office of"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,5,3,P005.B03,DOC002[P005.B03],98,145,54.0,165.48,345.0,540.44,"the Colorado Attorney General, Denver, Colorado; William Tong, Connecticut Attorney General, Office of the Connecticut Attorney General, Hartford, Connecticut; Kathleen Jennings, Delaware Attorney General, Office of the Delaware Attorney General, Wilmington, Delaware; Brian L. Schwalb, District of Columbia Attorney General, Office of the District of Columbia Attorney General, Washington, D.C.; Anne E. Lopez, Hawai'i Attorney General, Office of the Hawai'i Attorney General, Honolulu, Hawai'i; Raul L. Labrador, Idaho Attorney General, Office of the Idaho Attorney General, Boise, Idaho; Kwame Raoul, Illinois Attorney General, Office of the Illinois Attorney General, Chicago, Illinois; Theodore E. Rokita, Indiana Attorney General,"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,6,1,P006.B01,DOC002[P006.B01],97,141,54.0,35.0,345.0,528.44,"6 B RISKIN V . S HOPIFY , I NC . Office of the Indiana Attorney General, Indianapolis, Indiana; Brenna Bird, Iowa Attorney General, Office of the Iowa Attorney General, Des Moines, Iowa; Aaron M. Frey, Maine Attorney General, Office of the Maine Attorney General, Augusta, Maine; Andrea J. Campbell, Commonwealth of Massachusetts Attorney General, Office of the Commonwealth of Massachusetts Attorney General, Boston, Massachusetts; Dana Nelson, Michigan Attorney General, Office of the Michigan Attorney General, Lansing, Michigan; Keith Ellison, Minnesota Attorney General, Office of the Minnesota Attorney General, St. Paul, Minnesota; John Formella, New Hampshire Attorney General, Office of"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,6,2,P006.B02,DOC002[P006.B02],100,144,54.0,35.0,345.0,528.44,"the New Hampshire Attorney General, Concord, New Hampshire; Matthew J. Platkin, New Jersey Attorney General, Office of the New Jersey Attorney General, Trenton, New Jersey; Raul Torrez, New Mexico Attorney General, Office of the New Mexico Attorney General, Santa Fe, New Mexico; Letitia James, New York Attorney General, Office of the New York Attorney General, Albany, New York; Joshua H. Stein, North Carolina Attorney General, Office of the North Carolina Attorney General, Raleigh, North Carolina; Drew H. Wrigley, North Dakota Attorney General, Office of the North Dakota Attorney General, Bismarck, North Dakota; Gentner Drummond, Oklahoma Attorney General, Office of the"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,6,3,P006.B03,DOC002[P006.B03],62,90,54.0,35.0,345.0,528.44,"Oklahoma Attorney General, Oklahoma City, Oklahoma; Ellen F. Rosenblum, Oregon Attorney General, Office of the Oregon Attorney General, Salem, Oregon; Peter F. Neronha, Rhode Island Attorney General, Office of the Rhode Island Attorney General, Providence, Rhode Island; Alan Wilson, South Carolina Attorney General, Office of the South Carolina Attorney General, Columbia, South Carolina; Marty Jackley, South Dakota Attorney General, Office of the"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,7,1,P007.B01,DOC002[P007.B01],92,178,54.0,35.0,345.0,252.44,"B RISKIN V . S HOPIFY , I NC . 
+7 South Dakota Attorney General, Pierre, South Dakota; 
+Charity R. Clark, Vermont Attorney General, Office of the 
+Vermont Attorney General, Montpelier, Vermont; Robert 
+W. Ferguson, Washington Attorney General, Office of the 
+Washington Attorney General, Olympia, Washington; for 
+Amici Curiae States of Nevada, Mississippi, Arizona, 
+Arkansas, California, Colorado, Connecticut, Delaware, 
+Hawaii, 
+Idaho, 
+Illinois, 
+Indiana, 
+Iowa, 
+Maine, 
+Massachusetts, Michigan, Minnesota, New Hampshire, New 
+Jersey, New Mexico, New York, North Carolina, North 
+Dakota, Oklahoma, Oregon, Rhode Island, South Carolina, 
+South Dakota, Vermont, Washington, and The District of 
+Columbia."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,7,2,P007.B02,DOC002[P007.B02],48,82,54.0,256.08,345.0,355.04,"F. Mario Trujillo, Victoria J. Noble, and Corynne McSherry, 
+Electronic Frontier Foundation, San Francisco, California; 
+Seth E. Mermin and David S. Nahmias, UC Berkeley Center 
+for Consumer Law & Economic Justice, Berkeley, 
+California; for Amici Curiae Electronic Frontier Foundation 
+and The UC Berkeley Center for Consumer Law & 
+Economic Justice."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,7,3,P007.B03,DOC002[P007.B03],95,159,54.0,358.68,345.0,532.64,"Karun A. Tilak and Miguel Gradilla, Deputy City Attorneys; 
+Sara J. Eisenberg, Chief of Complex and Affirmative 
+Litigation; Yvonne R. Mere, Chief Deputy City Attorney; 
+David Chiu, City Attorney; San Francisco City Attorney's 
+Office, San Francisco, California; Mara W. Elliott, City 
+Attorney, San Diego City Attorney's Office, San Diego, 
+California; Barbara J. Parker, City Attorney, Oakland City 
+Attorney's Office, Oakland, California; for Amici Curiae 
+San Francisco City Attorney's Office, San Diego City 
+Attorney's Office and Oakland City Attorney's Office. Ryan H. Wu, Capstone Law APC, Los Angeles, California, 
+for Amicus Curiae Professor Paul Schiff Berman."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,8,1,P008.B01,DOC002[P008.B01],46,80,54.0,35.0,345.0,161.84,"8 
+B RISKIN V . S HOPIFY , I NC . Stephanie A. Joyce, Computer & Communications Industry 
+Association, Washington, D.C., for Amicus Curiae 
+Computer & Communications Industry Association. Thomas G. Saunders, Wilmer Cutler Pickering Hale and 
+Dorr LLP, Washington, D.C., for Amici Curiae Software 
+and Digital Economy Associations."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,8,2,P008.B02,DOC002[P008.B02],43,73,54.0,165.48,345.0,236.84,"Adam G. Unikowsky and Jonathan J. Marshall, Jenner & 
+Block LLP, Washington, D.C.; Jennifer B. Dickey, Jonathan 
+D. Urick, and Kevin R. Palmer, United States Chamber 
+Litigation Center, Washington, D.C.; for Amicus Curiae 
+Chamber of Commerce of the United States of America."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,8,3,P008.B03,DOC002[P008.B03],25,50,54.0,240.48,345.0,284.24,"Colin R. Kass, Proskauer Rose LLP, Washington, D.C.; 
+David A. Munkittrick, Proskauer Rose LLP, New York, 
+New York; for Amicus Curiae Bright Data, LTD."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,8,4,P008.B04,DOC002[P008.B04],38,76,54.0,287.88,345.0,359.24,"Fred A. Rowley Jr., Wilson Sonsini Goodrich & Rosati, Los 
+Angeles, California; Paul N. Harold, Wilson Sonsini 
+Goodrich & Rosati, Washington, D.C.; David Kramer, 
+Wilson Sonsini Goodrich & Rosati, Palo Alto, California; 
+for Amici Curiae Alan Trammell and Derek Bambauer."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,8,5,P008.B05,DOC002[P008.B05],60,119,54.0,362.88,345.0,489.44,"Michael B. de Leeuw, Tamar Wise, and David Margulis, 
+Cozen O'Connor, New York, New York; Max Kaplan, 
+Cozen O'Connor, Philadelphia, Pennsylvania; Melissa 
+Siebert, Cozen O'Connor, Chicago, Illinois; Alexander 
+Robinson and Brett Taylor, Cozen O'Connor, Santa Monica, 
+California; for Amici Curiae Handker Bandanas, Gather 
+Here, Panda Motorworks, Sarah Healey Sleep, The Matt 
+Butler LLC DBA Pretty Alright Goods, and Vedazzling 
+Accessories."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,8,6,P008.B06,DOC002[P008.B06],27,54,54.0,493.08,345.0,536.84,"Steven P. Lehotsky, Scott A. Keller, and Jeremy E. Maltz, 
+Lehotsky Keller Cohn LLP, Washington, D.C.; Andrew B. 
+Davis, Lehotsky Keller Cohn LLP, Austin, Texas; Vidushi"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,9,1,P009.B01,DOC002[P009.B01],38,72,54.0,35.0,345.0,157.28,"B RISKIN V . S HOPIFY , I NC . 
+9 Dyall, Chamber of Progress, McLean, Virginia; Carl M. 
+Szabo, Christopher J. Marchese, and Paul D. Taske, 
+NetChoice Litigation Center, Washington, D.C.; for Amici 
+Curiae Netchoice and Chamber of Progress."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,9,2,P009.B02,DOC002[P009.B02],1,3,171.6,154.73,227.28,171.34,OPINION
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,9,3,P009.B03,DOC002[P009.B03],114,162,54.0,168.72,345.0,378.08,"WARDLAW, Circuit Judge: Since 1994, when the first shoppers in the United States 
+turned to the “World Wide Web” to search for and make 
+purchases online, what is now known as “e-commerce” has 
+grown exponentially.  Just last year, on Cyber Monday, U.S. 
+consumers spent over thirteen billion dollars in online 
+purchases on a single day, and U.S. online purchases were 
+expected to exceed forty billion dollars through Cyber 
+Week. 1   And as e-commerce has proliferated, it has also 
+evolved to incorporate new technology, devices, and 
+platforms that participate in various ways to profit from this 
+lucrative market.  One such way is to gather and disseminate 
+the personal identifying information that an individual"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,9,4,P009.B04,DOC002[P009.B04],39,107,53.97,447.4,344.49,534.92,"1  Haleluya Hadero & Wyatte Grantham-Philips,  Cyber Monday 
+Shoppers Expected to Set a Record on the Year’s Biggest Day for Online 
+Shopping , 
+Associated 
+Press 
+(Dec. 
+2, 
+2024), 
+https://apnews.com/article/cyber-monday-sales-online-holiday-
+shopping-59d13c2e184cc10b17c3f0bdd7573323 
+[https://perma.cc/8J4N-MKUK]."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,10,1,P010.B01,DOC002[P010.B01],98,123,53.97,35.0,345.0,540.97,"10 B RISKIN V . S HOPIFY , I NC . necessarily submits when searching for a sought-after item, completing a transaction, or creating an account. 2 Plaintiff Brandon Briskin, a resident of the state of California, alleges that Defendant Shopify did just that, and he asserts privacy-related torts arising from Shopify’s activity in connection with his online purchase in California of athletic wear from a retailer in California. Briskin alleges that in the process of facilitating his credit card transaction for the merchant, Shopify took the opportunity to install “cookies” on the device he used to buy the athletic"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,10,2,P010.B02,DOC002[P010.B02],97,161,53.97,35.0,345.0,540.97,"wear and that Shopify did so without his knowledge or consent. According to the complaint, while knowing that the device Briskin was using to shop was located in California, Shopify surreptitiously implanted cookies that permanently remained on Briskin’s device, tracked its physical location, 2 Corey Ciocchetti, Just Click Submit: The Collection, Dissemination, and Tagging of Personally Identifying Information , 10 Vand. J. Ent. & Tech. L. 553, 562 (2008) (“Personal information is the lifeblood of e- commerce. . . . [C]ompanies collect [personal identifying information] to: (1) facilitate and process transactions; (2) conduct marketing campaigns; (3) mine for demographics, clickstream"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,10,3,P010.B03,DOC002[P010.B03],104,154,53.97,35.0,345.0,540.97,"data, purchasing behavior, and customer interests; and (4) sell for a fee.”); see also Corey Ciocchetti, The Privacy Matrix , 12 J. Tech. L. & Pol’y 245, 253 (2007) (“[M]any companies desire other forms of [personal identifying information]—such as home and employment telephone numbers, social security numbers, mother’s maiden name, personal income, or job field/description—merely to supplement a purchaser’s database profile. . . [C]ompanies desire this information because detailed individual profiles are valuable as internal marketing resources as well as assets that may be sold to third parties in the future.”); Catherine Tucker, The Implications of Improved Attribution and Measurability"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,10,4,P010.B04,DOC002[P010.B04],36,57,53.97,35.0,345.0,540.97,"for Antitrust and Privacy in Online Advertising Markets , 20 Geo. Mason L. Rev. 1025, 1027 (2013) (explaining how easily online advertisers track and collect data about consumers when “[o]ffline, all of these steps are hard”)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,11,1,P011.B01,DOC002[P011.B01],39,58,54.0,35.0,345.0,128.24,"B RISKIN V . S HOPIFY , I NC . 
+11 and collected data regarding Briskin’s online shopping 
+activity.  Briskin alleges that Shopify used the resulting data 
+to compile a consumer profile that Shopify marketed widely, 
+including to many California merchants."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,11,2,P011.B02,DOC002[P011.B02],103,140,54.0,131.88,345.0,299.84,"The district court granted Shopify’s motion to dismiss 
+for lack of personal jurisdiction.  We reverse.  Applying our 
+traditional personal jurisdiction precedent to the ever-
+evolving world of e-commerce, 3  we conclude that 
+jurisdiction is proper because Shopify’s allegedly tortious 
+actions deliberately targeted Briskin in California: 
+(1) Shopify concedes that its geolocation technology 
+allowed it to know that Briskin’s device was located in 
+California when it installed cookies on Briskin’s device; and 
+(2) the complaint alleges that Shopify uses the data gathered 
+by its cookies to compile consumer profiles and then sells 
+them without the consumer’s knowledge or consent."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,11,3,P011.B03,DOC002[P011.B03],5,8,144.96,303.29,253.92,339.44,I. BACKGROUND A. The Purchase
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,11,4,P011.B04,DOC002[P011.B04],104,133,54.0,343.08,348.0,540.92,"According to the operative complaint, in June 2019, Plaintiff Brandon Briskin, who at all relevant times was a California resident, used his iPhone’s Safari browser to purchase athletic wear from the clothing brand IABMFG. He established a secure, encrypted connection at https://www.iambecoming.com. He viewed products, added his selected items to the shopping cart, produced his order summary, and was presented with the checkout form, still 3 The parties agree among themselves that we need not develop an internet-specific standard for personal jurisdiction. We also agree. “Though the emergence of the internet presents new fact patterns, it does not require a"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,11,5,P011.B05,DOC002[P011.B05],26,50,54.0,343.08,348.0,540.92,"wholesale departure from our approach to personal jurisdiction before the internet age.” Herbal Brands, Inc. v. Photoplaza, Inc. , 72 F.4th 1085, 1093 (9th Cir. 2023)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,12,1,P012.B01,DOC002[P012.B01],97,132,54.0,35.0,345.0,252.44,"12 B RISKIN V . S HOPIFY , I NC . bearing the name IABMFG. To complete the checkout process, the platform required Briskin to submit personal identifying information, including his full name, delivery and billing addresses, phone number and credit card number, expiration date and CVV code. Believing that IABMFG generated the payment form over his secure connection, he submitted the required information, and he pressed the “Pay now” button. He had no way of knowing that by doing so he submitted his private data not to IABMFG, but to Defendant Shopify. 4 And though he never clicked the"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,12,2,P012.B02,DOC002[P012.B02],24,31,54.0,35.0,345.0,252.44,"“Privacy Policy” button, had he done so, he would have found no mention of Shopify or the “cookies” Shopify had sent to his device."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,12,3,P012.B03,DOC002[P012.B03],2,3,169.92,256.08,228.96,272.24,B. Shopify
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,12,4,P012.B04,DOC002[P012.B04],103,123,53.99,275.88,345.0,540.9,"Shopify is an e-commerce platform that facilitates online sales for merchants with whom it contracts. Merchants pay to access Shopify’s software and infrastructure, which the merchants use to design, set up, and manage their own online stores. The merchants use Shopify’s website to provide Shopify with their product offerings, prices, shipping options, and other business preferences. Some merchants elect to embed Shopify assets, such as payment forms, into their own websites, while Shopify, which creates all the code necessary to implement the product catalogue and accept payment, hosts others. In either case, Shopify collects and validates the consumer’s payment. And"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,12,5,P012.B05,DOC002[P012.B05],47,66,53.99,275.88,345.0,540.9,"together with Stripe, a third-party payment processer, Shopify processes the payment, indefinitely storing the sensitive personal information it collects through the payment form. Shopify also ships products to consumers for the merchants through 4 “Shopify” refers to Shopify, Inc., Shopify (USA), Inc., and Shopify Payments (USA), Inc."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,13,1,P013.B01,DOC002[P013.B01],25,37,54.0,35.0,345.0,100.64,"B RISKIN V . S HOPIFY , I NC . 
+13 its fulfillment centers and logistics partners, and advertises 
+its product offerings to merchants through its physical stores."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,13,2,P013.B02,DOC002[P013.B02],103,120,54.0,104.28,348.0,341.24,"Shopify sends executable JavaScript code to consumers’ computers or mobile devices, which then load and execute the code to display the payment form. However, the merchant whose product or service the consumer is purchasing appears to generate the payment form itself on the consumer’s computer screen, and the screen does not identify Shopify’s role in the transaction. In this case, neither the IABMFG checkout nor payment form mentions Shopify. Thus, only a person with technical knowledge and specialized software tools could discern that Shopify generated the forms, which here involved downloading eight separate files onto Briskin’s cell phone to generate"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,13,3,P013.B03,DOC002[P013.B03],45,61,54.0,104.28,348.0,341.24,"the form, all unbeknownst to Briskin. And when Briskin clicked the “Pay now” button, the newly installed Shopify software code sent his name and payment details to Shopify’s servers. Shopify then sent a purchase confirmation email to Briskin, which again omitted mention of Shopify."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,13,4,P013.B04,DOC002[P013.B04],104,123,54.0,344.88,348.0,540.44,"But Shopify’s involvement with the consumer neither begins nor ends with the completed transaction. When Briskin first viewed one of the items he later purchased, Shopify installed tracking cookies onto his device, enabling it to track Briskin’s behavior across Shopify’s vast merchant network, including geolocation data, the identity of his browser, the IP address, along with the payment information, and where the transaction was completed. And Briskin alleges that after collecting all of the purchaser’s personal identifying information, Shopify or Stripe, stores the data. Shopify also assesses the financial risks associated with individual consumers and their transactions and creates user"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,13,5,P013.B05,DOC002[P013.B05],19,22,54.0,344.88,348.0,540.44,"profiles using the collected data for the benefit of its merchants. Stripe, too, uses the shared collected data to"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,14,1,P014.B01,DOC002[P014.B01],45,67,54.0,35.0,345.0,142.3,"14 
+B RISKIN V . S HOPIFY , I NC . create user risk profiles, which it then markets to its own 
+customers.  Briskin alleges that Shopify shared his personal 
+identifying information with other third parties who store, 
+analyze, and market that information to their customers as 
+well."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,14,2,P014.B02,DOC002[P014.B02],3,4,154.44,145.68,244.44,161.84,C. The Litigation
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,14,3,P014.B03,DOC002[P014.B03],100,134,53.99,165.48,348.0,477.43,"In August 2021, Briskin filed this putative class action 5 in the federal district court for the Northern District of California. He named as defendants Shopify, Inc., a Canadian corporation with headquarters in Ottawa, and two of its wholly-owned United States subsidiaries, Shopify (USA), Inc. (“Shopify USA”), a Delaware corporation with its principal place of business in New York, 6 and Shopify Payments (USA), Inc. (“Shopify Payments”), a Delaware corporation with its principal place of business in Delaware. Shopify, Inc., sells web-based payment platforms and related services to merchants who engage in online commercial transactions with individual consumers. Shopify, Inc.,"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,14,4,P014.B04,DOC002[P014.B04],74,86,53.99,165.48,348.0,477.43,"describes Shopify USA as a subprocessor of the personal data collected by Shopify, Inc. Shopify Payments contracts separately with Shopify merchants to provide payment software. Together, the three Shopify companies create an end-to-end service that facilitates e-commerce transactions for their contracting online merchants, but also facilitates 5 This opinion addresses personal jurisdiction only and does not reach any issue related to class certification, which was not addressed by any party to this appeal."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,14,5,P014.B05,DOC002[P014.B05],47,60,54.0,481.52,344.51,540.91,"6  The SAC alleges that Shopify USA’s principal place of business is 
+Ottawa, Canada.  But Shopify has repeatedly represented that Shopify 
+USA’s principal place of business is in New York and has repeatedly 
+represented that Briskin could sue Shopify USA in New York or 
+Delaware."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,15,1,P015.B01,DOC002[P015.B01],100,133,54.0,35.0,345.0,532.64,"B RISKIN V . S HOPIFY , I NC . 15 Shopify’s ability to profit from the personal identifying information it tracks (having installed its code and cookies on consumers’ devices), collects, stores, aggregates, and then sells to third parties, all without disclosure to the purchaser. In particular, the Second Amended Complaint (“SAC”) alleges that Shopify does not inform consumers that: (i) Shopify will intercept communications that consumers believe are being sent exclusively to merchants; (ii) its software code is causing their devices to connect to Shopify’s computer servers; (iii) Shopify is placing tracking cookies on consumer’s computers; (iv) its"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,15,2,P015.B02,DOC002[P015.B02],105,133,54.0,35.0,345.0,532.64,"software code is rendering the payment forms that are displayed to consumers; (v) the sensitive information in the payment forms will be sent to Shopify; (vi) sensitive information not expressly input by the consumer—such as IP address, operating system, geolocation data, and item(s) purchased—will also be collected from the consumer by Shopify; (vii) Shopify and/or its payment processor Stripe will indefinitely store that sensitive information; (viii) Shopify will use consumers’ information to assign risk scores to consumers and/or transactions, which could subsequently be communicated to other merchants and used to deny consumers’ future payment attempts; (ix) Shopify will track consumers’"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,15,3,P015.B03,DOC002[P015.B03],4,4,54.0,35.0,345.0,532.64,behavior across over one
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,16,1,P016.B01,DOC002[P016.B01],93,120,54.0,35.0,345.0,540.94,"16 B RISKIN V . S HOPIFY , I NC . million websites . . . ; and (xi) Shopify will share consumer data with third parties. The SAC asserts that these practices violate California data privacy and access laws and constitute unfair and deceptive practices. 7 The three named defendants filed three separate motions to dismiss the SAC on several grounds. In its May 5, 2022 Order of Dismissal, the district court focused on two of those grounds: (1) whether the SAC failed to provide adequate notice of the claims against each defendant contrary to the pleading requirements of"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,16,2,P016.B02,DOC002[P016.B02],106,129,54.0,35.0,345.0,540.94,"Federal Rule of Civil Procedure 8(a)(2), and (2) whether the court could exercise personal jurisdiction over the defendants. The district court dismissed the SAC under Rule 8(a)(2) because it was collectively pleaded and therefore failed to specify which named defendant was responsible for which of Briskin’s alleged injuries. As for personal jurisdiction, the district court first noted that Briskin did not argue that the court has general personal jurisdiction over any of the three Shopify 7 Specifically, the SAC alleges claims for invasion of privacy in violation of the California Invasion of Privacy Act, California Penal Code Sections 631(a), 635,"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,16,3,P016.B03,DOC002[P016.B03],102,131,54.0,35.0,345.0,540.94,"and 637; data theft in violation of the California Computer Data Access and Fraud Act, California Penal Code Section 502; and improper notice and use of data in violation of the California Consumer Privacy Act of 2018, California Civil Code Section 1798.100; improper notice in violation of California Online Privacy Protection Act of 2003, California Business and Professions Code Section 22575. The SAC also alleges unfair and deceptive business practices in violation of California’s Unfair Competition Law (“UCL”), California Business and Professions Code Section 17200 et seq. Finally, the SAC alleges invasion of privacy in violation of Article I, Section"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,16,4,P016.B04,DOC002[P016.B04],14,16,54.0,35.0,345.0,540.94,1 of the California Constitution and the Fourth Amendment of the U.S. Constitution.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,17,1,P017.B01,DOC002[P017.B01],37,58,54.0,35.0,345.0,128.24,"B RISKIN V . S HOPIFY , I NC . 
+17 defendants. 8   The district court then concluded that it lacked 
+specific personal jurisdiction over the Shopify entities.  The 
+district court entered judgment dismissing the SAC, and 
+Briskin timely appealed."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,17,2,P017.B02,DOC002[P017.B02],114,175,54.0,131.88,345.0,286.04,"A three-judge panel of our court affirmed the district 
+court’s ruling that it lacked specific personal jurisdiction 
+over Shopify.   Briskin v. Shopify, Inc. , 87 F.4th 404, 409 (9th 
+Cir. 2023),  vacated , 101 F.4th 706 (2024).  The panel did not 
+reach the Rule 8 issue, concluding it was unnecessary to do 
+so.   Id.  at 424.  A majority of the active judges of our court 
+voted to rehear this appeal en banc.  Having done so, we now 
+reverse the district court’s judgment on both grounds for 
+dismissal and conclude that the district court has specific 
+personal jurisdiction over the Shopify defendants and that 
+the SAC was sufficiently pleaded under Rule 8. 9"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,17,3,P017.B03,DOC002[P017.B03],2,7,145.32,289.49,253.68,306.1,II. JURISDICTION
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,17,4,P017.B04,DOC002[P017.B04],25,41,54.0,309.48,345.0,353.24,"The district court had subject matter jurisdiction under 
+28 U.S.C. § 1332(d)(2)(A).  We have jurisdiction under 28 
+U.S.C. § 1291."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,17,5,P017.B05,DOC002[P017.B05],101,139,53.98,401.44,347.01,540.9,"8  On this record, we have no basis for determining whether Shopify is 
+subject to general personal jurisdiction in California.  First, the district 
+court denied Briskin’s request for jurisdictional discovery.  Second, 
+Briskin never argued that the California courts have general personal 
+jurisdiction over Shopify.  Therefore, he has waived that argument.  
+Judge Callahan’s suggestion that “perhaps the panel did not go far 
+enough” is speculative at best and has no bearing on whether Shopify’s 
+actions here are sufficient to establish specific personal jurisdiction. 9  We therefore do not reach the issue of whether Briskin was entitled to 
+jurisdictional discovery."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,18,1,P018.B01,DOC002[P018.B01],43,80,54.0,35.0,345.0,134.24,"18 
+B RISKIN V . S HOPIFY , I NC . III. STANDARD OF REVIEW We review de novo the district court’s conclusion that it 
+lacks personal jurisdiction over Shopify.   Mavrix Photo, Inc. 
+v. Brand Techs., Inc. , 647 F.3d 1218, 1223 (9th Cir. 2011)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,18,2,P018.B02,DOC002[P018.B02],72,113,54.0,137.88,345.0,256.9,"We review the district court’s conclusion that the SAC 
+failed to meet the pleading requirements of Rule 8(a)(2) de 
+novo.   In re Dominguez , 51 F.3d 1502, 1508 n.5 (9th Cir. 
+1995) (“Because the question whether a complaint provides 
+sufficient information to satisfy the notice pleading 
+requirements is essentially a question of law, we review that 
+aspect of the Rule 8(a) question de novo.”). IV. TRADITIONAL PRINCIPLES"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,18,3,P018.B03,DOC002[P018.B03],3,5,138.84,260.28,260.16,276.44,A. Personal Jurisdiction
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,18,4,P018.B04,DOC002[P018.B04],104,166,54.0,280.08,348.0,503.24,"Here, no applicable federal statute confers personal jurisdiction upon the federal district court. We therefore apply the law of the state in which the district court sits— here, California. Fed. R. Civ. P. 4(k)(1)(A); Herbal Brands, Inc. v. Photoplaza, Inc. , 72 F.4th 1085, 1089 (9th Cir. 2023). The California long-arm statute, Cal Civ. Proc. Code § 410.10, provides for personal jurisdiction to the maximum extent that the Fourteenth Amendment’s Due Process Clause allows. World-Wide Volkswagen Corp. v. Woodson , 444 U.S. 286, 291 (1980). For a court to exercise personal jurisdiction over a nonresident defendant, that defendant must have"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,18,5,P018.B05,DOC002[P018.B05],43,70,54.0,280.08,348.0,503.24,"“certain minimum contacts” with California “such that the maintenance of the suit does not offend ‘traditional notions of fair play and substantial justice.’” Mavrix Photo , 647 F.3d at 1223 (quoting Int’l Shoe Co. v. Washington , 326 U.S. 310, 316 (1945))."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,19,1,P019.B01,DOC002[P019.B01],98,150,54.0,35.0,345.0,299.84,"B RISKIN V . S HOPIFY , I NC . 19 B. Specific Personal Jurisdiction A nonresident corporation may be subject to either general or specific personal jurisdiction. General personal jurisdiction allows a court to hear “any and all claims against [defendants] when their affiliations with the State are so ‘continuous and systematic’ as to render them essentially at home in the forum State.” Goodyear Dunlop Tires Operations, S.A. v. Brown , 564 U.S. 915, 919 (2011); Ford Motor Co. v. Mont. Eighth Jud. Dist. Ct. , 592 U.S. 351, 358– 59 (2021). None of the Shopify entities resides in"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,19,2,P019.B02,DOC002[P019.B02],53,61,54.0,35.0,345.0,299.84,"the State of California, and Briskin does not attempt to make a showing that Shopify’s contacts with California are so substantial, continuous, and systematic that it would be consistent with “traditional notions of fair play and substantial justice” to hale Shopify into California courts for any of its activities across the nation."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,19,3,P019.B03,DOC002[P019.B03],101,153,54.0,303.48,345.0,538.64,"We therefore must turn to longstanding principles governing the exercise of specific personal jurisdiction. The Supreme Court has long interpreted International Shoe ’s inquiry into whether a forum state may assert specific jurisdiction over a nonresident defendant to require that courts focus on “the relationship among the defendant, the forum, and the litigation.” Walden v. Fiore , 571 U.S. 277, 283–84 (2014) (quoting Keeton v. Hustler Mag., Inc. , 465 U.S. 770, 775 (1984)) (“In judging minimum contacts, a court properly focuses on ‘the relationship among the defendant, the forum, and the litigation’” (quoting Shaffer v. Heitner , 433 U.S."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,19,4,P019.B04,DOC002[P019.B04],32,52,54.0,303.48,345.0,538.64,"186, 204 (1977))); Int’l Shoe Co. , 326 U.S. at 316, 320. We analyze specific personal jurisdiction under a three-part test: (1) The non-resident defendant must purposefully direct his activities or"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,20,1,P020.B01,DOC002[P020.B01],83,117,54.0,35.0,309.0,250.64,"20 
+B RISKIN V . S HOPIFY , I NC . consummate some transaction with the forum 
+or resident thereof; or perform some act by 
+which he purposefully avails himself of the 
+privilege of conducting activities in the 
+forum, thereby invoking the benefits and 
+protections of its laws; (2) the claim must be one which arises out of 
+or relates to the defendant’s forum-related 
+activities; and (3) the exercise of jurisdiction must comport 
+with fair play and substantial justice, i.e. it 
+must be reasonable."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,20,2,P020.B02,DOC002[P020.B02],26,63,54.0,260.28,345.0,304.04,"Schwarzenegger v. Fred Martin Motor Co. , 374 F.3d 797, 
+802 (9th Cir. 2004) (quoting  Lake v. Lake , 817 F.2d 1416, 
+1421 (9th Cir. 1987))."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,20,3,P020.B03,DOC002[P020.B03],73,127,54.0,307.68,350.4,420.44,"Briskin bears the burden of satisfying the first two 
+prongs of the test.   Sher v. Johnson , 911 F.2d 1357, 1361 
+(9th Cir. 1990).  If Briskin fails to meet this burden, 
+California courts lack specific personal jurisdiction.  If 
+Briskin succeeds, then the burden shifts to Shopify to 
+“present a compelling case that the presence of some other 
+considerations would render jurisdiction unreasonable.”  
+Burger King Corp. v. Rudzewicz , 471 U.S. 462, 477 (1985)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,20,4,P020.B04,DOC002[P020.B04],63,88,54.0,424.08,345.0,541.31,"For claims sounding in tort, like the privacy and data use 
+violations Briskin asserts here, we most often employ a 
+purposeful direction analysis. 10   To analyze whether the tort 10  That said, “our cases do not impose a rigid dividing line between” 
+purposeful direction and purposeful availment, and the first prong of the 
+personal jurisdiction test “may be satisfied by purposeful availment, by"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,21,1,P021.B01,DOC002[P021.B01],73,136,54.0,35.0,345.0,169.64,"B RISKIN V . S HOPIFY , I NC . 
+21 was purposefully directed to the forum state we employ the 
+“ Calder  effects” test, which “focuses on the forum in which 
+the defendant’s actions were felt, whether or not the actions 
+themselves occurred within the forum.”   Mavrix Photo , 647 
+F.3d at 1228 (quoting  Yahoo! Inc. v. La Ligue Contre Le 
+Racisme Et L’Antisemitisme , 433 F.3d 1199, 1206 (9th Cir. 
+2006) (en banc))."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,21,2,P021.B02,DOC002[P021.B02],103,128,54.0,173.28,348.0,465.44,"The effects test is drawn from the Supreme Court’s decision in Calder v. Jones , 465 U.S. 783 (1984). There, the Court found that a California Superior Court had specific personal jurisdiction over the National Enquirer, a Florida corporation with its principal place of business in Florida. The newspaper’s reporter and editor also resided in Florida, but their allegedly libelous story was distributed in California, and was about a well-known actress who resided in California and was alleged to have injured her there by causing her emotional distress and harming her reputation. Id. at 784–86. The Supreme Court reasoned that"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,21,3,P021.B03,DOC002[P021.B03],90,131,54.0,173.28,348.0,465.44,"the defendants’ intentional and allegedly tortious actions “were expressly aimed at California,” that the defendants knew of the article’s “potentially devastating impact” upon the actress, and that the “brunt of that injury would be felt [by the actress] in the State in which she lives and works.” Id. at 789 – 90. Under those circumstances, the defendants “must ‘reasonably anticipate being haled into court [in California]’ to answer for the truth of the statements made in [their] article.” Id. at 790 (quoting World-Wide Volkswagen Corp. , 444 U.S. at 297)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,21,4,P021.B04,DOC002[P021.B04],31,69,54.0,487.84,344.49,540.91,"purposeful direction, or by some combination thereof.”   Davis v. 
+Cranfield Aerospace Sols., Ltd ., 71 F.4th 1154, 1162 (9th Cir. 2023) 
+(quotation marks omitted),  cert. denied , 144 S. Ct. 826 (2024)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,22,1,P022.B01,DOC002[P022.B01],96,150,54.0,35.0,345.0,540.44,"22 B RISKIN V . S HOPIFY , I NC . Thus, the purposeful direction test requires that the defendant (1) commit an intentional act, that is (2) expressly aimed at the forum state, and (3) which causes harm that the defendant knows will be suffered in the forum state. Brayton Purcell LLP v. Recordon & Recordon , 606 F.3d 1124, 1128 (9th Cir. 2010) (quoting Yahoo! Inc. , 433 F.3d at 1206). This test does not require that the defendant be physically present in the forum state, as “it is an inescapable fact of modern commercial life that a"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,22,2,P022.B02,DOC002[P022.B02],101,122,54.0,35.0,345.0,540.44,"substantial amount of business is transacted solely by mail and wire communications across state lines, thus obviating the need for physical presence within a State in which business is conducted.” Burger King , 471 U.S. at 476. “So long as a commercial actor’s efforts are ‘purposefully directed’ toward residents of another State, [the Supreme Court has] consistently rejected the notion that an absence of physical contacts can defeat personal jurisdiction there.” Id. Most relevant here is the second prong of the Calder effects test and the determination of when internet contacts between a defendant and a given forum state are"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,22,3,P022.B03,DOC002[P022.B03],100,142,54.0,35.0,345.0,540.44,"sufficient to show express aiming at that forum state. C. Specific Personal Jurisdiction in the Internet Age For almost three decades, we have applied these traditional jurisdictional principles to the ever-evolving worlds of technology, electronic communication, and e- commerce. In 1997, we addressed for the first time specific personal jurisdiction over a passive website that had done nothing more in the forum state than advertise on the internet. Cybersell, Inc. v. Cybersell, Inc. , 130 F.3d 414 (9th Cir. 1997). We applied our “normal ‘minimum contacts’ analysis” to conclude that Arizona did not have “personal jurisdiction over an allegedly infringing"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,22,4,P022.B04,DOC002[P022.B04],12,12,54.0,35.0,345.0,540.44,Florida web site advertiser who has no contacts with Arizona other than
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,23,1,P023.B01,DOC002[P023.B01],97,144,54.0,35.0,348.0,319.64,"B RISKIN V . S HOPIFY , I NC . 23 maintaining a home page that is accessible to Arizonans, and everyone else, over the Internet.” Id. at 415. We noted that courts addressing more interactive sites “have looked to the ‘level of interactivity and commercial nature of the exchange of information that occurs on the Web site’ to determine if sufficient contacts exist to warrant the exercise of jurisdiction.” Id. at 418 (quoting Zippo Mfg. Co. v. Zippo Dot Com, Inc. , 952 F. Supp. 1119, 1124 (W.D. Pa 1997)). We observed that no court has ever held that"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,23,2,P023.B02,DOC002[P023.B02],45,55,54.0,35.0,348.0,319.64,"an Internet advertisement alone is sufficient to subject the advertiser to jurisdiction in the plaintiff’s home state. Rather, in each, there has been “something more” to indicate that the defendant purposefully (albeit electronically) directed his activity in a substantial way to the forum state."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,23,3,P023.B03,DOC002[P023.B03],68,97,54.0,329.28,345.0,455.84,"Id.  (citation omitted).   Cybersell  thus recognized two 
+significant concepts that advanced our thinking about 
+specific personal jurisdiction as applied to conduct occurring 
+in cyberspace.  First, it recognized that contacts with the 
+forum state could be in the form of electronic contacts, and 
+second, it established that “something more” than mere 
+passive nationwide accessibility was required to show 
+express aiming at the forum state and, thus, satisfy due 
+process."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,23,4,P023.B04,DOC002[P023.B04],43,67,54.0,459.48,345.0,530.84,"We were then confronted with new factual scenarios, 
+requiring us to examine what actions by a defendant 
+constituted the “something more” that would subject the 
+defendant to specific personal jurisdiction.  The first such 
+case,  Panavision International, L.P. v. Toeppen , 141 F.3d"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,24,1,P024.B01,DOC002[P024.B01],98,146,54.0,35.0,345.0,362.84,"24 B RISKIN V . S HOPIFY , I NC . 1316 (9th Cir. 1998), involved a “cyber-pirate” who used corporations’ well-established trademarks to register domain names on the Internet with Network Solutions, Inc. (“NSI”), representing that (1) he had the right to use the requested domain name; (2) that his use of the domain name did not impair or infringe on any third parties’ trademarks or other intellectual property right; and (3) that he was not seeking to use the domain name for any unlawful purpose. Id. at 1318– 19. When Panavision learned of defendant Toeppen’s registration of its"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,24,2,P024.B02,DOC002[P024.B02],103,135,54.0,35.0,345.0,362.84,"mark as a domain name on NSI and the use of it on a passive website, it asked him to cease such use, whereupon Toeppen demanded $13,000. Id. at 1318. We held that “something more” had been shown that established express aiming of tortious conduct toward California, reasoning that “Toeppen engaged in a scheme to register Panavision’s trademarks as his domain names for the purpose of extorting money from Panavision” and that Toeppen’s “conduct, as he knew it likely would, had the effect of injuring Panavision in California,” its principal place of business and the center of the movie and"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,24,3,P024.B03,DOC002[P024.B03],5,11,54.0,35.0,345.0,362.84,television industry. Id. at 1322.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,24,4,P024.B04,DOC002[P024.B04],108,173,54.0,366.48,345.0,534.44,"Similarly, in  Rio Properties, Inc. v. Rio International 
+Interlink , 284 F.3d 1007 (9th Cir. 2002), Rio Properties, Inc. 
+(“RIO”), a Las Vegas hotel and casino operator, sued a 
+foreign business entity that engaged in online sports 
+gambling for trademark infringement of its trademark in 
+federal district court in Nevada.   Id.  at 1012.  We rejected the 
+defendant’s argument that the sports gambling entity was 
+merely operating a passive website because RIO had alleged 
+“something more—conduct directly targeting the forum . . . 
+by running radio and print advertisements in Las Vegas.”   Id.
+at 1020 (quotation marks omitted).  Thus, the defendant 
+“knowingly injured RIO in Nevada—its principal place of"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,25,1,P025.B01,DOC002[P025.B01],95,147,54.0,35.0,345.0,211.04,"B RISKIN V . S HOPIFY , I NC . 
+25 business and the capital of the gambling industry.”   Id. ;  see 
+also Brayton Purcell , 606 F.3d at 1129–30 (explaining that, 
+although maintenance of a passive website for advertising 
+elder abuse legal services was not “something more” that 
+amounted to express aiming, defendant Recordon expressly 
+aimed its conduct toward Northern California, where 
+plaintiff Brayton Purcell was located, because it willfully 
+infringed plaintiff’s website’s advertising of its elder abuse 
+specialty and placed the two firms in direct competition in 
+the limited area of elder abuse litigation)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,25,2,P025.B02,DOC002[P025.B02],100,145,54.0,214.68,347.88,465.44,"In Pebble Beach Co. v. Caddy , 453 F.3d 1151 (9th Cir. 2006), we relied on Panavision and Rio to conclude that we must find “‘something more’ than just a foreseeable effect” in the forum state and that “[a] [potentially infringing] internet domain name and [a] passive website” that merely advertised its British bed and breakfast on its website had not engaged in the “something more” that could subject a foreign entity to jurisdiction in California for trademark infringement. Id. at 1158. Analogizing to Schwarzenegger , 374 F.3d at 800, where we held that an Ohio car dealership that had"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,25,3,P025.B03,DOC002[P025.B03],65,96,54.0,214.68,347.88,465.44,"impermissibly included Arnold Schwarzenegger’s Terminator image in a non-interactive print advertisement in Akron, Ohio, was not subject to specific personal jurisdiction in California, we reasoned in Pebble Beach , that arguments for jurisdiction depended “on the possible effects of a non-interactive advertisement.” Pebble Beach , 453 F.3d at 1158. Express aiming was “[n]otably absent” in both circumstances, and the forum states lacked jurisdiction. Id."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,25,4,P025.B04,DOC002[P025.B04],48,78,54.0,469.08,345.0,540.44,"We further clarified the express aiming requirement in 
+Mavrix Photo, Inc. , 647 F.3d 1218.  Mavrix, a celebrity 
+photo agency that licensed and sold its copyrighted photos 
+displayed on its website, was a Florida corporation with its 
+principal place of business in Florida.   Id.  at 1221–22.  It"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,26,1,P026.B01,DOC002[P026.B01],70,114,54.0,35.0,345.0,169.64,"26 
+B RISKIN V . S HOPIFY , I NC . learned that Brand, an Ohio company with its principal place 
+of business in Toledo, had taken certain copyrighted photos 
+of a well-known hip-hop singer and her husband from 
+Mavrix’s website and reposted them on Brand’s nationally 
+accessible website, https://celebrity-gossip.net.   Id.  at 1222–
+23.  Mavrix sued Brand for copyright infringement in the 
+Central District of California.   Id.  at 1223."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,26,2,P026.B02,DOC002[P026.B02],103,131,54.0,173.28,345.0,382.64,"We considered whether “tortious conduct on a nationally accessible website is expressly aimed at any, or all, of the forums in which the website can be viewed.” Id. at 1229 (emphasis added). And we summarized the various factors we had considered in our prior cases to determine whether the website operator had done “something more” in the forum state: “the interactivity of the defendant’s website; the geographic scope of the defendant’s commercial ambitions; and whether the defendant ‘individually targeted’ a plaintiff known to be a forum resident.” Id. (citations omitted). After carefully considering Brand’s business model and the nature of"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,26,3,P026.B03,DOC002[P026.B03],36,42,54.0,173.28,345.0,382.64,"the alleged claims arising from those business practices, we found “most salient the fact that Brand used Mavrix’s copyrighted photos as part of its exploitation of the California market for its own commercial gain.” Id."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,26,4,P026.B04,DOC002[P026.B04],104,148,54.0,386.28,345.0,540.44,"We relied in large measure on  Keeton , 465 U.S. 770, 
+where a New York resident sued Hustler, an Ohio 
+corporation that produced a national publication for a 
+national audience, in the New Hampshire federal district 
+court for libel based on the contents of the magazine, which 
+was in regular circulation in New Hampshire.  465 U.S.  at 
+772.  There, the Court determined that although the share of 
+Hustler’s overall business in New Hampshire was “not . . . 
+so substantial” as to support the exercise of general 
+jurisdiction, Hustler was “carrying on a part of its general 
+business in New Hampshire,” which was sufficient to"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,27,1,P027.B01,DOC002[P027.B01],51,87,54.0,35.0,345.0,142.04,"B RISKIN V . S HOPIFY , I NC . 
+27 support specific jurisdiction there.   Id.  at 779–80 (quotation 
+marks omitted).  The Court concluded: “There is no 
+unfairness in calling [Hustler] to answer for the contents of 
+that publication wherever a substantial number of copies are 
+regularly sold and distributed.”   Id.  at 781."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,27,2,P027.B02,DOC002[P027.B02],101,154,54.0,145.68,345.0,355.04,"In Mavrix Photo , we reasoned that both the https://celebrity-gossip.net website and Hustler magazine “were large publications that sought and attracted nationwide audiences” who could “count on reaching consumers in all fifty states.” Mavrix Photo , 647 F.3d at 1230. And “both publications cultivated their nationwide audiences for commercial gain.” Id. Neither publication “could characterize the consumption of its products in any state as ‘random,’ ‘fortuitous,’ or ‘attenuated.’” Id. (quoting Burger King , 471 U.S. at 486). “Rather, consumption was a predictable consequence of their business models.” Id. We held that “where, as here, a website with national viewership and"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,27,3,P027.B03,DOC002[P027.B03],29,40,54.0,145.68,345.0,355.04,"scope appeals to, and profits from, an audience in a particular state, the site’s operators can be said to have ‘expressly aimed’ at that state.” Id. at 1231."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,27,4,P027.B04,DOC002[P027.B04],107,184,54.0,358.68,348.0,540.44,"We reasoned similarly in  CollegeSource, Inc. v. 
+AcademyOne, Inc. , 653 F.3d 1066 (9th Cir. 2011).  
+AcademyOne, a Pennsylvania corporation, which operated 
+nationwide websites that assisted students and educational 
+institutions 
+with 
+the 
+college 
+transfer 
+process, 
+misappropriated college catalogues by downloading them 
+from the website of CollegeSource, a California corporation 
+engaged in the same business, and republishing those 
+catalogues on its own nationally accessible websites.   Id.  at 
+1070 – 72.  We held that AcademyOne expressly aimed its 
+conduct at California because it was “alleged to have 
+engaged in wrongful conduct targeted at a plaintiff whom the 
+defendant kn[ew] to be a resident of the forum state.”   Id.  at"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,28,1,P028.B01,DOC002[P028.B01],36,81,54.0,35.0,345.0,114.44,"28 
+B RISKIN V . S HOPIFY , I NC . 1077 (quoting  Dole Food Co. v. Watts , 303 F.3d 1104, 1111 
+(9th Cir. 2002));  see also id.  at 1077–78 (relying on our 
+analysis in  Brayton Purcell )."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,28,2,P028.B02,DOC002[P028.B02],104,142,54.0,118.08,345.0,355.04,"We also relied upon the nature of the defendants’ business structure in Will Co., Ltd. v. Lee , 47 F.4th 917 (9th Cir. 2022), to hold that there was specific personal jurisdiction. Will Co., a Japanese entertainment producer, sued https://ThisAV.com, a video-hosting site based in Hong Kong, for copyright infringement in a federal district court in Washington. Id. at 919. We determined that https://ThisAV.com made a series of business decisions which evidenced its “intent to cultivate an audience in the United States,” satisfying the express aiming prong of the effects test. Id. at 924. These decisions included structuring the website"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,28,3,P028.B03,DOC002[P028.B03],52,60,54.0,118.08,345.0,355.04,"to reduce the time it would take for the website to load in the United States, partnering with network providers to improve the experience of the audience in the United States, and addressing the website’s terms and conditions and legal compliance towards a United States- based audience. Id. at 924–25."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,28,4,P028.B04,DOC002[P028.B04],114,172,54.0,358.68,348.0,540.44,"Our most recent foray into the e-commerce world 
+reiterated these traditional principles, finding “express 
+aiming” where defendants, in their regular course of 
+business, sold a physical product via an interactive website 
+and caused that product to be delivered to a forum state.  
+Herbal Brands, Inc. , 72 F.4th at 1094.  There, Herbal 
+Brands, a Delaware corporation with its principal place of 
+business in Arizona, which manufactured and sold health 
+and wellness products.  Herbal Brands sued Photoplaza, a 
+New York corporation that allegedly sold Herbal Brands 
+products over Amazon’s interactive storefronts in violation 
+of the Lanham Act and Arizona state law.   Id.  at 1088–89.  
+We first explained that “[p]re-internet, the ‘distribution in"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,29,1,P029.B01,DOC002[P029.B01],99,152,54.0,35.0,348.0,402.44,"B RISKIN V . S HOPIFY , I NC . 29 the forum state of goods originating elsewhere’ was a paradigmatic example of conduct purposefully directed at the forum state.” Id. at 1093 (first quoting Schwarzenegger , 374 F.3d at 803; and then citing Goodyear Dunlop Tires Operations, S.A. , 564 U.S. at 927). We reasoned, “The fact that [d]efendants generated their business by creating an Amazon storefront instead of by placing ads in a nationwide print publication does not necessarily dictate a different outcome,” “provided that two key elements” were also present. Id. at 1093, 1094. Relying on Keeton"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,29,2,P029.B02,DOC002[P029.B02],102,135,54.0,35.0,348.0,402.44,"for the first element, we required that the product sales “must occur as part of the defendant’s regular course of business instead of being ‘random, isolated, or fortuitous.’” Id. at 1094 (quoting Keeton , 465 U.S. at 744). The second element that must be present is that “the defendant must exercise some level of control over the ultimate distribution of its products beyond simply placing its products into the stream of commerce.” Id. As both elements were present, we concluded that the federal court in Arizona had specific personal jurisdiction over Herbal Brands’ claims. Id. at 1096–97. V. SPECIFIC PERSONAL"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,29,3,P029.B03,DOC002[P029.B03],10,18,54.0,35.0,348.0,402.44,JURISDICTION OVER SHOPIFY A. Shopify Purposefully Directed Its Wrongful Conduct
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,29,4,P029.B04,DOC002[P029.B04],58,81,54.0,400.08,345.0,541.31,"Toward California. 1.  Briskin has satisfied the  Calder  Effects Test. Briskin has made a prima facie showing of jurisdictional 
+facts sufficient to establish that Shopify purposely directed 
+its conduct toward California. 11   As a part of its regular 11  Shopify submitted declarations stating that it posted its privacy 
+policies and that it does not share customer information between"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,30,1,P030.B01,DOC002[P030.B01],98,118,54.0,35.0,345.0,280.3,"30 B RISKIN V . S HOPIFY , I NC . course of business, Shopify is alleged to target California consumers to extract, collect, maintain, distribute, and exploit for its own profit, not only the California consumers’ payment information that it diverts to its own servers, but also all of the other personal identifying information that it extracts from the software it permanently installs on their devices without their knowledge or consent. Thus, Shopify’s business model is to perform the payment processing services it contracts to provide for its merchants and, in the course of doing so, to obtain valuable"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,30,2,P030.B02,DOC002[P030.B02],36,47,54.0,35.0,345.0,280.3,"personal data about California consumers for its own commercial gain. Accordingly, through those business activities, Shopify allegedly tortiously violated consumers’ privacy through its collection, maintenance, and sale of valuable personal data from California consumers, like Briskin."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,30,3,P030.B03,DOC002[P030.B03],101,113,54.0,283.68,348.0,540.91,"To return to the “ Calder effects” test, each of Shopify’s actions in its regular course of business is an intentional act, which Shopify knows will cause harm to California consumers by violating the very laws that the California legislature has enacted to protect California consumers’ rights to data privacy and security, and from unfair business practices. The parties do not dispute that the first and third factors required for a finding of purposeful direction are met. Rather, the crux of the parties’ dispute is the second Calder factor: whether Shopify’s conduct is expressly aimed at California or its residents"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,30,4,P030.B04,DOC002[P030.B04],54,66,54.0,283.68,348.0,540.91,"or, as Shopify contends, is mere happenstance arising from the California consumers’ choice to do business with a merchant that has contracted with Shopify. And here, it is clear that Shopify expressly aimed merchants. Those declarations contest allegations related to the merits of Briskin’s claims, but not to the allegations supporting personal jurisdiction."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,31,1,P031.B01,DOC002[P031.B01],109,155,54.0,35.0,348.0,244.64,"B RISKIN V . S HOPIFY , I NC . 
+31 its conduct at California through its extraction, maintenance, 
+and commercial distribution of the California consumers’ 
+personal data in violation of California laws. 12 We do not agree that the effect on Briskin is mere 
+happenstance because Shopify allegedly knew the location 
+of consumers like Briskin either prior to or shortly after 
+installing its initial tracking software onto their devices. 13
+We conclude that Shopify’s intentional activities constitute 
+express aiming toward California and its consumers to 
+obtain and use their personal data for its own commercial 
+gain.   See Mavrix Photo , 647 F.3d at 1229 (considering 
+individual targeting of forum residents)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,31,2,P031.B02,DOC002[P031.B02],102,123,54.0,248.28,347.01,488.96,"Pre-internet, there would be no doubt that the California courts would have specific personal jurisdiction over a third party who physically entered a Californian’s home by deceptive means to take personal information from the Californian’s files for its own commercial gain. See Restatement (Second) of Conflict of Laws § 36 (1971) (“A state has power to exercise judicial jurisdiction over an individual who has done, or has caused to be done, an act in the state with respect to any cause of action in tort arising 12 That Shopify allegedly committed its tortious activity knowing Briskin’s device was in California"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,31,3,P031.B03,DOC002[P031.B03],62,98,54.0,248.28,347.01,488.96,"renders inapposite the “travelling cookie” hypotheticals discussed in Judge Callahan’s dissent. Dissenting Op. at 67–68. Here, we focus properly on “the relationship among the defendant [Shopify], the forum [California], and the litigation [over tortious acts committed in California].” Walden , 571 U.S. at 283–84. We do not look only to where Briskin was located at the time of purchase."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,31,4,P031.B04,DOC002[P031.B04],41,53,54.0,493.04,344.56,540.91,"13  The SAC alleges that Shopify knew that the consumer is in California 
+before it actually transacts the payment process because its software 
+secures geolocation information when the consumer clicks on an item to 
+simply view it on IABMFG’s website."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,32,1,P032.B01,DOC002[P032.B01],107,164,54.0,35.0,348.0,230.84,"32 
+B RISKIN V . S HOPIFY , I NC . from the act.”).  As the Supreme Court noted in  Walden , 
+“although physical presence in the forum is not a 
+prerequisite to jurisdiction, physical entry into the State—
+either by the defendant in person or through an agent, goods, 
+mail,  or some other means —is certainly a relevant contact.”  
+Walden , 571 U.S. at 285 (emphasis added and citation 
+omitted).  Here, though Shopify’s entry into the state of 
+California is by electronic means, its surreptitious 
+interception of Briskin’s personal identifying information 
+certainly is a relevant contact with the forum state. 2.  Express aiming does not require differential targeting."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,32,2,P032.B02,DOC002[P032.B02],104,148,54.0,234.48,345.0,402.44,"Shopify argues that it does not expressly aim its conduct 
+at California because it operates nationwide and thus is 
+agnostic as to the location in which it data-mines the 
+consumers’ personal identifying information.  But the 
+Supreme Court has considered and rejected the argument 
+that because a nationwide company is everywhere, it is 
+jurisdictionally nowhere except in its principal place of 
+business and state of incorporation.   See Ford Motor Co. , 
+592 U.S. at 355, 363 (holding that “specific jurisdiction 
+attaches . . . when a company . . . serves a market for a 
+product in the forum State and the product malfunctions 
+there,” even when “its business is everywhere”)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,32,3,P032.B03,DOC002[P032.B03],80,127,54.0,406.08,345.0,532.64,"Shopify argues, relying upon  AMA Multimedia, LLC v. 
+Wanat , 970 F.3d 1201 (9th Cir. 2020), that because its 
+business “lacks a forum-specific focus,” it is not expressly 
+aimed at California.  Shopify points out that based on the 
+numbers alleged in the SAC, as of 2018, only 8% of its 
+worldwide merchants are located in California.  Shopify 
+asserts that some of our prior decisions addressing 
+jurisdiction over globally accessible websites under the 
+analogous federal long-arm statute, Federal Rule of Civil"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,33,1,P033.B01,DOC002[P033.B01],101,142,54.0,35.0,348.0,477.43,"B RISKIN V . S HOPIFY , I NC . 33 Procedure 4(k)(2), required the plaintiff to allege as a condition for express aiming that the defendant has a “forum-specific focus,” citing AMA , 970 F.3d at 1210–11. But AMA misrelied on Mavrix Photo to require the plaintiff to demonstrate that the defendant’s globally accessible website had a “forum-specific focus.” Id. at 1210. In AMA , we concluded that because “the market for adult content is global,” it could not be said that defendant Wanat’s ePorner website was expressly aimed at the United States, and therefore it was not subject"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,33,2,P033.B02,DOC002[P033.B02],102,143,54.0,35.0,348.0,477.43,"to specific personal jurisdiction in the United States. 14 Id. AMA ’s rationale requiring a “forum-specific focus” or “differential targeting,” as the concept has been more recently described, is incorrect, and we now overrule it. 15 Mavrix Photo held that a company’s internet activity may subject the company to specific personal jurisdiction in a given forum if the company “knows—either actually or constructively” about its customer base there and “exploits that base for commercial gain.” Mavrix Photo , 647 F.3d at 1230. We further held that “corporations whose websites exploit a national market” cannot “defeat jurisdiction in states where those"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,33,3,P033.B03,DOC002[P033.B03],60,92,54.0,35.0,348.0,477.43,"websites generate substantial profits from local consumers.” Id at 1231. And we explained that “[i]n determining whether a nonresident defendant has done ‘something more,’ we have considered several factors, 14 Judge Gould, dissenting, would have found express aiming in AMA , relying on a correct reading of Mavrix Photo . See AMA , 970 F.3d at 1221–22 (Gould, J., dissenting)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,33,4,P033.B04,DOC002[P033.B04],60,103,53.99,481.52,344.5,540.91,"15  To the extent that  Will Co.  and  Doe v. WebGroup Czech Republic., 
+a.s. , 93 F.4th 442 (9th Cir. 2024) repeated  AMA ’s requirement of 
+showing a “forum-specific focus” to distinguish  AMA , those passages are 
+overruled as well.  But  Will Co. ’s and  Doe ’s holdings that personal 
+jurisdiction existed on the facts in those cases remain valid."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,34,1,P034.B01,DOC002[P034.B01],99,190,54.0,35.0,345.0,362.84,"34 B RISKIN V . S HOPIFY , I NC . including the interactivity of the defendant’s website, e.g. , Pebble Beach , 453 F.3d at 1153 – 54; Cybersell , 130 F.3d at 417 – 20; the geographic scope of defendant’s commercial ambitions, e.g. , Pebble Beach , 453 F.3d at 1156–58; Rio Props. , 284 F.3d at 1020–21; and whether the defendant ‘individually targeted’ a plaintiff known to be a forum resident, e.g. , Brayton Purcell , 606 F.3d at 1129; Pebble Beach , 453 F.3d at 1156–57; Panavision , 141 F.3d at 1321– 22.” Mavrix Photo ,"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,34,2,P034.B02,DOC002[P034.B02],104,140,54.0,35.0,345.0,362.84,"647 F.3d at 1229. Although we concluded that Brand’s use of Mavrix’s photos as part of its exploitation of the California market for its own commercial gain was the most salient factor in the circumstances of that case, we did not hold that this was a prerequisite for a finding of express aiming. Indeed, Mavrix Photo relied heavily on Keeton , where the First Circuit noted that the circulation of Hustler Magazine in New Hampshire was less than one percent of Hustler’s total U.S. circulation, Keeton v. Hustler Magazine, Inc. , 682 F.2d 33, 33 (1st Cir. 1982), yet the"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,34,3,P034.B03,DOC002[P034.B03],24,33,54.0,35.0,345.0,362.84,"Supreme Court concluded that the federal district court in New Hampshire had specific jurisdiction over the magazine. 16 Keeton , 465 U.S. at 781."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,34,4,P034.B04,DOC002[P034.B04],118,184,54.0,366.48,348.0,540.92,"AMA  misread  Mavrix Photo  to add a requirement for 
+express aiming that “can be found nowhere in our 
+precedents.”   AMA , 970 F.3d at 1221 (Gould, J., dissenting).  
+We now take this opportunity to overrule  AMA  and any other 
+cases that require some sort of differential treatment of the 16  This case does not require us to “go further and disavow”  Cybersell ’s 
+requirement of “something more,” as Judge Collins suggests.  
+Concurring Op. at 54.  Nor has any party invited us to do so.  The 
+principle of requiring “something more” to demonstrate “express 
+aiming” has been carefully developed by our court over almost three 
+decades, applying it to new and evolving forms of technology, which 
+continue to change."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,35,1,P035.B01,DOC002[P035.B01],98,140,54.0,35.0,345.0,410.24,"B RISKIN V . S HOPIFY , I NC . 35 forum state for a finding of “express aiming” of the defendant’s allegedly tortious conduct. 17 Such a requirement runs contrary to longstanding Supreme Court authority. See World-Wide Volkswagen Corp. , 444 U.S. at 297 (reasoning that when a company serves “directly or indirectly, the market for its product” in many states, “it is not unreasonable to subject it to suit in one of those States,” if its product causes harm there); see also Ford Motor Co. , 592 U.S. at 355, 365 (observing that Ford purposefully availed itself of"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,35,2,P035.B02,DOC002[P035.B02],103,130,54.0,35.0,345.0,410.24,"Montana’s and Minnesota’s markets, even though “its business is everywhere”). Moreover, requiring differential targeting would have the perverse effect of allowing a corporation to direct its activities toward all 50 states yet to escape specific personal jurisdiction in each of those states for claims arising from or relating to their relevant contacts in the forum state that injure that state’s residents. 18 We therefore hold that an interactive platform “expressly aims” its wrongful conduct toward a forum state when its contacts are its “own choice and not ‘random, isolated, or fortuitous,’” Ford Motor Co ., 592 U.S. at 359 (quoting"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,35,3,P035.B03,DOC002[P035.B03],24,44,54.0,35.0,345.0,410.24,"Keeton , 465 U.S. at 774), even if that platform cultivates a “nationwide audience[] for commercial gain.” Mavrix Photo , 647 F.3d at 1230."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,35,4,P035.B04,DOC002[P035.B04],41,58,54.0,435.88,344.51,500.47,"17  Although we make clear that “differential targeting” is not a 
+requirement for express aiming, such treatment may serve as evidence 
+that a defendant expressly aimed its conduct toward the forum state, as 
+it did in  Mavrix Photo  and  Will Co."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,35,5,P035.B05,DOC002[P035.B05],31,41,54.0,504.44,344.47,540.91,"18  Indeed, Shopify argues that Defendants are subject to personal 
+jurisdiction in only New York, Delaware, and Canada, the only fora in 
+which the courts would have general jurisdiction over them."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,36,1,P036.B01,DOC002[P036.B01],99,139,54.0,35.0,348.0,520.64,"36 B RISKIN V . S HOPIFY , I NC . 3. Walden does not require a different result. Shopify further contends that the relevant jurisdictional contacts must be “the defendant’s contacts with the forum State itself, not its contacts with persons who reside there.” But this argument overreads Walden. In Walden , the plaintiffs were “the only link” between the defendant and the forum State. Walden , 571 U.S. at 285, 289. The plaintiffs were Nevada residents traveling through Atlanta, Georgia, when the defendant seized what he believed was their illegitimate cash. Id. at 280–81. The defendant then drafted—in"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,36,2,P036.B02,DOC002[P036.B02],104,134,54.0,35.0,348.0,520.64,"Georgia—an affidavit to show probable cause for the forfeiture of those funds and forwarded it to the U.S. Attorney’s office in Georgia. Id. Plaintiffs filed suit in the Nevada district court. Id. at 281. The Walden Court held that the defendant lacked the minimum contacts with Nevada to support the exercise of the Nevada court’s jurisdiction, reasoning that “no part of [defendant’s] course of conduct occurred in Nevada.” Id. at 288. The Court noted that defendant “never traveled to, conducted activities within, contacted anyone in , or sent anything or anyone to Nevada.” Id. at 289 (emphasis added). It was"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,36,3,P036.B03,DOC002[P036.B03],102,126,54.0,35.0,348.0,520.64,"in that context that the Court held that “the plaintiff cannot be the only link between the defendant and the forum,” and we must look to the defendant’s actions to determine “whether the defendant’s conduct connects him to the forum in a meaningful way.” Id. at 285, 290. But here, Shopify knows about its California consumer base, conducts its regular business in California, contacts California residents, interacts with them as an intermediary for its merchants, installs its software onto their devices in California, and continues to track their activities. This “conduct connects [Shopify] to [California] in a meaningful way.” Id."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,36,4,P036.B04,DOC002[P036.B04],2,4,54.0,35.0,348.0,520.64,at 290.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,37,1,P037.B01,DOC002[P037.B01],99,164,54.0,35.0,345.0,540.92,"B RISKIN V . S HOPIFY , I NC . 37 The Amicus Brief of [30 States] 19 and the District of Columbia through their Attorneys General (“The States Brief”) argues, citing the Utah Supreme Court’s decision in Raser Technologies, Inc. v. Morgan Stanley & Co., LLC , 449 P.3d 150, 169 n.13 (Utah 2019), that Walden ’s language— that a defendant must have contacts “with the forum State itself”—has been taken out of context, in cases such as the now-vacated panel opinion and Axiom Foods, Inc. v. Acerchem International, Inc. , 874 F.3d 1064, 1068 (9th Cir. 2017). We"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,37,2,P037.B02,DOC002[P037.B02],101,132,54.0,35.0,345.0,540.92,"agree that the phrase does not mean that “contacts with a forum’s residents, who are in the forum at the time of the contacts, are irrelevant for jurisdictional purposes, because in Walden none of the parties were in the forum when the operative events transpired.” Moreover, the Walden Court expressly did not address the situation presented here, “where intentional torts are committed via the Internet or other electronic means ( e.g. , fraudulent access of financial accounts or ‘phishing’ schemes).” Walden , 571 U.S. at 290 n.9. Rather, the Walden Court emphasized that “this case does not present the very"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,37,3,P037.B03,DOC002[P037.B03],97,139,54.0,35.0,345.0,540.92,"different questions whether and how a defendant’s virtual ‘presence’ and conduct translate into ‘contacts’ with a particular State. . . . We leave questions about virtual contacts for another day.” Id. We thus conclude that, unlike in Walden , Shopify deliberately reached out beyond its home state by knowingly 19 The thirty states that support specific personal jurisdiction over Shopify in the California courts are: Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Hawaii, Idaho, Illinois, Indiana, Iowa, Maine, Massachusetts, Michigan, Minnesota, Mississippi, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Oklahoma, Oregon, Rhode Island, South Carolina,"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,37,4,P037.B04,DOC002[P037.B04],5,8,54.0,35.0,345.0,540.92,"South Dakota, Vermont, and Washington."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,38,1,P038.B01,DOC002[P038.B01],62,106,54.0,35.0,348.0,161.84,"38 
+B RISKIN V . S HOPIFY , I NC . installing tracking software onto unsuspecting Californians’ 
+phones so that it could later sell the data it obtained, in a 
+manner that was neither “random, isolated, [n]or fortuitous.”  
+Ford Motor Co ., 592 U.S. at 359 (quoting  Keeton , 465 U.S. 
+at 774). B. Briskin’s Claims Arise From or Relate to Shopify’s"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,38,2,P038.B02,DOC002[P038.B02],2,3,159.36,159.48,257.64,175.64,California Conduct.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,38,3,P038.B03,DOC002[P038.B03],51,88,54.0,179.28,345.0,250.64,"The second requirement for specific jurisdiction is that 
+plaintiff’s claims “must arise out of or relate to the 
+defendant’s contacts” with the forum State.   Ford Motor Co. , 
+592 U.S. at 359 (quoting  Bristol-Myers Squibb Co. v. 
+Superior Ct .  of Cal., S.F. , 582 U.S. 255, 262 (2017))."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,38,4,P038.B04,DOC002[P038.B04],100,127,54.0,254.28,348.0,477.44,"In Ford Motor Co. , the Supreme Court held that “[w]hen a company like Ford serves a market for a product in a State and that product causes injury in the State to one of its residents, the State’s courts may entertain the resulting suit.” Id. at 355. Ford, like Shopify, is a global company, incorporated in Delaware and headquartered in Michigan. Id. But, as the Court noted, “its business is everywhere. Ford markets, sells, and services its products across the United States and overseas,” id. , again like Shopify. And it engaged “in wide-ranging promotional activities,” distributing Ford parts"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,38,5,P038.B05,DOC002[P038.B05],51,61,54.0,254.28,348.0,477.44,across the country to auto parts stores and its own dealers. Id. at 355–56. The plaintiffs in the consolidated cases had each suffered injuries from accidents they alleged resulted from defective Ford car features and had each sued Ford in their home states of Montana and Minnesota. Id. at 357.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,38,6,P038.B06,DOC002[P038.B06],36,53,54.0,481.08,345.0,538.64,"Ford contested specific personal jurisdiction in those 
+states because it had not “designed, manufactured, or . . . 
+sold” the vehicles that crashed in those states to the victims, 
+arguing that the “state court . . . had jurisdiction only if the"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,39,1,P039.B01,DOC002[P039.B01],102,132,54.0,35.0,345.0,335.24,"B RISKIN V . S HOPIFY , I NC . 39 company’s conduct in the State had given rise to the plaintiff’s claims.” Id. at 356. The Court rejected that argument, noting “our most common formulation of the rule demands that the suit arise out of or relate to the defendant’s contacts with the forum,” id. at 362 (quotation marks omitted), explaining that “[t]he first half of that standard asks about causation; but the back half, after the ‘or,’ contemplates that some relationships will support jurisdiction without a causal showing,” id. The Court reasoned that because Ford’s business activities in"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,39,2,P039.B02,DOC002[P039.B02],88,121,54.0,35.0,345.0,335.24,"the forum States ( i.e. , advertising, servicing vehicles) made it more likely that the plaintiffs’ injuries occurred there, the forum States could hale Ford to defend the product liability lawsuits brought by state residents who had allegedly been injured by Ford’s defective cars. Id. at 367; see Yamashita v. LG Chem, Ltd. , 62 F.4th 496, 505 (9th Cir. 2023) (interpreting Ford to mean that “a plaintiff’s injury relates to a defendant’s forum contacts if similar injuries will tend to be caused by those contacts”)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,39,3,P039.B03,DOC002[P039.B03],99,152,54.0,338.88,345.0,493.04,"Here, Briskin’s claims “arise out of” Shopify’s contact 
+with Briskin’s device, which Shopify allegedly knew was in 
+California.  Briskin’s claims also “relate to” Shopify’s 
+California contacts because Briskin alleges the kind of injury 
+that would “tend to be caused” by Shopify’s contacts with 
+California merchants and consumers.   Yamashita , 62 F.4th 
+at 505.  In particular, Shopify’s installation of software onto 
+unsuspecting Californians’ devices and extracting personal 
+data from them is the kind of contact that would tend to cause 
+privacy injuries.  Briskin’s claims therefore satisfy the 
+second requirement for specific jurisdiction."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,40,1,P040.B01,DOC002[P040.B01],99,136,54.0,35.0,348.0,523.04,"40 B RISKIN V . S HOPIFY , I NC . C. Fair Play and Substantial Justice Briskin has plausibly alleged facts supporting the conclusion that Shopify purposefully directed its business activities toward California and its residents and that his claims are related to Shopify’s conduct. The burden thus shifts to Shopify to “present a compelling case” that the exercise of jurisdiction is not reasonable. Schwarzenegger , 374 F.3d at 802 (quoting Burger King , 471 U.S. at 476 – 78). The principles governing the exercise of jurisdiction over an out-of-state party “derive from and reflect two sets of values—treating"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,40,2,P040.B02,DOC002[P040.B02],104,150,54.0,35.0,348.0,523.04,"defendants fairly and protecting ‘interstate federalism.’” Ford Motor Co. , 592 U.S. at 360 (quoting World-Wide Volkswagen Corp. , 444 U.S. at 293). Consistent with these values, we have developed a seven-factor balancing test to determine the reasonableness of asserting personal jurisdiction. We look to (1) the extent of the defendant’s purposeful interjection into the forum state’s affairs; (2) the burden on the defendant of defending in the forum; (3) the extent of conflict with the sovereignty of the defendant’s state; (4) the forum state’s interest in adjudicating the dispute; (5) the most efficient judicial resolution of the controversy; (6)"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,40,3,P040.B03,DOC002[P040.B03],47,81,54.0,35.0,348.0,523.04,"the importance of the forum to the plaintiff’s interest in convenient and effective relief; and (7) the existence of an alternative forum. Herbal Brands , 72 F.4th at 1096 (quoting Freestream Aircraft (Bermuda) Ltd. v. Aero Law Grp. , 905 F.3d 597, 607 (9th Cir. 2018))."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,41,1,P041.B01,DOC002[P041.B01],93,122,54.0,35.0,345.0,211.04,"B RISKIN V . S HOPIFY , I NC . 
+41 Shopify does not argue that it would be burdensome to 
+defend this case in California; that jurisdiction here would 
+create any conflict with the sovereignty of New York or 
+Delaware, the states having general jurisdiction over 
+Shopify, or with the country of Canada; that California lacks 
+an interest in the enforcement of laws it enacted to protect 
+California consumers’ privacy and data security rights and 
+from deceptive or unfair practices; or that California would 
+not or could not provide an efficient resolution of this 
+dispute."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,41,2,P041.B02,DOC002[P041.B02],60,74,54.0,214.68,348.0,327.44,"Shopify contests the extent of its purposeful business 
+activities in California.  But we have already concluded that 
+the extent of Shopify’s purposeful direction of its regular 
+business activities supports specific personal jurisdiction.  
+Therefore, balancing the factors we traditionally evaluate, 
+we conclude that the factors weigh in favor of holding that 
+the exercise of personal jurisdiction in California is 
+reasonable."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,41,3,P041.B03,DOC002[P041.B03],100,127,54.0,331.08,348.0,532.64,"Shopify also argues that it is unfair to assert jurisdiction because that “could lead to specific jurisdiction in all 50 states.” That may be true, but not unfair, if the contacts Shopify makes in all 50 states are like its California contacts. But it may not be true, depending on whether all 50 states have laws, like California, protecting their citizens from what Shopify allegedly does in its regular course of business, laws which Briskin claims Shopify violated here. Cf. Bristol-Myers Squibb Co. , 582 U.S. at 264 (holding that there is no personal jurisdiction where the forum State and"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,41,4,P041.B04,DOC002[P041.B04],31,35,54.0,331.08,348.0,532.64,the defendant’s activities there lacked any connection to the plaintiffs’ claims). Shopify further argues that Briskin is not without a forum in the two states that would have general jurisdiction
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,42,1,P042.B01,DOC002[P042.B01],103,132,54.0,35.0,348.0,292.04,"42 B RISKIN V . S HOPIFY , I NC . over his claims—Delaware and New York—and in Canada. Even if that were true, the availability of those alternative fora does not outweigh the other factors showing that jurisdiction in California is not unfair. VI. THE SAC SATISFIES RULE 8(a)(2) The district court erred in dismissing the SAC on the ground that it collectively pleaded the claims against the three Shopify entities, under the circumstances presented here. “Federal Rule of Civil Procedure 8(a)(2) requires only ‘a short and plain statement of the claim showing that the pleader is entitled to"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,42,2,P042.B02,DOC002[P042.B02],42,77,54.0,35.0,348.0,292.04,"relief,’ in order to ‘give the defendant fair notice of what the . . . claim is and the grounds upon which it rests.’” Bell Atl. Corp. v. Twombly , 550 U.S. 544, 555 (2007) (quoting Conley v. Gibson , 355 U.S. 41, 47 (1957))."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,42,3,P042.B03,DOC002[P042.B03],103,140,54.0,295.68,345.0,532.64,"A collectively pleaded complaint may fail to provide fair notice to a defendant, where there are multiple defendants and claims, and the complaint fails to differentiate among them. For example, we have affirmed a district court’s dismissal on Rule 8(a)(2) grounds where the complaint was lengthy, named twenty defendants, and failed to specify which of the defendants was liable for which claims. See McHenry v. Renne , 84 F.3d 1172, 1180 (9th Cir. 1996) (“Something labeled a complaint but written more as a press release, prolix in evidentiary detail, yet without simplicity, conciseness and clarity as to whom plaintiffs are"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,42,4,P042.B04,DOC002[P042.B04],62,89,54.0,295.68,345.0,532.64,"suing for what wrongs, fails to perform the essential functions of a complaint.”). But “a dismissal for a violation of Rule 8(a)(2), is usually confined to instances in which the complaint is so verbose, confused and redundant that its true substance, if any, is well disguised.” Hearns v. San Bernardino Police Dep’t , 530 F.3d 1124, 1131 (9th Cir."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,43,1,P043.B01,DOC002[P043.B01],84,143,54.0,35.0,345.0,183.44,"B RISKIN V . S HOPIFY , I NC . 
+43 2008) (quoting  Gillibeau v. City of Richmond , 417 F.2d 426, 
+431 (9th Cir. 1969));  Gillibeau , 530 F.3d at 432 (reversing a 
+Rule 8 dismissal where the complaint was concise, had a 
+“minimum of repetition and none of the lengthy citation and 
+quotation of cases . . . or the rambling paragraphs dealing 
+with irrelevant matters”).  But our precedent does not 
+prohibit collective pleading so long as the complaint gives 
+defendants fair notice of the claims against them."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,43,2,P043.B02,DOC002[P043.B02],111,156,54.0,187.08,345.0,368.84,"Here, Briskin alleges one course of conduct jointly 
+pursued by three closely related corporate defendants: 
+Shopify, Inc., a Canadian corporation, and its two wholly 
+owned U.S. subsidiaries, Shopify (USA) Inc. and Shopify 
+Payments, (USA) Inc.  And, contrary to Shopify’s 
+arguments, the SAC does generally describe each company’s 
+role in the alleged data collection and monetization scheme, 
+which Briskin alleges violates California law and California 
+consumers’ rights to data access and privacy.  The remainder 
+of the SAC is highly detailed as to the technology used to do 
+so.  We therefore conclude that the SAC provides sufficient 
+information to give the Shopify entities fair notice of the 
+claims against them."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,43,3,P043.B03,DOC002[P043.B03],2,5,139.32,372.29,259.68,388.9,"VII. 
+CONCLUSION"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,43,4,P043.B04,DOC002[P043.B04],46,67,54.0,392.28,345.0,491.24,"For the reasons stated above, we conclude that Shopify 
+is subject to specific personal jurisdiction in California and 
+that Briskin has provided Defendants with “fair notice” of 
+the claims against them.  We  REVERSE  and  REMAND  to 
+the district court for further proceedings consistent with this 
+opinion."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,44,1,P044.B01,DOC002[P044.B01],69,121,54.0,35.0,345.0,197.24,"44 
+B RISKIN V . S HOPIFY , I NC . COLLINS, Circuit Judge, concurring in the judgment: I agree that the district court erred in dismissing this 
+action for lack of personal jurisdiction over Defendants 
+Shopify, Inc. (“Shopify”); Shopify (USA), Inc. (“Shopify 
+USA”); and Shopify Payments (USA), Inc. (“Shopify 
+Payments”) (collectively, “Defendants”).  But because my 
+reasoning differs in some respects from that of the majority, 
+I concur only in the judgment."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,44,2,P044.B02,DOC002[P044.B02],1,1,195.6,200.69,203.28,217.3,I
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,44,3,P044.B03,DOC002[P044.B03],100,133,54.0,220.68,345.0,512.84,"Because no federal statute purports to authorize the exercise of personal jurisdiction over any of the Defendants in this case, Plaintiff Brandon Briskin’s service of summonses upon them “establishes personal jurisdiction” over them if they are “subject to the jurisdiction of a court of general jurisdiction in the state where the district court is located.” F ED . R. C IV . P. 4(k)(1)(A). Under its so-called “long-arm” statute, California explicitly extends the personal jurisdiction of its courts to the maximum extent allowed by the California and U.S. Constitutions. See C AL . C ODE C IV . P. §"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,44,4,P044.B04,DOC002[P044.B04],94,134,54.0,220.68,345.0,512.84,"410.10 (“A court of this state may exercise jurisdiction on any basis not inconsistent with the Constitution of this state or of the United States.”). Because California’s Constitution applies the same minimum personal-jurisdiction standards that are applicable under the federal Due Process Clause, see Snowney v. Harrah’s Ent., Inc. , 112 P.3d 28, 32 (Cal. 2005), the district court’s jurisdiction in this case turns solely on whether asserting personal jurisdiction here “comports with the limits imposed by federal due process.” Daimler AG v. Bauman , 571 U.S. 117, 125 (2014)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,45,1,P045.B01,DOC002[P045.B01],96,132,54.0,35.0,348.0,528.44,"B RISKIN V . S HOPIFY , I NC . 45 In its landmark decision in International Shoe Co. v. Washington , 326 U.S. 310 (1945), the Supreme Court held that “presence within the territorial jurisdiction of [a] court” was no longer the touchstone for exercising personal jurisdiction over a defendant corporation. Id . at 316. Instead, the Court held, “due process requires only that in order to subject a defendant to a judgment in personam, if [the defendant] be not present within the territory of the forum, [the defendant] have certain minimum contacts with it such that the maintenance"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,45,2,P045.B02,DOC002[P045.B02],99,125,54.0,35.0,348.0,528.44,"of the suit does not offend ‘traditional notions of fair play and substantial justice.’” Id . (citation omitted). Where the forum in question is not one in which the corporation is “essentially at home,” the requisite “minimum contacts” are present only if the corporation takes “some act by which it purposefully avails itself of the privilege of conducting activities within the forum State,” and even then personal jurisdiction can be exercised only with respect to claims that “arise out of or relate to the defendant’s contacts with the forum.” Ford Motor Co. v. Montana Eighth Jud. Dist. Ct. , 592"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,45,3,P045.B03,DOC002[P045.B03],102,167,54.0,35.0,348.0,528.44,"U.S. 351, 358–59 (2021) (simplified). Put another way, “the defendant’s suit-related conduct must create a substantial connection with the forum State.” Walden v. Fiore , 571 U.S. 277, 284 (2014). And that substantial connection with the forum must be “based on [the corporation’s] own affiliation with the State, not based on the ‘random, fortuitous, or attenuated’ contacts [it] makes by interacting with other persons affiliated with the State.” Id . at 286 (citation omitted); cf . World-Wide Volkswagen Corp. v. Woodson , 444 U.S. 286, 295 (1980) (holding that “the fortuitous circumstance that a single Audi automobile, sold in New"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,45,4,P045.B04,DOC002[P045.B04],18,22,54.0,35.0,348.0,528.44,"York to New York residents, happened to suffer an accident while passing through Oklahoma” was, standing alone, not"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,46,1,P046.B01,DOC002[P046.B01],26,37,54.0,35.0,345.0,100.64,"46 
+B RISKIN V . S HOPIFY , I NC . a sufficient contact for Oklahoma to have personal 
+jurisdiction over the New York dealer that sold the vehicle)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,46,2,P046.B02,DOC002[P046.B02],117,184,54.0,104.28,348.0,286.04,"Even when these requirements are met, the Supreme 
+Court has left open the possibility that a defendant may be 
+able to “present a compelling case that the presence of some 
+other 
+considerations 
+would 
+render 
+jurisdiction 
+unreasonable.”   Burger King Corp. v. Rudzewicz , 471 U.S. 
+462, 477 (1985).  That burden is a heavy one because, as the 
+Court has noted, “[m]ost such considerations usually may be 
+accommodated through means short of finding jurisdiction 
+unconstitutional.”   Id .  In federal court, these means include 
+a motion for transfer under 28 U.S.C. § 1404(a) or, if a 
+foreign alternative forum is involved, a motion for dismissal 
+under “the common-law doctrine of  forum non conveniens .”  
+Id . at 477 n.20."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,46,3,P046.B03,DOC002[P046.B03],1,1,193.32,289.49,205.68,306.1,II
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,46,4,P046.B04,DOC002[P046.B04],13,17,54.0,309.48,345.0,339.44,"Under these standards, in my view, this is not a 
+particularly difficult case."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,46,5,P046.B05,DOC002[P046.B05],1,1,193.68,342.89,205.32,359.5,A
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,46,6,P046.B06,DOC002[P046.B06],84,122,54.0,362.88,345.0,530.84,"According to Briskin’s operative complaint, Defendant 
+Shopify Payments provides “payment software” to 
+merchants that use Defendant Shopify’s services for 
+managing online storefronts.  In conducting transactions 
+between Shopify’s merchants and those merchants’ 
+customers, that software collects and uses certain personal 
+information in a manner that Briskin alleges violates 
+California law.  Specifically, Briskin alleges that 
+Defendants’ software installs cookies on California 
+residents’ computers and mobile devices that track their 
+online activities and transmit information about that activity 
+to Defendants; that Defendants intercept electronic"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,47,1,P047.B01,DOC002[P047.B01],97,126,54.0,35.0,345.0,335.24,"B RISKIN V . S HOPIFY , I NC . 47 communications containing residents’ sensitive payment information; and that Defendants use the harvested information to build consumer profiles and share that information with online retailers and third parties. The complaint also specifically alleges that Shopify USA “further collects and processes California consumers’ personal information from [Defendants’] platform” in a manner that violates California law and that, in doing so, it acts “as a subprocessor of user data” for Shopify and its subsidiaries. Briskin alleges that all three affiliated companies act in concert in thus unlawfully collecting and using personal information"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,47,2,P047.B02,DOC002[P047.B02],64,87,54.0,35.0,345.0,335.24,"from consumers. Briskin, a California resident, alleges that he was a target of, and suffered injuries from, these unlawful practices when Defendants’ software unlawfully obtained his personal information and installed a tracking cookie on his cellphone as he used that phone in California on or about June 14, 2019 to purchase “apparel for his wife from IABMFG,” a California merchant that uses Defendants’ services."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,47,3,P047.B03,DOC002[P047.B03],116,179,54.0,338.88,345.0,534.44,"Based on these factual allegations, Briskin asserts the 
+following causes of action under California statutory and 
+common law.  Invoking the statutory cause of action 
+conferred by California Penal Code § 637.2, Briskin asserts 
+that Defendants’ conduct effectively constituted a form of 
+wiretapping 
+or 
+eavesdropping 
+that 
+violated 
+the 
+communications privacy provisions of California Penal 
+Code § 631(a) and § 635.  He also asserts a cause of action 
+under the California Constitution for an alleged violation of 
+its privacy protections, a statutory cause of action under 
+California Penal Code § 502(e) for violation of the computer 
+privacy protections of § 502(c), and a common-law claim for 
+intrusion upon seclusion.  Finally, he asserts that 
+Defendants’ actions constituted fraudulent, unfair, and"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,48,1,P048.B01,DOC002[P048.B01],26,42,54.0,35.0,345.0,114.44,"48 
+B RISKIN V . S HOPIFY , I NC . unlawful business practices for which equitable relief is 
+available under California Business and Professions Code 
+§ 17200  et seq ."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,48,2,P048.B02,DOC002[P048.B02],1,1,193.92,117.89,204.96,134.5,B
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,48,3,P048.B03,DOC002[P048.B03],99,157,54.0,137.88,345.0,292.04,"As noted earlier, to establish personal jurisdiction over 
+Defendants in California, Briskin must show that each 
+Defendant’s “suit-related conduct . . . create[d] a substantial 
+connection” with California,  Walden , 571 U.S. at 284, which 
+entails a showing that Briskin’s claims “arise out of or relate 
+to” some action by which a given Defendant “purposefully 
+avail[ed] itself of the privilege of conducting activities 
+within the forum State,”  Ford Motor , 592 U.S. at 359 
+(citations omitted).  In my view, this standard is readily 
+satisfied here, because each Defendant allegedly committed, 
+or is responsible for, tortious conduct within California."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,48,4,P048.B04,DOC002[P048.B04],101,119,54.0,295.68,345.0,532.64,"As a factual matter there is no serious dispute, on the current record, that the alleged conduct that assertedly violated California law occurred, in substantial part, in California. Several of the alleged violations of California law occurred when Defendants’ software connected with Briskin’s cellphone in California, intercepted data that he was led to believe he was transmitting from his cellphone in California to a California retailer, and implanted a tracking cookie onto his cellphone in California. That suffices to bring this case within the settled principle that, “because torts involve wrongful conduct which a state seeks to deter, and against"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,48,5,P048.B05,DOC002[P048.B05],53,81,54.0,295.68,345.0,532.64,"which it attempts to afford protection,” a State “has an especial interest in exercising judicial jurisdiction over those who commit torts within its territory .” Keeton v. Hustler Magazine, Inc. , 465 U.S. 770, 776 (1984) (emphasis added) (citation omitted). This venerable principle, which was applied in Keeton , has been recognized by the courts"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,49,1,P049.B01,DOC002[P049.B01],90,169,54.0,35.0,345.0,404.24,"B RISKIN V . S HOPIFY , I NC . 49 over and over again. See , e.g. , Rosenblatt v. American Cyanamid Co. , 86 S. Ct. 1, 3 (1965) (Goldberg, J., in chambers) (noting that the “logic” of the Court’s decisions applying International Shoe “supports the validity of state ‘long arm’ statutes . . . which base in personam jurisdiction upon commission of a ‘tortious act’ in the forum State”); Freestream Aircraft (Bermuda) Ltd. v. Aero Law Grp. , 905 F.3d 597, 606 (9th Cir. 2018) (noting that it is “well-settled . . . that the commission of"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,49,2,P049.B02,DOC002[P049.B02],97,154,54.0,35.0,345.0,404.24,"a tort within the forum state usually supports the exercise of personal jurisdiction”); Fulton v. Chicago, Rock Island & Pac. R.R. Co. , 481 F.2d 326, 335 (8th Cir. 1973) (“[T]he due process clause imposes no bar to a state’s asserting personal jurisdiction, of course on proper notice, in favor of a person within its borders who suffers damage from . . . a tort the defendant committed there.” (citation omitted)); Buckley v. New York Post Corp. , 373 F.2d 175, 181 (2d Cir. 1967) (Friendly, J.) (“We . . . perceive no constitutional problem in Connecticut’s summoning the New"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,49,3,P049.B03,DOC002[P049.B03],62,100,54.0,35.0,345.0,404.24,"York Post to answer in its courts for a tort . . . alleged to have been committed in Connecticut upon a Connecticut resident even if that had been a wholly isolated event.”); Smyth v. Twin State Improvement Corp. , 80 A.2d 664, 667–68 (Vt. 1951) (cited with approval in McGee v. International Life Ins. Co. , 355 U.S. 220, 223 n.2 (1957))."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,49,4,P049.B04,DOC002[P049.B04],78,113,54.0,407.88,345.0,534.44,"The only wrinkle here is that the violative conduct that 
+occurred in California was purely automated: it occurred by 
+the operation of software that, when it conducts transactions 
+with Californians in California, does so, by design, in a way 
+that allegedly violates California law.  But these “automated 
+torts,” so to speak, are for minimum-contacts purposes 
+Defendants’  conduct in California.  When a State 
+specifically regulates the conduct of electronic systems with 
+respect to transactions within its borders, the as-intended"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,50,1,P050.B01,DOC002[P050.B01],97,115,53.99,35.0,345.92,540.91,"50 B RISKIN V . S HOPIFY , I NC . operation of those systems within that State is the relevant tortious conduct for minimum-contacts purposes, and that conduct is attributable to those persons who deliberately intended that such systems reach into that State and operate in that manner when they do so. The fact that the human actions taken to create and deploy Defendants’ software did not themselves occur in California is of no moment, just as it is irrelevant that a hacker may be physically outside the jurisdiction when she electronically reaches unlawfully into an in-state computer and,"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,50,2,P050.B02,DOC002[P050.B02],99,143,53.99,35.0,345.92,540.91,"while electronically within that forum, steals data from that computer. See , e.g. , MacDermid, Inc. v. Deiter , 702 F.3d 725, 730–31 (2d Cir. 2012). 1 1 The States are, of course, free not to extend the personal jurisdictional limits of their courts to the outer limits permitted by the Due Process Clause and to adopt a narrower view instead. Some States, for example, focus on the physical presence of the defendant in the State, rather than on the electronic intrusions and resulting electronic conduct of the defendant in the State. See , e.g. , Bensusan Rest. Corp. v."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,50,3,P050.B03,DOC002[P050.B03],107,157,53.99,35.0,345.92,540.91,"King , 126 F.3d 25, 27–29 (2d Cir. 1997) (holding that, because the New York long-arm statute, N.Y. C.P.L.R. § 302(a)(2), “reaches only tortious acts performed by a defendant who was physically present in New York when he performed the wrongful act,” New York did not have personal jurisdiction over a defendant who, while physically in Missouri, allegedly created a website that infringed on a trademark held in connection with a New York City jazz club); Margoles v. Johns , 483 F.2d 1212, 1217 (D.C. Cir. 1973) (holding that a defendant in Wisconsin who allegedly made defamatory statements over the"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,50,4,P050.B04,DOC002[P050.B04],95,117,53.99,35.0,345.92,540.91,"telephone to an office in the District of Columbia could not “be considered as ‘project[ing] her presence’ into the District and consequently as acting therein within the meaning of” the District of Columbia’s long-arm statute, D.C. C ODE § 13-423(a)(3) (alteration in original)). But California has chosen to extend the personal jurisdiction of its courts to the constitutional limit, and I see no reason under the Supreme Court’s cases why the Due Process Clause should be construed as having constitutionalized the sort of narrow rule followed in some other States."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,51,1,P051.B01,DOC002[P051.B01],96,128,54.0,35.0,351.12,540.93,"B RISKIN V . S HOPIFY , I NC . 51 Moreover, not only did Defendants intend that the software would operate as it allegedly did, they also unquestionably intended that it would conduct transactions, as programmed, within California . Given the undisputed facts concerning the nature and scale of Defendants’ operations within the United States, Defendants knew and fully intended that their software would be used in conducting transactions in every State of the country, including California. The occurrence of the foregoing conduct in California was thus in no sense “random, fortuitous, or attenuated.” Walden , 571 U.S. at"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,51,2,P051.B02,DOC002[P051.B02],92,149,54.0,35.0,351.12,540.93,"286 (citation omitted). Defendants therefore “purposefully” engaged in allegedly tortious “activities within the forum State.” Ford Motor , 592 U.S. at 359 (citation omitted). 2 Viewed this way, this case is not so much about the “effects” in California of conduct that occurred elsewhere, see Calder v. Jones , 465 U.S. 783 (1984); rather, it is more properly viewed as a case about conduct occurring in California that violated California law. See Freestream , 905 F.3d at 603–04 (“[R]eliance on . . . Calder . . . [i]s misplaced . . . because th[at] inquiry . . . focuses on"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,51,3,P051.B03,DOC002[P051.B03],100,126,54.0,35.0,351.12,540.93,"conduct that takes place outside the forum state and that has effects inside the forum state.”). Defendants’ tortious conduct in California thus readily creates a sufficient connection with the forum to provide the 2 The full quotation of the standard, as mentioned earlier, is that the defendant “must take ‘some act by which it purposefully avails itself of the privilege of conducting activities within the forum State.’” Ford Motor , 592 U.S. at 359 (simplified). In the context of a tort, of course, it is not so much that a defendant is trying to exercise a “privilege” as it is"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,51,4,P051.B04,DOC002[P051.B04],40,54,54.0,35.0,351.12,540.93,"that it has violated a responsibility it owes in connection with its activities in that State. In any event, Defendants here certainly were also “avail[ing] [themselves] of the privilege of conducting activities within the forum State.” Id . (citation omitted)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,52,1,P052.B01,DOC002[P052.B01],98,132,54.0,35.0,348.0,341.24,"52 B RISKIN V . S HOPIFY , I NC . minimum contacts necessary for personal jurisdiction with respect to causes of action that “arise out of or relate to [their] contacts” with California. Ford Motor , 592 U.S. at 359 (citation omitted). And, almost by definition, tort claims arising from tortious conduct committed against a Californian in California “arise out of” that tortious conduct. California therefore has specific jurisdiction over Defendants with respect to these claims unless Defendants can meet the heavy burden of “present[ing] a compelling case that the presence of some other considerations would render jurisdiction unreasonable,”"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,52,2,P052.B02,DOC002[P052.B02],81,98,54.0,35.0,348.0,341.24,"Burger King , 471 U.S. at 477, which they clearly have not done here. Even assuming that there are any cases in which a tortfeasor can make a compelling showing that federal court jurisdiction in the place of the tortious conduct is unreasonable—and I doubt that there are 3 —this is certainly not such a case. Based on the foregoing, I would reverse the district court’s order and judgment dismissing this case for lack of personal jurisdiction over Defendants."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,52,3,P052.B03,DOC002[P052.B03],101,147,53.99,372.88,347.01,540.94,"3 As noted previously, even when personal jurisdiction has been established, a defendant in federal court can always request a transfer under 28 U.S.C. § 1404(a) or, if a foreign alternative forum is involved, a dismissal under the common-law doctrine of forum non conveniens . Although some state courts have upheld seemingly very tenuous assertions of jurisdiction, see , e.g. , Asahi Metal Indus. Co. v. Superior Ct. , 702 P.2d 543 (Cal. 1985), rev’d , 480 U.S. 102 (1987), it seems to me unlikely that there would be (or should be) any federal case in which a tortfeasor who"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,52,4,P052.B04,DOC002[P052.B04],47,60,53.99,372.88,347.01,540.94,(1) has committed tortious conduct in a jurisdiction and (2) has been unable to show sufficient inconvenience to warrant a transfer under § 1404 or a dismissal under forum non conveniens could nonetheless still proceed to show unreasonableness rising to the level of a constitutional due process violation.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,53,1,P053.B01,DOC002[P053.B01],8,16,54.0,35.0,344.5,48.42,"B RISKIN V . S HOPIFY , I NC . 
+53"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,53,2,P053.B02,DOC002[P053.B02],1,1,190.92,70.49,207.96,87.1,III
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,53,3,P053.B03,DOC002[P053.B03],101,128,54.0,90.48,348.0,540.44,"Although I view this case as relatively straightforward from the perspective of this en banc court, the same was not true for the three-judge panel in this case. That panel was bound by, and faithfully applied, this court’s prior precedents holding that (1) hosting “a purely ‘passive’ website that merely hosts information ‘does not qualify as purposeful activity invoking the benefits and protections’ of the fora in which the website may be viewed”; (2) “operation of an interactive website does not, by itself, establish express aiming”; and (3) “to establish the ‘something more’ needed to demonstrate express aiming in suits"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,53,4,P053.B04,DOC002[P053.B04],101,163,54.0,90.48,348.0,540.44,"against internet platforms, the plaintiff must allege that the defendant platform has a ‘forum-specific focus’” that involves “some differentiation of the forum state from other locations.” Briskin v. Shopify, Inc. , 87 F.4th 404, 417, 419–20 (9th Cir. 2023) (citations omitted), vacated , 101 F.4th 706 (9th Cir. 2024). This differential-targeting requirement was first clearly adopted and applied in AMA Multimedia, LLC v. Wanat , 970 F.3d 1201 (9th Cir. 2020), which held that the Poland-based operator of a pornography website escaped personal jurisdiction in the United States because he made the website universally available in an effort to generate"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,53,5,P053.B05,DOC002[P053.B05],103,132,54.0,90.48,348.0,540.44,"“more users globally,” as opposed to more users in the United States specifically, even though nearly 20% of the website’s traffic came from the United States and even though the website “tailor[ed] advertisements based on the perceived location of the viewer.” Id . at 1210–12. I agree with the majority that AMA was wrongly decided and that it and its differential-targeting progeny should be overruled. But, as I see it, the majority does not go far enough. As the panel in this case noted, “[d]riving our decision- making in this area has been the need to draw some lines to"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,54,1,P054.B01,DOC002[P054.B01],96,140,54.0,35.0,348.0,321.44,"54 B RISKIN V . S HOPIFY , I NC . avoid subjecting web platforms to personal jurisdiction everywhere.” Briskin , 87 F.4th at 417. Our cases have reasoned that, “[w]ere it otherwise, ‘every time a seller offered a product for sale through an interactive website, the seller would be subjecting itself to specific jurisdiction in every forum in which the website was visible.’” Id . (citation omitted). “That result,” we have said, “would be too broad to comport with due process.” Id . (citation omitted). To avoid that result, we have required “something more” than a merely “passive” or"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,54,2,P054.B02,DOC002[P054.B02],71,98,54.0,35.0,348.0,321.44,"merely “interactive” website. Id . at 417–20. Although the majority now clarifies that the “something more” need not be differential targeting, it reaffirms our long-stated “something more” requirement. See Opin. at 23. Those two propositions are in some tension with one another, because the most obvious way to show “something more” than universal availability of a website is differential favoring of the use of that website in some forums versus others."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,54,3,P054.B03,DOC002[P054.B03],99,145,54.0,325.08,348.0,534.44,"I would go further and disavow, as unhelpful and confusing, our oft-repeated statements that “something more” than a “passive” or “interactive” website is required. See , e.g. , Cybersell, Inc. v. Cybersell, Inc. , 130 F.3d 414, 418 (9th Cir. 1997). As the briefing in this case illustrates, litigants have seized on such phrasing as effectively creating a safe harbor for internet companies that must be protected and expanded in order to avoid the supposed horror that such companies might be subject to personal jurisdiction in all 50 States. I am at a loss to understand why there should be"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,54,4,P054.B04,DOC002[P054.B04],51,59,54.0,325.08,348.0,534.44,"any such safe harbor. If a company develops a web-based business for the purpose of conducting online transactions in all 50 States , it should not be surprised that it may be sued in any State for unlawful transactions that may occur within that State. And even if a website merely “passively”"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,55,1,P055.B01,DOC002[P055.B01],98,126,54.0,35.0,348.0,335.24,"B RISKIN V . S HOPIFY , I NC . 55 displays a malicious libel against a nationally known figure to everyone in the United States with an internet connection, such that the libel is thereby published in all 50 States, I am not sure that I see why the target could not sue the person “passively” posting that libel in any one of them. Print publishers that circulate their publications in all 50 States are concededly already subject to that rule, see Keeton , 465 U.S. at 780–81, and I do not see why the Due Process Clause should"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,55,2,P055.B02,DOC002[P055.B02],97,143,54.0,35.0,348.0,335.24,"be contorted to give web-based publishers more favorable treatment. What matters is whether, in light of the particular claim asserted, a defendant has relevant minimum contacts with the forum that are not “random, fortuitous, or attenuated.” Walden , 571 U.S. at 286 (citation omitted). Inquiring as to whether those contacts consist of “something more” than a merely passive or interactive website is at best unhelpful and at worst misleading. In my view, “after puzzling the profession for [28] years, this famous observation has earned its retirement.” Bell Atl. Corp. v. Twombly , 550 U.S. 544, 563 (2007)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,55,3,P055.B03,DOC002[P055.B03],1,1,191.28,338.69,207.6,355.3,IV
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,55,4,P055.B04,DOC002[P055.B04],103,141,54.0,358.68,345.0,540.44,"I also agree with the majority that Briskin’s pleading was sufficient to avoid dismissal on the ground that it was an impermissible group-pleading. Given the specific context of affiliated subsidiary companies, I think that the facts alleged by Briskin are sufficient to permit a “plausible inference” that each affiliate played a direct or indirect role in, and is responsible for, the challenged conduct here. Ashcroft v. Iqbal , 556 U.S. 662, 682 (2009). I would note, however, that Defendants’ motions below raised several additional grounds for dismissal under Federal Rule of Civil Procedure 12(b)(6) that the district court did not"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,55,5,P055.B05,DOC002[P055.B05],24,28,54.0,358.68,345.0,540.44,"address. I express no view on those issues, which are best left to the district court to consider on remand in the first instance."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,56,1,P056.B01,DOC002[P056.B01],8,16,54.0,35.0,251.25,48.42,"56 
+B RISKIN V . S HOPIFY , I NC ."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,56,2,P056.B02,DOC002[P056.B02],104,145,54.0,90.48,348.0,453.08,"For the foregoing reasons, I concur in the judgment reversing the district court’s dismissal of this action. BUMATAY, Circuit Judge, concurring: We took this case en banc to answer a narrow question: Does the Due Process Clause of the Fourteenth Amendment require “differential targeting” of a forum to assert personal jurisdiction over an out-of-state defendant? By “differential targeting,” we mean that the defendant’s actions within a forum State create specific jurisdiction only if the defendant acted with “some prioritization of the forum state”—rather than a general, nationwide focus. See Briskin v. Shopify, Inc. , 87 F.4th 404, 420 (9th Cir."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,56,3,P056.B03,DOC002[P056.B03],101,138,54.0,90.48,348.0,453.08,"2023), vacated by 101 F.4th 706 (9th Cir. 2024). Under a differential-targeting regime, a corporate defendant with a global reach doesn’t act sufficiently within a forum unless the defendant expressly “differentiat[ed . . .] the forum state from other locations.” See id. In other words, the defendant must have directed its actions to the forum State over-and-above other fora. So if a corporate defendant operates a broadly accessible website or electronic service, no specific jurisdiction exists over the defendant in a particular State unless the State is a “focal point” of the service, or the platform has a “forum-specific focus.”"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,56,4,P056.B04,DOC002[P056.B04],5,10,54.0,90.48,348.0,453.08,See id. at 419 (simplified).
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,56,5,P056.B05,DOC002[P056.B05],55,101,54.0,456.72,345.0,528.08,"To answer this question, the place to start is the original 
+meaning of the Constitution.   See Burnham v. Superior 
+Court of Cal., Cnty. of Marin , 495 U.S. 604, 608–09 (1990); 
+Mallory v. Norfolk Southern Ry. Co ., 600 U.S. 122, 128 
+(2023);  see also Vidal v. Elster , 602 U.S. 286, 301 (2024)"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,57,1,P057.B01,DOC002[P057.B01],101,164,54.0,35.0,348.0,224.84,"B RISKIN V . S HOPIFY , I NC . 
+57 (analyzing the “history and tradition” of the First 
+Amendment to understand its scope).  From there, we bend 
+our precedent in the direction of constitutional history.  As 
+Justice Kavanaugh recently put it, “[w]hen determining how 
+broadly or narrowly to read a precedent; when determining 
+whether to extend, limit, or narrow a precedent; or in 
+relatively infrequent cases, when determining whether to 
+overrule a precedent, a court often will consider how the 
+precedent squares with the Constitution’s text and history.”  
+United States v. Rahimi , 602 U.S. 680, 730 (2024) 
+(Kavanaugh, J., concurring)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,57,2,P057.B02,DOC002[P057.B02],100,133,54.0,228.48,348.0,424.04,"And because we are sitting under our diversity jurisdiction, we must begin with the Fourteenth Amendment’s Due Process Clause. 1 As discussed below, the original meaning of the Due Process Clause has faced considerable debate. Regardless of that debate, “[b]oth at the time of the founding and the Fourteenth Amendment’s adoption, the Anglo-American legal tradition recognized that a tribunal’s competence was generally constrained only by the ‘territorial limits’ of the sovereign that created it.” Mallory , 600 U.S. at 128. And so, it’s “[a]mong the most firmly established principles . . . in [the] American tradition . . . that"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,57,3,P057.B03,DOC002[P057.B03],22,31,54.0,228.48,348.0,424.04,"the courts of a State have jurisdiction over nonresidents who are physically present in the State.” Burnham , 495 U.S. at 610."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,57,4,P057.B04,DOC002[P057.B04],83,112,54.0,430.36,344.51,540.92,"1  To be sure, it is the Fifth Amendment’s Due Process Clause that 
+initially governs federal courts’ personal jurisdiction inquiry.  But when 
+hearing diversity cases, Congress directs us to state law.   See  Federal 
+Rule of Civil Procedure 4(k)(1)(A) (service of a summons establishes 
+personal jurisdiction over a defendant “who is subject to the jurisdiction 
+of a court of general jurisdiction in the state where the district court is 
+located.”).  And the Fourteenth Amendment Due Process Clause governs 
+state courts."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,58,1,P058.B01,DOC002[P058.B01],67,100,54.0,35.0,345.0,169.64,"58 
+B RISKIN V . S HOPIFY , I NC . Indeed, an unbroken chain of cases, from the Founding 
+to  Pennoyer  to  International Shoe , has interpreted “due 
+process of law” under either the Fifth Amendment or the 
+Fourteenth Amendment to permit court jurisdiction over 
+defendants physically present within the forum state.  Thus, 
+under any conception of the original public meaning of “due 
+process of law,” physical presence satisfies it."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,58,2,P058.B02,DOC002[P058.B02],98,133,54.0,173.28,348.0,382.64,"Of course, much has changed since the ratification of the Fourteenth Amendment. First, “the use of the corporate form proliferated in the 19th century.” Mallory , 600 U.S. at 129. Second, technology has revolutionized commerce. Now, instead of shopkeepers hawking goods and wares at the corner market, the internet offers convenient ways to buy and sell products from almost anywhere. These developments may challenge our traditional sense of physical presence. But that doesn’t mean the original meaning of the Due Process Clause has nothing to say. “When confronting . . . present-day” challenges, to be faithful to the original Constitution,"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,58,3,P058.B03,DOC002[P058.B03],31,53,54.0,173.28,348.0,382.64,"courts must “reason[] by analogy” to historical understandings—“a commonplace task for any lawyer or judge.” N.Y. State Rifle & Pistol Ass’n v. Bruen , 597 U.S. 1, 28 (2022)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,58,4,P058.B04,DOC002[P058.B04],80,122,54.0,386.28,348.0,512.84,"So, in determining personal jurisdiction over out-of-state 
+corporate defendants today, our analysis must focus on an 
+“analogy to ‘physical presence’”—“the touchstone of 
+jurisdiction.”   Burnham , 495 U.S. at 619.  Under that view, 
+if a corporate defendant’s activity in a forum State is 
+analogous to physical presence, it doesn’t matter whether the 
+defendant also  targeted  the forum State over other States.  
+We thus shouldn’t construe our precedent as requiring a 
+differential-targeting regime to assert personal jurisdiction."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,59,1,P059.B01,DOC002[P059.B01],95,126,54.0,35.0,345.0,230.84,"B RISKIN V . S HOPIFY , I NC . 
+59 Given the allegations made against the Shopify entities 
+here—that they pilfered Brandon Briskin’s private data 
+while he bought a piece of clothing in California and that 
+they continue to operate in this way (while, for some Shopify 
+entities, agreeing to receive process in California and 
+maintaining some physical operations in the State)—the 
+Shopify entities are sufficiently present in California to not 
+require any targeting of the State to assert personal 
+jurisdiction over them. Thus, I concur with the majority’s resolution of this 
+issue."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,59,2,P059.B02,DOC002[P059.B02],1,2,194.16,234.29,204.84,250.9,I.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,59,3,P059.B03,DOC002[P059.B03],112,168,54.0,254.28,348.0,422.24,"“[N]or shall any State deprive any person of life, liberty, 
+or property, without due process of law[.]”  U.S. Const. 
+amend. XIV, § 1.  For better or for worse, the Due Process 
+Clause has taken on more significance than its text can 
+rightly bear.  Take its impact on the law of personal 
+jurisdiction.  Since  International Shoe , the terms “minimum 
+contacts” and “traditional notions of fair play and substantial 
+justice” have taken on talismanic import in current doctrine.  
+But those words don’t appear in the text of the Due Process 
+Clause.  Nor does the Clause speak of any differential-
+targeting requirement for jurisdictional purposes.  So what 
+does “due process of law” mean?"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,59,4,P059.B04,DOC002[P059.B04],72,91,54.0,425.88,345.0,538.64,"In my view, three broad conceptions of the original 
+meaning of “due process” bear on the personal jurisdiction 
+inquiry.  The first holds that the Due Process Clause simply 
+created a means for challenging instances in which state 
+courts failed to follow their state law before issuing 
+judgments.  The second teaches that the Due Process Clause 
+did not incorporate any substantive law, but instead required 
+States to apply principles of general law governing"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,60,1,P060.B01,DOC002[P060.B01],51,77,54.0,35.0,348.0,155.84,"60 
+B RISKIN V . S HOPIFY , I NC . jurisdiction.  The last provides that the Due Process Clause 
+constitutionalized substantive jurisdictional law and made it 
+applicable to state courts.  I briefly sketch out these views.  
+None supports the creation of a differential-targeting rule to 
+assert personal jurisdiction over a nonresident corporate 
+defendant."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,60,2,P060.B02,DOC002[P060.B02],1,2,192.12,159.29,206.76,175.9,A.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,60,3,P060.B03,DOC002[P060.B03],103,134,54.0,179.28,348.0,457.64,"Under the first view, the Due Process Clause simply requires state courts to follow state law before they may lawfully issue judgments. Before the Fourteenth Amendment, when a state court issued a judgment, it would of course be enforced inside the State’s own borders. See Patrick J. Borchers, The Death of the Constitutional Law of Personal Jurisdiction: From Pennoyer to Burnham and Back Again , 24 U.C. Davis L. Rev. 19, 30 (1990). But outside the State’s borders, enforcement was up to other States, subject to federal full faith and credit commands. Id. at 32. Recognition of one State’s judgments"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,60,4,P060.B04,DOC002[P060.B04],88,107,54.0,179.28,348.0,457.64,"by other States was governed by “international rules of jurisdiction.” Id . Thus, if an out-of-state defendant believed a state court failed to follow state law on jurisdiction, the defendant’s recourse was to take a default judgment and then challenge recognition of the judgment in the defendant’s home-state courts. See id. at 26 n.25. But this arrangement left no federal means for a defendant to challenge, within a State, a judgment entered by that State’s courts for lack of jurisdiction. See id. at 42."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,60,5,P060.B05,DOC002[P060.B05],46,67,54.0,461.28,345.0,532.64,"The Fourteenth Amendment’s innovation, under this 
+view, was “to provide an avenue for challenging a state’s 
+exercise of personal jurisdiction in all cases, whether or not 
+recognition of the judgment was sought interstate or 
+intrastate.”   Id.  at 40.  But, importantly, the Clause did not"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,61,1,P061.B01,DOC002[P061.B01],99,133,54.0,35.0,348.0,376.64,"B RISKIN V . S HOPIFY , I NC . 61 impose “the contents of those rules of jurisdiction.” Id. Rather, “due process” ensured only that “process” was followed. It required state courts to adhere to the State’s own “process” rules before issuing a valid judgment, but it didn’t supply the substantive rules for what that “process” looked like. The Due Process Clause then allowed “defendants to have at least one chance to ensure that a state followed its own rules of jurisdiction, whatever those rules might be.” Id. at 40; see also Ralph U. Whitten, The Constitutional Limitations on"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,61,2,P061.B02,DOC002[P061.B02],100,143,54.0,35.0,348.0,376.64,"State-Court Jurisdiction: A Historical- Interpretative Reexamination of the Full Faith and Credit and Due Process Clauses Part Two , 14 Creighton L. Rev. 735, 807 (1981) (“Under this view, the intent of the framers of the fourteenth amendment was simply to guarantee through the due process clause that all persons, black and white alike, would have access to state judicial proceedings under the same rules.”); Hermine Meyer, The History and Meaning of the Fourteenth Amendment: Judicial Erosion of the Constitution Through the Misuse of the Fourteenth Amendment 127 (1977) (“[S]tates were left free to make their own procedural rules with"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,61,3,P061.B03,DOC002[P061.B03],13,15,54.0,35.0,348.0,376.64,the sole obligation that they had to be the same for every person.”).
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,61,4,P061.B04,DOC002[P061.B04],105,154,54.0,380.28,345.0,534.44,"Scholars in this camp cite several historical sources for 
+the view that the “due process clause was intended only as a 
+requirement that the states provide equal access to the 
+judicial processes provided by state law.”  Whitten, 
+Constitutional Limitations on State-Court Jurisdiction , at 
+811–12.  They point to congressional statements, such as 
+Pennsylvania Representative John B. Storm’s discussion of 
+the Civil Rights Act of 1871, in which he said that “[t]he 
+‘due process of law’ contemplated by this provision is the 
+‘process of law’ of the States, not the ‘process of law’ of the 
+United States.”   See  Meyer,  History and Meaning of the"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,62,1,P062.B01,DOC002[P062.B01],95,161,54.0,35.0,345.0,349.04,"62 B RISKIN V . S HOPIFY , I NC . Fourteenth Amendment , at 127 (citing Cong. Globe, 42d Cong., 1st Sess. App. 87 (1871)). They note too that “early court decisions interpreting the due process clause also suggest that absolute control was left in the states over their own procedure, subject only to the requirement that the procedure be afforded equally to everyone.” Whitten, Constitutional Limitations on State-Court Jurisdiction , at 807; see id . at 807–08 (discussing Rowan v. State , 30 Wis. 129, 143–44 (1872); Hurtado v. California , 110 U.S. 516 (1884); Walker v. Sauvinet"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,62,2,P062.B02,DOC002[P062.B02],89,139,54.0,35.0,345.0,349.04,", 92 U.S. 90 (1875); Davidson v. New Orleans , 96 U.S. 97 (1877)). Some read the Supreme Court’s first landmark post-Fourteenth Amendment personal jurisdiction case, Pennoyer v. Neff , to support this view. Cf. 95 U.S. 714, 733 (1877) (“Since the adoption of the Fourteenth Amendment . . . the validity of [jurisdiction- lacking] judgments may be directly questioned , and their enforcement in the State resisted ” on the grounds that court proceedings in which the court lacks jurisdiction over the parties “do not constitute due process of law.”) (emphasis added)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,62,3,P062.B03,DOC002[P062.B03],50,74,54.0,352.68,345.0,437.84,"Under this view of the Due Process Clause, state law on 
+jurisdiction is paramount.  California’s long-arm statute 
+provides for personal jurisdiction to the greatest extent 
+allowed by the California and federal Constitutions.  Cal. 
+Civ. Proc. Code § 410.10.  And nothing under state law 
+requires differential targeting of the State."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,62,4,P062.B04,DOC002[P062.B04],1,2,192.48,441.29,206.52,457.9,B .
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,62,5,P062.B05,DOC002[P062.B05],45,69,54.0,461.28,345.0,532.64,"The second view is like the first—except instead of state 
+law controlling jurisdictional rules, it’s the general law that 
+governs.  Under this understanding of the Due Process 
+Clause, “the Constitution imposes  no  direct limits on 
+personal jurisdiction  at all .”  Stephen E. Sachs,  Pennoyer"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,63,1,P063.B01,DOC002[P063.B01],95,163,54.0,35.0,345.0,211.04,"B RISKIN V . S HOPIFY , I NC . 
+63 Was Right , 95 Tex. L. Rev. 1249, 1252 (2017).  Rather than 
+personal jurisdiction being a “matter of constitutional law,” 
+“it’s a matter of general law—that unwritten law, including 
+much of the English common law and the customary law of 
+nations, that formed the basis of the American legal 
+system[.]”   Id.   Lacking any constitutional foundation then, 
+“Congress might potentially displace [jurisdictional rules] 
+by statute.”   Id.   To determine personal jurisdiction under 
+this view, courts might look to “international practice” that 
+“coheres with American practice.”   Id.  at 1319."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,63,2,P063.B02,DOC002[P063.B02],37,55,54.0,214.68,348.0,286.04,"General law has governed personal jurisdiction since 
+before the Founding, and the Fourteenth Amendment didn’t 
+alter that substantive law, according to scholars in this camp.  
+See id.  at 1287–88.  As Chief Justice John Marshall 
+explained:"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,63,3,P063.B03,DOC002[P063.B03],52,71,90.0,295.68,312.0,408.44,"When our ancestors migrated to America, 
+they brought with them the common law of 
+their native country . . . .  In breaking our 
+political connection with the parent state, we 
+did not break our connection with each other.  
+It remained subsequent to the ancient rules, 
+until those rules should be changed by the 
+competent authority."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,63,4,P063.B04,DOC002[P063.B04],46,88,54.0,418.08,345.0,489.44,"Livingston v. Jefferson , 15 F. Cas. 660, 665 (Marshall, 
+Circuit Justice, C.C.D. Va. 1811) (No. 8411).  And “[w]hat 
+the Fourteenth Amendment changed wasn’t the status of the 
+law of jurisdiction,” but the “mechanisms of appellate 
+review.”  Sachs,  Pennoyer Was Right , at 1288."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,63,5,P063.B05,DOC002[P063.B05],35,53,54.0,493.08,345.0,536.84,"Being guided by general law today is no easy feat given 
+its constant evolution,  see id.  at 1319, and that it’s “less clear 
+than it used to be,”  id.  at 1321.  While what constitutes"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,64,1,P064.B01,DOC002[P064.B01],44,84,54.0,35.0,345.0,142.04,"64 
+B RISKIN V . S HOPIFY , I NC . “general law” requires discernment, “longstanding rule[s]” 
+and “generally accepted standards of jurisdiction” are one 
+place to start.   Id.  at 1319–20.  And, to my knowledge, no 
+longstanding rule or generally accepted standard requires 
+differential forum-targeting."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,64,2,P064.B02,DOC002[P064.B02],1,2,192.12,145.49,206.76,162.1,C.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,64,3,P064.B03,DOC002[P064.B03],101,146,54.0,165.48,345.0,374.84,"The third view holds that the Due Process Clause fixed substantive rules for personal jurisdiction. Under this approach, the Due Process Clause constitutionalized the legal procedures required by positive law at the time of the Fourteenth Amendment’s ratification. See Lawrence B. Solum and Max Crema, Originalism and Personal Jurisdiction: Several Questions and a Few Answers , 73 Ala. L. Rev. 483, 496 (2022). Those procedures are the ones that existed in 1868—generally, in-state service of process or consent. See id. at 528; see also John B. Oakley, The Pitfalls of “Hint and Run” History , 28 U.C. Davis L. Rev."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,64,4,P064.B04,DOC002[P064.B04],29,39,54.0,165.48,345.0,374.84,"591, 685 (1995) (generally supporting the view that the Due Process Clause made “traditional common-law principles of territorial jurisdiction part of the constitutional mandate of due process of law”)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,64,5,P064.B05,DOC002[P064.B05],96,148,54.0,378.48,345.0,532.64,"Under this reading, the Due Process Clause imposes 
+certain substantive rules of personal jurisdiction on States, 
+which may override state law.  Justice Ward Hunt, the 
+dissenter in  Pennoyer , appears to have believed that the 
+majority adopted this interpretation of the Fourteenth 
+Amendment.   See Pennoyer , 95 U.S. at 736 (Hunt, J., 
+dissenting) (“The judgment of this court is based upon the 
+theory that the legislature had no power to pass the law in 
+question . . . and every proceeding under it void.”).  Some 
+historical evidence supports this view.  Speaking in the 
+House of Representatives, Ohio Congressman John A."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,65,1,P065.B01,DOC002[P065.B01],98,176,54.0,35.0,348.0,224.84,"B RISKIN V . S HOPIFY , I NC . 
+65 Bingham—the “Madison of the first section of the 
+Fourteenth Amendment,”  Adamson v. California , 332 U.S. 
+46, 73–74 (1947) (Black, J., dissenting)—was asked by 
+another representative “what [he] mean[t] by due process of 
+law.”  Cong. Globe, 39th Cong., 1st Sess. 1089 (1866).  
+Bingham responded that “the courts have settled that long 
+ago, and the gentleman can go and read their decisions.”   Id.
+Those decisions “clearly indicated that the legislature was 
+not free to enact any procedure it desired.”  Whitten, 
+Constitutional Limitations on State-Court Jurisdiction , at 
+810."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,65,2,P065.B02,DOC002[P065.B02],38,51,54.0,228.48,345.0,299.84,"Even if the Fourteenth Amendment imposed substantive 
+rules for personal jurisdiction and constitutionalized 
+territorial principles and consent, that wouldn’t support a 
+differential-targeting rule when a corporate defendant’s 
+activity is analogous to physical presence within the State."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,65,3,P065.B03,DOC002[P065.B03],101,121,54.0,323.28,348.0,532.64,"This debate is important. Uncovering the original meaning of constitutional provisions is essential to getting our law right. Yet recognizing that differential forum- targeting is not required as an original matter by the Constitution does not necessarily require us to pick a side in this ongoing originalist debate. Whether the Due Process Clause imposes substantive territorial principles, adherence to state law, or consistency with the general law, what matters is not forum-targeting—certainly not to the exclusion of in-state activity analogous to in-state presence. Without a foundation in the text or historical understanding of the Fourteenth Amendment, our en banc court"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,65,4,P065.B04,DOC002[P065.B04],21,29,54.0,323.28,348.0,532.64,was right to jettison our differential-targeting rule for personal jurisdiction. All other issues could have been handled by the three-judge panel.
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,66,1,P066.B01,DOC002[P066.B01],48,79,54.0,35.0,345.0,212.48,"66 
+B RISKIN V . S HOPIFY , I NC . I concur. 
+CALLAHAN, Circuit Judge, dissenting: My reading of Supreme Court precedent precludes the 
+majority’s expansive view of specific personal jurisdiction 
+in this case.  Because Shopify’s allegedly tortious conduct 
+was not “expressly aimed” at California, I respectfully 
+dissent."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,66,2,P066.B02,DOC002[P066.B02],101,134,54.0,235.92,345.0,541.31,"According to the majority opinion, because Shopify “knew the location” of plaintiff Brandon Briskin before installing cookies onto his device, Shopify “expressly aimed” its conduct toward the State of California. Opinion at 31. But a company knowing where we happen to be when using its service, and then attaching a cookie to our device, has nothing to do with the State we’re in. That interaction forms a relationship between the company and the individual that is not “tethered” to the State. Walden v. Fiore , 571 U.S. 277, 290 (2014). By holding that California courts can exert specific jurisdiction over"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,66,3,P066.B03,DOC002[P066.B03],83,113,54.0,235.92,345.0,541.31,"Shopify because Briskin used his iPhone while “located in California,” Opinion at 11, the majority opinion departs from the longstanding principle that jurisdiction turns on “the defendant’s contacts with the forum State itself, not the defendant’s contacts with persons who reside there.” Walden , 571 U.S. at 285. 1 1 Although Briskin resides in California, the proposed class in this case comprises “[a]ll natural persons who between August 13, 2017 and present, submitted payment information via Shopify’s software while"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,67,1,P067.B01,DOC002[P067.B01],102,134,54.0,35.0,345.0,252.44,"B RISKIN V . S HOPIFY , I NC . 67 And in so holding the majority opinion creates a new “traveling cookie” rule for in personam jurisdiction. Under our circuit’s newly divined rule, when a company attaches cookies to a person’s electronic device, jurisdiction attaches wherever that person happens to be, and indeed, wherever that person happens to travel thereafter. Of course, this is nowhere close to the Supreme Court’s personal jurisdiction doctrine, as it “impermissibly allows a plaintiff’s contacts with the defendant and forum to drive the jurisdictional analysis.” Id. at 289. As is the case here, Briskin’s"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,67,2,P067.B02,DOC002[P067.B02],30,49,54.0,35.0,345.0,252.44,"claimed injury “is entirely personal to him and would follow him wherever he might choose to live or travel.” Picot v. Weston , 780 F.3d 1206, 1215 (9th Cir. 2015)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,67,3,P067.B03,DOC002[P067.B03],104,122,54.0,256.08,348.0,424.04,"Imagine if Briskin goes on vacation the next time he makes an online purchase using Shopify. As he’s driving from his house in California up to Lake Tahoe, he views an item online that he’s interested in. He keeps browsing the website as he makes his way around the lake, and by the time he’s in Nevada, he clicks the “Pay now” button. Then, after spending a day or two in Nevada, Briskin drives up to Oregon, and as he crosses into the State he visits another website looking for the best wines in Oregon’s Willamette Valley, which Shopify adds"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,67,4,P067.B04,DOC002[P067.B04],24,32,54.0,256.08,348.0,424.04,"to Briskin’s “user profile.” Would the majority say that California, Nevada, or Oregon has jurisdiction over Shopify? Probably all of them, and that"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,67,5,P067.B05,DOC002[P067.B05],62,98,54.0,453.4,346.99,540.92,"located in California.”  The majority opinion says it does not reach the 
+makeup of the proposed class because it “addresses personal jurisdiction 
+only,” Opinion at 14 n.5, but a plaintiff’s residence is relevant for 
+determining whether the exercise of personal jurisdiction is reasonable.  
+See, e.g. ,  Bristol-Myers Squibb Co. v. Super. Ct. of Cal. , 582 U.S. 255, 
+263 (2017)."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,68,1,P068.B01,DOC002[P068.B01],97,142,54.0,35.0,345.0,344.96,"68 B RISKIN V . S HOPIFY , I NC . is precisely the problem with today’s decision. 2 It creates a traveling cookie that ultimately crumbles when held up against Supreme Court precedent because it detaches the jurisdictional inquiry from contacts the “defendant himself ” creates with the State. Burger King Corp. v. Rudzewicz , 471 U.S. 462, 475 (1985). 3 Consider the majority’s attempt to rely on Calder v. Jones , 465 U.S. 783 (1984). 4 In Calder , defendants were Florida residents who wrote and published an allegedly libelous story in the National Enquirer about Shirley Jones,"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,68,2,P068.B02,DOC002[P068.B02],99,122,54.0,35.0,345.0,344.96,"a famous actress in California. Defendants wrote in the article that Ms. Jones “drank so heavily” that she could not fulfil her “professional obligations” as an actress. Id. at 788 2 The traveling cookie rule is also not administrable. What would happen if Briskin chose to fly home from Oregon and then made another purchase using the plane’s Internet? Would the parties have to litigate which State the plane was flying over as it was 30,000 feet above ground? The majority opinion does not attempt to answer this, likely because its rule breaks into pieces when tested."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,68,3,P068.B03,DOC002[P068.B03],79,120,53.99,349.04,344.51,431.48,"3  The majority opinion says that it does not look  only  to where Briskin 
+was located at the time of purchase, because it focuses “on the 
+relationship among the defendant [Shopify], the forum [California], and 
+the litigation [over tortious acts committed in California].”  Opinion at 
+31 n.12 (quotations omitted).  The problem is, “the relationship” that 
+Shopify has with “the forum” with respect to “the litigation” is  entirely 
+dependent  on where Brisken was located at the time of purchase."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,68,4,P068.B04,DOC002[P068.B04],111,165,54.0,435.44,344.56,540.93,"4  The majority purports to rest on the “ Calder  effects test,” which 
+contemplates a State’s exercise of jurisdiction over a defendant “who 
+causes effects in the state by an act done elsewhere.”  Restatement 
+(Second) Conflicts of Law § 37.   See Calder , 465 U.S. at 789.  At the 
+same time though, the opinion frames Shopify’s attachment of cookies 
+on Briskin’s iPhone as “Shopify’s entry into the state of California” and 
+as implicating Restatement (Second) Conflicts of Law § 36, which 
+contemplates a State’s exercise of jurisdiction over a defendant “who has 
+done, or has caused to be done, an act in the state.”  It can’t be both."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,69,1,P069.B01,DOC002[P069.B01],72,111,54.0,35.0,348.0,169.64,"B RISKIN V . S HOPIFY , I NC . 
+69 n.9.  The Supreme Court held the out-of-state defendants 
+created the requisite contacts with the State of California 
+because they wrote and published a story that “concerned the 
+California activities of a California resident” whose 
+“television career was centered in California.”   Id.  at 788.  
+“In sum, California [was] the focal point both of the story 
+and of the harm suffered.”   Id.  at 789."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,69,2,P069.B02,DOC002[P069.B02],103,127,54.0,173.28,348.0,368.84,"As you can see, Calder was not simply about knowing where a person happens to be and then harming that person. It was about the State being “the focal point” of the defendant’s tortious conduct. There, the State of California was the “focal point” of the nonresident defendants’ conduct because the libelous story was about Ms. Jones and her work in the California-specific Hollywood film industry. By contrast here, the State of California has nothing to do with Shopify’s placement of cookies on Briskin’s iPhone. Shopify would have attached the cookies no matter where Briskin happened to be when he"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,69,3,P069.B03,DOC002[P069.B03],26,32,54.0,173.28,348.0,368.84,"used Shopify, and would continue to add to Briskin’s “user profile” based on his continued online activity no matter where he decided to travel thereafter."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,69,4,P069.B04,DOC002[P069.B04],114,180,54.0,372.48,348.0,540.44,"Kulko v. Superior Court of California , 436 U.S. 84 
+(1978), further illustrates the problem with today’s holding.  
+In  Kulko , a California resident brought suit in California 
+state court against her ex-husband to increase his child 
+support obligations.  The ex-husband lived in New York, had 
+sent his child to live with his ex-wife in California, and had 
+been sending child support payments to his ex-wife in 
+California.   Id.  at 87–88.  The California court held that it 
+could exercise personal jurisdiction over the ex-husband 
+because he “actively and fully consented” to his child living 
+in California.   Kulko v. Super. Ct. , 564 P.2d 353, 358 (Cal. 
+1977)).  The Supreme Court reversed, holding that"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,70,1,P070.B01,DOC002[P070.B01],65,104,54.0,35.0,345.0,155.84,"70 
+B RISKIN V . S HOPIFY , I NC . California’s exercise of jurisdiction would “arbitrarily 
+subject one parent to suit in any State of the Union where the 
+other parent chose to spend time while having custody of 
+their offspring.”   Kulko , 436 U.S. at 93.  The Court further 
+held that the ex-husband’s “acquiescence” did not confer 
+jurisdiction in California courts.   Id.  at 94."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,70,2,P070.B02,DOC002[P070.B02],110,170,54.0,159.48,345.0,327.44,"Like the California state court in  Kulko , the majority’s 
+traveling cookie rule “arbitrarily” subjects Shopify to 
+jurisdiction “in any State of the Union where [Briskin] chose 
+to spend time.”   Id.  at 93.  If the ex-wife and child’s physical 
+presence in California could not establish the ex-husband’s 
+contacts with the State, then Briskin’s physical presence in 
+California cannot establish Shopify’s contacts with the State 
+either. And if the ex-husband’s “acquiescence” to his ex-
+wife and child being physically located in California did not 
+matter in  Kulko , Shopify’s “acquiescence” to Briskin being 
+physically present in California (or any other State) should 
+not matter here either."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,70,3,P070.B03,DOC002[P070.B03],116,188,53.99,331.08,345.0,541.31,"In sum, the majority opinion holds that Briskin’s 
+physical presence in California is dispositive to the State’s 
+exercise of specific personal jurisdiction.  Doing so 
+impermissibly allows a plaintiff’s contacts with the forum 
+State to drive the jurisdictional analysis and focuses on the 
+“unilateral activity” of the plaintiff.   Kulko , 436 U.S .  at 93–
+94 (quoting  Hanson v. Denckla , 357 U.S. 235, 253 (1958)); 
+Helicopteros Nacionales de Colombia, S.A. v. Hall , 466 U.S. 
+408, 417 (1984). 5 5  The majority opinion rests its decision on “express aiming” and the 
+“ Calder  effects test” so I focus my attention there, but specific 
+jurisdiction is also improper if we look at Shopify’s “purposeful"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,71,1,P071.B01,DOC002[P071.B01],8,16,54.0,35.0,344.5,48.42,"B RISKIN V . S HOPIFY , I NC . 
+71"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,71,2,P071.B02,DOC002[P071.B02],104,146,54.0,90.48,348.0,350.98,"I share the majority’s concern that plaintiffs like Brandon Briskin have a convenient forum to vindicate their claims against large multinational corporations like Shopify. However, I fundamentally disagree with the majority’s approach, which subjects Shopify to specific jurisdiction in California simply because Shopify placed a cookie on Briskin’s device while he was “located in California.” availment” of the forum. Even assuming Shopify “purposefully avails itself of the privilege of conducting activities within [California],” Ford Motor Co. v. Mont. Eighth Jud. Dist. Ct. , 592 U.S. 351, 359 (2021) (quotations omitted), Briskin’s alleged injuries do not “arise out of or relate"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,71,3,P071.B03,DOC002[P071.B03],93,114,54.0,90.48,348.0,350.98,"to” these contacts, id. Briskin’s alleged injuries would have been the same if he purchased an item from a merchant located in Arkansas. Shopify’s extraction and processing of his personal information has nothing to do with Shopify’s physical presence in the State, like its contracts with California merchants, its fulfillment center, or its physical store. And as the majority opinion even acknowledges, Briskin’s alleged injury arises out of and relates to “Shopify’s contact with Briskin’s device,” Opinion at 39, and not Shopify’s contacts with the forum."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,71,4,P071.B04,DOC002[P071.B04],105,144,53.98,355.08,344.52,541.0,"Although the majority rejected Briskin’s request for jurisdictional discovery, such discovery could have been helpful to discern the location of Shopify’s servers. Companies operating on the Internet “choose to host their site on servers near their desired audience” because “[t]he closer a viewer is located physically or geographically to the host server, the faster that page will load for the viewer.” Will Co., Ltd. v. Lee , 47 F.4th 917, 925 (9th Cir. 2022). Courts have thus routinely found the location of a nonresident defendant’s servers to be a relevant jurisdictional fact. See, e.g. , id. at 920; XMission, L.C."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,71,5,P071.B05,DOC002[P071.B05],76,127,53.98,355.08,344.52,541.0,"v. PureHealth Research , 105 F.4th 1300, 1312 (10th Cir. 2024); MacDermid, Inc. v. Deiter , 702 F.3d 725, 730 (2d Cir. 2012). Briskin alleged that his data was “sent directly to Shopify’s servers” and that Shopify’s software caused his device “to connect to Shopify’s computer servers,” but it is unknown whether these servers are located in California. If they are, then Briskin’s alleged injuries likely “arise out of” these forum-based contacts."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,72,1,P072.B01,DOC002[P072.B01],98,129,53.99,35.0,347.05,540.94,"72 B RISKIN V . S HOPIFY , I NC . Opinion at 11. Such a view turns Supreme Court precedent on its head by focusing solely on the plaintiff’s contacts with the forum, and eviscerates any meaning to “express aiming” under Calder . Now, instead of having to “expressly aim” conduct at a forum, jurisdiction attaches if the company fails to “expressly avoid” a forum. 6 Perhaps the answer to this case lies where no one is looking. Although Briskin does not argue that Shopify is subject to general jurisdiction in the State, Shopify’s contractual agreements with California merchants,"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,72,2,P072.B02,DOC002[P072.B02],101,149,53.99,35.0,347.05,540.94,"its fulfillment center, and physical store all show that Shopify could be seen as “physically present in the State,” Burnham v. Super. Ct. of Cal. , 495 U.S. 604, 610 (1990) (plurality opinion of Scalia, J.), which should be enough to make the assertion of jurisdiction “consistent with due process,” id. at 609. “The Constitution has always allowed suits against individuals on any issue in any State where they set foot,” Ford Motor Co. , 592 U.S. at 384 n.5 (Gorsuch, J., concurring), and I see no reason why there should be “a jurisdictional windfall to large multistate or multinational"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,72,3,P072.B03,DOC002[P072.B03],102,154,53.99,35.0,347.05,540.94,"corporations that operate across many jurisdictions,” BNSF 6 Companies can “expressly avoid” a forum by “geoblocking,” which restricts access to Internet content based on a user’s geographic location. See Brief of Local Civil Prosecutors as Amici Curiae, Dkt. No. 81 at 14 n.11 (explaining that “many companies already utilize so-called ‘geoblocking’ to comply with differing regulatory regimes”). The wisdom of this new rule is questionable. Requiring companies operating to “expressly avoid” forums may have a chilling effect on Internet activity and interstate commerce. See Brief of Professors Alan Trammell and Derek Bambauer as Amici Curiae, Dkt. 105 at 19 (citing"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,72,4,P072.B04,DOC002[P072.B04],18,35,53.99,35.0,347.05,540.94,"Peter K. Yu, A Hater’s Guide to Geoblocking , 25 B.U. J. Sci. & Tech. L. 503 (2019))."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,73,1,P073.B01,DOC002[P073.B01],101,155,54.0,35.0,348.0,327.44,"B RISKIN V . S HOPIFY , I NC . 73 Ry. Co. v. Tyrrell , 581 U.S. 402, 417 (2017) (Sotomayor, J., dissenting). So, in a way, it is possible that the majority does not go far enough. By focusing on Shopify placing cookies on Briskin’s device as the relevant contact for specific, i.e., “case-linked jurisdiction,” BNSF , 581 U.S. at 413, the majority opinion dodges the more pressing question in this case, which is whether Shopify’s deep connections and presence in the State of California can reasonably subject the company to general, i.e., “all-purpose jurisdiction,” id. Applying specific"
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,73,2,P073.B02,DOC002[P073.B02],75,99,54.0,35.0,348.0,327.44,"jurisdiction principles to Internet-based activity is likely not “well suited for the way in which business is now conducted,” Ford Motor Co. , 592 U.S. at 372 (Alito, J., concurring), and our court would be better served by looking at Shopify’s presence in the State—both physical and virtual 7 —as opposed to its one-off interaction with Briskin. In other words, today’s opinion tries to place a square cookie into a round hole."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,73,3,P073.B03,DOC002[P073.B03],62,85,54.0,331.08,345.0,443.84,"The majority’s traveling cookie rule sweeps together all 
+companies with websites accessible “in California.”  Not 
+once has the Supreme Court endorsed such an expansive 
+view of jurisdiction.  Because the majority’s approach 
+impermissibly manufactures jurisdiction wherever the 
+plaintiff goes, and creates a rule wherein a nonresident 
+defendant’s failure to avoid a forum creates the requisite 
+“minimum contacts,” I respectfully dissent."
+packet_1,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2025/04/21/22-15815.pdf,73,4,P073.B04,DOC002[P073.B04],57,79,54.0,464.92,344.52,540.91,"7  The majority opinion avoids holding that Shopify has “virtual 
+‘presence’” in the State sufficient to establish general jurisdiction,  see 
+Walden , 571 U.S. at 290 n.9, but it may be that Shopify’s operations in 
+California make it so that it is indeed virtually “present” in the State the 
+same way it is physically “present.”"

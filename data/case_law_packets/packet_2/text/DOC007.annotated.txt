@@ -1,0 +1,43 @@
+[Page 1]
+[CITE_START:DOC007[P001.B01]] FILED [CITE_END:DOC007[P001.B01]]
+[CITE_START:DOC007[P001.B02]] NOT FOR PUBLICATION [CITE_END:DOC007[P001.B02]]
+[CITE_START:DOC007[P001.B03]] DEC 17 2019 [CITE_END:DOC007[P001.B03]]
+[CITE_START:DOC007[P001.B04]] UNITED STATES COURT OF APPEALS [CITE_END:DOC007[P001.B04]]
+[CITE_START:DOC007[P001.B05]] MOLLY C. DWYER, CLERK [CITE_END:DOC007[P001.B05]]
+[CITE_START:DOC007[P001.B06]] FOR THE NINTH CIRCUIT [CITE_END:DOC007[P001.B06]]
+[CITE_START:DOC007[P001.B07]] U.S. COURT OF APPEALS [CITE_END:DOC007[P001.B07]]
+[CITE_START:DOC007[P001.B08]] NED FLORES, individually and on behalf 
+of all others similarly situated, [CITE_END:DOC007[P001.B08]]
+[CITE_START:DOC007[P001.B09]] No. 
+18-55959  
+D.C. No.  
+2:15-cv-00076-AB-PLA [CITE_END:DOC007[P001.B09]]
+[CITE_START:DOC007[P001.B10]] Plaintiff-Appellee,  
+  v.  
+ADIR INTERNATIONAL, LLC, [CITE_END:DOC007[P001.B10]]
+[CITE_START:DOC007[P001.B11]] MEMORANDUM * [CITE_END:DOC007[P001.B11]]
+[CITE_START:DOC007[P001.B12]] Defendant-Appellant. [CITE_END:DOC007[P001.B12]]
+[CITE_START:DOC007[P001.B13]] Appeal from the United States District Court for the Central District of California 
+Andre Birotte, Jr., District Judge, Presiding Submitted December 10, 2019 ** Pasadena, California [CITE_END:DOC007[P001.B13]]
+[CITE_START:DOC007[P001.B14]] Before:  O’SCANNLAIN, PAEZ, and OWENS, Circuit Judges. Defendant-Appellant Adir International, LLC (Adir) appeals the district court’s denial of its motion to compel arbitration in an action brought by Plaintiff- Appellee Ned Flores (Flores).  “We review de novo the district court’s denial of a [CITE_END:DOC007[P001.B14]]
+[CITE_START:DOC007[P001.B15]] *
+This disposition is not appropriate for publication and is not precedent 
+except as provided by Ninth Circuit Rule 36-3. 
+**
+The panel unanimously concludes this case is suitable for decision 
+without oral argument.   See  Fed. R. App. P. 34(a)(2). [CITE_END:DOC007[P001.B15]]
+
+[Page 2]
+[CITE_START:DOC007[P002.B01]] motion to compel arbitration, including its determination that a party has waived the right to arbitrate.” Newirth, by & through Newirth v. Aegis Senior Cmtys. , LLC , 931 F.3d 935, 939 (9th Cir. 2019). As the parties are familiar with the facts, we do not recount them here. We have jurisdiction pursuant to 28 U.S.C. § 1291. We affirm. As a preliminary matter, Adir argues that the district court failed to adequately consider that the “heavy burden” of establishing waiver of the right to compel arbitration lies with Flores. However, a party may overcome this “heavy burden” by demonstrating: [CITE_END:DOC007[P002.B01]]
+[CITE_START:DOC007[P002.B02]] (1) knowledge of an existing right to compel arbitration; (2) intentional acts inconsistent with that existing right; and (3) prejudice to the party opposing arbitration resulting from such inconsistent acts. Newirth , 931 F.3d at 940. 1 Adir argues that the district court incorrectly determined that: (1) Adir engaged in conduct inconsistent with its right to arbitrate and, (2) Flores was prejudiced by such conduct. 2 Contrary to Adir’s contentions, by filing two motions to dismiss and defending an appeal, Adir “indicate[d] a conscious decision . . . to seek judicial judgment on the merits of [the] arbitrable claims” – [CITE_END:DOC007[P002.B02]]
+[CITE_START:DOC007[P002.B03]] conduct 1 To the extent Adir argues for remand so the district court can apply the federal test, remand is unnecessary because Adir waived its right to arbitration under any standard. 2 Adir does not dispute that it knew it had a right to compel arbitration. 2 [CITE_END:DOC007[P002.B03]]
+
+[Page 3]
+[CITE_START:DOC007[P003.B01]] inconsistent with a right to arbitrate. Id. at 941 (second alteration in original) (citation and internal quotation marks omitted). Furthermore, Adir “made an intentional decision to refrain from filing a motion to compel arbitration” until after this court’s reversal of the district court’s prior dismissal. Id. Adir’s year- and-a-half delay further emphasizes its “strategic decision to take advantage of the judicial forum” in a manner inconsistent with its right to arbitrate. Id. Considering Adir’s acts, Flores satisfied his heavy burden as it pertains to the second prong of the analysis. Regarding prejudice, a plaintiff is not prejudiced by “[a]ny extra [CITE_END:DOC007[P003.B01]]
+[CITE_START:DOC007[P003.B02]] expense incurred as a result of the [plaintiff’s] deliberate choice of an improper forum,” such as preparing the complaint and litigating non-merits issues. Fisher v. A.G. Becker Paribas Inc ., 791 F.2d 691, 698 (9th Cir. 1986); see also Newirth , 931 F.3d at 943–44. However, a plaintiff may demonstrate prejudice by pointing to costs incurred in defending against actions taken inconsistent with the right to arbitrate, by having to “relitigate an issue on the merits on which [he] already prevailed in court,” or by showing that a defendant received an advantage from litigating in the federal forum. Newirth , [CITE_END:DOC007[P003.B02]]
+[CITE_START:DOC007[P003.B03]] 931 F.3d at 944 (citation and internal quotation marks omitted). Here, in defending against two motions to dismiss and appealing the district court’s dismissal of his complaint, Flores incurred costs “directly traceable” to Adir’s acts that were inconsistent with its known right to arbitrate. See id. In [CITE_END:DOC007[P003.B03]]
+[CITE_START:DOC007[P003.B04]] 3 [CITE_END:DOC007[P003.B04]]
+
+[Page 4]
+[CITE_START:DOC007[P004.B01]] addition, directing Flores to arbitration at this late stage in the game would be akin to forcing Flores to “relitigate . . . key legal issue[s]” that this court already decided in his favor.   See id.  (citation and internal quotation marks omitted).  Moreover, granting Adir’s motion to compel would give Adir two bites at the apple – “an advantage from litigating in federal court that [it] would not have received in arbitration.”   See id.  (citation and internal quotation marks omitted). Considering the totality of Adir’s actions, the district court correctly determined that Adir waived its right to compel arbitration. AFFIRMED . [CITE_END:DOC007[P004.B01]]
+[CITE_START:DOC007[P004.B02]] 4 [CITE_END:DOC007[P004.B02]]

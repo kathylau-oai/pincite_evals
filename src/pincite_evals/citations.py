@@ -4,12 +4,12 @@ from typing import List
 
 
 # Excerpt cite format expected in memo outputs:
-#   DOC_ID[P<page>.B<block>(#<hash>)?]
+#   DOC_ID[P<page>.B<block>]
 _EXCERPT_CITE_RE = re.compile(
     r"(?<![A-Za-z0-9_\-])"
     r"(?P<doc_id>[A-Za-z0-9_\-]+)"
     r"\["
-    r"(?P<excerpt_id>P\d{3}\.B\d{2}(?:#[A-Za-z0-9]{4,16})?)"
+    r"(?P<excerpt_id>P\d{3}\.B\d{2,4})"
     r"\]"
     r"(?![A-Za-z0-9_\-])"
 )

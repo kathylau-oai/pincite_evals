@@ -1,0 +1,392 @@
+[Page 1]
+FOR PUBLICATION
+UNITED STATES COURT OF APPEALS
+FOR THE NINTH CIRCUIT
+
+M AVRIX  P HOTO , I NC ., a Florida
+corporation,
+Plaintiff-Appellant,
+v.
+B RAND  T ECHNOLOGIES , I NC ., an
+No. 09-56134
+Ohio corporation; B RAD  M ANDELL ,
+an individual,
+D.C. No.
+Defendants-Appellees,
+2:09-cv-02729-PSG-
+
+JC
+and
+OPINION
+B RANDTECH , a business form
+unknown;  GOSSIPGIRLS . COM , a
+business form unknown; CELEBRITY - GOSSIP . NET , a business
+form unknown,
+Defendants.   Appeal from the United States District Court
+for the Central District of California
+Philip S. Gutierrez, District Judge, Presiding Argued and Submitted
+October 8, 2010—Pasadena, California
+Filed August 8, 2011
+Before: Kim McLane Wardlaw and William A. Fletcher,
+Circuit Judges, and Barbara M. Lynn, District Judge.* *The Honorable Barbara M. Lynn, United States District Judge for the
+Northern District of Texas, sitting by designation.
+10333
+
+[Page 2]
+10334
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES Opinion by Judge William A. Fletcher
+
+[Page 3]
+10336
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES
+COUNSEL
+Peter Afrasiabi, Christopher Arledge, John Tehranian, One
+LLP, Newport Beach, California, for the appellant.
+
+[Page 4]
+10337
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES Andres F. Quintana, Quintana Law Group, Calabasas, Cali-
+fornia, for the appellees.
+OPINION
+W. FLETCHER, Circuit Judge: Mavrix Photo, Inc. (“Mavrix”) sued Brand Technologies,
+Inc. and its CEO, Brad Mandell (collectively, “Brand”), in
+federal district court for the Central District of California,
+alleging that Brand infringed Mavrix’s copyright by posting
+its copyrighted photos on its website. Brand moved to dismiss
+for lack of personal jurisdiction.  See  Fed. R. Civ. P. 12(b)(2).
+The district court denied Mavrix’s motion for jurisdictional
+discovery and granted Brand’s motion to dismiss. We reverse.
+We hold that Brand is not subject to general personal jurisdic-
+tion in California, but that its contacts with California are suf-
+ficiently related to the dispute in this case that it is subject to
+specific personal jurisdiction.
+I. Background
+Mavrix, a Florida corporation with its principal place of
+business in Miami, is a celebrity photo agency. Mavrix pays
+photographers for candid photos of celebrities. Its primary
+business is licensing and selling those photos to purveyors of
+celebrity news such as  People  and  Us Weekly  magazines.
+Many of the celebrities whom Mavrix photographs live and
+work in Southern California. Mavrix keeps a Los Angeles
+office, employs Los Angeles-based photographers, has a reg-
+istered agent for service of process in California, and pays
+fees to the California Franchise Tax Board.
+Brand, an Ohio corporation with its principal place of busi-
+ness in Toledo, operates a website called celebrity-gossip.net.
+As its name suggests, the website covers popular personalities
+
+[Page 5]
+10338 M AVRIX P HOTO v. B RAND T ECHNOLOGIES in the entertainment industry and features photo galleries, vid- eos, and short articles (for example, “Lindsay Lohan Stays Sexy and Sober,” and “Shiloh Jolie-Pitt Named Most Influen- tial Infant”). The website has several interactive features. Vis- itors to the site may post comments on articles, vote in polls (“Is Robert Pattinson the sexiest man on the planet?”), sub- scribe to an email “Celebrity Newsletter,” join the “Gossip Center” membership club, and submit news tips and photos of celebrities. The website is very popular. When this litigation began, Alexa.com, an Internet
+tracking service, ranked celebrity-gossip.net as number 3,622 out of approximately 180 million websites worldwide based on traffic. By compari- son, the national news website MSNBC.com was then ranked number 2,521. In its marketing materials, Brand claims that celebrity-gossip.net currently receives more than 12 million unique U.S. visitors and 70 million U.S. page views per month. Gossip Center Network, Media Kit , at 3, available at http://cdn.gossipcenter.com/gossipgirls_cdn/GCN-MediaKit .pdf (last visited July 21, 2011). The record does not reflect how many of the website’s visitors are California residents.
+Like any large media entity, celebrity-gossip.net courts a national audience, not restricted to California. However, the website has some specific ties to California. Brand makes money from third-party advertisements for jobs, hotels, and vacations in California. The website also features a “Ticket Center,” which is a link to the website of a third-party vendor that sells tickets to nationwide events. Some of these events are in California. Brand has agreements with several Califor- nia businesses. A California Internet advertising agency solic- its buyers and places advertisements on celebrity-gossip.net. A California wireless provider designed and hosts on its serv- ers a
+version of celebrity-gossip.net accessible to mobile phone users. A California firm designed the website and per- forms site maintenance. Finally, Brand has entered a “link- sharing” agreement with a California-based national news site, according to which each site agrees to promote the other’s top stories. However, Brand has no offices, real prop-
+
+[Page 6]
+10339
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES erty, or staff in California, is not licensed to do business in
+California, and pays no California taxes.
+In 2008, a photographer working for Mavrix shot thirty- five pictures of Stacy Ferguson and Josh Duhamel while the couple was bathing, sunning, and jet skiing in the Bahamas. Ferguson, better known by her stage name Fergie, is a singer in the hip-hop group the Black Eyed Peas. The group has sold some 56 million records in the last decade and has won Grammy awards for such hit singles as “I Gotta Feeling” and “My Humps.” See The Black Eyed Peas , Wikipedia, http:// en.wikipedia.org/wiki/The_Black_Eyed_Peas (last visited July 21, 2011). Ferguson’s husband Duhamel is an actor who has appeared, most
+notably, in the trilogy of Transformers movies. See Josh Duhamel , The Internet Movie Database, http://www.imdb.com/name/nm0241049 (last visited July 21, 2011). Mavrix registered its copyright in the photos and posted them on its website. Mavrix alleges that shortly there- after Brand reposted the photos on celebrity-gossip.net in vio- lation of Mavrix’s copyright. Mavrix alleges that in doing so Brand destroyed the market value of the photos.
+Mavrix sued in federal district court for the Central District
+of California, alleging that Brand infringed Mavrix’s copy-
+right in the photos.  See  17 U.S.C. § 501. Mavrix sought an
+injunction barring Brand from further disseminating the pho-
+tos, as well as actual and statutory damages.  See id.  §§ 502,
+504. Brand moved to dismiss for lack of personal jurisdiction.
+See  Fed. R. Civ. P. 12(b)(2). The district court denied
+Mavrix’s request for leave to conduct jurisdictional discovery
+and granted the motion to dismiss. Mavrix timely appealed.
+II. Standard of Review
+We review a dismissal for lack of personal jurisdiction  de
+novo .  Boschetto v. Hansing , 539 F.3d 1011, 1015 (9th Cir.
+2008). In opposing a defendant’s motion to dismiss for lack
+of personal jurisdiction, the plaintiff bears the burden of
+
+[Page 7]
+10340 M AVRIX P HOTO v. B RAND T ECHNOLOGIES establishing that jurisdiction is proper. Id. Where, as here, the defendant’s motion is based on written materials rather than an evidentiary hearing, the plaintiff need only make a prima facie showing of jurisdictional facts to withstand the motion to dismiss. Brayton Purcell LLP v. Recordon & Recordon , 606 F.3d 1124, 1127 (9th Cir. 2010). The plaintiff cannot “simply rest on the bare allegations of its complaint,” but uncontroverted allegations in the complaint must be taken as true. Schwarzenegger v. Fred Martin Motor Co. , 374 F.3d 797, 800 (9th
+Cir. 2004) (quoting Amba Mktg. Sys., Inc. v. Jobar Int’l, Inc. , 551 F.2d 784, 787 (9th Cir. 1977)). “[W]e may not assume the truth of allegations in a pleading which are contradicted by affidavit,” Data Disc, Inc. v. Sys. Tech. Assocs., Inc. , 557 F.2d 1280, 1284 (9th Cir. 1977), but we resolve factual disputes in the plaintiff’s favor, Pebble Beach Co. v. Caddy , 453 F.3d 1151, 1154 (9th Cir. 2006).
+Where, as here, no federal statute authorizes personal juris- diction, the district court applies the law of the state in which the court sits. Fed. R. Civ. P. 4(k)(1)(A); Panavision Int’l, L.P. v. Toeppen , 141 F.3d 1316, 1320 (9th Cir. 1998). Califor- nia’s long-arm statute, Cal. Civ. Proc. Code § 410.10, is coex- tensive with federal due process requirements, so the jurisdictional analyses under state law and federal due process are the same. Schwarzenegger , 374 F.3d at 800-01. For a court to exercise personal jurisdiction over a nonresident defendant consistent with due process, that defendant must have “certain
+minimum contacts” with the relevant forum “such that the maintenance of the suit does not offend ‘tradi- tional notions of fair play and substantial justice.’ ” Interna- tional Shoe Co. v. Washington , 326 U.S. 310, 316 (1945) (quoting Milliken v. Meyer , 311 U.S. 457, 463 (1940)).
+III. Discussion A. General Jurisdiction
+[1]  Mavrix argues that Brand is subject to general jurisdic-
+tion in California. “A court may assert general jurisdiction
+
+[Page 8]
+10341 M AVRIX P HOTO v. B RAND T ECHNOLOGIES over foreign (sister-state or foreign-country) corporations to hear any and all claims against them when their affiliations with the State are so ‘continuous and systematic’ as to render them essentially at home in the forum State.” Goodyear Dun- lop Tires Operations, S.A. v. Brown , 131 S. Ct. 2846, 2851 (2011). For general jurisdiction to exist, a defendant must engage in “continuous and systematic general business con- tacts,” Helicopteros Nacionales de Colombia, S.A. v. Hall , 466 U.S. 408, 416 (1984), that “approximate physical pres- ence” in the forum state,
+Bancroft & Masters, Inc. v. Augusta Nat’l, Inc. , 223 F.3d 1082, 1086 (9th Cir. 2000). “The stan- dard is met only by ‘continuous corporate operations within a state [that are] thought so substantial and of such a nature as to justify suit against [the defendant] on causes of action arising from dealings entirely distinct from those activities.’ ” King v. Am. Family Mut. Ins. Co. , 632 F.3d 570, 579 (9th Cir. 2011) (alterations in original) (quoting International Shoe , 326 U.S. at 318)). To determine whether a nonresident defen- dant’s contacts are sufficiently substantial, continuous, and systematic, we
+consider their “[l]ongevity, continuity, vol- ume, economic impact, physical presence, and integration into the state’s regulatory or economic markets.” Tuazon v. R.J. Reynolds Tobacco Co. , 433 F.3d 1163, 1172 (9th Cir. 2006). The standard for general jurisdiction “is an exacting standard, as it should be, because a finding of general jurisdiction per- mits a defendant to be haled into court in the forum state to answer for any of its activities anywhere in the world.” Sch- warzenegger , 374 F.3d at 801.
+The Supreme Court has found general personal jurisdiction
+over a non-resident defendant in only one case, although it did
+not use the term “general jurisdiction” in its opinion.  Perkins
+v. Benguet Consol. Mining Co. , 342 U.S. 437, 447-48 (1952).
+The Court has recently described  Perkins  as the “textbook
+case of general jurisdiction appropriately exercised over a for-
+eign corporation that has not consented to suit in the forum.”
+Goodyear , 131 S. Ct. at 2856 (citation and internal quotation
+marks omitted). The facts of  Perkins  illustrate the nature and
+
+[Page 9]
+10342 M AVRIX P HOTO v. B RAND T ECHNOLOGIES extent of the contacts required for general jurisdiction. The defendant was a Philippine corporation whose mining opera- tions were suspended while the Japanese occupied the Philip- pines during World War II. 342 U.S. at 447. The corporation’s president, who was also its general manager and principal stockholder, returned to his home in Ohio, where he ran a corporate office. Id. at 447-48. The president kept busi- ness files in Ohio; handled corporate correspondence from Ohio; drew employees’ salaries from accounts in Ohio banks and distributed paychecks; held directors’ meetings while
+he was in Ohio; and “carried on in Ohio a continuous and sys- tematic supervision of the necessarily limited wartime activi- ties of the company.” Id. at 448. Plaintiff’s “cause of action . . . did not arise in Ohio and [did] not relate to the corpora- tion’s activities there.” Id. at 438. But because of the nature and extent of the corporation’s activities in the state, “Ohio was the corporation’s principal, if temporary, place of busi- ness.” Keeton v. Hustler Magazine, Inc. , 465 U.S. 770, 779 n.11 (1984) (describing facts of Perkins ). The Court therefore upheld the
+exercise of personal jurisdiction over the corpora- tion in Ohio. Id. ; see also, e.g. , Tuazon , 433 F.3d at 1173-74 (finding general jurisdiction in Washington over North Caro- lina cigarette company that had been licensed to do business in the state for more than 60 years, had advertised in purely local publications for more than 50 years, kept a permanent office and workforce in-state, engaged in local political activ- ity, and had made “hundreds of millions of dollars in annual net sales in recent years”).
+By contrast, both the Supreme Court and our court have
+refused to permit the exercise of general jurisdiction based on
+contacts that were not so substantial, continuous, or system-
+atic. For example, in  Goodyear , the Court held that foreign
+subsidiaries of Goodyear USA, organized and operating in
+Turkey, France and Luxembourg, were not subject to general
+jurisdiction in North Carolina. Two North Carolina residents
+had been killed in France when a tire manufactured by one of
+the subsidiaries failed, causing a bus to overturn. 131 S. Ct.
+
+[Page 10]
+10343
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES at 2851. Between 2004 and 2007, tens of thousands of tires
+made by the foreign subsidiaries, out of tens of millions of
+tires manufactured made by them during this period, reached
+North Carolina through the “stream of commerce.”  Id.  at
+2852. However, the subsidiaries were not registered to do
+business in North Carolina; had no places of business, no
+employees, and no bank accounts in North Carolina; did not
+design, manufacture, or advertise their tires in North Carolina;
+did not solicit business in North Carolina; and did not them-
+selves sell or ship tires to customers in North Carolina.  Id.
+In Helicopteros , the Court held that a Colombian corpora- tion was not subject to general jurisdiction in Texas even though the corporation sent its CEO to Texas to negotiate a contract; spent more than $4 million to purchase approxi- mately 80 percent of its fleet of aircraft, as well as spare parts and accessories, from a Texas supplier; sent pilots for training in Texas; sent management and maintenance personnel to Texas for technical consultation; and received over $5 million in contract payments from funds drawn on a Texas bank. 466 U.S. at 411, 417; see also, e.g. , Keeton
+, 465 U.S. at 772, 779 n.11 (contrasting Perkins and denying general jurisdiction in New Hampshire over Ohio corporation that circulated 10,000- 15,000 copies of its magazine per month in New Hampshire); Schwarzenegger , 374 F.3d at 801 (denying general jurisdic- tion in California over Ohio automobile dealership that regu- larly purchased automobiles imported by California importers via contracts that included a choice-of-law provision specify- ing California law; regularly retained the services of a Cali- fornia marketing company; hired a California corporation for consulting services; and maintained a website accessible in California); Glencore Grain Rotterdam B.V. v. Shivnath Rai Harnarain
+Co. , 284 F.3d 1114, 1124-25 (9th Cir. 2002); Ban- croft & Masters , 223 F.3d at 1086.
+Mavrix argues that Brand is subject to general jurisdiction
+in California on the basis of the following contacts: Brand
+allows third parties to advertise jobs, hotels, and vacations in
+
+[Page 11]
+10344
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES California on its website; sells, or allows a third-party vendor
+to sell, tickets to California events on its website; employs a
+California firm to design its website; has business relation-
+ships with a California-based national news organization, an
+Internet advertising agency, and a wireless provider; and
+maintains a “highly interactive” website.
+[2] These contacts fall well short of the requisite showing for general jurisdiction. We reiterate that Brand has no offices or staff in California, is not registered to do business in the state, has no registered agent for service of process, and pays no state taxes. See, e.g. , Goodyear , 131 S. Ct. at 2852; Heli- copteros , 466 U.S. at 411; Glencore Grain , 284 F.3d at 1124; Bancroft & Masters , 223 F.3d at 1086. Third parties use Brand’s website to advertise California jobs, hotels, and vaca- tions. A substantial number of the website visitors to whom
+these advertisements are directed are California residents. But Brand does not “solicit[ ] . . . business in the state” by carry- ing those advertisements. Bancroft & Masters , 223 F.3d at 1086. Instead, it allows other entities to solicit business by taking advantage of Brand’s existing user base. Evidence that a nonresident defendant advertises in a forum is significant for general jurisdiction when the defendant markets its own product by targeting forum residents, see, e.g. , Tuazon , 433 F.3d at 1174; Congoleum Corp. v. DLW Akiengesellschaft , 729 F.2d 1240, 1242-43 (9th Cir. 1984), but has less signifi-
+cance for general jurisdiction when other entities use the defendant’s publication to promote their own businesses.
+[3]  The parties dispute the identity of the ticket vendor.
+Brand’s CEO, Mandell, declares that Brand merely links to a
+third party’s ticket service. Mavrix argues that Brand is the
+true seller. Whether the ticket sales are attributable to Brand
+or to a third-party vendor, Mandell declares and Mavrix does
+not dispute that it has made only a single ticket sale through
+its “Ticket Center,” and that Mavrix’s counsel was the buyer.
+We have held that “occasional” sales to forum residents by a
+nonresident defendant do not suffice to establish general juris-
+
+[Page 12]
+10345
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES diction.  See Bancroft & Masters , 223 F.3d at 1086;  Brand v.
+Menlove Dodge , 796 F.2d 1070, 1073 (9th Cir. 1986). Indeed,
+we have held that even the physical presence in the forum
+state of a sales agent,  see Glencore Grain , 284 F.3d at 1124-
+25, or a “substantial sales force,”  Congoleum , 729 F.2d at
+1242, is insufficient to establish general jurisdiction.
+[4]  Brand’s relationship with its website designer is like-
+wise insufficient. Brand’s CEO declares, and Mavrix does not
+dispute, that the independent contractors who designed
+celebrity-gossip.net were Canadian citizens who, after build-
+ing celebrity-gossip.net, formed a California web design firm.
+Although that firm continues to perform website maintenance
+for Brand and sends bills to Brand from California, the con-
+tractors do the work in Canada. That those contractors incor-
+porated in California after building celebrity-gossip.net is a
+“fortuitous circumstance” upon which jurisdiction cannot be
+premised.  See World-Wide Volkswagen Corp. v. Woodson ,
+444 U.S. 286, 295 (1980).
+Brand’s business relationships with other California com- panies constitute “doing business with California,” but not necessarily “doing business in California.” See Schwarzeneg- ger , 374 F.3d at 801; Bancroft & Masters , 223 F.3d at 1086. In Schwarzenegger , we rejected a nonresident defendant’s partnership with a forum-based advertising agency as a basis for general jurisdiction. 374 F.3d at 801. And in Bancroft & Masters , we rejected a nonresident defendant’s licensing agreements with forum-based television networks and ven- dors. 223 F.3d at 1086. There, we explained that “engaging in commerce with residents of the forum state is not in
+and of itself the kind of activity that approximates physical presence within the state’s borders.” Id. (citing Helicopteros , 466 U.S. at 418).
+Finally, Brand’s operation of an interactive website — even
+a “highly interactive” website — does not confer general
+jurisdiction. Mavrix relies on  Zippo Mfg. Co. v. Zippo Dot
+
+[Page 13]
+10346 M AVRIX P HOTO v. B RAND T ECHNOLOGIES Com, Inc. , 952 F. Supp. 1119 (W.D. Pa. 1997), but that reli- ance, in the context of general jurisdiction, is misplaced. The court in Zippo developed a “sliding scale” test to characterize the “nature and quality of commercial activity that an entity conducts over the Internet.” Id. at 1124. At one end of the scale were active sites “where a defendant clearly does busi- ness over the Internet” and “enters into contracts with resi- dents of a foreign jurisdiction that involve the knowing and repeated transmission of computer files
+over the Internet,” which support jurisdiction. Id. At the other end were passive sites “where a defendant has simply posted information on an Internet Web site which is accessible to users in foreign juris- dictions,” and which do not support jurisdiction. Id. Under the Zippo analysis, the availability of jurisdiction is determined by examining the “level of interactivity and commercial nature of the exchange . . . that occurs on the Web site.” Id.
+[5] We have followed Zippo . See , e.g. , Cybersell, Inc. v. Cybersell, Inc. , 130 F.3d 414, 418-19 (9th Cir. 1997). But Zippo ’s sliding scale test was formulated in the context of a specific jurisdiction inquiry. See id. at 1122. The level of interactivity of a nonresident defendant’s website provides limited help in answering the distinct question whether the defendant’s forum contacts are sufficiently substantial, con- tinuous, and systematic to justify general jurisdiction. See, e.g. , Lakin v. Prudential Sec., Inc. , 348 F.3d 704, 712 (8th Cir. 2003) (“Under the Zippo test, it is possible for
+a Web site to be very interactive, but to have no quantity of contacts. In other words, the contacts would be continuous, but not sub- stantial . This is untenable in a general jurisdiction analysis.”); Revell v. Lidov , 317 F.3d 467, 471 (5th Cir. 2002) ( Zippo test “is not well adapted to the general jurisdiction inquiry, because even repeated contacts with forum residents by a for- eign defendant may not constitute the requisite substantial, continuous and systematic contacts required for a finding of general jurisdiction”); accord 4A Charles Alan Wright & Arthur R. Miller, Federal Practice & Procedure
+§ 1073.1, at
+
+[Page 14]
+10347
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES 331 (3d ed. 2002) (“[T]he  Zippo  case’s sliding scale approach
+should be of little value in a general jurisdiction analysis.”).
+[6] Many of the features on which Mavrix relies to show Zippo interactivity — commenting, receiving email newslet- ters, voting in polls, uploading user-generated content — are standard attributes of many websites. Such features require a minimal amount of engineering expense and effort on the part of a site’s owner and do not signal a non-resident defendant’s intent to “sit down and make itself at home” in the forum by cultivating deep, persistent ties with forum residents. Tuazon , 433 F.3d at 1169 (internal quotation marks and alterations omitted). To permit the exercise of general jurisdiction based on the accessibility
+in the forum of a non-resident interactive website would expose most large media entities to nationwide general jurisdiction. That result would be inconsistent with the constitutional requirement that “the continuous corporate operations within a state” be “so substantial and of such a nature as to justify suit against [the nonresident defendant] on causes of action arising from dealings entirely distinct from those activities.” International Shoe , 326 U.S. at 318. See generally 4 Raymond T. Nimmer, The Law of Computer Technology § 19:7, at 19-12 n.1 (4th ed. 2011) (collecting cases). [7] In sum, Brand’s contacts with California, even consid-
+ered collectively, do not justify the exercise of general juris- diction.
+B. Specific Jurisdiction
+In the alternative, Mavrix argues that Brand has sufficient
+“minimum contacts” with California arising out of, or related
+to, its actions in reposting the photos of Ferguson and Duha-
+mel to justify the exercise of specific jurisdiction. We analyze
+specific jurisdiction under a three-prong test: (1) The non-resident defendant must  purposefully
+direct his activities  or consummate some transaction
+
+[Page 15]
+10348
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES with the forum or resident thereof;  or  perform some
+act by which he  purposefully avails himself  of the
+privilege of conducting activities in the forum,
+thereby invoking the benefits and protections of its
+laws; (2) the claim must be one which arises out of
+or relates to the defendant’s forum-related activities;
+and (3) the exercise of jurisdiction must comport
+with fair play and substantial justice, i.e. it must be
+reasonable.
+Schwarzenegger , 374 F.3d at 802 (quoting  Lake v. Lake , 817
+F.2d 1416, 1421 (9th Cir. 1987) (emphases added)). Mavrix
+bears the burden of satisfying the first two prongs.  Sher v.
+Johnson , 911 F.2d 1357, 1361 (9th Cir. 1990). If Mavrix does
+so, the burden then shifts to Brand to set forth a “compelling
+case” that the exercise of jurisdiction would not be reason-
+able.  Burger King Corp. v. Rudzewicz , 471 U.S. 462, 476-78
+(1985).
+Only the first prong is at issue here. As to the second prong,
+Mavrix’s claim of copyright infringement arises out of
+Brand’s publication of the photos on a website accessible to
+users in the forum state. As to the third prong, Brand does not
+argue that the exercise of jurisdiction would be unreasonable
+on the basis of any of the factors listed in  Burger King.
+[8]  The first prong of the specific jurisdiction test refers to
+both purposeful direction and purposeful availment. We have
+explained that in cases involving tortious conduct, we most
+often employ a purposeful direction analysis.  Schwarzeneg-
+ger , 374 F.3d at 802. “In tort cases, we typically inquire
+whether a defendant ‘purposefully direct[s] his activities’ at
+the forum state, applying an ‘effects’ test that focuses on the
+forum in which the defendant’s actions were felt, whether or
+not the actions themselves occurred within the forum.”
+Yahoo! Inc. v. La Ligue Contre le Racisme , 433 F.3d 1199,
+1206 (9th Cir. 2006) (en banc) (quoting  Schwarzenegger , 374
+F.3d at 803 (alterations in original)). The “effects” test, which
+
+[Page 16]
+10349
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES is based on the Supreme Court’s decision in  Calder v. Jones ,
+465 U.S. 783 (1984), requires that “the defendant allegedly
+must have (1) committed an intentional act, (2) expressly
+aimed at the forum state, (3) causing harm that the defendant
+knows is likely to be suffered in the forum state.”  Brayton
+Purcell , 606 F.3d at 1128 (quoting  Yahoo! , 433 F.3d at 1206).
+Because Mavrix has alleged copyright infringement, a tort-
+like cause of action, purposeful direction “is the proper ana-
+lytical framework.”  Id.  (citing  Schwarzenegger , 374 F.3d at
+802).
+We believe that the Supreme Court’s recent decision in  J.
+McIntyre Machinery, Ltd., v. Nicastro , 131 S. Ct. 2780
+(2011), is consistent with the line of cases finding specific
+jurisdiction when there has been purposeful direction.  J.
+McIntyre Machinery  was a product liability case. The ques-
+tion was whether suit could be brought in New Jersey state
+court against a manufacturer headquartered in the United
+Kingdom based on an injury caused by an allegedly defective
+product made in the U.K. In performing a purposeful  avail-
+ment  (rather than a purposeful  direction ) analysis, the plural-
+ity wrote:
+As a general rule, the exercise of judicial power is
+not lawful unless the defendant “purposefully avails
+itself of the privilege of conducting activities within
+the forum State, thus invoking the benefits and pro-
+tections of its laws.”  Hanson v. Denckla , 357 U.S.
+235, 253 (1958). There may be exceptions, say, for
+instance, in cases involving an intentional tort. But
+the general rule is applicable in this products-
+liability 
+case, 
+and 
+the 
+so-called 
+“stream-of-
+commerce” doctrine cannot displace it.
+J. McIntyre Mach. , 131 S. Ct. at 2785 (plurality op. of Ken-
+nedy, J.);  see also id.  at 2787 (distinguishing intentional tort
+cases from cases governed by this “general rule”). We there-
+
+[Page 17]
+10350
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES fore address the three requirements of the  Calder  “effects”
+test in turn. [9]  First, we conclude that Brand “committed an inten-
+tional act.” There is no question that it acted intentionally
+reposting the allegedly infringing photos of Ferguson and
+Duhamel.
+Second, we conclude that Brand “expressly aimed at the forum state.” In prior cases, we have struggled with the ques- tion whether tortious conduct on a nationally accessible web- site is expressly aimed at any, or all, of the forums in which the website can be viewed. See, e.g. , Brayton Purcell , 606 F.3d at 1129-31; Pebble Beach , 453 F.3d at 1156-58; Rio Props., Inc. v. Rio Int’l Interlink , 284 F.3d 1007, 1019-21 (9th Cir. 2002); Panavision Int’l, L.P. v. Toeppen , 141 F.3d 1316, 1321-22 (9th Cir. 1998); Cybersell , 130 F.3d at 417. On the
+one hand, we have made clear that “maintenance of a passive website alone cannot satisfy the express aiming prong.” Bray- ton Purcell , 606 F.3d at 1129. On the other, we have held that “operating even a passive website in conjunction with ‘some- thing more’ — conduct directly targeting the forum — is suf- ficient.” Rio Props. , 284 F.3d at 1020. In determining whether a nonresident defendant has done “something more,” we have considered several factors, including the interactivity of the defendant’s website, e.g. , Pebble Beach , 453 F.3d at 1153-54, 1158; Cybersell , 130 F.3d at 417-20;
+the geographic scope of the defendant’s commercial ambitions, e.g. , Pebble Beach , 453 F.3d at 1156-58; Rio Props. , 284 F.3d at 1020-21; and whether the defendant “individually targeted” a plaintiff known to be a forum resident, e.g. , Brayton Purcell , 606 F.3d at 1129; Pebble Beach , 453 F.3d at 1156-57; Panavision , 141 F.3d at 1321-22.
+[10]  In this case, we find most salient the fact that Brand
+used Mavrix’s copyrighted photos as part of its exploitation
+of the California market for its own commercial gain. The
+Court’s decision in  Keeton  is directly relevant.  See Schwar-
+
+[Page 18]
+10351 M AVRIX P HOTO v. B RAND T ECHNOLOGIES zenegger , 374 F.3d at 803 (describing Keeton as a purposeful direction case). The plaintiff in Keeton was a New York resi- dent. She sued Hustler magazine, an Ohio corporation, for libel in New Hampshire based on the circulation in New Hampshire of copies of the magazine that contained the alleg- edly libelous material. 465 U.S. at 772. The plaintiff sued in New Hampshire in order to take advantage of the state’s unusually long statute of limitations, even though she had vir- tually no connection with the forum. Id. at
+772 n.1, 780. Hus- tler had a circulation of 10,000-15,000 copies per month in New Hampshire, but no other contacts with the forum. Id. at 772. The Court concluded that Hustler’s regular circulation of magazines in the forum State is sufficient to support an exercise of jurisdiction in a libel action based on the contents of the magazine . . . . Such regular monthly sales of thousands of magazines cannot by any stretch of the imagination be characterized as random, isolated, or fortuitous. It is, therefore, unquestionable that New Hampshire jurisdiction over a complaint based on those contacts would
+ordinarily satisfy the requirement of the Due Process Clause that a State’s assertion of personal jurisdiction over a nonresident defendant be predi- cated on ‘minimum contacts’ between the defendant and the State.
+Id.  at 773-74. The Court acknowledged that New Hampshire
+accounted for a share of Hustler’s overall business that was
+too small to support the exercise of general jurisdiction, but
+noted that Hustler was “carrying on a ‘part of its general busi-
+ness’ in New Hampshire, and that is sufficient to support
+jurisdiction when the cause of action arises out of the very
+activity being conducted, in part, in New Hampshire.”  Id.  at
+779-80 (quoting  Perkins , 342 U.S at 438). Finally, the Court
+specified that because Hustler has continuously and deliberately exploited the New
+Hampshire market, it must reasonably anticipate
+
+[Page 19]
+10352
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES being haled into court there in a libel action based on
+the contents of its magazine . . . . [Hustler] produces
+a national publication aimed at a nationwide audi-
+ence. There is no unfairness in calling it to answer
+for the contents of that publication wherever a sub-
+stantial number of copies are regularly sold and dis-
+tributed. Id.  at 781.
+[11] As did Hustler in distributing its magazine in New Hampshire, Brand “continuously and deliberately exploited” the California market for its website. Brand makes money by selling advertising space on its website to third-party advertis- ers: the more visitors there are to the site, the more hits that are made on the advertisements; the more hits that are made on the advertisements, the more money that is paid by the advertisers to Brand. A substantial number of hits to Brand’s website came from California residents. One of the ways we know this is that some of the third-party advertisers on
+Brand’s website had advertisements directed to Californians. In this context, it is immaterial whether the third-party adver- tisers or Brand targeted California residents. The fact that the advertisements targeted California residents indicates that Brand knows — either actually or constructively — about its California user base, and that it exploits that base for commer- cial gain by selling space on its website for advertisements. Compare , e.g. , Brayton Purcell , 606 F.3d at 1130 (nonresi- dent defendant subject to specific jurisdiction “had every rea- son to believe prospective clients in [the forum] would see the website — indeed, attracting
+new business was the point”) with Cybersell , 130 F.3d at 419 (nonresident defendant not subject to specific jurisdiction because “there is no evidence that any part of its business (let alone a continuous part of its business) was sought or achieved” in forum). [12] The record does not show that Brand marketed its website in California local media. Cf. Rio Props. , 284 F.3d at
+
+[Page 20]
+10353 M AVRIX P HOTO v. B RAND T ECHNOLOGIES 1020. But it is clear from the record that Brand operated a very popular website with a specific focus on the California- centered celebrity and entertainment industries. Based on the website’s subject matter, as well as the size and commercial value of the California market, we conclude that Brand antici- pated, desired, and achieved a substantial California viewer base. This audience is an integral component of Brand’s busi- ness model and its profitability. As in Keeton , it does not vio- late due process to hold Brand answerable in a
+California court for the contents of a website whose economic value turns, in significant measure, on its appeal to Californians.
+[13] The applicability of Keeton to this case depends on two similarities between celebrity-gossip.net and Hustler magazine. First, both were large publications that sought and attracted nationwide audiences. Both publications could count on reaching consumers in all fifty states. Second, both publi- cations cultivated their nationwide audiences for commercial gain. Accordingly, neither could characterize the consumption of its products in any state as “random,” “fortuitous,” or “at- tenuated.” Burger King , 471 U.S. at 486. Rather, consumption was a predictable consequence of their business models. See Goodyear , 131 S. Ct. at 2855 (“[W]here ‘the sale of a product .
+. . arises from the efforts of the manufacturer or distributor to serve . . . the market for its product in [several] States, it is not unreasonable to subject it to suit in one of those states if its allegedly defective merchandise has there been the source of injury to its owner or to others .” (quoting World- Wide Volkswagen , 444 U.S. at 297 (emphasis and second alteration added by Goodyear ))) ; Mattel, Inc. v. MCA Records, Inc. , 296 F.3d 894, 899 (9th Cir. 2002); Plant Food Co-op v. Wolfkill Feed & Fertilizer Corp. , 633
+F.2d 155, 158- 60 (9th Cir. 1980). The same would not necessarily be true, for example, of a local newspaper, an individual, or an unpaid blogger who posted an allegedly actionable comment or photo to a website accessible in all fifty states, but who could not be as certain as Brand or Hustler that his actions would be so widely observed and who did not seek commercial gain from
+
+[Page 21]
+10354
+M AVRIX  P HOTO  v. B RAND  T ECHNOLOGIES users outside his locality. Not all material placed on the Inter-
+net is, solely by virtue of its universal accessibility, expressly
+aimed at every state in which it is accessed. But where, as
+here, a website with national viewership and scope appeals to,
+and profits from, an audience in a particular state, the site’s
+operators can be said to have “expressly aimed” at that state.
+We acknowledge the burden that our conclusion may impose on some popular commercial websites. But we note that the alternative proposed by Brand’s counsel at oral argu- ment — that Mavrix can sue Brand only in Ohio or Florida — would substantially undermine the “interests . . . of the plaintiff in proceeding with the cause in the plaintiff’s forum of choice.” Kulko v. Superior Court of Cal. , 436 U.S. 84, 92 (1978). Brand’s theory of jurisdiction would allow corpora- tions whose websites exploit a national market to defeat juris- diction in states where those websites generate substantial profits
+from local consumers. See Burger King , 471 U.S. at 473-74 (“[W]here individuals ‘purposefully derive benefit’ from their interstate activities, it may well be unfair to allow them to escape having to account in other States for conse- quences that arise predictably from such activities; the Due Process Clause may not readily be wielded as a territorial shield to avoid interstate obligations that have been voluntar- ily assumed.” (quoting Kulko , 436 U.S. at 96)). We also note that the “expressly aimed” requirement is a necessary but not sufficient condition for jurisdiction. In order to establish spe- cific jurisdiction, a
+plaintiff must also show that jurisdiction- ally significant harm was suffered in the forum state.
+[14]  We therefore turn to the question of harm, the third
+element of the  Calder  effects test. We conclude that Brand
+has “caus[ed] harm that [it] knows is likely to be suffered in
+the forum state.” In determining the situs of a corporation’s
+injury, “[o]ur precedents recognize that in appropriate circum-
+stances a corporation can suffer economic harm both where
+the bad acts occurred and where the corporation has its princi-
+pal place of business.”  Dole Food Co., Inc. v. Watts , 303 F.3d
+
+[Page 22]
+10355 M AVRIX P HOTO v. B RAND T ECHNOLOGIES 1104, 1113 (9th Cir. 2002). “[J]urisdictionally sufficient harm may be suffered in multiple forums.” Id. (citing Core-Vent Corp. v. Nobel Indus. AB , 11 F.3d 1482, 1486 (9th Cir. 1993)). Mavrix alleges that, by republishing the photos of Ferguson and Duhamel, Brand interfered with Mavrix’s exclusive ownership of the photos and destroyed their market value. The economic loss caused by the intentional infringe- ment of a plaintiff’s copyright is foreseeable. See Brayton Purcell , 606 F.3d at 1131. It was foreseeable that this eco- nomic loss would be inflicted not
+only in Florida, Mavrix’s principal place of business, but also in California. A substan- tial part of the photos’ value was based on the fact that a sig- nificant number of Californians would have bought publications such as People and Us Weekly in order to see the photos. Because Brand’s actions destroyed this California- based value, a jurisdictionally significant amount of Mavrix’s economic harm took place in California.
+[15]  In sum, we conclude that Mavrix has presented a
+prima facie case of purposeful direction by Brand sufficient
+to survive a motion to dismiss for lack of personal jurisdic-
+tion.
+Conclusion
+We conclude that Brand is subject to specific personal
+jurisdiction, but not general personal jurisdiction, in Califor-
+nia. We therefore reverse the district court’s dismissal of
+Mavrix’s complaint and remand for further proceedings con-
+sistent with this opinion. REVERSED and REMANDED.

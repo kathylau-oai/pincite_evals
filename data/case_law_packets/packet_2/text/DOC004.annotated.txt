@@ -1,0 +1,342 @@
+[Page 1]
+[CITE_START:DOC004[P001.B01]] FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT [CITE_END:DOC004[P001.B01]]
+[CITE_START:DOC004[P001.B02]] P AIGE  M ARTIN , S UNDAE
+W ORTHY , M ARIA  F ORD ,
+and M EGAN  T ALLERICO , on
+behalf of themselves and
+classes of those similarly
+situated; [CITE_END:DOC004[P001.B02]]
+[CITE_START:DOC004[P001.B03]] No. 15-55696 D.C. No.
+5:13-cv-01961-PSG-DTB [CITE_END:DOC004[P001.B03]]
+[CITE_START:DOC004[P001.B04]] Plaintiffs-Appellees , [CITE_END:DOC004[P001.B04]]
+[CITE_START:DOC004[P001.B05]] OPINION [CITE_END:DOC004[P001.B05]]
+[CITE_START:DOC004[P001.B06]] v. G ARY  Y ASUDA ; A MARILLO
+C OLLEGE OF
+H AIRDRESSING , I NC ., DBA
+Milan Institute, DBA Milan
+Institute of Cosmetology, Defendants-Appellants. [CITE_END:DOC004[P001.B06]]
+[CITE_START:DOC004[P001.B07]] Appeal from the United States District Court for the Central District of California
+Philip S. Gutierrez, District Judge, Presiding Argued and Submitted June 8, 2016 Pasadena, California Filed July 21, 2016 [CITE_END:DOC004[P001.B07]]
+
+[Page 2]
+[CITE_START:DOC004[P002.B01]] M ARTIN V . Y ASUDA
+2 Before: Stephen Reinhardt and Kim McLane Wardlaw, Circuit Judges, and Mark W. Bennett, *  Senior District [CITE_END:DOC004[P002.B01]]
+[CITE_START:DOC004[P002.B02]] Judge. Opinion by Judge Reinhardt [CITE_END:DOC004[P002.B02]]
+[CITE_START:DOC004[P002.B03]] SUMMARY ** [CITE_END:DOC004[P002.B03]]
+[CITE_START:DOC004[P002.B04]] Arbitration [CITE_END:DOC004[P002.B04]]
+[CITE_START:DOC004[P002.B05]] Affirming the district court’s denial of defendants’ motion
+to compel arbitration of labor law claims, the panel held that
+the defendants waived their right to arbitration by their
+litigation conduct. [CITE_END:DOC004[P002.B05]]
+[CITE_START:DOC004[P002.B06]] The panel held that the district court properly decided the
+waiver issue.  The panel held that this question of arbitrability
+was presumptively for the court, rather than an arbitrator, to
+decide, and the broad nature of the parties’ arbitration clause
+did not overcome the presumption. [CITE_END:DOC004[P002.B06]]
+[CITE_START:DOC004[P002.B07]] The panel held that the defendants waived their right to
+arbitration because they engaged in acts inconsistent with this
+right, and the plaintiffs were prejudiced. [CITE_END:DOC004[P002.B07]]
+[CITE_START:DOC004[P002.B08]] *  The Honorable Mark W. Bennett, Senior District Judge for the U.S.
+District Court for the Northern District of Iowa, sitting by designation. **  This summary constitutes no part of the opinion of the court.  It has
+been prepared by court staff for the convenience of the reader. [CITE_END:DOC004[P002.B08]]
+
+[Page 3]
+[CITE_START:DOC004[P003.B01]] M ARTIN V . Y ASUDA
+3 COUNSEL [CITE_END:DOC004[P003.B01]]
+[CITE_START:DOC004[P003.B02]] William M. Hensley (argued), Marc D. Alexander, and
+Jonathan M. Werner, Alvarado Smith, Santa Ana, California;
+Kirsten L. Clevenger, Matthew L. Hoppock, and Ronald L.
+Holt, Dunn & Davison LLC, Kansas City, Missouri; for
+Defendants-Appellants. [CITE_END:DOC004[P003.B02]]
+[CITE_START:DOC004[P003.B03]] Chaya M. Mandelbaum (argued) and Michelle G. Lee, Rudy,
+Exelrod & Zieff, LLP, San Francisco, California; Dana
+Sniegocki and Leon Greenberg, Law Office of Leon
+Greenberg, Las Vegas, Nevada; Adetunji Olude and Bryan J.
+Schwartz, Bryan Schwartz Law, Oakland, California; for
+Plaintiffs-Appellees. [CITE_END:DOC004[P003.B03]]
+[CITE_START:DOC004[P003.B04]] OPINION [CITE_END:DOC004[P003.B04]]
+[CITE_START:DOC004[P003.B05]] REINHARDT, Circuit Judge: Defendants Gary Yasuda and Amarillo College of
+Hairdressing appeal the district court’s denial of their motion
+to compel arbitration.  The district court found that the
+defendants waived their right to arbitration by their litigation
+conduct.  We affirm. FACTUAL BACKGROUND Defendant Amarillo College of Hairdressing, Inc., doing
+business as “Milan Institute” and “Milan Institute of
+Cosmetology” (collectively “Milan”), is a group of nationally
+accredited private colleges offering career training in
+cosmetology.  The plaintiffs are individuals who enrolled in
+a cosmetology program at Milan Institute.  As part of their [CITE_END:DOC004[P003.B05]]
+
+[Page 4]
+[CITE_START:DOC004[P004.B01]] M ARTIN V . Y ASUDA
+4 enrollment, each of the plaintiffs signed an Enrollment
+Agreement that contained a binding arbitration provision. 
+The arbitration agreement provides, in relevant part: [CITE_END:DOC004[P004.B01]]
+[CITE_START:DOC004[P004.B02]] [A]ny dispute arising from my enrollment at
+Milan Institute, no matter how described,
+pleaded or styled, shall be resolved by binding
+arbitration, under the substantive and
+procedural requirements of the Federal
+Arbitration Act, by a single arbitrator,
+conducted by the American Arbitration
+Association (AAA) at Milan Institute . . .
+under its Commercial Rules.  All
+determinations as to the scope, enforceability
+and effect of this arbitration agreement shall
+be decided by the arbitrator, and not by a
+court. The award rendered by the arbitrator
+may be entered in any court having
+jurisdiction. [CITE_END:DOC004[P004.B02]]
+[CITE_START:DOC004[P004.B03]] In order to graduate from a cosmetology school, students
+must, among other things, complete 1600 hours of technical
+instruction and practical training.  Cal. Code Regs. tit. 16,
+§ 950.2(a).  The students perform cosmetology, barbering,
+and manicure services for the college’s paying clients.  The
+students also clean, sweep, wash and fold laundry, set up and
+take down studios, clean pedicure bowls, sell retail products,
+schedule clients, and promote Milan’s services.  The services
+that students provide do not necessarily correspond to their
+education, and they are not paid for their work. [CITE_END:DOC004[P004.B03]]
+
+[Page 5]
+[CITE_START:DOC004[P005.B01]] M ARTIN V . Y ASUDA
+5 PROCEDURAL BACKGROUND The plaintiffs filed a class action lawsuit on October 28,
+2013 against the college and its owner and President, Gary
+Yasuda, alleging that the defendants violated state labor laws
+and the Fair Labor Standards Act (“FLSA”).  Specifically, the
+plaintiffs contended, among other things, that Milan was an
+“employer” within the meaning of state law as well as the
+FLSA and thus, as uncompensated employees, they were
+entitled to minimum hourly wages, overtime wages, and
+unpaid premiums for missed meal and rest breaks.  Over
+seventy individuals opted to join the action between October
+2013 and March 2014. [CITE_END:DOC004[P005.B01]]
+[CITE_START:DOC004[P005.B02]] On February 19, 2014, the defendants were served with a
+copy of the summons and complaint via substituted service
+and by mail.  They disputed the appropriateness of the service
+of process.  The parties then stipulated that the defendants
+were properly and timely served with the summons and
+complaint on March 10, 2014.  The parties also agreed to
+extend the defendants’ time to respond to June 9, 2014.  The
+defendants’ counsel subsequently filed a notice of appearance
+on March 17, 2014. [CITE_END:DOC004[P005.B02]]
+[CITE_START:DOC004[P005.B03]] On May 16, 2014, the parties filed a Joint Stipulation to
+Extend Time to File Motion for FLSA Conditional
+Certification and Class Certification with the district court. 
+They stated that they had “spent considerable time and effort
+analyzing the most resourceful and efficient manner with
+which to approach discovery and certification motions,” that
+it was in the “best interest of judicial resources, time and
+effort” to focus discovery on the issue whether the class
+members were Milan’s employees under wage laws, and that
+they agreed to extend the deadline to file motions for class [CITE_END:DOC004[P005.B03]]
+
+[Page 6]
+[CITE_START:DOC004[P006.B01]] M ARTIN V . Y ASUDA
+6 and conditional certification.  The parties further agreed that
+there should be discovery and an opportunity for the court to
+resolve the question whether the plaintiffs were employees of
+Milan under wage laws before any effort to certify the class
+because the lawsuit presents “unique legal claims regarding
+whether or not the purported class members are employees of
+the defendants, covered by wage laws.”  The district court
+subsequently granted the parties’ Joint Stipulation Motion. [CITE_END:DOC004[P006.B01]]
+[CITE_START:DOC004[P006.B02]] The plaintiffs filed their first amended complaint on June 6, 2014. It named additional plaintiffs and added additional state wage and hour claims. On June 23, 2014, the defendants moved to dismiss the plaintiffs’ state law claims against all defendants and their FLSA claim against Yasuda pursuant to Federal Rule of Civil Procedure 12(b)(6). 1 The defendants asserted that plaintiffs were students and not employees of Milan as a matter of law, and that the plaintiffs failed to plead Yasuda’s individual liability. After briefing and oral argument on the issue, on July 30, 2014, the district court granted in part [CITE_END:DOC004[P006.B02]]
+[CITE_START:DOC004[P006.B03]] and denied in part the defendants’ motion to dismiss. The court dismissed the causes of action against Yasuda with leave to amend, but denied the defendants’ motion as to the plaintiffs’ state law claims. As to the state law claims, the district court concluded after a detailed analysis that the California Legislature could have included students performing services at their school for the fee-paying public within the categories of individuals who [CITE_END:DOC004[P006.B03]]
+[CITE_START:DOC004[P006.B04]] 1  The defendants sought to dismiss all of the plaintiffs’ state law claims
+(the second through ninth causes of action) with prejudice.  They also
+sought to dismiss the plaintiffs’ state law and FLSA claims against Yasuda
+with prejudice.  If the motion to dismiss had been successful, it would
+have left only the first cause of action, the FLSA claim, against Milan
+intact. [CITE_END:DOC004[P006.B04]]
+
+[Page 7]
+[CITE_START:DOC004[P007.B01]] M ARTIN V . Y ASUDA
+7 [CITE_END:DOC004[P007.B01]]
+[CITE_START:DOC004[P007.B02]] may practice cosmetology without being paid.  Because the
+Legislature did not do so, the district court declined to
+“usurp” the Legislature’s role by rewriting the Cosmetology
+Act.  The district court therefore held that the Cosmetology
+Act did not preclude the plaintiffs’ arguments that they were
+employees under state wage laws and that the parties could
+proceed to discovery on the issue. [CITE_END:DOC004[P007.B02]]
+[CITE_START:DOC004[P007.B03]] The plaintiffs then filed a second amended complaint on
+August 29, 2014, which pleaded additional facts as to
+Yasuda’s individual liability.  On September 19, 2014, the
+defendants filed their answer to the complaint.  In addition to
+responding to all of the plaintiffs’ causes of action, the
+defendants pled arbitration as one of their forty-three
+affirmative defenses.  They, however, did not move to compel
+arbitration. [CITE_END:DOC004[P007.B03]]
+[CITE_START:DOC004[P007.B04]] On November 28, 2014, the parties filed a Joint Rule 26(f) Report, which detailed the scope of discovery and contained proposed deadlines for the phases of discovery and motions. In a footnote, the defendants maintained that each plaintiff executed an arbitration agreement and that they were not waiving any rights as to those agreements. In the body of the report, the parties stated that they participated in a Rule 26(f) conference, exchanged initial disclosures pursuant to Rule 26(a)(1), and had already begun exchanging written discovery requests and noticing depositions to occur in early 2015. The parties agreed, subject to approval [CITE_END:DOC004[P007.B04]]
+[CITE_START:DOC004[P007.B05]] by the court, that the first eight months of discovery should focus on the “employee” issue so that the court could consider that issue on motions for summary judgment, if the parties chose to file such motions, followed by two months of expert discovery. They also planned to exchange discovery requests and to take and defend depositions of the parties to the case. [CITE_END:DOC004[P007.B05]]
+
+[Page 8]
+[CITE_START:DOC004[P008.B01]] M ARTIN V . Y ASUDA 8 The district court held a scheduling conference on December 8, 2014, fourteen months after the plaintiffs filed the original complaint. During the proceeding, the court asked the defendants’ counsel whether he intended to file a motion to compel arbitration. He responded, “[W]e haven’t made a decision about that. And frankly . . . I think our view of it is we are probably better off just being here in the court with the procedures of Rule 23 and discovery and federal practice than handling it in arbitration.” 2 The court then warned counsel [CITE_END:DOC004[P008.B01]]
+[CITE_START:DOC004[P008.B02]] about the possibility of waiver. The next day, the court issued a scheduling order setting the deadlines for different phases of discovery and motions. [CITE_END:DOC004[P008.B02]]
+[CITE_START:DOC004[P008.B03]] Although the plaintiffs made written discovery requests
+of the defendants in November 2014, they agreed to extend
+the defendants’ time to respond in December 2014 and
+January 2015.  The defendants eventually produced the
+discovery responses on February 4, 2015.  Subsequently, on
+February 20, 2015, the court issued a stipulated protective
+order in which the parties agreed to abide by certain
+procedures and guidelines during discovery.  Then, on
+February 25 and 26, 2015, plaintiffs deposed Milan’s Chief
+Financial Officer.  It was on February 25, 2015 that
+defendants’ counsel informed the plaintiffs’ counsel of their
+intent to compel arbitration. [CITE_END:DOC004[P008.B03]]
+[CITE_START:DOC004[P008.B04]] 2  At the conference in December 2014, defense counsel stated that he
+thought “the agreements as written do not expressly state that they would
+bar any individual plaintiff who’s arbitrating from representing not only
+his or her own interests but also those of a proposed class.”  By March 20,
+2015, when defendants filed their memorandum in support of the motion
+to compel individual arbitration, they had reversed their position, now
+arguing that class arbitration was not permitted and that the arbitrator, not
+the court, should decide the question. [CITE_END:DOC004[P008.B04]]
+
+[Page 9]
+[CITE_START:DOC004[P009.B01]] M ARTIN V . Y ASUDA
+9 [CITE_END:DOC004[P009.B01]]
+[CITE_START:DOC004[P009.B02]] On March 20, 2015, almost seventeen months after the
+start of the case, the defendants actually moved to compel
+individual arbitration.  In the motion, they argued, among
+other things, that the court must enforce the parties’
+arbitration agreements, that the agreements were valid and
+enforceable, and that they, the defendants, had not waived
+arbitration.  The plaintiffs opposed the motion by arguing that
+the defendants had waived their right to compel arbitration
+and that the terms were unconscionable and unenforceable. [CITE_END:DOC004[P009.B02]]
+[CITE_START:DOC004[P009.B03]] Applying the three factor waiver test employed in this circuit, the district court denied the defendants’ motion to compel individual arbitration. The district court held that all the factors were satisfied because: (1) it was indisputable that the defendants had knowledge of their existing right to compel arbitration, (2) the defendants engaged in acts inconsistent with that right by delaying their motion to compel and deciding to actively participate in the litigation for seventeen months (including the resolution of a motion to dismiss on the merits), and (3) granting the motion to compel seventeen months after the start of litigation [CITE_END:DOC004[P009.B03]]
+[CITE_START:DOC004[P009.B04]] and after a ruling partly in favor of the plaintiffs on the motion to dismiss would result in prejudice to the plaintiffs. The defendants timely appealed. [CITE_END:DOC004[P009.B04]]
+[CITE_START:DOC004[P009.B05]] DISCUSSION [CITE_END:DOC004[P009.B05]]
+[CITE_START:DOC004[P009.B06]] The defendants contend that the district court erred in two
+ways.  First, they argue that an arbitrator, rather than the
+district court, should decide whether the defendants waived
+their right to arbitration through litigation conduct.  Second,
+they contend that even if the district court was correct to
+decide the issue, it erred by finding  waiver. [CITE_END:DOC004[P009.B06]]
+
+[Page 10]
+[CITE_START:DOC004[P010.B01]] M ARTIN V . Y ASUDA
+10 [CITE_END:DOC004[P010.B01]]
+[CITE_START:DOC004[P010.B02]] I. [CITE_END:DOC004[P010.B02]]
+[CITE_START:DOC004[P010.B03]] In Howsam v. Dean Witter Reynolds, Inc. , the Supreme Court distinguished between two categories of gateway issues on motions to compel arbitration, each of which has a different presumption as to whether a court or an arbitrator should decide. 537 U.S. 79, 83 (2002); see also Cox v. Ocean View Hotel Corp. , 533 F.3d 1114, 1120–21 (9th Cir. 2008) (describing the two categories of disputes). The first category of gateway issues is a “question of arbitrability”—that is, “whether the parties have submitted a particular dispute to arbitration.” Howsam , 537 U.S. at 83. This category includes issues that [CITE_END:DOC004[P010.B03]]
+[CITE_START:DOC004[P010.B04]] the parties would have expected a court to decide such as “whether the parties are bound by a given arbitration clause” or whether “an arbitration clause in a concededly binding contract applies to a particular type of controversy.” Id. at 84. These disputes are “for judicial determination unless the parties clearly and unmistakably provide otherwise.” Id. at 83. (quoting AT & T Techs., Inc. v. Commc’ns Workers of Am. , 475 U.S. 643, 649 (1986)). In contrast, the second category—“procedural” issues—is “presumptively not for the judge, but for an arbitrator, to decide.” Id. at 84. In Howsam , for example, [CITE_END:DOC004[P010.B04]]
+[CITE_START:DOC004[P010.B05]] the Court held that the question as to whether a party met the arbitral forum’s statute of limitations for filing a case was a procedural question that the parties would have expected the arbitrator to decide; accordingly, as the Court made clear, the arbitrator should presumptively decide such disputes. Id. at 85. [CITE_END:DOC004[P010.B05]]
+[CITE_START:DOC004[P010.B06]] We have made clear that waiver by litigation conduct is
+part of the first category of gateway issues.  Cox , 533 F.3d at
+1121.  In  Cox , an employee who had been fired contended
+that his employer waived its right to arbitrate his [CITE_END:DOC004[P010.B06]]
+
+[Page 11]
+[CITE_START:DOC004[P011.B01]] M ARTIN V . Y ASUDA
+11 [CITE_END:DOC004[P011.B01]]
+[CITE_START:DOC004[P011.B02]] discrimination claim because, among other things, it had refused his earlier request to arbitrate. Id. at 1118, 1125. Addressing the defendant’s argument that the arbitrator should decide the issue, we concluded that the question whether a party waived its right to arbitrate on the basis of its litigation conduct is a question of arbitrability and is in the first category of gateway issues. Id. at 1121; see also id. 1121 n.5. Accordingly, under Howsam , the question before us is presumptively for a court and not an arbitrator to decide. 537 U.S. at 83. Every circuit that has addressed this [CITE_END:DOC004[P011.B02]]
+[CITE_START:DOC004[P011.B03]] issue—whether a district court or an arbitrator should decide if a party waived its right to arbitrate through litigation conducted before the district court—has reached the same conclusion. See Marie v. Allied Home Mortg. Corp. , 402 F.3d 1, 14 (1st Cir. 2005) (“The proper presumption in this case is that the waiver issue is for the court and not the arbitrator.”); Ehleiter v. Grapetree Shores, Inc. , 482 F.3d 207, 217–218, 221 (3d Cir. 2007) (adopting the First Circuit’s test); JPD, Inc. v. Chronimed Holdings, Inc. , 539 F.3d 388, 394 (6th Cir. 2008) (“[W]e conclude that Howsam did [CITE_END:DOC004[P011.B03]]
+[CITE_START:DOC004[P011.B04]] not disturb the traditional rule that the courts presumptively resolve waiver-through-inconsistent-conduct claims.”); Grigsby & Associates, Inc. v. M Sec. Inv. , 664 F.3d 1350, 1353 (11th Cir. 2011) (“Today we conclude that it is presumptively for the courts to adjudicate disputes about whether a party, by earlier litigating in court, has waived the right to arbitrate.”); see also Hong et al. v. CJ CGV Am. Holdings, Inc. et al. , 222 Cal. App. 4th 240, 256–58 (2013) (finding that the First, Third, Sixth, and Eleventh Circuits, as well as the Supreme Courts of Colorado, Nebraska, Texas and Alabama allow courts [CITE_END:DOC004[P011.B04]]
+[CITE_START:DOC004[P011.B05]] to decide the waiver by litigation conduct issue). But cf. Nat’l Am. Ins. Co. v. Transamerica Occidental Life Ins. Co. , 328 F.3d 462, 466 (8th Cir. 2003) (holding that the arbitrator presumptively should decide if a [CITE_END:DOC004[P011.B05]]
+
+[Page 12]
+[CITE_START:DOC004[P012.B01]] M ARTIN V . Y ASUDA 12 party has waived the right to arbitration by litigation conduct in state court). 3 The defendants next argue that the broad nature of the arbitration clause overcomes the presumption because it contains a clear and unmistakable provision that the question of waiver based on litigation conduct should be decided by the arbitrator. Cox again provides the answer. In Cox , the agreement stated that “[a]ny controversy . . . involving the construction or application of the terms, provisions, or conditions of this Agreement or otherwise arising out of or related to this Agreement [CITE_END:DOC004[P012.B01]]
+[CITE_START:DOC004[P012.B02]] shall likewise be settled by arbitration.” 533 F.3d at 1117. We nevertheless found that the court and not the arbitrator should decide the issue of waiver by litigation conduct. In the present case, the provision regarding the scope of the arbitration agreement—“[a]ll determinations as to the scope, enforceability and effect of this arbitration agreement shall be decided by the arbitrator, and not by a court”—is far less broad than the provision in Cox , because it does not contain the all inclusive “arising out of or related to” language. The language in the arbitration 3 The defendants also cite language [CITE_END:DOC004[P012.B02]]
+[CITE_START:DOC004[P012.B03]] from Howsam that “the presumption is that the arbitrator should decide allegations of waiver, delay, or a like defense to arbitrability.” As other circuits have found, the reference to waiver in Howsam was whether a party waived arbitration by failing to comply with the arbitration forum’s specific rules—a question that the Supreme Court logically concluded was better answered by the forum that wrote the rules. Howsam , 537 U.S. at 85. The arbitrator, however, does not have expertise regarding whether litigation conduct in front of the district court was enough to constitute revocation of the arbitration clause and would not [CITE_END:DOC004[P012.B03]]
+[CITE_START:DOC004[P012.B04]] be expected to resolve that dispute. Id. at 83–84 (differentiating between issues meant for arbitrators rather than judges based on the parties’ expectations of who would decide); see also Ehleiter , 482 F.3d at 219. Thus, even if Cox did not foreclose the defendants’ argument, our answer would be the same. [CITE_END:DOC004[P012.B04]]
+
+[Page 13]
+[CITE_START:DOC004[P013.B01]] M ARTIN V . Y ASUDA
+13 [CITE_END:DOC004[P013.B01]]
+[CITE_START:DOC004[P013.B02]] contract before us is therefore  a fortiori  insufficient to show
+an intent that an arbitrator decide the waiver by litigation
+conduct issue and to overcome the presumption to the
+contrary. [CITE_END:DOC004[P013.B02]]
+[CITE_START:DOC004[P013.B03]] In sum, the district court did not err in deciding the
+litigation conduct waiver issue itself.  We have made clear
+that courts generally decide whether a party has waived his
+right to arbitration by litigation conduct.  If the parties intend
+that an arbitrator decide that issue under a particular contract,
+they must place clear and unmistakable language to that
+effect in the agreement.   See Hong , 222 Cal. App. 4th at 258. 
+As they did not do so here, the district court did not err by
+deciding the conduct waiver issue. [CITE_END:DOC004[P013.B03]]
+[CITE_START:DOC004[P013.B04]] II. [CITE_END:DOC004[P013.B04]]
+[CITE_START:DOC004[P013.B05]] The right to arbitration, like other contractual rights, can be waived. United States v. Park Place Assocs., Ltd. , 563 F.3d 907, 921 (9th Cir. 2009). A determination of whether “the right to compel arbitration has been waived must be conducted in light of the strong federal policy favoring enforcement of arbitration agreements.” Fisher v. A.G. Becker Paribas Inc. , 791 F.2d 691, 694 (9th Cir. 1986). Because waiver of the right to arbitration is disfavored, “any party arguing waiver of arbitration bears a heavy burden of proof.” Id. (quoting Belke v. Merrill Lynch, Pierce, Fenner & Smith , 693 [CITE_END:DOC004[P013.B05]]
+[CITE_START:DOC004[P013.B06]] F.2d 1023, 1025 (11th Cir. 1982)). As such, “[a] party seeking to prove waiver of a right to arbitration must demonstrate: (1) knowledge of an existing right to compel arbitration; (2) acts inconsistent with that existing right; and (3) prejudice to the party opposing arbitration resulting from such inconsistent acts.” Id. Here, the defendants concede that they had knowledge of the right to [CITE_END:DOC004[P013.B06]]
+
+[Page 14]
+[CITE_START:DOC004[P014.B01]] M ARTIN V . Y ASUDA 14 compel arbitration; thus, we address only the latter two factors. A. The Defendants Engaged in Acts Inconsistent with Their Right to Arbitration There is no concrete test to determine whether a party has engaged in acts that are inconsistent with its right to arbitrate. We have stated, however, that a party’s extended silence and delay in moving for arbitration may indicate a “conscious decision to continue to seek judicial judgment on the merits of [the] arbitrable claims,” which would be inconsistent with a right to arbitrate. Van Ness Townhouses v. Mar Indus. Corp. [CITE_END:DOC004[P014.B01]]
+[CITE_START:DOC004[P014.B02]] , 862 F.2d 754, 759 (9th Cir. 1988) (quoting Nat’l Found. for Cancer Research v. A.G. Edwards & Sons , 821 F.2d 772, 777 (D.C. Cir. 1987)). We find this element satisfied when a party chooses to delay his right to compel arbitration by actively litigating his case to take advantage of being in federal court. See id. at 756, 759 (finding waiver when party answered complaints, moved to dismiss the action, and did not claim a right to arbitration in any of the pleadings); Kelly v. Pub. Util. Dist. No. 2 , 552 Fed. App’x 663, 664 (9th Cir. [CITE_END:DOC004[P014.B02]]
+[CITE_START:DOC004[P014.B03]] 2014) (finding this element satisfied when the parties “conducted discovery and litigated motions, including a preliminary injunction and a motion to dismiss”); see also Plows v. Rockwell Collins, Inc. , 812 F. Supp. 2d 1063, 1067–68 (C.D. Cal. 2011) (finding this element satisfied when the defendant actively litigated the case by removing it to federal court, seeking a venue transfer, participating in meetings and scheduling conferences, negotiating and entering into a protective order, and participating in discovery that would not have been available under the arbitration agreement). A statement by a party that it has a right to arbitration in [CITE_END:DOC004[P014.B03]]
+[CITE_START:DOC004[P014.B04]] pleadings or motions is not [CITE_END:DOC004[P014.B04]]
+
+[Page 15]
+[CITE_START:DOC004[P015.B01]] M ARTIN V . Y ASUDA
+15 [CITE_END:DOC004[P015.B01]]
+[CITE_START:DOC004[P015.B02]] enough to defeat a claim of waiver. See In Re Mirant Corp. v. Castex Energy, Inc. , 613 F.3d 584, 591 (5th Cir. 2010) (“A party cannot keep its right to demand arbitration in reserve indefinitely while it pursues a decision on the merits before the district court.”); Hooper v. Advance Am., Cash Advance Ctrs. of Missouri, Inc. , 589 F.3d 917, 923 (8th Cir. 2009) (“A reservation of rights is not an assertion of rights.”). This is especially true when parties state well into the litigation that they do not intend to move to compel arbitration. Garcia v. Wachovia [CITE_END:DOC004[P015.B02]]
+[CITE_START:DOC004[P015.B03]] Corp. , 699 F.3d 1273, 1277 (11th Cir. 2012) (stating, in denying a motion to compel arbitration, that the defendant “even went so far as to say that it did not intend to seek arbitration in the future of the claims brought by most of the existing plaintiffs . . .”). Additionally, although filing a motion to dismiss that does not address the merits of the case is not sufficient to constitute an inconsistent act, seeking a decision on the merits of an issue may satisfy this element. Compare Lake Commc’ns, Inc. v. ICC Corp. , 738 F.2d 1473, 1476–77 [CITE_END:DOC004[P015.B03]]
+[CITE_START:DOC004[P015.B04]] (9th Cir. 1984) (finding defendant did not act inconsistently with right to arbitrate by filing a motion to dismiss for lack of personal jurisdiction, in which it alluded to its right to arbitrate and its intention to rely upon the right), overruled on other grounds by Mitsubishi Motors Corp. v. Soler Chrysler-Plymouth, Inc. , 473 U.S. 614, 632–35 (1985); and United Computer Systems v. AT&T Corp. , 298 F.3d 756, 765 (9th Cir. 2002) (holding that defendant did not waive arbitration by bringing motion to dismiss based on res judicata in which the issue of remedy was not raised) with [CITE_END:DOC004[P015.B04]]
+[CITE_START:DOC004[P015.B05]] Van Ness Townhouses , 862 F.2d at 759 (finding that a “conscious decision to continue to seek judicial judgment on the merits of [an] arbitrable clai[m]” is inconsistent with a right to arbitrate); Hooper , 589 F.3d at 922 (holding that defendant acted inconsistently by seeking a decision on the merits, which resulted in a game of “heads I win, tails you [CITE_END:DOC004[P015.B05]]
+
+[Page 16]
+[CITE_START:DOC004[P016.B01]] M ARTIN V . Y ASUDA
+16 lose”) (citations omitted);  Petroleum Pipe Ams. Corp. v.
+Jindal Saw, Ltd. , 575 F.3d 476, 480 (5th Cir. 2009) (“A party
+waives arbitration by seeking a decision on the merits before
+attempting to arbitrate.”);  and Lewallen v. Green Tree
+Servicing, L.L.C. , 487 F.3d 1085, 1092 (8th Cir. 2007)
+(“[Defendant] also acted inconsistently with its right to
+arbitrate by urging the bankruptcy court to dispose of
+[plaintiff’s] claims on the merits, reserving arbitration as an
+alternative avenue to resolve the dispute.”). [CITE_END:DOC004[P016.B01]]
+[CITE_START:DOC004[P016.B02]] Here, the defendants engaged in conduct inconsistent with
+their right to arbitrate.  They spent seventeen months
+litigating the case.  This included devoting “considerable time
+and effort” to a joint stipulation structuring the litigation,
+filing a motion to dismiss on a key merits issue 4 , entering into
+a protective order, answering discovery, and preparing for
+and conducting a deposition.  The defendants did not even [CITE_END:DOC004[P016.B02]]
+[CITE_START:DOC004[P016.B03]] 4 The defendants argue that the ruling on the motion to dismiss was not a merits ruling because the motion to dismiss was granted in part and denied in part without prejudice and because “it was only based on the pleadings and not directed to the entire dispute.” These arguments are erroneous. Although a dismissal without prejudice on an issue is not a merits ruling, Richards v. Ernst & Young, LLP , 744 F.3d 1072, 1074–75 (9th Cir. 2013), the district judge here denied the motion to dismiss with regard to the key merits issue: whether the Cosmetology Act legally [CITE_END:DOC004[P016.B03]]
+[CITE_START:DOC004[P016.B04]] precluded the students from being classified as employees. He granted the motion to dismiss without prejudice only with respect to the individual claims against Yasuda. Accordingly, the ruling was in principal part a ruling on the merits. More important, whatever the judge may have done, the defendants sought a ruling on the merits. The defendants’ second contention—that this was not a merits ruling because they were seeking a ruling on the pleadings—is likewise wrong. When defendants move for dismissal with prejudice on a key merits issue that would preclude relief as to one or more of plaintiffs’ claims, as they [CITE_END:DOC004[P016.B04]]
+[CITE_START:DOC004[P016.B05]] did here, they are seeking a ruling on the merits. See In re Mirant. , 613 F.3d at 589. [CITE_END:DOC004[P016.B05]]
+
+[Page 17]
+[CITE_START:DOC004[P017.B01]] M ARTIN V . Y ASUDA
+17 [CITE_END:DOC004[P017.B01]]
+[CITE_START:DOC004[P017.B02]] note their right to arbitration until almost a year into the litigation and did not move to enforce that right until well after that time. Indeed, fourteen months into the litigation, they told the district judge and opposing counsel that they were likely “better off” in federal court. We agree with the district court that the totality of these actions satisfies this element. B. The Plaintiffs Were Prejudiced Although litigation conduct inconsistent with a right to arbitrate most frequently causes prejudice to the opposing party, the link is not automatic. Lake Commc’ns , 738 F.2d at 1477 (holding that to [CITE_END:DOC004[P017.B02]]
+[CITE_START:DOC004[P017.B03]] prove waiver, “[m]ore is required than action inconsistent with an arbitration provision; prejudice to the party opposing arbitration must also be shown.”). To prove prejudice, plaintiffs must show more than “self- inflicted” wounds that they incurred as a direct result of suing in federal court contrary to the provisions of an arbitration agreement. Fisher , 791 F.2d at 698; see also Richards , 744 F.3d at 1074–75. Such wounds include costs incurred in preparing the complaint, serving notice, or engaging in limited litigation regarding issues directly related to the complaint’s filing, such as jurisdiction or venue. In contrast, in order [CITE_END:DOC004[P017.B03]]
+[CITE_START:DOC004[P017.B04]] to establish prejudice, the plaintiffs must show that, as a result of the defendants having delayed seeking arbitration, they have incurred costs that they would not otherwise have incurred, see Van Ness Townhouses , 862 F.2d at 759, that they would be forced to relitigate an issue on the merits on which they have already prevailed in court, see id. , or that the defendants have received an advantage from litigating in federal court that they would not have received in arbitration, see Richards , 744 F.3d at 1075 (noting that a plaintiff can show prejudice if the opposing party [CITE_END:DOC004[P017.B04]]
+[CITE_START:DOC004[P017.B05]] has [CITE_END:DOC004[P017.B05]]
+
+[Page 18]
+[CITE_START:DOC004[P018.B01]] M ARTIN V . Y ASUDA
+18 “gain[ed] information about the other side’s cases that could
+not have been gained in arbitration.” (quotation marks
+omitted)). [CITE_END:DOC004[P018.B01]]
+[CITE_START:DOC004[P018.B02]] We agree with the district court that the plaintiffs here easily meet the prejudice requirement. We note first that arbitration is designed to provide a simpler and more expeditious system of resolving certain types of disputes—a system that values “greater efficiency and speed” over “procedural rigor.” Stolt-Nielsen S.A. v. AnimalFeeds Int’l Corp. , 559 U.S. 662, 685 (2010); see also 14 Penn Plaza LLC v. Pyett , 556 U.S. 247, 257 (2009) (“Parties generally favor arbitration precisely because of the economics of dispute resolution.”). Spending a lengthy amount of time litigating in the more complex federal court system with its [CITE_END:DOC004[P018.B02]]
+[CITE_START:DOC004[P018.B03]] rigorous procedural and substantive rules will almost inevitably cause the parties to expend more time, money, and effort than had they proceeded directly to arbitration. On the other hand, the federal court system provides advantages that some parties still prefer to retain, including the type of relief available and the potential for precedential decisions. [CITE_END:DOC004[P018.B03]]
+[CITE_START:DOC004[P018.B04]] When a party has expended considerable time and money due to the opposing party’s failure to timely move for arbitration and is then deprived of the benefits for which it has paid by a belated motion to compel, the party is indeed prejudiced. See, e.g. , Kelly , 552 Fed. App’x at 664 (finding prejudice when the defendants waited eleven months to compel arbitration); Joca-Roca Real Estate, LLC v. Brennan , 772 F.3d 945, 949, 951 n.7 (1st Cir. 2014) (finding prejudice with a nine-month delay after the filing of the complaint); Gray Holdco, Inc. v. Cassady , 654 F.3d [CITE_END:DOC004[P018.B04]]
+[CITE_START:DOC004[P018.B05]] 444, 454–55 (3d Cir. 2011) (holding that a ten-month delay before moving to compel, while not dispositive, weighed in favor of waiver); [CITE_END:DOC004[P018.B05]]
+
+[Page 19]
+[CITE_START:DOC004[P019.B01]] M ARTIN V . Y ASUDA
+19 [CITE_END:DOC004[P019.B01]]
+[CITE_START:DOC004[P019.B02]] Messina v. N. Cent. Distrib., Inc. , No. 15-2323, — F.3d —, 2016 WL 2640911, at *3 (8th Cir. May 10, 2016) (finding prejudice after an eight month delay); and In re Mirant , 613 F.3d at 591 (considering litigation expenses in prejudice inquiry after defendant waited 18 months before moving to compel arbitration). At that point, the cost and expenses of litigating in district court are no longer simply “self-inflicted” wounds on the part of the plaintiffs, Fisher , 791 F.2d at 698, because the defendants’ actions have shown that they, too, have sought at least for some period [CITE_END:DOC004[P019.B02]]
+[CITE_START:DOC004[P019.B03]] of time to attempt to resolve the issue in court rather than in arbitration. See Van Ness Townhouses , 862 F.2d at 759; see also Kelly , 552 Fed. App’x at 664 (“A party that is aware that it has a right to compel arbitration of a dispute cannot wait to exercise that right until the parties have expended a significant amount of time and money to litigate that dispute in federal court.”); Plows , 812 F. Supp. 2d at 1068 (holding that thirteen months of legal fees and presumably the different choices that would have been made had plaintiffs [CITE_END:DOC004[P019.B03]]
+[CITE_START:DOC004[P019.B04]] known the case was going to arbitration were contributing factors to a finding of prejudice). 5 [CITE_END:DOC004[P019.B04]]
+[CITE_START:DOC004[P019.B05]] 5 When we have granted motions to compel filed after substantial litigation, there have been unique circumstances that have explained the long delay in filing a motion to compel, such as absence of knowledge, a party’s pro se status, or intervening law. See Britton v. Co-Op Banking Group , 916 F.2d 1405, 1413 (9th Cir. 1990) (a two-year delay was not inconsistent when the party moving for arbitration lacked knowledge of his right until six months before making the motion and had spent part of that two years in pursuit of a court-appointed attorney); Fisher , 791 F.2d at 694–95 [CITE_END:DOC004[P019.B05]]
+[CITE_START:DOC004[P019.B06]] (finding that waiting three and a half years to file the motion to compel did not constitute an inconsistent act because the moving party “properly perceived that it was futile to file” such a motion until an intervening Supreme Court case changed the rule). [CITE_END:DOC004[P019.B06]]
+
+[Page 20]
+[CITE_START:DOC004[P020.B01]] M ARTIN V . Y ASUDA 20 Here, because the defendants failed to move for arbitration for seventeen months, the plaintiffs expended considerable money and effort in federal litigation, including conferring with opposing counsel regarding how to conduct the case on the merits, analyzing how to approach discovery and class certification, and contesting the defendants’ motion to dismiss on the merits. As discussed above, even if the parties exchanged the same information in court as they would have in arbitration, the process of doing so in federal court likely cost far more than determining the answer to the same question [CITE_END:DOC004[P020.B01]]
+[CITE_START:DOC004[P020.B02]] in arbitration. The unnecessary, additional costs incurred by the plaintiffs as a result of the defendants’ dilatory motion to compel constitutes obvious prejudice. [CITE_END:DOC004[P020.B02]]
+[CITE_START:DOC004[P020.B03]] Moreover, the plaintiffs have shown prejudice here because, should this case go to arbitration, they would have to relitigate a key legal issue on which the district court has ruled in their favor. We and other circuits routinely have found this factor dispositive because the plaintiffs would be prejudiced if the defendants got a mulligan on a legal issue it chose to litigate in court and lost. See, e.g. , Van Ness Townhouses , 862 F.2d at 759; Kelly , 552 Fed. App’x at 664 (“A late shift to an arbitrator would force the parties to bear the expense of [CITE_END:DOC004[P020.B03]]
+[CITE_START:DOC004[P020.B04]] educating arbitrators and threaten to require the appellees to relitigate matters decided by the district judge.”), Hooper , 589 F.3d at 923 (finding prejudice when defendant’s “motion to dismiss forced Plaintiffs to litigate substantial issues on the merits”), and In re Mirant , 613 F.3d at 591 (finding prejudice when the defendant “waited eighteen months before moving to compel arbitration while it attempted to obtain a dismissal with prejudice”). Because the defendants had knowledge of their right to arbitrate and they engaged in acts inconsistent with that right [CITE_END:DOC004[P020.B04]]
+
+[Page 21]
+[CITE_START:DOC004[P021.B01]] M ARTIN V . Y ASUDA
+21 [CITE_END:DOC004[P021.B01]]
+[CITE_START:DOC004[P021.B02]] for a significant period of time, and because the plaintiffs
+would be prejudiced should the court now compel arbitration,
+we conclude, as did the district court, that the defendants
+waived their right to arbitrate. [CITE_END:DOC004[P021.B02]]
+[CITE_START:DOC004[P021.B03]] A party that signs a binding arbitration agreement and has subsequently been sued in court has a choice: it can either seek to compel arbitration or agree to litigate in court. It cannot choose both. A party may not delay seeking arbitration until after the district court rules against it in whole or in part; nor may it belatedly change its mind after first electing to proceed in what it believed to be a more favorable forum. Allowing it to do so would result in a waste of resources for the parties and the courts and would be manifestly unfair [CITE_END:DOC004[P021.B03]]
+[CITE_START:DOC004[P021.B04]] to the opposing party. Here, we reject the defendants’ attempt to manipulate the judicial and arbitral systems and to gain an unfair advantage by virtue of their litigation conduct. Accordingly, they have waived their right to compel arbitration. The district court is AFFIRMED. [CITE_END:DOC004[P021.B04]]

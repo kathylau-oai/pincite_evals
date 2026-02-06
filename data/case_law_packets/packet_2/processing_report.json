@@ -1,0 +1,17 @@
+{
+  "packet_id": "packet_2",
+  "documents_total": 8,
+  "documents_parsed": 8,
+  "documents_failed": 0,
+  "download_failed": 0,
+  "native_docs": 8,
+  "mixed_docs": 0,
+  "scanned_docs": 0,
+  "avg_blocks_per_doc": 91.75,
+  "avg_block_words": 52.9,
+  "avg_tokens_per_block": 76.81,
+  "total_words_all_docs": 46828,
+  "total_tokens_all_docs": 65935,
+  "manifest_path": "data/case_law_packets/packet_2/packet_manifest.csv",
+  "quality_summary_path": "data/case_law_packets/packet_2/parsing_quality_summary.csv"
+}

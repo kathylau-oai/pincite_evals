@@ -1,0 +1,482 @@
+[Page 1]
+FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT HERBAL BRANDS, INC.,
+No. 21-17001  
+D.C. No. 2:21-
+cv-00577-SMB  
+OPINION
+Plaintiff-Appellant ,  
+  v.  
+PHOTOPLAZA, INC.; GOLDSHOP 
+300, INC.; GOLDSHOP, INC.; 
+INSTOCK GOODIES, INC.; TZVI 
+HESCHEL; SHLOMA BICHLER; 
+LALI DATS, Defendants-Appellees . Appeal from the United States District Court for the District of Arizona 
+Susan M. Brnovich, District Judge, Presiding Argued and Submitted February 8, 2023
+Phoenix, Arizona Filed July 5, 2023
+Before:  Susan P. Graber, Richard R. Clifton, and Morgan 
+Christen, Circuit Judges. Opinion by Judge Graber
+
+[Page 2]
+2 
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC .
+SUMMARY *
+Personal Jurisdiction Reversing the district court’s dismissal for lack of 
+personal jurisdiction over defendants in an action under the 
+Lanham Act, the panel held that, if a defendant, in its regular 
+course of business, sells a physical product via an interactive 
+website and causes that product to be delivered to the forum, 
+then the defendant has purposefully directed its conduct at 
+the forum such that the exercise of personal jurisdiction may 
+be appropriate.
+Herbal Brands, Inc., which has its principal place of 
+business in Arizona, brought suit in Arizona against New 
+York 
+residents 
+that 
+sell 
+products 
+via 
+Amazon 
+storefronts.  Herbal Brands alleged that defendants’ 
+unauthorized sale of Herbal Brands products on Amazon, to 
+Arizona residents and others, violated the Lanham Act and 
+state law.
+The panel applied the Arizona long-arm statute, which 
+provides for personal jurisdiction co-extensive with the 
+limits of federal due process.  Due process requires that a 
+nonresident defendant must have “certain minimum 
+contacts” with the forum such that the exercise of personal 
+jurisdiction does not offend traditional notions of fair play 
+and substantial justice. Addressing the first prong of the specific jurisdiction 
+inquiry, the panel applied a purposeful direction analysis, *  This summary constitutes no part of the opinion of the court.  It has 
+been prepared by court staff for the convenience of the reader.
+
+[Page 3]
+H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . 3 rather than a purposeful availment analysis, because Herbal Brands brought tortious claims for trademark infringement, false advertising, and tortious interference with business relationships. The panel held that Herbal Brands met its initial burden of showing that defendants purposefully directed their activities at the forum because, under the Calder effects test, defendants’ sale of products to Arizona residents was an intentional act, and Herbal Brands’ cease- and-desist letters informed defendants that their actions were causing harm in Arizona. In addition, defendants “expressly aimed” their
+conduct at the forum because an interactive website plus “something more” constitutes “express aiming.” Defendants’ Amazon storefronts were interactive websites, and defendants’ sales of products to Arizona residents were the requisite “something more” because the sales occurred as part of defendants’ regular course of business, and defendants exercised some level of control over the ultimate distribution of their products beyond simply placing their products into the stream of commerce. Recognizing a range of approaches adopted by other circuits in response to similar questions, the panel stated that it did not attempt to reconcile the split among the circuits.
+Addressing the second prong of the specific jurisdiction 
+inquiry, the panel held that Herbal Brands’ harm arose out 
+of defendants’ contacts with Arizona.  Addressing the third 
+prong, the panel held that defendants failed to show that the 
+exercise of jurisdiction would not be reasonable.  Thus, in 
+sum, defendants had sufficient minimum contacts with 
+Arizona, Herbal Brands’ harm arose out of those contacts, 
+and the exercise of personal jurisdiction would be reasonable 
+in the circumstances.
+
+[Page 4]
+4 
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC .
+COUNSEL
+Daniel C.F. Wucherer (argued), Vorys Sater Seymour and 
+Pease LLP, Cincinnati, Ohio; William D. Kloss and Martha 
+B. Motley, Vorys Sater Seymour and Pease LLP, Columbus, 
+Ohio; Andrew M. Jacobs, Rachael Marie Peters Pugel, and 
+Carlie Tovrea, Snell & Wilmer LLP, Phoenix, Arizona; for 
+Plaintiff-Appellant. Serge Krimnus (argued) and Andrew D. Bochner, Bochner 
+PLLC, New York, New York, for Defendants-Appellees.
+OPINION 
+GRABER, Circuit Judge: Internet commerce is ubiquitous in the modern economy, 
+allowing sellers to reach potential consumers around the 
+globe.  Yet we have not addressed directly the question 
+presented by this appeal:  Does the sale of a product via an 
+interactive website provide sufficient “minimum contacts” 
+to support personal jurisdiction over a nonresident defendant 
+in the state where the defendant causes the product to be 
+delivered, when the plaintiff in that state brings a claim for 
+an intentional tort related to the sale of the product?
+Plaintiff Herbal Brands, Inc., has its principal place of 
+business in Arizona.  It manufactures and sells health, 
+wellness, fitness, and nutrition products under various 
+trademarks and brands.  Defendants are New York residents 
+that sell products via Amazon storefronts.  Plaintiff filed this 
+action in Arizona, alleging that Defendants’ unauthorized 
+sale of Herbal Brands products on Amazon violated the
+
+[Page 5]
+H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . 5 Lanham Act and state law. The district court denied Plaintiff’s request for jurisdictional discovery and dismissed the complaint on the ground that the court lacks personal jurisdiction over Defendants. Reviewing de novo the dismissal for lack of personal jurisdiction, Picot v. Weston, 780 F.3d 1206, 1211 (9th Cir. 2015), we reverse. We hold that, if a defendant, in its regular course of business, sells a physical product via an interactive website and causes that product to be delivered to the forum, the defendant
+has purposefully directed its conduct at the forum such that the exercise of personal jurisdiction may be appropriate. FACTUAL AND PROCEDURAL HISTORY Plaintiff Herbal Brands is a Delaware corporation with its principal place of business in Arizona. Plaintiff sells its health, wellness, fitness, and nutrition products directly to consumers or through third parties that enter into agreements to become “Authorized Sellers.” Plaintiff alleges that unauthorized sales of its products are not subject to quality control and thus may damage its reputation with consumers.
+Defendants Photoplaza, Inc.; Goldshop 300, Inc.; 
+Goldshop, Inc.; InStock Goodies, Inc.; Tzvi Heschel; 
+Shloma Bichler; and Lali Dats are all New York residents.  
+Plaintiff discovered that Defendants—who are not 
+Authorized Sellers—were selling Herbal Brands products 
+through two Amazon storefronts. 1   Plaintiff estimates that, 
+as of April 5, 2021—the date when it filed its complaint— 1  For the purposes of this opinion, we use the term “Amazon storefront” 
+to describe an e-commerce store that is hosted on the Amazon platform 
+and operated by a business to advertise and sell its products.  See 
+Ecommerce storefront: Build an online store on Amazon.com, 
+Amazon.com, 
+https://sell.amazon.com/learn/ecommerce-
+storefront#what-is-an-ecommerce-store.
+
+[Page 6]
+6 
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC . Defendants had sold more than 23,000 Herbal Brands 
+products.  Plaintiff alleges that Defendants sold products to 
+Arizona residents “through the regular course of business,” 
+but, without access to Defendants’ sales data, Plaintiff is 
+unable to allege the exact number of sales made to Arizona 
+customers.
+Plaintiff 
+sent 
+three 
+cease-and-desist 
+letters 
+to 
+Defendants, asserting that Defendants were infringing 
+Plaintiff’s trademarks and tortiously interfering with 
+Plaintiff’s agreements with its Authorized Sellers.  The 
+letters informed Defendants that Plaintiff was based in 
+Arizona and alleged that those sales harmed Plaintiff in 
+Arizona.  Despite Plaintiff’s letters, Defendants’ Amazon 
+storefronts remained operational.
+Plaintiff filed this action in federal district court in 
+Arizona, bringing claims for (1) trademark infringement and 
+unfair competition under the Lanham Act and under Arizona 
+law; (2) false advertising under the Lanham Act; and (3) 
+tortious 
+interference 
+with 
+contracts 
+and 
+business 
+relationships under Arizona law.
+Defendants filed a motion to dismiss for lack of personal 
+jurisdiction.  Defendants did not submit an affidavit or any 
+other evidence to contradict the allegations in the complaint.  
+Notably, they did not contest Plaintiff’s allegations that they 
+sold Herbal Brands products to customers in Arizona.  In 
+opposition to the motion, Plaintiff submitted an additional 
+declaration attesting that, as of July 2021, Defendants had 
+sold more than 25,700 allegedly infringing products and that 
+Defendants had taken no affirmative steps to prevent 
+customers in Arizona from purchasing those products. The district court granted the motion to dismiss for lack 
+of personal jurisdiction, holding that Plaintiff failed to meet
+
+[Page 7]
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC .  
+7 its burden of demonstrating that Defendants “expressly 
+aimed” their conduct at Arizona.  The court also denied 
+Plaintiff’s 
+request 
+for 
+jurisdictional 
+discovery 
+as 
+unnecessary, predicting that discovery would reveal only a 
+“sporadic smattering of sales to consumers in Arizona.”  
+Plaintiff timely appealed.
+DISCUSSION
+Plaintiff alleges that Defendants, in their regular course 
+of business, (1) operated a universally accessible interactive 
+website; (2) made an unknown number of sales to Arizona 
+residents; and (3) received cease-and-desist letters from 
+Plaintiff, an Arizona resident, after which Defendants made 
+no effort to stop selling to Arizona residents.  We hold that 
+those allegations are sufficient to support the exercise of 
+specific personal jurisdiction in this instance.
+“Where, as here, there is no applicable federal statute governing personal jurisdiction, the district court applies the law of the state in which the district court sits.” Schwarzenegger v. Fred Martin Motor Co., 374 F.3d 797, 800 (9th Cir. 2004); see Fed. R. Civ. P. 4(k)(1)(A). “The Arizona long-arm statute provides for personal jurisdiction co-extensive with the limits of federal due process.” Doe v. Am. Nat’l Red Cross, 112 F.3d 1048, 1050 (9th Cir. 1997). Thus, “the jurisdictional analyses under state law and federal due process are the same.” Schwarzenegger, 374 F.3d at 800–01. Due process requires that a nonresident
+defendant must have “certain minimum contacts” with the relevant forum such that the exercise of personal jurisdiction “does not offend ‘traditional notions of fair play and substantial justice.’” Int’l Shoe Co. v. Washington, 326 U.S. 310, 316 (1945) (citation omitted).
+
+[Page 8]
+8 
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC . “[P]laintiff bears the burden of establishing that 
+jurisdiction is proper.”  Mavrix Photo, Inc. v. Brand Techs., 
+Inc., 647 F.3d 1218, 1223 (9th Cir. 2011).  When a 
+defendant’s motion to dismiss on jurisdictional grounds rests 
+only on written materials rather than on testimony at an 
+evidentiary hearing, “the plaintiff need only make a prima 
+facie showing of jurisdictional facts.”  Schwarzenegger, 374 
+F.3d at 800 (citation and internal quotation marks omitted).  
+And “uncontroverted allegations in the complaint must be 
+taken as true.”  Id.
+“The inquiry whether a forum State may assert specific 
+jurisdiction over a nonresident defendant focuses on the 
+relationship among the defendant, the forum, and the 
+litigation.”  Walden v. Fiore, 571 U.S. 277, 283–84 (2014) 
+(citations and internal quotation marks omitted).  We have 
+established a three-part test for specific personal jurisdiction:
+(1) The 
+non-resident 
+defendant 
+must 
+purposefully direct his activities or 
+consummate some transaction with the 
+forum or resident thereof; or perform 
+some act by which he purposefully avails 
+himself of the privilege of conducting 
+activities in the forum, thereby invoking 
+the benefits and protections of its laws; (2) the claim must be one which arises out of 
+or relates to the defendant’s forum-
+related activities; and
+
+[Page 9]
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC .  
+9 (3) the exercise of jurisdiction must comport 
+with fair play and substantial justice, i.e. 
+it must be reasonable.
+Schwarzenegger, 374 F.3d at 802 (citation omitted).  “The 
+plaintiff has the burden of proving the first two prongs.”  
+Picot, 780 F.3d at 1211.  “If the plaintiff meets that burden, 
+‘the burden then shifts to the defendant to “present a 
+compelling case” that the exercise of jurisdiction would not 
+be reasonable.’”  Axiom Foods, Inc. v. Acerchem Int’l, Inc., 
+874 F.3d 1064, 1068–69 (9th Cir. 2017) (quoting 
+Schwarzenegger, 374 F.3d at 802). A. Defendants Purposefully Directed Their Activities at the Forum.
+The first prong of the specific-jurisdiction inquiry 
+encompasses two separate concepts: “purposeful availment” 
+and “purposeful direction.”  Glob. Commodities Trading 
+Grp., Inc. v. Beneficio de Arroz Choloma, S.A., 972 F.3d 
+1101, 1107 (9th Cir. 2020).  Although they are distinct, “[a]t 
+bottom, both purposeful availment and purposeful direction 
+ask whether defendants have voluntarily derived some 
+benefit from their interstate activities such that they ‘will not 
+be haled into a jurisdiction solely as a result of “random,” 
+“fortuitous,” or “attenuated” contacts.’”  Id. (quoting Burger 
+King v. Rudzewicz, 471 U.S. 462, 475 (1985)).
+We look to the type of claim at issue to determine the 
+applicable analytical approach.  We generally use the 
+purposeful availment analysis in suits sounding in contract, 
+Schwarzenegger, 374 F.3d at 802, and for unintentional tort 
+claims, see, e.g., Yamashita v. LG Chem, Ltd., 62 F.4th 496, 
+503–04 (9th Cir. 2023) (applying the purposeful availment 
+test where the plaintiff brought product liability claims).  We
+
+[Page 10]
+10 H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . have often said, without qualification, that the purposeful direction test applies when “a case sounds in tort,” see, e.g., Axiom Foods, 874 F.3d at 1069, but that test “applies only to intentional torts, not to . . . negligence claims.” Holland Am. Line Inc. v. Wärtsilä N. Am., Inc., 485 F.3d 450, 460 (9th Cir. 2007) (emphasis added). Here, Plaintiff brings claims for trademark infringement, false advertising, and tortious interference with business relationships. Because each of those claims requires an intentional tortious or
+“tort- like” act, we employ the purposeful direction test. See Ayla, LLC v. Alya Skin Pty. Ltd., 11 F.4th 972, 979 (9th Cir. 2021) (applying the purposeful direction analysis because “[t]rademark infringement is treated as tort-like for personal jurisdiction purposes”).
+To determine whether a defendant “purposefully directed” its activities toward the forum, we apply, in turn, the “effects” test derived from Calder v. Jones, 465 U.S. 783 (1984). That test “focuses on the forum in which the defendant’s actions were felt, whether or not the actions themselves occurred within the forum.” Mavrix, 647 F.3d at 1228 (quoting Yahoo! Inc. v. La Ligue Contre Le Racisme Et L’Antisemitisme, 433 F.3d 1199, 1206 (9th Cir. 2006) (en banc) (per curiam)) (internal quotation mark omitted). The Calder effects test asks “whether the defendant: ‘(1) committed an intentional act, (2) expressly aimed at the
+forum state, (3) causing harm that the defendant knows is likely to be suffered in the forum state.’” Will Co. v. Lee, 47 F.4th 917, 922 (9th Cir. 2022) (quoting Schwarzenegger, 374 F.3d at 803).
+Plaintiff easily satisfies the first and third elements of the 
+Calder effects test.  Defendants’ sale of products to Arizona 
+residents is an intentional act, and the cease-and-desist 
+letters informed Defendants that their actions were causing
+
+[Page 11]
+H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . 11 harm in Arizona. 2 See Dole Food Co. v. Watts, 303 F.3d 1104, 1113 (9th Cir. 2002) (recognizing that a corporation can suffer economic harm in many fora, including where the corporation has its principal place of business). The closer question is whether Defendants “expressly aimed” their conduct at the forum. 1. An Interactive Website Plus “Something More” Constitutes “Express Aiming.” We begin by considering Defendants’ internet-based activity. More than two decades ago, we recognized a distinction between “passive” websites that merely make
+information available to visitors and “interactive” websites, where “users can exchange information with the host computer when the site is interactive.” Cybersell, Inc. v. Cybersell, Inc., 130 F.3d 414, 418 (9th Cir. 1997). It is well settled that “[m]ere passive operation of a website is insufficient to demonstrate express aiming.” Will Co., 47 F.4th at 922; see Mavrix, 647 F.3d at 1231 (“Not all material placed on the Internet is, solely by virtue of its universal accessibility, expressly aimed at every state in which it is accessed.”). Similarly, operation of an interactive website does not, by itself, establish express aiming.
+Otherwise, every time a 2 The cease-and-desist letters are relevant to our analysis due to the specific facts and claims at issue in this case. Because Plaintiff’s claims are based on trademark infringement, without the letters Defendants might not have known that Plaintiff would be harmed in Arizona. By contrast, if a plaintiff were to allege that he was poisoned by a product, then the shipment of that product to the plaintiff’s forum would suffice to show that the defendant knew that the harm “is likely to be suffered in the forum state.” Will Co., 47 F.4th at 922 (citation
+and internal quotation mark omitted).
+
+[Page 12]
+12 H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . seller offered a product for sale through an interactive website, the seller would be subjecting itself to specific jurisdiction in every forum in which the website was visible, whether or not the seller actually consummated a sale. That result would be too broad to comport with due process. See CollegeSource, Inc. v. AcademyOne, Inc., 653 F.3d 1066, 1075–76 (9th Cir. 2011) (“If the maintenance of an interactive website were sufficient to support general jurisdiction in every forum in which users interacted with the
+website, the eventual demise of all restrictions on the personal jurisdiction of state courts would be the inevitable result.” (citation and internal quotation marks omitted)).
+But operating a website “in conjunction with ‘something more’—conduct directly targeting the forum—is sufficient” to satisfy the express aiming prong. Mavrix, 647 F.3d at 1229 (quoting Rio Props., Inc. v. Rio Int’l Interlink, 284 F.3d 1007, 1020 (9th Cir. 2002)). The interactivity of the website is one of several factors that can be relevant to the question whether a defendant has done “something more.” 3 Id. In some cases, the operators of a website “can be said to have ‘expressly aimed’ at a forum where a website ‘with national viewership and scope appeals to, and profits from, an audience in
+a particular state.’” AMA Multimedia, LLC v. Wanat, 970 F.3d 1201, 1210 (9th Cir. 2020) (quoting Mavrix, 647 F.3d at 1231). When the website itself is the only jurisdictional contact, our analysis turns on whether the site had a forum-specific focus or the defendant exhibited an intent to cultivate an audience in the forum. See, e.g., 3 We have acknowledged that there is a “sliding scale” of how interactive a website is, and a higher degree of interactivity provides greater support for the exercise of specific jurisdiction. See Mavrix, 647 F.3d at 1226– 27.
+
+[Page 13]
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC .  
+13 Mavrix, 647 F.3d at 1222, 1229–31 (holding that the 
+defendant expressly aimed the content of “celebrity-
+gossip.net” at California because the site had a specific focus 
+on the California-centric entertainment industry); AMA, 970 
+F.3d at 1210 (concluding that the defendant’s website 
+“lack[ed] a forum-specific focus” because “the market for 
+adult content is global”); Will Co., 47 F.4th at 924–26 
+(ruling that the defendant’s website hosting and legal 
+compliance 
+documents 
+showed 
+that 
+the 
+defendant 
+intentionally “appealed to and profited from” a specific 
+forum).
+Here, it is undisputed that Defendants’ Amazon storefronts are interactive websites: visitors can exchange information with the host computer by inputting data directly. But that fact alone does not establish “express aiming,” and Plaintiff does not allege that Defendants specifically directed their website (or their products) at Arizona. Instead, Plaintiff argues that jurisdiction exists because Defendants actually sold infringing products via an interactive website and caused them to be delivered to forum residents. 4 4 The fact that Defendants used Amazon storefronts instead of proprietary websites does not change our analysis in this instance. As a participant in the “Fulfillment
+by Amazon” service, Defendants store their products in Amazon fulfillment centers, and Amazon processes, packs, and ships orders from customers without direct seller involvement. Defendants retain ownership of the goods and can choose to end their relationship with Amazon at any time. Although Defendants are removed from the process of handling orders, the use of Amazon’s fulfillment service to handle shipping logistics does not alter our jurisdictional analysis any more than a seller’s use of the post office to ship its products would affect the inquiry. See Boschetto v. Hansing, 539 F.3d 1011, 1018–19 (9th Cir. 2008) (discussing how the
+use of eBay as a means for establishing regular business with a remote forum could
+
+[Page 14]
+14 H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . 2. Defendants’ Sales of Products to Arizona Residents are the Requisite “Something More.” We have not squarely addressed the question whether sales of a product to forum residents through an interactive website constitute “something more” to establish express aiming when there is no evidence that the seller specifically targeted that forum. We now hold that if a defendant, in its regular course of business, sells a physical product via an interactive website and causes that product to be delivered to the forum, the
+defendant “expressly aimed” its conduct at that forum. 5 Though the emergence of the internet presents new fact patterns, it does not require a wholesale departure from our approach to personal jurisdiction before the internet age.
+The personal jurisdiction inquiry rests on the concept of 
+“fair play and substantial justice.”  Int’l Shoe, 326 U.S. at 
+316 (citation and internal quotation mark omitted).  If a generate contacts sufficient to support jurisdiction).  To be clear, that 
+determination could change if the details of Defendants’ relationship 
+with Amazon were different.  See Yamashita, 62 F.4th at 504 
+(concluding that the defendant’s alleged sale of batteries to a third-party 
+website would not amount to purposeful availment without an indication 
+that the defendant targeted the forum).
+5  We are careful to emphasize that our jurisdictional inquiry is concerned 
+with the actions of the defendant.  Walden, 571 U.S. at 289.  The conduct 
+purposefully directed at the forum is the seller’s action of accepting the 
+order and causing the product to be delivered to the forum.  In this case, 
+the allegations do not suggest that Arizona residents purchased products 
+to be shipped to other states.  But if an Arizona resident ordered a product 
+for delivery to a friend in California, a seller’s fulfillment of that 
+hypothetical order in the regular course of its business would be conduct 
+purposefully directed at California (the location of the delivery), not 
+Arizona (the residence of the purchaser).
+
+[Page 15]
+H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . 15 defendant chooses to conduct “a part of its general business” in a particular forum, it is fair to subject that defendant to personal jurisdiction in that forum. See Keeton v. Hustler Mag., Inc., 465 U.S. 770, 779–80 (1984) (holding that, because the defendant was “carrying on a part of its general business” in the state, it was fair to subject the defendant to jurisdiction for a claim arising out of that activity (internal quotation marks omitted)). Pre-internet, the “distribution in the forum state
+of goods originating elsewhere” was a paradigmatic example of conduct purposefully directed at the forum state. Schwarzenegger, 374 F.3d at 803; see Goodyear Dunlop Tires Operations, S.A. v. Brown, 564 U.S. 915, 927 (2011) (“[W]here ‘the sale of a product . . . arises from the efforts of the manufacturer or distributor to serve . . . the market for its product in [several] States, it is not unreasonable to subject it to suit in one of those States if its allegedly defective merchandise has there been the source of injury to its owner or to others.’” (quoting World-Wide Volkswagen
+Corp. v. Woodson, 444 U.S. 286, 297 (1980)) (first and second alterations added) (emphasis omitted)); Plant Food Co-Op v. Wolfkill Feed & Fertilizer Corp., 633 F.2d 155, 159 (9th Cir. 1980) (holding that the exercise of personal jurisdiction in Montana is consistent with due process when it is based on the sale of fertilizer to a customer in Montana); Mattel, Inc. v. MCA Records, Inc., 296 F.3d 894, 899 (9th Cir. 2002) (concluding that the defendants’ conduct was expressly aimed at California where there was a plan to distribute a song throughout the United States and the defendants sent promotional
+copies to the United States, including California).
+The fact that Defendants generated their business by 
+creating an Amazon storefront instead of by placing ads in a 
+nationwide print publication does not necessarily dictate a
+
+[Page 16]
+16 
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC . different outcome.  Although the internet can be dizzyingly 
+complex, for jurisdictional purposes, the act of selling 
+physical products over the internet to a forum resident is 
+substantially the same as selling those same products to a 
+forum resident through a mail-order catalog.
+Thus, we conclude that the sales of physical products into a forum via an interactive website can be sufficient to establish that a defendant expressly aimed its conduct at the forum, provided that two key elements are present. First, the sales must occur as part of the defendant’s regular course of business instead of being “random, isolated, or fortuitous.” Keeton, 465 U.S. at 774; see Boschetto, 539 F.3d at 1017, 1019 (holding that “the lone transaction for the sale of one item” did not create personal jurisdiction over the defendants in California because there were no allegations that the seller
+was a regular user of eBay to sell cars or “as a broader vehicle for commercial activity”). 6 When an online sale occurs as part of a defendant’s regular course of business, it “arises from the efforts of the [seller] to serve directly or indirectly[] the market for its product . . . ,” and the defendant “should reasonably anticipate being haled into 6 Although Boschetto is not binding because we conducted that analysis under the “purposeful availment” framework, its rationale is still instructive. Because our court’s distinction between “purposeful direction” and “purposeful availment” is quite narrow, similar principles underlie
+both tests. See, e.g., Holland Am. Line, 485 F.3d at 459–60 (concluding that the plaintiff failed to satisfy the purposeful availment test and relying, in part, on Panavision Int’l, L.P. v. Toeppen, 141 F.3d 1316, 1322 (9th Cir. 1998), and Pebble Beach Co. v. Caddy, 453 F.3d 1151, 1158 (9th Cir. 2006), both of which employed the purposeful direction test); cf. Davis v. Cranfield Aerospace Sols., Ltd., No. 22- 35099, slip op. at 8–9 (9th Cir. June 23, 2023) (suggesting that a rigid dividing line between the two inquiries does not serve the purposes of due process).
+
+[Page 17]
+H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . 17 court” where the product is sold. See World-Wide Volkswagen Corp., 444 U.S. at 297. Whether a sale occurs in a defendant’s regular course of business is a case-specific question that may turn on factors such as the seller’s identity (individual or a business entity), the nature of the website used, the defendant’s total volume of online sales including sales outside the forum, the number or variety of products offered on the defendant’s website, and the defendant’s online advertising. Because Defendants do not contend
+that the alleged sales to Arizona residents occurred outside of their regular course of business, we leave the precise contours of that inquiry for another day.
+Second, the defendant must exercise some level of control over the ultimate distribution of its products beyond simply placing its products into the stream of commerce. See Ayla, 11 F.4th at 981–82 (concluding that the defendant’s offering of products for sale through its website and third-party websites was evidence that the defendant’s contacts with the forum were not “random, isolated, or fortuitous”); Holland Am. Line, 485 F.3d at 459 (“The placement of a product into the stream of commerce, without more, is not an act purposefully directed toward a forum state.”). Although other factors may be relevant in certain circumstances,
+the express aiming inquiry does not require a showing that the defendant targeted its advertising or operations at the forum.
+Plaintiff’s allegations meet this standard.  First, 
+Defendants allegedly used their Amazon storefronts—their 
+means of conducting regular business—to make product 
+sales to Arizona residents.  Plaintiffs specifically allege that 
+Defendants operated their storefronts under the names of 
+business entities, offered a variety of Herbal Brands products 
+on their storefronts, and conducted a high volume of sales
+
+[Page 18]
+18 H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . throughout the country. Second, Defendants exercised control over distribution: they created and maintained a distribution network that reached the relevant forum by choosing to operate on a universally accessible website that accepts orders from residents of all fifty states and delivers products to all fifty states. See NBA Props., Inc. v. HANWJH, 46 F.4th 614, 625 (7th Cir. 2022) (reasoning that, when a defendant “structured its sales activity in such a manner as to invite orders from [a forum] and developed the capacity
+to fill them[,] [i]t cannot now point to its customers in [that forum] and tell us, ‘It was all their idea.’” (citation and some quotation marks omitted)), cert. denied, 143 S. Ct. 577 (2023). Accordingly, we hold that Defendants expressly aimed their conduct at Arizona because they allegedly sold products to Arizona residents via an interactive website in their regular course of business and caused those products to be delivered to the forum.
+The outcome of the express-aiming inquiry does not depend on the number of sales made to customers in the forum. Drawing a line based on the number of sales would require an arbitrary distinction that is not preferred in this area of the law. See Burger King, 471 U.S. at 485–86 (emphasizing that, in determining whether to exercise personal jurisdiction, courts must weigh the facts of each case instead of relying on “talismanic jurisdictional formulas”). If one sale were not enough to establish that a defendant expressly aimed its conduct at a forum, we would face the difficult question of
+how many sales would suffice. The same challenges would exist if we were to attempt to craft a rule based on sales to the forum as a percentage of a defendant’s total sales. Instead of taking on an arbitrary line-drawing task, we require only that the sale must occur in the defendant’s
+
+[Page 19]
+H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . 19 regular course of business. Consistent with Keeton, our holding distinguishes between a truly isolated sale and a genuine attempt to serve the market. See Ayla, 11 F.4th at 981 (“As Keeton demonstrates, there is no ‘small percentage of sales’ exception to the purposeful direction principles discussed herein.”); Plant Food Co-Op, 633 F.2d at 159 (distinguishing between a product sale that is “an isolated occurrence” and a sale that “arises from the efforts of the distributor to serve, directly or indirectly, the market for
+its products in other states”). Any concerns that this rule will have negative effects on small online sellers are best addressed as part of the third prong of the specific jurisdiction inquiry; the exercise of jurisdiction always “must be reasonable.” Schwarzenegger, 374 F.3d at 802.
+To reiterate, our holding answers only the narrow 
+question whether a defendant’s sale of a physical product to 
+a consumer in the forum state via an interactive website 
+constitutes conduct expressly aimed at a forum.  If other 
+internet activity is allegedly the source of personal 
+jurisdiction, cases such as Mavrix, AMA, and Will Co. 
+would continue to apply.  We also need not and do not 
+answer the question whether the outcome would be different 
+if a defendant did not sell directly to consumers but instead 
+sold its products to a third party with no knowledge of that 
+third party’s intent to sell into a particular forum.  Cf. 
+Yamashita, 62 F.4th at 504.
+We recognize that other circuits have adopted a range of 
+approaches in response to similar questions.  See, e.g., Chloe 
+v. Queen Bee of Beverly Hills, LLC, 616 F.3d 158, 165, 
+171–72 (2d Cir. 2010) (holding that a defendant’s conduct 
+was purposefully directed toward New York because the 
+defendant offered bags for sale on its website to New York 
+customers and shipped at least one bag to a New York
+
+[Page 20]
+20 H ERBAL B RANDS , I NC . V . P HOTOPLAZA , I NC . customer); NBA Props., 46 F.4th at 624–25, 627 (holding that the defendant purposefully directed its conduct at Illinois where it sold a single infringing product to an agent of the plaintiff who was an Illinois resident); Bros. & Sisters in Christ, LLC v. Zazzle, Inc., 42 F.4th 948, 953–55 (8th Cir. 2022) (holding that the defendant’s sale of a single t-shirt to a Missouri resident did not create sufficient contacts to support the exercise of jurisdiction); Admar Int’l, Inc. v. Eastrock, LLC, 18
+F.4th 783, 787–88, 788 n.1 (5th Cir. 2021) (suggesting that the isolated sale of a single product to a forum resident would be insufficient to support the exercise of jurisdiction when the defendant did not solicit business through targeted advertising).
+Given the fact-intensive nature of the inquiry and the 
+wide range of potential analytical approaches, we do not 
+attempt to reconcile the split among the circuits.  We look 
+only at the facts before us and put forward the test that makes 
+the most sense in this particular context.  The ubiquity of 
+internet commerce creates a myriad of jurisdictional 
+questions.  We answer only the one question before us and 
+leave the remainder for another day. B. Plaintiff’s Harm Arises Out of Defendants’ Contacts With the Forum State.
+The second prong of the specific jurisdiction inquiry 
+requires that a plaintiff’s claims “‘arise out of or relate to the 
+defendant’s contacts’ with the forum.”  Ford Motor Co. v. 
+Mont. Eighth Jud. Dist. Ct., 141 S. Ct. 1017, 1025 (2021) 
+(quoting Bristol-Myers Squibb Co. v. Superior Ct., 582 U.S. 
+255, 262 (2017)).  “The first half of that standard asks about 
+causation; but the back half, after the ‘or,’ contemplates that 
+some relationships will support jurisdiction without a causal 
+showing.”  Id. at 1026.  Plaintiff’s claims—which allege
+
+[Page 21]
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC .  
+21 harm caused by Defendants’ sales of products—clearly arise 
+out of and relate to Defendants’ conduct of selling those 
+same products to Arizona residents.  See Ayla, 11 F. 4th at 
+983 (holding that the defendant’s promotion, sale, and 
+distribution of products in the forum relate to the plaintiff’s 
+trademark claims). C. The Exercise of Jurisdiction Over Defendants Would Be Reasonable.
+Once Plaintiff satisfies the first two prongs, “the burden 
+then shifts to the defendant to ‘present a compelling case’ 
+that the exercise of jurisdiction would not be reasonable.”  
+Schwarzenegger, 374 F.3d at 802 (quoting Burger King, 471 
+U.S. at 476–78).  To evaluate reasonableness, we employ a 
+balancing test that weighs seven factors:
+(1) the extent of the defendant’s purposeful 
+interjection into the forum state’s affairs; (2) 
+the burden on the defendant of defending in 
+the forum; (3) the extent of conflict with the 
+sovereignty of the defendant’s state; (4) the 
+forum state’s interest in adjudicating the 
+dispute; (5) the most efficient judicial 
+resolution of the controversy; (6) the 
+importance of the forum to the plaintiff’s 
+interest in convenient and effective relief; 
+and (7) the existence of an alternative forum.
+Freestream Aircraft (Bermuda) Ltd. v. Aero Law Grp., 905 
+F.3d 597, 607 (9th Cir. 2018).  Defendants contend that the 
+exercise of jurisdiction would be unreasonable, but they fail 
+to address any of those factors.
+
+[Page 22]
+22 
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC . That said, we do acknowledge that Defendants’ larger 
+concerns—the 
+ability 
+of 
+plaintiffs 
+to 
+manufacture 
+jurisdiction and the potential for negative effects on e-
+commerce—are legitimate.  Although Defendants fail to 
+meet their burden here, a defendant in a future case could 
+argue that the exercise of personal jurisdiction would be 
+unreasonable, even if that defendant has “expressly aimed” 
+its conduct at the forum consistent with the test that we adopt 
+in this opinion.  Many of the concerns that courts have 
+considered as part of the “express aiming” analysis are, in 
+our view, better addressed under the reasonableness prong.
+For instance, we recognize that a plaintiff’s contacts alone should not be enough to create jurisdiction over a defendant in a forum. See Axiom Foods, 874 F.3d at 1070 (“[W]e must look to the defendant’s ‘own contacts’ with the forum, not to the defendant’s knowledge of a plaintiff’s connections to a forum.” (quoting Walden, 571 U.S. at 289)). Other circuits have reached different conclusions regarding whether sales to a plaintiff or its agents can be a source of jurisdiction. Compare NBA Props., 46 F.4th at 625, 627 (holding that a single sale to an agent of the plaintiff can create
+personal jurisdiction), with Toys “R” Us, Inc. v. Step Two, S.A., 318 F.3d 446, 454–55 (3d Cir. 2003) (holding that two sales initiated by the plaintiff cannot establish personal jurisdiction). Depending on the particular facts of a future case, jurisdiction might not exist if a plaintiff purchased a product solely in an attempt to manufacture jurisdiction. But the identity of the purchaser is not relevant to whether the defendant expressly aimed its conduct at the forum. And, in any event, Defendants do not make that argument here. The fairness prong also allows for the argument that the exercise of jurisdiction
+is not appropriate because a
+
+[Page 23]
+H ERBAL  B RANDS , I NC .  V . P HOTOPLAZA , I NC .  
+23 defendant sold only a small number of products to forum 
+residents.  If, for example, a Maine resident ran a small 
+business selling New England-themed keychains and made 
+a sale to an Arizona resident, the seller may be able to argue 
+successfully that it would not be reasonable to hale him into 
+court in Arizona because of the limited nature of his 
+purposeful interjection into Arizona’s affairs or the 
+excessive burden associated with defending himself in the 
+forum.  See Freestream Aircraft, 905 F.3d at 607–08.  But 
+those hypothetical facts are not the facts of this case and, 
+once again, Defendants do not advance that argument here.
+In sum, we hold that the district court has personal 
+jurisdiction 
+over 
+Defendants. 
+Taking 
+Plaintiff’s 
+uncontroverted allegations as true, Defendants’ sales of 
+products via an interactive website occurred in their regular 
+course of business, Defendants caused those products to be 
+shipped to the forum, and Defendants were aware that harm 
+was occurring in the forum.  Defendants have not met their 
+burden of showing that the exercise of personal jurisdiction 
+would be unreasonable.  Thus, we conclude that Defendants 
+have sufficient minimum contacts with Arizona, Plaintiff’s 
+harm arises out of those contacts, and the exercise of 
+personal 
+jurisdiction 
+would 
+be 
+reasonable 
+in 
+the 
+circumstances. REVERSED AND REMANDED.
