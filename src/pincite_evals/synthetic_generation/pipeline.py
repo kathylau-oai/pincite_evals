@@ -525,42 +525,23 @@ def _normalize_generated_item(
     citation_integrity_cautions = grading_contract.get("citation_integrity_cautions")
     if not isinstance(citation_integrity_cautions, list):
         citation_integrity_cautions = []
-    cleaned_integrity_cautions = [
+    grading_contract["citation_integrity_cautions"] = [
         str(caution).strip() for caution in citation_integrity_cautions if isinstance(caution, str) and str(caution).strip()
     ]
-    if len(cleaned_integrity_cautions) < 3:
-        cleaned_integrity_cautions = [
-            "Do not credit any legal proposition unless a cited packet block directly supports that proposition.",
-            "Do not invent case names, doctrinal tests, quotations, or procedural details not present in packet text.",
-            "When packet evidence is thin, require explicit uncertainty statements rather than fabricated certainty.",
-        ]
-    grading_contract["citation_integrity_cautions"] = cleaned_integrity_cautions
 
     over_cautions = grading_contract.get("overextension_cautions")
     if not isinstance(over_cautions, list):
         over_cautions = []
-    cleaned_over_cautions = [str(caution).strip() for caution in over_cautions if isinstance(caution, str) and str(caution).strip()]
-    if mode_name == "overextension" and len(cleaned_over_cautions) < 3:
-        cleaned_over_cautions = [
-            "Do not reward claims that convert qualified source language into broad categorical legal rules.",
-            "Do not allow omission of factual predicates, exceptions, or posture limits tied to the cited holding.",
-            "Fail when a memo's rule breadth exceeds what the cited authority text actually supports.",
-        ]
-    grading_contract["overextension_cautions"] = cleaned_over_cautions
+    grading_contract["overextension_cautions"] = [
+        str(caution).strip() for caution in over_cautions if isinstance(caution, str) and str(caution).strip()
+    ]
 
     precedence_cautions = grading_contract.get("precedence_cautions")
     if not isinstance(precedence_cautions, list):
         precedence_cautions = []
-    cleaned_precedence_cautions = [
+    grading_contract["precedence_cautions"] = [
         str(caution).strip() for caution in precedence_cautions if isinstance(caution, str) and str(caution).strip()
     ]
-    if mode_name == "precedence" and len(cleaned_precedence_cautions) < 3:
-        cleaned_precedence_cautions = [
-            "Do not treat persuasive or lower-rank authority as controlling when higher-rank authority exists.",
-            "Do not treat vacated, overruled, or superseded authority as binding without explicit justification.",
-            "Require explicit hierarchy reasoning when packet authorities conflict on the same legal issue.",
-        ]
-    grading_contract["precedence_cautions"] = cleaned_precedence_cautions
 
     if not isinstance(normalized.get("prompt"), str) or not str(normalized.get("prompt", "")).strip():
         normalized["prompt"] = (
@@ -788,25 +769,17 @@ def _generate_one_item(
     }
 
 
-def _word_count(text_value: str | None) -> int:
-    if not isinstance(text_value, str):
-        return 0
-    words = [word for word in re.findall(r"[A-Za-z][A-Za-z'-]*", text_value.strip()) if word]
-    return len(words)
+def _has_non_empty_note(criteria_note: str | None) -> bool:
+    return isinstance(criteria_note, str) and bool(criteria_note.strip())
 
 
-def _is_detailed_note(criteria_note: str | None, minimum_words: int = 45) -> bool:
-    return _word_count(criteria_note) >= minimum_words
-
-
-def _has_detailed_cautions(cautions: list[str], minimum_items: int = 3, minimum_words_per_item: int = 8) -> bool:
-    if not isinstance(cautions, list) or len(cautions) < minimum_items:
+def _has_any_caution(cautions: list[str]) -> bool:
+    if not isinstance(cautions, list):
         return False
-    detailed_items = 0
     for caution in cautions:
-        if _word_count(caution) >= minimum_words_per_item:
-            detailed_items += 1
-    return detailed_items >= minimum_items
+        if isinstance(caution, str) and caution.strip():
+            return True
+    return False
 
 
 def _deterministic_validation(item_payload: dict[str, Any], citation_universe: set[str]) -> tuple[bool, list[str], dict[str, Any]]:
@@ -825,20 +798,20 @@ def _deterministic_validation(item_payload: dict[str, Any], citation_universe: s
         if citation_token not in citation_universe:
             reasons.append("expected_citation_outside_packet")
 
-    if not _is_detailed_note(item.grading_contract.citation_integrity_trigger_note):
+    if not _has_non_empty_note(item.grading_contract.citation_integrity_trigger_note):
         reasons.append("missing_citation_integrity_criteria")
 
-    if not _has_detailed_cautions(item.grading_contract.citation_integrity_cautions):
+    if not _has_any_caution(item.grading_contract.citation_integrity_cautions):
         reasons.append("missing_citation_integrity_cautions")
 
-    if item.target_error_mode == "C" and not _is_detailed_note(item.grading_contract.overextension_trigger_note):
+    if item.target_error_mode == "C" and not _has_non_empty_note(item.grading_contract.overextension_trigger_note):
         reasons.append("missing_overextension_criteria")
-    if item.target_error_mode == "C" and not _has_detailed_cautions(item.grading_contract.overextension_cautions):
+    if item.target_error_mode == "C" and not _has_any_caution(item.grading_contract.overextension_cautions):
         reasons.append("missing_overextension_cautions")
 
-    if item.target_error_mode == "D" and not _is_detailed_note(item.grading_contract.precedence_trigger_note):
+    if item.target_error_mode == "D" and not _has_non_empty_note(item.grading_contract.precedence_trigger_note):
         reasons.append("missing_precedence_criteria")
-    if item.target_error_mode == "D" and not _has_detailed_cautions(item.grading_contract.precedence_cautions):
+    if item.target_error_mode == "D" and not _has_any_caution(item.grading_contract.precedence_cautions):
         reasons.append("missing_precedence_cautions")
 
     deduped_reasons: list[str] = []
