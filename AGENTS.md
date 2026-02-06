@@ -39,3 +39,6 @@
   - End-to-end latency
   - Time-to-first-token (TTFT)
   - Token-by-token latency (inter-token latency) with distribution stats
+
+## Recent learnings
+- Problem -> Excerpt citation parsing accepted overly broad IDs and legacy styles -> Fix -> Enforce only `DOC_ID[P<page>.B<block>(#<hash>)?]` in parser/tests and reject legacy paragraph citations -> Why -> Keeps citations block-level, deterministic, and consistent with the current grading format.

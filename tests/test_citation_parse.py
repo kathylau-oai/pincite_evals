@@ -15,3 +15,28 @@ def test_extract_excerpt_citations_basic():
     assert citations[0].doc_id == "TWOMBLY_2007"
     assert citations[0].excerpt_id == "P012.B07#A1F3"
     assert citations[0].raw == "TWOMBLY_2007[P012.B07#A1F3]"
+
+
+def test_extract_excerpt_citations_allows_missing_hash():
+    out = "Use controlling authority (TWOMBLY_2007[P012.B07])."
+    citations = extract_excerpt_citations(out)
+    assert len(citations) == 1
+    assert citations[0].raw == "TWOMBLY_2007[P012.B07]"
+
+
+def test_extract_excerpt_citations_rejects_malformed_excerpt_id():
+    out = "Bad cite (TWOMBLY_2007[random_text])."
+    citations = extract_excerpt_citations(out)
+    assert citations == []
+
+
+def test_extract_excerpt_citations_rejects_legacy_paragraph_format():
+    out = "Legacy cite [TWOMBLY_2007 ¶12-14]."
+    citations = extract_excerpt_citations(out)
+    assert citations == []
+
+
+def test_extract_excerpt_citations_rejects_footnote_ids():
+    out = "Footnote cite (TWOMBLY_2007[P012.FN02#A1F3])."
+    citations = extract_excerpt_citations(out)
+    assert citations == []
