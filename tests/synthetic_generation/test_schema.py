@@ -1,0 +1,50 @@
+import sys
+from pathlib import Path
+
+import pytest
+from pydantic import ValidationError
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "src"))
+
+from pincite_evals.synthetic_generation.schema import SyntheticItem  # noqa: E402
+
+
+def test_schema_accepts_valid_item():
+    item = SyntheticItem.model_validate(
+        {
+            "schema_version": "v1",
+            "item_id": "packet_1_A_01",
+            "packet_id": "packet_1",
+            "target_error_mode": "A",
+            "query_id": "q_0001",
+            "as_of_date": "2026-02-06",
+            "prompt": "Draft a memo section.",
+            "scenario_facts": ["Assume closed-world packet."],
+            "grading_contract": {
+                "expected_citation_groups": [["DOC001[P001.B01]"]],
+            },
+        }
+    )
+
+    assert item.target_error_mode == "A"
+
+
+def test_schema_rejects_invalid_citation_format():
+    with pytest.raises(ValidationError):
+        SyntheticItem.model_validate(
+            {
+                "schema_version": "v1",
+                "item_id": "packet_1_A_01",
+                "packet_id": "packet_1",
+                "target_error_mode": "A",
+                "query_id": "q_0001",
+                "as_of_date": "2026-02-06",
+                "prompt": "Draft a memo section.",
+                "scenario_facts": ["Assume closed-world packet."],
+                "grading_contract": {
+                    "expected_citation_groups": [["DOC001[¶12]"]],
+                },
+            }
+        )

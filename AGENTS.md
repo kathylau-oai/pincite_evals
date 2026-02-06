@@ -59,4 +59,4 @@
 - Problem -> Synthetic pipeline scope drifted toward all error modes -> Fix -> Explicitly scope adversarial generation to `A/C/D` and treat `B` as grader-only measurement for this phase -> Why -> Preserves focus on high-signal trap types while still tracking span errors in downstream grading.
 - Problem -> Synthetic generation/verification runs were slower and configuration drifted -> Fix -> Default to `gpt-5.2` with high reasoning for generation + verifier and run mode workers in parallel with bounded concurrency -> Why -> Improves quality consistency and end-to-end throughput.
 - Problem -> Deterministic conflict checks can over-reject generated items and starve mode quotas -> Fix -> Prioritize low-counterevidence targets during generation (`counterevidence_count` ascending) before LLM calls -> Why -> Maintains strict validation while keeping enough pass candidates for stable 3/3/3 selection.
-
+- Problem -> Multi-file synthetic pipeline became hard to follow -> Fix -> Consolidate into `config.py`, `schema.py`, `pipeline.py`, and a single `cli.py` with subcommands -> Why -> Keeps ownership simple and reduces navigation overhead during fast iteration.
