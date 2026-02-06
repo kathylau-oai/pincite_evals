@@ -23,7 +23,7 @@ The dataset is intentionally designed to trigger four key error modes:
 
 | ID  | Error mode                                  | Problem description                                                                                 | Trigger focus                                        |
 | --- | ------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| A   | Fabricated citations                        | The model cites non-existent case law.                                                              | Detect hallucinated authorities.                     |
+| A   | Fabricated citations                        | The prompt asks for authority intentionally absent from the packet, and the model may invent support. | Detect hallucinated authorities under missing-evidence pressure. |
 | B   | Wrong source span                           | The model cites nearby text that does not support the claim.                                        | Test paragraph/span-level precision.                 |
 | C   | Partially supported but overextended claims | The cited text supports part of the claim, but the final statement overreaches the cited authority. | Test scope control and faithful interpretation.      |
 | D   | Precedent / overruling issues               | The cited text supports the claim, but the authority is overruled, superseded, or non-controlling.  | Test legal hierarchy and authority status awareness. |
@@ -56,6 +56,7 @@ Each packet typically includes:
 - factually similar but distinguishable authority
 
 From packet metadata, we generate synthetic memo prompts designed to induce specific failures while still being realistic drafting tasks.
+For mode `A`, prompts intentionally request famous or specific authorities that are not present in the 6-8 packet documents, so the correct behavior is to acknowledge the gap and avoid fabricated citations.
 
 ## Key design decisions
 
@@ -92,4 +93,3 @@ From packet metadata, we generate synthetic memo prompts designed to induce spec
 - Graders can distinguish failure types with low ambiguity.
 - Results show meaningful separation across model/prompt variants.
 - Outputs are easy to audit from citation text back to packet evidence.
-

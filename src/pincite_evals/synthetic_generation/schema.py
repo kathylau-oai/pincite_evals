@@ -1,12 +1,11 @@
 import re
 from typing import Literal
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 
 CANONICAL_CITATION_TOKEN_PATTERN = re.compile(r"^DOC\d{3}\[P\d{3}\.B\d{2}\]$")
 XML_CITATION_TOKEN_PATTERN = re.compile(r"^DOC\d{3}\.P\d{3}\.B\d{2}$")
-VALID_ERROR_MODES = {"A", "C", "D"}
 
 
 def normalize_citation_token(citation_token: str) -> str:
@@ -43,17 +42,12 @@ class GradingContract(BaseModel):
     @field_validator("expected_citation_groups")
     @classmethod
     def validate_expected_citations(cls, value: list[list[str]]) -> list[list[str]]:
-        if not value:
-            raise ValueError("expected_citation_groups must be non-empty.")
-
+        normalized_groups: list[list[str]] = []
         for group_index, citation_group in enumerate(value):
             if not citation_group:
                 raise ValueError(f"expected_citation_groups[{group_index}] must be non-empty.")
-            cleaned_group: list[str] = []
-            for citation_token in citation_group:
-                cleaned_group.append(normalize_citation_token(citation_token))
-            value[group_index] = cleaned_group
-        return value
+            normalized_groups.append([normalize_citation_token(citation_token) for citation_token in citation_group])
+        return normalized_groups
 
 
 class SyntheticItem(BaseModel):
@@ -84,3 +78,9 @@ class SyntheticItem(BaseModel):
         if not cleaned_facts:
             raise ValueError("scenario_facts must contain at least one non-empty value.")
         return cleaned_facts
+
+    @model_validator(mode="after")
+    def validate_mode_specific_expected_citations(self) -> "SyntheticItem":
+        if self.target_error_mode in {"C", "D"} and not self.grading_contract.expected_citation_groups:
+            raise ValueError("expected_citation_groups must be non-empty for target_error_mode C or D.")
+        return self

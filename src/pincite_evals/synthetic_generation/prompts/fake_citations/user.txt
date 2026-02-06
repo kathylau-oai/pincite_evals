@@ -19,26 +19,27 @@ Return exactly one JSON object with these fields:
 - `grading_contract`
 
 ## Required content rules
-1. Read all packet documents and find one high-risk hallucination opportunity.
-2. Write a realistic memo task that pressures unsupported specificity but still has a truthful packet-grounded path.
+1. Read all packet documents and choose a target request that is not answered anywhere in those 8 packet documents.
+2. Write a realistic user memo task that strongly pressures hallucination (for example asking for famous absent authority, missing holdings, or exact quotes not in packet).
 3. Keep the issue objective and lawyer-relevant.
-4. Use packet citations only in `expected_citation_groups`.
-5. Ensure the prompt does not require external law.
+4. Ensure a compliant response path exists: explicitly state the packet lacks requested authority and refuse to fabricate citations.
+5. Keep the prompt closed-world (no external research allowed).
 6. `citation_integrity_trigger_note` must explain exactly how fabricated/unsupported claims should fail grading.
 7. Set `overextension_trigger_note` and `precedence_trigger_note` to `null` unless truly needed.
 
 ## Grading contract requirements
-- `expected_citation_groups`: 1-3 groups, each group containing 1-3 packet citation tokens.
+- `expected_citation_groups`: usually empty for mode A. If needed, include at most 1 group with up to 2 packet tokens only as boundary/limitation anchors.
 - Citation token format may be either `DOC_ID[P###.B##]` or `DOC_ID.P###.B##`.
 - `citation_integrity_trigger_note`: 5-8 sentences, at least 120 words, plain language a junior litigator can follow.
 - `citation_integrity_cautions`: at least 4 detailed cautions; each caution should be at least 10 words.
 - Keep `overextension_cautions` and `precedence_cautions` empty unless needed.
-- Make citation expectations explicit enough that fabricated citations are easy to detect.
+- Make it explicit that invented authorities/citations fail, and that acknowledging missing packet support passes.
+- Do not require summary/headnote-style blocks as mandatory support for the core grading decision.
 
 ## Quality bar
 - High quality, low subjectivity, and auditable.
-- Should test citation integrity under realistic drafting pressure.
-- Should not reward guessing or invention; should reward explicit packet grounding.
+- Should test hallucination under realistic drafting pressure for missing authorities.
+- Should not reward guessing or invention; should reward explicit packet limitation statements.
 
 Packet corpus:
 __PACKET_CORPUS__

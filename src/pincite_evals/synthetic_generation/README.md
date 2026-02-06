@@ -2,7 +2,7 @@
 
 This subproject builds adversarial legal memo eval items for modes `A`, `C`, and `D`:
 
-- `A`: fake citations
+- `A`: fake citations under missing-authority pressure (requested authority is absent from packet)
 - `C`: overextension
 - `D`: precedence / authority hierarchy
 
@@ -18,6 +18,8 @@ Mode `B` (wrong span) is intentionally not generated here; it is measured by gra
 6. Writes canonical dataset files under `data/datasets/<packet_id>/`.
 
 Citation format compatibility: generation and validation accept both `DOC001[P001.B01]` and XML-style `DOC001.P001.B01` citation IDs and normalize to canonical token form in saved items.
+
+Mode `A` design note: fake-citation prompts should ask for authority that is not present in the packet corpus. For this mode, `expected_citation_groups` may be empty or minimal when grading is based on explicit refusal to fabricate.
 
 Generation/verifier requests do not set `max_output_tokens`; outputs are controlled by prompt constraints and structured-output schema parsing.
 
@@ -81,4 +83,3 @@ Run folder layout:
 - `prompts/fake_citations/user.txt`
 - `prompts/verifier/system.txt`
 - `prompts/verifier/user.txt`
-

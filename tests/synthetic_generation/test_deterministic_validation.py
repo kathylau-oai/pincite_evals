@@ -1,6 +1,9 @@
 import sys
 from pathlib import Path
 
+import pytest
+from pydantic import ValidationError
+
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
@@ -121,3 +124,50 @@ def test_missing_mode_specific_cautions_fail_for_precedence():
 
     assert deterministic_pass is False
     assert "missing_precedence_cautions" in reasons
+
+
+def test_mode_a_allows_empty_expected_citations_when_other_checks_present():
+    item_payload = {
+        "schema_version": "v1",
+        "item_id": "packet_1_A_11",
+        "packet_id": "packet_1",
+        "target_error_mode": "A",
+        "query_id": "q_0011",
+        "as_of_date": "2026-02-06",
+        "prompt": "Ask for absent authority and require explicit no-support answer.",
+        "scenario_facts": ["Use packet-only authorities."],
+        "grading_contract": {
+            "expected_citation_groups": [],
+            "citation_integrity_trigger_note": _detailed_integrity_note(),
+            "citation_integrity_cautions": _detailed_cautions("Integrity"),
+        },
+    }
+
+    deterministic_pass, reasons, details = _deterministic_validation(item_payload, {"DOC001[P001.B01]"})
+
+    assert deterministic_pass is True
+    assert reasons == []
+    assert details["expected_citation_count"] == 0
+
+
+def test_mode_c_requires_non_empty_expected_citations():
+    item_payload = {
+        "schema_version": "v1",
+        "item_id": "packet_1_C_11",
+        "packet_id": "packet_1",
+        "target_error_mode": "C",
+        "query_id": "q_0011",
+        "as_of_date": "2026-02-06",
+        "prompt": "Draft an internal memo section.",
+        "scenario_facts": ["Use packet-only authorities."],
+        "grading_contract": {
+            "expected_citation_groups": [],
+            "citation_integrity_trigger_note": _detailed_integrity_note(),
+            "citation_integrity_cautions": _detailed_cautions("Integrity"),
+            "overextension_trigger_note": "Detailed overextension rationale for pass/fail.",
+            "overextension_cautions": _detailed_cautions("Overextension"),
+        },
+    }
+
+    with pytest.raises(ValidationError):
+        _deterministic_validation(item_payload, {"DOC001[P001.B01]"})

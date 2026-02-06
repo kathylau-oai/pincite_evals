@@ -755,8 +755,12 @@ def _normalize_generated_item(
                 cleaned_groups.append([group.strip()])
         if cleaned_groups:
             grading_contract["expected_citation_groups"] = cleaned_groups
+        elif mode_name == "fake_citations":
+            grading_contract["expected_citation_groups"] = []
         else:
             grading_contract["expected_citation_groups"] = [[citation_token]]
+    elif mode_name == "fake_citations":
+        grading_contract["expected_citation_groups"] = []
     else:
         grading_contract["expected_citation_groups"] = [[citation_token]]
 
@@ -853,6 +857,12 @@ def _default_candidate_from_mode(
             "authority relationships."
         )
 
+    default_expected_citation_groups: list[list[str]]
+    if mode_name == "fake_citations":
+        default_expected_citation_groups = []
+    else:
+        default_expected_citation_groups = [[citation_token]]
+
     candidate = {
         "schema_version": "v1",
         "item_id": f"{packet_id}_{mode_letter}_{item_index:02d}",
@@ -862,15 +872,15 @@ def _default_candidate_from_mode(
         "as_of_date": as_of_date,
         "prompt": (
             "Draft an internal legal memo section using only packet authorities. "
-            f"Ground analysis in {citation_token} and avoid unsupported categorical statements."
+            "If the packet does not contain requested authority, explicitly say so and do not invent citations."
         ),
         "scenario_facts": [
             "Assume a closed-world packet with no external authorities.",
-            f"Primary support token: {citation_token}.",
+            f"Reference boundary token: {citation_token}.",
             "Address uncertainty explicitly and avoid fabricated citations.",
         ],
         "grading_contract": {
-            "expected_citation_groups": [[citation_token]],
+            "expected_citation_groups": default_expected_citation_groups,
             "citation_integrity_trigger_note": citation_integrity_note,
             "citation_integrity_cautions": [
                 "Do not credit any authority, quotation, or doctrinal label that is not explicitly supported in the packet text.",
@@ -1046,7 +1056,7 @@ def _deterministic_validation(item_payload: dict[str, Any], citation_universe: s
         for citation_group in item.grading_contract.expected_citation_groups
         for citation_token in citation_group
     ]
-    if not expected_citations:
+    if item.target_error_mode in {"C", "D"} and not expected_citations:
         reasons.append("missing_expected_citations")
 
     for citation_token in expected_citations:
@@ -1221,8 +1231,23 @@ def _trap_signature(prompt_text: str) -> str:
 
 
 def _primary_doc_id(item_payload: dict[str, Any]) -> str:
-    first_citation = item_payload["grading_contract"]["expected_citation_groups"][0][0]
-    return extract_doc_id_from_citation_token(first_citation)
+    grading_contract = item_payload.get("grading_contract", {})
+    expected_citation_groups = grading_contract.get("expected_citation_groups", [])
+    if not isinstance(expected_citation_groups, list) or not expected_citation_groups:
+        return "NONE"
+
+    first_group = expected_citation_groups[0]
+    if not isinstance(first_group, list) or not first_group:
+        return "NONE"
+
+    first_citation = str(first_group[0]).strip()
+    if not first_citation:
+        return "NONE"
+
+    try:
+        return extract_doc_id_from_citation_token(first_citation)
+    except ValueError:
+        return first_citation.split("[")[0].split(".")[0]
 
 
 def build_items_for_selection(
