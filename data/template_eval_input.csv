@@ -1,0 +1,4 @@
+item_id,prompt,expected_output
+sample_001,"Write one sentence explaining why precise citations matter in legal memos.",
+sample_002,"Summarize, in one sentence, what a controlling authority is.",
+sample_003,"Give a short definition of overruling in case law.",

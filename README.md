@@ -52,6 +52,37 @@ Create a `.env` file:
 OPENAI_API_KEY=...  # required to run model and (optionally) LLM-based graders
 ```
 
+### Template Eval Runner
+
+Run the general-purpose template eval runner with a small dry-run:
+
+```bash
+uv run pincite-template-eval \
+  --input-csv data/template_eval_input.csv \
+  --experiment-name template_eval_smoke \
+  --dry-run \
+  --max-samples 10 \
+  --max-model-workers 2 \
+  --max-item-workers 4
+```
+
+Run with multiple model configs in parallel:
+
+```bash
+uv run pincite-template-eval \
+  --input-csv data/template_eval_input.csv \
+  --model-config-file docs/template_model_configs.json \
+  --experiment-name template_eval_multi_config
+```
+
+The runner writes all outputs under `results/<experiment_name>_<timestamp>/`, including:
+
+- `predictions_and_grades.csv`
+- `metrics_summary.csv`
+- `latency_metrics.csv`
+- `token_metrics.csv`
+- `raw_responses/` (per-item raw API payloads for auditability)
+
 ## Disclaimer
 
 This repository is for evaluation engineering and is not legal advice.

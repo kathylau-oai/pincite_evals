@@ -1,0 +1,18 @@
+[
+  {
+    "name": "gpt52_none_temp0",
+    "model": "gpt-5.2",
+    "reasoning_effort": "none",
+    "temperature": 0.0,
+    "system_prompt": "You are a careful legal drafting assistant.",
+    "max_output_tokens": 1800
+  },
+  {
+    "name": "gpt52_medium_reasoning",
+    "model": "gpt-5.2",
+    "reasoning_effort": "medium",
+    "temperature": 0.0,
+    "system_prompt": "You are a careful legal drafting assistant.",
+    "max_output_tokens": 2200
+  }
+]
