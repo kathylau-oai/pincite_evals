@@ -1,14 +1,7 @@
-import sys
-from pathlib import Path
-
 import pytest
 from pydantic import ValidationError
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "src"))
-
-from pincite_evals.synthetic_generation.schema import (  # noqa: E402
+from pincite_evals.synthetic_generation.schema import (
     SyntheticItem,
     extract_doc_id_from_citation_token,
     format_citation_token_as_block_id,

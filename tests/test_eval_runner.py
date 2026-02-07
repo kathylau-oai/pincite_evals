@@ -1,15 +1,10 @@
-import sys
 from argparse import Namespace
 from pathlib import Path
 
 import pandas as pd
+import pytest
 
-# Allow running tests without installing the package
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "src"))
-
-from pincite_evals.template_eval_runner import (  # noqa: E402
+from pincite_evals.eval_runner import (
     ModelConfig,
     _build_response_request,
     _compute_distribution_stats,
@@ -30,6 +25,7 @@ def test_build_response_request_includes_temperature_when_reasoning_none():
     request = _build_response_request(model_config, "Test prompt")
 
     assert request["model"] == "gpt-5.2"
+    assert request["service_tier"] == "priority"
     assert request["reasoning"] == {"effort": "none"}
     assert request["temperature"] == 0.2
 
@@ -45,6 +41,7 @@ def test_build_response_request_omits_temperature_when_reasoning_enabled():
 
     request = _build_response_request(model_config, "Test prompt")
 
+    assert request["service_tier"] == "priority"
     assert request["reasoning"] == {"effort": "high"}
     assert "temperature" not in request
 
@@ -84,7 +81,6 @@ def test_prepare_dataset_creates_id_and_expected_output_columns(tmp_path):
 
     args = Namespace(
         input_csv=str(input_csv_path),
-        user_query_column="user_query",
         id_column="item_id",
         expected_output_column="expected_output",
         max_samples=None,
@@ -98,17 +94,16 @@ def test_prepare_dataset_creates_id_and_expected_output_columns(tmp_path):
     assert dataset["item_id"].tolist() == ["row_0", "row_1"]
 
 
-def test_prepare_dataset_accepts_legacy_prompt_column(tmp_path):
+def test_prepare_dataset_requires_user_query_column(tmp_path):
     input_csv_path = tmp_path / "dataset.csv"
     pd.DataFrame({"prompt": ["p1"]}).to_csv(input_csv_path, index=False)
 
     args = Namespace(
         input_csv=str(input_csv_path),
-        user_query_column="user_query",
         id_column="item_id",
         expected_output_column="expected_output",
         max_samples=None,
     )
 
-    dataset = _prepare_dataset(args)
-    assert dataset["user_query"].tolist() == ["p1"]
+    with pytest.raises(ValueError, match="User query column 'user_query'"):
+        _prepare_dataset(args)

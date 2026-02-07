@@ -21,8 +21,7 @@ The planned evaluation targets four core failure modes:
 │  ├─ packet_design.md
 │  ├─ data_schema.md           # placeholder until SME confirmation
 │  └─ grading.md               # early guidance; subject to change
-├─ graders/                    # grader implementations + interfaces
-├─ src/pincite_evals/          # library code + synthetic generation pipeline
+├─ src/pincite_evals/          # library code (eval runner, graders, synthetic generation)
 └─ tests/
 ```
 
@@ -52,12 +51,12 @@ Create a `.env` file:
 OPENAI_API_KEY=...  # required to run model and (optionally) LLM-based graders
 ```
 
-### Template Eval Runner
+### Eval Runner
 
-Run the general-purpose template eval runner with a small dry-run:
+Run the general-purpose eval runner with a small dry-run:
 
 ```bash
-uv run pincite-template-eval \
+uv run pincite-eval \
   --input-csv data/template_eval_input.csv \
   --experiment-name template_eval_smoke \
   --dry-run \
@@ -69,13 +68,13 @@ uv run pincite-template-eval \
 Run with multiple model configs in parallel:
 
 ```bash
-uv run pincite-template-eval \
+uv run pincite-eval \
   --input-csv data/template_eval_input.csv \
   --model-config-file docs/template_model_configs.json \
   --experiment-name template_eval_multi_config
 ```
 
-The runner writes all outputs under `results/<experiment_name>_<timestamp>/`, including:
+The runner writes all outputs under `results/<run_id>/`, including:
 
 - `predictions_and_grades.csv`
 - `metrics_summary.csv`

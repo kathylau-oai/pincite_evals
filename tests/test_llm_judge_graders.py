@@ -1,15 +1,8 @@
 import json
-import sys
-from pathlib import Path
 
-# Allow running tests without installing the package
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "src"))
-
-from graders.citation_fidelity_llm_judge import CitationFidelityLLMJudgeGrader
-from graders.citation_overextension_llm_judge import CitationOverextensionLLMJudgeGrader
-from graders.precedence_llm_judge import PrecedenceLLMJudgeGrader
+from pincite_evals.graders.citation_fidelity_llm_judge import CitationFidelityLLMJudgeGrader
+from pincite_evals.graders.citation_overextension_llm_judge import CitationOverextensionLLMJudgeGrader
+from pincite_evals.graders.precedence_llm_judge import PrecedenceLLMJudgeGrader
 
 
 class FakeUsage:
@@ -81,6 +74,7 @@ def test_citation_fidelity_llm_judge_fails_hallucinated_label():
     assert result.passed is False
     assert result.details["blocked_count"] == 1
     assert fake_client.responses.last_request["model"] == "gpt-5.2"
+    assert fake_client.responses.last_request["service_tier"] == "priority"
     assert fake_client.responses.last_request["reasoning"] == {"effort": "none"}
     assert "temperature" in fake_client.responses.last_request
 

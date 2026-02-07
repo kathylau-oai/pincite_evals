@@ -1,12 +1,4 @@
-import sys
-from pathlib import Path
-
-# Allow running tests without installing the package
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "src"))
-
-from graders.expected_citation_presence import ExpectedCitationPresenceGrader
+from pincite_evals.graders.expected_citation_presence import ExpectedCitationPresenceGrader
 
 
 def test_expected_citation_presence_grader_perfect_match():

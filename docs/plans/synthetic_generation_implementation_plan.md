@@ -72,7 +72,6 @@ Required config keys:
 - `parallelism.mode_workers`
 - `parallelism.generation_workers`
 - `parallelism.validation_workers`
-- `parallelism.max_in_flight_requests`
 - `parallelism.max_retries`
 
 Generation count policy:
@@ -94,7 +93,7 @@ Parallel execution policy:
 - Run error modes in parallel (A/C/D independent workers).
 - Within each mode, run candidate generation requests concurrently up to configured `generation_workers`.
 - Run validation requests concurrently up to configured `validation_workers`.
-- Enforce backpressure with `max_in_flight_requests` and retry policy from `max_retries`.
+- Use retry policy from `max_retries`.
 
 ## 4) Phased implementation plan
 

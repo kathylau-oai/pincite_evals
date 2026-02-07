@@ -6,7 +6,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from threading import BoundedSemaphore
 from typing import Any, Callable, TypeVar
 
 import pandas as pd
@@ -1494,33 +1493,12 @@ class SyntheticGenerationPipeline:
 
         candidates_by_mode: dict[str, list[dict[str, Any]]] = {mode: [] for mode in per_mode_counts}
         metrics_rows: list[dict[str, Any]] = []
-        in_flight_limit = max(1, int(context.config.parallelism.max_in_flight_requests))
-        in_flight_semaphore = BoundedSemaphore(in_flight_limit)
 
         def generate_mode(mode_name: str) -> tuple[str, list[dict[str, Any]], list[dict[str, Any]]]:
             mode_candidates: list[dict[str, Any]] = []
             mode_metrics: list[dict[str, Any]] = []
             item_count = per_mode_counts[mode_name]
-            generation_worker_count = max(
-                1,
-                min(context.config.parallelism.generation_workers, item_count, in_flight_limit),
-            )
-
-            def _generate_with_backpressure(*, request_id: str, item_index: int) -> tuple[dict[str, Any] | None, dict[str, Any]]:
-                in_flight_semaphore.acquire()
-                try:
-                    return _generate_one_item(
-                        mode_name=mode_name,
-                        request_id=request_id,
-                        default_citation_token=default_citation_token,
-                        packet_corpus_text=packet_corpus_text,
-                        config=context.config,
-                        item_index=item_index,
-                        generation_traces_dir=context.run_paths.generation_traces_dir,
-                        openai_client=openai_client,
-                    )
-                finally:
-                    in_flight_semaphore.release()
+            generation_worker_count = max(1, min(context.config.parallelism.generation_workers, item_count))
 
             with ThreadPoolExecutor(max_workers=generation_worker_count) as item_pool:
                 futures: dict[Any, dict[str, Any]] = {}
@@ -1528,9 +1506,15 @@ class SyntheticGenerationPipeline:
                     request_id = f"req_{mode_name[:3]}_{item_index:04d}"
                     futures[
                         item_pool.submit(
-                            _generate_with_backpressure,
+                            _generate_one_item,
+                            mode_name=mode_name,
                             request_id=request_id,
+                            default_citation_token=default_citation_token,
+                            packet_corpus_text=packet_corpus_text,
+                            config=context.config,
                             item_index=item_index,
+                            generation_traces_dir=context.run_paths.generation_traces_dir,
+                            openai_client=openai_client,
                         )
                     ] = {"request_id": request_id, "item_index": item_index}
 
@@ -1649,29 +1633,18 @@ class SyntheticGenerationPipeline:
         metrics_rows: list[dict[str, Any]] = []
 
         if items_for_llm:
-            in_flight_limit = max(1, int(context.config.parallelism.max_in_flight_requests))
-            in_flight_semaphore = BoundedSemaphore(in_flight_limit)
-            validation_worker_count = max(
-                1,
-                min(context.config.parallelism.validation_workers, len(items_for_llm), in_flight_limit),
-            )
-
-            def _validate_with_backpressure(item_payload: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
-                in_flight_semaphore.acquire()
-                try:
-                    return _validate_one_item(
-                        config=context.config,
-                        item_payload=item_payload,
-                        packet_corpus_text=resolved_packet_inputs.packet_corpus_text,
-                        validation_traces_dir=context.run_paths.validation_traces_dir,
-                        openai_client=openai_client,
-                    )
-                finally:
-                    in_flight_semaphore.release()
+            validation_worker_count = max(1, min(context.config.parallelism.validation_workers, len(items_for_llm)))
 
             with ThreadPoolExecutor(max_workers=validation_worker_count) as pool:
                 futures = {
-                    pool.submit(_validate_with_backpressure, item): item
+                    pool.submit(
+                        _validate_one_item,
+                        config=context.config,
+                        item_payload=item,
+                        packet_corpus_text=resolved_packet_inputs.packet_corpus_text,
+                        validation_traces_dir=context.run_paths.validation_traces_dir,
+                        openai_client=openai_client,
+                    ): item
                     for item in items_for_llm
                 }
 

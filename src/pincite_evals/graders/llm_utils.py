@@ -14,6 +14,7 @@ class LLMJudgeConfig:
     model: str = "gpt-5.2"
     reasoning_effort: str = "none"
     temperature: float = 0.0
+    service_tier: str = "priority"
 
 
 def load_prompt_template(file_name: str) -> str:
@@ -48,6 +49,7 @@ def call_llm_judge(
 ) -> Dict[str, Any]:
     request: Dict[str, Any] = {
         "model": config.model,
+        "service_tier": config.service_tier,
         "input": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},

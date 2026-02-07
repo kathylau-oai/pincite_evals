@@ -1,14 +1,9 @@
-import sys
 from pathlib import Path
 
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "src"))
-
-from pincite_evals.synthetic_generation.config import load_config  # noqa: E402
-from pincite_evals.synthetic_generation.pipeline import SyntheticGenerationPipeline  # noqa: E402
+from pincite_evals.synthetic_generation.config import load_config
+from pincite_evals.synthetic_generation.pipeline import SyntheticGenerationPipeline
 
 
 def test_pipeline_e2e_333_dry_run(tmp_path):

@@ -24,7 +24,6 @@ class ParallelismConfig:
     mode_workers: int
     generation_workers: int
     validation_workers: int
-    max_in_flight_requests: int
     max_retries: int
 
 
@@ -82,7 +81,6 @@ DEFAULT_CONFIG = {
         "mode_workers": 3,
         "generation_workers": 32,
         "validation_workers": 32,
-        "max_in_flight_requests": 64,
         "max_retries": 4,
     },
     "request_timeout_seconds": 900.0,
@@ -202,7 +200,6 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
         mode_workers=int(merged["parallelism"]["mode_workers"]),
         generation_workers=int(merged["parallelism"]["generation_workers"]),
         validation_workers=int(merged["parallelism"]["validation_workers"]),
-        max_in_flight_requests=int(merged["parallelism"]["max_in_flight_requests"]),
         max_retries=int(merged["parallelism"]["max_retries"]),
     )
 
@@ -212,8 +209,6 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
         or parallelism.validation_workers <= 0
     ):
         raise ValueError("parallelism worker counts must be > 0.")
-    if parallelism.max_in_flight_requests <= 0:
-        raise ValueError("parallelism.max_in_flight_requests must be > 0.")
     if parallelism.max_retries <= 0:
         raise ValueError("parallelism.max_retries must be > 0.")
 

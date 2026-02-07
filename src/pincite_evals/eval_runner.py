@@ -2,7 +2,6 @@ import argparse
 import ast
 import json
 import re
-import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict, dataclass
@@ -23,25 +22,13 @@ from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_ex
 from tqdm import tqdm
 
 from pincite_evals.citations import extract_excerpt_citations
+from pincite_evals.graders import (
+    CitationFidelityLLMJudgeGrader,
+    CitationOverextensionLLMJudgeGrader,
+    ExpectedCitationPresenceGrader,
+    PrecedenceLLMJudgeGrader,
+)
 from pincite_evals.synthetic_generation.schema import normalize_citation_token
-
-try:
-    from graders import (
-        CitationFidelityLLMJudgeGrader,
-        CitationOverextensionLLMJudgeGrader,
-        ExpectedCitationPresenceGrader,
-        PrecedenceLLMJudgeGrader,
-    )
-except ModuleNotFoundError:
-    # Allow running via installed console script where repo root is not already on sys.path.
-    repo_root = Path(__file__).resolve().parents[2]
-    sys.path.insert(0, str(repo_root))
-    from graders import (
-        CitationFidelityLLMJudgeGrader,
-        CitationOverextensionLLMJudgeGrader,
-        ExpectedCitationPresenceGrader,
-        PrecedenceLLMJudgeGrader,
-    )
 
 
 REQUIRED_SYNTHETIC_BASE_COLUMNS = [
@@ -53,6 +40,8 @@ REQUIRED_SYNTHETIC_BASE_COLUMNS = [
     "scenario_facts",
     "grading_contract",
 ]
+USER_QUERY_COLUMN = "user_query"
+PRIORITY_SERVICE_TIER = "priority"
 
 BLOCK_PATTERN = re.compile(
     r'<BLOCK id="(?P<block_id>DOC\d{3}\.P\d{3}\.B\d{2})">\s*(?P<block_text>.*?)\s*</BLOCK>',
@@ -111,13 +100,6 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--experiment-name", default="template_eval", help="Name used when auto-generating run IDs.")
 
     parser.add_argument("--id-column", default="item_id", help="CSV column for unique item IDs.")
-    parser.add_argument(
-        "--user-query-column",
-        "--prompt-column",
-        dest="prompt_column",
-        default="user_query",
-        help="CSV column that contains the drafting user query.",
-    )
     parser.add_argument(
         "--expected-output-column",
         default="expected_output",
@@ -384,6 +366,7 @@ def _build_input_profile(dataset: pd.DataFrame, id_column: str, prompt_column: s
 def _build_response_request(model_config: ModelConfig, prompt_text: str) -> Dict[str, Any]:
     request: Dict[str, Any] = {
         "model": model_config.model,
+        "service_tier": PRIORITY_SERVICE_TIER,
         "input": [
             {"role": "system", "content": model_config.system_prompt},
             {"role": "user", "content": prompt_text},
@@ -633,18 +616,12 @@ def _prepare_dataset(args: argparse.Namespace) -> pd.DataFrame:
 
     dataset = pd.concat(dataset_frames, ignore_index=True)
 
-    prompt_column_name = str(args_dict.get("prompt_column", args_dict.get("user_query_column", "user_query")))
+    prompt_column_name = USER_QUERY_COLUMN
     id_column_name = str(args_dict.get("id_column", "item_id"))
     expected_output_column_name = str(args_dict.get("expected_output_column", "expected_output"))
 
-    if prompt_column_name not in dataset.columns and "prompt" in dataset.columns:
-        dataset[prompt_column_name] = dataset["prompt"]
-
     if prompt_column_name not in dataset.columns:
         raise ValueError(f"User query column '{prompt_column_name}' does not exist in the input dataset.")
-
-    if "user_query" not in dataset.columns:
-        dataset["user_query"] = dataset[prompt_column_name]
 
     if id_column_name not in dataset.columns:
         dataset[id_column_name] = [f"row_{index}" for index in range(dataset.shape[0])]
@@ -655,7 +632,6 @@ def _prepare_dataset(args: argparse.Namespace) -> pd.DataFrame:
     dataset = dataset.copy()
     dataset[id_column_name] = dataset[id_column_name].astype(str)
     dataset[prompt_column_name] = dataset[prompt_column_name].fillna("").astype(str)
-    dataset["user_query"] = dataset["user_query"].fillna("").astype(str)
 
     if "packet_id" not in dataset.columns:
         dataset["packet_id"] = ""
@@ -687,13 +663,13 @@ def _prepare_dataset(args: argparse.Namespace) -> pd.DataFrame:
     return dataset
 
 
-def _validate_required_synthetic_columns(dataset: pd.DataFrame, prompt_column: str) -> None:
+def _validate_required_synthetic_columns(dataset: pd.DataFrame) -> None:
     missing_columns = [column_name for column_name in REQUIRED_SYNTHETIC_BASE_COLUMNS if column_name not in dataset.columns]
     if missing_columns:
         raise ValueError(f"Synthetic dataset missing required columns: {', '.join(missing_columns)}")
 
-    if prompt_column not in dataset.columns:
-        raise ValueError(f"Synthetic dataset is missing user query column '{prompt_column}'.")
+    if USER_QUERY_COLUMN not in dataset.columns:
+        raise ValueError(f"Synthetic dataset is missing user query column '{USER_QUERY_COLUMN}'.")
 
 
 
@@ -1005,7 +981,7 @@ def _evaluate_model_config(
                 model_config=model_config,
                 call_model=call_model,
                 raw_response_dir=raw_response_dir,
-                prompt_column=args.prompt_column,
+                prompt_column=USER_QUERY_COLUMN,
                 id_column=args.id_column,
                 expected_output_column=args.expected_output_column,
                 dry_run=args.dry_run,
@@ -1620,6 +1596,7 @@ def _save_run_configuration(
             "grader_model": args.grader_model,
             "grader_reasoning_effort": args.grader_reasoning_effort,
             "grader_temperature": args.grader_temperature,
+            "service_tier": PRIORITY_SERVICE_TIER,
         },
     }
     (run_dir / "run_config.json").write_text(json.dumps(config_payload, indent=2), encoding="utf-8")
@@ -1645,7 +1622,7 @@ def main() -> None:
     model_worker_count = min(max(1, args.max_model_workers), max(1, len(model_configs)))
 
     dataset = _prepare_dataset(args)
-    _validate_required_synthetic_columns(dataset, args.prompt_column)
+    _validate_required_synthetic_columns(dataset)
 
     run_id = _build_run_id(args)
     run_dir = Path(args.output_root) / run_id
@@ -1654,7 +1631,7 @@ def main() -> None:
     input_summary_frame, input_column_profile_frame = _build_input_profile(
         dataset,
         id_column=args.id_column,
-        prompt_column=args.prompt_column,
+        prompt_column=USER_QUERY_COLUMN,
     )
     input_summary_frame.to_csv(run_dir / "input_summary.csv", index=False)
     input_column_profile_frame.to_csv(run_dir / "input_column_profile.csv", index=False)

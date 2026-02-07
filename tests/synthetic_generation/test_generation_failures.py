@@ -1,16 +1,11 @@
-import sys
 from pathlib import Path
 
 import pytest
 from pydantic import ValidationError
 
-ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "src"))
-
-from pincite_evals.synthetic_generation.config import load_config  # noqa: E402
-from pincite_evals.synthetic_generation.pipeline import _generate_one_item, _load_mode_prompts, _load_verifier_prompts  # noqa: E402
-from pincite_evals.synthetic_generation.structured_outputs import GeneratedSyntheticItemOutput  # noqa: E402
+from pincite_evals.synthetic_generation.config import load_config
+from pincite_evals.synthetic_generation.pipeline import _generate_one_item, _load_mode_prompts, _load_verifier_prompts
+from pincite_evals.synthetic_generation.structured_outputs import GeneratedSyntheticItemOutput
 
 
 def _make_config(tmp_path: Path):
@@ -29,7 +24,7 @@ parallelism:
     return load_config(config_path)
 
 
-def test_load_config_rejects_non_positive_backpressure_limit(tmp_path):
+def test_load_config_rejects_non_positive_max_retries(tmp_path):
     config_path = tmp_path / "config.yaml"
     config_path.write_text(
         f"""
@@ -38,12 +33,12 @@ output_root: {(tmp_path / 'results').as_posix()}
 dataset_root: {(tmp_path / 'datasets').as_posix()}
 dry_run: false
 parallelism:
-  max_in_flight_requests: 0
+  max_retries: 0
 """.strip(),
         encoding="utf-8",
     )
 
-    with pytest.raises(ValueError, match="parallelism.max_in_flight_requests must be > 0"):
+    with pytest.raises(ValueError, match="parallelism.max_retries must be > 0"):
         load_config(config_path)
 
 
