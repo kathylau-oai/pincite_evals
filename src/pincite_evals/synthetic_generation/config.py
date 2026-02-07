@@ -212,6 +212,10 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
         or parallelism.validation_workers <= 0
     ):
         raise ValueError("parallelism worker counts must be > 0.")
+    if parallelism.max_in_flight_requests <= 0:
+        raise ValueError("parallelism.max_in_flight_requests must be > 0.")
+    if parallelism.max_retries <= 0:
+        raise ValueError("parallelism.max_retries must be > 0.")
 
     as_of_date_value = str(merged.get("as_of_date", date.today().isoformat())).strip()
 

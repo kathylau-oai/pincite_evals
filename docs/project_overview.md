@@ -40,7 +40,7 @@ We use a mixed grading stack:
 
 This combination gives high precision on objective checks and flexibility on nuanced legal reasoning checks.
 
-Check [graders.md](http://graders.md) to get a better sense.
+Check `docs/grading.md` for grading details.
 
 ## How data is created
 

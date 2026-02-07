@@ -13,16 +13,16 @@ The planned evaluation targets four core failure modes:
 
 ```
 ├─ data/
-│  ├─ packets/                 # closed-world case law packets + metadata
+│  ├─ case_law_packets/        # closed-world case law packets + metadata
 │  ├─ datasets/                # JSONL drafting tasks tied to packets
-│  └─ prompts/                 # prompt templates and system instructions
+│  └─ deep_research_prompts/   # packet-curation prompt assets
 ├─ docs/
 │  ├─ project_overview.md      # core goals, scope, and eval strategy
 │  ├─ packet_design.md
 │  ├─ data_schema.md           # placeholder until SME confirmation
 │  └─ grading.md               # early guidance; subject to change
 ├─ graders/                    # grader implementations + interfaces
-├─ src/pincite_evals/          # library code
+├─ src/pincite_evals/          # library code + synthetic generation pipeline
 └─ tests/
 ```
 
@@ -82,6 +82,27 @@ The runner writes all outputs under `results/<experiment_name>_<timestamp>/`, in
 - `latency_metrics.csv`
 - `token_metrics.csv`
 - `raw_responses/` (per-item raw API payloads for auditability)
+
+### Synthetic Generation Pipeline
+
+Run packet-level synthetic generation (modes `A/C/D`) via the package CLI:
+
+```bash
+uv run pincite-synth run-all --config path/to/config.yaml --run-id my_run
+```
+
+Run artifacts are written under:
+
+- `results/synthetic_generation/<packet_id>/<run_id>/`
+
+Key outputs include:
+
+- `summary/stage_metrics_summary.csv`
+- `summary/datapoint_timings.csv`
+- `validation/llm_consensus_reviews.csv`
+- `validation/validation_datapoints.csv`
+- `selection/selected_items.jsonl`
+- canonical dataset export in `data/datasets/<packet_id>/synthetic_items.{jsonl,csv}`
 
 ## Disclaimer
 
