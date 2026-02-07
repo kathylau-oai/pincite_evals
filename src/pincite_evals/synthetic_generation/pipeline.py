@@ -6,7 +6,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, TypeVar
+from threading import BoundedSemaphore
+from typing import Any, Callable, TypeVar
 
 import pandas as pd
 from openai import (
@@ -18,7 +19,7 @@ from openai import (
     RateLimitError,
 )
 from pydantic import BaseModel, ValidationError
-from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
+from tenacity import Retrying, retry_if_exception_type, stop_after_attempt, wait_exponential
 
 from .config import SyntheticGenerationConfig
 from .schema import (
@@ -43,6 +44,13 @@ ANNOTATED_CITATION_TOKEN_PATTERN = re.compile(
     r"<BLOCK\s+id=['\"](DOC\d{3}\.P\d{3}\.B\d{2})['\"]\s*>|\[CITE_START:(DOC\d{3}\[P\d{3}\.B\d{2}\]|DOC\d{3}\.P\d{3}\.B\d{2})\]"
 )
 ParsedModelType = TypeVar("ParsedModelType", bound=BaseModel)
+RetryableResultType = TypeVar("RetryableResultType")
+RETRIABLE_OPENAI_EXCEPTIONS = (
+    APIConnectionError,
+    APITimeoutError,
+    InternalServerError,
+    RateLimitError,
+)
 REALISTIC_LAWYER_QUERY_EXAMPLES = (
     "Need a quick memo for the partner: can we remove this case to federal court under CAFA? Facts: [brief facts].",
     "Can you draft a short memo on our best Rule 12(b)(6) arguments in the Ninth Circuit for this complaint?",
@@ -140,6 +148,18 @@ class SelectionResult:
     selected_items: list[dict[str, Any]]
     selection_table: pd.DataFrame
     selection_report_markdown: str
+
+
+class MissingParsedStructuredOutputError(RuntimeError):
+    """Raised when a structured-output response is missing output_parsed."""
+
+
+class InvalidGeneratedCandidateError(RuntimeError):
+    """Raised when a generated candidate fails schema normalization/validation."""
+
+
+class MissingVerifierStructuredOutputError(RuntimeError):
+    """Raised when verifier output is present but fails to parse into schema."""
 
 
 def _compute_distribution_stats(values: pd.Series, prefix: str) -> dict[str, Any]:
@@ -352,7 +372,7 @@ def _build_validation_datapoints_table(
         }
     )
     metrics_export_df = metrics_export_df.reindex(
-        [
+        columns=[
             "item_id",
             "validation_request_status",
             "validation_verdict_from_metrics",
@@ -707,13 +727,26 @@ def _build_generation_request(
     return request
 
 
-@retry(
-    retry=retry_if_exception_type((APIConnectionError, APITimeoutError, InternalServerError, RateLimitError)),
-    wait=wait_exponential(multiplier=1, min=1, max=20),
-    stop=stop_after_attempt(4),
-)
 def _call_openai_parse(client: OpenAI, request: dict[str, Any], text_format: type[ParsedModelType]) -> Any:
     return client.responses.parse(text_format=text_format, **request)
+
+
+def _run_with_retries(
+    *,
+    call_fn: Callable[[], RetryableResultType],
+    max_attempts: int,
+    retryable_exceptions: tuple[type[Exception], ...],
+) -> RetryableResultType:
+    retrying = Retrying(
+        reraise=True,
+        stop=stop_after_attempt(max_attempts),
+        wait=wait_exponential(multiplier=1, min=1, max=20),
+        retry=retry_if_exception_type(retryable_exceptions),
+    )
+    for attempt in retrying:
+        with attempt:
+            return call_fn()
+    raise RuntimeError("Retry loop exited unexpectedly without returning.")
 
 
 def _normalize_generated_item(
@@ -978,22 +1011,21 @@ def _generate_one_item(
     max_attempts = max(1, int(config.parallelism.max_retries))
     last_generation_status = "generation_failed_unknown"
     last_usage = None
+    parse_attempt_index = 0
 
-    for attempt_index in range(1, max_attempts + 1):
-        try:
-            response = _call_openai_parse(openai_client, request, GeneratedSyntheticItemOutput)
-        except ValidationError:
-            last_generation_status = "invalid_structured_output"
-            continue
+    def _attempt_generation() -> tuple[dict[str, Any], Any]:
+        nonlocal last_usage, parse_attempt_index
+        parse_attempt_index += 1
 
+        response = _call_openai_parse(openai_client, request, GeneratedSyntheticItemOutput)
         last_usage = response.usage
-        trace_path = generation_traces_dir / f"{mode_name}_{request_id}_attempt{attempt_index}.json"
+
+        trace_path = generation_traces_dir / f"{mode_name}_{request_id}_attempt{parse_attempt_index}.json"
         trace_path.parent.mkdir(parents=True, exist_ok=True)
         trace_path.write_text(response.model_dump_json(indent=2), encoding="utf-8")
 
         if response.output_parsed is None:
-            last_generation_status = "missing_parsed_structured_output"
-            continue
+            raise MissingParsedStructuredOutputError("Generated response did not include output_parsed.")
 
         parsed_candidate = response.output_parsed.model_dump(mode="python", exclude_none=True)
         try:
@@ -1005,12 +1037,33 @@ def _generate_one_item(
                 as_of_date=config.as_of_date,
             )
             validated_candidate = SyntheticItem.model_validate(normalized_candidate).model_dump()
-        except (ValueError, ValidationError):
-            last_generation_status = "invalid_generated_candidate"
-            continue
+        except (ValueError, ValidationError) as error:
+            raise InvalidGeneratedCandidateError("Generated candidate failed normalization/validation.") from error
 
         validated_candidate["item_id"] = item_id
         validated_candidate["query_id"] = query_id
+        return validated_candidate, response
+
+    try:
+        validated_candidate, response = _run_with_retries(
+            call_fn=_attempt_generation,
+            max_attempts=max_attempts,
+            retryable_exceptions=RETRIABLE_OPENAI_EXCEPTIONS
+            + (
+                ValidationError,
+                MissingParsedStructuredOutputError,
+                InvalidGeneratedCandidateError,
+            ),
+        )
+    except ValidationError:
+        last_generation_status = "invalid_structured_output"
+    except MissingParsedStructuredOutputError:
+        last_generation_status = "missing_parsed_structured_output"
+    except InvalidGeneratedCandidateError:
+        last_generation_status = "invalid_generated_candidate"
+    except RETRIABLE_OPENAI_EXCEPTIONS as error:
+        last_generation_status = f"error_{type(error).__name__}"
+    else:
         latency = time.perf_counter() - start_time
         return validated_candidate, {
             "stage": "generation",
@@ -1161,42 +1214,90 @@ def _validate_one_item(
         raise ValueError("OpenAI client is required when dry_run is false.")
 
     request = _build_validation_request(config, item_payload, packet_corpus_text)
-    try:
+    max_attempts = max(1, int(config.parallelism.max_retries))
+    last_usage = None
+
+    def _attempt_validation() -> Any:
+        nonlocal last_usage
         response = _call_openai_parse(openai_client, request, VerifierOutput)
+        last_usage = response.usage
+        if response.output_parsed is None:
+            raise MissingVerifierStructuredOutputError("Verifier response did not include output_parsed.")
+        return response
+
+    try:
+        response = _run_with_retries(
+            call_fn=_attempt_validation,
+            max_attempts=max_attempts,
+            retryable_exceptions=RETRIABLE_OPENAI_EXCEPTIONS + (ValidationError, MissingVerifierStructuredOutputError),
+        )
     except ValidationError:
         latency = time.perf_counter() - start_time
         return {
             "item_id": item_payload["item_id"],
             "verdict": "fail",
-            "reason": "Verifier response failed structured-output parsing.",
+            "reason": "Verifier response failed structured-output parsing after retries.",
             "risk_flags": ["invalid_verifier_output"],
             "suggested_fix": "Ensure verifier returns strict JSON object matching schema.",
             "full_response": {"parse_error": True},
         }, {
             "stage": "validation",
             "item_id": item_payload["item_id"],
-            "status": "invalid_structured_output",
+            "status": f"invalid_structured_output_after_{max_attempts}_attempts",
             "verdict": "fail",
             "latency_seconds": latency,
-            "input_tokens": None,
-            "output_tokens": None,
-            "reasoning_tokens": None,
-            "total_tokens": None,
+            "input_tokens": last_usage.input_tokens if last_usage else None,
+            "output_tokens": last_usage.output_tokens if last_usage else None,
+            "reasoning_tokens": _extract_reasoning_tokens(last_usage),
+            "total_tokens": last_usage.total_tokens if last_usage else None,
+        }
+    except MissingVerifierStructuredOutputError:
+        latency = time.perf_counter() - start_time
+        return {
+            "item_id": item_payload["item_id"],
+            "verdict": "fail",
+            "reason": "Verifier response was missing parsed structured output after retries.",
+            "risk_flags": ["invalid_verifier_output"],
+            "suggested_fix": "Ensure verifier returns strict JSON object matching schema.",
+            "full_response": {"missing_parsed_output": True},
+        }, {
+            "stage": "validation",
+            "item_id": item_payload["item_id"],
+            "status": f"missing_parsed_structured_output_after_{max_attempts}_attempts",
+            "verdict": "fail",
+            "latency_seconds": latency,
+            "input_tokens": last_usage.input_tokens if last_usage else None,
+            "output_tokens": last_usage.output_tokens if last_usage else None,
+            "reasoning_tokens": _extract_reasoning_tokens(last_usage),
+            "total_tokens": last_usage.total_tokens if last_usage else None,
+        }
+    except RETRIABLE_OPENAI_EXCEPTIONS as error:
+        latency = time.perf_counter() - start_time
+        error_name = type(error).__name__
+        return {
+            "item_id": item_payload["item_id"],
+            "verdict": "fail",
+            "reason": f"Verifier request failed after retries due to {error_name}.",
+            "risk_flags": ["verifier_request_failed"],
+            "suggested_fix": "Retry the run or reduce concurrency; inspect request traces for repeated API failures.",
+            "full_response": {"request_error_type": error_name},
+        }, {
+            "stage": "validation",
+            "item_id": item_payload["item_id"],
+            "status": f"verifier_request_failed_after_{max_attempts}_attempts:{error_name}",
+            "verdict": "fail",
+            "latency_seconds": latency,
+            "input_tokens": last_usage.input_tokens if last_usage else None,
+            "output_tokens": last_usage.output_tokens if last_usage else None,
+            "reasoning_tokens": _extract_reasoning_tokens(last_usage),
+            "total_tokens": last_usage.total_tokens if last_usage else None,
         }
 
     latency = time.perf_counter() - start_time
 
     parsed_output = response.output_parsed
-    if parsed_output is None:
-        verdict = "fail"
-        parsed_review = {
-            "reason": "Verifier response was not valid JSON.",
-            "risk_flags": ["invalid_verifier_output"],
-            "suggested_fix": "Ensure verifier returns strict JSON object.",
-        }
-    else:
-        parsed_review = parsed_output.model_dump(mode="python")
-        verdict = parsed_output.verdict
+    parsed_review = parsed_output.model_dump(mode="python")
+    verdict = parsed_output.verdict
 
     review = {
         "item_id": item_payload["item_id"],
@@ -1393,26 +1494,43 @@ class SyntheticGenerationPipeline:
 
         candidates_by_mode: dict[str, list[dict[str, Any]]] = {mode: [] for mode in per_mode_counts}
         metrics_rows: list[dict[str, Any]] = []
+        in_flight_limit = max(1, int(context.config.parallelism.max_in_flight_requests))
+        in_flight_semaphore = BoundedSemaphore(in_flight_limit)
 
         def generate_mode(mode_name: str) -> tuple[str, list[dict[str, Any]], list[dict[str, Any]]]:
             mode_candidates: list[dict[str, Any]] = []
             mode_metrics: list[dict[str, Any]] = []
             item_count = per_mode_counts[mode_name]
-            with ThreadPoolExecutor(max_workers=min(context.config.parallelism.generation_workers, item_count)) as item_pool:
+            generation_worker_count = max(
+                1,
+                min(context.config.parallelism.generation_workers, item_count, in_flight_limit),
+            )
+
+            def _generate_with_backpressure(*, request_id: str, item_index: int) -> tuple[dict[str, Any] | None, dict[str, Any]]:
+                in_flight_semaphore.acquire()
+                try:
+                    return _generate_one_item(
+                        mode_name=mode_name,
+                        request_id=request_id,
+                        default_citation_token=default_citation_token,
+                        packet_corpus_text=packet_corpus_text,
+                        config=context.config,
+                        item_index=item_index,
+                        generation_traces_dir=context.run_paths.generation_traces_dir,
+                        openai_client=openai_client,
+                    )
+                finally:
+                    in_flight_semaphore.release()
+
+            with ThreadPoolExecutor(max_workers=generation_worker_count) as item_pool:
                 futures: dict[Any, dict[str, Any]] = {}
                 for item_index in range(1, item_count + 1):
                     request_id = f"req_{mode_name[:3]}_{item_index:04d}"
                     futures[
                         item_pool.submit(
-                            _generate_one_item,
-                            mode_name=mode_name,
+                            _generate_with_backpressure,
                             request_id=request_id,
-                            default_citation_token=default_citation_token,
-                            packet_corpus_text=packet_corpus_text,
-                            config=context.config,
                             item_index=item_index,
-                            generation_traces_dir=context.run_paths.generation_traces_dir,
-                            openai_client=openai_client,
                         )
                     ] = {"request_id": request_id, "item_index": item_index}
 
@@ -1483,11 +1601,32 @@ class SyntheticGenerationPipeline:
         rejection_rows: list[dict[str, Any]] = []
         items_for_llm: list[dict[str, Any]] = []
 
-        for item in candidates:
-            deterministic_pass, reasons, details = _deterministic_validation(item, citation_universe)
+        for item_index, item in enumerate(candidates, start=1):
+            item_id = str(item.get("item_id", "")).strip() or f"unknown_item_{item_index:04d}"
+            try:
+                deterministic_pass, reasons, details = _deterministic_validation(item, citation_universe)
+            except (ValidationError, ValueError, TypeError) as error:
+                deterministic_rows.append(
+                    {
+                        "item_id": item_id,
+                        "deterministic_pass": False,
+                        "reason_codes": "invalid_item_payload",
+                        "expected_citation_count": None,
+                        "criteria_checks_passed": False,
+                    }
+                )
+                rejection_rows.append(
+                    {
+                        "item_id": item_id,
+                        "rejection_stage": "deterministic",
+                        "rejection_reason": f"invalid_item_payload:{type(error).__name__}",
+                    }
+                )
+                continue
+
             deterministic_rows.append(
                 {
-                    "item_id": item["item_id"],
+                    "item_id": item_id,
                     "deterministic_pass": deterministic_pass,
                     "reason_codes": "|".join(reasons),
                     "expected_citation_count": details["expected_citation_count"],
@@ -1499,7 +1638,7 @@ class SyntheticGenerationPipeline:
             else:
                 rejection_rows.append(
                     {
-                        "item_id": item["item_id"],
+                        "item_id": item_id,
                         "rejection_stage": "deterministic",
                         "rejection_reason": "|".join(reasons),
                     }
@@ -1510,16 +1649,29 @@ class SyntheticGenerationPipeline:
         metrics_rows: list[dict[str, Any]] = []
 
         if items_for_llm:
-            with ThreadPoolExecutor(max_workers=min(context.config.parallelism.validation_workers, len(items_for_llm))) as pool:
-                futures = {
-                    pool.submit(
-                        _validate_one_item,
+            in_flight_limit = max(1, int(context.config.parallelism.max_in_flight_requests))
+            in_flight_semaphore = BoundedSemaphore(in_flight_limit)
+            validation_worker_count = max(
+                1,
+                min(context.config.parallelism.validation_workers, len(items_for_llm), in_flight_limit),
+            )
+
+            def _validate_with_backpressure(item_payload: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
+                in_flight_semaphore.acquire()
+                try:
+                    return _validate_one_item(
                         config=context.config,
-                        item_payload=item,
+                        item_payload=item_payload,
                         packet_corpus_text=resolved_packet_inputs.packet_corpus_text,
                         validation_traces_dir=context.run_paths.validation_traces_dir,
                         openai_client=openai_client,
-                    ): item
+                    )
+                finally:
+                    in_flight_semaphore.release()
+
+            with ThreadPoolExecutor(max_workers=validation_worker_count) as pool:
+                futures = {
+                    pool.submit(_validate_with_backpressure, item): item
                     for item in items_for_llm
                 }
 
