@@ -128,6 +128,10 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
   - **Fix**: Standardize module/CLI naming on `eval_runner` and `pincite-eval`.
   - **Why**: Keeps entrypoints obvious and reduces maintenance overhead.
 
+- **Root-level `graders/` package created split ownership and import ambiguity**
+  - **Fix**: Move graders into `src/pincite_evals/graders` and import via `pincite_evals.graders`.
+  - **Why**: Keeps all runtime code under one package tree and avoids path-dependent behavior.
+
 ### Reliability and correctness in structured outputs / grading contracts
 
 - **`client.responses.parse(...)` can raise local `ValidationError` on truncated/malformed structured output**
@@ -147,3 +151,9 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
 - **Needed TTFT and inter-token latency from Responses API calls**
   - **Fix**: Use `client.responses.stream(...)`, timestamp `response.output_text.delta` events, and finalize with `stream.get_final_response()` for status/usage.
   - **Why**: Captures latency distributions and token usage (including reasoning tokens) from one request path.
+
+### Prompt templating
+
+- **String `.replace(...)` prompt injection drifted as templates grew**
+  - **Fix**: Centralize prompt rendering with Jinja (`Environment(undefined=StrictUndefined)`) and migrate prompt files to explicit Jinja variables.
+  - **Why**: Missing placeholders now fail fast, prompt loading is consistent across pipelines, and template changes are safer to refactor.

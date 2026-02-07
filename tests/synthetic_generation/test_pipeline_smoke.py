@@ -18,10 +18,6 @@ generate_count:
   overextension: 2
   precedence: 2
   fake_citations: 2
-final_keep_count:
-  overextension: 1
-  precedence: 1
-  fake_citations: 1
 """.strip(),
         encoding="utf-8",
     )
@@ -36,7 +32,7 @@ final_keep_count:
     assert summary["generated_counts"]["overextension"] == 2
     assert summary["generated_counts"]["precedence"] == 2
     assert summary["generated_counts"]["fake_citations"] == 2
-    assert summary["selected_items"] == 3
+    assert summary["selected_items"] == 6
     assert Path(summary["dataset_dir"]).exists()
 
     run_root = Path(summary["run_root"])
@@ -64,10 +60,6 @@ output_root: {(tmp_path / 'results').as_posix()}
 dataset_root: {(tmp_path / 'datasets').as_posix()}
 dry_run: true
 generate_count:
-  overextension: 1
-  precedence: 1
-  fake_citations: 1
-final_keep_count:
   overextension: 1
   precedence: 1
   fake_citations: 1

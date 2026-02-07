@@ -20,6 +20,8 @@ from openai import (
 from pydantic import BaseModel, ValidationError
 from tenacity import Retrying, retry_if_exception_type, stop_after_attempt, wait_exponential
 
+from pincite_evals.prompt_templates import load_template_text, render_template_text
+
 from .config import SyntheticGenerationConfig
 from .schema import (
     SyntheticItem,
@@ -460,17 +462,11 @@ def _json_safe(value: Any) -> Any:
 
 
 def _load_prompt_template(prompt_relative_path: str) -> str:
-    prompt_path = PROMPTS_ROOT / prompt_relative_path
-    if not prompt_path.exists():
-        raise ValueError(f"Prompt template not found: {prompt_path}")
-    return prompt_path.read_text(encoding="utf-8").strip()
+    return load_template_text(PROMPTS_ROOT / prompt_relative_path)
 
 
-def _render_prompt_template(prompt_text: str, replacements: dict[str, str]) -> str:
-    rendered_prompt = prompt_text
-    for token_name, token_value in replacements.items():
-        rendered_prompt = rendered_prompt.replace(token_name, token_value)
-    return rendered_prompt
+def _render_prompt_template(prompt_text: str, template_variables: dict[str, Any]) -> str:
+    return render_template_text(prompt_text, template_variables)
 
 
 def _load_mode_prompts(
@@ -481,15 +477,15 @@ def _load_mode_prompts(
     packet_corpus_text: str,
 ) -> tuple[str, str]:
     lawyer_query_style_guide = _build_realistic_lawyer_query_style_guide()
-    replacements = {
-        "__PACKET_ID__": packet_id,
-        "__AS_OF_DATE__": as_of_date,
-        "__ITEM_INDEX__": str(item_index),
-        "__PACKET_CORPUS__": packet_corpus_text,
-        "__LAWYER_QUERY_STYLE_GUIDE__": lawyer_query_style_guide,
+    template_variables = {
+        "packet_id": packet_id,
+        "as_of_date": as_of_date,
+        "item_index": str(item_index),
+        "packet_corpus": packet_corpus_text,
+        "lawyer_query_style_guide": lawyer_query_style_guide,
     }
-    system_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/system.txt"), replacements)
-    user_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/user.txt"), replacements)
+    system_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/system.txt"), template_variables)
+    user_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/user.txt"), template_variables)
     if lawyer_query_style_guide not in user_prompt:
         user_prompt = f"{user_prompt}\n\n{lawyer_query_style_guide}"
     return system_prompt, user_prompt
@@ -501,8 +497,8 @@ def _load_verifier_prompts(item_payload: dict[str, Any], packet_corpus_text: str
     user_prompt = _render_prompt_template(
         _load_prompt_template("verifier/user.txt"),
         {
-            "__ITEM_JSON__": json.dumps(verifier_item_payload, ensure_ascii=True),
-            "__PACKET_CORPUS__": packet_corpus_text,
+            "item_json": json.dumps(verifier_item_payload, ensure_ascii=True),
+            "packet_corpus": packet_corpus_text,
         },
     )
     return system_prompt, user_prompt
@@ -1326,98 +1322,6 @@ def _validate_one_item(
     return review, metrics
 
 
-def _quality_score(item_payload: dict[str, Any]) -> float:
-    user_query_score = min(len(_extract_user_query(item_payload).split()), 200) / 200.0
-    fact_score = min(len(item_payload.get("scenario_facts", [])), 5) / 5.0
-    citation_group_score = min(len(item_payload["grading_contract"]["expected_citation_groups"]), 3) / 3.0
-    return user_query_score + fact_score + citation_group_score
-
-
-def _trap_signature(prompt_text: str) -> str:
-    words = [word.strip(".,;:()[]{}").lower() for word in prompt_text.split()]
-    return " ".join(words[:14])
-
-
-def _primary_doc_id(item_payload: dict[str, Any]) -> str:
-    grading_contract = item_payload.get("grading_contract", {})
-    expected_citation_groups = grading_contract.get("expected_citation_groups", [])
-    if not isinstance(expected_citation_groups, list) or not expected_citation_groups:
-        return "NONE"
-
-    first_group = expected_citation_groups[0]
-    if not isinstance(first_group, list) or not first_group:
-        return "NONE"
-
-    first_citation = str(first_group[0]).strip()
-    if not first_citation:
-        return "NONE"
-
-    try:
-        return extract_doc_id_from_citation_token(first_citation)
-    except ValueError:
-        return first_citation.split("[")[0].split(".")[0]
-
-
-def build_items_for_selection(
-    accepted_items: list[dict[str, Any]],
-    deterministic_pass_items: list[dict[str, Any]],
-) -> list[dict[str, Any]]:
-    required_modes = {"overextension", "precedence", "fake_citations"}
-    selected_items = list(accepted_items)
-    selected_item_ids = {item["item_id"] for item in selected_items}
-    selected_modes = {ERROR_TO_MODE[item["target_error_mode"]] for item in selected_items}
-
-    missing_modes = required_modes - selected_modes
-    if not missing_modes:
-        return selected_items
-
-    for item in deterministic_pass_items:
-        mode_name = ERROR_TO_MODE[item["target_error_mode"]]
-        if mode_name not in missing_modes:
-            continue
-        if item["item_id"] in selected_item_ids:
-            continue
-        selected_items.append(item)
-        selected_item_ids.add(item["item_id"])
-        selected_modes.add(mode_name)
-        missing_modes = required_modes - selected_modes
-        if not missing_modes:
-            break
-
-    return selected_items
-
-
-def _select_mode_items(mode_rows: pd.DataFrame, keep_count: int) -> list[dict[str, Any]]:
-    selected: list[dict[str, Any]] = []
-    used_signatures: set[str] = set()
-    used_docs: set[str] = set()
-
-    for _, row in mode_rows.sort_values("quality_score", ascending=False).iterrows():
-        signature = str(row["trap_signature"])
-        doc_id = str(row["primary_doc_id"])
-
-        if signature in used_signatures:
-            continue
-        if doc_id in used_docs and len(used_docs) < keep_count:
-            continue
-
-        selected.append(row["payload"])
-        used_signatures.add(signature)
-        used_docs.add(doc_id)
-        if len(selected) == keep_count:
-            break
-
-    if len(selected) < keep_count:
-        for _, row in mode_rows.sort_values("quality_score", ascending=False).iterrows():
-            if row["payload"] in selected:
-                continue
-            selected.append(row["payload"])
-            if len(selected) == keep_count:
-                break
-
-    return selected
-
-
 class SyntheticGenerationPipeline:
     def __init__(self, config: SyntheticGenerationConfig):
         self.config = config
@@ -1725,51 +1629,15 @@ class SyntheticGenerationPipeline:
         if not accepted_items:
             raise ValueError("No accepted items available for selection.")
 
-        table_rows: list[dict[str, Any]] = []
-        for item in accepted_items:
-            table_rows.append(
-                {
-                    "item_id": item["item_id"],
-                    "mode_name": ERROR_TO_MODE[item["target_error_mode"]],
-                    "target_error_mode": item["target_error_mode"],
-                    "primary_doc_id": _primary_doc_id(item),
-                    "trap_signature": _trap_signature(_extract_user_query(item)),
-                    "quality_score": _quality_score(item),
-                    "payload": item,
-                }
-            )
-
-        item_table = pd.DataFrame(table_rows)
-
-        keep_counts = {
-            "overextension": context.config.final_keep_count.overextension,
-            "precedence": context.config.final_keep_count.precedence,
-            "fake_citations": context.config.final_keep_count.fake_citations,
-        }
-
-        selected_items: list[dict[str, Any]] = []
-        selection_rows: list[dict[str, Any]] = []
-
-        for mode_name, keep_count in keep_counts.items():
-            mode_rows = item_table[item_table["mode_name"] == mode_name]
-            if mode_rows.empty:
-                raise ValueError(f"No accepted items for mode {mode_name}")
-
-            mode_selected = _select_mode_items(mode_rows, keep_count)
-            if len(mode_selected) < keep_count:
-                raise ValueError(f"Insufficient items for mode {mode_name}: {len(mode_selected)} < {keep_count}")
-
-            selected_items.extend(mode_selected)
-            for item in mode_selected:
-                selection_rows.append(
-                    {
-                        "item_id": item["item_id"],
-                        "mode_name": mode_name,
-                        "target_error_mode": item["target_error_mode"],
-                        "primary_doc_id": _primary_doc_id(item),
-                    }
-                )
-
+        selected_items = list(accepted_items)
+        selection_rows = [
+            {
+                "item_id": item["item_id"],
+                "mode_name": ERROR_TO_MODE[item["target_error_mode"]],
+                "target_error_mode": item["target_error_mode"],
+            }
+            for item in selected_items
+        ]
         selection_table = pd.DataFrame(selection_rows).sort_values(["mode_name", "item_id"]).reset_index(drop=True)
 
         report_lines = [
@@ -1784,7 +1652,7 @@ class SyntheticGenerationPipeline:
         report_lines.append("")
         report_lines.append("## Selected items")
         for _, row in selection_table.iterrows():
-            report_lines.append(f"- {row['item_id']} ({row['mode_name']}, {row['primary_doc_id']})")
+            report_lines.append(f"- {row['item_id']} ({row['mode_name']})")
         report_text = "\n".join(report_lines) + "\n"
 
         with (context.run_paths.selection_dir / "selected_items.jsonl").open("w", encoding="utf-8") as file_handle:
@@ -1840,14 +1708,8 @@ class SyntheticGenerationPipeline:
         )
         validation_duration_seconds = time.perf_counter() - validation_start_time
 
-        items_for_selection = build_items_for_selection(
-            accepted_items=validation_result.accepted_items,
-            deterministic_pass_items=validation_result.deterministic_pass_items,
-        )
-        selection_fallback_used = len(items_for_selection) > len(validation_result.accepted_items)
-
         selection_start_time = time.perf_counter()
-        selection_result = self.run_selection(context=context, accepted_items=items_for_selection)
+        selection_result = self.run_selection(context=context, accepted_items=validation_result.accepted_items)
         selection_duration_seconds = time.perf_counter() - selection_start_time
 
         export_start_time = time.perf_counter()
@@ -1871,7 +1733,6 @@ class SyntheticGenerationPipeline:
             "packet_document_count": int(packet_inputs.source_documents.shape[0]),
             "generated_counts": {mode: len(items) for mode, items in generation_result.candidates_by_mode.items()},
             "accepted_items": len(validation_result.accepted_items),
-            "selection_fallback_used": selection_fallback_used,
             "selected_items": len(selection_result.selected_items),
             "run_root": str(context.run_paths.run_root),
             "dataset_dir": str(dataset_dir),

@@ -6,6 +6,8 @@ from typing import Any, Dict, Optional
 
 from openai import OpenAI
 
+from pincite_evals.prompt_templates import load_template_text, render_template_text
+
 PROMPTS_DIR = Path(__file__).resolve().parent / "prompts"
 
 
@@ -18,8 +20,11 @@ class LLMJudgeConfig:
 
 
 def load_prompt_template(file_name: str) -> str:
-    prompt_path = PROMPTS_DIR / file_name
-    return prompt_path.read_text(encoding="utf-8").strip()
+    return load_template_text(PROMPTS_DIR / file_name)
+
+
+def render_prompt_template(prompt_text: str, template_variables: Dict[str, Any]) -> str:
+    return render_template_text(prompt_text, template_variables)
 
 
 def parse_json_object(output_text: str) -> Dict[str, Any]:

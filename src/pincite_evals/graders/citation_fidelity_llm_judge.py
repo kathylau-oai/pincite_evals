@@ -6,8 +6,8 @@ from .llm_judge_base import BaseLLMJudgeGrader
 
 class CitationFidelityLLMJudgeGrader(BaseLLMJudgeGrader):
     name = "citation_fidelity_llm_judge"
-    system_prompt_file = "citation_fidelity_system.md"
-    user_prompt_file = "citation_fidelity_user.md"
+    system_prompt_file = "citation_fidelity_system.txt"
+    user_prompt_file = "citation_fidelity_user.txt"
 
     def _validate_context(self, context: Dict[str, Any]) -> GradeResult | None:
         fidelity_items = context.get("citation_fidelity_items", [])

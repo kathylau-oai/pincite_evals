@@ -43,8 +43,6 @@ class SyntheticGenerationConfig:
     selection_reasoning_effort: str
     service_tier: str
     generate_count: ModeCountConfig
-    final_keep_count: ModeCountConfig
-    quality_thresholds: dict[str, Any]
     parallelism: ParallelismConfig
     as_of_date: str
     request_timeout_seconds: float
@@ -69,14 +67,6 @@ DEFAULT_CONFIG = {
         "precedence": 10,
         "fake_citations": 10,
     },
-    "final_keep_count": {
-        "overextension": 3,
-        "precedence": 3,
-        "fake_citations": 3,
-    },
-    "quality_thresholds": {
-        "min_expected_citation_groups": 1,
-    },
     "parallelism": {
         "mode_workers": 3,
         "generation_workers": 32,
@@ -86,6 +76,8 @@ DEFAULT_CONFIG = {
     "request_timeout_seconds": 900.0,
     "dry_run": False,
 }
+
+DEPRECATED_CONFIG_FIELDS = {"final_keep_count", "quality_thresholds"}
 
 
 def _load_dict_from_file(config_path: Path) -> dict[str, Any]:
@@ -107,12 +99,7 @@ def _load_dict_from_file(config_path: Path) -> dict[str, Any]:
 def _merge_config(user_config: dict[str, Any]) -> dict[str, Any]:
     merged = dict(DEFAULT_CONFIG)
     for key, value in user_config.items():
-        if key in {
-            "generate_count",
-            "final_keep_count",
-            "parallelism",
-            "quality_thresholds",
-        }:
+        if key in {"generate_count", "parallelism"}:
             base_section = dict(DEFAULT_CONFIG[key])
             if not isinstance(value, dict):
                 raise ValueError(f"Config field '{key}' must be an object.")
@@ -146,6 +133,14 @@ def _validate_service_tier(service_tier: str) -> None:
 
 def load_config(config_path: Path) -> SyntheticGenerationConfig:
     user_config = _load_dict_from_file(config_path)
+    deprecated_fields = sorted(set(user_config).intersection(DEPRECATED_CONFIG_FIELDS))
+    if deprecated_fields:
+        raise ValueError(
+            "Config field(s) no longer supported: "
+            + ", ".join(deprecated_fields)
+            + ". Remove them from the config."
+        )
+
     merged = _merge_config(user_config)
 
     packet_id = str(merged.get("packet_id", "")).strip()
@@ -179,19 +174,11 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
         precedence=int(merged["generate_count"]["precedence"]),
         fake_citations=int(merged["generate_count"]["fake_citations"]),
     )
-    final_keep_count = ModeCountConfig(
-        overextension=int(merged["final_keep_count"]["overextension"]),
-        precedence=int(merged["final_keep_count"]["precedence"]),
-        fake_citations=int(merged["final_keep_count"]["fake_citations"]),
-    )
 
     for mode_name, mode_value in {
         "generate_count.overextension": generate_count.overextension,
         "generate_count.precedence": generate_count.precedence,
         "generate_count.fake_citations": generate_count.fake_citations,
-        "final_keep_count.overextension": final_keep_count.overextension,
-        "final_keep_count.precedence": final_keep_count.precedence,
-        "final_keep_count.fake_citations": final_keep_count.fake_citations,
     }.items():
         if mode_value <= 0:
             raise ValueError(f"{mode_name} must be > 0.")
@@ -237,8 +224,6 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
         selection_reasoning_effort=selection_reasoning_effort,
         service_tier=service_tier,
         generate_count=generate_count,
-        final_keep_count=final_keep_count,
-        quality_thresholds=dict(merged["quality_thresholds"]),
         parallelism=parallelism,
         as_of_date=as_of_date_value,
         request_timeout_seconds=float(merged["request_timeout_seconds"]),

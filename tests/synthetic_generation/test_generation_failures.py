@@ -42,6 +42,44 @@ parallelism:
         load_config(config_path)
 
 
+@pytest.mark.parametrize(
+    ("deprecated_field", "deprecated_value"),
+    [
+        (
+            "final_keep_count",
+            """
+final_keep_count:
+  overextension: 1
+  precedence: 1
+  fake_citations: 1
+""".strip(),
+        ),
+        (
+            "quality_thresholds",
+            """
+quality_thresholds:
+  min_expected_citation_groups: 1
+""".strip(),
+        ),
+    ],
+)
+def test_load_config_rejects_removed_fields(tmp_path, deprecated_field: str, deprecated_value: str):
+    config_path = tmp_path / "config.yaml"
+    config_path.write_text(
+        f"""
+packet_id: packet_1
+output_root: {(tmp_path / 'results').as_posix()}
+dataset_root: {(tmp_path / 'datasets').as_posix()}
+dry_run: false
+{deprecated_value}
+""".strip(),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValueError, match=f"Config field\\(s\\) no longer supported: {deprecated_field}"):
+        load_config(config_path)
+
+
 def test_generate_one_item_drops_candidate_after_retries(monkeypatch, tmp_path):
     config = _make_config(tmp_path)
 
@@ -115,3 +153,6 @@ def test_load_mode_prompts_adds_lawyer_realistic_query_style_guidance():
     assert "Lawyer-realistic query style guide" in user_prompt
     assert "Need a quick memo for the partner: can we remove this case to federal court under CAFA?" in user_prompt
     assert "Can you write a concise memo on Article III standing risks for this privacy class action" in user_prompt
+    assert "`packet_id`: `packet_1`" in user_prompt
+    assert "`as_of_date`: `2026-02-06`" in user_prompt
+    assert "`item_index`: `1`" in user_prompt

@@ -18,10 +18,6 @@ generate_count:
   overextension: 3
   precedence: 3
   fake_citations: 3
-final_keep_count:
-  overextension: 3
-  precedence: 3
-  fake_citations: 3
 """.strip(),
         encoding="utf-8",
     )

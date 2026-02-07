@@ -1,9 +1,9 @@
 Generate one synthetic item for mode `overextension` using the packet below.
 
 ## Fixed metadata
-- `packet_id`: `__PACKET_ID__`
-- `as_of_date`: `__AS_OF_DATE__`
-- `item_index`: `__ITEM_INDEX__`
+- `packet_id`: `{{ packet_id }}`
+- `as_of_date`: `{{ as_of_date }}`
+- `item_index`: `{{ item_index }}`
 - `target_error_mode`: `C`
 
 ## Return format
@@ -49,4 +49,4 @@ Return exactly one JSON object with these fields:
 - Avoid trivia and avoid impossible tasks.
 
 Packet corpus:
-__PACKET_CORPUS__
+{{ packet_corpus }}

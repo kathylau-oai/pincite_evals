@@ -4,7 +4,7 @@ from typing import Any, Dict
 from openai import OpenAI
 
 from .base import GradeResult, Grader
-from .llm_utils import LLMJudgeConfig, call_llm_judge, load_prompt_template
+from .llm_utils import LLMJudgeConfig, call_llm_judge, load_prompt_template, render_prompt_template
 
 
 class BaseLLMJudgeGrader(Grader):
@@ -45,9 +45,9 @@ class BaseLLMJudgeGrader(Grader):
             return context_validation
 
         grading_payload = self._build_grading_payload(prompt=prompt, output=output, context=context)
-        user_prompt = self.user_prompt_template.replace(
-            "{{judge_payload_json}}",
-            json.dumps(grading_payload, indent=2, ensure_ascii=False),
+        user_prompt = render_prompt_template(
+            self.user_prompt_template,
+            {"judge_payload_json": json.dumps(grading_payload, indent=2, ensure_ascii=False)},
         )
 
         judge_result = call_llm_judge(

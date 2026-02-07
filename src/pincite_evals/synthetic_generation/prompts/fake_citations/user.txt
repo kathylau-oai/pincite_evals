@@ -1,9 +1,9 @@
 Generate one synthetic item for mode `fake_citations` using the packet below.
 
 ## Fixed metadata
-- `packet_id`: `__PACKET_ID__`
-- `as_of_date`: `__AS_OF_DATE__`
-- `item_index`: `__ITEM_INDEX__`
+- `packet_id`: `{{ packet_id }}`
+- `as_of_date`: `{{ as_of_date }}`
+- `item_index`: `{{ item_index }}`
 - `target_error_mode`: `A`
 
 ## Return format
@@ -44,4 +44,4 @@ Return exactly one JSON object with these fields:
 - Should not reward guessing or invention; should reward explicit packet limitation statements.
 
 Packet corpus:
-__PACKET_CORPUS__
+{{ packet_corpus }}

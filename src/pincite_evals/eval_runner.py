@@ -28,6 +28,7 @@ from pincite_evals.graders import (
     ExpectedCitationPresenceGrader,
     PrecedenceLLMJudgeGrader,
 )
+from pincite_evals.prompt_templates import render_template_file
 from pincite_evals.synthetic_generation.schema import normalize_citation_token
 
 
@@ -195,7 +196,7 @@ def _parse_args() -> argparse.Namespace:
 def _load_system_prompt(*, system_prompt: str, system_prompt_file: Optional[str]) -> str:
     if system_prompt_file is None:
         return system_prompt
-    return Path(system_prompt_file).read_text(encoding="utf-8").strip()
+    return render_template_file(Path(system_prompt_file), {})
 
 
 def _model_config_from_dict(config_data: Dict[str, Any], fallback_prompt: str) -> ModelConfig:

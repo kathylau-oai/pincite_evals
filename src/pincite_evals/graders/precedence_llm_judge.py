@@ -5,8 +5,8 @@ from .llm_judge_base import BaseLLMJudgeGrader
 
 class PrecedenceLLMJudgeGrader(BaseLLMJudgeGrader):
     name = "precedence_llm_judge"
-    system_prompt_file = "precedence_system.md"
-    user_prompt_file = "precedence_user.md"
+    system_prompt_file = "precedence_system.txt"
+    user_prompt_file = "precedence_user.txt"
 
     def _build_grading_payload(self, *, prompt: str, output: str, context: Dict[str, Any]) -> Dict[str, Any]:
         return {

@@ -5,8 +5,8 @@ from .llm_judge_base import BaseLLMJudgeGrader
 
 class CitationOverextensionLLMJudgeGrader(BaseLLMJudgeGrader):
     name = "citation_overextension_llm_judge"
-    system_prompt_file = "citation_overextension_system.md"
-    user_prompt_file = "citation_overextension_user.md"
+    system_prompt_file = "citation_overextension_system.txt"
+    user_prompt_file = "citation_overextension_user.txt"
 
     def _build_grading_payload(self, *, prompt: str, output: str, context: Dict[str, Any]) -> Dict[str, Any]:
         return {

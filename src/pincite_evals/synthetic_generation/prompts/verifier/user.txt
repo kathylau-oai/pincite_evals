@@ -1,10 +1,10 @@
 Review this candidate synthetic item JSON and return one verifier object.
 
 ## Candidate item
-__ITEM_JSON__
+{{ item_json }}
 
 ## Packet corpus
-__PACKET_CORPUS__
+{{ packet_corpus }}
 
 ## Verification instructions
 1. Determine whether this item is high quality and objectively gradable for its declared mode.
