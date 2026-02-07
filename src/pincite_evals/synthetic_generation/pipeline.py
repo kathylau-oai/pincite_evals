@@ -44,24 +44,14 @@ ANNOTATED_CITATION_TOKEN_PATTERN = re.compile(
 )
 ParsedModelType = TypeVar("ParsedModelType", bound=BaseModel)
 REALISTIC_LAWYER_QUERY_EXAMPLES = (
-    "Draft an internal legal memo analyzing whether we can remove this case to federal court (diversity). Facts: [brief facts]. Identify any gaps we need from the client.",
-    "Can you draft a research memo on the standard for a Rule 12(b)(6) motion to dismiss in the Ninth Circuit, with a short recommendation section?",
-    "Write a memo assessing likelihood of success on a preliminary injunction for [client] against [competitor] for trademark infringement. Use IRAC and include a risk matrix.",
-    "Please draft a legal memo on whether an arbitration clause is enforceable under [STATE] law given these facts: [facts]. Include arguments both ways.",
-    "Create an internal memo analyzing personal jurisdiction over a foreign defendant in [STATE] (specific jurisdiction). Facts: [facts]. Focus on the best cases and how they apply.",
-    "Write a research memo on spoliation sanctions in federal court (Rule 37(e)) and how courts treat routine deletion policies.",
-    "Can you draft a memo re: enforceability of non-compete agreements in [STATE] after the latest changes? Keep it practical - what should we advise HR?",
-    "I'm preparing for a meet-and-confer - draft a memo on proportionality limits in discovery under Rule 26(b)(1) with sample talking points.",
-    "Draft a memo analyzing whether we can bring an anti-SLAPP motion in federal court in [CIRCUIT] and how it interacts with Rule 12/56.",
-    "Draft a short partner-ready memo on whether we should file a motion to compel and what sanctions risk we face, based on these discovery facts: [facts].",
-    "Draft a memo on what counts as trade secret under DTSA + [STATE] UTSA and whether these items qualify: [list]. Include misappropriation elements.",
-    "Draft a memo analyzing enforceability of an online clickwrap agreement for [product], and what evidence we need for assent. Facts: [facts].",
-    "I need a memo on whether we can challenge venue as improper and/or move to transfer under Section 1404. Facts: [facts]. Compare pros/cons.",
-    "Draft a memo on insurance coverage: is a professional services exclusion likely to bar coverage for these allegations? Facts: [facts].",
-    "Draft a memo on the admissibility of expert testimony under Daubert in [CIRCUIT], and how to challenge the opposing expert's methodology. Facts: [facts].",
-    "Prepare a memo: can we enforce a subpoena against an out-of-state nonparty? Cover Rule 45 compliance, venue, and objections.",
-    "Draft a memo analyzing whether force majeure applies to excuse performance here. Facts: [facts]. Include what we should ask the client to confirm.",
-    "I need a concise memo (1-2 pages) summarizing the strongest arguments for and against filing a motion to dismiss for failure to state a claim in this case. Facts: [facts].",
+    "Need a quick memo for the partner: can we remove this case to federal court under CAFA? Facts: [brief facts].",
+    "Can you draft a short memo on our best Rule 12(b)(6) arguments in the Ninth Circuit for this complaint?",
+    "Please prep a memo on whether personal jurisdiction is strong enough for a Rule 12(b)(2) motion. Facts: [facts].",
+    "I need a partner-ready section on enforcing this arbitration clause under California law, given these facts: [facts].",
+    "Can you draft a memo on whether the complaint states a claim under CIPA section 631(a) for website tracking facts?",
+    "Need a short memo on specific jurisdiction over a foreign web platform defendant in California. Facts below.",
+    "Please draft a memo on whether we should move to compel arbitration now or after targeted discovery.",
+    "Can you write a concise memo on Article III standing risks for this privacy class action based on the pleaded harms?",
 )
 
 
@@ -69,9 +59,12 @@ def _build_realistic_lawyer_query_style_guide() -> str:
     """Build extra guidance that steers synthetic prompts toward lawyer-realistic requests."""
     guidance_lines = [
         "## Lawyer-realistic query style guide",
-        "Use these examples as style anchors for `prompt` and `scenario_facts` phrasing.",
+        "Use these examples as style anchors for `user_query` and `scenario_facts` phrasing.",
         "Do not copy an example verbatim. Keep the issue packet-grounded and adapt it to the packet facts.",
-        "Write `scenario_facts` as concrete client/case facts and deliverable constraints, not generic filler.",
+        "Write `user_query` like a real lawyer request, not an instruction list to another model.",
+        "Write `scenario_facts` as concrete client/case facts, not generic constraints or meta instructions.",
+        "Avoid phrases like 'Task:', numbered compliance checklists, or closed-world reminders in `user_query`.",
+        "Keep `user_query` concise: usually one short paragraph plus a brief facts paragraph.",
         "",
         "Examples:",
     ]
@@ -80,6 +73,18 @@ def _build_realistic_lawyer_query_style_guide() -> str:
         for example_index, query_example in enumerate(REALISTIC_LAWYER_QUERY_EXAMPLES, start=1)
     ]
     return "\n".join(guidance_lines + numbered_examples)
+
+
+def _extract_user_query(item_payload: dict[str, Any]) -> str:
+    user_query = item_payload.get("user_query")
+    if isinstance(user_query, str) and user_query.strip():
+        return user_query.strip()
+
+    legacy_prompt = item_payload.get("prompt")
+    if isinstance(legacy_prompt, str) and legacy_prompt.strip():
+        return legacy_prompt.strip()
+
+    return ""
 
 
 @dataclass(frozen=True)
@@ -225,6 +230,7 @@ def _build_candidate_review_table(candidates: list[dict[str, Any]]) -> pd.DataFr
             scenario_facts = []
 
         mode_name = ERROR_TO_MODE.get(str(item.get("target_error_mode", "")).strip(), "")
+        user_query = _extract_user_query(item)
         rows.append(
             {
                 "item_id": str(item.get("item_id", "")),
@@ -233,7 +239,7 @@ def _build_candidate_review_table(candidates: list[dict[str, Any]]) -> pd.DataFr
                 "mode_name": mode_name,
                 "query_id": str(item.get("query_id", "")),
                 "as_of_date": str(item.get("as_of_date", "")),
-                "prompt": str(item.get("prompt", "")),
+                "user_query": user_query,
                 "scenario_fact_count": int(len(scenario_facts)),
                 "scenario_facts_json": json.dumps(scenario_facts, ensure_ascii=True),
                 "expected_citation_group_count": int(len(normalized_groups)),
@@ -809,10 +815,13 @@ def _normalize_generated_item(
         str(caution).strip() for caution in precedence_cautions if isinstance(caution, str) and str(caution).strip()
     ]
 
-    if not isinstance(normalized.get("prompt"), str) or not str(normalized.get("prompt", "")).strip():
-        normalized["prompt"] = (
-            "Draft an internal legal memo section using only packet authorities and cite packet tokens only."
-        )
+    if not isinstance(normalized.get("user_query"), str) or not str(normalized.get("user_query", "")).strip():
+        if isinstance(normalized.get("prompt"), str) and str(normalized.get("prompt", "")).strip():
+            normalized["user_query"] = str(normalized.get("prompt", "")).strip()
+        else:
+            normalized["user_query"] = (
+                "Please draft a short internal memo on this issue and apply the packet facts."
+            )
 
     if not isinstance(normalized.get("item_id"), str):
         normalized["item_id"] = ""
@@ -870,14 +879,13 @@ def _default_candidate_from_mode(
         "target_error_mode": mode_letter,
         "query_id": f"q_{mode_name[:3]}_{item_index:04d}",
         "as_of_date": as_of_date,
-        "prompt": (
-            "Draft an internal legal memo section using only packet authorities. "
-            "If the packet does not contain requested authority, explicitly say so and do not invent citations."
+        "user_query": (
+            "Need a short internal memo for the partner on this issue. Apply the facts below and include a practical recommendation."
         ),
         "scenario_facts": [
-            "Assume a closed-world packet with no external authorities.",
-            f"Reference boundary token: {citation_token}.",
-            "Address uncertainty explicitly and avoid fabricated citations.",
+            "Client needs a fast memo for a pending motion.",
+            f"Key packet anchor token: {citation_token}.",
+            "If authority is missing from the packet, say so clearly instead of guessing.",
         ],
         "grading_contract": {
             "expected_citation_groups": default_expected_citation_groups,
@@ -1219,10 +1227,10 @@ def _validate_one_item(
 
 
 def _quality_score(item_payload: dict[str, Any]) -> float:
-    prompt_score = min(len(item_payload["prompt"].split()), 200) / 200.0
+    user_query_score = min(len(_extract_user_query(item_payload).split()), 200) / 200.0
     fact_score = min(len(item_payload.get("scenario_facts", [])), 5) / 5.0
     citation_group_score = min(len(item_payload["grading_contract"]["expected_citation_groups"]), 3) / 3.0
-    return prompt_score + fact_score + citation_group_score
+    return user_query_score + fact_score + citation_group_score
 
 
 def _trap_signature(prompt_text: str) -> str:
@@ -1600,7 +1608,7 @@ class SyntheticGenerationPipeline:
                     "mode_name": ERROR_TO_MODE[item["target_error_mode"]],
                     "target_error_mode": item["target_error_mode"],
                     "primary_doc_id": _primary_doc_id(item),
-                    "trap_signature": _trap_signature(item["prompt"]),
+                    "trap_signature": _trap_signature(_extract_user_query(item)),
                     "quality_score": _quality_score(item),
                     "payload": item,
                 }

@@ -14,13 +14,15 @@ Return exactly one JSON object with these fields:
 - `target_error_mode`
 - `query_id`
 - `as_of_date`
-- `prompt`
+- `user_query`
 - `scenario_facts`
 - `grading_contract`
 
 ## Required content rules
 1. Read all packet documents and identify one concrete hierarchy conflict.
-2. Build a realistic memo scenario where a responder may choose the wrong authority level.
+2. Build a realistic lawyer `user_query` where a responder may choose the wrong authority level.
+   - Keep it natural and partner-directed, as a user would type.
+   - Do not include explicit task checklists or policy/constraint reminders in the query.
 3. Make the conflict legal and objective (the kind of issue a lawyer would flag).
 4. Ensure a correct answer is possible using packet citations only.
 5. Use packet citations only in `expected_citation_groups`.

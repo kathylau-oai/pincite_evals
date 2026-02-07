@@ -4,6 +4,12 @@ You are a senior legal eval designer creating one high-quality synthetic item fo
 # Objective
 Create a realistic memo-writing task where a careful lawyer can stay faithful to the packet, but a sloppy model may overstate what the authority supports.
 
+# User Query Style (hard rule)
+The `user_query` must read like a real lawyer request, not an evaluator instruction prompt.
+- Keep it natural and concise.
+- Do not include "Task:", numbered checklists, formatting mandates, or closed-world policy reminders.
+- Put detailed constraints in `scenario_facts` and `grading_contract`, not in `user_query`.
+
 # What Counts As Overextension
 Overextension is present when cited text supports only a narrower proposition, but the draft claim is broader, more categorical, or missing key limits.
 

@@ -1,6 +1,8 @@
 import argparse
+import ast
 import json
 import re
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict, dataclass
@@ -20,6 +22,56 @@ from openai import (
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
 from tqdm import tqdm
 
+from pincite_evals.citations import extract_excerpt_citations
+from pincite_evals.synthetic_generation.schema import normalize_citation_token
+
+try:
+    from graders import (
+        CitationFidelityLLMJudgeGrader,
+        CitationOverextensionLLMJudgeGrader,
+        ExpectedCitationPresenceGrader,
+        PrecedenceLLMJudgeGrader,
+    )
+except ModuleNotFoundError:
+    # Allow running via installed console script where repo root is not already on sys.path.
+    repo_root = Path(__file__).resolve().parents[2]
+    sys.path.insert(0, str(repo_root))
+    from graders import (
+        CitationFidelityLLMJudgeGrader,
+        CitationOverextensionLLMJudgeGrader,
+        ExpectedCitationPresenceGrader,
+        PrecedenceLLMJudgeGrader,
+    )
+
+
+REQUIRED_SYNTHETIC_BASE_COLUMNS = [
+    "item_id",
+    "packet_id",
+    "target_error_mode",
+    "query_id",
+    "as_of_date",
+    "scenario_facts",
+    "grading_contract",
+]
+
+BLOCK_PATTERN = re.compile(
+    r'<BLOCK id="(?P<block_id>DOC\d{3}\.P\d{3}\.B\d{2})">\s*(?P<block_text>.*?)\s*</BLOCK>',
+    re.DOTALL,
+)
+
+DEFAULT_DRAFTING_SYSTEM_PROMPT = (
+    "You are a careful legal drafting assistant writing an internal litigation memo in a closed-world setting. "
+    "Use only the packet authorities provided in the user message. Do not rely on outside law, cases, statutes, "
+    "or treatises. Use pinpoint citations in this exact format: DOC###(P###.B##) written as DOC###[P###.B##]. "
+    "If authority is missing from the packet, say so explicitly instead of fabricating support."
+)
+
+MODE_TO_EXTRA_GRADER = {
+    "A": "citation_fidelity_llm_judge",
+    "C": "citation_overextension_llm_judge",
+    "D": "precedence_llm_judge",
+}
+
 
 @dataclass
 class ModelConfig:
@@ -30,23 +82,46 @@ class ModelConfig:
     system_prompt: str
 
 
+@dataclass(frozen=True)
+class PacketResources:
+    packet_corpus_text: str
+    block_text_by_token: Dict[str, str]
+    document_count: int
+    block_count: int
+
+
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Template evaluation runner that supports parallel execution across "
-            "multiple model configurations using the OpenAI Responses API."
+            "Packet-aware eval runner for legal memo drafting. Runs model inference in parallel "
+            "across model configs and rows, then runs graders in parallel."
         )
     )
-    parser.add_argument("--input-csv", required=True, help="Path to input CSV file.")
+
+    parser.add_argument("--input-csv", default=None, help="Optional single CSV path. If omitted, --input-glob is used.")
+    parser.add_argument(
+        "--input-glob",
+        default="data/datasets/packet_*/synthetic_items.csv",
+        help="Glob for synthetic item CSV files when --input-csv is not provided.",
+    )
+    parser.add_argument("--packet-root", default="data/case_law_packets", help="Root folder for packet corpora.")
+
     parser.add_argument("--output-root", default="results", help="Root directory for run outputs.")
-    parser.add_argument("--experiment-name", default="template_eval", help="Name for this experiment run.")
+    parser.add_argument("--run-id", default=None, help="Optional run ID. Outputs are written to results/<run_id>.")
+    parser.add_argument("--experiment-name", default="template_eval", help="Name used when auto-generating run IDs.")
 
     parser.add_argument("--id-column", default="item_id", help="CSV column for unique item IDs.")
-    parser.add_argument("--prompt-column", default="prompt", help="CSV column that contains model prompts.")
+    parser.add_argument(
+        "--user-query-column",
+        "--prompt-column",
+        dest="prompt_column",
+        default="user_query",
+        help="CSV column that contains the drafting user query.",
+    )
     parser.add_argument(
         "--expected-output-column",
         default="expected_output",
-        help="Optional CSV column for expected/reference output used by template grading.",
+        help="Optional CSV column for exact-match template grading (mostly unused for synthetic items).",
     )
     parser.add_argument(
         "--max-samples",
@@ -72,12 +147,12 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--reasoning-effort",
         default="none",
-        help="Default single-config reasoning effort (none, low, medium, high).",
+        help="Default single-config reasoning effort (none, low, medium, high, xhigh).",
     )
     parser.add_argument("--temperature", type=float, default=0.0, help="Default single-config temperature.")
     parser.add_argument(
         "--system-prompt",
-        default="You are a careful legal drafting assistant.",
+        default=DEFAULT_DRAFTING_SYSTEM_PROMPT,
         help="Default single-config system prompt.",
     )
     parser.add_argument(
@@ -97,6 +172,15 @@ def _parse_args() -> argparse.Namespace:
         default=8,
         help="Max parallel workers per model configuration across dataset rows.",
     )
+
+    parser.add_argument("--max-grader-workers", type=int, default=12, help="Max parallel workers for graders.")
+    parser.add_argument("--grader-model", default="gpt-5.1", help="Model for LLM-based graders.")
+    parser.add_argument(
+        "--grader-reasoning-effort",
+        default="none",
+        help="Reasoning effort for grader LLM calls (should remain none).",
+    )
+    parser.add_argument("--grader-temperature", type=float, default=0.0, help="Temperature for graders.")
 
     parser.add_argument("--retry-attempts", type=int, default=4, help="Max retries for retriable API errors.")
     parser.add_argument(
@@ -239,13 +323,20 @@ def _build_input_profile(dataset: pd.DataFrame, id_column: str, prompt_column: s
     column_profile_rows: List[Dict[str, Any]] = []
     for column_name in dataset.columns:
         series = dataset[column_name]
+        try:
+            unique_count = int(series.nunique(dropna=False))
+        except TypeError:
+            # Some profiling columns store lists/dicts; use a stable JSON string for uniqueness counting.
+            unique_count = int(
+                series.apply(lambda value: json.dumps(value, sort_keys=True, ensure_ascii=True, default=str)).nunique(dropna=False)
+            )
         column_profile_rows.append(
             {
                 "column": column_name,
                 "dtype": str(series.dtype),
                 "missing_count": int(series.isna().sum()),
                 "missing_rate": float(series.isna().mean()),
-                "n_unique": int(series.nunique(dropna=False)),
+                "n_unique": unique_count,
             }
         )
 
@@ -261,12 +352,31 @@ def _build_input_profile(dataset: pd.DataFrame, id_column: str, prompt_column: s
     if prompt_column in dataset.columns:
         prompt_series = dataset[prompt_column].astype(str)
         empty_prompt_count = int(prompt_series.str.strip().eq("").sum())
-        summary_rows.append({"metric": "empty_prompt_count", "value": empty_prompt_count})
+        summary_rows.append({"metric": "empty_user_query_count", "value": empty_prompt_count})
 
         prompt_length_series = prompt_series.str.len()
-        prompt_length_stats = _compute_distribution_stats(prompt_length_series, "prompt_length_chars")
+        prompt_length_stats = _compute_distribution_stats(prompt_length_series, "user_query_length_chars")
         for key, value in prompt_length_stats.items():
             summary_rows.append({"metric": key, "value": value})
+
+    if "packet_id" in dataset.columns:
+        summary_rows.append({"metric": "packet_count", "value": int(dataset["packet_id"].astype(str).nunique())})
+
+    if "scenario_facts_parse_error" in dataset.columns:
+        summary_rows.append(
+            {
+                "metric": "scenario_facts_parse_error_count",
+                "value": int(dataset["scenario_facts_parse_error"].notna().sum()),
+            }
+        )
+
+    if "grading_contract_parse_error" in dataset.columns:
+        summary_rows.append(
+            {
+                "metric": "grading_contract_parse_error_count",
+                "value": int(dataset["grading_contract_parse_error"].notna().sum()),
+            }
+        )
 
     return pd.DataFrame(summary_rows), pd.DataFrame(column_profile_rows)
 
@@ -400,6 +510,308 @@ def _extract_usage_fields(usage: Optional[Dict[str, Any]]) -> Dict[str, Optional
     }
 
 
+def _parse_serialized_list(raw_value: Any) -> Tuple[List[str], Optional[str]]:
+    if isinstance(raw_value, list):
+        cleaned_items = [str(item).strip() for item in raw_value if str(item).strip()]
+        return cleaned_items, None
+
+    if raw_value is None or (isinstance(raw_value, float) and pd.isna(raw_value)):
+        return [], None
+
+    text_value = str(raw_value).strip()
+    if not text_value:
+        return [], None
+
+    try:
+        parsed = ast.literal_eval(text_value)
+    except (ValueError, SyntaxError) as error:
+        return [], str(error)
+
+    if isinstance(parsed, list):
+        cleaned_items = [str(item).strip() for item in parsed if str(item).strip()]
+        return cleaned_items, None
+
+    return [text_value], "Expected a serialized list but got a different type."
+
+
+def _parse_serialized_dict(raw_value: Any) -> Tuple[Dict[str, Any], Optional[str]]:
+    if isinstance(raw_value, dict):
+        return raw_value, None
+
+    if raw_value is None or (isinstance(raw_value, float) and pd.isna(raw_value)):
+        return {}, None
+
+    text_value = str(raw_value).strip()
+    if not text_value:
+        return {}, None
+
+    try:
+        parsed = ast.literal_eval(text_value)
+    except (ValueError, SyntaxError) as error:
+        return {}, str(error)
+
+    if isinstance(parsed, dict):
+        return parsed, None
+
+    return {}, "Expected a serialized dict but got a different type."
+
+
+def _normalize_expected_citation_groups(raw_groups: Any) -> List[List[str]]:
+    if not isinstance(raw_groups, list):
+        return []
+
+    normalized_groups: List[List[str]] = []
+    for raw_group in raw_groups:
+        if isinstance(raw_group, str):
+            group_candidates = [raw_group]
+        elif isinstance(raw_group, list):
+            group_candidates = raw_group
+        else:
+            continue
+
+        normalized_group: List[str] = []
+        for raw_token in group_candidates:
+            token_text = str(raw_token).strip()
+            if not token_text:
+                continue
+            try:
+                normalized_group.append(normalize_citation_token(token_text))
+            except ValueError:
+                continue
+
+        if normalized_group:
+            normalized_groups.append(normalized_group)
+
+    return normalized_groups
+
+
+def _flatten_expected_tokens(expected_groups: List[List[str]]) -> List[str]:
+    ordered_tokens: List[str] = []
+    seen_tokens: set[str] = set()
+    for citation_group in expected_groups:
+        for citation_token in citation_group:
+            if citation_token in seen_tokens:
+                continue
+            seen_tokens.add(citation_token)
+            ordered_tokens.append(citation_token)
+    return ordered_tokens
+
+
+def _load_input_paths(args: argparse.Namespace) -> List[Path]:
+    if args.input_csv:
+        input_path = Path(args.input_csv)
+        if not input_path.exists():
+            raise ValueError(f"Input CSV not found: {input_path}")
+        return [input_path]
+
+    globbed_paths = sorted(Path(".").glob(args.input_glob))
+    if not globbed_paths:
+        raise ValueError(f"No CSV files matched --input-glob pattern: {args.input_glob}")
+    return globbed_paths
+
+
+def _prepare_dataset(args: argparse.Namespace) -> pd.DataFrame:
+    args_dict = vars(args)
+    input_paths: List[Path]
+
+    input_csv_value = args_dict.get("input_csv")
+    input_glob_value = args_dict.get("input_glob")
+
+    if input_csv_value is not None and input_glob_value is None:
+        input_path = Path(str(input_csv_value))
+        if not input_path.exists():
+            raise ValueError(f"Input CSV not found: {input_path}")
+        input_paths = [input_path]
+    else:
+        input_paths = _load_input_paths(args)
+
+    dataset_frames: List[pd.DataFrame] = []
+    for input_path in input_paths:
+        frame = pd.read_csv(input_path)
+        frame["source_dataset_path"] = str(input_path)
+        dataset_frames.append(frame)
+
+    dataset = pd.concat(dataset_frames, ignore_index=True)
+
+    prompt_column_name = str(args_dict.get("prompt_column", args_dict.get("user_query_column", "user_query")))
+    id_column_name = str(args_dict.get("id_column", "item_id"))
+    expected_output_column_name = str(args_dict.get("expected_output_column", "expected_output"))
+
+    if prompt_column_name not in dataset.columns and "prompt" in dataset.columns:
+        dataset[prompt_column_name] = dataset["prompt"]
+
+    if prompt_column_name not in dataset.columns:
+        raise ValueError(f"User query column '{prompt_column_name}' does not exist in the input dataset.")
+
+    if "user_query" not in dataset.columns:
+        dataset["user_query"] = dataset[prompt_column_name]
+
+    if id_column_name not in dataset.columns:
+        dataset[id_column_name] = [f"row_{index}" for index in range(dataset.shape[0])]
+
+    if expected_output_column_name not in dataset.columns:
+        dataset[expected_output_column_name] = pd.NA
+
+    dataset = dataset.copy()
+    dataset[id_column_name] = dataset[id_column_name].astype(str)
+    dataset[prompt_column_name] = dataset[prompt_column_name].fillna("").astype(str)
+    dataset["user_query"] = dataset["user_query"].fillna("").astype(str)
+
+    if "packet_id" not in dataset.columns:
+        dataset["packet_id"] = ""
+
+    scenario_parse_results = dataset.get("scenario_facts", pd.Series([None] * dataset.shape[0])).apply(_parse_serialized_list)
+    dataset["scenario_facts_parsed"] = scenario_parse_results.apply(lambda parsed: parsed[0])
+    dataset["scenario_facts_parse_error"] = scenario_parse_results.apply(lambda parsed: parsed[1])
+
+    grading_contract_results = dataset.get("grading_contract", pd.Series([None] * dataset.shape[0])).apply(_parse_serialized_dict)
+    dataset["grading_contract_parsed"] = grading_contract_results.apply(lambda parsed: parsed[0])
+    dataset["grading_contract_parse_error"] = grading_contract_results.apply(lambda parsed: parsed[1])
+
+    normalized_groups: List[List[List[str]]] = []
+    normalized_contracts: List[Dict[str, Any]] = []
+    for raw_contract in dataset["grading_contract_parsed"].tolist():
+        contract_copy = dict(raw_contract) if isinstance(raw_contract, dict) else {}
+        expected_groups = _normalize_expected_citation_groups(contract_copy.get("expected_citation_groups", []))
+        contract_copy["expected_citation_groups"] = expected_groups
+        normalized_groups.append(expected_groups)
+        normalized_contracts.append(contract_copy)
+
+    dataset["expected_citation_groups"] = normalized_groups
+    dataset["grading_contract_parsed"] = normalized_contracts
+
+    if args.max_samples is not None:
+        dataset = dataset.head(args.max_samples).copy()
+
+    dataset.reset_index(drop=True, inplace=True)
+    return dataset
+
+
+def _validate_required_synthetic_columns(dataset: pd.DataFrame, prompt_column: str) -> None:
+    missing_columns = [column_name for column_name in REQUIRED_SYNTHETIC_BASE_COLUMNS if column_name not in dataset.columns]
+    if missing_columns:
+        raise ValueError(f"Synthetic dataset missing required columns: {', '.join(missing_columns)}")
+
+    if prompt_column not in dataset.columns:
+        raise ValueError(f"Synthetic dataset is missing user query column '{prompt_column}'.")
+
+
+
+def _extract_block_text_map(annotated_text: str) -> Dict[str, str]:
+    block_text_by_token: Dict[str, str] = {}
+    for block_match in BLOCK_PATTERN.finditer(annotated_text):
+        block_id = block_match.group("block_id")
+        block_text = block_match.group("block_text").strip()
+        try:
+            citation_token = normalize_citation_token(block_id)
+        except ValueError:
+            continue
+
+        if citation_token not in block_text_by_token:
+            block_text_by_token[citation_token] = block_text
+
+    return block_text_by_token
+
+
+def _load_packet_resources(packet_id: str, packet_root: Path) -> PacketResources:
+    packet_folder = packet_root / packet_id
+    manifest_path = packet_folder / "packet_manifest.csv"
+    if not manifest_path.exists():
+        raise ValueError(f"packet_manifest.csv not found for packet '{packet_id}': {manifest_path}")
+
+    manifest_frame = pd.read_csv(manifest_path)
+    if "doc_id" not in manifest_frame.columns or "source_order" not in manifest_frame.columns:
+        raise ValueError(f"packet_manifest.csv for '{packet_id}' is missing required columns (doc_id, source_order).")
+
+    manifest_sorted = manifest_frame.sort_values("source_order")
+    if "parse_status" in manifest_sorted.columns:
+        manifest_sorted = manifest_sorted[manifest_sorted["parse_status"] == "parsed"]
+
+    if manifest_sorted.empty:
+        raise ValueError(f"Packet '{packet_id}' has no parsed documents in packet_manifest.csv.")
+
+    packet_lines: List[str] = []
+    merged_block_map: Dict[str, str] = {}
+
+    for _, manifest_row in manifest_sorted.iterrows():
+        doc_id = str(manifest_row["doc_id"]).strip()
+        source_filename = str(manifest_row.get("source_filename", "")).strip()
+        annotated_path = packet_folder / "text" / f"{doc_id}.annotated.txt"
+
+        if not annotated_path.exists():
+            raise ValueError(f"Missing annotated text for packet '{packet_id}', doc '{doc_id}': {annotated_path}")
+
+        annotated_text = annotated_path.read_text(encoding="utf-8").strip()
+
+        packet_lines.append(f'<DOCUMENT id="{doc_id}" source_filename="{source_filename}">')
+        packet_lines.append(annotated_text)
+        packet_lines.append("</DOCUMENT>")
+        packet_lines.append("")
+
+        block_map = _extract_block_text_map(annotated_text)
+        for citation_token, block_text in block_map.items():
+            if citation_token not in merged_block_map:
+                merged_block_map[citation_token] = block_text
+
+    packet_corpus_text = "\n".join(packet_lines).strip() + "\n"
+
+    return PacketResources(
+        packet_corpus_text=packet_corpus_text,
+        block_text_by_token=merged_block_map,
+        document_count=int(manifest_sorted.shape[0]),
+        block_count=int(len(merged_block_map)),
+    )
+
+
+def _build_packet_resource_map(dataset: pd.DataFrame, packet_root: Path) -> Dict[str, PacketResources]:
+    packet_resource_map: Dict[str, PacketResources] = {}
+    packet_ids = sorted(
+        {
+            str(packet_id).strip()
+            for packet_id in dataset["packet_id"].tolist()
+            if str(packet_id).strip()
+        }
+    )
+
+    for packet_id in packet_ids:
+        packet_resource_map[packet_id] = _load_packet_resources(packet_id, packet_root)
+
+    return packet_resource_map
+
+
+def _build_drafting_user_prompt(
+    *,
+    source_user_query: str,
+    scenario_facts: List[str],
+    packet_corpus_text: str,
+) -> str:
+    scenario_lines = [f"- {fact}" for fact in scenario_facts if str(fact).strip()]
+    if not scenario_lines:
+        scenario_lines = ["- No additional scenario facts were provided."]
+
+    guidance = [
+        "Output requirements:",
+        "1) Draft as an internal legal memo.",
+        "2) Use only packet authorities and cite in DOC###[P###.B##] format.",
+        "3) If authority is missing, say so clearly and do not fabricate citations.",
+        "4) Keep legal claims faithful to source scope and qualifiers.",
+    ]
+
+    sections = [
+        "Drafting task:",
+        source_user_query.strip(),
+        "",
+        "Scenario facts:",
+        "\n".join(scenario_lines),
+        "",
+        "\n".join(guidance),
+        "",
+        "Annotated packet corpus:",
+        packet_corpus_text.strip(),
+    ]
+    return "\n".join(sections).strip()
+
+
 def _evaluate_single_row(
     *,
     row: pd.Series,
@@ -413,19 +825,42 @@ def _evaluate_single_row(
     dry_run: bool,
 ) -> Tuple[Dict[str, Any], List[float]]:
     item_id = str(row[id_column])
-    prompt_text = str(row[prompt_column])
+    source_user_query = str(row[prompt_column])
     expected_output = row[expected_output_column]
 
-    request = _build_response_request(model_config, prompt_text)
+    packet_corpus_text = str(row.get("packet_corpus_text", ""))
+    scenario_facts = row.get("scenario_facts_parsed", [])
+    if not isinstance(scenario_facts, list):
+        scenario_facts = []
+
+    rendered_user_prompt = _build_drafting_user_prompt(
+        source_user_query=source_user_query,
+        scenario_facts=[str(fact) for fact in scenario_facts],
+        packet_corpus_text=packet_corpus_text,
+    )
+
+    request = _build_response_request(model_config, rendered_user_prompt)
 
     if dry_run:
-        output_text = f"[DRY_RUN::{model_config.name}] {prompt_text[:80]}"
+        output_text = (
+            f"[DRY_RUN::{model_config.name}] Memo draft placeholder for {item_id}. "
+            "No API call was made."
+        )
         grade_data = _template_grade(output_text, expected_output)
         result_row = {
             "source_row_index": source_row_index,
             "model_config": model_config.name,
             "item_id": item_id,
-            "prompt": prompt_text,
+            "packet_id": str(row.get("packet_id", "")),
+            "target_error_mode": str(row.get("target_error_mode", "")),
+            "query_id": str(row.get("query_id", "")),
+            "as_of_date": str(row.get("as_of_date", "")),
+            "source_dataset_path": str(row.get("source_dataset_path", "")),
+            "source_user_query": source_user_query,
+            "rendered_user_prompt": rendered_user_prompt,
+            "scenario_facts_json": json.dumps(scenario_facts, ensure_ascii=True),
+            "grading_contract_json": json.dumps(row.get("grading_contract_parsed", {}), ensure_ascii=True),
+            "expected_citation_groups_json": json.dumps(row.get("expected_citation_groups", []), ensure_ascii=True),
             "expected_output": expected_output,
             "model_output": output_text,
             "response_id": None,
@@ -451,7 +886,16 @@ def _evaluate_single_row(
             "source_row_index": source_row_index,
             "model_config": model_config.name,
             "item_id": item_id,
-            "prompt": prompt_text,
+            "packet_id": str(row.get("packet_id", "")),
+            "target_error_mode": str(row.get("target_error_mode", "")),
+            "query_id": str(row.get("query_id", "")),
+            "as_of_date": str(row.get("as_of_date", "")),
+            "source_dataset_path": str(row.get("source_dataset_path", "")),
+            "source_user_query": source_user_query,
+            "rendered_user_prompt": rendered_user_prompt,
+            "scenario_facts_json": json.dumps(scenario_facts, ensure_ascii=True),
+            "grading_contract_json": json.dumps(row.get("grading_contract_parsed", {}), ensure_ascii=True),
+            "expected_citation_groups_json": json.dumps(row.get("expected_citation_groups", []), ensure_ascii=True),
             "expected_output": expected_output,
             "model_output": "",
             "response_id": None,
@@ -500,7 +944,16 @@ def _evaluate_single_row(
         "source_row_index": source_row_index,
         "model_config": model_config.name,
         "item_id": item_id,
-        "prompt": prompt_text,
+        "packet_id": str(row.get("packet_id", "")),
+        "target_error_mode": str(row.get("target_error_mode", "")),
+        "query_id": str(row.get("query_id", "")),
+        "as_of_date": str(row.get("as_of_date", "")),
+        "source_dataset_path": str(row.get("source_dataset_path", "")),
+        "source_user_query": source_user_query,
+        "rendered_user_prompt": rendered_user_prompt,
+        "scenario_facts_json": json.dumps(scenario_facts, ensure_ascii=True),
+        "grading_contract_json": json.dumps(row.get("grading_contract_parsed", {}), ensure_ascii=True),
+        "expected_citation_groups_json": json.dumps(row.get("expected_citation_groups", []), ensure_ascii=True),
         "expected_output": expected_output,
         "model_output": model_result["output_text"],
         "response_id": model_result["response_id"],
@@ -534,7 +987,6 @@ def _evaluate_model_config(
     raw_response_dir.mkdir(parents=True, exist_ok=True)
 
     if args.dry_run:
-        client = None
         call_model = None
     else:
         client = OpenAI()
@@ -562,7 +1014,7 @@ def _evaluate_model_config(
 
         progress_bar = tqdm(
             total=len(future_to_index),
-            desc=f"{model_config.name}",
+            desc=f"model:{model_config.name}",
             position=progress_position,
             leave=True,
         )
@@ -668,27 +1120,490 @@ def _reshape_metric_table(
     return pd.DataFrame(rows)
 
 
-def _prepare_dataset(args: argparse.Namespace) -> pd.DataFrame:
-    dataset = pd.read_csv(args.input_csv)
+def _extract_predicted_citation_tokens(output_text: str) -> List[str]:
+    ordered_tokens: List[str] = []
+    seen_tokens: set[str] = set()
 
-    if args.prompt_column not in dataset.columns:
-        raise ValueError(f"Prompt column '{args.prompt_column}' does not exist in {args.input_csv}.")
+    for citation in extract_excerpt_citations(output_text):
+        citation_token = citation.raw
+        try:
+            citation_token = normalize_citation_token(citation_token)
+        except ValueError:
+            continue
 
-    if args.id_column not in dataset.columns:
-        dataset[args.id_column] = [f"row_{index}" for index in range(dataset.shape[0])]
+        if citation_token in seen_tokens:
+            continue
 
-    if args.expected_output_column not in dataset.columns:
-        dataset[args.expected_output_column] = pd.NA
+        seen_tokens.add(citation_token)
+        ordered_tokens.append(citation_token)
 
-    dataset = dataset.copy()
-    dataset[args.id_column] = dataset[args.id_column].astype(str)
-    dataset[args.prompt_column] = dataset[args.prompt_column].fillna("").astype(str)
+    return ordered_tokens
 
-    if args.max_samples is not None:
-        dataset = dataset.head(args.max_samples).copy()
 
-    dataset.reset_index(drop=True, inplace=True)
-    return dataset
+def _build_citation_fidelity_items(
+    *,
+    predicted_citation_tokens: List[str],
+    expected_citation_groups: List[List[str]],
+    block_text_by_token: Dict[str, str],
+) -> List[Dict[str, Any]]:
+    expected_tokens = set(_flatten_expected_tokens(expected_citation_groups))
+    fidelity_items: List[Dict[str, Any]] = []
+
+    for citation_token in predicted_citation_tokens:
+        fidelity_items.append(
+            {
+                "citation_token": citation_token,
+                "exists_in_packet": citation_token in block_text_by_token,
+                "expected_for_item": citation_token in expected_tokens,
+                "canonical_excerpt": block_text_by_token.get(citation_token),
+            }
+        )
+
+    return fidelity_items
+
+
+def _build_grader_context(row: Dict[str, Any], block_text_by_packet: Dict[str, Dict[str, str]]) -> Dict[str, Any]:
+    grading_contract = row.get("grading_contract_parsed", {})
+    if not isinstance(grading_contract, dict):
+        grading_contract = {}
+
+    scenario_facts = row.get("scenario_facts_parsed", [])
+    if not isinstance(scenario_facts, list):
+        scenario_facts = []
+
+    expected_citation_groups = row.get("expected_citation_groups", [])
+    if not isinstance(expected_citation_groups, list):
+        expected_citation_groups = []
+
+    model_output = str(row.get("model_output", ""))
+    predicted_tokens = _extract_predicted_citation_tokens(model_output)
+
+    packet_id = str(row.get("packet_id", ""))
+    block_map = block_text_by_packet.get(packet_id, {})
+
+    context: Dict[str, Any] = {
+        "expected_citation_groups": expected_citation_groups,
+        "test_case_context": {
+            "item_id": str(row.get("item_id", "")),
+            "packet_id": packet_id,
+            "target_error_mode": str(row.get("target_error_mode", "")),
+            "query_id": str(row.get("query_id", "")),
+            "as_of_date": str(row.get("as_of_date", "")),
+            "scenario_facts": scenario_facts,
+        },
+        "citation_fidelity_note": grading_contract.get("citation_integrity_trigger_note"),
+        "citation_fidelity_items": _build_citation_fidelity_items(
+            predicted_citation_tokens=predicted_tokens,
+            expected_citation_groups=expected_citation_groups,
+            block_text_by_token=block_map,
+        ),
+        "overextension_trigger_note": grading_contract.get("overextension_trigger_note"),
+        "overextension_cautions": grading_contract.get("overextension_cautions", []),
+        "precedence_trigger_note": grading_contract.get("precedence_trigger_note"),
+        "precedence_cautions": grading_contract.get("precedence_cautions", []),
+        "authority_graph": grading_contract.get("authority_graph"),
+    }
+    return context
+
+
+def _select_graders_for_mode(target_error_mode: str) -> List[str]:
+    selected_graders = ["expected_citation_presence"]
+    mode_token = str(target_error_mode).strip().upper()
+    extra_grader = MODE_TO_EXTRA_GRADER.get(mode_token)
+    if extra_grader:
+        selected_graders.append(extra_grader)
+    return selected_graders
+
+
+def _build_grader_registry(args: argparse.Namespace) -> Dict[str, Any]:
+    grader_registry: Dict[str, Any] = {
+        "expected_citation_presence": ExpectedCitationPresenceGrader(),
+    }
+
+    if args.dry_run:
+        return grader_registry
+
+    shared_client = OpenAI()
+    grader_registry["citation_fidelity_llm_judge"] = CitationFidelityLLMJudgeGrader(
+        model=args.grader_model,
+        reasoning_effort=args.grader_reasoning_effort,
+        temperature=args.grader_temperature,
+        client=shared_client,
+    )
+    grader_registry["citation_overextension_llm_judge"] = CitationOverextensionLLMJudgeGrader(
+        model=args.grader_model,
+        reasoning_effort=args.grader_reasoning_effort,
+        temperature=args.grader_temperature,
+        client=shared_client,
+    )
+    grader_registry["precedence_llm_judge"] = PrecedenceLLMJudgeGrader(
+        model=args.grader_model,
+        reasoning_effort=args.grader_reasoning_effort,
+        temperature=args.grader_temperature,
+        client=shared_client,
+    )
+    return grader_registry
+
+
+def _extract_score_from_grader_details(details: Dict[str, Any]) -> Optional[float]:
+    if "score" in details:
+        return _safe_float(details.get("score"))
+    if "overall_score" in details:
+        return _safe_float(details.get("overall_score"))
+    return None
+
+
+def _extract_label_from_grader_details(details: Dict[str, Any]) -> Optional[str]:
+    for key in ["label", "grade_label"]:
+        if key in details and str(details[key]).strip():
+            return str(details[key]).strip()
+    return None
+
+
+def _run_single_grader(
+    *,
+    prediction_row: Dict[str, Any],
+    grader_name: str,
+    grader_registry: Dict[str, Any],
+    block_text_by_packet: Dict[str, Dict[str, str]],
+    dry_run: bool,
+) -> Tuple[Dict[str, Any], Dict[str, Any]]:
+    start_time = time.perf_counter()
+
+    base_row = {
+        "model_config": str(prediction_row.get("model_config", "")),
+        "source_row_index": int(prediction_row.get("source_row_index", -1)),
+        "item_id": str(prediction_row.get("item_id", "")),
+        "packet_id": str(prediction_row.get("packet_id", "")),
+        "target_error_mode": str(prediction_row.get("target_error_mode", "")),
+        "query_id": str(prediction_row.get("query_id", "")),
+        "as_of_date": str(prediction_row.get("as_of_date", "")),
+        "grader_name": grader_name,
+    }
+
+    if str(prediction_row.get("response_status", "")) == "error":
+        return (
+            {
+                **base_row,
+                "grader_status": "skipped_model_error",
+                "grader_passed": None,
+                "grader_score": None,
+                "grader_label": None,
+                "grader_error": "Model output unavailable due to model request error.",
+                "grader_latency_seconds": float(time.perf_counter() - start_time),
+                "grader_input_tokens": None,
+                "grader_output_tokens": None,
+                "grader_reasoning_tokens": None,
+                "grader_total_tokens": None,
+                "grader_details_json": json.dumps({}, ensure_ascii=True),
+            },
+            {},
+        )
+
+    if grader_name != "expected_citation_presence" and dry_run:
+        return (
+            {
+                **base_row,
+                "grader_status": "skipped_dry_run",
+                "grader_passed": None,
+                "grader_score": None,
+                "grader_label": None,
+                "grader_error": None,
+                "grader_latency_seconds": float(time.perf_counter() - start_time),
+                "grader_input_tokens": None,
+                "grader_output_tokens": None,
+                "grader_reasoning_tokens": None,
+                "grader_total_tokens": None,
+                "grader_details_json": json.dumps({}, ensure_ascii=True),
+            },
+            {},
+        )
+
+    grader = grader_registry[grader_name]
+    context = _build_grader_context(prediction_row, block_text_by_packet)
+
+    if grader_name == "citation_fidelity_llm_judge" and not context["citation_fidelity_items"]:
+        details = {
+            "score": 1.0,
+            "label": "no_citations_predicted",
+            "reason": "No citation tokens were present in model output; no hallucinated citation detected.",
+            "passed": True,
+            "usage": None,
+        }
+        latency_seconds = float(time.perf_counter() - start_time)
+        return (
+            {
+                **base_row,
+                "grader_status": "completed",
+                "grader_passed": True,
+                "grader_score": 1.0,
+                "grader_label": "no_citations_predicted",
+                "grader_error": None,
+                "grader_latency_seconds": latency_seconds,
+                "grader_input_tokens": None,
+                "grader_output_tokens": None,
+                "grader_reasoning_tokens": None,
+                "grader_total_tokens": None,
+                "grader_details_json": json.dumps(details, ensure_ascii=True),
+            },
+            {
+                "user_query": prediction_row.get("source_user_query", prediction_row.get("source_prompt")),
+                "model_output": prediction_row.get("model_output"),
+                "context": context,
+                "details": details,
+            },
+        )
+
+    try:
+        grade_result = grader.grade(
+            prompt=str(prediction_row.get("source_user_query", prediction_row.get("source_prompt", ""))),
+            output=str(prediction_row.get("model_output", "")),
+            context=context,
+        )
+    except (OpenAIError, RuntimeError, TypeError, ValueError, json.JSONDecodeError) as error:
+        latency_seconds = float(time.perf_counter() - start_time)
+        return (
+            {
+                **base_row,
+                "grader_status": "error",
+                "grader_passed": None,
+                "grader_score": None,
+                "grader_label": None,
+                "grader_error": str(error),
+                "grader_latency_seconds": latency_seconds,
+                "grader_input_tokens": None,
+                "grader_output_tokens": None,
+                "grader_reasoning_tokens": None,
+                "grader_total_tokens": None,
+                "grader_details_json": json.dumps({}, ensure_ascii=True),
+            },
+            {
+                "user_query": prediction_row.get("source_user_query", prediction_row.get("source_prompt")),
+                "model_output": prediction_row.get("model_output"),
+                "context": context,
+                "error": str(error),
+            },
+        )
+
+    latency_seconds = float(time.perf_counter() - start_time)
+    details = grade_result.details if isinstance(grade_result.details, dict) else {}
+
+    usage_fields = _extract_usage_fields(details.get("usage"))
+
+    grader_row = {
+        **base_row,
+        "grader_status": "completed",
+        "grader_passed": bool(grade_result.passed),
+        "grader_score": _extract_score_from_grader_details(details),
+        "grader_label": _extract_label_from_grader_details(details),
+        "grader_error": None,
+        "grader_latency_seconds": latency_seconds,
+        "grader_input_tokens": usage_fields["input_tokens"],
+        "grader_output_tokens": usage_fields["output_tokens"],
+        "grader_reasoning_tokens": usage_fields["reasoning_tokens"],
+        "grader_total_tokens": usage_fields["total_tokens"],
+        "grader_details_json": json.dumps(details, ensure_ascii=True),
+    }
+
+    raw_payload = {
+        "user_query": prediction_row.get("source_user_query", prediction_row.get("source_prompt")),
+        "model_output": prediction_row.get("model_output"),
+        "context": context,
+        "details": details,
+    }
+    return grader_row, raw_payload
+
+
+def _run_graders(
+    *,
+    predictions_frame: pd.DataFrame,
+    args: argparse.Namespace,
+    run_dir: Path,
+    block_text_by_packet: Dict[str, Dict[str, str]],
+) -> pd.DataFrame:
+    grader_registry = _build_grader_registry(args)
+
+    raw_grader_dir = run_dir / "raw_grader_responses"
+    raw_grader_dir.mkdir(parents=True, exist_ok=True)
+
+    prediction_records = predictions_frame.to_dict(orient="records")
+
+    grader_rows: List[Dict[str, Any]] = []
+
+    with ThreadPoolExecutor(max_workers=max(1, args.max_grader_workers)) as grader_pool:
+        futures = {}
+        for prediction_row in prediction_records:
+            selected_graders = _select_graders_for_mode(str(prediction_row.get("target_error_mode", "")))
+            for grader_name in selected_graders:
+                future = grader_pool.submit(
+                    _run_single_grader,
+                    prediction_row=prediction_row,
+                    grader_name=grader_name,
+                    grader_registry=grader_registry,
+                    block_text_by_packet=block_text_by_packet,
+                    dry_run=args.dry_run,
+                )
+                futures[future] = {
+                    "model_config": str(prediction_row.get("model_config", "")),
+                    "item_id": str(prediction_row.get("item_id", "")),
+                    "grader_name": grader_name,
+                    "source_row_index": int(prediction_row.get("source_row_index", -1)),
+                }
+
+        progress_bar = tqdm(total=len(futures), desc="graders", leave=True)
+        for future in as_completed(futures):
+            record_context = futures[future]
+            grader_row, raw_payload = future.result()
+            grader_rows.append(grader_row)
+
+            raw_file_stem = _sanitize_name(
+                f"{record_context['source_row_index']}_{record_context['item_id']}_{record_context['model_config']}_{record_context['grader_name']}"
+            )
+            raw_path = raw_grader_dir / f"{raw_file_stem}.json"
+            raw_path.write_text(json.dumps(raw_payload, indent=2), encoding="utf-8")
+            progress_bar.update(1)
+        progress_bar.close()
+
+    if not grader_rows:
+        return pd.DataFrame()
+
+    grader_frame = pd.DataFrame(grader_rows).sort_values(
+        by=["model_config", "source_row_index", "grader_name"], kind="mergesort"
+    )
+    return grader_frame
+
+
+def _summarize_grader_metrics(grader_frame: pd.DataFrame) -> pd.DataFrame:
+    if grader_frame.empty:
+        return pd.DataFrame(
+            [
+                {
+                    "model_config": "none",
+                    "grader_name": "none",
+                    "target_error_mode": "none",
+                    "grader_request_count": 0,
+                    "grader_completed_count": 0,
+                }
+            ]
+        )
+
+    summary_rows: List[Dict[str, Any]] = []
+    grouped = grader_frame.groupby(["model_config", "grader_name", "target_error_mode"], dropna=False)
+
+    for (model_config, grader_name, target_error_mode), rows in grouped:
+        completed_rows = rows[rows["grader_status"] == "completed"]
+        completed_passed = completed_rows[completed_rows["grader_passed"] == True]
+
+        pass_rate = None
+        if not completed_rows.empty:
+            pass_rate = float(completed_passed.shape[0] / completed_rows.shape[0])
+
+        summary_row = {
+            "model_config": model_config,
+            "grader_name": grader_name,
+            "target_error_mode": target_error_mode,
+            "grader_request_count": int(rows.shape[0]),
+            "grader_completed_count": int(completed_rows.shape[0]),
+            "grader_pass_count": int(completed_passed.shape[0]),
+            "grader_pass_rate": pass_rate,
+            "grader_error_count": int((rows["grader_status"] == "error").sum()),
+            "grader_skipped_count": int(rows["grader_status"].str.startswith("skipped").sum()),
+        }
+        summary_row.update(_compute_distribution_stats(rows["grader_latency_seconds"], "grader_latency_seconds"))
+        summary_row.update(_compute_distribution_stats(rows["grader_input_tokens"], "grader_input_tokens"))
+        summary_row.update(_compute_distribution_stats(rows["grader_output_tokens"], "grader_output_tokens"))
+        summary_row.update(_compute_distribution_stats(rows["grader_reasoning_tokens"], "grader_reasoning_tokens"))
+        summary_row.update(_compute_distribution_stats(rows["grader_total_tokens"], "grader_total_tokens"))
+        summary_rows.append(summary_row)
+
+    return pd.DataFrame(summary_rows)
+
+
+def _build_slice_metrics(grader_frame: pd.DataFrame) -> pd.DataFrame:
+    if grader_frame.empty:
+        return pd.DataFrame(
+            columns=[
+                "packet_id",
+                "target_error_mode",
+                "model_config",
+                "grader_name",
+                "completed_count",
+                "pass_count",
+                "pass_rate",
+            ]
+        )
+
+    rows: List[Dict[str, Any]] = []
+    grouped = grader_frame.groupby(["packet_id", "target_error_mode", "model_config", "grader_name"], dropna=False)
+
+    for (packet_id, target_error_mode, model_config, grader_name), group_rows in grouped:
+        completed_rows = group_rows[group_rows["grader_status"] == "completed"]
+        pass_count = int((completed_rows["grader_passed"] == True).sum())
+        completed_count = int(completed_rows.shape[0])
+        pass_rate = float(pass_count / completed_count) if completed_count else None
+
+        rows.append(
+            {
+                "packet_id": packet_id,
+                "target_error_mode": target_error_mode,
+                "model_config": model_config,
+                "grader_name": grader_name,
+                "completed_count": completed_count,
+                "pass_count": pass_count,
+                "pass_rate": pass_rate,
+            }
+        )
+
+    return pd.DataFrame(rows)
+
+
+def _build_predictions_and_grades(predictions_frame: pd.DataFrame, grader_frame: pd.DataFrame) -> pd.DataFrame:
+    if predictions_frame.empty:
+        return predictions_frame
+
+    if grader_frame.empty:
+        output = predictions_frame.copy()
+        output["overall_required_graders_passed"] = None
+        return output
+
+    key_columns = ["model_config", "source_row_index", "item_id"]
+
+    grader_status_summary = (
+        grader_frame.groupby(key_columns, dropna=False)
+        .apply(
+            lambda group_rows: bool(
+                (group_rows["grader_status"] == "completed").all() and (group_rows["grader_passed"] == True).all()
+            )
+        )
+        .reset_index(name="overall_required_graders_passed")
+    )
+
+    grader_pass_wide = (
+        grader_frame.pivot_table(
+            index=key_columns,
+            columns="grader_name",
+            values="grader_passed",
+            aggfunc="first",
+        )
+        .rename(columns=lambda grader_name: f"grader_{grader_name}_passed")
+        .reset_index()
+    )
+
+    grader_score_wide = (
+        grader_frame.pivot_table(
+            index=key_columns,
+            columns="grader_name",
+            values="grader_score",
+            aggfunc="first",
+        )
+        .rename(columns=lambda grader_name: f"grader_{grader_name}_score")
+        .reset_index()
+    )
+
+    merged = predictions_frame.merge(grader_status_summary, on=key_columns, how="left")
+    merged = merged.merge(grader_pass_wide, on=key_columns, how="left")
+    merged = merged.merge(grader_score_wide, on=key_columns, how="left")
+    return merged
 
 
 def _save_run_configuration(
@@ -701,8 +1616,21 @@ def _save_run_configuration(
         "created_at": datetime.now().isoformat(),
         "cli_args": vars(args),
         "model_configs": [asdict(config) for config in model_configs],
+        "grader_config": {
+            "grader_model": args.grader_model,
+            "grader_reasoning_effort": args.grader_reasoning_effort,
+            "grader_temperature": args.grader_temperature,
+        },
     }
     (run_dir / "run_config.json").write_text(json.dumps(config_payload, indent=2), encoding="utf-8")
+
+
+def _build_run_id(args: argparse.Namespace) -> str:
+    if args.run_id:
+        return _sanitize_name(args.run_id)
+
+    run_timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    return _sanitize_name(f"{args.experiment_name}_{run_timestamp}")
 
 
 def main() -> None:
@@ -717,9 +1645,10 @@ def main() -> None:
     model_worker_count = min(max(1, args.max_model_workers), max(1, len(model_configs)))
 
     dataset = _prepare_dataset(args)
+    _validate_required_synthetic_columns(dataset, args.prompt_column)
 
-    run_timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    run_dir = Path(args.output_root) / f"{_sanitize_name(args.experiment_name)}_{run_timestamp}"
+    run_id = _build_run_id(args)
+    run_dir = Path(args.output_root) / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
     input_summary_frame, input_column_profile_frame = _build_input_profile(
@@ -729,6 +1658,37 @@ def main() -> None:
     )
     input_summary_frame.to_csv(run_dir / "input_summary.csv", index=False)
     input_column_profile_frame.to_csv(run_dir / "input_column_profile.csv", index=False)
+
+    packet_resource_map = _build_packet_resource_map(dataset, Path(args.packet_root))
+
+    packet_corpus_by_packet = {
+        packet_id: packet_resources.packet_corpus_text
+        for packet_id, packet_resources in packet_resource_map.items()
+    }
+
+    block_text_by_packet = {
+        packet_id: packet_resources.block_text_by_token
+        for packet_id, packet_resources in packet_resource_map.items()
+    }
+
+    dataset = dataset.copy()
+    dataset["packet_corpus_text"] = dataset["packet_id"].map(packet_corpus_by_packet)
+    if dataset["packet_corpus_text"].isna().any():
+        missing_packet_rows = dataset[dataset["packet_corpus_text"].isna()]
+        missing_packets = sorted({str(packet_id) for packet_id in missing_packet_rows["packet_id"].tolist()})
+        raise ValueError(f"Missing packet corpus text for packet IDs: {', '.join(missing_packets)}")
+
+    packet_sanity_rows: List[Dict[str, Any]] = []
+    for packet_id, packet_resources in packet_resource_map.items():
+        packet_sanity_rows.append(
+            {
+                "packet_id": packet_id,
+                "document_count": packet_resources.document_count,
+                "block_count": packet_resources.block_count,
+                "corpus_char_length": len(packet_resources.packet_corpus_text),
+            }
+        )
+    pd.DataFrame(packet_sanity_rows).to_csv(run_dir / "packet_input_sanity.csv", index=False)
 
     _save_run_configuration(run_dir=run_dir, args=args, model_configs=model_configs)
 
@@ -760,7 +1720,7 @@ def main() -> None:
     all_results_frame = pd.concat(all_result_frames, ignore_index=True)
     summary_frame = pd.DataFrame(summary_rows).sort_values(by="model_config", kind="mergesort")
 
-    all_results_frame.to_csv(run_dir / "predictions_and_grades.csv", index=False)
+    all_results_frame.to_csv(run_dir / "predictions.csv", index=False)
     summary_frame.to_csv(run_dir / "metrics_summary.csv", index=False)
 
     latency_metrics_frame = _reshape_metric_table(
@@ -778,6 +1738,23 @@ def main() -> None:
     token_metrics_frame.to_csv(run_dir / "token_metrics.csv", index=False)
 
     pd.DataFrame(all_inter_token_rows).to_csv(run_dir / "inter_token_latency_events.csv", index=False)
+
+    grader_frame = _run_graders(
+        predictions_frame=all_results_frame,
+        args=args,
+        run_dir=run_dir,
+        block_text_by_packet=block_text_by_packet,
+    )
+    grader_frame.to_csv(run_dir / "grader_results.csv", index=False)
+
+    grader_summary_frame = _summarize_grader_metrics(grader_frame)
+    grader_summary_frame.to_csv(run_dir / "grader_metrics_summary.csv", index=False)
+
+    slice_metrics_frame = _build_slice_metrics(grader_frame)
+    slice_metrics_frame.to_csv(run_dir / "slice_metrics.csv", index=False)
+
+    predictions_and_grades_frame = _build_predictions_and_grades(all_results_frame, grader_frame)
+    predictions_and_grades_frame.to_csv(run_dir / "predictions_and_grades.csv", index=False)
 
     print(f"Run complete. Artifacts saved to: {run_dir}")
 

@@ -1,6 +1,6 @@
 from typing import Literal
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 
 class StructuredGradingContract(BaseModel):
@@ -20,9 +20,29 @@ class GeneratedSyntheticItemOutput(BaseModel):
     target_error_mode: str | None = None
     query_id: str | None = None
     as_of_date: str | None = None
-    prompt: str | None = None
+    user_query: str | None = None
     scenario_facts: list[str] = Field(default_factory=list)
     grading_contract: StructuredGradingContract = Field(default_factory=StructuredGradingContract)
+
+    @model_validator(mode="before")
+    @classmethod
+    def migrate_legacy_prompt_field(cls, value: object) -> object:
+        if isinstance(value, dict):
+            user_query = value.get("user_query")
+            legacy_prompt = value.get("prompt")
+            if (not isinstance(user_query, str) or not user_query.strip()) and isinstance(legacy_prompt, str):
+                migrated_value = dict(value)
+                migrated_value["user_query"] = legacy_prompt
+                return migrated_value
+        return value
+
+    @field_validator("user_query", mode="before")
+    @classmethod
+    def normalize_user_query(cls, value: str | None) -> str | None:
+        if value is None:
+            return None
+        text_value = str(value).strip()
+        return text_value if text_value else None
 
 
 class VerifierOutput(BaseModel):

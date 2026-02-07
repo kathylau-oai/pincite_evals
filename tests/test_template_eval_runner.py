@@ -80,11 +80,11 @@ def test_distribution_stats_computes_expected_values():
 
 def test_prepare_dataset_creates_id_and_expected_output_columns(tmp_path):
     input_csv_path = tmp_path / "dataset.csv"
-    pd.DataFrame({"prompt": ["p1", "p2"]}).to_csv(input_csv_path, index=False)
+    pd.DataFrame({"user_query": ["p1", "p2"]}).to_csv(input_csv_path, index=False)
 
     args = Namespace(
         input_csv=str(input_csv_path),
-        prompt_column="prompt",
+        user_query_column="user_query",
         id_column="item_id",
         expected_output_column="expected_output",
         max_samples=None,
@@ -94,4 +94,21 @@ def test_prepare_dataset_creates_id_and_expected_output_columns(tmp_path):
 
     assert "item_id" in dataset.columns
     assert "expected_output" in dataset.columns
+    assert "user_query" in dataset.columns
     assert dataset["item_id"].tolist() == ["row_0", "row_1"]
+
+
+def test_prepare_dataset_accepts_legacy_prompt_column(tmp_path):
+    input_csv_path = tmp_path / "dataset.csv"
+    pd.DataFrame({"prompt": ["p1"]}).to_csv(input_csv_path, index=False)
+
+    args = Namespace(
+        input_csv=str(input_csv_path),
+        user_query_column="user_query",
+        id_column="item_id",
+        expected_output_column="expected_output",
+        max_samples=None,
+    )
+
+    dataset = _prepare_dataset(args)
+    assert dataset["user_query"].tolist() == ["p1"]

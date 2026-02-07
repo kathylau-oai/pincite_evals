@@ -67,7 +67,7 @@ def test_load_verifier_prompts_renders_item_citations_as_block_ids():
         "target_error_mode": "A",
         "query_id": "q_fak_0001",
         "as_of_date": "2026-02-06",
-        "prompt": "Draft a memo section.",
+        "user_query": "Draft a memo section.",
         "scenario_facts": ["Use packet-only sources."],
         "grading_contract": {
             "expected_citation_groups": [["DOC001[P001.B01]", "DOC002.P002.B03"]],
@@ -100,5 +100,5 @@ def test_load_mode_prompts_adds_lawyer_realistic_query_style_guidance():
     )
 
     assert "Lawyer-realistic query style guide" in user_prompt
-    assert "Draft an internal legal memo analyzing whether we can remove this case to federal court" in user_prompt
-    assert "can we enforce a subpoena against an out-of-state nonparty?" in user_prompt
+    assert "Need a quick memo for the partner: can we remove this case to federal court under CAFA?" in user_prompt
+    assert "Can you write a concise memo on Article III standing risks for this privacy class action" in user_prompt

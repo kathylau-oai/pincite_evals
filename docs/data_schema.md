@@ -71,7 +71,7 @@ One JSON object per line.
   "target_error_mode": "C",
   "query_id": "q_0001",
   "as_of_date": "2026-02-06",
-  "prompt": "Draft an internal research memo...",
+  "user_query": "Need a short internal research memo on this issue...",
   "scenario_facts": [
     "Plaintiff alleges an agreement in conclusory terms.",
     "Complaint provides few specifics about who, when, and how.",
@@ -101,9 +101,9 @@ One JSON object per line.
 - `item_id`: unique row identifier.
 - `packet_id`: links item to manifest.
 - `target_error_mode`: one of `A`, `C`, `D`.
-- `query_id`: stable prompt ID.
+- `query_id`: stable user-query ID.
 - `as_of_date`: date precedence status should be judged against.
-- `prompt`: full user task given to the drafting model.
+- `user_query`: full user task given to the drafting model.
 - `scenario_facts`: list of factual assumptions.
 - `grading_contract`: judge guidance and expected citations.
 

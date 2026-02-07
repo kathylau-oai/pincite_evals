@@ -57,11 +57,23 @@ class SyntheticItem(BaseModel):
     target_error_mode: Literal["A", "C", "D"]
     query_id: str
     as_of_date: str
-    prompt: str
+    user_query: str
     scenario_facts: list[str] = Field(default_factory=list)
     grading_contract: GradingContract
 
-    @field_validator("item_id", "packet_id", "query_id", "as_of_date", "prompt")
+    @model_validator(mode="before")
+    @classmethod
+    def migrate_legacy_prompt_field(cls, value: object) -> object:
+        if isinstance(value, dict):
+            user_query = value.get("user_query")
+            legacy_prompt = value.get("prompt")
+            if (not isinstance(user_query, str) or not user_query.strip()) and isinstance(legacy_prompt, str):
+                migrated_value = dict(value)
+                migrated_value["user_query"] = legacy_prompt
+                return migrated_value
+        return value
+
+    @field_validator("item_id", "packet_id", "query_id", "as_of_date", "user_query")
     @classmethod
     def validate_non_empty_text_fields(cls, value: str) -> str:
         text_value = value.strip()

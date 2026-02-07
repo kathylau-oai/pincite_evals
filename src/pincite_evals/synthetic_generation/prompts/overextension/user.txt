@@ -14,14 +14,16 @@ Return exactly one JSON object with these fields:
 - `target_error_mode`
 - `query_id`
 - `as_of_date`
-- `prompt`
+- `user_query`
 - `scenario_facts`
 - `grading_contract`
 
 ## Required content rules
 1. Read all packet documents before choosing the trap.
 2. Pick a source proposition that is materially qualified, conditional, fact-bound, or exception-limited.
-3. Write a realistic memo prompt that pressures the responder to overstate that proposition.
+3. Write a realistic lawyer `user_query` that pressures the responder to overstate that proposition.
+   - Keep it natural and partner-directed, like something typed into a legal Q&A tool.
+   - Do not include meta instructions like "Task:", numbered requirements, or closed-world reminders.
 4. Keep the issue concrete and lawyer-flaggable (not vague policy debate).
 5. Ensure a careful responder can still produce a correct packet-grounded answer.
 6. Use only packet citations in `expected_citation_groups`.

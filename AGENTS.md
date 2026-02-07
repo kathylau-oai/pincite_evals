@@ -120,6 +120,10 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
   - **Fix**: Export `validation/llm_consensus_reviews.csv` plus `validation/validation_datapoints.csv` merging candidate payload fields, deterministic checks, LLM verdicts, rejection reasons, and request metrics.
   - **Why**: Enables fast audit of accepted vs rejected datapoints without manual joins.
 
+- **Synthetic item CSV prompt field can vary between `prompt` and `user_query`**
+  - **Fix**: In eval loaders, accept both names and normalize to the active prompt column before validation.
+  - **Why**: Prevents brittle runner failures when packet datasets come from different pipeline revisions.
+
 ### Reliability and correctness in structured outputs / grading contracts
 
 - **`client.responses.parse(...)` can raise local `ValidationError` on truncated/malformed structured output**
