@@ -17,6 +17,7 @@ Critical principle: scripts do parsing/formatting; the model does the reasoning.
   - `user_query`
   - `scenario_facts_json`
   - `expected_citation_groups_json`
+  - verifier outputs (`llm_verdict`, `llm_reason`, `validation_request_status`)
   - deterministic fields + trace evidence
 - Recommendations must come from this model-led reasoning and must be marked as recommendation-only (not implemented).
 
@@ -30,8 +31,23 @@ bash src/pincite_evals/synthetic_generation/run_all_packets.sh <run_timestamp>
 4. Explain rejected patterns in clear language with concrete examples.
 5. Review traces to confirm request health and distinguish quality issues from infra/runtime issues.
 6. Review accepted queries for realism and likely production behavior.
-7. Output prompt modification recommendations only.
-8. **Do not implement recommendations unless explicitly asked.**
+7. Focus prompt suggestions on error-mode performance by reviewing test case data and verifier reasoning together:
+   - test case fields: `user_query`, `scenario_facts_json`, `expected_citation_groups_json`, `target_error_mode`
+   - verifier fields: `llm_verdict`, `llm_reason`, `validation_request_status`, `final_rejection_reason`
+   - for each mode (`A`, `C`, `D`), identify repeat failure patterns and map each pattern to a concrete prompt-text change suggestion
+8. Output prompt modification recommendations only.
+9. **Do not implement recommendations unless explicitly asked.**
+
+## Error-mode prompt-iteration focus (required)
+Use this loop when analyzing and proposing prompt changes:
+1. Slice rejected and accepted datapoints by `target_error_mode`.
+2. For each mode, review at least several concrete examples from test case payload fields (`user_query`, `scenario_facts_json`, `expected_citation_groups_json`).
+3. Cross-check each example with verifier outcome/reason (`llm_verdict`, `llm_reason`, `validation_request_status`, `final_rejection_reason`).
+4. Decide whether the failure is mainly:
+   - prompt clarity/coverage issue,
+   - grading-contract specificity issue,
+   - infra/runtime issue (for example rate limit/retry failure).
+5. Propose prompt-only edits that directly target the mode-specific failure pattern, with one example before/after prompt instruction when possible.
 
 ## Repeatable command
 Preferred wrapper command:
@@ -66,7 +82,8 @@ When presenting results, include:
 4. Whether any accepted items should likely have been rejected.
 5. Trace health summary (completion/error/incomplete/retries) with examples.
 6. Accepted query realism summary with examples.
-7. Prompt-only recommendations prioritized by impact, explicitly marked not implemented.
+7. Error-mode findings (`A`/`C`/`D`) that tie test case evidence and verifier reasons to prompt suggestions.
+8. Prompt-only recommendations prioritized by impact, explicitly marked not implemented.
 
 ## Guardrails
 - Use pandas DataFrames for CSV manipulation.
