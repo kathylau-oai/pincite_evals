@@ -8,7 +8,7 @@ This folder contains scripts to download packet PDFs and convert them into citab
   - reads `pdf_list.txt` in each packet folder
   - downloads PDFs into `pdfs/`
   - parses PDFs with PyMuPDF into block-level text
-  - assigns citable IDs like `DOC001[P012.B07]`
+  - assigns citable IDs like `DOC001.P012.B07`
   - writes `blocks/*.blocks.csv`
   - writes `text/*.clean.txt` and `text/*.annotated.txt`, where annotated blocks use:
     - `<BLOCK id="DOC001.P012.B07">`

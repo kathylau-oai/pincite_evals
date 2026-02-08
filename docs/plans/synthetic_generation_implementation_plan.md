@@ -107,7 +107,7 @@ Parallel execution policy:
 4. Add schema validators for item fields:
   - `target_error_mode` in `{A, C, D}`
   - non-empty `expected_citation_groups`
-  - citation token format `DOC_ID[P###.B##]`
+  - citation token format `DOC###.P###.B##`
 
 ### Tests
 

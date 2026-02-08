@@ -1,34 +1,34 @@
 packet_id,doc_id,source_url,page_number,block_number,excerpt_id,citation_token,word_count,token_count,x0,y0,x1,y1,text
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,1,P001.B01,DOC006[P001.B01],11,19,69.96,52.49,329.43,115.36,FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,2,P001.B02,DOC006[P001.B02],9,16,59.04,148.32,234.84,178.28,"AMA M ULTIMEDIA , LLC, a Nevada 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,1,P001.B01,DOC006.P001.B01,11,19,69.96,52.63,329.43,115.54,FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,2,P001.B02,DOC006.P001.B02,9,16,59.04,148.16,234.84,177.97,"AMA M ULTIMEDIA , LLC, a Nevada 
 limited liability company,"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,3,P001.B03,DOC006[P001.B03],9,23,247.68,148.32,335.32,219.68,"No. 18-15051 D.C. No. 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,3,P001.B03,DOC006.P001.B03,9,23,247.68,148.16,335.32,219.37,"No. 18-15051 D.C. No. 
 2:15-cv-01674-
 ROS"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,4,P001.B04,DOC006[P001.B04],22,45,59.04,175.92,242.04,274.88,"Plaintiff-Appellant , v. 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,4,P001.B04,DOC006.P001.B04,22,45,59.04,175.76,242.04,274.57,"Plaintiff-Appellant , v. 
 M ARCIN  W ANAT , a foreign citizen; 
 M ACIEJ  M ADON , a foreign citizen; 
 MW M EDIA , a foreign corporation,"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,5,P001.B05,DOC006[P001.B05],1,3,273.36,217.32,325.68,261.08,OPINION
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,6,P001.B06,DOC006[P001.B06],72,128,83.28,272.72,315.6,559.04,"Defendants-Appellees. Appeal from the United States District Court for the District of Arizona 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,5,P001.B05,DOC006.P001.B05,1,3,273.36,217.16,325.68,260.77,OPINION
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,1,6,P001.B06,DOC006.P001.B06,72,128,83.28,273.59,315.6,558.73,"Defendants-Appellees. Appeal from the United States District Court for the District of Arizona 
 Roslyn O. Silver, District Judge, Presiding Argued and Submitted June 11, 2019 
 Submission Withdrawn December 20, 2019 Resubmitted August 10, 2020 San Francisco, California Filed August 17, 2020 Before:  Ronald M. Gould, Sandra S. Ikuta, and Ryan D. Nelson, Circuit Judges. Opinion by Judge R. Nelson; Concurrence by Judge Ikuta; 
 Concurrence by Judge R. Nelson; Dissent by Judge Gould"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,2,1,P002.B01,DOC006[P002.B01],7,13,54.0,34.68,274.08,66.08,"2 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,2,1,P002.B01,DOC006.P002.B01,7,13,54.0,34.52,274.08,65.77,"2 
 AMA M ULTIMEDIA V . W ANAT"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,2,2,P002.B02,DOC006[P002.B02],1,2,163.68,63.28,234.21,80.14,SUMMARY *
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,2,3,P002.B03,DOC006[P002.B03],103,125,54.0,107.69,348.0,546.9,"Personal Jurisdiction The panel affirmed the district court’s dismissal for lack of personal jurisdiction of a copyright infringement, trademark infringement, and unfair competition action. Defendant, a citizen and resident of Poland, operated ePorner, an adult video website, through MW Media, a Polish civil law partnership. Plaintiff contended that defendant was subject to specific personal jurisdiction in the United States because he expressly aimed tortious conduct at the forum. Applying Federal Rule of Civil Procedure 4(k)(2), known as the “federal long-arm statute,” the panel held that the exercise of personal jurisdiction would not comport with due process because defendant lacked the"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,2,4,P002.B04,DOC006[P002.B04],100,115,54.0,107.69,348.0,546.9,"requisite minimum contacts with the United States. The panel concluded that defendant committed intentional acts by establishing and maintaining ePorner, registering two domains, and entering into an agreement with an American domain name server, but he did not expressly aim his suit- related conduct at the United States. The panel also held that the district court did not abuse its discretion by limiting the scope of plaintiff’s jurisdictional discovery on the basis of privacy concerns. The panel declined to consider, for the first time on appeal, * This summary constitutes no part of the opinion of the court. It has"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,2,5,P002.B05,DOC006[P002.B05],11,12,54.0,107.69,348.0,546.9,been prepared by court staff for the convenience of the reader.
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,3,1,P003.B01,DOC006[P003.B01],101,125,54.0,34.68,348.0,551.84,"AMA M ULTIMEDIA V . W ANAT 3 a European Commission decision, known as the “Privacy Shield Decision,” which established that Member States, including Poland, could transfer personal data to certain organizations in the United States. The panel also declined to consider the European Parliament’s enactment of the General Data Protection Regulation, which repealed and replaced Poland’s Personal Data Protection Act after this appeal was filed. Concurring in the majority opinion in full, Judge Ikuta wrote that because the district court lacked personal jurisdiction over defendants, it had authority only to remove the case from its docket. Concurring, Judge R."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,3,2,P003.B02,DOC006[P003.B02],102,121,54.0,34.68,348.0,551.84,"Nelson wrote that the district court was not precluded from exercising its discretion on remand to consider intervening law in any supplemental request for jurisdictional discovery or amendment of the complaint. Dissenting, Judge Gould wrote that, taking the undisputed facts alleged by plaintiff as true and resolving any factual disputes in its favor, defendant targeted his economic activity toward the United States under the Calder “effects test.” In addition, plaintiff’s claims arose out of or related to defendant’s forum-related activities, and it was reasonable to exercise personal jurisdiction over defendant. Accordingly, Judge Gould would hold that the United States had"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,3,3,P003.B03,DOC006[P003.B03],23,40,54.0,34.68,348.0,551.84,"personal jurisdiction over defendant. COUNSEL Marc J. Randazza (argued) and Ronald D. Green, Randazza Legal Group PLLC, Las Vegas, Nevada, for Plaintiff- Appellant."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,1,P004.B01,DOC006[P004.B01],21,47,54.0,34.68,345.0,123.08,"4 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,2,2,P002.B02,DOC006.P002.B02,1,2,163.68,63.17,234.21,80.29,SUMMARY *
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,2,3,P002.B03,DOC006.P002.B03,103,125,54.0,107.72,348.0,546.64,"Personal Jurisdiction The panel affirmed the district court’s dismissal for lack of personal jurisdiction of a copyright infringement, trademark infringement, and unfair competition action. Defendant, a citizen and resident of Poland, operated ePorner, an adult video website, through MW Media, a Polish civil law partnership. Plaintiff contended that defendant was subject to specific personal jurisdiction in the United States because he expressly aimed tortious conduct at the forum. Applying Federal Rule of Civil Procedure 4(k)(2), known as the “federal long-arm statute,” the panel held that the exercise of personal jurisdiction would not comport with due process because defendant lacked the"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,2,4,P002.B04,DOC006.P002.B04,100,115,54.0,107.72,348.0,546.64,"requisite minimum contacts with the United States. The panel concluded that defendant committed intentional acts by establishing and maintaining ePorner, registering two domains, and entering into an agreement with an American domain name server, but he did not expressly aim his suit- related conduct at the United States. The panel also held that the district court did not abuse its discretion by limiting the scope of plaintiff’s jurisdictional discovery on the basis of privacy concerns. The panel declined to consider, for the first time on appeal, * This summary constitutes no part of the opinion of the court. It has"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,2,5,P002.B05,DOC006.P002.B05,11,12,54.0,107.72,348.0,546.64,been prepared by court staff for the convenience of the reader.
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,3,1,P003.B01,DOC006.P003.B01,101,125,54.0,34.52,348.0,551.53,"AMA M ULTIMEDIA V . W ANAT 3 a European Commission decision, known as the “Privacy Shield Decision,” which established that Member States, including Poland, could transfer personal data to certain organizations in the United States. The panel also declined to consider the European Parliament’s enactment of the General Data Protection Regulation, which repealed and replaced Poland’s Personal Data Protection Act after this appeal was filed. Concurring in the majority opinion in full, Judge Ikuta wrote that because the district court lacked personal jurisdiction over defendants, it had authority only to remove the case from its docket. Concurring, Judge R."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,3,2,P003.B02,DOC006.P003.B02,102,121,54.0,34.52,348.0,551.53,"Nelson wrote that the district court was not precluded from exercising its discretion on remand to consider intervening law in any supplemental request for jurisdictional discovery or amendment of the complaint. Dissenting, Judge Gould wrote that, taking the undisputed facts alleged by plaintiff as true and resolving any factual disputes in its favor, defendant targeted his economic activity toward the United States under the Calder “effects test.” In addition, plaintiff’s claims arose out of or related to defendant’s forum-related activities, and it was reasonable to exercise personal jurisdiction over defendant. Accordingly, Judge Gould would hold that the United States had"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,3,3,P003.B03,DOC006.P003.B03,23,40,54.0,34.52,348.0,551.53,"personal jurisdiction over defendant. COUNSEL Marc J. Randazza (argued) and Ronald D. Green, Randazza Legal Group PLLC, Las Vegas, Nevada, for Plaintiff- Appellant."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,1,P004.B01,DOC006.P004.B01,21,47,54.0,34.52,345.0,122.77,"4 
 AMA M ULTIMEDIA V . W ANAT
 Jakub P. Medrala (argued), The Medrala Law Firm PLLC, 
 Las Vegas, Nevada, for Defendants-Appellees."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,2,P004.B02,DOC006[P004.B02],1,3,171.6,120.53,227.28,137.14,OPINION
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,3,P004.B03,DOC006[P004.B03],105,141,54.0,146.52,348.0,340.28,"R. NELSON, Circuit Judge: AMA Multimedia, LLC (“AMA”) appeals the district 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,2,P004.B02,DOC006.P004.B02,1,3,171.6,120.67,227.28,137.29,OPINION
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,3,P004.B03,DOC006.P004.B03,105,141,54.0,146.36,348.0,339.97,"R. NELSON, Circuit Judge: AMA Multimedia, LLC (“AMA”) appeals the district 
 court’s dismissal of its copyright infringement, trademark 
 infringement, and unfair competition action against Marcin 
 Wanat for lack of personal jurisdiction.  We agree with the 
@@ -40,20 +40,20 @@ discovery and decline to consider arguments about changes
 in European law for the first time on appeal that bear on 
 AMA’s entitlement to additional jurisdictional discovery.  
 We therefore affirm."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,4,P004.B04,DOC006[P004.B04],1,1,195.6,349.73,203.28,366.34,I
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,5,P004.B05,DOC006[P004.B05],50,66,54.0,375.72,345.0,461.14,"Plaintiff AMA is a Nevada limited liability company that 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,4,P004.B04,DOC006.P004.B04,1,1,195.6,349.87,203.28,366.49,I
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,5,P004.B05,DOC006.P004.B05,50,66,54.0,375.56,345.0,461.29,"Plaintiff AMA is a Nevada limited liability company that 
 produces and distributes “adult entertainment over the 
 Internet.”  AMA owns several online websites where paying 
 customers can view AMA’s materials.  AMA’s videos are 
 copyrighted as audiovisual works and display the company’s 
 trademark in the corner of the screen."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,6,P004.B06,DOC006[P004.B06],52,82,54.0,470.52,345.0,555.68,"AMA discovered that ePorner.com (“ePorner”)—an 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,4,6,P004.B06,DOC006.P004.B06,52,82,54.0,470.36,345.0,555.37,"AMA discovered that ePorner.com (“ePorner”)—an 
 internationally available website which hosts adult videos 
 and allows users to search for, select, and watch them—was 
 displaying AMA’s copyrighted works.  At the time this suit 
 was filed, ePorner allowed users to upload adult videos 
 anonymously.  ePorner does not charge visitors; instead, it"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,5,1,P005.B01,DOC006[P005.B01],68,105,54.0,34.68,345.0,190.28,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,5,1,P005.B01,DOC006.P005.B01,68,105,54.0,34.52,345.0,189.97,"AMA M ULTIMEDIA V . W ANAT
 5 
 generates revenue solely through advertising.  ePorner 
 contracts with a third-party advertising company that 
@@ -64,13 +64,13 @@ location.  For example, visitors thought to be in the United
 States see selected advertisements in English, while visitors 
 thought to be in France see selected advertisements in 
 French."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,5,2,P005.B02,DOC006[P005.B02],105,135,54.0,199.92,345.0,448.88,"AMA was unable to determine who owned and operated ePorner, so, in 2015, AMA sued all defendants as Doe Defendants and Roe Corporations in the United States. The district court permitted AMA to conduct early discovery to ascertain who owned the domains epornergay.com and eprncdn.com, both of which forwarded visitors to ePorner.com. That early discovery revealed that two companies located in Arizona, GoDaddy.com and Domains by Proxy, were used to register the domains and privatize the owner’s identity. AMA subpoenaed both companies and learned that Defendant Marcin Wanat was the registrant of the domains. AMA amended its complaint and named"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,5,3,P005.B03,DOC006[P005.B03],42,58,54.0,199.92,345.0,448.88,"Wanat as a defendant. 1 Wanat is a citizen and resident of Poland. Wanat and Madon are partners in MW Media, a Polish civil law partnership which owns and operates ePorner. Through MW Media, Wanat assists in the operation of ePorner. Although"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,5,4,P005.B04,DOC006[P005.B04],41,61,54.01,484.92,345.0,546.91,"1  AMA was unable to serve the other named defendants,  i.e. , the 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,5,2,P005.B02,DOC006.P005.B02,105,135,54.0,199.76,345.0,448.57,"AMA was unable to determine who owned and operated ePorner, so, in 2015, AMA sued all defendants as Doe Defendants and Roe Corporations in the United States. The district court permitted AMA to conduct early discovery to ascertain who owned the domains epornergay.com and eprncdn.com, both of which forwarded visitors to ePorner.com. That early discovery revealed that two companies located in Arizona, GoDaddy.com and Domains by Proxy, were used to register the domains and privatize the owner’s identity. AMA subpoenaed both companies and learned that Defendant Marcin Wanat was the registrant of the domains. AMA amended its complaint and named"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,5,3,P005.B03,DOC006.P005.B03,42,58,54.0,199.76,345.0,448.57,"Wanat as a defendant. 1 Wanat is a citizen and resident of Poland. Wanat and Madon are partners in MW Media, a Polish civil law partnership which owns and operates ePorner. Through MW Media, Wanat assists in the operation of ePorner. Although"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,5,4,P005.B04,DOC006.P005.B04,41,61,54.01,484.76,345.0,546.65,"1  AMA was unable to serve the other named defendants,  i.e. , the 
 individual, Maciej Madon, and the foreign corporation, MW Media, S.C. 
 (“MW Media”), within the time set forth by the district court and those 
 defendants were thereafter dismissed."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,6,1,P006.B01,DOC006[P006.B01],97,156,54.0,34.68,345.0,243.94,"6 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,6,1,P006.B01,DOC006.P006.B01,97,156,54.0,34.52,345.0,244.09,"6 
 AMA M ULTIMEDIA V . W ANAT
 Wanat registered epornergay.com and eprncdn.com, he did 
 not register the ePorner.com domain. Through his operation of ePorner, Wanat maintains 
@@ -83,25 +83,25 @@ LLC (doing business as DNSMadeEasy.com) (“Tiggee”),
 that allows users to access ePorner more efficiently by 
 translating its domain names into Internet Protocol 
 addresses."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,6,2,P006.B02,DOC006[P006.B02],65,92,54.0,253.32,345.0,352.54,"However, Wanat has never visited the United States, has 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,6,2,P006.B02,DOC006.P006.B02,65,92,54.0,253.16,345.0,352.69,"However, Wanat has never visited the United States, has 
 never paid taxes in the United States, does not have a visa to 
 travel to the United States, and has never “derived any profit 
 from any of [his] activities in the [United] States as [he] 
 conduct[s] no such activities.”  Nor do Wanat, MW Media, 
 or ePorner maintain any offices or agents in the United 
 States."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,6,3,P006.B03,DOC006[P006.B03],56,85,54.0,361.92,345.0,447.08,"At the time this suit was filed, the adult content available 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,6,3,P006.B03,DOC006.P006.B03,56,85,54.0,361.76,345.0,446.77,"At the time this suit was filed, the adult content available 
 on ePorner was stored on a server in the Netherlands.  Wanat 
 stated he does not “specifically target any of [his] services to 
 residents of the [United] States.”  19.21% of ePorner’s 
 visitors are in the United States, making the United States its 
 largest market."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,6,4,P006.B04,DOC006[P006.B04],32,48,54.0,456.72,348.0,528.08,"AMA asserted federal claims for copyright infringement, 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,6,4,P006.B04,DOC006.P006.B04,32,48,54.0,456.56,348.0,527.77,"AMA asserted federal claims for copyright infringement, 
 trademark infringement, and unfair competition.  Wanat 
 moved to dismiss based on a lack of personal jurisdiction.  
 After a hearing, the district court ordered jurisdictional 
 discovery."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,7,1,P007.B01,DOC006[P007.B01],96,139,54.0,34.68,345.0,204.08,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,7,1,P007.B01,DOC006.P007.B01,96,139,54.0,34.52,345.0,203.77,"AMA M ULTIMEDIA V . W ANAT
 7 AMA sought documents related to epornergay.com and 
 eprncdn.com, including contracts and correspondence 
 between the websites and U.S. companies.  Wanat objected 
@@ -112,16 +112,16 @@ Poland’s Personal Data Protection Act of 29 August 1997
 (“PDP”).  AMA argued that exceptions to the PDP allowed 
 Wanat to produce the data and that, even if the exceptions 
 did not apply, Wanat could redact such personal information."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,7,2,P007.B02,DOC006[P007.B02],103,126,54.0,213.72,345.0,409.28,"The district court appointed a Special Master agreed upon by the parties and familiar with U.S. and Polish law to resolve the discovery disputes. See Fed. R. Civ. P. 53. AMA and Wanat hired their own Polish lawyers to evaluate Wanat’s discovery objections. In June 2016, AMA filed a Motion to Compel and Wanat filed a Motion for Protective Order. In an exhibit to his Motion for Protective Order, Wanat raised the fact that changes to the European privacy laws were under consideration. Specifically, his Polish law expert noted that work on a “Privacy Shield” that could replace the PDP’s"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,7,3,P007.B03,DOC006[P007.B03],34,38,54.0,213.72,345.0,409.28,“Safe Harbor” provision was in progress and could affect the transfer of personal data from European countries to the United States. AMA did not address this potential change in the law in its briefing.
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,7,4,P007.B04,DOC006[P007.B04],66,113,54.0,418.92,345.0,546.9,"On July 12, six days after the parties completed their 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,7,2,P007.B02,DOC006.P007.B02,103,126,54.0,213.56,345.0,408.97,"The district court appointed a Special Master agreed upon by the parties and familiar with U.S. and Polish law to resolve the discovery disputes. See Fed. R. Civ. P. 53. AMA and Wanat hired their own Polish lawyers to evaluate Wanat’s discovery objections. In June 2016, AMA filed a Motion to Compel and Wanat filed a Motion for Protective Order. In an exhibit to his Motion for Protective Order, Wanat raised the fact that changes to the European privacy laws were under consideration. Specifically, his Polish law expert noted that work on a “Privacy Shield” that could replace the PDP’s"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,7,3,P007.B03,DOC006.P007.B03,34,38,54.0,213.56,345.0,408.97,“Safe Harbor” provision was in progress and could affect the transfer of personal data from European countries to the United States. AMA did not address this potential change in the law in its briefing.
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,7,4,P007.B04,DOC006.P007.B04,66,113,54.0,418.76,345.0,546.64,"On July 12, six days after the parties completed their 
 briefing to the Special Master, the European Commission 
 issued its Implementing Decision (EU) 2016/1250 2  (the 
 “Privacy Shield Decision”), which, among other things, 
 established that Member States (including Poland) could 
 transfer personal data to certain organizations in the United 2  Available at https://eur-lex.europa.eu/legal-content/EN/TXT/PDF
 /?uri=CELEX:32016D1250&from=EN"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,8,1,P008.B01,DOC006[P008.B01],63,90,54.0,34.68,345.0,148.88,"8 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,8,1,P008.B01,DOC006.P008.B01,63,90,54.0,34.52,345.0,148.57,"8 
 AMA M ULTIMEDIA V . W ANAT
 States that committed to a set of privacy principles and self-
 certified their adherence to these principles to the 
@@ -129,13 +129,13 @@ Department of Commerce.   See id.  §§ 2, 2.1.  Neither party
 raised this change in law with the Special Master, and AMA 
 did not argue that it was a self-certified organization or 
 provide any evidence to that effect."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,8,2,P008.B02,DOC006[P008.B02],34,44,54.0,158.52,345.0,216.08,"On August 22, the Special Master submitted its 52-page 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,8,2,P008.B02,DOC006.P008.B02,34,44,54.0,158.36,345.0,215.77,"On August 22, the Special Master submitted its 52-page 
 Report and Recommendation to the district court.  Most of 
 the discovery disputes addressed by the Special Master did 
 not involve the application of the PDP."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,8,3,P008.B03,DOC006[P008.B03],104,123,54.0,225.72,345.0,557.48,"The Special Master recommended some of AMA’s discovery requests involving personal information be denied because responding to the requests would require Wanat to produce “personal data,” potentially exposing him to criminal liability under the PDP. The Special Master explained that personal data could not be transferred to the United States because: (1) the PDP’s “Safe Harbor” provision, which allows the transfer of such data to certain countries that provide “adequate level[s] of personal data protection,” did not apply to the United States, and (2) none of the PDP’s other exceptions permitting such transfer applied. As to the first point, relying"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,8,4,P008.B04,DOC006[P008.B04],103,126,54.0,225.72,345.0,557.48,"on the Court of Justice of the European Union’s decision in Case C-362/14, Schrems v. Data Prot. Comm’r , 2015 E.C.R. 650, the Special Master determined that “the U.S. has been deemed a Third Country that does not ensure a level of protection that meets European standards.” AMA thereafter submitted its Objections to Special Master’s Report and Recommendation, but did not raise the Privacy Shield Decision in its briefing. The Special Master’s Report and Recommendation did not address the recent implementation of the Privacy Shield Decision. Adopting the recommendations of the Special Master in full, the"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,9,1,P009.B01,DOC006[P009.B01],91,131,54.0,34.68,345.0,204.08,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,8,3,P008.B03,DOC006.P008.B03,104,123,54.0,225.56,345.0,557.17,"The Special Master recommended some of AMA’s discovery requests involving personal information be denied because responding to the requests would require Wanat to produce “personal data,” potentially exposing him to criminal liability under the PDP. The Special Master explained that personal data could not be transferred to the United States because: (1) the PDP’s “Safe Harbor” provision, which allows the transfer of such data to certain countries that provide “adequate level[s] of personal data protection,” did not apply to the United States, and (2) none of the PDP’s other exceptions permitting such transfer applied. As to the first point, relying"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,8,4,P008.B04,DOC006.P008.B04,103,126,54.0,225.56,345.0,557.17,"on the Court of Justice of the European Union’s decision in Case C-362/14, Schrems v. Data Prot. Comm’r , 2015 E.C.R. 650, the Special Master determined that “the U.S. has been deemed a Third Country that does not ensure a level of protection that meets European standards.” AMA thereafter submitted its Objections to Special Master’s Report and Recommendation, but did not raise the Privacy Shield Decision in its briefing. The Special Master’s Report and Recommendation did not address the recent implementation of the Privacy Shield Decision. Adopting the recommendations of the Special Master in full, the"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,9,1,P009.B01,DOC006.P009.B01,91,131,54.0,34.52,345.0,203.77,"AMA M ULTIMEDIA V . W ANAT
 9 
 district court sustained Wanat’s objections to AMA’s 
 discovery requests.  AMA moved for reconsideration, but 
@@ -147,15 +147,15 @@ could not establish sufficient minimum contacts between
 Wanat and the United States, asserting specific jurisdiction 
 over Wanat would be unreasonable.  AMA timely appealed, 
 challenging both the jurisdictional and discovery orders."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,9,2,P009.B02,DOC006[P009.B02],101,125,54.0,213.72,348.0,436.88,"After two extensions, AMA filed its opening brief on June 18, 2018. But twenty-four days earlier, the European Parliament repealed and replaced the PDP with the General Data Protection Regulation (EU) (2016/679) (“GDPR”), 3 which also addressed the transfer of personal data outside of EU Member States, although not specifically focused on transfers to the United States. Neither party mentioned the Privacy Shield Decision or the GDPR in their briefs. Following oral argument, we withdrew submission of the appeal and directed the parties to file supplemental briefs on several issues, including the effect of the Privacy Shield Decision on this"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,9,3,P009.B03,DOC006[P009.B03],39,45,54.0,213.72,348.0,436.88,"appeal. We did not inquire about the GDPR, although AMA discussed it in its supplemental brief. AMA did not argue or provide evidence that it is a self- certified organization under the Privacy Shield Decision in its supplemental brief."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,9,4,P009.B04,DOC006[P009.B04],1,1,193.32,446.33,205.68,462.94,II
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,9,5,P009.B05,DOC006[P009.B05],35,65,54.0,472.32,345.0,546.9,"We review de novo the district court’s dismissal for lack 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,9,2,P009.B02,DOC006.P009.B02,101,125,54.0,213.56,348.0,436.57,"After two extensions, AMA filed its opening brief on June 18, 2018. But twenty-four days earlier, the European Parliament repealed and replaced the PDP with the General Data Protection Regulation (EU) (2016/679) (“GDPR”), 3 which also addressed the transfer of personal data outside of EU Member States, although not specifically focused on transfers to the United States. Neither party mentioned the Privacy Shield Decision or the GDPR in their briefs. Following oral argument, we withdrew submission of the appeal and directed the parties to file supplemental briefs on several issues, including the effect of the Privacy Shield Decision on this"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,9,3,P009.B03,DOC006.P009.B03,39,45,54.0,213.56,348.0,436.57,"appeal. We did not inquire about the GDPR, although AMA discussed it in its supplemental brief. AMA did not argue or provide evidence that it is a self- certified organization under the Privacy Shield Decision in its supplemental brief."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,9,4,P009.B04,DOC006.P009.B04,1,1,193.32,446.47,205.68,463.09,II
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,9,5,P009.B05,DOC006.P009.B05,35,65,54.0,472.16,345.0,546.64,"We review de novo the district court’s dismissal for lack 
 of personal jurisdiction.   Boschetto v. Hansing , 539 F.3d 
 1011, 1015 (9th Cir. 2008).  “The factual findings underlying 3 Available at  https://gdpr-info.eu/."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,10,1,P010.B01,DOC006[P010.B01],101,168,54.0,34.68,348.0,355.88,"10 AMA M ULTIMEDIA V . W ANAT the district court’s jurisdiction determination are reviewed for clear error.” Freestream Aircraft (Berm.) Ltd. v. Aero Law Grp. , 905 F.3d 597, 602 (9th Cir. 2018). AMA “bears the burden of establishing that jurisdiction is proper.” Mavrix Photo, Inc. v. Brand Techs., Inc. , 647 F.3d 1218, 1223 (9th Cir. 2011). Because Wanat’s motion to dismiss was based on written materials rather than an evidentiary hearing, AMA need only make a prima facie showing of jurisdictional facts to withstand dismissal. See id. This prima facie standard “is not toothless,” however; AMA “cannot"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,10,2,P010.B02,DOC006[P010.B02],95,156,54.0,34.68,348.0,355.88,"simply rest on the bare allegations of its complaint.” In re Boon Glob. Ltd. , 923 F.3d 643, 650 (9th Cir. 2019) (internal quotation marks omitted). Although “uncontroverted allegations in the complaint must be taken as true” and “[c]onflicts between parties over statements contained in affidavits must be resolved in [AMA’s] favor,” Schwarzenegger v. Fred Martin Motor Co. , 374 F.3d 797, 800 (9th Cir. 2004), disputed allegations in the complaint that are not supported with evidence or affidavits cannot establish jurisdiction, see In re Boon Glob. Ltd. , 923 F.3d at 650."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,10,3,P010.B03,DOC006[P010.B03],76,129,54.0,365.52,348.0,478.28,"We review the district court’s decision to limit the scope 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,10,1,P010.B01,DOC006.P010.B01,101,168,54.0,34.52,348.0,355.57,"10 AMA M ULTIMEDIA V . W ANAT the district court’s jurisdiction determination are reviewed for clear error.” Freestream Aircraft (Berm.) Ltd. v. Aero Law Grp. , 905 F.3d 597, 602 (9th Cir. 2018). AMA “bears the burden of establishing that jurisdiction is proper.” Mavrix Photo, Inc. v. Brand Techs., Inc. , 647 F.3d 1218, 1223 (9th Cir. 2011). Because Wanat’s motion to dismiss was based on written materials rather than an evidentiary hearing, AMA need only make a prima facie showing of jurisdictional facts to withstand dismissal. See id. This prima facie standard “is not toothless,” however; AMA “cannot"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,10,2,P010.B02,DOC006.P010.B02,95,156,54.0,34.52,348.0,355.57,"simply rest on the bare allegations of its complaint.” In re Boon Glob. Ltd. , 923 F.3d 643, 650 (9th Cir. 2019) (internal quotation marks omitted). Although “uncontroverted allegations in the complaint must be taken as true” and “[c]onflicts between parties over statements contained in affidavits must be resolved in [AMA’s] favor,” Schwarzenegger v. Fred Martin Motor Co. , 374 F.3d 797, 800 (9th Cir. 2004), disputed allegations in the complaint that are not supported with evidence or affidavits cannot establish jurisdiction, see In re Boon Glob. Ltd. , 923 F.3d at 650."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,10,3,P010.B03,DOC006.P010.B03,76,129,54.0,365.36,348.0,477.97,"We review the district court’s decision to limit the scope 
 of jurisdictional discovery for abuse of discretion.  
 Boschetto , 539 F.3d at 1020.  “The district court’s refusal to 
 provide such discovery, ‘will not be reversed except upon 
@@ -163,16 +163,16 @@ the clearest showing that denial of discovery results in actual
 and substantial prejudice to the complaining litigant.’”   Id . 
 (quoting  Data Disc, Inc. v. Systems Tech. Assocs., Inc. , 
 557 F.2d 1280, 1285 n.1 (9th Cir. 1977))."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,10,4,P010.B04,DOC006[P010.B04],1,1,190.92,487.73,207.96,504.34,III
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,10,5,P010.B05,DOC006[P010.B05],28,35,54.0,513.72,345.0,557.48,"AMA contends Wanat is subject to specific jurisdiction 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,10,4,P010.B04,DOC006.P010.B04,1,1,190.92,487.87,207.96,504.49,III
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,10,5,P010.B05,DOC006.P010.B05,28,35,54.0,513.56,345.0,557.17,"AMA contends Wanat is subject to specific jurisdiction 
 in the United States because he expressly aimed tortious 
 conduct at the forum.  We agree with the district court and"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,1,P011.B01,DOC006[P011.B01],19,29,54.0,34.68,345.0,93.68,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,1,P011.B01,DOC006.P011.B01,19,29,54.0,34.52,345.0,93.37,"AMA M ULTIMEDIA V . W ANAT
 11 
 hold that Wanat lacks the requisite minimum contacts with 
 the United States."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,2,P011.B02,DOC006[P011.B02],1,1,193.68,103.13,205.32,119.74,A
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,3,P011.B03,DOC006[P011.B03],76,125,54.0,129.12,348.0,241.88,"Personal jurisdiction over an out-of-state defendant is 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,2,P011.B02,DOC006.P011.B02,1,1,193.68,103.27,205.32,119.89,A
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,3,P011.B03,DOC006.P011.B03,76,125,54.0,128.96,348.0,241.57,"Personal jurisdiction over an out-of-state defendant is 
 proper where permitted by a long-arm statute and where the 
 exercise of jurisdiction does not violate federal due process.  
 Pebble Beach Co. v. Caddy , 453 F.3d 1151, 1154 (9th Cir. 
@@ -180,18 +180,18 @@ Pebble Beach Co. v. Caddy , 453 F.3d 1151, 1154 (9th Cir.
 Procedure 4(k)(2), known as the “federal long-arm statute,” 
 id.  at 1159, permits the exercise of personal jurisdiction over 
 Wanat.  Rule 4(k)(2) contains three requirements:"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,4,P011.B04,DOC006[P011.B04],43,60,90.0,251.52,309.0,350.48,"First, the claim against the defendant must 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,4,P011.B04,DOC006.P011.B04,43,60,90.0,251.36,309.0,350.17,"First, the claim against the defendant must 
 arise under federal law. Second, the 
 defendant must not be subject to the personal 
 jurisdiction of any state court of general 
 jurisdiction. Third, the federal court’s 
 exercise of personal jurisdiction must 
 comport with due process."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,5,P011.B05,DOC006[P011.B05],30,42,54.0,362.16,345.0,419.72,"Id.  (internal citation omitted).  Because there is no dispute 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,5,P011.B05,DOC006.P011.B05,30,42,54.0,362.0,345.0,419.41,"Id.  (internal citation omitted).  Because there is no dispute 
 the first two requirements are satisfied, we address only 
 whether the exercise of personal jurisdiction over Wanat 
 comports with due process."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,6,P011.B06,DOC006[P011.B06],83,120,54.0,429.36,345.0,555.92,"Due process requires that a defendant who is not present 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,11,6,P011.B06,DOC006.P011.B06,83,120,54.0,429.2,345.0,555.61,"Due process requires that a defendant who is not present 
 in the forum has “certain minimum contacts” with the forum 
 “such that the maintenance of the suit does not offend 
 traditional notions of fair play and substantial justice.”   Int’l 
@@ -200,22 +200,22 @@ quotation marks omitted).  “The due process analysis under
 Rule 4(k)(2) is nearly identical to traditional personal 
 jurisdiction analysis with one significant difference: rather 
 than considering contacts between [defendant] and the"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,12,1,P012.B01,DOC006[P012.B01],35,67,54.0,34.68,345.0,107.48,"12 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,12,1,P012.B01,DOC006.P012.B01,35,67,54.0,34.52,345.0,107.17,"12 
 AMA M ULTIMEDIA V . W ANAT
 forum state, we consider contacts with the nation as a 
 whole.”   Holland Am. Line Inc. v. Wartsila N. Am., Inc. , 
 485 F.3d 450, 462 (9th Cir. 2007)."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,12,2,P012.B02,DOC006[P012.B02],34,42,54.0,117.12,345.0,174.68,"Turning to the due process analysis, we conduct a three-
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,12,2,P012.B02,DOC006.P012.B02,34,42,54.0,116.96,345.0,174.37,"Turning to the due process analysis, we conduct a three-
 part inquiry to determine whether a nonresident defendant 
 has such “minimum contacts” with the forum to warrant the 
 court’s exercise of specific jurisdiction:"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,12,3,P012.B03,DOC006[P012.B03],104,166,54.0,184.32,345.0,484.88,"(1) the defendant must either “purposefully direct his activities” toward the forum or “purposefully avail[] himself of the privileges of conducting activities in the forum”; (2) “the claim must be one which arises out of or relates to the defendant’s forum- related activities”; and (3) “the exercise of jurisdiction must comport with fair play and substantial justice, i.e. it must be reasonable.” Axiom Foods, Inc. v. Acerchem Int’l, Inc ., 874 F.3d 1064,1068 (9th Cir. 2017) (quoting Dole Food Co. v. Watts , 303 F.3d 1104, 1111 (9th Cir. 2002)). “If any of the three requirements is not satisfied, jurisdiction"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,12,4,P012.B04,DOC006[P012.B04],44,76,54.0,184.32,345.0,484.88,"in the forum would deprive the defendant of due process of law.” Omeluk v. Langsten Slip & Batbyggeri A/S , 52 F.3d 267, 270 (9th Cir. 1995). AMA bears the burden to establish the first two prongs. See Axiom , 874 F.3d at 1068."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,12,5,P012.B05,DOC006[P012.B05],37,59,54.0,494.52,348.0,552.08,"The first prong requires AMA to show that Wanat either 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,12,3,P012.B03,DOC006.P012.B03,104,166,54.0,184.16,345.0,484.57,"(1) the defendant must either “purposefully direct his activities” toward the forum or “purposefully avail[] himself of the privileges of conducting activities in the forum”; (2) “the claim must be one which arises out of or relates to the defendant’s forum- related activities”; and (3) “the exercise of jurisdiction must comport with fair play and substantial justice, i.e. it must be reasonable.” Axiom Foods, Inc. v. Acerchem Int’l, Inc ., 874 F.3d 1064,1068 (9th Cir. 2017) (quoting Dole Food Co. v. Watts , 303 F.3d 1104, 1111 (9th Cir. 2002)). “If any of the three requirements is not satisfied, jurisdiction"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,12,4,P012.B04,DOC006.P012.B04,44,76,54.0,184.16,345.0,484.57,"in the forum would deprive the defendant of due process of law.” Omeluk v. Langsten Slip & Batbyggeri A/S , 52 F.3d 267, 270 (9th Cir. 1995). AMA bears the burden to establish the first two prongs. See Axiom , 874 F.3d at 1068."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,12,5,P012.B05,DOC006.P012.B05,37,59,54.0,494.36,348.0,551.77,"The first prong requires AMA to show that Wanat either 
 “purposefully direct[ed] his activities” at the United States 
 or “purposefully avail[ed] himself” of the forum.   Id .  
 However, “[t]he exact form of our jurisdictional inquiry"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,13,1,P013.B01,DOC006[P013.B01],71,129,54.0,34.68,345.0,162.68,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,13,1,P013.B01,DOC006.P013.B01,71,129,54.0,34.52,345.0,162.37,"AMA M ULTIMEDIA V . W ANAT
 13 
 depends on the nature of the claim at issue.”   Picot v. Weston , 
 780 F.3d 1206, 1212 (9th Cir. 2015).  AMA alleges 
@@ -224,10 +224,10 @@ in tort, so we apply a “purposeful direction” analysis and ask
 whether Wanat has purposefully directed activities at the 
 United States. 4 See Axiom , 874 F.3d at 1069;  Mavrix , 
 647 F.3d at 1228."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,13,2,P013.B02,DOC006[P013.B02],104,165,54.0,172.32,345.0,367.88,"Where allegedly tortious conduct takes place outside the forum and has effects inside the forum, our circuit has examined purposeful direction using an “effects test” based on Calder v. Jones , 465 U.S. 783 (1984). See Mavrix , 647 F.3d at 1228–29 (applying the “effects test” in a copyright infringement case); Panavision Int’l, L.P. v. Toeppen , 141 F.3d 1316, 1321–22 (9th Cir. 1998) (applying the Calder test in a trademark dilution case). Under this test, “the defendant allegedly must have (1) committed an intentional act, (2) expressly aimed at the forum state, (3) causing harm that the defendant knows"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,13,3,P013.B03,DOC006[P013.B03],30,62,54.0,172.32,345.0,367.88,"is likely to be suffered in the forum state.” Mavrix , 647 F.3d at 1228 (quoting Brayton Purcell LLP v. Recordon & Recordon , 606 F.3d 1124, 1128 (9th Cir. 2010))."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,13,4,P013.B04,DOC006[P013.B04],1,1,193.92,377.33,204.96,393.94,B
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,13,5,P013.B05,DOC006[P013.B05],98,145,54.0,403.32,348.0,546.91,"We first conclude that Wanat committed an intentional 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,13,2,P013.B02,DOC006.P013.B02,104,165,54.0,172.16,345.0,367.57,"Where allegedly tortious conduct takes place outside the forum and has effects inside the forum, our circuit has examined purposeful direction using an “effects test” based on Calder v. Jones , 465 U.S. 783 (1984). See Mavrix , 647 F.3d at 1228–29 (applying the “effects test” in a copyright infringement case); Panavision Int’l, L.P. v. Toeppen , 141 F.3d 1316, 1321–22 (9th Cir. 1998) (applying the Calder test in a trademark dilution case). Under this test, “the defendant allegedly must have (1) committed an intentional act, (2) expressly aimed at the forum state, (3) causing harm that the defendant knows"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,13,3,P013.B03,DOC006.P013.B03,30,62,54.0,172.16,345.0,367.57,"is likely to be suffered in the forum state.” Mavrix , 647 F.3d at 1228 (quoting Brayton Purcell LLP v. Recordon & Recordon , 606 F.3d 1124, 1128 (9th Cir. 2010))."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,13,4,P013.B04,DOC006.P013.B04,1,1,193.92,377.47,204.96,394.09,B
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,13,5,P013.B05,DOC006.P013.B05,98,145,54.0,403.16,348.0,546.65,"We first conclude that Wanat committed an intentional 
 act.  For purposes of jurisdiction, a defendant acts 
 intentionally when he acts with “an intent to perform an 
 actual, physical act in the real world, rather than an intent to 
@@ -236,17 +236,17 @@ may assert “pendent personal jurisdiction” over AMA’s additional claim
 for unfair competition because it arises out of a common nucleus of 
 operative fact.   See Action Embroidery Corp. v. Atl. Embroidery, Inc. , 
 368 F.3d 1174, 1180 (9th Cir. 2004)."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,14,1,P014.B01,DOC006[P014.B01],106,158,54.0,34.68,348.0,273.08,"14 AMA M ULTIMEDIA V . W ANAT Schwarzenegger , 374 F.3d at 806. The district court found, and Wanat acknowledges, that he is one of the partners of MW Media, which owns ePorner. From Poland, Wanat registered two proxy domains—epornergay.com and eprncdn.com—via GoDaddy’s Polish website (a company whose primary place of business is in Arizona). He also purchased secondary DNS services from Tiggee (based in Virginia). Both proxy domains direct traffic to ePorner. Each of Wanat’s actions were intentional acts which satisfy this first prong. See, e.g., Brayton Purcell , 606 F.3d at 1129 (“operating a passive website was"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,14,2,P014.B02,DOC006[P014.B02],33,46,54.0,34.68,348.0,273.08,"an intentional act”) (citation omitted); Pebble Beach , 453 F.3d at 1156 (operating a website was an intentional act where the claim arose out of the website name’s infringement of a trademark)."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,14,3,P014.B03,DOC006[P014.B03],1,1,193.68,282.53,205.32,299.14,C
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,14,4,P014.B04,DOC006[P014.B04],59,104,54.0,308.52,348.0,407.48,"We next determine whether AMA has shown that Wanat 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,14,1,P014.B01,DOC006.P014.B01,106,158,54.0,34.52,348.0,272.77,"14 AMA M ULTIMEDIA V . W ANAT Schwarzenegger , 374 F.3d at 806. The district court found, and Wanat acknowledges, that he is one of the partners of MW Media, which owns ePorner. From Poland, Wanat registered two proxy domains—epornergay.com and eprncdn.com—via GoDaddy’s Polish website (a company whose primary place of business is in Arizona). He also purchased secondary DNS services from Tiggee (based in Virginia). Both proxy domains direct traffic to ePorner. Each of Wanat’s actions were intentional acts which satisfy this first prong. See, e.g., Brayton Purcell , 606 F.3d at 1129 (“operating a passive website was"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,14,2,P014.B02,DOC006.P014.B02,33,46,54.0,34.52,348.0,272.77,"an intentional act”) (citation omitted); Pebble Beach , 453 F.3d at 1156 (operating a website was an intentional act where the claim arose out of the website name’s infringement of a trademark)."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,14,3,P014.B03,DOC006.P014.B03,1,1,193.68,282.67,205.32,299.29,C
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,14,4,P014.B04,DOC006.P014.B04,59,104,54.0,308.36,348.0,407.17,"We next determine whether AMA has shown that Wanat 
 “expressly aimed” his intentional acts—establishing and 
 maintaining ePorner, registering the two domains, and 
 purchasing the DNS services—at the United States. 5
 Schwarzenegger , 374 F.3d at 806.  In  Mavrix , we applied the 
 Calder  test to analyze whether Brand Technologies, Inc. 
 (“Brand”) was subject to specific jurisdiction in California."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,14,5,P014.B05,DOC006[P014.B05],115,173,53.98,415.92,347.01,546.93,"5  In  Walden , the Supreme Court rejected our prior decisions holding 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,14,5,P014.B05,DOC006.P014.B05,115,173,53.98,415.76,347.01,546.67,"5  In  Walden , the Supreme Court rejected our prior decisions holding 
 that the express aiming element could be satisfied by a defendant’s 
 knowledge that harm may be inflicted on a plaintiff in a particular forum.  
 Axiom , 874 F.3d at 1069–70.  We noted that the  Walden  decision 
@@ -256,7 +256,7 @@ at 1068–69.  “A forum State’s exercise of jurisdiction over an out-of-
 state intentional tortfeasor must be based on intentional conduct by the 
 defendant that creates the necessary contacts with the forum.”   Walden 
 v. Fiore , 571 U.S. 277, 286 (2014)."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,15,1,P015.B01,DOC006[P015.B01],120,192,54.0,34.68,345.0,245.48,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,15,1,P015.B01,DOC006.P015.B01,120,192,54.0,34.52,345.0,245.17,"AMA M ULTIMEDIA V . W ANAT
 15 
 647 F.3d at 1227–32.  The plaintiff, Mavrix Photo, Inc. 
 (“Mavrix”), a Florida corporation in the business of selling 
@@ -271,7 +271,7 @@ news site, a web designer, an internet advertising agency that
 placed advertisements on the website, and a wireless 
 provider which hosted a mobile version of the website for its 
 users.   Id."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,15,2,P015.B02,DOC006[P015.B02],108,156,54.0,255.12,345.0,423.08,"We noted the difficulty of determining “whether tortious 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,15,2,P015.B02,DOC006.P015.B02,108,156,54.0,254.96,345.0,422.77,"We noted the difficulty of determining “whether tortious 
 conduct on a nationally accessible website is expressly 
 aimed at any, or all, of the forums in which the website can 
 be viewed.”   Id.  at 1229.  We explained that operating “a 
@@ -283,14 +283,14 @@ website’s operators can be said to have “expressly aimed” at
 a forum where a website “with national viewership and 
 scope appeals to, and profits from, an audience in a particular 
 state.”   Id.  at 1231."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,15,3,P015.B03,DOC006[P015.B03],59,90,54.0,432.72,345.0,531.68,"Looking to Brand’s conduct, we concluded that it 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,15,3,P015.B03,DOC006.P015.B03,59,90,54.0,432.56,345.0,531.37,"Looking to Brand’s conduct, we concluded that it 
 “continuously and deliberately exploited the California 
 market for its website.”   Id.  at 1230 (internal quotation marks 
 omitted).  “[M]ost salient” was its intentional use of 
 “Mavrix’s copyrighted photos as part of its exploitation of 
 the California market for its own commercial gain.”   Id.
 at 1229.  The context was significant:"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,16,1,P016.B01,DOC006[P016.B01],70,98,54.0,34.68,309.0,204.08,"16 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,16,1,P016.B01,DOC006.P016.B01,70,98,54.0,34.52,309.0,203.77,"16 
 AMA M ULTIMEDIA V . W ANAT Brand operated a very popular website with a 
 specific focus on the California-centered 
 celebrity and entertainment industries.  Based 
@@ -301,11 +301,11 @@ desired, and achieved a substantial California
 viewer base.  This audience is an integral 
 component of Brand’s business model and its 
 profitability."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,16,2,P016.B02,DOC006[P016.B02],37,56,54.0,215.76,345.0,273.32,"Id.  at 1230.  We concluded that holding Brand “answerable 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,16,2,P016.B02,DOC006.P016.B02,37,56,54.0,215.6,345.0,273.01,"Id.  at 1230.  We concluded that holding Brand “answerable 
 in a California court for the contents of a website whose 
 economic value turns, in significant measure, on its appeal 
 to Californians” did not violate due process.   Id."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,16,3,P016.B03,DOC006[P016.B03],92,146,54.0,282.96,345.0,423.32,"Here, AMA argues Wanat expressly aimed ePorner at 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,16,3,P016.B03,DOC006.P016.B03,92,146,54.0,282.8,345.0,423.01,"Here, AMA argues Wanat expressly aimed ePorner at 
 the U.S. market, as evidenced by: (1) Wanat’s use of geo-
 targeted advertisements and the purported corresponding 
 U.S. revenue, (2) ePorner’s U.S. viewer-base, which 
@@ -315,7 +315,7 @@ agreement,” and (4) the use of the U.S.-based Tiggee.  We
 hold that AMA has failed to meet its burden of 
 demonstrating that Wanat expressly aimed his intentional 
 acts at the United States."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,16,4,P016.B04,DOC006[P016.B04],67,113,54.0,432.96,345.0,545.72,"Although similar in some respects, this case materially 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,16,4,P016.B04,DOC006.P016.B04,67,113,54.0,432.8,345.0,545.41,"Although similar in some respects, this case materially 
 differs from  Mavrix  in several important respects.  First, 
 Brand’s website had “a specific focus on the California-
 centered celebrity and entertainment industries.”   Mavrix , 
@@ -323,36 +323,36 @@ centered celebrity and entertainment industries.”   Mavrix ,
 . . . we conclude[d] that Brand anticipated, desired, and 
 achieved a substantial California viewer base.”   Id.
 (emphasis added).  By contrast, ePorner lacks a forum-"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,17,1,P017.B01,DOC006[P017.B01],38,56,54.0,34.68,345.0,107.48,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,17,1,P017.B01,DOC006.P017.B01,38,56,54.0,34.52,345.0,107.17,"AMA M ULTIMEDIA V . W ANAT
 17 
 specific focus.  As the district court noted, “the market for 
 adult content is global,” evidenced by the fact that the other 
 80% of ePorner’s viewers were outside the United States."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,17,2,P017.B02,DOC006[P017.B02],112,146,54.0,117.12,348.0,450.68,"Second, although, according to AMA, ePorner “features a significant portion of U.S.-based content from producers like AMA and U.S.-based models,” this does not mean ePorner’s subject matter is aimed at the U.S. market to the same degree Brand’s website was aimed at California. ePorner’s content is primarily uploaded by its users, and the popularity or volume of U.S.-generated adult content does not show that Wanat expressly aimed the site at the U.S. market. See Walden , 571 U.S. at 284 (“[T]he relationship must arise out of contacts that the defendant himself creates with the forum State.”) (emphasis in original) (internal"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,17,3,P017.B03,DOC006[P017.B03],104,134,54.0,117.12,348.0,450.68,"quotation marks omitted). Instead, it merely suggests the United States produces a significant quantity of adult content or that ePorner’s users are more likely to upload content produced in the United States. Although Wanat may have foreseen that ePorner would attract a substantial number of viewers in the United States, this alone does not support a finding of express aiming. See id. at 289 (rejecting our conclusion that a defendant’s knowledge of a plaintiff’s strong forum connections plus foreseeable harm in the forum comprises sufficient minimum contacts); see also Axiom , 874 F.3d at 1069–70; Pebble Beach , 453 F.3d"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,17,4,P017.B04,DOC006[P017.B04],18,26,54.0,117.12,348.0,450.68,at 1158 (rejecting an argument for express aiming that “relie[d] almost exclusively on the possible foreseeable effects”).
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,17,5,P017.B05,DOC006[P017.B05],53,79,54.0,460.32,345.0,545.48,"Third, ePorner’s forum-based website traffic does not 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,17,2,P017.B02,DOC006.P017.B02,112,146,54.0,116.96,348.0,450.37,"Second, although, according to AMA, ePorner “features a significant portion of U.S.-based content from producers like AMA and U.S.-based models,” this does not mean ePorner’s subject matter is aimed at the U.S. market to the same degree Brand’s website was aimed at California. ePorner’s content is primarily uploaded by its users, and the popularity or volume of U.S.-generated adult content does not show that Wanat expressly aimed the site at the U.S. market. See Walden , 571 U.S. at 284 (“[T]he relationship must arise out of contacts that the defendant himself creates with the forum State.”) (emphasis in original) (internal"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,17,3,P017.B03,DOC006.P017.B03,104,134,54.0,116.96,348.0,450.37,"quotation marks omitted). Instead, it merely suggests the United States produces a significant quantity of adult content or that ePorner’s users are more likely to upload content produced in the United States. Although Wanat may have foreseen that ePorner would attract a substantial number of viewers in the United States, this alone does not support a finding of express aiming. See id. at 289 (rejecting our conclusion that a defendant’s knowledge of a plaintiff’s strong forum connections plus foreseeable harm in the forum comprises sufficient minimum contacts); see also Axiom , 874 F.3d at 1069–70; Pebble Beach , 453 F.3d"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,17,4,P017.B04,DOC006.P017.B04,18,26,54.0,116.96,348.0,450.37,at 1158 (rejecting an argument for express aiming that “relie[d] almost exclusively on the possible foreseeable effects”).
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,17,5,P017.B05,DOC006.P017.B05,53,79,54.0,460.16,345.0,545.17,"Third, ePorner’s forum-based website traffic does not 
 have the same relevance here as it did in  Mavrix  because of 
 the differences in the websites’ advertising structures.  In 
 Mavrix , the “substantial number of hits” to Brand’s site from 
 Californians was relevant because advertisements on 
 Brand’s site targeted California residents, meaning website"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,18,1,P018.B01,DOC006[P018.B01],103,135,54.0,34.68,348.0,259.28,"18 AMA M ULTIMEDIA V . W ANAT hits from Californians translated to more advertising revenue from the site’s California advertisers. 647 F.3d at 1230. Brand’s knowledge of this user base meant that it “anticipated, desired, and achieved a substantial California viewer base.” Id. We found it immaterial whether Brand or the third-party advertisers targeted Californians because the targeting itself indicated that Brand knew about the California user base which it then exploited “for commercial gain by selling space on its website for advertisements.” 6 Id. “This audience [was] an integral component of Brand’s business model and its profitability.” Id."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,18,2,P018.B02,DOC006[P018.B02],24,29,54.0,34.68,348.0,259.28,"In short, the more California viewers Brand could bring to its website, the more money it would make from its advertisements directed to Californians."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,18,3,P018.B03,DOC006[P018.B03],108,143,53.99,268.92,348.0,546.91,"Here, nearly 20% of ePorner’s traffic comes from U.S. users. But this does not establish that Wanat expressly aimed at the U.S. market, because ePorner’s advertising structure materially differs from Brand’s. AMA alleges, and Wanat’s expert agreed, that ePorner uses geo-located advertisements, which tailor advertisements based on the perceived location of the viewer. This tailoring does not establish that Wanat expressly aimed ePorner at the United States. ePorner’s geo-located advertisements, provided by a third-party advertising company, unlike Brand’s, are always directed at the forum: a viewer in the United States will see advertisements tailored to the United States while a"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,18,4,P018.B04,DOC006[P018.B04],67,86,53.99,268.92,348.0,546.91,"viewer in Germany will see advertisements tailored to Germany. Wanat does not personally control the advertisements shown on the site, as ePorner contracts with third parties (not 6 To the extent the Mavrix court found the website’s traffic relevant to targeting, Walden made clear that the third-party advertiser’s behavior cannot be attributed to the defendant as a contact. See Walden , 571 U.S. at 284."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,19,1,P019.B01,DOC006[P019.B01],51,77,54.0,34.68,348.0,135.08,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,18,1,P018.B01,DOC006.P018.B01,103,135,54.0,34.52,348.0,258.97,"18 AMA M ULTIMEDIA V . W ANAT hits from Californians translated to more advertising revenue from the site’s California advertisers. 647 F.3d at 1230. Brand’s knowledge of this user base meant that it “anticipated, desired, and achieved a substantial California viewer base.” Id. We found it immaterial whether Brand or the third-party advertisers targeted Californians because the targeting itself indicated that Brand knew about the California user base which it then exploited “for commercial gain by selling space on its website for advertisements.” 6 Id. “This audience [was] an integral component of Brand’s business model and its profitability.” Id."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,18,2,P018.B02,DOC006.P018.B02,24,29,54.0,34.52,348.0,258.97,"In short, the more California viewers Brand could bring to its website, the more money it would make from its advertisements directed to Californians."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,18,3,P018.B03,DOC006.P018.B03,108,143,53.99,268.76,348.0,546.65,"Here, nearly 20% of ePorner’s traffic comes from U.S. users. But this does not establish that Wanat expressly aimed at the U.S. market, because ePorner’s advertising structure materially differs from Brand’s. AMA alleges, and Wanat’s expert agreed, that ePorner uses geo-located advertisements, which tailor advertisements based on the perceived location of the viewer. This tailoring does not establish that Wanat expressly aimed ePorner at the United States. ePorner’s geo-located advertisements, provided by a third-party advertising company, unlike Brand’s, are always directed at the forum: a viewer in the United States will see advertisements tailored to the United States while a"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,18,4,P018.B04,DOC006.P018.B04,67,86,53.99,268.76,348.0,546.65,"viewer in Germany will see advertisements tailored to Germany. Wanat does not personally control the advertisements shown on the site, as ePorner contracts with third parties (not 6 To the extent the Mavrix court found the website’s traffic relevant to targeting, Walden made clear that the third-party advertiser’s behavior cannot be attributed to the defendant as a contact. See Walden , 571 U.S. at 284."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,19,1,P019.B01,DOC006.P019.B01,51,77,54.0,34.52,348.0,134.77,"AMA M ULTIMEDIA V . W ANAT
 19 
 located in the United States) which tailor the advertisements 
 themselves or sell the space to other parties who do.  
 ePorner’s forum-based traffic, absent other indicia of 
 Wanat’s personal direction, does not establish that Wanat 
 tailored the website to attract U.S. traffic."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,19,2,P019.B02,DOC006[P019.B02],103,137,54.0,144.72,348.0,326.74,"If such geo-located advertisements constituted express aiming, ePorner could be said to expressly aim at any forum in which a user views the website. As we recognized in Mavrix , “[n]ot all material placed on the Internet is, solely by virtue of its universal accessibility, expressly aimed at every [forum] in which it is accessed.” 647 F.3d at 1231. As a feature of the geo-located advertisements on ePorner’s website, all users in every forum received advertisements directed at them. To find specific jurisdiction based on this would run afoul of the Supreme Court’s directive in Walden and “impermissibly allow[] a"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,19,3,P019.B03,DOC006[P019.B03],20,31,54.0,144.72,348.0,326.74,"plaintiff’s contacts with the defendant and forum to drive the jurisdictional analysis.” 7 Walden , 571 U.S. at 289."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,19,4,P019.B04,DOC006[P019.B04],104,142,54.0,336.12,345.0,546.94,"Wanat’s other contacts with the United States also fail to establish express aiming. AMA argues that ePorner’s TOS suggest that ePorner (and presumably Wanat) entered into contracts with many U.S. residents because anyone who 7 In Mavrix , we stated that where “a website with national viewership and scope appeals to, and profits from, an audience in a particular state, the site’s operators can be said to have ‘expressly aimed’ at that state.” 647 F.3d at 1231. Here, the same concept applies to whether ePorner, a website with an international audience, is appealing to, and profiting from, users in the"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,19,5,P019.B05,DOC006[P019.B05],73,96,54.0,336.12,345.0,546.94,"United States. We find, however, ePorner does not “ appeal [] to ” the United States such that it could be said to have “expressly aimed” at the forum. True, ePorner “profits from” the United States. But the profit results from ePorner’s users who access the site rather than from Wanat’s targeting of forum users who access the site. This differs from Brand’s website which targeted California users through the website’s content."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,20,1,P020.B01,DOC006[P020.B01],111,168,54.0,34.68,345.0,204.08,"20 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,19,2,P019.B02,DOC006.P019.B02,103,137,54.0,144.56,348.0,326.89,"If such geo-located advertisements constituted express aiming, ePorner could be said to expressly aim at any forum in which a user views the website. As we recognized in Mavrix , “[n]ot all material placed on the Internet is, solely by virtue of its universal accessibility, expressly aimed at every [forum] in which it is accessed.” 647 F.3d at 1231. As a feature of the geo-located advertisements on ePorner’s website, all users in every forum received advertisements directed at them. To find specific jurisdiction based on this would run afoul of the Supreme Court’s directive in Walden and “impermissibly allow[] a"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,19,3,P019.B03,DOC006.P019.B03,20,31,54.0,144.56,348.0,326.89,"plaintiff’s contacts with the defendant and forum to drive the jurisdictional analysis.” 7 Walden , 571 U.S. at 289."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,19,4,P019.B04,DOC006.P019.B04,104,142,54.0,335.96,345.0,546.68,"Wanat’s other contacts with the United States also fail to establish express aiming. AMA argues that ePorner’s TOS suggest that ePorner (and presumably Wanat) entered into contracts with many U.S. residents because anyone who 7 In Mavrix , we stated that where “a website with national viewership and scope appeals to, and profits from, an audience in a particular state, the site’s operators can be said to have ‘expressly aimed’ at that state.” 647 F.3d at 1231. Here, the same concept applies to whether ePorner, a website with an international audience, is appealing to, and profiting from, users in the"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,19,5,P019.B05,DOC006.P019.B05,73,96,54.0,335.96,345.0,546.68,"United States. We find, however, ePorner does not “ appeal [] to ” the United States such that it could be said to have “expressly aimed” at the forum. True, ePorner “profits from” the United States. But the profit results from ePorner’s users who access the site rather than from Wanat’s targeting of forum users who access the site. This differs from Brand’s website which targeted California users through the website’s content."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,20,1,P020.B01,DOC006.P020.B01,111,168,54.0,34.52,345.0,203.77,"20 
 AMA M ULTIMEDIA V . W ANAT
 joined the site assented to the TOS, thereby forming a 
 contract.  Whether or not the TOS constitutes a contract, it 
@@ -364,28 +364,28 @@ does not allege violations of the TOS.  The TOS therefore
 does not establish any targeting of the U.S. market; it at most 
 suggests Wanat knew ePorner might have U.S. traffic.   See 
 Axiom , 874 F.3d at 1069–70."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,20,2,P020.B02,DOC006[P020.B02],103,118,53.98,213.72,345.0,559.04,"Finally, the use of Tiggee to register certain domain names related to the website does not show targeting of the U.S. market. AMA contends that the use of Tiggee, which advertises itself as one of the fastest DNS providers in the United States, evidences targeting of the United States because of the speed such companies provide to U.S. website visitors. Use of a company that offers fast speeds in the United States could be consistent with the desire to appeal to the U.S. market. But AMA has not provided evidence to suggest that Wanat chose this vendor or was motivated"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,20,3,P020.B03,DOC006[P020.B03],106,157,53.98,213.72,345.0,559.04,"by a desire to appeal to the U.S. market or generate more U.S. users, as opposed to more users globally. 8 8 AMA relies on UMG Recordings, Inc. v. Kurbanov , 2020 WL 3476993 (4th Cir. June 26, 2020). But Kurbanov is distinguishable. The defendant in Kurbanov had “registered a Digital Millennium Copyright Act agent with the U.S. Copyright Office,” “contracted with U.S.-based advertising brokers,” and “relied on U.S.-based servers.” Id . at *7. None of those specific actions aimed at the United States, including taking advantage of U.S. laws “for certain safe harbor defenses to copyright infringement claims,” id"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,20,4,P020.B04,DOC006[P020.B04],43,71,53.98,213.72,345.0,559.04,"., are present here. The dissent relies on Keeton v. Hustler Magazine, Inc. , 465 U.S. 770 (1984), Dissent at 37, 39, but that case is likewise inapposite. The defendant magazine publisher in Keeton regularly circulated “some 10 to 15,000 copies of Hustler"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,1,P021.B01,DOC006[P021.B01],68,108,54.0,34.68,345.0,148.88,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,20,2,P020.B02,DOC006.P020.B02,103,118,53.98,213.56,345.0,558.73,"Finally, the use of Tiggee to register certain domain names related to the website does not show targeting of the U.S. market. AMA contends that the use of Tiggee, which advertises itself as one of the fastest DNS providers in the United States, evidences targeting of the United States because of the speed such companies provide to U.S. website visitors. Use of a company that offers fast speeds in the United States could be consistent with the desire to appeal to the U.S. market. But AMA has not provided evidence to suggest that Wanat chose this vendor or was motivated"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,20,3,P020.B03,DOC006.P020.B03,106,157,53.98,213.56,345.0,558.73,"by a desire to appeal to the U.S. market or generate more U.S. users, as opposed to more users globally. 8 8 AMA relies on UMG Recordings, Inc. v. Kurbanov , 2020 WL 3476993 (4th Cir. June 26, 2020). But Kurbanov is distinguishable. The defendant in Kurbanov had “registered a Digital Millennium Copyright Act agent with the U.S. Copyright Office,” “contracted with U.S.-based advertising brokers,” and “relied on U.S.-based servers.” Id . at *7. None of those specific actions aimed at the United States, including taking advantage of U.S. laws “for certain safe harbor defenses to copyright infringement claims,” id"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,20,4,P020.B04,DOC006.P020.B04,43,71,53.98,213.56,345.0,558.73,"., are present here. The dissent relies on Keeton v. Hustler Magazine, Inc. , 465 U.S. 770 (1984), Dissent at 37, 39, but that case is likewise inapposite. The defendant magazine publisher in Keeton regularly circulated “some 10 to 15,000 copies of Hustler"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,1,P021.B01,DOC006.P021.B01,68,108,54.0,34.52,345.0,148.57,"AMA M ULTIMEDIA V . W ANAT
 21 In sum, the United States was not “the focal point” of the 
 website “and of the harm suffered.”   Walden , 571 U.S. at 287 
 (quoting  Calder , 465 U.S. at 789).  AMA therefore has not 
 shown Wanat purposefully directed his activities at the 
 United States.  The district court correctly found that, on this 
 record, it lacked specific jurisdiction over Wanat. 9"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,2,P021.B02,DOC006[P021.B02],2,2,191.28,158.33,207.6,200.74,IV A
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,3,P021.B03,DOC006[P021.B03],40,53,53.98,210.12,346.99,304.98,"We next consider whether the district court abused its 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,2,P021.B02,DOC006.P021.B02,2,2,191.28,158.47,207.6,200.89,IV A
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,3,P021.B03,DOC006.P021.B03,40,53,53.98,209.96,346.99,304.72,"We next consider whether the district court abused its 
 discretion by limiting the scope of AMA’s jurisdictional magazine” to customers in the forum state “each month.”   Id.  at 772.  
 That sort of express aiming is also not present here."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,4,P021.B04,DOC006[P021.B04],102,115,54.0,314.96,344.53,546.97,"9 Because we hold that AMA has failed to meet its burden on the first prong of the minimum contacts test regarding purposeful direction, we do not need to reach the second and third prongs. However, we would conclude that AMA also fails to satisfy the second and third prongs of the minimum contacts test. Specifically, AMA has failed to show that its claims arise out of or relate to Wanat’s forum-related activities and that the balance of factors supports the conclusion that exercising jurisdiction over Wanat would be unreasonable. First, nothing more than AMA’s contested bare allegations support any"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,5,P021.B05,DOC006[P021.B05],102,160,54.0,314.96,344.53,546.97,"personal involvement by Wanat in uploading, encouraging the uploading, or intentionally failing to remove the infringing content. Second, on balance, exercising jurisdiction over Wanat, a Polish citizen, would be unreasonable given his limited contacts with the forum, the burden on Wanat if he must defend in the forum, potential conflicts with Poland’s sovereignty and its potential as an alternative forum. See Core-Vent Corp. v. Nobel Indus. AB , 11 F.3d 1482, 1487–88 (9th Cir. 1993), modified , Yahoo! Inc. v. La Ligue Contre Le Racisme Et L’Antisemitisme , 433 F.3d 1199 (9th Cir. 2006). While AMA has an interest in"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,6,P021.B06,DOC006[P021.B06],26,31,54.0,314.96,344.53,546.97,"adjudicating its dispute in its chosen forum, we still conclude that the balance of factors weighs in favor of finding that jurisdiction over Wanat is unreasonable."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,22,1,P022.B01,DOC006[P022.B01],27,48,54.0,34.68,345.0,93.68,"22 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,4,P021.B04,DOC006.P021.B04,102,115,54.0,314.83,344.53,546.71,"9 Because we hold that AMA has failed to meet its burden on the first prong of the minimum contacts test regarding purposeful direction, we do not need to reach the second and third prongs. However, we would conclude that AMA also fails to satisfy the second and third prongs of the minimum contacts test. Specifically, AMA has failed to show that its claims arise out of or relate to Wanat’s forum-related activities and that the balance of factors supports the conclusion that exercising jurisdiction over Wanat would be unreasonable. First, nothing more than AMA’s contested bare allegations support any"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,5,P021.B05,DOC006.P021.B05,102,160,54.0,314.83,344.53,546.71,"personal involvement by Wanat in uploading, encouraging the uploading, or intentionally failing to remove the infringing content. Second, on balance, exercising jurisdiction over Wanat, a Polish citizen, would be unreasonable given his limited contacts with the forum, the burden on Wanat if he must defend in the forum, potential conflicts with Poland’s sovereignty and its potential as an alternative forum. See Core-Vent Corp. v. Nobel Indus. AB , 11 F.3d 1482, 1487–88 (9th Cir. 1993), modified , Yahoo! Inc. v. La Ligue Contre Le Racisme Et L’Antisemitisme , 433 F.3d 1199 (9th Cir. 2006). While AMA has an interest in"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,21,6,P021.B06,DOC006.P021.B06,26,31,54.0,314.83,344.53,546.71,"adjudicating its dispute in its chosen forum, we still conclude that the balance of factors weighs in favor of finding that jurisdiction over Wanat is unreasonable."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,22,1,P022.B01,DOC006.P022.B01,27,48,54.0,34.52,345.0,93.37,"22 
 AMA M ULTIMEDIA V . W ANAT
 discovery on the basis of privacy concerns. 10 See Boschetto , 
 539 F.3d at 1020.  We conclude it did not."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,22,2,P022.B02,DOC006[P022.B02],69,92,54.0,103.32,345.0,216.34,"First, we consider de novo whether the district court 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,22,2,P022.B02,DOC006.P022.B02,69,92,54.0,103.16,345.0,216.49,"First, we consider de novo whether the district court 
 made any legal error.  The district court denied certain 
 jurisdictional discovery to AMA because, according to the 
 Special Master’s Report and Recommendation which was 
@@ -393,10 +393,10 @@ adopted in full, the PDP and the Court of Justice’s  Schrems
 decision barred Wanat from producing “personal data” to the 
 United States because such disclosure might subject Wanat 
 to criminal liability under Polish law."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,22,3,P022.B03,DOC006[P022.B03],102,130,54.0,225.72,345.0,546.9,"AMA never made the Special Master or the district court aware of the Privacy Shield Decision, and therefore the district court did not err in failing to consider it. The district court had no duty to identify sua sponte a change in law, particularly when—given the record before the district court—the legal change did not give AMA the right to obtain jurisdictional discovery. See United States v. Sineneng- Smith , 140 S. Ct. 1575, 1579 (2020) (“[W]e rely on the parties to frame the issues for decision and assign to courts the role of neutral arbiter of matters the parties"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,22,4,P022.B04,DOC006[P022.B04],103,134,54.0,225.72,345.0,546.9,"present.” (quoting Greenlaw v. United States , 554 U.S. 237, 243 (2008)). The parties jointly recommended the Special Master, hired their own Polish law experts, and briefed the jurisdictional discovery issues before the Special Master issued its Report and Recommendation. Notably, in an exhibit filed with the Special Master, Wanat’s expert stated that changes to the European privacy laws were under consideration that could replace the PDP’s “Safe Harbor” provision and affect the transfer of personal data to the United States. AMA, however, did not address these 10 On appeal, AMA only contests the district court’s discovery rulings to the"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,22,5,P022.B05,DOC006[P022.B05],8,11,54.0,225.72,345.0,546.9,extent they implicate the PDP and Schrems decision.
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,1,P023.B01,DOC006[P023.B01],36,55,54.0,34.68,345.0,121.28,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,22,3,P022.B03,DOC006.P022.B03,102,130,54.0,225.56,345.0,546.64,"AMA never made the Special Master or the district court aware of the Privacy Shield Decision, and therefore the district court did not err in failing to consider it. The district court had no duty to identify sua sponte a change in law, particularly when—given the record before the district court—the legal change did not give AMA the right to obtain jurisdictional discovery. See United States v. Sineneng- Smith , 140 S. Ct. 1575, 1579 (2020) (“[W]e rely on the parties to frame the issues for decision and assign to courts the role of neutral arbiter of matters the parties"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,22,4,P022.B04,DOC006.P022.B04,103,134,54.0,225.56,345.0,546.64,"present.” (quoting Greenlaw v. United States , 554 U.S. 237, 243 (2008)). The parties jointly recommended the Special Master, hired their own Polish law experts, and briefed the jurisdictional discovery issues before the Special Master issued its Report and Recommendation. Notably, in an exhibit filed with the Special Master, Wanat’s expert stated that changes to the European privacy laws were under consideration that could replace the PDP’s “Safe Harbor” provision and affect the transfer of personal data to the United States. AMA, however, did not address these 10 On appeal, AMA only contests the district court’s discovery rulings to the"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,22,5,P022.B05,DOC006.P022.B05,8,11,54.0,225.56,345.0,546.64,extent they implicate the PDP and Schrems decision.
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,1,P023.B01,DOC006.P023.B01,36,55,54.0,34.52,345.0,120.97,"AMA M ULTIMEDIA V . W ANAT
 23 
 potential changes to the PDP before the Special Master and 
 did not raise the Privacy Shield Decision in its objections to 
@@ -408,7 +408,7 @@ or
 motion 
 for 
 reconsideration."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,2,P023.B02,DOC006[P023.B02],68,88,54.0,130.92,345.0,243.68,"It was not the district court or the Special Master’s 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,2,P023.B02,DOC006.P023.B02,68,88,54.0,130.76,345.0,243.37,"It was not the district court or the Special Master’s 
 obligation to independently identify a change in law that 
 may affect its jurisdictional analysis; that was AMA’s 
 responsibility.  AMA had notice and opportunity to raise the 
@@ -416,18 +416,18 @@ Privacy Shield Decision below, but failed to do so.  We
 therefore conclude that the district court did not abuse its 
 discretion when it denied AMA the jurisdictional discovery 
 it sought."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,3,P023.B03,DOC006[P023.B03],1,1,193.92,253.13,204.96,269.74,B
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,4,P023.B04,DOC006[P023.B04],45,55,54.0,279.12,345.0,350.48,"We next determine whether the Privacy Shield Decision, 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,3,P023.B03,DOC006.P023.B03,1,1,193.92,253.27,204.96,269.89,B
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,4,P023.B04,DOC006.P023.B04,45,55,54.0,278.96,345.0,350.17,"We next determine whether the Privacy Shield Decision, 
 which was enacted while this case was before the district 
 court, or the GDPR, which was enacted while this appeal 
 was pending but not raised by AMA in its initial briefing, are 
 matters that we should consider."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,5,P023.B05,DOC006[P023.B05],43,75,54.0,360.12,345.0,431.48,"“Absent exceptional circumstances, we generally will 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,5,P023.B05,DOC006.P023.B05,43,75,54.0,359.96,345.0,431.17,"“Absent exceptional circumstances, we generally will 
 not consider arguments raised for the first time on appeal, 
 although we have discretion to do so.”   In re Am. W. Airlines, 
 Inc. , 217 F.3d 1161, 1165 (9th Cir. 2000).  We have 
 exercised such discretion where:"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,6,P023.B06,DOC006[P023.B06],65,82,90.0,441.12,309.0,553.88,"(1) there are exceptional circumstances why 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,23,6,P023.B06,DOC006.P023.B06,65,82,90.0,440.96,309.0,553.57,"(1) there are exceptional circumstances why 
 the issue was not raised in the trial court; (2) 
 the new issue arises while the appeal is 
 pending because of a change in the law; or (3) 
@@ -435,7 +435,7 @@ the issue presented is a pure question of law
 and the opposing party will suffer no 
 prejudice as a result of the failure to raise the 
 issue in the trial court."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,24,1,P024.B01,DOC006[P024.B01],115,220,54.0,34.68,345.0,231.68,"24 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,24,1,P024.B01,DOC006.P024.B01,115,220,54.0,34.52,345.0,231.37,"24 
 AMA M ULTIMEDIA V . W ANAT
 Raich v. Gonzalez , 500 F.3d 850, 868 (9th Cir. 2007).  Even 
 if a case falls within one of these exceptions, we must “still 
@@ -454,22 +454,22 @@ parties who “frame the issues for decision,” and we may
 entertain only those arguments “bearing a fair resemblance 
 to the case shaped by the parties.”   Id . at 1579, 1582 (citation 
 omitted)."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,24,2,P024.B02,DOC006[P024.B02],1,1,195.0,241.13,204.0,257.74,1
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,24,3,P024.B03,DOC006[P024.B03],103,113,54.0,267.12,348.0,490.28,"The Privacy Shield Decision was implemented after the parties completed their briefing to the Special Master and before the Special Master’s Report and Recommendation. But AMA never raised this change in law to the Special Master, to the district court, in its motion for reconsideration, or in opposition to Wanat’s renewed motion to dismiss. Again, Wanat’s expert had provided notice that a change in the European privacy laws was under consideration at the time the parties were briefing the issue to the district court and AMA had both notice and opportunity to raise this issue before the case was dismissed."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,24,4,P024.B04,DOC006[P024.B04],51,56,54.0,267.12,348.0,490.28,"Despite failing to raise the issue below or in its initial briefing, AMA claims in its supplemental brief that we should consider this new argument because the applicability of the new law is a pure question of law and Wanat will not be prejudiced by its consideration. We are not persuaded."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,24,5,P024.B05,DOC006[P024.B05],42,58,54.0,499.92,345.0,557.48,"First, we reject AMA’s argument regarding the Privacy 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,24,2,P024.B02,DOC006.P024.B02,1,1,195.0,241.27,204.0,257.89,1
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,24,3,P024.B03,DOC006.P024.B03,103,113,54.0,266.96,348.0,489.97,"The Privacy Shield Decision was implemented after the parties completed their briefing to the Special Master and before the Special Master’s Report and Recommendation. But AMA never raised this change in law to the Special Master, to the district court, in its motion for reconsideration, or in opposition to Wanat’s renewed motion to dismiss. Again, Wanat’s expert had provided notice that a change in the European privacy laws was under consideration at the time the parties were briefing the issue to the district court and AMA had both notice and opportunity to raise this issue before the case was dismissed."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,24,4,P024.B04,DOC006.P024.B04,51,56,54.0,266.96,348.0,489.97,"Despite failing to raise the issue below or in its initial briefing, AMA claims in its supplemental brief that we should consider this new argument because the applicability of the new law is a pure question of law and Wanat will not be prejudiced by its consideration. We are not persuaded."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,24,5,P024.B05,DOC006.P024.B05,42,58,54.0,499.76,345.0,557.17,"First, we reject AMA’s argument regarding the Privacy 
 Shield Decision because it is unrelated “to the case shaped 
 by the parties.”   Id . at 1582.  Although “[t]here are no doubt 
 circumstances in which a modest initiating role for a court is"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,25,1,P025.B01,DOC006[P025.B01],37,58,54.0,34.68,345.0,121.28,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,25,1,P025.B01,DOC006.P025.B01,37,58,54.0,34.52,345.0,120.97,"AMA M ULTIMEDIA V . W ANAT
 25 
 appropriate,”  id . at 1579, such circumstances are not present 
 here.  AMA had numerous opportunities to raise the Privacy 
 Shield decision but did not do so until we ordered 
 supplemental briefing."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,25,2,P025.B02,DOC006[P025.B02],105,158,54.0,130.92,345.0,409.28,"Second, the proper vehicle for raising this issue would have been through a supplemental notice to the Special Master or the district court, or even in a motion for reconsideration before final judgment, not by raising it for the first time on appeal. See D. Ariz. R. LRCiv 7.2(g)(1) (Motions for Reconsideration) (2015) (motions for reconsideration should show “manifest error or a showing of new facts or legal authority that could not have been brought to [the court’s] attention earlier with reasonable diligence”); see also Rentrop v. Spectranetics Corp. , 550 F.3d 1112, 1117 (Fed. Cir. 2008) (“[W]hen there is"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,25,3,P025.B03,DOC006[P025.B03],91,124,54.0,130.92,345.0,409.28,"a relevant change in the law before entry of final judgment, a party generally must notify the district court; if the party fails to do so, it waives arguments on appeal that are based on that change in the law.”); Douglas Asphalt Co. v. QORE, Inc. , 657 F.3d 1146, 1152 (11th Cir. 2011) (adopting the analysis of Rentrop to find that plaintiff’s failure to file a motion for reconsideration to notify the district court before entry of final judgment waives arguments on appeal based on the change in law)."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,25,4,P025.B04,DOC006[P025.B04],79,125,54.0,418.92,345.0,545.48,"Third, no exceptional circumstances warrant application 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,25,2,P025.B02,DOC006.P025.B02,105,158,54.0,130.76,345.0,408.97,"Second, the proper vehicle for raising this issue would have been through a supplemental notice to the Special Master or the district court, or even in a motion for reconsideration before final judgment, not by raising it for the first time on appeal. See D. Ariz. R. LRCiv 7.2(g)(1) (Motions for Reconsideration) (2015) (motions for reconsideration should show “manifest error or a showing of new facts or legal authority that could not have been brought to [the court’s] attention earlier with reasonable diligence”); see also Rentrop v. Spectranetics Corp. , 550 F.3d 1112, 1117 (Fed. Cir. 2008) (“[W]hen there is"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,25,3,P025.B03,DOC006.P025.B03,91,124,54.0,130.76,345.0,408.97,"a relevant change in the law before entry of final judgment, a party generally must notify the district court; if the party fails to do so, it waives arguments on appeal that are based on that change in the law.”); Douglas Asphalt Co. v. QORE, Inc. , 657 F.3d 1146, 1152 (11th Cir. 2011) (adopting the analysis of Rentrop to find that plaintiff’s failure to file a motion for reconsideration to notify the district court before entry of final judgment waives arguments on appeal based on the change in law)."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,25,4,P025.B04,DOC006.P025.B04,79,125,54.0,418.76,345.0,545.17,"Third, no exceptional circumstances warrant application 
 of the Privacy Shield Decision to AMA’s argument for 
 additional jurisdictional discovery.  “A party’s unexplained 
 failure to raise an argument that was indisputably available 
@@ -478,7 +478,7 @@ warranting our exercise of this discretion.”   G & G Prods.
 LLC v. Rusic , 902 F.3d 940, 950 (9th Cir. 2018).  Moreover, 
 application of the Privacy Shield Decision is not a pure 
 question of law.  Whether the Privacy Shield Decision would"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,26,1,P026.B01,DOC006[P026.B01],107,156,54.0,34.68,348.0,217.88,"26 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,26,1,P026.B01,DOC006.P026.B01,107,156,54.0,34.52,348.0,217.57,"26 
 AMA M ULTIMEDIA V . W ANAT
 weigh in favor of permitting additional jurisdictional 
 discovery depends on whether AMA is a self-certified 
@@ -491,8 +491,8 @@ self-certification requirements.   See Raich , 500 F.3d at 868.
 In sum, we decline to take up the application of the Privacy 
 Shield Decision for the first time on appeal.   See El Paso 
 City , 217 F.3d at 1165."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,26,2,P026.B02,DOC006[P026.B02],1,1,195.0,227.33,204.0,243.94,2
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,26,3,P026.B03,DOC006[P026.B03],86,104,54.0,253.32,348.0,379.88,"Similarly, before AMA filed its opening brief in this 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,26,2,P026.B02,DOC006.P026.B02,1,1,195.0,227.47,204.0,244.09,2
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,26,3,P026.B03,DOC006.P026.B03,86,104,54.0,253.16,348.0,379.57,"Similarly, before AMA filed its opening brief in this 
 appeal—and after AMA had already been granted two 
 extensions to file its opening brief—the European 
 Parliament repealed and replaced the PDP with the GDPR.  
@@ -501,7 +501,7 @@ our attention its opening or reply brief, it did not do so.  This
 was raised for the first time after we withdrew submission of 
 this case and specifically requested briefing on potential 
 waiver and the impact of the Privacy Shield Decision."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,26,4,P026.B04,DOC006[P026.B04],109,177,54.0,389.52,345.0,543.68,"Consistent with “the principle of party presentation,” 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,26,4,P026.B04,DOC006.P026.B04,109,177,54.0,389.36,345.0,543.37,"Consistent with “the principle of party presentation,” 
 Sineneng-Smith , 140 S. Ct. at 1579, we decline to consider 
 AMA’s untimely argument regarding the GDPR.  In 
 particular, we are not persuaded that we should entertain this 
@@ -512,7 +512,7 @@ brief filed at our request.   See Brown v. Rawson-Neal
 Psychiatric Hosp. , 840 F.3d 1146, 1148–49 (9th Cir. 2016) 
 (“[A]ppellate courts do not sit as self-directed boards of legal 
 inquiry and research, but essentially as arbiters of legal"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,27,1,P027.B01,DOC006[P027.B01],100,141,54.0,34.68,345.0,243.68,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,27,1,P027.B01,DOC006.P027.B01,100,141,54.0,34.52,345.0,243.37,"AMA M ULTIMEDIA V . W ANAT
 27 
 questions presented and argued by the parties before them.”) 
 (internal quotation marks omitted). In addition, since the GDPR replaced the PDP, any 
@@ -525,40 +525,40 @@ AMA has not claimed or presented evidence that it has
 satisfied either the Privacy Shield Decision or the GDPR’s 
 requirements for receiving personal data.   See supra
 at IV.B.1."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,27,2,P027.B02,DOC006[P027.B02],1,1,193.68,253.13,205.32,269.74,V
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,27,3,P027.B03,DOC006[P027.B03],62,85,54.0,279.12,345.0,404.14,"AMA has not shown that Wanat purposefully directed 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,27,2,P027.B02,DOC006.P027.B02,1,1,193.68,253.27,205.32,269.89,V
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,27,3,P027.B03,DOC006.P027.B03,62,85,54.0,278.96,345.0,404.29,"AMA has not shown that Wanat purposefully directed 
 his suit-related conduct at the United States.  Nor did the 
 district court abuse its discretion in denying AMA 
 jurisdictional discovery.  And we decline to consider new 
 arguments that AMA raises for the first time in response to 
 our order for supplemental briefing, and which implicate 
 facts not in the record.  We therefore affirm. AFFIRMED."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,28,1,P028.B01,DOC006[P028.B01],34,50,54.0,34.68,345.0,119.48,"28 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,28,1,P028.B01,DOC006.P028.B01,34,50,54.0,34.52,345.0,119.17,"28 
 AMA M ULTIMEDIA V . W ANAT
 IKUTA, Circuit Judge, concurring: I concur in the majority opinion in full.  I write separately 
 to clarify the posture of this case in light of our decision."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,28,2,P028.B02,DOC006[P028.B02],46,57,54.0,129.12,345.0,200.48,"Today we hold that the district court did not err in 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,28,2,P028.B02,DOC006.P028.B02,46,57,54.0,128.96,345.0,200.17,"Today we hold that the district court did not err in 
 granting Wanat’s motion to dismiss for lack of personal 
 jurisdiction.  We also affirm the district court’s denial of 
 AMA’s motion for additional jurisdictional discovery and its 
 entry of final judgment against AMA."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,28,3,P028.B03,DOC006[P028.B03],97,156,54.0,210.12,345.0,447.08,"And that means this case is over. When a court lacks personal jurisdiction over a defendant, it has no “authority to bind a . . . defendant to a judgment,” Walden v. Fiore , 571 U.S. 277, 283 (2014), and must dismiss the case against the defendant, see , e.g. , id. at 281. The defendant is not “amenable to proceedings,” Int’l Shoe Co. v. Washington , 326 U.S. 310, 311 (1943), and is shielded from “the burdens of litigating” in that forum, World-Wide Volkswagen Corp. v. Woodson , 444 U.S. 286, 292 (1980). Congress has provided one exception to"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,28,4,P028.B04,DOC006[P028.B04],78,109,54.0,210.12,345.0,447.08,"this general rule: a court that lacks personal jurisdiction over a defendant may transfer the case to another district court where the case “could have been brought.” 28 U.S.C. § 1406(a); see Goldlawr, Inc. v. Heiman , 369 U.S. 463, 465 (1962). This exception is not applicable here; there is no place where this case could have been brought because Wanat lacks sufficient contacts with the United States as a whole. See Maj. Op. at 21."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,28,5,P028.B05,DOC006[P028.B05],66,89,54.0,456.72,348.0,555.68,"In his concurrence, Judge Nelson suggests that “perhaps 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,28,3,P028.B03,DOC006.P028.B03,97,156,54.0,209.96,345.0,446.77,"And that means this case is over. When a court lacks personal jurisdiction over a defendant, it has no “authority to bind a . . . defendant to a judgment,” Walden v. Fiore , 571 U.S. 277, 283 (2014), and must dismiss the case against the defendant, see , e.g. , id. at 281. The defendant is not “amenable to proceedings,” Int’l Shoe Co. v. Washington , 326 U.S. 310, 311 (1943), and is shielded from “the burdens of litigating” in that forum, World-Wide Volkswagen Corp. v. Woodson , 444 U.S. 286, 292 (1980). Congress has provided one exception to"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,28,4,P028.B04,DOC006.P028.B04,78,109,54.0,209.96,345.0,446.77,"this general rule: a court that lacks personal jurisdiction over a defendant may transfer the case to another district court where the case “could have been brought.” 28 U.S.C. § 1406(a); see Goldlawr, Inc. v. Heiman , 369 U.S. 463, 465 (1962). This exception is not applicable here; there is no place where this case could have been brought because Wanat lacks sufficient contacts with the United States as a whole. See Maj. Op. at 21."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,28,5,P028.B05,DOC006.P028.B05,66,89,54.0,456.56,348.0,555.37,"In his concurrence, Judge Nelson suggests that “perhaps 
 the door remains slightly open for further proceedings on 
 remand.”  Conc. at 29.  The dissent agrees. Dissent at 33 n.1.  
 But neither Judge Nelson nor the dissent cites any statute or 
 judge-made rule authorizing a district court to exercise 
 power over a party in the absence of personal jurisdiction.  
 Because the district court lacks personal jurisdiction over"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,29,1,P029.B01,DOC006[P029.B01],30,44,54.0,34.68,345.0,107.48,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,29,1,P029.B01,DOC006.P029.B01,30,44,54.0,34.52,345.0,107.17,"AMA M ULTIMEDIA V . W ANAT
 29 
 Wanat, it now has the authority to do only one thing:  remove 
 this case from its docket in accordance with its ordinary 
 procedure."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,29,2,P029.B02,DOC006[P029.B02],98,144,54.0,144.48,348.0,393.44,"R. NELSON, concurring: I write separately to address potential issues left open in light of our decision to affirm the district court’s order dismissing the complaint. While the presumption may be that our decision fully resolves this case, perhaps the door remains slightly open for further proceedings on remand. See Hampton v. Pac. Inv. Mgmt. Co. , 869 F.3d 844, 846 (9th Cir. 2017) (“Dismissals for lack of subject-matter jurisdiction . . . must be without prejudice, because a lack of jurisdiction deprives the dismissing court of any power to adjudicate the merits of the case.”) (citation omitted). We hold"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,29,3,P029.B03,DOC006[P029.B03],50,57,54.0,144.48,348.0,393.44,"that the district court did not abuse its discretion when it denied certain jurisdictional discovery to AMA. We also decline to exercise our discretion to review AMA’s new legal claims, raised for the first time on appeal, regarding the impact of intervening foreign law on its jurisdictional discovery requests."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,29,4,P029.B04,DOC006[P029.B04],75,96,54.0,403.08,348.0,529.64,"I do not understand our opinion, however, to preclude the 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,29,2,P029.B02,DOC006.P029.B02,98,144,54.0,144.32,348.0,393.13,"R. NELSON, concurring: I write separately to address potential issues left open in light of our decision to affirm the district court’s order dismissing the complaint. While the presumption may be that our decision fully resolves this case, perhaps the door remains slightly open for further proceedings on remand. See Hampton v. Pac. Inv. Mgmt. Co. , 869 F.3d 844, 846 (9th Cir. 2017) (“Dismissals for lack of subject-matter jurisdiction . . . must be without prejudice, because a lack of jurisdiction deprives the dismissing court of any power to adjudicate the merits of the case.”) (citation omitted). We hold"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,29,3,P029.B03,DOC006.P029.B03,50,57,54.0,144.32,348.0,393.13,"that the district court did not abuse its discretion when it denied certain jurisdictional discovery to AMA. We also decline to exercise our discretion to review AMA’s new legal claims, raised for the first time on appeal, regarding the impact of intervening foreign law on its jurisdictional discovery requests."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,29,4,P029.B04,DOC006.P029.B04,75,96,54.0,402.92,348.0,529.33,"I do not understand our opinion, however, to preclude the 
 district court from exercising its discretion on remand to 
 consider intervening law in any supplemental request for 
 jurisdictional discovery or amendment of AMA’s complaint.
@@ -567,7 +567,7 @@ Privacy Shield Decision and GDPR—may have opened the
 door for companies based in the United States to obtain 
 personal data that may not have previously been available 
 under the PDP."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,30,1,P030.B01,DOC006[P030.B01],91,124,54.0,34.68,348.0,204.08,"30 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,30,1,P030.B01,DOC006.P030.B01,91,124,54.0,34.52,348.0,203.77,"30 
 AMA M ULTIMEDIA V . W ANAT On remand, the district court may wish to allow AMA to 
 amend its complaint or request additional briefing to 
 consider whether the Privacy Shield Decision and GDPR 
@@ -578,9 +578,9 @@ Privacy Shield Decision or the GDPR.  And AMA has
 provided no evidence on appeal that it has self-certified.  
 However, these are issues that the district court may wish to 
 evaluate on remand."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,30,2,P030.B02,DOC006[P030.B02],104,126,54.0,213.72,347.01,546.92,"If additional jurisdictional discovery is ordered, Wanat’s contacts with the United States may be shown to be more significant than the current record demonstrates. For example, ePorner refused to produce any of its advertising agreements. Wanat’s expert stated he could not conclusively determine that ePorner only used “ad networks rather than more directly negotiating with advertisers in addition to the ad network.” Evidence that Wanat negotiated with advertisers directly may reveal whether he intended to target U.S. users. Similarly, evidence that Wanat engaged Tiggee for the purpose of targeting U.S. forum residents may affect the analysis as well. The extent"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,30,3,P030.B03,DOC006[P030.B03],97,117,54.0,213.72,347.01,546.92,"of these contacts could also affect the reasonableness analysis. If the district court does decide that additional jurisdictional analysis is warranted on remand, one additional issue—and potentially a threshold one for 1 Assuming AMA followed the self-certification procedures, I would be concerned with an interpretation of either the Privacy Shield Decision or the GDPR that would wholly prevent Wanat from producing jurisdictionally relevant “personal data.” Significant safeguards are available for producing even the most sensitive and confidential data. Moreover, Wanat’s counsel at oral argument agreed Wanat would comply with a discovery order, notwithstanding the GDPR."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,31,1,P031.B01,DOC006[P031.B01],106,153,54.0,34.68,345.0,217.88,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,30,2,P030.B02,DOC006.P030.B02,104,126,54.0,213.56,347.01,546.66,"If additional jurisdictional discovery is ordered, Wanat’s contacts with the United States may be shown to be more significant than the current record demonstrates. For example, ePorner refused to produce any of its advertising agreements. Wanat’s expert stated he could not conclusively determine that ePorner only used “ad networks rather than more directly negotiating with advertisers in addition to the ad network.” Evidence that Wanat negotiated with advertisers directly may reveal whether he intended to target U.S. users. Similarly, evidence that Wanat engaged Tiggee for the purpose of targeting U.S. forum residents may affect the analysis as well. The extent"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,30,3,P030.B03,DOC006.P030.B03,97,117,54.0,213.56,347.01,546.66,"of these contacts could also affect the reasonableness analysis. If the district court does decide that additional jurisdictional analysis is warranted on remand, one additional issue—and potentially a threshold one for 1 Assuming AMA followed the self-certification procedures, I would be concerned with an interpretation of either the Privacy Shield Decision or the GDPR that would wholly prevent Wanat from producing jurisdictionally relevant “personal data.” Significant safeguards are available for producing even the most sensitive and confidential data. Moreover, Wanat’s counsel at oral argument agreed Wanat would comply with a discovery order, notwithstanding the GDPR."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,31,1,P031.B01,DOC006.P031.B01,106,153,54.0,34.52,345.0,217.57,"AMA M ULTIMEDIA V . W ANAT
 31 
 jurisdictional discovery—may be considered.  AMA argues 
 that MW Media’s and Madon’s U.S. contacts may be 
@@ -593,7 +593,7 @@ partnership may be attributed to Wanat for jurisdictional
 purposes.  This could become an important issue impacting 
 what jurisdictional discovery is relevant and what contacts 
 may support the court’s jurisdiction over Wanat."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,31,2,P031.B02,DOC006[P031.B02],119,193,54.0,227.52,348.0,423.08,"We previously considered whether a partnership’s 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,31,2,P031.B02,DOC006.P031.B02,119,193,54.0,227.36,348.0,422.77,"We previously considered whether a partnership’s 
 contacts could be imputed to a partner for jurisdictional 
 purposes in  Sher v. Johnson , 911 F.2d 1357, 1365 (9th Cir. 
 1990), and held that a Florida law firm’s contacts with 
@@ -612,7 +612,7 @@ independent”
 and 
 “[r]egardless of their joint liability, jurisdiction over each 
 defendant must be established individually.”   Id."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,31,3,P031.B03,DOC006[P031.B03],79,114,54.0,432.72,345.0,545.48,"Relying on the general rule that “[f]or purposes of 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,31,3,P031.B03,DOC006.P031.B03,79,114,54.0,432.56,345.0,545.17,"Relying on the general rule that “[f]or purposes of 
 personal jurisdiction, the actions of an agent are attributable 
 to the principal,” we held that “because each partner acts as 
 an agent of the partnership when carrying on the business of 
@@ -620,7 +620,7 @@ the partnership,” “[t]he contacts of the partners may
 establish jurisdiction over the partnership.”   Id.  at 1362, 
 1366.  However, the inverse is not ordinarily true.  “[W]hile 
 each partner is generally an agent of the  partnership  for the"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,32,1,P032.B01,DOC006[P032.B01],80,124,54.0,34.68,345.0,176.48,"32 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,32,1,P032.B01,DOC006.P032.B01,80,124,54.0,34.52,345.0,176.17,"32 
 AMA M ULTIMEDIA V . W ANAT
 purpose of its business, he is not ordinarily an agent of his 
 partners. ”   Id.  at 1366.  “Thus, a partner’s actions . . . 
@@ -630,22 +630,22 @@ partnership law may create an agency relationship between
 partners.  In such circumstances, the general rule would 
 apply and a partnership’s contacts with a forum may be 
 attributed to its partners."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,32,2,P032.B02,DOC006[P032.B02],50,63,54.0,186.12,345.0,271.28,"If further proceedings on jurisdiction occur, the district 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,32,2,P032.B02,DOC006.P032.B02,50,63,54.0,185.96,345.0,270.97,"If further proceedings on jurisdiction occur, the district 
 court should determine whether Polish law creates an agency 
 relationship between partners and other persons such that the 
 contacts of Madon or MW Media may be imputed to Wanat 
 and whether such a ruling would impact jurisdictional 
 discovery or the jurisdictional analysis."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,32,3,P032.B03,DOC006[P032.B03],97,151,54.0,308.28,345.0,529.64,"GOULD, Circuit Judge, dissenting: Our precedents establish that we have the authority to exercise personal jurisdiction over a defendant who has, among other things, expressly aimed his tortious conduct at the United States. That authority allows us “to hold [a defendant] answerable . . . for the contents of a website whose economic value turns, in significant measure, on its appeal to [forum residents].” Mavrix Photo, Inc. v. Brand Techs., Inc. , 647 F.3d 1218, 1230 (9th Cir. 2011). In determining whether there is jurisdiction, we may infer from “[t]he fact that [a defendant’s] advertisements targeted [forum] residents . ."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,32,4,P032.B04,DOC006[P032.B04],32,43,54.0,308.28,345.0,529.64,". that [the defendant] knows—either actually or constructively—about [the forum’s] user base, and that it exploits that base for commercial gain by selling space on its website for advertisements.” Id."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,33,1,P033.B01,DOC006[P033.B01],102,132,53.99,34.68,345.0,546.97,"AMA M ULTIMEDIA V . W ANAT 33 Here, Defendant-Appellee Marcin Wanat operates a website, ePorner.com, which prior to this suit attracted nearly 20% of its user base and, as a result, substantial advertising profits from the United States market; utilized domain name servers (DNS) of a United States company that specifically brands itself as increasing internet speeds in the United States; and employed Terms of Service that invoked the protections of United States law. If we take the undisputed facts alleged by Plaintiff-Appellant AMA Multimedia as true and resolve any factual disputes in its favor—as we must—Wanat has targeted"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,33,2,P033.B02,DOC006[P033.B02],102,125,53.99,34.68,345.0,546.97,"his economic activity toward the United States and may properly be haled into court here. The majority, in reaching the contrary conclusion, unduly restricts the authority of United States courts to hold alleged, foreign tortfeasors to account and incorrectly curtails our established precedents. I respectfully dissent. 1 1 Because I would hold that there is already personal jurisdiction over Wanat, I do not here opine on the majority’s decision to affirm the denial of further jurisdictional discovery without considering arguments raised for the first time on appeal. However, like the view expressed in Judge Nelson’s separate concurrence, I do not"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,33,3,P033.B03,DOC006[P033.B03],102,121,53.99,34.68,345.0,546.97,"doubt that the district court has discretion on remand to grant AMA leave to amend its complaint or to conduct further jurisdictional discovery in light of changes in international law. The district court may wish to do so in recognition of courts’ greater discretion to consider questions of foreign law not initially raised by the parties, given “the peculiar nature of the issue of foreign law.” See Fed. R. Civ. P. 44.1 advisory committee’s note to 1966 adoption. Especially in a case such as this, with important interests of the United States’ ability to enforce domestic intellectual property rights at"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,33,4,P033.B04,DOC006[P033.B04],53,81,53.99,34.68,345.0,546.97,"stake, there are good reasons to ensure that the appropriate international law is applied. See Richmark Corp. v. Timber Falling Consultants , 959 F.2d 1468, 1475 (9th Cir. 1992) (one factor in international disclosure disputes is “the extent to which noncompliance with the [discovery] request would undermine important interests of the United States”)."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,1,P034.B01,DOC006[P034.B01],7,13,54.0,34.68,274.08,66.08,"34 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,32,3,P032.B03,DOC006.P032.B03,97,151,54.0,308.12,345.0,529.33,"GOULD, Circuit Judge, dissenting: Our precedents establish that we have the authority to exercise personal jurisdiction over a defendant who has, among other things, expressly aimed his tortious conduct at the United States. That authority allows us “to hold [a defendant] answerable . . . for the contents of a website whose economic value turns, in significant measure, on its appeal to [forum residents].” Mavrix Photo, Inc. v. Brand Techs., Inc. , 647 F.3d 1218, 1230 (9th Cir. 2011). In determining whether there is jurisdiction, we may infer from “[t]he fact that [a defendant’s] advertisements targeted [forum] residents . ."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,32,4,P032.B04,DOC006.P032.B04,32,43,54.0,308.12,345.0,529.33,". that [the defendant] knows—either actually or constructively—about [the forum’s] user base, and that it exploits that base for commercial gain by selling space on its website for advertisements.” Id."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,33,1,P033.B01,DOC006.P033.B01,102,132,53.99,34.52,345.0,546.71,"AMA M ULTIMEDIA V . W ANAT 33 Here, Defendant-Appellee Marcin Wanat operates a website, ePorner.com, which prior to this suit attracted nearly 20% of its user base and, as a result, substantial advertising profits from the United States market; utilized domain name servers (DNS) of a United States company that specifically brands itself as increasing internet speeds in the United States; and employed Terms of Service that invoked the protections of United States law. If we take the undisputed facts alleged by Plaintiff-Appellant AMA Multimedia as true and resolve any factual disputes in its favor—as we must—Wanat has targeted"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,33,2,P033.B02,DOC006.P033.B02,102,125,53.99,34.52,345.0,546.71,"his economic activity toward the United States and may properly be haled into court here. The majority, in reaching the contrary conclusion, unduly restricts the authority of United States courts to hold alleged, foreign tortfeasors to account and incorrectly curtails our established precedents. I respectfully dissent. 1 1 Because I would hold that there is already personal jurisdiction over Wanat, I do not here opine on the majority’s decision to affirm the denial of further jurisdictional discovery without considering arguments raised for the first time on appeal. However, like the view expressed in Judge Nelson’s separate concurrence, I do not"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,33,3,P033.B03,DOC006.P033.B03,102,121,53.99,34.52,345.0,546.71,"doubt that the district court has discretion on remand to grant AMA leave to amend its complaint or to conduct further jurisdictional discovery in light of changes in international law. The district court may wish to do so in recognition of courts’ greater discretion to consider questions of foreign law not initially raised by the parties, given “the peculiar nature of the issue of foreign law.” See Fed. R. Civ. P. 44.1 advisory committee’s note to 1966 adoption. Especially in a case such as this, with important interests of the United States’ ability to enforce domestic intellectual property rights at"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,33,4,P033.B04,DOC006.P033.B04,53,81,53.99,34.52,345.0,546.71,"stake, there are good reasons to ensure that the appropriate international law is applied. See Richmark Corp. v. Timber Falling Consultants , 959 F.2d 1468, 1475 (9th Cir. 1992) (one factor in international disclosure disputes is “the extent to which noncompliance with the [discovery] request would undermine important interests of the United States”)."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,1,P034.B01,DOC006.P034.B01,7,13,54.0,34.52,274.08,65.77,"34 
 AMA M ULTIMEDIA V . W ANAT"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,2,P034.B02,DOC006[P034.B02],1,1,195.6,63.53,203.28,80.14,I
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,3,P034.B03,DOC006[P034.B03],84,120,54.0,89.52,348.0,229.88,"Because the majority summarizes most of the key facts, 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,2,P034.B02,DOC006.P034.B02,1,1,195.6,63.67,203.28,80.29,I
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,3,P034.B03,DOC006.P034.B03,84,120,54.0,89.36,348.0,229.57,"Because the majority summarizes most of the key facts, 
 I reiterate only those most relevant to the personal 
 jurisdiction analysis.  First, Defendant Marcin Wanat is a 
 Polish citizen and partner in MW Media, S.C., which owns 
@@ -655,9 +655,9 @@ of Plaintiff AMA Multimedia, which is a Nevada limited
 liability company.  After being sued by AMA in the District 
 of Arizona, Wanat filed a motion to dismiss for lack of 
 personal jurisdiction."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,4,P034.B04,DOC006[P034.B04],108,134,54.0,239.52,345.0,435.08,"Although no facts in the current record show that Wanat directly conducts activity within the United States, it is undisputed that ePorner.com’s most important commercial market is the United States: 19.21% of its website traffic comes from the United States, while Germany makes up the second largest market, comprising 13.67% of the website traffic. No other country accounts for more than 6% of the traffic to the site. In turn, ePorner.com’s business model turns solely on advertising profits, and it uses third parties to geolocate advertisements based on a visitor’s perceived location. Because of the higher premiums placed on U.S.-"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,5,P034.B05,DOC006[P034.B05],24,29,54.0,239.52,345.0,435.08,"focused advertising, the U.S. market likely makes up an even greater proportion of ePorner.com’s profits than its user base would suggest."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,6,P034.B06,DOC006[P034.B06],78,102,54.0,444.72,345.0,557.48,"While ePorner.com now stores its videos on a server in 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,4,P034.B04,DOC006.P034.B04,108,134,54.0,239.36,345.0,434.77,"Although no facts in the current record show that Wanat directly conducts activity within the United States, it is undisputed that ePorner.com’s most important commercial market is the United States: 19.21% of its website traffic comes from the United States, while Germany makes up the second largest market, comprising 13.67% of the website traffic. No other country accounts for more than 6% of the traffic to the site. In turn, ePorner.com’s business model turns solely on advertising profits, and it uses third parties to geolocate advertisements based on a visitor’s perceived location. Because of the higher premiums placed on U.S.-"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,5,P034.B05,DOC006.P034.B05,24,29,54.0,239.36,345.0,434.77,"focused advertising, the U.S. market likely makes up an even greater proportion of ePorner.com’s profits than its user base would suggest."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,34,6,P034.B06,DOC006.P034.B06,78,102,54.0,444.56,345.0,557.17,"While ePorner.com now stores its videos on a server in 
 the Netherlands, before this suit it principally used the 
 domain name servers of U.S.-based Tiggee LLC, which 
 claims to provide the fastest internet speeds in the eastern 
@@ -665,62 +665,62 @@ United States and second fastest in the western United
 States. Also, ePorner.com’s Terms of Service as of 2015 
 stated that the website content was “owned by and/or 
 licensed to Eporner, subject to copyright and other"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,1,P035.B01,DOC006[P035.B01],39,57,54.0,34.68,345.0,147.08,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,1,P035.B01,DOC006.P035.B01,39,57,54.0,34.52,345.0,146.77,"AMA M ULTIMEDIA V . W ANAT
 35 
 intellectual property rights under United States, Canada and 
 foreign laws and international conventions.” After denying certain jurisdictional discovery, the 
 district court dismissed the suit for lack of personal 
 jurisdiction, and AMA appealed."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,2,P035.B02,DOC006[P035.B02],1,1,193.32,156.53,205.68,173.14,II
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,3,P035.B03,DOC006[P035.B03],101,171,54.0,182.52,348.0,419.48,"We review de novo a district court’s dismissal for lack of personal jurisdiction . Axiom Foods, Inc. v. Acerchem Int’l, Inc. , 874 F.3d 1064, 1067 (9th Cir. 2017). Where the determination of personal jurisdiction is “based on written materials rather than an evidentiary hearing, [a plaintiff] need only make a prima facie showing of jurisdictional facts.” Martinez v. Aero Caribbean , 764 F.3d 1062, 1066 (9th Cir. 2014) (quoting Schwarzenegger v. Fred Martin Motor Co. , 374 F.3d 797, 800 (9th Cir. 2004)). “Uncontroverted allegations in the complaint must be taken as true, and factual disputes are construed in"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,4,P035.B04,DOC006[P035.B04],60,117,54.0,182.52,348.0,419.48,"the plaintiff’s favor,” Freestream Aircraft (Bermuda) Ltd. v. Aero Law Grp. , 905 F.3d 597, 602 (9th Cir. 2018), so long as the plaintiff does not “simply rest on the bare allegations of its complaint,” Schwarzenegger , 374 F.3d at 800 (quoting Amba Mktg. Sys., Inc. v. Jobar Int’l, Inc. , 551 F.2d 784, 787 (9th Cir. 1977))."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,5,P035.B05,DOC006[P035.B05],1,1,190.92,428.93,207.96,445.54,III
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,6,P035.B06,DOC006[P035.B06],70,111,54.0,454.92,345.0,553.88,"Personal jurisdiction under the federal long-arm statute, 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,2,P035.B02,DOC006.P035.B02,1,1,193.32,156.67,205.68,173.29,II
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,3,P035.B03,DOC006.P035.B03,101,171,54.0,182.36,348.0,419.17,"We review de novo a district court’s dismissal for lack of personal jurisdiction . Axiom Foods, Inc. v. Acerchem Int’l, Inc. , 874 F.3d 1064, 1067 (9th Cir. 2017). Where the determination of personal jurisdiction is “based on written materials rather than an evidentiary hearing, [a plaintiff] need only make a prima facie showing of jurisdictional facts.” Martinez v. Aero Caribbean , 764 F.3d 1062, 1066 (9th Cir. 2014) (quoting Schwarzenegger v. Fred Martin Motor Co. , 374 F.3d 797, 800 (9th Cir. 2004)). “Uncontroverted allegations in the complaint must be taken as true, and factual disputes are construed in"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,4,P035.B04,DOC006.P035.B04,60,117,54.0,182.36,348.0,419.17,"the plaintiff’s favor,” Freestream Aircraft (Bermuda) Ltd. v. Aero Law Grp. , 905 F.3d 597, 602 (9th Cir. 2018), so long as the plaintiff does not “simply rest on the bare allegations of its complaint,” Schwarzenegger , 374 F.3d at 800 (quoting Amba Mktg. Sys., Inc. v. Jobar Int’l, Inc. , 551 F.2d 784, 787 (9th Cir. 1977))."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,5,P035.B05,DOC006.P035.B05,1,1,190.92,429.07,207.96,445.69,III
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,35,6,P035.B06,DOC006.P035.B06,70,111,54.0,454.76,345.0,553.57,"Personal jurisdiction under the federal long-arm statute, 
 Federal Rule of Civil Procedure 4(k)(2), must comport with 
 due process; in this instance, where specific jurisdiction is at 
 issue, the defendant must have “minimum contacts” with the 
 forum of the United States, and the exercise of jurisdiction 
 must not be unreasonable.   Holland Am. Line Inc. v. Wartsila 
 N. Am., Inc. , 485 F.3d 450, 462 (9th Cir. 2007) (“The due"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,36,1,P036.B01,DOC006[P036.B01],102,140,54.0,34.68,345.0,273.08,"36 AMA M ULTIMEDIA V . W ANAT process analysis under Rule 4(k)(2) is nearly identical to traditional personal jurisdiction analysis with one significant difference: rather than considering contacts between [the defendant] and the forum state, we consider contacts with the nation as a whole.”); see Int’l Shoe Co. v. Washington , 326 U.S. 310, 316 (1945). The familiar requirements for specific jurisdiction are as follows: (1) the defendant must either “purposefully direct his activities” toward the forum or “purposefully avail[] himself of the privileges of conducting activities in the forum”; (2) “the claim must be one which arises out"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,36,2,P036.B02,DOC006[P036.B02],51,87,54.0,34.68,345.0,273.08,"of or relates to the defendant’s forum- related activities”; and (3) “the exercise of jurisdiction must comport with fair play and substantial justice, i.e. it must be reasonable.” Axiom , 874 F.3d at 1068 (quoting Dole Food Co., Inc. v. Watts , 303 F.3d 1104, 1111 (9th Cir. 2002))."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,36,3,P036.B03,DOC006[P036.B03],99,163,54.0,282.72,348.0,519.68,"The majority correctly identifies the “effects test” derived from Calder v. Jones , 465 U.S. 783 (1984) as the appropriate standard by which to gauge whether Wanat purposefully directed his activities toward the United States. Under the effects test, “the defendant allegedly must have (1) committed an intentional act, (2) expressly aimed at the forum state, (3) causing harm that the defendant knows is likely to be suffered in the forum state.” Mavrix Photo, Inc. v. Brand Techs., Inc. , 647 F.3d 1218, 1228 (9th Cir. 2011) (quoting Brayton Purcell LLP v. Recordon & Recordon , 606 F.3d 1124, 1128"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,36,4,P036.B04,DOC006[P036.B04],58,76,54.0,282.72,348.0,519.68,"(9th Cir. 2010)). The majority also correctly holds that Wanat committed an intentional act for purposes of jurisdiction. The majority then goes astray, however, by concluding that Wanat did not expressly aim his conduct toward the United States, and that mistake defeats jurisdiction. Our precedents dictate otherwise, so I would hold that there is personal jurisdiction over Wanat."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,1,P037.B01,DOC006[P037.B01],7,13,54.0,34.68,345.0,66.08,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,36,1,P036.B01,DOC006.P036.B01,102,140,54.0,34.52,345.0,272.77,"36 AMA M ULTIMEDIA V . W ANAT process analysis under Rule 4(k)(2) is nearly identical to traditional personal jurisdiction analysis with one significant difference: rather than considering contacts between [the defendant] and the forum state, we consider contacts with the nation as a whole.”); see Int’l Shoe Co. v. Washington , 326 U.S. 310, 316 (1945). The familiar requirements for specific jurisdiction are as follows: (1) the defendant must either “purposefully direct his activities” toward the forum or “purposefully avail[] himself of the privileges of conducting activities in the forum”; (2) “the claim must be one which arises out"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,36,2,P036.B02,DOC006.P036.B02,51,87,54.0,34.52,345.0,272.77,"of or relates to the defendant’s forum- related activities”; and (3) “the exercise of jurisdiction must comport with fair play and substantial justice, i.e. it must be reasonable.” Axiom , 874 F.3d at 1068 (quoting Dole Food Co., Inc. v. Watts , 303 F.3d 1104, 1111 (9th Cir. 2002))."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,36,3,P036.B03,DOC006.P036.B03,99,163,54.0,282.56,348.0,519.37,"The majority correctly identifies the “effects test” derived from Calder v. Jones , 465 U.S. 783 (1984) as the appropriate standard by which to gauge whether Wanat purposefully directed his activities toward the United States. Under the effects test, “the defendant allegedly must have (1) committed an intentional act, (2) expressly aimed at the forum state, (3) causing harm that the defendant knows is likely to be suffered in the forum state.” Mavrix Photo, Inc. v. Brand Techs., Inc. , 647 F.3d 1218, 1228 (9th Cir. 2011) (quoting Brayton Purcell LLP v. Recordon & Recordon , 606 F.3d 1124, 1128"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,36,4,P036.B04,DOC006.P036.B04,58,76,54.0,282.56,348.0,519.37,"(9th Cir. 2010)). The majority also correctly holds that Wanat committed an intentional act for purposes of jurisdiction. The majority then goes astray, however, by concluding that Wanat did not expressly aim his conduct toward the United States, and that mistake defeats jurisdiction. Our precedents dictate otherwise, so I would hold that there is personal jurisdiction over Wanat."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,1,P037.B01,DOC006.P037.B01,7,13,54.0,34.52,345.0,65.77,"AMA M ULTIMEDIA V . W ANAT
 37"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,2,P037.B02,DOC006[P037.B02],1,1,193.68,63.53,205.32,80.14,A
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,3,P037.B03,DOC006[P037.B03],101,151,54.0,89.52,345.0,312.68,"A defendant who operates a passive website “expressly aims” at a forum if he engages in “conduct directly targeting the forum.” Mavrix , 647 F.3d at 1229. 2 We have held that this requirement was satisfied when a defendant “continuously and deliberately exploited” the forum’s market for commercial gain, by operating “a website whose economic value turns, in significant measure, on its appeal to [forum residents].” Id. at 1230; accord Keeton v. Hustler Mag., Inc. , 465 U.S. 770, 781 (1984) (“Where, as in this case, [the defendant] has continuously and deliberately exploited the New Hampshire market [by selling magazines],"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,4,P037.B04,DOC006[P037.B04],42,64,54.0,89.52,345.0,312.68,"it must reasonably anticipate being haled into court there . . . based on the contents of its magazine.”). In other words, express aiming is present where a defendant “anticipated, desired, and achieved a substantial [U.S.] viewer base.” Mavrix , 647 F.3d at 1230."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,5,P037.B05,DOC006[P037.B05],105,133,54.0,322.32,348.0,546.92,"Here, there should be little question that these conditions are satisfied. As in Mavrix , ePorner.com’s business model depends on “selling advertising space on its website to third- party advertisers: the more visitors there are to the site, the more hits that are made on the advertisements; the more hits that are made on the advertisements, the more money that is paid by the advertisers to [ePorner.com and Wanat].” Id. ePorner.com’s ads are geolocated to the perceived location 2 It is worth noting that ePorner.com is more than a purely passive website because it has interactive features that “that involve"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,6,P037.B06,DOC006[P037.B06],68,110,54.0,322.32,348.0,546.92,"the knowing and repeated transmission of computer files over the Internet,” Mavrix , 647 F.3d at 1226 (quotations omitted), and “visitors must agree to certain terms and conditions” in order to make full use of the site, UMG Recordings, Inc. v. Kurbanov , 963 F.3d 344, 353 (4th Cir. 2020). In any event, regardless of whether the site is passive, interactive, or semi- interactive, jurisdiction is proper here."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,38,1,P038.B01,DOC006[P038.B01],46,67,54.0,34.68,345.0,121.28,"38 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,2,P037.B02,DOC006.P037.B02,1,1,193.68,63.67,205.32,80.29,A
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,3,P037.B03,DOC006.P037.B03,101,151,54.0,89.36,345.0,312.37,"A defendant who operates a passive website “expressly aims” at a forum if he engages in “conduct directly targeting the forum.” Mavrix , 647 F.3d at 1229. 2 We have held that this requirement was satisfied when a defendant “continuously and deliberately exploited” the forum’s market for commercial gain, by operating “a website whose economic value turns, in significant measure, on its appeal to [forum residents].” Id. at 1230; accord Keeton v. Hustler Mag., Inc. , 465 U.S. 770, 781 (1984) (“Where, as in this case, [the defendant] has continuously and deliberately exploited the New Hampshire market [by selling magazines],"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,4,P037.B04,DOC006.P037.B04,42,64,54.0,89.36,345.0,312.37,"it must reasonably anticipate being haled into court there . . . based on the contents of its magazine.”). In other words, express aiming is present where a defendant “anticipated, desired, and achieved a substantial [U.S.] viewer base.” Mavrix , 647 F.3d at 1230."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,5,P037.B05,DOC006.P037.B05,105,133,54.0,322.16,348.0,546.67,"Here, there should be little question that these conditions are satisfied. As in Mavrix , ePorner.com’s business model depends on “selling advertising space on its website to third- party advertisers: the more visitors there are to the site, the more hits that are made on the advertisements; the more hits that are made on the advertisements, the more money that is paid by the advertisers to [ePorner.com and Wanat].” Id. ePorner.com’s ads are geolocated to the perceived location 2 It is worth noting that ePorner.com is more than a purely passive website because it has interactive features that “that involve"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,37,6,P037.B06,DOC006.P037.B06,68,110,54.0,322.16,348.0,546.67,"the knowing and repeated transmission of computer files over the Internet,” Mavrix , 647 F.3d at 1226 (quotations omitted), and “visitors must agree to certain terms and conditions” in order to make full use of the site, UMG Recordings, Inc. v. Kurbanov , 963 F.3d 344, 353 (4th Cir. 2020). In any event, regardless of whether the site is passive, interactive, or semi- interactive, jurisdiction is proper here."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,38,1,P038.B01,DOC006.P038.B01,46,67,54.0,34.52,345.0,120.97,"38 
 AMA M ULTIMEDIA V . W ANAT
 of its visitors, and at nearly 20% of the website’s traffic, the 
 United States audience is “substantial” and in fact makes up 
 a larger proportion of ePorner’s user base than any other 
 country, by a significant margin."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,38,2,P038.B02,DOC006[P038.B02],107,162,54.0,130.92,345.0,436.88,"“[I]mmaterial [of] whether the third-party advertisers or [ePorner and Wanat] targeted [United States] residents,” “[t]he fact that the advertisements targeted [U.S.] residents indicates that [ePorner] knows—either actually or constructively—about its [U.S.] user base, and that it exploits that base for commercial gain by selling space on its website for advertisements.” Id. ; see also Kurbanov , 963 F.3d at 348, 353–54 (in finding jurisdiction, reasoning that “[w]hile [the defendant] outsourced the role of finding advertisers for the Websites to brokers, the fact remains that he earns revenues precisely because the advertising is targeted to visitors in [the forum]” through “geolocation”"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,38,3,P038.B03,DOC006[P038.B03],99,141,54.0,130.92,345.0,436.88,"or “geo-targeting”). This is especially true where, as here, ePorner has contracted with a U.S.-based DNS company that specifically markets itself as providing fast internet speeds in the United States. 3 The straightforward conclusion is that the United States “audience is an integral component of [ePorner’s] business model and its profitability,” and that “it does not violate due process to hold [ePorner or Wanat] answerable in a [U.S.] court for the contents of a website whose economic value turns, in significant measure, on its appeal to [U.S. residents].” Mavrix , 647 F.3d at 1230."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,38,4,P038.B04,DOC006[P038.B04],79,109,54.01,450.36,347.0,546.92,"3  ePorner also used Terms of Service that invoked the protections of 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,38,2,P038.B02,DOC006.P038.B02,107,162,54.0,130.76,345.0,436.57,"“[I]mmaterial [of] whether the third-party advertisers or [ePorner and Wanat] targeted [United States] residents,” “[t]he fact that the advertisements targeted [U.S.] residents indicates that [ePorner] knows—either actually or constructively—about its [U.S.] user base, and that it exploits that base for commercial gain by selling space on its website for advertisements.” Id. ; see also Kurbanov , 963 F.3d at 348, 353–54 (in finding jurisdiction, reasoning that “[w]hile [the defendant] outsourced the role of finding advertisers for the Websites to brokers, the fact remains that he earns revenues precisely because the advertising is targeted to visitors in [the forum]” through “geolocation”"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,38,3,P038.B03,DOC006.P038.B03,99,141,54.0,130.76,345.0,436.57,"or “geo-targeting”). This is especially true where, as here, ePorner has contracted with a U.S.-based DNS company that specifically markets itself as providing fast internet speeds in the United States. 3 The straightforward conclusion is that the United States “audience is an integral component of [ePorner’s] business model and its profitability,” and that “it does not violate due process to hold [ePorner or Wanat] answerable in a [U.S.] court for the contents of a website whose economic value turns, in significant measure, on its appeal to [U.S. residents].” Mavrix , 647 F.3d at 1230."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,38,4,P038.B04,DOC006.P038.B04,79,109,54.01,450.2,347.0,546.66,"3  ePorner also used Terms of Service that invoked the protections of 
 United States copyright and trademark law.  While the cursory reference 
 to U.S. law in these Terms would not be sufficient on its own to establish 
 express aiming, it lends further support to the conclusion, in conjunction 
 with the rest of the website’s operations, that ePorner’s contacts with the 
 United States were more than merely “random, isolated, or fortuitous.”  
 Keeton , 465 U.S. at 774."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,39,1,P039.B01,DOC006[P039.B01],42,65,54.0,34.68,345.0,121.28,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,39,1,P039.B01,DOC006.P039.B01,42,65,54.0,34.52,345.0,120.97,"AMA M ULTIMEDIA V . W ANAT
 39 The majority resists this conclusion by seeking to 
 distinguish  Mavrix  from the present case and throwing up 
 roadblocks that can be found nowhere in our precedents—
 and that, in some instances, flatly contradict our precedents."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,39,2,P039.B02,DOC006[P039.B02],101,130,54.0,130.92,348.0,545.48,"Among other things, the majority suggests that personal jurisdiction is improper because Wanat and ePorner lacked a “forum-specific focus,” noting that “the market for adult content is global.” See Maj. Op. at 16–17. But it is well- established that no forum-specific requirement exists. In Keeton , the Supreme Court held that New Hampshire had personal jurisdiction over a national magazine even though the magazine distributed fewer copies in that state than others and even though “the bulk of the harm done to [the plaintiff] occurred outside New Hampshire.” 465 U.S. at 780. Because the magazine “continuously and deliberately exploited the"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,39,3,P039.B03,DOC006[P039.B03],96,155,54.0,130.92,348.0,545.48,"New Hampshire market . . . [t]here is no unfairness in calling it to answer for the contents of that publication.” Id. at 781. Similarly, our own court has stated that so long as “a jurisdictionally sufficient amount of harm is suffered in the forum . . . , it does not matter that even more harm might have been suffered in another [forum].” Yahoo! Inc. v. La Ligue Contre Le Racisme Et L’Antisemitisme , 433 F.3d 1199, 1207 (9th Cir. 2006) (en banc) (per curiam); see also Mavrix , 647 F.3d at 1230–31 (finding jurisdiction in California despite the"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,39,4,P039.B04,DOC006[P039.B04],73,99,54.0,130.92,348.0,545.48,"fact that the defendant more generally “sought and attracted [a] nationwide audience[]”). Here, the market for adult content is not uniquely and exclusively American, but Wanat should nonetheless be held accountable in a United States court because he has “continuously and deliberately exploited” the U.S. market. See Keeton , 465 U.S. at 781. The majority misreads Mavrix . Mavrix did not hold that personal jurisdiction is proper only when a website has a"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,40,1,P040.B01,DOC006[P040.B01],103,144,54.0,34.68,347.01,559.04,"40 AMA M ULTIMEDIA V . W ANAT unique appeal in the forum, nor did it depend fundamentally on the website’s forum-specific subject matter, as the majority contends, see Maj. Op. at 16–17. Rather, in Mavrix , “[t]he record [did] not reflect how many of the website’s visitors are California residents.” 647 F.3d at 1222. In light of that absence, we focused on the subject matter of the website (celebrity gossip) as evidence that the website had significant appeal in the California forum. Id. at 1230. We then considered that subject matter along with “the size and commercial value of"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,40,2,P040.B02,DOC006[P040.B02],111,130,54.0,34.68,347.01,559.04,"the California market”—not with the unknown size and commercial value of the website’s California user base—to infer that “[t]his audience is an integral component of [the defendant’s] business model and its profitability.” Id. Unlike Mavrix , we need not rely on the subject matter of ePorner.com as evidence from which to infer the site’s appeal in the forum: The record directly shows that ePorner.com appeals to a significant U.S. audience and that it contracts with a U.S.-based DNS company which markets itself as providing faster internet speeds to U.S. users. To hold that there is no express aiming here is"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,40,3,P040.B03,DOC006[P040.B03],104,131,54.0,34.68,347.01,559.04,"to construe the facts in the light least favorable to the plaintiff and to blind ourselves to the clear inference that ePorner “knows—either actually or constructively—about its [U.S.] user base, and that it exploits that base for commercial gain by selling space on its website for advertisements.” Id. 4 4 Nor is there truth in the majority’s rejoinder that finding jurisdiction here would mean that “ePorner could be said to expressly aim at any forum in which a user views the website.” Maj. Op. at 19. This contention ignores the fact that a defendant must have “anticipated, desired, and achieved"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,40,4,P040.B04,DOC006[P040.B04],41,70,54.0,34.68,347.01,559.04,"a substantial [forum] viewer base,” Mavrix , 647 F.3d at 1230 (emphasis added), and that its contacts cannot be merely “random, isolated, or fortuitous,” Keeton , 465 U.S. at 774. Exercising jurisdiction where, as here, the United States is the most"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,41,1,P041.B01,DOC006[P041.B01],82,123,54.0,34.68,348.0,176.48,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,39,2,P039.B02,DOC006.P039.B02,101,130,54.0,130.76,348.0,545.17,"Among other things, the majority suggests that personal jurisdiction is improper because Wanat and ePorner lacked a “forum-specific focus,” noting that “the market for adult content is global.” See Maj. Op. at 16–17. But it is well- established that no forum-specific requirement exists. In Keeton , the Supreme Court held that New Hampshire had personal jurisdiction over a national magazine even though the magazine distributed fewer copies in that state than others and even though “the bulk of the harm done to [the plaintiff] occurred outside New Hampshire.” 465 U.S. at 780. Because the magazine “continuously and deliberately exploited the"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,39,3,P039.B03,DOC006.P039.B03,96,155,54.0,130.76,348.0,545.17,"New Hampshire market . . . [t]here is no unfairness in calling it to answer for the contents of that publication.” Id. at 781. Similarly, our own court has stated that so long as “a jurisdictionally sufficient amount of harm is suffered in the forum . . . , it does not matter that even more harm might have been suffered in another [forum].” Yahoo! Inc. v. La Ligue Contre Le Racisme Et L’Antisemitisme , 433 F.3d 1199, 1207 (9th Cir. 2006) (en banc) (per curiam); see also Mavrix , 647 F.3d at 1230–31 (finding jurisdiction in California despite the"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,39,4,P039.B04,DOC006.P039.B04,73,99,54.0,130.76,348.0,545.17,"fact that the defendant more generally “sought and attracted [a] nationwide audience[]”). Here, the market for adult content is not uniquely and exclusively American, but Wanat should nonetheless be held accountable in a United States court because he has “continuously and deliberately exploited” the U.S. market. See Keeton , 465 U.S. at 781. The majority misreads Mavrix . Mavrix did not hold that personal jurisdiction is proper only when a website has a"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,40,1,P040.B01,DOC006.P040.B01,103,144,54.0,34.52,347.01,558.73,"40 AMA M ULTIMEDIA V . W ANAT unique appeal in the forum, nor did it depend fundamentally on the website’s forum-specific subject matter, as the majority contends, see Maj. Op. at 16–17. Rather, in Mavrix , “[t]he record [did] not reflect how many of the website’s visitors are California residents.” 647 F.3d at 1222. In light of that absence, we focused on the subject matter of the website (celebrity gossip) as evidence that the website had significant appeal in the California forum. Id. at 1230. We then considered that subject matter along with “the size and commercial value of"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,40,2,P040.B02,DOC006.P040.B02,111,130,54.0,34.52,347.01,558.73,"the California market”—not with the unknown size and commercial value of the website’s California user base—to infer that “[t]his audience is an integral component of [the defendant’s] business model and its profitability.” Id. Unlike Mavrix , we need not rely on the subject matter of ePorner.com as evidence from which to infer the site’s appeal in the forum: The record directly shows that ePorner.com appeals to a significant U.S. audience and that it contracts with a U.S.-based DNS company which markets itself as providing faster internet speeds to U.S. users. To hold that there is no express aiming here is"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,40,3,P040.B03,DOC006.P040.B03,104,131,54.0,34.52,347.01,558.73,"to construe the facts in the light least favorable to the plaintiff and to blind ourselves to the clear inference that ePorner “knows—either actually or constructively—about its [U.S.] user base, and that it exploits that base for commercial gain by selling space on its website for advertisements.” Id. 4 4 Nor is there truth in the majority’s rejoinder that finding jurisdiction here would mean that “ePorner could be said to expressly aim at any forum in which a user views the website.” Maj. Op. at 19. This contention ignores the fact that a defendant must have “anticipated, desired, and achieved"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,40,4,P040.B04,DOC006.P040.B04,41,70,54.0,34.52,347.01,558.73,"a substantial [forum] viewer base,” Mavrix , 647 F.3d at 1230 (emphasis added), and that its contacts cannot be merely “random, isolated, or fortuitous,” Keeton , 465 U.S. at 774. Exercising jurisdiction where, as here, the United States is the most"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,41,1,P041.B01,DOC006.P041.B01,82,123,54.0,34.52,348.0,176.17,"AMA M ULTIMEDIA V . W ANAT
 41 The majority apparently grounds its reluctance to make 
 this plain inference, in part, on  Walden v. Fiore , 571 U.S. 
 277 (2014), by reasoning that foreseeability of harm to the 
@@ -729,7 +729,7 @@ contacts and that only the defendant’s own contacts with the
 forum can provide the basis for jurisdiction.   See Maj. Op. 
 at 17–19 & n.6.  These propositions are undeniably true.  
 They are also beside the point."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,41,2,P041.B02,DOC006[P041.B02],102,156,54.0,186.12,348.0,326.48,"First, foreseeability of harm to the plaintiff principally 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,41,2,P041.B02,DOC006.P041.B02,102,156,54.0,185.96,348.0,326.17,"First, foreseeability of harm to the plaintiff principally 
 relates not to the express aiming analysis, but to the third 
 prong of the effects test—whether the defendant “caus[ed] 
 harm that the defendant knows is likely to be suffered in the 
@@ -739,9 +739,9 @@ specific jurisdiction” after  Walden , it is still “relevant to the
 minimum contacts inquiry.”   Axiom , 874 F.3d at 1070.  
 Indeed, that is the only way that the second and third prongs 
 of the effects test do not entirely collapse into each other."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,41,3,P041.B03,DOC006[P041.B03],103,137,54.0,336.12,345.0,546.9,"Second, Walden stands for the proposition that a defendant may not simply rely on a plaintiff’s contacts with the defendant and the forum to establish personal jurisdiction. Walden , 571 U.S. at 289. That principle of due process, however, does not make a defendant immune from suit when the “‘effects’ of the alleged [tortious conduct] connect[] the defendant[] to [the forum], not just to the plaintiff.” Id. at 287. The majority elides this important distinction, asserting that, “[t]o find specific jurisdiction based on [users in the forum receiving targeted advertisements] would run afoul of the Supreme Court’s directive in Walden"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,41,4,P041.B04,DOC006[P041.B04],23,32,54.0,336.12,345.0,546.9,and ‘impermissibly allow[] a plaintiff’s integral market to the defendant’s profitability will not result in the majority’s “sky-is-falling” scenario.
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,42,1,P042.B01,DOC006[P042.B01],95,160,54.0,34.68,345.0,190.28,"42 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,41,3,P041.B03,DOC006.P041.B03,103,137,54.0,335.96,345.0,546.64,"Second, Walden stands for the proposition that a defendant may not simply rely on a plaintiff’s contacts with the defendant and the forum to establish personal jurisdiction. Walden , 571 U.S. at 289. That principle of due process, however, does not make a defendant immune from suit when the “‘effects’ of the alleged [tortious conduct] connect[] the defendant[] to [the forum], not just to the plaintiff.” Id. at 287. The majority elides this important distinction, asserting that, “[t]o find specific jurisdiction based on [users in the forum receiving targeted advertisements] would run afoul of the Supreme Court’s directive in Walden"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,41,4,P041.B04,DOC006.P041.B04,23,32,54.0,335.96,345.0,546.64,and ‘impermissibly allow[] a plaintiff’s integral market to the defendant’s profitability will not result in the majority’s “sky-is-falling” scenario.
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,42,1,P042.B01,DOC006.P042.B01,95,160,54.0,34.52,345.0,189.97,"42 
 AMA M ULTIMEDIA V . W ANAT
 contacts with the defendant and forum to drive the 
 jurisdictional analysis.’”   Maj. Op.  at 19 (quoting  Walden , 
@@ -752,22 +752,22 @@ Wanat “knows—either actually or constructively—about
 [ePorner.com’s U.S.] user base, and that [he] exploits that 
 base for commercial gain by selling space on [the] website 
 for advertisements.”   Mavrix , 674 F.3d at 1230."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,42,2,P042.B02,DOC006[P042.B02],49,70,54.0,199.92,345.0,285.08,"Taking AMA’s uncontroverted allegations as true and 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,42,2,P042.B02,DOC006.P042.B02,49,70,54.0,199.76,345.0,284.77,"Taking AMA’s uncontroverted allegations as true and 
 resolving factual disputes in its favor, there is more than 
 enough here to conclude that Wanat, through ePorner, 
 expressly aimed his conduct at the United States.  The 
 second prong of the effects test should have been resolved in 
 AMA’s favor."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,42,3,P042.B03,DOC006[P042.B03],1,1,193.92,294.53,204.96,311.14,B
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,42,4,P042.B04,DOC006[P042.B04],104,135,54.0,320.52,348.0,543.68,"The third prong of the effects test is also clearly satisfied. Because ePorner allegedly violated the intellectual property rights of AMA, which is headquartered in the United States, and because the harm involves the potential diversion of U.S. users and revenues from AMA’s own platforms, Wanat’s express aiming is “causing harm that [he] knows is likely to be suffered in the forum.” See Brayton Purcell , 606 F.3d at 1131 (it is foreseeable that a plaintiff will be “harmed by infringement of its copyright[s and trademarks], including harm to its business reputation and goodwill, and decreased business and profits”); Mavrix"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,42,5,P042.B05,DOC006[P042.B05],47,68,54.0,320.52,348.0,543.68,", 647 F.3d at 1231 (“[A] corporation can suffer economic harm both where the bad acts occurred and where the corporation has its principal place of business.” (quoting Dole Food , 303 F.3d at 1113)). All of the requirements of the Calder effects test have been met."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,1,P043.B01,DOC006[P043.B01],7,13,54.0,34.68,345.0,66.08,"AMA M ULTIMEDIA V . W ANAT
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,42,3,P042.B03,DOC006.P042.B03,1,1,193.92,294.67,204.96,311.29,B
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,42,4,P042.B04,DOC006.P042.B04,104,135,54.0,320.36,348.0,543.37,"The third prong of the effects test is also clearly satisfied. Because ePorner allegedly violated the intellectual property rights of AMA, which is headquartered in the United States, and because the harm involves the potential diversion of U.S. users and revenues from AMA’s own platforms, Wanat’s express aiming is “causing harm that [he] knows is likely to be suffered in the forum.” See Brayton Purcell , 606 F.3d at 1131 (it is foreseeable that a plaintiff will be “harmed by infringement of its copyright[s and trademarks], including harm to its business reputation and goodwill, and decreased business and profits”); Mavrix"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,42,5,P042.B05,DOC006.P042.B05,47,68,54.0,320.36,348.0,543.37,", 647 F.3d at 1231 (“[A] corporation can suffer economic harm both where the bad acts occurred and where the corporation has its principal place of business.” (quoting Dole Food , 303 F.3d at 1113)). All of the requirements of the Calder effects test have been met."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,1,P043.B01,DOC006.P043.B01,7,13,54.0,34.52,345.0,65.77,"AMA M ULTIMEDIA V . W ANAT
 43"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,2,P043.B02,DOC006[P043.B02],1,1,193.68,63.53,205.32,80.14,C
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,3,P043.B03,DOC006[P043.B03],107,160,54.0,89.52,345.0,285.08,"Having established purposeful direction, the next step in the minimum contacts inquiry is to consider whether the claim “arises out of or relates to the defendant’s forum- related activities.” Axiom , 874 F.3d at 1068 (quoting Dole Food , 303 F.3d at 1111)). This step, too, straightforwardly supports jurisdiction. Wanat operates ePorner.com. That website allegedly displayed infringing videos, causing harm to AMA in the United States. But for Wanat’s operation of ePorner.com, AMA would not have been harmed in the forum. The harm to AMA arises out of Wanat’s U.S. contacts. Cf. Mavrix , 647 F.3d at 1228 (“[The plaintiff’s]"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,4,P043.B04,DOC006[P043.B04],25,30,54.0,89.52,345.0,285.08,claim of copyright infringement arises out of [the defendant’s] publication of the photos on a website accessible to users in the forum state.”). 5
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,5,P043.B05,DOC006[P043.B05],1,1,193.68,294.53,205.32,311.14,D
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,6,P043.B06,DOC006[P043.B06],38,62,54.0,320.52,348.0,391.88,"Because all other requirements for specific jurisdiction 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,2,P043.B02,DOC006.P043.B02,1,1,193.68,63.67,205.32,80.29,C
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,3,P043.B03,DOC006.P043.B03,107,160,54.0,89.36,345.0,284.77,"Having established purposeful direction, the next step in the minimum contacts inquiry is to consider whether the claim “arises out of or relates to the defendant’s forum- related activities.” Axiom , 874 F.3d at 1068 (quoting Dole Food , 303 F.3d at 1111)). This step, too, straightforwardly supports jurisdiction. Wanat operates ePorner.com. That website allegedly displayed infringing videos, causing harm to AMA in the United States. But for Wanat’s operation of ePorner.com, AMA would not have been harmed in the forum. The harm to AMA arises out of Wanat’s U.S. contacts. Cf. Mavrix , 647 F.3d at 1228 (“[The plaintiff’s]"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,4,P043.B04,DOC006.P043.B04,25,30,54.0,89.36,345.0,284.77,claim of copyright infringement arises out of [the defendant’s] publication of the photos on a website accessible to users in the forum state.”). 5
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,5,P043.B05,DOC006.P043.B05,1,1,193.68,294.67,205.32,311.29,D
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,6,P043.B06,DOC006.P043.B06,38,62,54.0,320.36,348.0,391.57,"Because all other requirements for specific jurisdiction 
 have been met, the final inquiry is whether it is reasonable 
 to 
 exercise 
@@ -777,7 +777,7 @@ over
 Wanat.  
 Schwarzenegger , 374 F.3d at 802.  We balance seven factors 
 in making that determination:"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,7,P043.B07,DOC006[P043.B07],110,152,54.0,415.92,346.88,546.93,"5  Because the majority dismisses the case at the purposeful direction 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,43,7,P043.B07,DOC006.P043.B07,110,152,54.0,415.76,346.88,546.67,"5  Because the majority dismisses the case at the purposeful direction 
 step, it only briefly addresses, in one sentence in a footnote, whether the 
 claim arises out of or relates to the defendant’s forum-related activities 
 and concludes that it does not.   See Maj. Op.  at 21 n.9. Its only stated 
@@ -787,7 +787,7 @@ the uploading, or intentionally failing to remove the infringing content.”
 Id.   But it is not contested that Wanat, through his partnership MW 
 Media, assists in operating ePorner.com.  The majority’s cursory, non-
 binding dicta cannot withstand scrutiny."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,44,1,P044.B01,DOC006[P044.B01],87,134,54.0,34.68,309.0,331.28,"44 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,44,1,P044.B01,DOC006.P044.B01,87,134,54.0,34.52,309.0,330.97,"44 
 AMA M ULTIMEDIA V . W ANAT (1) the extent of the defendant’s purposeful 
 interjection into the forum[’s] affairs; (2) the burden on the defendant of defending 
 in the forum; (3) the extent of conflict with the sovereignty 
@@ -796,22 +796,22 @@ dispute; (5) the most efficient judicial resolution of
 the controversy; (6)  the importance of the forum to the 
 plaintiff’s interest in convenient and 
 effective relief; and (7) the existence of an alternative forum."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,44,2,P044.B02,DOC006[P044.B02],68,140,54.0,340.92,345.0,439.88,"Freestream Aircraft , 905 F.3d at 607.  The burden is on 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,44,2,P044.B02,DOC006.P044.B02,68,140,54.0,340.76,345.0,439.57,"Freestream Aircraft , 905 F.3d at 607.  The burden is on 
 Wanat “to ‘present a compelling case’ that the exercise of 
 jurisdiction would not be reasonable.”   Schwarzenegger , 
 374 F.3d at 802 (quoting  Burger King Corp. v. Rudzewicz , 
 471 U.S. 462, 477 (1985));  accord Harris Rutsky & Co. Ins. 
 Servs., Inc. v. Bell & Clements Ltd. , 328 F.3d 1122, 1132 
 (9th Cir. 2003).  Wanat has not done so."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,44,3,P044.B03,DOC006[P044.B03],62,88,54.0,449.52,347.02,546.91,"On the one hand, forcing Wanat to litigate in the United 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,44,3,P044.B03,DOC006.P044.B03,62,88,54.0,449.36,347.02,546.65,"On the one hand, forcing Wanat to litigate in the United 
 States would almost certainly impose substantial burdens on 
 him and raise sovereignty and efficiency concerns. 6   But on 6  It is notable, however, that Wanat has “not presented evidence that 
 the inconvenience is so great as to constitute deprivation of due process.”  
 Freestream Aircraft , 905 F.3d at 608 (quotations omitted)."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,45,1,P045.B01,DOC006[P045.B01],100,146,54.0,34.68,345.0,245.48,"AMA M ULTIMEDIA V . W ANAT 45 the other, Wanat has purposefully interjected himself in the forum by operating a website that continuously and deliberately exploited the U.S. market, see CollegeSource, Inc. v. AcademyOne, Inc. , 653 F.3d 1066, 1080 (9th Cir. 2011), and the United States has a strong interest in enforcing federal intellectual property laws and providing redress for injuries felt within its borders. In light of these competing concerns, like in Harris Rutsky , “[t]he balance is essentially a wash,” and Wanat has not met his burden to present a “compelling case” that the exercise of"
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,45,2,P045.B02,DOC006[P045.B02],31,50,54.0,34.68,345.0,245.48,"jurisdiction would be unreasonable. Harris Rutsky , 328 F.3d at 1134; accord Freestream Aircraft , 905 F.3d at 609. I would hold that the United States has personal jurisdiction over Wanat."
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,45,3,P045.B03,DOC006[P045.B03],1,1,191.28,254.93,207.6,271.54,IV
-packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,45,4,P045.B04,DOC006[P045.B04],37,53,54.0,280.92,345.0,352.28,"The majority’s holding today conflicts with our 
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,45,1,P045.B01,DOC006.P045.B01,100,146,54.0,34.52,345.0,245.17,"AMA M ULTIMEDIA V . W ANAT 45 the other, Wanat has purposefully interjected himself in the forum by operating a website that continuously and deliberately exploited the U.S. market, see CollegeSource, Inc. v. AcademyOne, Inc. , 653 F.3d 1066, 1080 (9th Cir. 2011), and the United States has a strong interest in enforcing federal intellectual property laws and providing redress for injuries felt within its borders. In light of these competing concerns, like in Harris Rutsky , “[t]he balance is essentially a wash,” and Wanat has not met his burden to present a “compelling case” that the exercise of"
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,45,2,P045.B02,DOC006.P045.B02,31,50,54.0,34.52,345.0,245.17,"jurisdiction would be unreasonable. Harris Rutsky , 328 F.3d at 1134; accord Freestream Aircraft , 905 F.3d at 609. I would hold that the United States has personal jurisdiction over Wanat."
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,45,3,P045.B03,DOC006.P045.B03,1,1,191.28,255.07,207.6,271.69,IV
+packet_1,DOC006,https://cdn.ca9.uscourts.gov/datastore/opinions/2020/08/17/18-15051.pdf,45,4,P045.B04,DOC006.P045.B04,37,53,54.0,280.76,345.0,351.97,"The majority’s holding today conflicts with our 
 precedents and unduly restrains our ability to hold foreign 
 tortfeasors accountable for conduct purposefully directed at 
 the United States and causing harm in the United States.  I 

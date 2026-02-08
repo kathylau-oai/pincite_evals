@@ -486,8 +486,8 @@ def _load_mode_prompts(
     }
     system_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/system.txt"), template_variables)
     user_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/user.txt"), template_variables)
-    if lawyer_query_style_guide not in user_prompt:
-        user_prompt = f"{user_prompt}\n\n{lawyer_query_style_guide}"
+    if lawyer_query_style_guide not in system_prompt:
+        system_prompt = f"{system_prompt}\n\n{lawyer_query_style_guide}"
     return system_prompt, user_prompt
 
 
@@ -1461,6 +1461,10 @@ class SyntheticGenerationPipeline:
                 metrics_rows.extend(mode_metrics)
 
         metrics_df = pd.DataFrame(metrics_rows)
+        # Re-create run subdirectories before artifact writes in case a prior partial run
+        # or external cleanup removed folders after bootstrap.
+        context.run_paths.generation_candidates_dir.mkdir(parents=True, exist_ok=True)
+        context.run_paths.generation_metrics_dir.mkdir(parents=True, exist_ok=True)
         for mode_name, candidates in candidates_by_mode.items():
             with (context.run_paths.generation_candidates_dir / f"{mode_name}_candidates.jsonl").open(
                 "w",

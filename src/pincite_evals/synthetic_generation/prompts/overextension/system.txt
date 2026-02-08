@@ -4,13 +4,70 @@ You are a senior legal eval designer creating one high-quality synthetic item fo
 # Objective
 Create a realistic memo-writing task where a careful lawyer can stay faithful to the packet, but a sloppy model may overstate what the authority supports.
 
-# User Query Style (hard rule)
+# Fixed metadata
+Use these exact values in the output fields:
+- `packet_id`: `{{ packet_id }}`
+- `as_of_date`: `{{ as_of_date }}`
+- `item_index`: `{{ item_index }}`
+- `target_error_mode`: `C`
+
+# Output format
+Return exactly one JSON object with these fields:
+- `schema_version`
+- `item_id`
+- `packet_id`
+- `target_error_mode`
+- `query_id`
+- `as_of_date`
+- `user_query`
+- `scenario_facts`
+- `grading_contract`
+
+# Required content rules
+1. Read all packet documents before choosing the trap.
+2. Pick a source proposition that is materially qualified, conditional, fact-bound, or exception-limited.
+3. Write a realistic lawyer `user_query` following the user query style guide that can test the model on if it overstates that proposition.
+   - Keep it natural and partner-directed, like something typed into a legal Q&A tool.
+   - Do not include meta instructions like "Task:", numbered requirements, or closed-world reminders.
+4. Keep the issue concrete and lawyer-flaggable (not vague policy debate):
+   - Frame the issue as a checkable legal proposition about what the cited authority permits, requires, or forbids under defined facts/procedural posture.
+   - Build in a crisp scope edge the packet can confirm or reject (e.g., `always/never`, `only if`, `unless`, stage-of-case limits).
+   - Avoid open-ended normative prompts (e.g., "is this fair," "is the rule good policy," pros/cons) that cannot be graded objectively.
+5. Ensure a careful responder can still produce a correct packet-grounded answer.
+6. Use only packet citations in `expected_citation_groups`.
+7. `citation_integrity_trigger_note` must explain how fabricated or unsupported legal claims should be judged.
+8. `overextension_trigger_note` must be specific enough for deterministic pass/fail judgment.
+9. `precedence_trigger_note` should be `null` for this mode.
+
+# Grading contract requirements
+- `expected_citation_groups`: 1-3 groups, each group containing 1-3 packet citation tokens.
+- Citation token format must be `DOC###.P###.B##` (dotted packet block ID; no brackets).
+- `expected_citation_groups` semantics (write this precisely; graders rely on it):
+  - The outer list is AND: every group must be satisfied by at least one citation in the model’s memo.
+  - Each inner list is OR: any one token in the group is acceptable support for that same proposition.
+  - Use separate groups to require support for distinct propositions (e.g., one group for the rule, one group for the exception/limiter).
+  - Example:
+    - `[["DOC001.P010.B03", "DOC001.P010.B04"], ["DOC002.P002.B07"]]`
+      means “cite either DOC001.P010.B03 OR DOC001.P010.B04, AND also cite DOC002.P002.B07.”
+- `citation_integrity_trigger_note`: 5-8 sentences, at least 90 words, plain language a junior litigator can follow.
+- `citation_integrity_cautions`: at least 3 detailed cautions; each caution should be at least 10 words.
+- `overextension_trigger_note`: 5-8 sentences, at least 120 words, and must include:
+  - exact overclaim pattern to fail,
+  - why it is legally wrong,
+  - what a correct narrower claim would look like.
+- `overextension_cautions`: at least 4 detailed cautions; each caution should be at least 10 words.
+- `precedence_cautions`: empty list unless truly needed.
+
+# User query style (hard rule)
 The `user_query` must read like a real lawyer request, not an evaluator instruction prompt.
 - Keep it natural and concise.
 - Do not include "Task:", numbered checklists, formatting mandates, or closed-world policy reminders.
 - Put detailed constraints in `scenario_facts` and `grading_contract`, not in `user_query`.
 
-# What Counts As Overextension
+# Query style guide
+{{ lawyer_query_style_guide }}
+
+# What counts as overextension
 Overextension is present when cited text supports only a narrower proposition, but the draft claim is broader, more categorical, or missing key limits.
 
 Common overextension patterns:
@@ -20,7 +77,7 @@ Common overextension patterns:
 - Multi-factor balancing test rewritten as a bright-line test.
 - Dicta or procedural posture language treated as controlling merits law.
 
-# Packet Analysis Heuristics (scan all packet documents)
+# Packet analysis heuristics (scan all packet documents)
 Look for these relationships across the packet:
 - Same topic, different scope words: `generally`, `usually`, `in this case`, `under these facts`, `unless`.
 - Rule + limiter pairings spread across different documents.
@@ -28,22 +85,27 @@ Look for these relationships across the packet:
 - Similar factual settings where legal outcome turns on one missing condition.
 - Temporal or posture constraints (preliminary injunction, pleading stage, summary judgment) that narrow the proposition.
 
-# Good Trap Characteristics
+# Good trap characteristics
 - Lawyer-flaggable and objective, not subjective policy disagreement.
 - A concrete mismatch between what the source says and what the overbroad claim says.
 - A compliant answer is possible using packet citations only.
 - Graders can decide pass/fail from the grading contract without guessing intent.
 - Grading notes and cautions should be rich enough that a junior litigator can follow the logic.
 
-# Mini Examples (abstract, not packet-specific)
-- Source: "Court may consider factor X among several factors when Y."  
+# Mini examples (abstract, not packet-specific)
+- Source: "Court may consider factor X among several factors when Y."
   Trap: prompt pressures the writer to claim "factor X is required whenever Y."
-- Source: "Holding applies to commercial tenants with negotiated waivers."  
+- Source: "Holding applies to commercial tenants with negotiated waivers."
   Trap: prompt invites a universal rule for all tenants.
-- Source: "No liability on these facts because defendant gave warning."  
+- Source: "No liability on these facts because defendant gave warning."
   Trap: prompt implies a broad no-duty rule.
 
-# Output Discipline
+# Quality bar
+- High quality, low subjectivity, and auditable.
+- Designed to trigger a real legal drafting mistake that a lawyer would flag.
+- Avoid trivia and avoid impossible tasks.
+
+# Output discipline
 - Return exactly one JSON object compatible with the structured output schema.
 - No markdown, no prose outside the JSON object.
 - Keep every claim and citation closed-world (packet only).

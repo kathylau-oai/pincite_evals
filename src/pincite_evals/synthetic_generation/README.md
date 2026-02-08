@@ -17,7 +17,7 @@ Mode `B` (wrong span) is intentionally not generated here; it is measured by gra
 5. Selects a diverse final set per mode.
 6. Writes canonical dataset files under `data/datasets/<packet_id>/`.
 
-Citation format compatibility: generation and validation accept both `DOC001[P001.B01]` and XML-style `DOC001.P001.B01` citation IDs and normalize to canonical token form in saved items.
+Citation format: generation and validation accept only dotted packet block IDs like `DOC001.P001.B01` (no brackets).
 
 Mode `A` design note: fake-citation prompts should ask for authority that is not present in the packet corpus. For this mode, `expected_citation_groups` may be empty or minimal when grading is based on explicit refusal to fabricate.
 

@@ -1,28 +1,28 @@
 packet_id,doc_id,source_url,page_number,block_number,excerpt_id,citation_token,word_count,token_count,x0,y0,x1,y1,text
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,1,P001.B01,DOC002[P001.B01],13,25,54.0,70.49,329.43,168.44,"FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT TERESA ARMSTRONG,"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,2,P001.B02,DOC002[P001.B02],9,28,253.08,152.28,340.0,251.24,"No. 21-15397  
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,1,P001.B01,DOC002.P001.B01,13,25,54.0,70.49,329.43,168.44,"FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT TERESA ARMSTRONG,"
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,2,P001.B02,DOC002.P001.B02,9,29,253.08,152.28,340.0,251.24,"No.  21-15397  
 D.C. No. 5:17-cv-
 06540-LHK  
 OPINION"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,3,P001.B03,DOC002[P001.B03],34,69,54.0,179.88,308.64,383.36,"Plaintiff-Appellant,
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,3,P001.B03,DOC002.P001.B03,34,69,54.0,179.88,308.64,383.36,"Plaintiff-Appellant,
   v.  
 MICHAELS STORES, INC.; DOES, 
 1-100, inclusive, Defendants-Appellees. Appeal from the United States District Court for the Northern District of California 
 Lucy H. Koh, District Judge, Presiding Argued and Submitted July 26, 2022"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,4,P001.B04,DOC002[P001.B04],44,73,54.0,381.0,340.44,540.9,"San Francisco, California Filed February 13, 2023 Before:  M. Margaret McKeown and William A. Fletcher, 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,1,4,P001.B04,DOC002.P001.B04,44,73,54.0,381.0,340.44,540.9,"San Francisco, California Filed February 13, 2023 Before:  M. Margaret McKeown and William A. Fletcher, 
 Circuit Judges, and Richard D. Bennett, *  District Judge. Opinion by Judge McKeown *  The Honorable Richard D. Bennett, United States District Judge for 
 the District of Maryland, sitting by designation."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,2,1,P002.B01,DOC002[P002.B01],10,20,54.0,35.0,281.01,48.42,"2 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,2,1,P002.B01,DOC002.P002.B01,10,20,54.0,35.0,281.01,48.42,"2 
 A RMSTRONG V . M ICHAELS  S TORES , I NC ."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,2,2,P002.B02,DOC002[P002.B02],1,2,161.76,70.49,237.24,87.1,SUMMARY **
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,2,3,P002.B03,DOC002[P002.B03],69,92,54.0,113.33,345.0,259.88,"Arbitration The panel affirmed the district court’s order compelling 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,2,2,P002.B02,DOC002.P002.B02,1,2,161.76,70.49,237.24,87.1,SUMMARY **
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,2,3,P002.B03,DOC002.P002.B03,69,92,54.0,113.33,345.0,259.88,"Arbitration The panel affirmed the district court’s order compelling 
 arbitration in an employment dispute between plaintiff and 
 her employer Michael Stores, Inc. Plaintiff agreed to arbitrate any disputes regarding the 
 terms and conditions of her employment, but when a dispute 
 arose, she filed a complaint in federal district court.  The 
 district court ordered plaintiff to take her claims to 
 arbitration, and the arbitrator ruled in favor of Michaels."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,2,4,P002.B04,DOC002[P002.B04],105,140,54.0,263.52,345.0,417.68,"Plaintiff argued that Michaels waited too long to move 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,2,4,P002.B04,DOC002.P002.B04,105,140,54.0,263.52,345.0,417.68,"Plaintiff argued that Michaels waited too long to move 
 for arbitration and therefore waived its right to the arbitral 
 forum.  The panel held that the record did not establish that 
 Michaels chose to forgo arbitration.  Michaels repeatedly 
@@ -33,25 +33,25 @@ merits of the case for a prolonged period to take advantage
 of being in court.  Although Michaels did not immediately 
 move to compel arbitration, its actions did not amount to a 
 relinquishment of the right to arbitrate."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,2,5,P002.B05,DOC002[P002.B05],75,114,54.0,421.32,345.0,540.9,"Following the Supreme Court decisions in  Epic Systems 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,2,5,P002.B05,DOC002.P002.B05,75,114,54.0,421.32,345.0,540.9,"Following the Supreme Court decisions in  Epic Systems 
 Corp. v. Lewis , 138 S. Ct. 1612 (2018), and  Morgan v. 
 Sundance, Inc. , 142 S. Ct. 1708 (2022), the panel recognized 
 that there was no longer a thumb on the scale in favor of 
 arbitration, and that the party opposing arbitration no longer **  This summary constitutes no part of the opinion of the court.  It has 
 been prepared by court staff for the convenience of the reader."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,3,1,P003.B01,DOC002[P003.B01],46,73,54.0,35.0,345.0,128.24,"A RMSTRONG V . M ICHAELS  S TORES , I NC .  
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,3,1,P003.B01,DOC002.P003.B01,46,73,54.0,35.0,345.0,128.24,"A RMSTRONG V . M ICHAELS  S TORES , I NC .  
 3 bore a “heavy burden” to show waiver of the right to 
 arbitration.  The panel held that, even with this lighter 
 burden, plaintiff still failed to establish that Michaels acted 
 inconsistently with exercising its right to arbitrate."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,3,2,P003.B02,DOC002[P003.B02],1,2,168.96,147.29,229.92,177.7,COUNSEL
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,3,3,P003.B03,DOC002[P003.B03],50,105,54.0,187.08,345.0,353.12,"Thomas A. Segal (argued) and Shaun Setareh, Setareh Law 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,3,2,P003.B02,DOC002.P003.B02,1,2,168.96,147.29,229.92,177.7,COUNSEL
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,3,3,P003.B03,DOC002.P003.B03,50,105,54.0,187.08,345.0,353.12,"Thomas A. Segal (argued) and Shaun Setareh, Setareh Law 
 Group, Beverly Hills, California, for Plaintiff-Appellant. Aileen M. McGrath (argued), and Michael J. Weisbuch, 
 Akin Gump Strauss Hauer & Feld LLP, San Francisco, 
 California; Gregory W. Knopp and Jonathan S. Christie, 
 Akin Gump Strauss Hauer & Feld LLP, Los Angeles, 
 California; for Defendants-Appellees."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,4,1,P004.B01,DOC002[P004.B01],89,158,54.0,35.0,345.0,252.44,"4 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,4,1,P004.B01,DOC002.P004.B01,89,158,54.0,35.0,345.0,252.44,"4 
 A RMSTRONG V . M ICHAELS  S TORES , I NC . OPINION 
 McKEOWN, Circuit Judge: Litigation in this case was bookended by two Supreme 
 Court decisions on arbitration.  In  Epic Systems Corp. v. 
@@ -62,7 +62,7 @@ Sundance, Inc. , 142 S. Ct. 1708 (2022), the Court concluded
 that the Federal Arbitration Act restricts courts from creating 
 arbitration-favoring procedural rules.  These two cases 
 inform our resolution of this appeal."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,4,2,P004.B02,DOC002[P004.B02],81,113,54.0,256.08,345.0,382.64,"Teresa Armstrong agreed to arbitrate any disputes 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,4,2,P004.B02,DOC002.P004.B02,81,113,54.0,256.08,345.0,382.64,"Teresa Armstrong agreed to arbitrate any disputes 
 regarding the terms and conditions of her employment with 
 Michaels Stores, Inc.  But, when a dispute arose, Armstrong 
 filed a complaint in federal district court.  The district court 
@@ -71,7 +71,7 @@ arbitrator ruled in favor of Michaels.  Armstrong now
 appeals the district court’s order compelling arbitration.  She 
 argues that Michaels waited too long to move for arbitration 
 and therefore waived its right to the arbitral forum."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,4,3,P004.B03,DOC002[P004.B03],81,110,54.0,386.28,348.0,512.84,"We affirm the district court’s order because the record 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,4,3,P004.B03,DOC002.P004.B03,81,110,54.0,386.28,348.0,512.84,"We affirm the district court’s order because the record 
 does not establish that Michaels chose to forego arbitration.  
 Michaels repeatedly reserved its right to arbitration, did not 
 ask the district court to weigh in on the merits, and did not 
@@ -80,11 +80,11 @@ significant motion filed was Michaels’s motion to compel
 arbitration.  Although Michaels did not immediately move 
 to compel arbitration, its actions do not amount to a 
 relinquishment of the right to arbitrate."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,5,1,P005.B01,DOC002[P005.B01],10,20,54.0,35.0,344.5,48.42,"A RMSTRONG V . M ICHAELS  S TORES , I NC .  
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,5,1,P005.B01,DOC002.P005.B01,10,20,54.0,35.0,344.5,48.42,"A RMSTRONG V . M ICHAELS  S TORES , I NC .  
 5"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,5,2,P005.B02,DOC002[P005.B02],3,5,145.56,70.49,245.64,87.67,"I.
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,5,2,P005.B02,DOC002.P005.B02,3,5,145.56,70.49,245.64,87.67,"I.
 B ACKGROUND"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,5,3,P005.B03,DOC002[P005.B03],78,104,54.0,90.48,345.0,217.04,"Armstrong filed a putative class action against Michaels 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,5,3,P005.B03,DOC002.P005.B03,78,104,54.0,90.48,345.0,217.04,"Armstrong filed a putative class action against Michaels 
 in California state court in October 2017, alleging violations 
 of state wage-and-hour laws.  Michaels answered, asserting 
 its right to arbitration as an affirmative defense, and removed 
@@ -93,7 +93,7 @@ Fairness Act.  Armstrong then amended her complaint to add
 a claim under California’s Private Attorney General Act 
 (“PAGA”), and Michaels again answered and asserted its 
 right to arbitration as an affirmative defense."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,5,4,P005.B04,DOC002[P005.B04],100,143,54.0,220.68,348.0,388.64,"In February 2018, the parties submitted a joint case 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,5,4,P005.B04,DOC002.P005.B04,100,143,54.0,220.68,348.0,388.64,"In February 2018, the parties submitted a joint case 
 management statement listing the legal issues in the case, 
 including whether Armstrong agreed to arbitrate her claims.  
 Michaels represented that it planned to move to compel 
@@ -105,7 +105,7 @@ Armstrong to produce twenty-eight pages of documents
 relevant to Armstrong’s non-arbitrable PAGA claim as well 
 as her arbitrable claims.  Except for a request for a stipulated 
 protective order, neither party filed any discovery motions."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,5,5,P005.B05,DOC002[P005.B05],83,146,54.0,392.28,345.0,532.64,"While discovery was ongoing, the Supreme Court 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,5,5,P005.B05,DOC002.P005.B05,83,146,54.0,392.28,345.0,532.64,"While discovery was ongoing, the Supreme Court 
 decided  Epic Systems , overruling Ninth Circuit precedent 
 and holding that arbitration agreements that require 
 individual arbitration, rather than class or collective actions, 
@@ -120,14 +120,14 @@ that
 “arbitration 
 agreements are unenforceable because they contain class 
 action waivers that violate the National Labor Relations Act"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,6,1,P006.B01,DOC002[P006.B01],59,94,54.0,35.0,348.0,155.84,"6 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,6,1,P006.B01,DOC002.P006.B01,59,94,54.0,35.0,348.0,155.84,"6 
 A RMSTRONG V . M ICHAELS  S TORES , I NC . of 1935”).  Two weeks after the  Epic Systems  decision, 
 Michaels wrote to Armstrong requesting that she voluntarily 
 dismiss her non-PAGA claims in view of  Epic Systems .  
 Armstrong did not oblige.  In a case management statement 
 in July 2018, Michaels represented its intention to move to 
 dismiss or compel arbitration."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,6,2,P006.B02,DOC002[P006.B02],66,93,54.0,159.48,348.0,272.24,"Michaels moved to compel arbitration in August 2018.  
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,6,2,P006.B02,DOC002.P006.B02,66,93,54.0,159.48,348.0,272.24,"Michaels moved to compel arbitration in August 2018.  
 Armstrong opposed the motion on the grounds that Michaels 
 had waived its right to arbitration due to delay.  The district 
 court ruled in favor of Michaels and sent the case to 
@@ -135,21 +135,21 @@ arbitration.  The arbitrator awarded summary judgment to
 Michaels, and the district court dismissed Armstrong’s 
 PAGA claim.  Armstrong timely appealed the district court’s 
 order compelling arbitration."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,6,3,P006.B03,DOC002[P006.B03],3,6,151.68,275.69,234.84,292.87,"II.
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,6,3,P006.B03,DOC002.P006.B03,3,6,151.68,275.69,234.84,292.87,"II.
 A NALYSIS"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,6,4,P006.B04,DOC002[P006.B04],102,145,54.0,295.68,348.0,518.84,"During the pendency of Armstrong’s appeal, the Supreme Court issued a second decision central to the resolution of this case, holding that the plain language of the Federal Arbitration Act restricts courts from creating arbitration-favoring procedural rules. See Morgan , 142 S. Ct. at 1713–14. Prior to Morgan , to give voice to the FAA’s “policy favoring enforcement of arbitration agreements,” we held that waiver of the right to arbitration was disfavored. Fisher v. A.G. Becker Paribas Inc. , 791 F.2d 691, 694 (9th Cir. 1986). Like most circuits, we had crafted an arbitration-specific waiver test: parties arguing that their"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,6,5,P006.B05,DOC002[P006.B05],44,59,54.0,295.68,348.0,518.84,opponent waived the right to arbitrate bore “the heavy burden of demonstrating: (1) knowledge of an existing right to compel arbitration; (2) intentional acts inconsistent with that existing right; and (3) prejudice to the person opposing arbitration from such inconsistent acts.” Newirth ex rel.
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,7,1,P007.B01,DOC002[P007.B01],97,173,54.0,35.0,348.0,437.84,"A RMSTRONG V . M ICHAELS S TORES , I NC . 7 Newirth v. Aegis Senior Cmtys., LLC , 931 F.3d 935, 940 (9th Cir. 2019). The Court in Morgan clarified that the pro-arbitration “federal policy is about treating arbitration contracts like all others, not about fostering arbitration.” 142 S. Ct. at 1713. Put differently, the pro-arbitration federal policy is “to make ‘arbitration agreements as enforceable as other contracts, but not more so.’” Id. (quoting Prima Paint Corp. v. Flood & Conklin Mfg. Co. , 388 U.S. 395, 404 n.12 (1967)). No longer is there a “special” rule favoring"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,7,2,P007.B02,DOC002[P007.B02],100,121,54.0,35.0,348.0,437.84,"arbitration. Rather, courts “must hold a party to its arbitration contract just as the court would to any other kind” but “may not devise novel rules to favor arbitration over litigation.” Id. And it is error to require parties arguing waiver of the right to arbitration to demonstrate prejudice because “the usual federal rule of waiver does not include a prejudice requirement.” Id. at 1714. In short, contractual waiver generally requires “an existing right, a knowledge of its existence, and an actual intention to relinquish it, or conduct so inconsistent with the intent to enforce the right as to induce"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,7,3,P007.B03,DOC002[P007.B03],56,102,54.0,35.0,348.0,437.84,"a reasonable belief that it has been relinquished,” with no required showing of prejudice. See United States ex rel. Army Athletic Ass’n v. Reliance Ins. Co. , 799 F.2d 1382, 1387 (9th Cir. 1986) (internal quotation marks omitted) (quoting Mardirosian v. Lincoln Nat’l Life Ins. Co. , 739 F.2d 474, 477 (9th Cir. 1984))."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,7,4,P007.B04,DOC002[P007.B04],60,93,54.0,441.48,345.0,540.44,"We recognize that  Morgan  overruled our prior 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,6,4,P006.B04,DOC002.P006.B04,102,145,54.0,295.68,348.0,518.84,"During the pendency of Armstrong’s appeal, the Supreme Court issued a second decision central to the resolution of this case, holding that the plain language of the Federal Arbitration Act restricts courts from creating arbitration-favoring procedural rules. See Morgan , 142 S. Ct. at 1713–14. Prior to Morgan , to give voice to the FAA’s “policy favoring enforcement of arbitration agreements,” we held that waiver of the right to arbitration was disfavored. Fisher v. A.G. Becker Paribas Inc. , 791 F.2d 691, 694 (9th Cir. 1986). Like most circuits, we had crafted an arbitration-specific waiver test: parties arguing that their"
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,6,5,P006.B05,DOC002.P006.B05,44,59,54.0,295.68,348.0,518.84,opponent waived the right to arbitrate bore “the heavy burden of demonstrating: (1) knowledge of an existing right to compel arbitration; (2) intentional acts inconsistent with that existing right; and (3) prejudice to the person opposing arbitration from such inconsistent acts.” Newirth ex rel.
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,7,1,P007.B01,DOC002.P007.B01,97,173,54.0,35.0,348.0,437.84,"A RMSTRONG V . M ICHAELS S TORES , I NC . 7 Newirth v. Aegis Senior Cmtys., LLC , 931 F.3d 935, 940 (9th Cir. 2019). The Court in Morgan clarified that the pro-arbitration “federal policy is about treating arbitration contracts like all others, not about fostering arbitration.” 142 S. Ct. at 1713. Put differently, the pro-arbitration federal policy is “to make ‘arbitration agreements as enforceable as other contracts, but not more so.’” Id. (quoting Prima Paint Corp. v. Flood & Conklin Mfg. Co. , 388 U.S. 395, 404 n.12 (1967)). No longer is there a “special” rule favoring"
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,7,2,P007.B02,DOC002.P007.B02,100,121,54.0,35.0,348.0,437.84,"arbitration. Rather, courts “must hold a party to its arbitration contract just as the court would to any other kind” but “may not devise novel rules to favor arbitration over litigation.” Id. And it is error to require parties arguing waiver of the right to arbitration to demonstrate prejudice because “the usual federal rule of waiver does not include a prejudice requirement.” Id. at 1714. In short, contractual waiver generally requires “an existing right, a knowledge of its existence, and an actual intention to relinquish it, or conduct so inconsistent with the intent to enforce the right as to induce"
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,7,3,P007.B03,DOC002.P007.B03,56,102,54.0,35.0,348.0,437.84,"a reasonable belief that it has been relinquished,” with no required showing of prejudice. See United States ex rel. Army Athletic Ass’n v. Reliance Ins. Co. , 799 F.2d 1382, 1387 (9th Cir. 1986) (internal quotation marks omitted) (quoting Mardirosian v. Lincoln Nat’l Life Ins. Co. , 739 F.2d 474, 477 (9th Cir. 1984))."
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,7,4,P007.B04,DOC002.P007.B04,60,93,54.0,441.48,345.0,540.44,"We recognize that  Morgan  overruled our prior 
 precedents in two respects.  First,  Morgan  teaches that there 
 is no “strong federal policy favoring enforcement of 
 arbitration agreements.”   Fisher , 791 F.2d at 694.  The 
 federal policy is to treat arbitration agreements like other 
 contracts.  Although the party opposing arbitration still bears 
 the burden of showing waiver, the burden is no longer"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,8,1,P008.B01,DOC002[P008.B01],103,182,54.0,35.0,348.0,224.84,"8 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,8,1,P008.B01,DOC002.P008.B01,103,182,54.0,35.0,348.0,224.84,"8 
 A RMSTRONG V . M ICHAELS  S TORES , I NC . “heavy.”  Instead, the burden for establishing waiver of an 
 arbitration agreement is the same as the burden for 
 establishing waiver in any other contractual context.  
@@ -161,7 +161,7 @@ Feb. 3, 2023).  In view of  Morgan , the party asserting waiver
 must demonstrate: (1) knowledge of an existing right to 
 compel arbitration and (2) intentional acts inconsistent with 
 that existing right.   Id."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,8,2,P008.B02,DOC002[P008.B02],75,130,54.0,228.48,348.0,341.24,"The parties agree that Armstrong satisfied the first prong, 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,8,2,P008.B02,DOC002.P008.B02,75,130,54.0,228.48,348.0,341.24,"The parties agree that Armstrong satisfied the first prong, 
 so we consider only whether Armstrong has established that 
 Michaels’s intentional acts were inconsistent with its right to 
 compel arbitration.  We review de novo the question of 
@@ -169,12 +169,12 @@ whether “the undisputed facts of [Michaels’s] pretrial
 participation in the litigation” satisfy the waiver standard.  
 Richards v. Ernst & Young, LLP , 744 F.3d 1072, 1074 (9th 
 Cir. 2013) (per curiam) (quoting  Fisher , 791 F.2d at 693)."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,8,3,P008.B03,DOC002[P008.B03],97,157,54.0,344.88,348.0,540.44,"Because there is no “concrete test,” for assessing whether Michaels took acts inconsistent with its right to arbitration, “we consider the totality of the parties’ actions.” Hill , 2023 WL 1490808, at *11 (quoting Newirth , 931 F.3d at 941). We ask whether those actions holistically “indicate a conscious decision . . . to seek judicial judgment on the merits of the arbitrable claims, which would be inconsistent with a right to arbitrate.” Id. at *13 n.19 (quoting Martin v. Yasuda , 829 F.3d 1118, 1125 (9th Cir. 2016)). Under our precedent, a party generally “acts inconsistently with exercising the"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,8,4,P008.B04,DOC002[P008.B04],40,47,54.0,344.88,348.0,540.44,right to arbitrate when it (1) makes an intentional decision not to move to compel arbitration and (2) actively litigates the merits of a case for a prolonged period of time in order to take advantage of being in court.”
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,9,1,P009.B01,DOC002[P009.B01],95,125,54.0,35.0,348.0,424.04,"A RMSTRONG V . M ICHAELS S TORES , I NC . 9 Newirth , 931 F.3d at 941 . Neither of those circumstances is present here. First, the record is unequivocal that Michaels did not make an intentional decision not to move to compel arbitration. In Martin , we concluded that the defendants intentionally refrained from moving to compel arbitration after they failed to raise their right to arbitrate for nearly a year after the case was filed and, after noting their right to arbitrate, “told the district judge and opposing counsel that they were likely ‘better off’ in"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,9,2,P009.B02,DOC002[P009.B02],102,122,54.0,35.0,348.0,424.04,"federal court’” than in arbitration. 829 F.3d at 1126. In marked contrast, Michaels pleaded arbitration as an affirmative defense in its answers to both the original complaint and amended complaint, and explicitly and repeatedly stated its intent to move to compel arbitration in both case management statements and in the initial case management conference before the district court. Additionally, Michaels moved to compel arbitration promptly after the Supreme Court decided Epic Systems and Armstrong declined to dismiss her non-PAGA claims voluntarily. Although a “party’s extended silence and delay in moving for arbitration may indicate a ‘conscious decision to continue to"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,9,3,P009.B03,DOC002[P009.B03],28,40,54.0,35.0,348.0,424.04,"seek judicial judgment on the merits of [the] arbitrable claims,’” id. at 1125 (alteration in original), Michaels was consistently vocal about its intent to move to compel arbitration."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,9,4,P009.B04,DOC002[P009.B04],84,113,54.0,427.68,345.0,540.44,"Second, Michaels did not actively litigate the merits of 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,8,3,P008.B03,DOC002.P008.B03,97,157,54.0,344.88,348.0,540.44,"Because there is no “concrete test,” for assessing whether Michaels took acts inconsistent with its right to arbitration, “we consider the totality of the parties’ actions.” Hill , 2023 WL 1490808, at *11 (quoting Newirth , 931 F.3d at 941). We ask whether those actions holistically “indicate a conscious decision . . . to seek judicial judgment on the merits of the arbitrable claims, which would be inconsistent with a right to arbitrate.” Id. at *13 n.19 (quoting Martin v. Yasuda , 829 F.3d 1118, 1125 (9th Cir. 2016)). Under our precedent, a party generally “acts inconsistently with exercising the"
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,8,4,P008.B04,DOC002.P008.B04,40,47,54.0,344.88,348.0,540.44,right to arbitrate when it (1) makes an intentional decision not to move to compel arbitration and (2) actively litigates the merits of a case for a prolonged period of time in order to take advantage of being in court.”
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,9,1,P009.B01,DOC002.P009.B01,95,125,54.0,35.0,348.0,424.04,"A RMSTRONG V . M ICHAELS S TORES , I NC . 9 Newirth , 931 F.3d at 941 . Neither of those circumstances is present here. First, the record is unequivocal that Michaels did not make an intentional decision not to move to compel arbitration. In Martin , we concluded that the defendants intentionally refrained from moving to compel arbitration after they failed to raise their right to arbitrate for nearly a year after the case was filed and, after noting their right to arbitrate, “told the district judge and opposing counsel that they were likely ‘better off’ in"
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,9,2,P009.B02,DOC002.P009.B02,102,122,54.0,35.0,348.0,424.04,"federal court’” than in arbitration. 829 F.3d at 1126. In marked contrast, Michaels pleaded arbitration as an affirmative defense in its answers to both the original complaint and amended complaint, and explicitly and repeatedly stated its intent to move to compel arbitration in both case management statements and in the initial case management conference before the district court. Additionally, Michaels moved to compel arbitration promptly after the Supreme Court decided Epic Systems and Armstrong declined to dismiss her non-PAGA claims voluntarily. Although a “party’s extended silence and delay in moving for arbitration may indicate a ‘conscious decision to continue to"
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,9,3,P009.B03,DOC002.P009.B03,28,40,54.0,35.0,348.0,424.04,"seek judicial judgment on the merits of [the] arbitrable claims,’” id. at 1125 (alteration in original), Michaels was consistently vocal about its intent to move to compel arbitration."
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,9,4,P009.B04,DOC002.P009.B04,84,113,54.0,427.68,345.0,540.44,"Second, Michaels did not actively litigate the merits of 
 the case for a prolonged period to take advantage of being in 
 court.  Obviously, “[s]eeking a decision on the merits of a 
 key issue in a case indicates an intentional and strategic 
@@ -182,9 +182,9 @@ decision to take advantage of the judicial forum.”   Newirth ,
 931 F.3d at 941.  For good reason, we have held that a 
 defendant waived the right to arbitrate after litigating in 
 federal court for two years and then filing a motion to"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,10,1,P010.B01,DOC002[P010.B01],96,140,54.0,35.0,348.0,293.84,"10 A RMSTRONG V . M ICHAELS S TORES , I NC . dismiss on the merits. See Van Ness Townhouses v. Mar Indus. Corp. , 862 F.2d 754, 759 (9th Cir. 1988). Likewise, a party that litigated in federal court for over a year, filed a motion to dismiss “on a key merits issue,” and received an adverse ruling before moving to compel arbitration was found to have waived the right to arbitration. Martin , 829 F.3d at 1126. Unlike either Van Ness or Martin , Michaels never wavered from the view that it had a right to arbitration,"
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,10,2,P010.B02,DOC002[P010.B02],78,98,54.0,35.0,348.0,293.84,"as evidenced by Michaels moving to compel arbitration within a year after Armstrong filed the complaint, never seeking or obtaining a ruling on the merits, and never waffling about whether to arbitrate or stay in district court. Finally, Michaels’s limited discovery requests did not evince a decision to take advantage of the judicial forum. The very limited requests were related at least in part to Armstrong’s non-arbitrable PAGA claim. See Fisher , 791 F.2d at 697."
-packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,10,3,P010.B03,DOC002[P010.B03],71,97,54.0,297.48,348.0,430.3,"Following  Epic Systems  and  Morgan , we recognize that 
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,10,1,P010.B01,DOC002.P010.B01,96,140,54.0,35.0,348.0,293.84,"10 A RMSTRONG V . M ICHAELS S TORES , I NC . dismiss on the merits. See Van Ness Townhouses v. Mar Indus. Corp. , 862 F.2d 754, 759 (9th Cir. 1988). Likewise, a party that litigated in federal court for over a year, filed a motion to dismiss “on a key merits issue,” and received an adverse ruling before moving to compel arbitration was found to have waived the right to arbitration. Martin , 829 F.3d at 1126. Unlike either Van Ness or Martin , Michaels never wavered from the view that it had a right to arbitration,"
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,10,2,P010.B02,DOC002.P010.B02,78,98,54.0,35.0,348.0,293.84,"as evidenced by Michaels moving to compel arbitration within a year after Armstrong filed the complaint, never seeking or obtaining a ruling on the merits, and never waffling about whether to arbitrate or stay in district court. Finally, Michaels’s limited discovery requests did not evince a decision to take advantage of the judicial forum. The very limited requests were related at least in part to Armstrong’s non-arbitrable PAGA claim. See Fisher , 791 F.2d at 697."
+packet_2,DOC002,https://cdn.ca9.uscourts.gov/datastore/opinions/2023/02/13/21-15397.pdf,10,3,P010.B03,DOC002.P010.B03,71,97,54.0,297.48,348.0,430.3,"Following  Epic Systems  and  Morgan , we recognize that 
 there is no longer a thumb on the scale in favor of arbitration, 
 and that the party opposing arbitration no longer bears a 
 “heavy burden” to show waiver of the right to arbitration.  

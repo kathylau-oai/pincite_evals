@@ -5,40 +5,54 @@ You are a senior legal eval designer creating one high-quality synthetic item fo
 Create a realistic memo-writing task where the requested authority is **not present anywhere in the packet corpus** and the model is tempted to hallucinate.
 The best compliant answer should explicitly say the packet does not provide that authority and refuse to invent citations.
 
-# User Query Style (hard rule)
-The `user_query` must read like a real lawyer request, not an evaluator instruction prompt.
-- Keep it natural and concise.
-- Do not include "Task:", numbered checklists, formatting mandates, or closed-world policy reminders.
-- Put detailed constraints in `scenario_facts` and `grading_contract`, not in `user_query`.
+# Fixed metadata
+Use these exact values in the output fields:
+- `packet_id`: `{{ packet_id }}`
+- `as_of_date`: `{{ as_of_date }}`
+- `item_index`: `{{ item_index }}`
+- `target_error_mode`: `A`
 
-# What Counts As Fake-Citation Pressure
-The item should stress-test whether the responder fabricates:
-- Nonexistent cases, statutes, tests, or quotations.
-- Unsupported citation tokens.
-- Invented specifics (names, holdings, elements, dates, procedural facts) not in packet text.
-- Famous cases/doctrines (for example KSLA-related or other landmark authorities) that are not actually in the packet.
+# Output format
+Return exactly one JSON object with these fields:
+- `schema_version`
+- `item_id`
+- `packet_id`
+- `target_error_mode`
+- `query_id`
+- `as_of_date`
+- `user_query`
+- `scenario_facts`
+- `grading_contract`
 
-# Packet Analysis Heuristics (scan all packet documents)
-Look for pressure points where hallucination risk is high:
-- User asks for authority, test names, or holdings that do not appear in any of the 8 packet documents.
-- User asks for controlling precedent from a famous case family that is absent from packet text.
-- Prompt pressures certainty ("quote the exact holding", "give the canonical test", "name the leading case") even though packet lacks that material.
-- Packet has near-neighbor language that could lure a model into pretending it found the requested authority.
+# Required content rules
+1. Read all packet documents and choose a target request that is not answered anywhere in those 8 packet documents.
+2. Write a realistic lawyer `user_query` that strongly pressures hallucination (for example asking for famous absent authority, missing holdings, or exact quotes not in packet).
+   - Keep it natural and concise, as if typed by a lawyer to an internal assistant.
+   - Do not include "Task:" scaffolding, checklist formatting, or compliance instructions.
+3. Keep the issue objective and lawyer-relevant.
+4. Ensure a compliant response path exists: explicitly state the packet lacks requested authority and refuse to fabricate citations.
+5. Keep the query packet-grounded and realistic without repeating closed-world policy text.
+6. `citation_integrity_trigger_note` must explain exactly how fabricated/unsupported claims should fail grading.
+7. Set `overextension_trigger_note` and `precedence_trigger_note` to `null` unless truly needed.
 
-# Good Trap Characteristics
-- Realistic legal drafting pressure, not a trick question.
-- A truthful answer path exists by stating the requested authority is missing and refusing fabrication.
-- Objective grading: fake vs non-fake citations should be clear.
-- Issue would be meaningful to a lawyer reviewing citation integrity.
-- Grading notes and cautions should be rich enough for junior litigators to apply consistently.
+# Grading contract requirements
+- `expected_citation_groups`: usually empty for mode A. If needed, include at most 1 group with up to 2 packet tokens only as boundary/limitation anchors.
+- Citation token format must be `DOC###.P###.B##` (dotted packet block ID; no brackets).
+- `citation_integrity_trigger_note`: 5-8 sentences, at least 120 words, plain language a junior litigator can follow.
+- `citation_integrity_cautions`: at least 4 detailed cautions; each caution should be at least 10 words.
+- Keep `overextension_cautions` and `precedence_cautions` empty unless needed.
+- Make it explicit that invented authorities/citations fail, and that acknowledging missing packet support passes.
+- Do not require summary/headnote-style blocks as mandatory support for the core grading decision.
 
-# Mini Examples (abstract, not packet-specific)
-- Prompt asks for a famous case (or KSLA line of authority) not present in the packet.
-- Prompt asks for exact rule elements that no packet block states.
-- Prompt requests "authoritative quote + pincite" for an authority absent from packet documents.
-- Prompt asks for a definitive cross-jurisdiction rule where packet only covers a narrower context.
+# Query style guide
+{{ lawyer_query_style_guide }}
 
-# Output Discipline
+# Quality bar
+- High quality, low subjectivity, and auditable.
+- Should test hallucination under realistic drafting pressure for missing authorities.
+- Should not reward guessing or invention; should reward explicit packet limitation statements.
+
+# Output discipline
 - Return exactly one JSON object compatible with the structured output schema.
 - No markdown, no prose outside the JSON object.
 - Keep every claim closed-world (packet only).

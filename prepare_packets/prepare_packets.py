@@ -288,13 +288,12 @@ def render_clean_text(blocks_df: pd.DataFrame) -> str:
 
 
 def format_annotation_block_id(citation_token: str) -> str:
-    # Convert canonical citation token format into a tag-friendly XML block id.
-    token_match = re.fullmatch(r"(DOC\d{3})\[P(\d{3})\.B(\d{2})\]", citation_token)
+    # Packet block IDs and citation tokens are the same dotted format:
+    #   DOC###.P###.B##
+    token_match = re.fullmatch(r"DOC\d{3}\.P\d{3}\.B\d{2}", citation_token)
     if token_match is None:
         raise ValueError(f"Invalid citation token for annotation rendering: {citation_token}")
-
-    doc_id, page_number, block_number = token_match.groups()
-    return f"{doc_id}.P{page_number}.B{block_number}"
+    return citation_token
 
 
 def render_annotated_text(blocks_df: pd.DataFrame) -> str:
@@ -340,7 +339,7 @@ def parse_pdf_to_blocks(
             for block_number, block in enumerate(final_page_blocks, start=1):
                 block_text = str(block["text"])
                 excerpt_id = build_excerpt_id(page_number, block_number)
-                citation_token = f"{doc_id}[{excerpt_id}]"
+                citation_token = f"{doc_id}.{excerpt_id}"
                 block_rows.append(
                     {
                         "packet_id": packet_id,

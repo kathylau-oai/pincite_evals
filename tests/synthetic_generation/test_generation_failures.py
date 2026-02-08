@@ -98,7 +98,7 @@ def test_generate_one_item_drops_candidate_after_retries(monkeypatch, tmp_path):
     candidate, metric = _generate_one_item(
         mode_name="overextension",
         request_id="req_test_0001",
-        default_citation_token="DOC001[P001.B01]",
+        default_citation_token="DOC001.P001.B01",
         packet_corpus_text='<DOCUMENT id="DOC001"><BLOCK id="DOC001.P001.B01">Example</BLOCK></DOCUMENT>\n',
         config=config,
         item_index=1,
@@ -121,7 +121,7 @@ def test_load_verifier_prompts_renders_item_citations_as_block_ids():
         "user_query": "Draft a memo section.",
         "scenario_facts": ["Use packet-only sources."],
         "grading_contract": {
-            "expected_citation_groups": [["DOC001[P001.B01]", "DOC002.P002.B03"]],
+            "expected_citation_groups": [["DOC001.P001.B01", "DOC002.P002.B03"]],
             "citation_integrity_trigger_note": "Detailed note.",
             "citation_integrity_cautions": ["Detailed caution."],
             "overextension_trigger_note": None,
@@ -141,8 +141,8 @@ def test_load_verifier_prompts_renders_item_citations_as_block_ids():
     assert "DOC001[P001.B01]" not in user_prompt
 
 
-def test_load_mode_prompts_adds_lawyer_realistic_query_style_guidance():
-    _, user_prompt = _load_mode_prompts(
+def test_load_mode_prompts_puts_style_guide_in_system_prompt_and_keeps_user_prompt_minimal():
+    system_prompt, user_prompt = _load_mode_prompts(
         mode_name="overextension",
         packet_id="packet_1",
         as_of_date="2026-02-06",
@@ -150,9 +150,10 @@ def test_load_mode_prompts_adds_lawyer_realistic_query_style_guidance():
         packet_corpus_text='<DOCUMENT id="DOC001"><BLOCK id="DOC001.P001.B01">Example</BLOCK></DOCUMENT>\n',
     )
 
-    assert "Lawyer-realistic query style guide" in user_prompt
-    assert "Need a quick memo for the partner: can we remove this case to federal court under CAFA?" in user_prompt
-    assert "Can you write a concise memo on Article III standing risks for this privacy class action" in user_prompt
-    assert "`packet_id`: `packet_1`" in user_prompt
-    assert "`as_of_date`: `2026-02-06`" in user_prompt
-    assert "`item_index`: `1`" in user_prompt
+    assert "Lawyer-realistic query style guide" in system_prompt
+    assert "Need a quick memo for the partner: can we remove this case to federal court under CAFA?" in system_prompt
+    assert "Can you write a concise memo on Article III standing risks for this privacy class action" in system_prompt
+    assert "`packet_id`: `packet_1`" in system_prompt
+    assert "`as_of_date`: `2026-02-06`" in system_prompt
+    assert "`item_index`: `1`" in system_prompt
+    assert user_prompt.startswith("Generate one synthetic test case for mode `overextension`")

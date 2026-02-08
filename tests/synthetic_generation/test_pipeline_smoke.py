@@ -6,6 +6,38 @@ from pincite_evals.synthetic_generation.config import load_config
 from pincite_evals.synthetic_generation.pipeline import SyntheticGenerationPipeline
 
 
+def test_run_generation_recreates_candidates_directory_if_missing(tmp_path):
+    config_path = tmp_path / "config.yaml"
+    config_path.write_text(
+        f"""
+packet_id: packet_1
+output_root: {(tmp_path / 'results').as_posix()}
+dataset_root: {(tmp_path / 'datasets').as_posix()}
+dry_run: true
+generate_count:
+  overextension: 1
+  precedence: 1
+  fake_citations: 1
+""".strip(),
+        encoding="utf-8",
+    )
+
+    config = load_config(config_path)
+    pipeline = SyntheticGenerationPipeline(config)
+    context = pipeline.bootstrap(run_id="missing_candidates_dir")
+
+    # Simulate a partial run directory where the candidates folder was deleted.
+    context.run_paths.generation_candidates_dir.rmdir()
+
+    generation_result = pipeline.run_generation(context=context, openai_client=None)
+
+    assert context.run_paths.generation_candidates_dir.exists()
+    assert (context.run_paths.generation_candidates_dir / "overextension_candidates.jsonl").exists()
+    assert (context.run_paths.generation_candidates_dir / "precedence_candidates.jsonl").exists()
+    assert (context.run_paths.generation_candidates_dir / "fake_citations_candidates.jsonl").exists()
+    assert sum(len(items) for items in generation_result.candidates_by_mode.values()) == 3
+
+
 def test_pipeline_smoke_dry_run(tmp_path):
     config_path = tmp_path / "config.yaml"
     config_path.write_text(

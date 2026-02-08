@@ -32,13 +32,13 @@ def test_missing_citation_integrity_note_fails_deterministic_validation():
         "user_query": "Draft an internal memo section.",
         "scenario_facts": ["Use packet-only authorities."],
         "grading_contract": {
-            "expected_citation_groups": [["DOC001[P001.B01]"]],
+            "expected_citation_groups": [["DOC001.P001.B01"]],
             "citation_integrity_trigger_note": None,
             "citation_integrity_cautions": _detailed_cautions("Integrity"),
         },
     }
 
-    deterministic_pass, reasons, _ = _deterministic_validation(item_payload, {"DOC001[P001.B01]"})
+    deterministic_pass, reasons, _ = _deterministic_validation(item_payload, {"DOC001.P001.B01"})
 
     assert deterministic_pass is False
     assert "missing_citation_integrity_criteria" in reasons
@@ -55,7 +55,7 @@ def test_missing_mode_specific_trigger_note_fails_for_overextension():
         "user_query": "Draft an internal memo section.",
         "scenario_facts": ["Use packet-only authorities."],
         "grading_contract": {
-            "expected_citation_groups": [["DOC001[P001.B01]"]],
+            "expected_citation_groups": [["DOC001.P001.B01"]],
             "citation_integrity_trigger_note": _detailed_integrity_note(),
             "citation_integrity_cautions": _detailed_cautions("Integrity"),
             "overextension_trigger_note": None,
@@ -63,7 +63,7 @@ def test_missing_mode_specific_trigger_note_fails_for_overextension():
         },
     }
 
-    deterministic_pass, reasons, _ = _deterministic_validation(item_payload, {"DOC001[P001.B01]"})
+    deterministic_pass, reasons, _ = _deterministic_validation(item_payload, {"DOC001.P001.B01"})
 
     assert deterministic_pass is False
     assert "missing_overextension_criteria" in reasons
@@ -80,7 +80,7 @@ def test_missing_mode_specific_trigger_note_fails_for_precedence():
         "user_query": "Draft an internal memo section.",
         "scenario_facts": ["Use packet-only authorities."],
         "grading_contract": {
-            "expected_citation_groups": [["DOC001[P001.B01]"]],
+            "expected_citation_groups": [["DOC001.P001.B01"]],
             "citation_integrity_trigger_note": _detailed_integrity_note(),
             "citation_integrity_cautions": _detailed_cautions("Integrity"),
             "precedence_trigger_note": None,
@@ -88,7 +88,7 @@ def test_missing_mode_specific_trigger_note_fails_for_precedence():
         },
     }
 
-    deterministic_pass, reasons, _ = _deterministic_validation(item_payload, {"DOC001[P001.B01]"})
+    deterministic_pass, reasons, _ = _deterministic_validation(item_payload, {"DOC001.P001.B01"})
 
     assert deterministic_pass is False
     assert "missing_precedence_criteria" in reasons
@@ -105,7 +105,7 @@ def test_missing_mode_specific_cautions_fail_for_precedence():
         "user_query": "Draft an internal memo section.",
         "scenario_facts": ["Use packet-only authorities."],
         "grading_contract": {
-            "expected_citation_groups": [["DOC001[P001.B01]"]],
+            "expected_citation_groups": [["DOC001.P001.B01"]],
             "citation_integrity_trigger_note": _detailed_integrity_note(),
             "citation_integrity_cautions": _detailed_cautions("Integrity"),
             "precedence_trigger_note": "Precedence rationale is present.",
@@ -113,7 +113,7 @@ def test_missing_mode_specific_cautions_fail_for_precedence():
         },
     }
 
-    deterministic_pass, reasons, _ = _deterministic_validation(item_payload, {"DOC001[P001.B01]"})
+    deterministic_pass, reasons, _ = _deterministic_validation(item_payload, {"DOC001.P001.B01"})
 
     assert deterministic_pass is False
     assert "missing_precedence_cautions" in reasons
@@ -136,7 +136,7 @@ def test_mode_a_allows_empty_expected_citations_when_other_checks_present():
         },
     }
 
-    deterministic_pass, reasons, details = _deterministic_validation(item_payload, {"DOC001[P001.B01]"})
+    deterministic_pass, reasons, details = _deterministic_validation(item_payload, {"DOC001.P001.B01"})
 
     assert deterministic_pass is True
     assert reasons == []
@@ -163,4 +163,4 @@ def test_mode_c_requires_non_empty_expected_citations():
     }
 
     with pytest.raises(ValidationError):
-        _deterministic_validation(item_payload, {"DOC001[P001.B01]"})
+        _deterministic_validation(item_payload, {"DOC001.P001.B01"})

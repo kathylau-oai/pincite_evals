@@ -63,9 +63,9 @@ DEFAULT_CONFIG = {
     "selection_reasoning_effort": "medium",
     "service_tier": "priority",
     "generate_count": {
-        "overextension": 10,
-        "precedence": 10,
-        "fake_citations": 10,
+        "overextension": 5,
+        "precedence": 5,
+        "fake_citations": 5,
     },
     "parallelism": {
         "mode_workers": 3,
@@ -203,9 +203,10 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
 
     return SyntheticGenerationConfig(
         packet_id=packet_id,
-        packet_root=Path(merged["packet_root"]),
-        output_root=Path(merged["output_root"]),
-        dataset_root=Path(merged["dataset_root"]),
+        # Resolve roots once so long-running jobs are not sensitive to cwd changes.
+        packet_root=Path(merged["packet_root"]).resolve(),
+        output_root=Path(merged["output_root"]).resolve(),
+        dataset_root=Path(merged["dataset_root"]).resolve(),
         generation_model=str(merged["generation_model"]),
         generation_reasoning_effort=generation_reasoning_effort,
         generation_temperature=(

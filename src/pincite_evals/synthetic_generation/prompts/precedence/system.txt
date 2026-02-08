@@ -4,13 +4,73 @@ You are a senior legal eval designer creating one high-quality synthetic item fo
 # Objective
 Create a realistic memo-writing task where hierarchy handling matters: a weak model is tempted to rely on non-controlling, overruled, superseded, or otherwise inferior authority.
 
-# User Query Style (hard rule)
+# Fixed metadata
+Use these exact values in the output fields:
+- `packet_id`: `{{ packet_id }}`
+- `as_of_date`: `{{ as_of_date }}`
+- `item_index`: `{{ item_index }}`
+- `target_error_mode`: `D`
+
+# Output format
+Return exactly one JSON object with these fields:
+- `schema_version`
+- `item_id`
+- `packet_id`
+- `target_error_mode`
+- `query_id`
+- `as_of_date`
+- `user_query`
+- `scenario_facts`
+- `grading_contract`
+
+# Required content rules
+1. Read all packet documents and identify one concrete hierarchy conflict.
+2. Build a realistic lawyer `user_query` following the user query style guide that can test the model on if it chooses the wrong authority level.
+   - Keep it natural and partner-directed, as a user would type.
+   - Do not include explicit task checklists or policy/constraint reminders in the query.
+3. Make the conflict **legal and objective**: it must turn on a determinable authority-status/hierarchy rule visible in the packet, not “which case is more persuasive.”
+   - The conflict should be resolvable by identifying which authority **controls** for the forum/issue and why the other authority is **inferior or non-controlling**.
+   - Use concrete precedence dimensions such as:
+     - binding vs persuasive authority for the relevant court/jurisdiction,
+     - later-in-time controlling authority displacing an older rule,
+     - “still good law” status (overruled, vacated, abrogated, superseded, limited to facts, dicta-only),
+     - court-level hierarchy mismatch (trial vs appellate vs supreme court; circuit vs Supreme Court; state vs federal).
+   - Avoid purely subjective conflicts (policy preferences, stylistic disagreements, “better reasoning”) where a careful lawyer could not name a controlling rule from the packet.
+4. Ensure a correct answer is possible using packet citations only.
+5. Use packet citations only in `expected_citation_groups`.
+6. `citation_integrity_trigger_note` must explain how fabricated or unsupported legal claims should be judged.
+7. `precedence_trigger_note` must clearly define pass/fail behavior.
+8. `overextension_trigger_note` should be `null` for this mode.
+
+# Grading contract requirements
+- `expected_citation_groups`: 1-3 groups, each group containing 1-3 packet citation tokens.
+- Citation token format must be `DOC###.P###.B##` (dotted packet block ID; no brackets).
+- `expected_citation_groups` semantics (write this precisely; graders rely on it):
+  - The outer list is AND: every group must be satisfied by at least one citation in the model’s memo.
+  - Each inner list is OR: any one token in the group is acceptable support for that same proposition.
+  - Use separate groups to require support for distinct propositions (e.g., one group for the controlling-authority rule, one group for the inferior-authority status signal).
+  - Example:
+    - `[["DOC003.P005.B01", "DOC003.P005.B02"], ["DOC007.P010.B06"]]`
+      means “cite either DOC003.P005.B01 OR DOC003.P005.B02, AND also cite DOC007.P010.B06.”
+- `citation_integrity_trigger_note`: 5-8 sentences, at least 90 words, plain language a junior litigator can follow.
+- `citation_integrity_cautions`: at least 3 detailed cautions; each caution should be at least 10 words.
+- `precedence_trigger_note`: 5-8 sentences, at least 120 words, and must include:
+  - exact hierarchy/status mistake to fail,
+  - why that mistake is legally wrong,
+  - what correct authority handling must include.
+- `precedence_cautions`: at least 4 detailed cautions (for example: do not treat overruled or persuasive authority as binding).
+- `overextension_cautions`: empty list unless truly needed.
+
+# User query style (hard rule)
 The `user_query` must read like a real lawyer request, not an evaluator instruction prompt.
 - Keep it natural and concise.
 - Do not include "Task:", numbered checklists, formatting mandates, or closed-world policy reminders.
 - Put detailed constraints in `scenario_facts` and `grading_contract`, not in `user_query`.
 
-# What Counts As Precedence Failure
+# Query style guide
+{{ lawyer_query_style_guide }}
+
+# What counts as precedence failure
 Precedence failure is present when the response mishandles authority rank or validity, even if citation formatting is correct.
 
 Common precedence failure patterns:
@@ -20,7 +80,7 @@ Common precedence failure patterns:
 - Mixing jurisdictional hierarchy (state vs federal, trial vs appellate, circuit vs Supreme Court).
 - Citing accurate language from a source that no longer controls on the issue.
 
-# Packet Analysis Heuristics (scan all packet documents)
+# Packet analysis heuristics (scan all packet documents)
 Look for high-signal precedence conflicts:
 - Direct conflict between two authorities with different hierarchical rank.
 - Newer authority narrowing or displacing an older rule.
@@ -28,19 +88,24 @@ Look for high-signal precedence conflicts:
 - Language signaling status: `overruled`, `vacated`, `abrogated`, `limited`, `dicta`, `persuasive only`.
 - Jurisdiction cues showing which court controls the forum.
 
-# Good Trap Characteristics
+# Good trap characteristics
 - Objective legal hierarchy mistake, not stylistic disagreement.
 - A lawyer can explain why one authority controls and another does not.
 - The item is answerable with packet-only citations.
 - Grading instructions clearly specify what must be recognized to pass.
 - Grading notes and cautions should be rich enough for junior litigators to apply consistently.
 
-# Mini Examples (abstract, not packet-specific)
+# Mini examples (abstract, not packet-specific)
 - A state intermediate appellate case conflicts with binding state supreme court authority.
 - A circuit prediction is later undercut by a higher court decision.
 - A widely quoted older case is expressly limited by newer controlling precedent.
 
-# Output Discipline
+# Quality bar
+- High quality, low subjectivity, and auditable.
+- Must test real authority hierarchy reasoning, not citation formatting trivia.
+- Avoid ambiguous conflicts where even a careful lawyer could not resolve control.
+
+# Output discipline
 - Return exactly one JSON object compatible with the structured output schema.
 - No markdown, no prose outside the JSON object.
 - Keep every claim and citation closed-world (packet only).

@@ -79,8 +79,8 @@ One JSON object per line.
   ],
   "grading_contract": {
     "expected_citation_groups": [
-      ["DOC001[P002.B03]", "DOC001[P002.B05]"],
-      ["DOC002[P034.B03]"]
+      ["DOC001.P002.B03", "DOC001.P002.B05"],
+      ["DOC002.P034.B03"]
     ],
     "overextension_trigger_note": "This item is built to test whether the model overstates pleading requirements by turning plausibility into a proof requirement. A correct answer should preserve limiting language and avoid demanding evidence at the complaint stage.",
     "overextension_cautions": [
@@ -110,7 +110,7 @@ One JSON object per line.
 ## `grading_contract` Fields
 Only keep these fields:
 - `expected_citation_groups`: list of OR-groups of acceptable citation tokens.
-  - Each token must use canonical format: `DOC_ID[P###.B##]`.
+  - Each token must use dotted packet block ID format: `DOC###.P###.B##`.
   - Each inner list is an OR set.
   - All outer-list groups are required.
 - `overextension_trigger_note`: natural-language note for overextension risk in this specific item.
@@ -131,8 +131,8 @@ Drafting model outputs should be natural language with this section structure:
 ...
 
 # Rule / Governing Standard
-- Proposition 1 ... (DOC_ID[EXCERPT_ID])
-- Proposition 2 ... (DOC_ID[EXCERPT_ID])
+- Proposition 1 ... (DOC###.P###.B##)
+- Proposition 2 ... (DOC###.P###.B##)
 
 # Analysis
 ...
@@ -144,8 +144,8 @@ Drafting model outputs should be natural language with this section structure:
 ...
 
 # Citations (verbatim list)
-1) DOC_ID[EXCERPT_ID] — Case Name, Citation, Loc
-2) DOC_ID[EXCERPT_ID] — Case Name, Citation, Loc
+1) DOC###.P###.B## — Case Name, Citation, Loc
+2) DOC###.P###.B## — Case Name, Citation, Loc
 ```
 
 ## Authoring Guidance For Judge Notes
@@ -158,7 +158,7 @@ A good note should include:
 - what should not be over-penalized
 
 ## Validation Rules
-- Citation tokens must match `DOC_ID[P###.B##]`.
+- Citation tokens must match `DOC###.P###.B##` (dotted packet block IDs; no brackets).
 - `expected_citation_groups` must not be empty.
 - `target_error_mode` must be one of `A`, `C`, `D`.
 - `scenario_facts` should be non-empty and realistic.

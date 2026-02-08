@@ -1,40 +1,40 @@
 packet_id,doc_id,source_url,page_number,block_number,excerpt_id,citation_token,word_count,token_count,x0,y0,x1,y1,text
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,1,P001.B01,DOC005[P001.B01],11,19,69.96,52.49,329.43,115.24,FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,2,P001.B02,DOC005[P001.B02],19,36,59.04,148.08,228.45,205.64,"A XIOM  F OODS , I NC ., a California 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,1,P001.B01,DOC005.P001.B01,11,19,69.96,52.49,329.43,115.24,FOR PUBLICATION UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,2,P001.B02,DOC005.P001.B02,19,36,59.04,148.08,228.45,205.64,"A XIOM  F OODS , I NC ., a California 
 corporation; G ROWING  N ATURALS ,
 LLC, an Arizona limited liability 
 company,"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,3,P001.B03,DOC005[P001.B03],9,25,260.28,148.08,334.84,219.44,"No. 15-56450 D.C. No. 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,3,P001.B03,DOC005.P001.B03,9,25,260.28,148.08,334.84,219.44,"No. 15-56450 D.C. No. 
 2:15-cv-00870-
 PA-AJW"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,4,P001.B04,DOC005[P001.B04],1,7,59.04,203.28,242.04,233.24,"Plaintiffs-Appellants ,"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,5,P001.B05,DOC005[P001.B05],1,3,272.88,217.08,325.2,260.84,OPINION
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,6,P001.B06,DOC005[P001.B06],49,87,59.04,230.88,308.64,489.8,"v. 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,4,P001.B04,DOC005.P001.B04,1,7,59.04,203.28,242.04,233.24,"Plaintiffs-Appellants ,"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,5,P001.B05,DOC005.P001.B05,1,3,272.88,217.08,325.2,260.84,OPINION
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,6,P001.B06,DOC005.P001.B06,49,87,59.04,230.88,308.64,489.8,"v. 
 A CERCHEM  I NTERNATIONAL , I NC ., an 
 entity of unknown origin, Defendant , and 
 A CERCHEM  UK L IMITED , a United 
 Kingdom limited company, Defendant-Appellee. Appeal from the United States District Court for the Central District of California 
 Percy Anderson, District Judge, Presiding Argued and Submitted April 3, 2017"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,7,P001.B07,DOC005[P001.B07],6,12,139.32,487.44,259.68,531.2,"Pasadena, California Filed November 1, 2017"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,2,1,P002.B01,DOC005[P002.B01],30,61,54.0,34.44,341.16,121.04,"2 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,1,7,P001.B07,DOC005.P001.B07,6,12,139.32,487.44,259.68,531.2,"Pasadena, California Filed November 1, 2017"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,2,1,P002.B01,DOC005.P002.B01,30,61,54.0,34.44,341.16,121.04,"2 
 A XIOM  F OODS V . A CERCHEM  UK Before:  DAVID M. EBEL, *  MILAN D. SMITH, JR., and 
 N. RANDY SMITH, Circuit Judges. Opinion by Judge Milan D. Smith, Jr."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,2,2,P002.B02,DOC005[P002.B02],1,2,161.76,118.8,236.25,164.74,SUMMARY **
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,2,3,P002.B03,DOC005[P002.B03],99,123,54.0,192.17,345.0,546.66,"Personal Jurisdiction The panel affirmed the dismissal of a copyright infringement action for lack of personal jurisdiction over a defendant United Kingdom limited company. Applying the “effects” test, the panel concluded that the nonresident defendant committed an intentional act by adding plaintiffs’ logos to a newsletter and sending it to a list of recipients. The defendant did not, however, expressly aim its intentional act at the forum state of California. Following Walden v. Fiore , 134 S. Ct. 1115 (2014), the panel held that while a theory of individualized targeting may remain relevant to the minimum contacts inquiry, it will"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,2,4,P002.B04,DOC005[P002.B04],95,114,54.0,192.17,345.0,546.66,"not, on its own, support the exercise of specific jurisdiction. The panel held that Federal Rule of Civil Procedure 4(k)(2) did not permit the district court to exercise personal jurisdiction over the United Kingdom company. The panel concluded that such an exercise of jurisdiction would not * The Honorable David M. Ebel, United States Circuit Judge for the U.S. Court of Appeals for the Tenth Circuit, sitting by designation. ** This summary constitutes no part of the opinion of the court. It has been prepared by court staff for the convenience of the reader."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,3,1,P003.B01,DOC005[P003.B01],25,38,54.0,34.44,345.0,123.8,"A XIOM  F OODS V . A CERCHEM  UK 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,2,2,P002.B02,DOC005.P002.B02,1,2,161.76,118.8,236.25,164.74,SUMMARY **
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,2,3,P002.B03,DOC005.P002.B03,99,123,54.0,192.17,345.0,546.66,"Personal Jurisdiction The panel affirmed the dismissal of a copyright infringement action for lack of personal jurisdiction over a defendant United Kingdom limited company. Applying the “effects” test, the panel concluded that the nonresident defendant committed an intentional act by adding plaintiffs’ logos to a newsletter and sending it to a list of recipients. The defendant did not, however, expressly aim its intentional act at the forum state of California. Following Walden v. Fiore , 134 S. Ct. 1115 (2014), the panel held that while a theory of individualized targeting may remain relevant to the minimum contacts inquiry, it will"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,2,4,P002.B04,DOC005.P002.B04,95,114,54.0,192.17,345.0,546.66,"not, on its own, support the exercise of specific jurisdiction. The panel held that Federal Rule of Civil Procedure 4(k)(2) did not permit the district court to exercise personal jurisdiction over the United Kingdom company. The panel concluded that such an exercise of jurisdiction would not * The Honorable David M. Ebel, United States Circuit Judge for the U.S. Court of Appeals for the Tenth Circuit, sitting by designation. ** This summary constitutes no part of the opinion of the court. It has been prepared by court staff for the convenience of the reader."
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,3,1,P003.B01,DOC005.P003.B01,25,38,54.0,34.44,345.0,123.8,"A XIOM  F OODS V . A CERCHEM  UK 
 3 
 comport with due process because there were insufficient 
 contacts between the defendant and the United States."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,3,2,P003.B02,DOC005[P003.B02],37,75,54.0,121.49,345.0,277.28,"COUNSEL 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,3,2,P003.B02,DOC005.P003.B02,37,75,54.0,121.49,345.0,277.28,"COUNSEL 
 Jim D. Bauch (argued) and Daniel C. Lapidus, Lapidus & 
 Lapidus PLC, Beverly Hills, California, for Plaintiffs-
 Appellants. 
 Henry L. Self III (argued) and Brian G. Wolf, Lavely & 
 Singer P.C., Los Angeles, California, for Defendant-
 Appellee."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,3,3,P003.B03,DOC005[P003.B03],1,3,171.6,274.97,227.28,291.58,OPINION
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,3,4,P003.B04,DOC005[P003.B04],105,172,54.0,300.72,345.0,546.08,"M. SMITH, Circuit Judge: Axiom Foods, Inc. and Growing Naturals, LLC 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,3,3,P003.B03,DOC005.P003.B03,1,3,171.6,274.97,227.28,291.58,OPINION
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,3,4,P003.B04,DOC005.P003.B04,105,172,54.0,300.72,345.0,546.08,"M. SMITH, Circuit Judge: Axiom Foods, Inc. and Growing Naturals, LLC 
 (collectively, Appellants) appeal from the district court’s 
 dismissal of their copyright infringement action against 
 Acerchem UK Limited for lack of personal jurisdiction.  We 
@@ -46,7 +46,7 @@ industries.  Appellant Growing Naturals, LLC (GN) is an
 Arizona limited liability company that develops and sells 
 natural food products, such as plant-based proteins and rice 
 milk powders.  GN partners with Axiom to produce and sell"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,4,1,P004.B01,DOC005[P004.B01],82,135,54.0,34.44,345.0,229.9,"4 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,4,1,P004.B01,DOC005.P004.B01,82,135,54.0,34.44,345.0,229.9,"4 
 A XIOM  F OODS V . A CERCHEM  UK 
 goods containing Axiom’s products.  Appellants do business 
 in California. Acerchem International, Inc. (Acerchem International), 
@@ -58,14 +58,14 @@ owned subsidiary of Acerchem International.  Acerchem UK
 maintains its principal place of business in the United 
 Kingdom, and does not conduct business in the United 
 States."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,4,2,P004.B02,DOC005[P004.B02],58,91,54.0,239.28,345.0,338.5,"On November 20, 2014, Elva Li, an employee of 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,4,2,P004.B02,DOC005.P004.B02,58,91,54.0,239.28,345.0,338.5,"On November 20, 2014, Elva Li, an employee of 
 Acerchem UK, sent a newsletter promoting Acerchem UK’s 
 rice protein products to 343 email addresses.  Appellants’ 
 “As Good as Whey” and “Non-GMO” logos were used in 
 the newsletter.  Most of the newsletter’s recipients were 
 located in Western Europe. No more than ten recipients 
 were located in California."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,4,3,P004.B03,DOC005[P004.B03],102,158,54.0,347.88,348.0,546.87,"Appellants subsequently registered their copyrights for 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,4,3,P004.B03,DOC005.P004.B03,102,158,54.0,347.88,348.0,546.87,"Appellants subsequently registered their copyrights for 
 the “As Good As Whey” and “Non-GMO” logos with the 
 United States Copyright Office.  After the registrations 
 became effective, Appellants filed a complaint against 
@@ -75,7 +75,7 @@ asserted two claims for copyright infringement pursuant to
 17 U.S.C. § 501 based on Acerchem UK’s use of 
 Appellants’ logos in its November 20, 2014 newsletter. Acerchem UK filed a motion to dismiss the complaint 
 for lack of personal jurisdiction and failure to state a claim. 1  Appellants never served Acerchem International."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,5,1,P005.B01,DOC005[P005.B01],102,162,54.0,34.44,348.0,267.44,"A XIOM  F OODS V . A CERCHEM  UK 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,5,1,P005.B01,DOC005.P005.B01,102,162,54.0,34.44,348.0,267.44,"A XIOM  F OODS V . A CERCHEM  UK 
 5 
 The district court ordered jurisdictional discovery and 
 granted the parties leave to file supplemental briefing. On September 11, 2015, the district court granted 
@@ -86,10 +86,10 @@ claim.  Appellants timely appealed. STANDARD OF REVIEW We review  de novo  “[a
 whether personal jurisdiction may be properly exercised.”  
 Washington Shoe Co. v. A-Z Sporting Goods Inc. , 704 F.3d 
 668, 671 (9th Cir. 2012)."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,5,2,P005.B02,DOC005[P005.B02],1,3,167.64,277.13,231.36,293.74,ANALYSIS
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,5,3,P005.B03,DOC005[P005.B03],103,179,54.0,302.93,348.0,546.66,"I. Specific Jurisdiction A. General Principles “Federal courts apply state law to determine the bounds of their jurisdiction over a party.” Williams v. Yamaha Motor Co. , 851 F.3d 1015, 1020 (9th Cir. 2017) (citing Fed. R. Civ. P. 4(k)(1)(A)). California authorizes its courts to exercise jurisdiction “to the full extent that such exercise comports with due process.” Id. (citing Cal. Civ. Proc. Code § 410.10). Accordingly, “the jurisdictional analyses under [California] state law and federal due process are the same.” Mavrix Photo, Inc. v. Brand Techs., Inc ., 647 F.3d 1218, 1223 (9th Cir. 2011). 2 Axiom and GN"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,5,4,P005.B04,DOC005[P005.B04],18,23,54.0,302.93,348.0,546.66,conceded that the district court lacked general jurisdiction over Acerchem UK. They do not argue otherwise on appeal.
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,6,1,P006.B01,DOC005[P006.B01],87,158,54.0,34.44,348.0,176.24,"6 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,5,2,P005.B02,DOC005.P005.B02,1,3,167.64,277.13,231.36,293.74,ANALYSIS
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,5,3,P005.B03,DOC005.P005.B03,103,179,54.0,302.93,348.0,546.66,"I. Specific Jurisdiction A. General Principles “Federal courts apply state law to determine the bounds of their jurisdiction over a party.” Williams v. Yamaha Motor Co. , 851 F.3d 1015, 1020 (9th Cir. 2017) (citing Fed. R. Civ. P. 4(k)(1)(A)). California authorizes its courts to exercise jurisdiction “to the full extent that such exercise comports with due process.” Id. (citing Cal. Civ. Proc. Code § 410.10). Accordingly, “the jurisdictional analyses under [California] state law and federal due process are the same.” Mavrix Photo, Inc. v. Brand Techs., Inc ., 647 F.3d 1218, 1223 (9th Cir. 2011). 2 Axiom and GN"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,5,4,P005.B04,DOC005.P005.B04,18,23,54.0,302.93,348.0,546.66,conceded that the district court lacked general jurisdiction over Acerchem UK. They do not argue otherwise on appeal.
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,6,1,P006.B01,DOC005.P006.B01,87,158,54.0,34.44,348.0,176.24,"6 
 A XIOM  F OODS V . A CERCHEM  UK Due process “constrains a State’s authority to bind a 
 nonresident defendant to a judgment of its courts.”   Walden 
 v. Fiore , 134 S. Ct. 1115, 1121 (2014).  A nonresident 
@@ -98,7 +98,7 @@ forum] such that the maintenance of the suit does not offend
 ‘traditional notions of fair play and substantial justice.’”  
 Int’l Shoe Co. v. Washington , 326 U.S. 310, 316 (1945) 
 (quoting  Milliken v. Meyer , 311 U.S. 457, 463 (1940))."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,6,2,P006.B02,DOC005[P006.B02],97,193,54.0,185.88,345.0,353.84,"“The inquiry whether a forum State may assert specific 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,6,2,P006.B02,DOC005.P006.B02,97,193,54.0,185.88,345.0,353.84,"“The inquiry whether a forum State may assert specific 
 jurisdiction over a nonresident defendant ‘focuses on the 
 relationship among the defendant, the forum, and the 
 litigation.’”   Walden , 134 S. Ct. at 1121 (quoting  Keeton v. 
@@ -110,7 +110,7 @@ burden on the defendant.”   Bristol-Myers Squibb Co. v.
 Superior Court , 137 S. Ct. 1773, 1780 (2017) (quoting 
 World-Wide Volkswagen Corp. v. Woodson , 444 U.S. 286, 
 292 (1980))."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,6,3,P006.B03,DOC005[P006.B03],101,179,54.0,363.48,348.0,531.44,"Two principles animate the “defendant-focused” 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,6,3,P006.B03,DOC005.P006.B03,101,179,54.0,363.48,348.0,531.44,"Two principles animate the “defendant-focused” 
 inquiry.   Walden , 134 S. Ct. at 1122. First, the relationship 
 between the nonresident defendant, the forum, and the 
 litigation “must arise out of contacts that the ‘defendant 
@@ -122,11 +122,11 @@ defendant’s contacts with persons who reside there.”   Id.   It
 follows that “a defendant’s relationship with a plaintiff or 
 third party, standing alone, is an insufficient basis for 
 jurisdiction.”   Id.  at 1123."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,7,1,P007.B01,DOC005[P007.B01],102,138,54.0,34.44,345.0,272.84,"A XIOM F OODS V . A CERCHEM UK 7 These principles apply to cases involving intentional torts. Id. “A forum State’s exercise of jurisdiction over an out-of-state intentional tortfeasor must be based on intentional conduct by the defendant that creates the necessary contacts with the forum.” Id. While “a single act can support jurisdiction,” the act must first “create[] a ‘substantial connection’ with the forum.” Burger King , 471 U.S. at 475 n.18 (citation omitted). Put differently, “‘some single or occasional acts’ related to the forum may not be sufficient to establish jurisdiction if ‘their nature and quality and"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,7,2,P007.B02,DOC005[P007.B02],48,84,54.0,34.44,345.0,272.84,"the circumstances of their commission’ create only an ‘attenuated’ affiliation with the forum.” Id. (quoting Int’l Shoe , 326 U.S. at 318). A defendant’s “‘random, fortuitous, or attenuated’ contacts” will not suffice. Walden , 134 S. Ct. at 1123 (quoting Burger King , 471 U.S. at 475)."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,7,3,P007.B03,DOC005[P007.B03],102,144,54.0,282.48,345.0,519.44,"There are three requirements for a court to exercise specific jurisdiction over a nonresident defendant: (1) the defendant must either “purposefully direct his activities” toward the forum or “purposefully avail[] himself of the privileges of conducting activities in the forum”; (2) “the claim must be one which arises out of or relates to the defendant’s forum-related activities”; and (3) “the exercise of jurisdiction must comport with fair play and substantial justice, i.e. it must be reasonable.” Dole Food Co., Inc. v. Watts , 303 F.3d 1104, 1111 (9th Cir. 2002). “The plaintiff bears the burden of satisfying the first two"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,7,4,P007.B04,DOC005[P007.B04],55,88,54.0,282.48,345.0,519.44,"prongs of the test.” Schwarzenegger v. Fred Martin Motor Co. , 374 F.3d 797, 802 (9th Cir. 2004). If the plaintiff meets that burden, “the burden then shifts to the defendant to ‘present a compelling case’ that the exercise of jurisdiction would not be reasonable.” Id. (quoting Burger King , 471 U.S. at 476– 78))."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,8,1,P008.B01,DOC005[P008.B01],92,162,54.0,34.44,345.0,176.24,"8 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,7,1,P007.B01,DOC005.P007.B01,102,138,54.0,34.44,345.0,272.84,"A XIOM F OODS V . A CERCHEM UK 7 These principles apply to cases involving intentional torts. Id. “A forum State’s exercise of jurisdiction over an out-of-state intentional tortfeasor must be based on intentional conduct by the defendant that creates the necessary contacts with the forum.” Id. While “a single act can support jurisdiction,” the act must first “create[] a ‘substantial connection’ with the forum.” Burger King , 471 U.S. at 475 n.18 (citation omitted). Put differently, “‘some single or occasional acts’ related to the forum may not be sufficient to establish jurisdiction if ‘their nature and quality and"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,7,2,P007.B02,DOC005.P007.B02,48,84,54.0,34.44,345.0,272.84,"the circumstances of their commission’ create only an ‘attenuated’ affiliation with the forum.” Id. (quoting Int’l Shoe , 326 U.S. at 318). A defendant’s “‘random, fortuitous, or attenuated’ contacts” will not suffice. Walden , 134 S. Ct. at 1123 (quoting Burger King , 471 U.S. at 475)."
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,7,3,P007.B03,DOC005.P007.B03,102,144,54.0,282.48,345.0,519.44,"There are three requirements for a court to exercise specific jurisdiction over a nonresident defendant: (1) the defendant must either “purposefully direct his activities” toward the forum or “purposefully avail[] himself of the privileges of conducting activities in the forum”; (2) “the claim must be one which arises out of or relates to the defendant’s forum-related activities”; and (3) “the exercise of jurisdiction must comport with fair play and substantial justice, i.e. it must be reasonable.” Dole Food Co., Inc. v. Watts , 303 F.3d 1104, 1111 (9th Cir. 2002). “The plaintiff bears the burden of satisfying the first two"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,7,4,P007.B04,DOC005.P007.B04,55,88,54.0,282.48,345.0,519.44,"prongs of the test.” Schwarzenegger v. Fred Martin Motor Co. , 374 F.3d 797, 802 (9th Cir. 2004). If the plaintiff meets that burden, “the burden then shifts to the defendant to ‘present a compelling case’ that the exercise of jurisdiction would not be reasonable.” Id. (quoting Burger King , 471 U.S. at 476– 78))."
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,8,1,P008.B01,DOC005.P008.B01,92,162,54.0,34.44,345.0,176.24,"8 
 A XIOM  F OODS V . A CERCHEM  UK Where, as here, a case sounds in tort, we employ the 
 purposeful direction test.   See id.   The test, often referred to 
 as the “effects” test, derives from  Calder v. Jones , 465 U.S. 
@@ -135,17 +135,17 @@ defendant must have “(1) committed an intentional act,
 (2) expressly aimed at the forum state, (3) causing harm that 
 the defendant knows is likely to be suffered in the forum 
 state.”   Id.  (quoting  Mavrix Photo , 647 F.3d at 1228)."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,8,2,P008.B02,DOC005[P008.B02],53,82,54.0,185.88,348.0,271.04,"Under the first prong of this test, Appellants must show 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,8,2,P008.B02,DOC005.P008.B02,53,82,54.0,185.88,348.0,271.04,"Under the first prong of this test, Appellants must show 
 that Acerchem UK committed an intentional act.  
 Schwarzenegger , 374 F.3d at 806.  Li added Appellants’ 
 logos to the newsletter and sent it to a list of recipients.  This 
 was unquestionably an intentional act, so the first prong of 
 the test is satisfied."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,8,3,P008.B03,DOC005[P008.B03],100,148,54.0,280.68,348.0,541.64,"Appellants must next demonstrate that Acerchem UK “expressly aimed” its intentional act at the forum. Id. Before we address the second prong of the test, we must consider the impact of Walden on the test to be employed. B. The Impact of Walden We have held that “individualized targeting” satisfies the express aiming requirement. See Washington Shoe , 704 F.3d at 678–79; see also Brayton Purcell LLP v. Recordon & Recordon , 606 F.3d 1124, 1130 (9th Cir. 2010). A theory of individualized targeting alleges that a defendant “engaged in wrongful conduct targeted at a plaintiff whom the defendant knows"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,8,4,P008.B04,DOC005[P008.B04],60,85,54.0,280.68,348.0,541.64,"to be a resident of the forum state.” Washington Shoe , 704 F.3d at 675 (quoting Dole Food Co. , 303 F.3d at 1111). In the context of copyright infringement, we have held that a defendant’s “alleged willful infringement of [a plaintiff’s] copyright, and its knowledge of both the existence of the copyright and the forum of the"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,9,1,P009.B01,DOC005[P009.B01],100,152,54.0,34.44,348.0,347.36,"A XIOM F OODS V . A CERCHEM UK 9 copyright holder,” established “individualized targeting.” Id. at 678–79. Appellants claim that they have satisfied the express aiming requirement. They rely on the strength of their own forum connections, coupled with evidence suggesting Acerchem UK knew of those connections and Appellants’ ownership of the logos’ copyrights. 3 Walden requires more. In Walden , the Supreme Court rejected our conclusion that the defendants’ “knowledge of [the plaintiffs’] ‘strong forum connections,’” plus the “foreseeable harm” the plaintiffs suffered in the forum, comprised sufficient minimum contacts. 134 S. Ct. at 1124–25 (citation omitted). The"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,9,2,P009.B02,DOC005[P009.B02],72,87,54.0,34.44,348.0,347.36,"3 The parties dispute whether Acerchem UK knew that Appellants own the copyrights to the two logos. In her declaration, Li acknowledged authorship of the allegedly infringing newsletter. Li explained that she found the logos by entering terms such as “rice protein” into a search engine, but could not recall from which websites the logos originated. Li denied intent to infringe, maintaining that she believed the copyrights were in the public domain."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,9,3,P009.B03,DOC005[P009.B03],95,154,53.99,357.46,344.51,474.94,"On the other hand, Kay Abadee, the Vice President of Axiom and 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,8,3,P008.B03,DOC005.P008.B03,100,148,54.0,280.68,348.0,541.64,"Appellants must next demonstrate that Acerchem UK “expressly aimed” its intentional act at the forum. Id. Before we address the second prong of the test, we must consider the impact of Walden on the test to be employed. B. The Impact of Walden We have held that “individualized targeting” satisfies the express aiming requirement. See Washington Shoe , 704 F.3d at 678–79; see also Brayton Purcell LLP v. Recordon & Recordon , 606 F.3d 1124, 1130 (9th Cir. 2010). A theory of individualized targeting alleges that a defendant “engaged in wrongful conduct targeted at a plaintiff whom the defendant knows"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,8,4,P008.B04,DOC005.P008.B04,60,85,54.0,280.68,348.0,541.64,"to be a resident of the forum state.” Washington Shoe , 704 F.3d at 675 (quoting Dole Food Co. , 303 F.3d at 1111). In the context of copyright infringement, we have held that a defendant’s “alleged willful infringement of [a plaintiff’s] copyright, and its knowledge of both the existence of the copyright and the forum of the"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,9,1,P009.B01,DOC005.P009.B01,100,152,54.0,34.44,348.0,347.36,"A XIOM F OODS V . A CERCHEM UK 9 copyright holder,” established “individualized targeting.” Id. at 678–79. Appellants claim that they have satisfied the express aiming requirement. They rely on the strength of their own forum connections, coupled with evidence suggesting Acerchem UK knew of those connections and Appellants’ ownership of the logos’ copyrights. 3 Walden requires more. In Walden , the Supreme Court rejected our conclusion that the defendants’ “knowledge of [the plaintiffs’] ‘strong forum connections,’” plus the “foreseeable harm” the plaintiffs suffered in the forum, comprised sufficient minimum contacts. 134 S. Ct. at 1124–25 (citation omitted). The"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,9,2,P009.B02,DOC005.P009.B02,72,87,54.0,34.44,348.0,347.36,"3 The parties dispute whether Acerchem UK knew that Appellants own the copyrights to the two logos. In her declaration, Li acknowledged authorship of the allegedly infringing newsletter. Li explained that she found the logos by entering terms such as “rice protein” into a search engine, but could not recall from which websites the logos originated. Li denied intent to infringe, maintaining that she believed the copyrights were in the public domain."
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,9,3,P009.B03,DOC005.P009.B03,95,154,53.99,357.46,344.51,474.94,"On the other hand, Kay Abadee, the Vice President of Axiom and 
 GN, attested that Appellants are well-known in the industry, and that 
 their websites are among the first online search results for terms like “rice 
 protein.” The district court reviewed the parties’ affidavits and concluded that 
@@ -153,11 +153,11 @@ it was “plausible” that Li did not know Appellants owned the logos.  The
 district court, which did not hold an evidentiary hearing, should have 
 resolved the factual conflict in Appellants’ favor.   See Rio Properties, 
 Inc. v. Rio Int’l Interlink , 284 F.3d 1007, 1019 (9th Cir. 2002)."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,9,4,P009.B04,DOC005[P009.B04],37,49,53.99,485.04,344.49,532.91,"Nonetheless, the district court’s error was not dispositive.  As we 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,9,4,P009.B04,DOC005.P009.B04,37,49,53.99,485.04,344.49,532.91,"Nonetheless, the district court’s error was not dispositive.  As we 
 explain above, Acerchem UK lacked sufficient minimum contacts with 
 California to comply with the requirements of due process, which 
 renders this aspect of the case moot."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,10,1,P010.B01,DOC005[P010.B01],69,112,54.0,34.44,345.0,148.64,"10 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,10,1,P010.B01,DOC005.P010.B01,69,112,54.0,34.44,345.0,148.64,"10 
 A XIOM  F OODS V . A CERCHEM  UK 
 Court found that our approach “impermissibly allow[ed] a 
 plaintiff’s contacts with the defendant and forum to drive the 
@@ -165,9 +165,9 @@ jurisdictional analysis.”   Id.  at 1125.  The Court made clear
 that we must look to the defendant’s “own contacts” with the 
 forum, not to the defendant’s knowledge of a plaintiff’s 
 connections to a forum.   Id.  at 1124–25."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,10,2,P010.B02,DOC005[P010.B02],99,139,54.0,158.28,345.0,391.64,"In light of the Court’s instructions in Walden , mere satisfaction of the test outlined in Washington Shoe , without more, is insufficient to comply with due process. 4 Following Walden , we now hold that while a theory of individualized targeting may remain relevant to the minimum contacts inquiry, it will not, on its own, support the exercise of specific jurisdiction, absent compliance with what Walden requires. Cf. Picot v. Weston , 780 F.3d 1206, 1214–15 (9th Cir. 2015) (applying Walden to express aiming prong of purposeful direction test). C. Application of the Principles of Walden We now turn"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,10,3,P010.B03,DOC005[P010.B03],32,54,54.0,158.28,345.0,391.64,"to Appellants’ evidence of Acerchem UK’s contacts with California, and conclude that Acerchem UK’s “suit-related conduct” did not “create a substantial connection with [California].” Walden , 134 S. Ct. at 1121."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,10,4,P010.B04,DOC005[P010.B04],96,140,54.0,401.28,348.0,546.68,"Appellants’ counsel reviewed the list of 343 email 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,10,2,P010.B02,DOC005.P010.B02,99,139,54.0,158.28,345.0,391.64,"In light of the Court’s instructions in Walden , mere satisfaction of the test outlined in Washington Shoe , without more, is insufficient to comply with due process. 4 Following Walden , we now hold that while a theory of individualized targeting may remain relevant to the minimum contacts inquiry, it will not, on its own, support the exercise of specific jurisdiction, absent compliance with what Walden requires. Cf. Picot v. Weston , 780 F.3d 1206, 1214–15 (9th Cir. 2015) (applying Walden to express aiming prong of purposeful direction test). C. Application of the Principles of Walden We now turn"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,10,3,P010.B03,DOC005.P010.B03,32,54,54.0,158.28,345.0,391.64,"to Appellants’ evidence of Acerchem UK’s contacts with California, and conclude that Acerchem UK’s “suit-related conduct” did not “create a substantial connection with [California].” Walden , 134 S. Ct. at 1121."
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,10,4,P010.B04,DOC005.P010.B04,96,140,54.0,401.28,348.0,546.68,"Appellants’ counsel reviewed the list of 343 email 
 addresses that received Acerchem UK’s newsletter.  
 Counsel’s affidavit stated that the list included “[a]t least 
 55 recipients with companies in California, including 4  The Supreme Court rejected a similar rule proposed by the 
@@ -176,9 +176,9 @@ contacts with a forum when he (1) intentionally targets (2) a known
 resident of the forum (3) for imposition of an injury (4) to be suffered by 
 the plaintiff while she is residing in the forum state.”  134 S. Ct. at 1124 
 n.8."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,11,1,P011.B01,DOC005[P011.B01],101,130,54.0,34.44,348.0,259.3,"A XIOM F OODS V . A CERCHEM UK 11 14 recipients with locations within Los Angeles County.” As required, we focus on “the defendant’s contacts with the forum State itself, not the defendant’s contacts with persons who reside there.” Id. at 1122. By that standard, Appellants’ evidence sheds no light on whether Acerchem UK created minimum contacts with California. We lack information concerning the residence of the 55 recipients and the legal and operational relationships among the 55 recipients and their respective companies. Moreover, any California contacts Acerchem UK created by sending a single newsletter to 55 recipients of"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,11,2,P011.B02,DOC005[P011.B02],24,42,54.0,34.44,348.0,259.3,"unknown residence are too “attenuated,” id. at 1123 (citation omitted), and “isolated,” Keeton , 465 U.S. at 774, to support the exercise of jurisdiction."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,11,3,P011.B03,DOC005[P011.B03],103,186,54.0,268.68,345.0,422.84,"Nor does the fact that 144 email addresses belong to 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,11,1,P011.B01,DOC005.P011.B01,101,130,54.0,34.44,348.0,259.3,"A XIOM F OODS V . A CERCHEM UK 11 14 recipients with locations within Los Angeles County.” As required, we focus on “the defendant’s contacts with the forum State itself, not the defendant’s contacts with persons who reside there.” Id. at 1122. By that standard, Appellants’ evidence sheds no light on whether Acerchem UK created minimum contacts with California. We lack information concerning the residence of the 55 recipients and the legal and operational relationships among the 55 recipients and their respective companies. Moreover, any California contacts Acerchem UK created by sending a single newsletter to 55 recipients of"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,11,2,P011.B02,DOC005.P011.B02,24,42,54.0,34.44,348.0,259.3,"unknown residence are too “attenuated,” id. at 1123 (citation omitted), and “isolated,” Keeton , 465 U.S. at 774, to support the exercise of jurisdiction."
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,11,3,P011.B03,DOC005.P011.B03,103,186,54.0,268.68,345.0,422.84,"Nor does the fact that 144 email addresses belong to 
 Appellants’ “actual or potential partners, customers, or 
 suppliers” compel a different result.  The foreseeability of 
 injury in a forum “is not a ‘sufficient benchmark’ for 
@@ -189,7 +189,7 @@ stand for the broad proposition that a foreign act with
 foreseeable effects in the forum state always gives rise to 
 specific jurisdiction.’” (quoting  Bancroft & Masters, Inc. v. 
 Augusta Nat’l Inc. , 223 F.3d 1082, 1087 (9th Cir. 2000)))."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,11,4,P011.B04,DOC005[P011.B04],74,111,54.0,432.48,348.0,545.24,"Acerchem UK’s evidence confirms the insufficiency of 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,11,4,P011.B04,DOC005.P011.B04,74,111,54.0,432.48,348.0,545.24,"Acerchem UK’s evidence confirms the insufficiency of 
 its contacts with California.  No more than ten of the 
 newsletter’s recipients were physically located in California.  
 Indeed, most of the recipients were located in Western 
@@ -197,7 +197,7 @@ Europe.  Acerchem UK itself conducts no business in
 California.  It can hardly be said that “California [wa]s the 
 focal point both of the [newsletter] and of the harm 
 suffered.”   Walden , 134 S. Ct. at 1123 (first alteration in"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,12,1,P012.B01,DOC005[P012.B01],108,172,54.0,34.44,345.0,217.64,"12 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,12,1,P012.B01,DOC005.P012.B01,108,172,54.0,34.44,345.0,217.64,"12 
 A XIOM  F OODS V . A CERCHEM  UK 
 original) (quoting  Calder , 465 U.S. at 789);  see also Keeton , 
 465 U.S. at 773–74 (holding that “regular circulation of 
@@ -210,9 +210,9 @@ isolated, or fortuitous”);  Mavrix Photo , 647 F.3d at 1229–31
 plaintiff’s copyrighted photos on its celebrity gossip website 
 “as part of its exploitation of the California market for its 
 own commercial gain”)."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,12,2,P012.B02,DOC005[P012.B02],102,143,54.0,227.28,348.0,545.24,"Calder is instructive to show how different the facts are in this case. In Calder , a California actress brought a libel action against two nonresident defendants in California state court, based on an article defendants wrote for the National Enquirer. See 465 U.S. at 784–86. The Supreme Court found the defendants’ “forum contacts to be ample.” Walden , 134 S. Ct. at 1123 (citing Calder , 465 U.S. at 788– 89). The defendants contacted “California sources” for information and wrote about the actress’s activities in California. Id. Roughly 600,000 copies of the article were sold in California, where the"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,12,3,P012.B03,DOC005[P012.B03],100,137,54.0,227.28,348.0,545.24,"actress suffered the “brunt” of the reputational injury. Id. In short, “[t]he crux of Calder was that the reputation-based ‘effects’ of the alleged libel connected the defendants to California, not just to the plaintiff.” Id. at 1123–24. In this case, Acerchem UK sent one newsletter to a maximum of ten recipients located in California, in a market where Acerchem UK has no sales or clients. The alleged infringement barely connected Acerchem UK to California residents, much less to California itself. Finally, we will not impute Acerchem International’s forum contacts to Acerchem UK. “It is well established that,"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,13,1,P013.B01,DOC005[P013.B01],115,188,54.0,34.44,345.0,267.44,"A XIOM  F OODS V . A CERCHEM  UK 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,12,2,P012.B02,DOC005.P012.B02,102,143,54.0,227.28,348.0,545.24,"Calder is instructive to show how different the facts are in this case. In Calder , a California actress brought a libel action against two nonresident defendants in California state court, based on an article defendants wrote for the National Enquirer. See 465 U.S. at 784–86. The Supreme Court found the defendants’ “forum contacts to be ample.” Walden , 134 S. Ct. at 1123 (citing Calder , 465 U.S. at 788– 89). The defendants contacted “California sources” for information and wrote about the actress’s activities in California. Id. Roughly 600,000 copies of the article were sold in California, where the"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,12,3,P012.B03,DOC005.P012.B03,100,137,54.0,227.28,348.0,545.24,"actress suffered the “brunt” of the reputational injury. Id. In short, “[t]he crux of Calder was that the reputation-based ‘effects’ of the alleged libel connected the defendants to California, not just to the plaintiff.” Id. at 1123–24. In this case, Acerchem UK sent one newsletter to a maximum of ten recipients located in California, in a market where Acerchem UK has no sales or clients. The alleged infringement barely connected Acerchem UK to California residents, much less to California itself. Finally, we will not impute Acerchem International’s forum contacts to Acerchem UK. “It is well established that,"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,13,1,P013.B01,DOC005.P013.B01,115,188,54.0,34.44,345.0,267.44,"A XIOM  F OODS V . A CERCHEM  UK 
 13 
 as a general rule, where a parent and a subsidiary are separate 
 and distinct corporate entities, the presence of one . . . in a 
@@ -223,31 +223,31 @@ deviate from this general rule. 5 The district court correctly found that it lac
 jurisdiction over Acerchem UK. 6 II. Rule 4(k)(2) Jurisdiction In the alternative, Appellants contend that the district 
 court may exercise personal jurisdiction over Acerchem UK 
 pursuant to Federal Rule of Civil Procedure 4(k)(2)."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,13,2,P013.B02,DOC005[P013.B02],105,149,53.96,277.08,345.0,500.27,"Rule 4(k)(2) permits a federal court to exercise personal jurisdiction over a defendant if “the defendant is not subject to jurisdiction in any state’s courts of general jurisdiction,” 5 Assuming, without deciding, that an agency relationship between Acerchem International and Acerchem UK would be “relevant to the existence of specific jurisdiction,” Daimler AG v. Bauman , 134 S. Ct. 746, 759 n.13 (2014), Appellants have not made a prima facie case for an agency relationship between Acerchem International and Acerchem UK, see Williams , 851 F.3d at 1024–25 (“[U]nder any standard for finding an agency relationship, the parent company must"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,13,3,P013.B03,DOC005[P013.B03],85,102,53.96,277.08,345.0,500.27,have the right to substantially control its subsidiary’s activities.”). Nor have they spelled out an alter ego theory of liability allowing us to attribute the activities of the parent entity to the subsidiary. See id. at 1021 (“[A] plaintiff must make out a prima facie case (1) that there is such unity of interest and ownership that the separate personalities of the two entities no longer exist and (2) that failure to disregard their separate identities would result in fraud or injustice.” (citation omitted)).
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,13,4,P013.B04,DOC005[P013.B04],37,56,54.01,510.2,344.52,546.67,"6  Having decided that Appellants do not meet their burden with 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,13,2,P013.B02,DOC005.P013.B02,105,149,53.96,277.08,345.0,500.27,"Rule 4(k)(2) permits a federal court to exercise personal jurisdiction over a defendant if “the defendant is not subject to jurisdiction in any state’s courts of general jurisdiction,” 5 Assuming, without deciding, that an agency relationship between Acerchem International and Acerchem UK would be “relevant to the existence of specific jurisdiction,” Daimler AG v. Bauman , 134 S. Ct. 746, 759 n.13 (2014), Appellants have not made a prima facie case for an agency relationship between Acerchem International and Acerchem UK, see Williams , 851 F.3d at 1024–25 (“[U]nder any standard for finding an agency relationship, the parent company must"
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,13,3,P013.B03,DOC005.P013.B03,85,102,53.96,277.08,345.0,500.27,have the right to substantially control its subsidiary’s activities.”). Nor have they spelled out an alter ego theory of liability allowing us to attribute the activities of the parent entity to the subsidiary. See id. at 1021 (“[A] plaintiff must make out a prima facie case (1) that there is such unity of interest and ownership that the separate personalities of the two entities no longer exist and (2) that failure to disregard their separate identities would result in fraud or injustice.” (citation omitted)).
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,13,4,P013.B04,DOC005.P013.B04,37,56,54.01,510.2,344.52,546.67,"6  Having decided that Appellants do not meet their burden with 
 respect to the second prong of the purposeful direction test, we need not 
 address the last prong.   See Picot , 780 F.3d at 1215 n.4."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,14,1,P014.B01,DOC005[P014.B01],28,50,54.0,34.44,345.0,107.24,"14 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,14,1,P014.B01,DOC005.P014.B01,28,50,54.0,34.44,345.0,107.24,"14 
 A XIOM  F OODS V . A CERCHEM  UK 
 and “exercising jurisdiction is consistent with the United 
 States Constitution and laws.”  Rule 4(k)(2) imposes three 
 requirements:"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,14,2,P014.B02,DOC005[P014.B02],43,62,90.0,116.88,309.0,215.84,"First, the claim against the defendant must 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,14,2,P014.B02,DOC005.P014.B02,43,62,90.0,116.88,309.0,215.84,"First, the claim against the defendant must 
 arise under federal law.  Second, the 
 defendant must not be subject to the personal 
 jurisdiction of any state court of general 
 jurisdiction.  Third, the federal court’s 
 exercise of personal jurisdiction must 
 comport with due process."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,14,3,P014.B03,DOC005[P014.B03],64,110,54.0,227.52,345.0,326.48,"Pebble Beach Co. v. Caddy , 453 F.3d 1151, 1159 (9th Cir. 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,14,3,P014.B03,DOC005.P014.B03,64,110,54.0,227.52,345.0,326.48,"Pebble Beach Co. v. Caddy , 453 F.3d 1151, 1159 (9th Cir. 
 2006) (citations omitted).  “The due process analysis under 
 Rule 4(k)(2) is nearly identical to traditional personal 
 jurisdiction analysis with one significant difference: rather 
 than considering contacts between [the defendant] and the 
 forum state, we consider contacts with the nation as a 
 whole.”   Holland Am. Line , 485 F.3d at 462."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,14,4,P014.B04,DOC005[P014.B04],102,148,54.0,336.12,348.0,516.08,"Appellants do not satisfy the third requirement.  
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,14,4,P014.B04,DOC005.P014.B04,102,148,54.0,336.12,348.0,516.08,"Appellants do not satisfy the third requirement.  
 According to the evidence produced, the sole contact 
 between Acerchem UK and the United States is the 
 newsletter.  Although Appellants maintain that Acerchem 
@@ -258,10 +258,10 @@ Appellants fail to explain the relationship between the
 contacts between [Acerchem UK] and the United States can 
 only be described as scant, fleeting, and attenuated.”   Id. The district court properly declined to exercise 
 jurisdiction over Acerchem UK pursuant to Rule 4(k)(2)."
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,15,1,P015.B01,DOC005[P015.B01],9,18,54.0,34.44,345.0,65.84,"A XIOM  F OODS V . A CERCHEM  UK 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,15,1,P015.B01,DOC005.P015.B01,9,18,54.0,34.44,345.0,65.84,"A XIOM  F OODS V . A CERCHEM  UK 
 15"
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,15,2,P015.B02,DOC005[P015.B02],1,2,157.32,63.53,241.68,80.14,CONCLUSION
-packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,15,3,P015.B03,DOC005[P015.B03],34,57,54.0,89.28,345.0,198.44,"For the foregoing reasons, we affirm the district court’s 
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,15,2,P015.B02,DOC005.P015.B02,1,2,157.32,63.53,241.68,80.14,CONCLUSION
+packet_1,DOC005,https://cases.justia.com/federal/appellate-courts/ca9/15-56450/15-56450-2017-11-01.pdf?ts=1509555722,15,3,P015.B03,DOC005.P015.B03,34,57,54.0,89.28,345.0,198.44,"For the foregoing reasons, we affirm the district court’s 
 dismissal of Appellants’ complaint pursuant to Rule 
 12(b)(2). Appellants shall bear costs on appeal.  Fed. R. App. P. 
 39(a)(2). AFFIRMED."

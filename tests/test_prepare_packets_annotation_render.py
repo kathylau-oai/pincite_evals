@@ -16,21 +16,21 @@ format_annotation_block_id = prepare_packets_script.format_annotation_block_id
 render_annotated_text = prepare_packets_script.render_annotated_text
 
 
-def test_format_annotation_block_id_converts_canonical_token() -> None:
-    assert format_annotation_block_id("DOC001[P001.B01]") == "DOC001.P001.B01"
+def test_format_annotation_block_id_accepts_dotted_token() -> None:
+    assert format_annotation_block_id("DOC001.P001.B01") == "DOC001.P001.B01"
 
 
 def test_format_annotation_block_id_rejects_invalid_token() -> None:
     with pytest.raises(ValueError, match="Invalid citation token"):
-        format_annotation_block_id("DOC001.P001.B01")
+        format_annotation_block_id("DOC001[P001.B01]")
 
 
 def test_render_annotated_text_uses_block_xml_tags() -> None:
     blocks_dataframe = pd.DataFrame(
         [
-            {"page_number": 1, "citation_token": "DOC001[P001.B01]", "text": "First block text."},
-            {"page_number": 1, "citation_token": "DOC001[P001.B02]", "text": "Second block text."},
-            {"page_number": 2, "citation_token": "DOC001[P002.B01]", "text": "Third block text."},
+            {"page_number": 1, "citation_token": "DOC001.P001.B01", "text": "First block text."},
+            {"page_number": 1, "citation_token": "DOC001.P001.B02", "text": "Second block text."},
+            {"page_number": 2, "citation_token": "DOC001.P002.B01", "text": "Third block text."},
         ]
     )
 

@@ -61,20 +61,20 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
 ### Citations, normalization, and packet rendering
 
 - **Excerpt citation parsing accepted overly broad IDs and legacy styles**
-  - **Fix**: Enforce only `DOC_ID[P<page>.B<block>]` in parser/tests and reject legacy paragraph citations.
+  - **Fix**: Enforce only dotted packet block IDs (`DOC###.P###.B##`) in parser/tests and reject legacy paragraph citations.
   - **Why**: Keeps citations block-level, deterministic, and consistent with the current grading format.
 
 - **Packet text needed unambiguous, low-noise block boundaries**
   - **Fix**: Render annotated packet text with XML wrappers: `<BLOCK id="DOC###.P###.B##"> ... </BLOCK>` per block.
   - **Why**: Makes block anchors explicit with lower token noise and simpler parsing.
 
-- **Packet annotations exposed XML block IDs while generation expected bracket citations**
-  - **Fix**: Accept both `DOC###.P###.B##` and `DOC###[P###.B##]` and normalize to canonical tokens before schema/deterministic checks.
-  - **Why**: Keeps generation/validation compatible with updated packet rendering without breaking downstream grading.
+- **Packet annotations exposed XML block IDs while some components expected bracket citations**
+  - **Fix**: Standardize on dotted packet block IDs (`DOC###.P###.B##`) everywhere and reject bracket citation notation.
+  - **Why**: Eliminates notation drift and keeps parsing/validation deterministic.
 
 - **Verifier false-rejected due to mixed citation notation between item JSON and packet corpus**
-  - **Fix**: Render verifier item payload citations in dotted block-id format and explicitly instruct the verifier that `DOC001[P001.B01]` and `DOC001.P001.B01` are equivalent.
-  - **Why**: Prevents notation-only rejections and keeps validation focused on substantive grading quality.
+  - **Fix**: Require dotted packet block IDs (`DOC###.P###.B##`) in item payloads and verifier prompts; fail bracket-style citations at validation time.
+  - **Why**: Prevents notation-only disputes and keeps validation focused on substantive grading quality.
 
 ### Synthetic generation: scope, quality, and throughput
 
@@ -132,6 +132,10 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
   - **Fix**: Move graders into `src/pincite_evals/graders` and import via `pincite_evals.graders`.
   - **Why**: Keeps all runtime code under one package tree and avoids path-dependent behavior.
 
+- **Run artifacts failed to write when `generation/candidates` was missing mid-run**
+  - **Fix**: Resolve packet/output/dataset roots to absolute paths during config load and re-`mkdir` generation output subdirectories immediately before candidate/metrics writes.
+  - **Why**: Prevents late-stage `FileNotFoundError` from cwd drift or partial-run directory cleanup.
+
 ### Reliability and correctness in structured outputs / grading contracts
 
 - **`client.responses.parse(...)` can raise local `ValidationError` on truncated/malformed structured output**
@@ -157,3 +161,7 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
 - **String `.replace(...)` prompt injection drifted as templates grew**
   - **Fix**: Centralize prompt rendering with Jinja (`Environment(undefined=StrictUndefined)`) and migrate prompt files to explicit Jinja variables.
   - **Why**: Missing placeholders now fail fast, prompt loading is consistent across pipelines, and template changes are safer to refactor.
+
+- **Generation prompts mixed critical instructions into `user` messages**
+  - **Fix**: Keep instruction-heavy guidance in mode `system.txt` templates (including `{{ lawyer_query_style_guide }}`) and keep mode `user.txt` prompts minimal (`generate` + packet corpus only).
+  - **Why**: Preserves instruction priority and reduces drift where high-priority constraints are buried in lower-priority prompt roles.

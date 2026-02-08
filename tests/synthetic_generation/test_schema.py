@@ -20,7 +20,7 @@ def test_schema_accepts_valid_item():
             "user_query": "Draft a memo section.",
             "scenario_facts": ["Assume closed-world packet."],
             "grading_contract": {
-                "expected_citation_groups": [["DOC001[P001.B01]"]],
+                "expected_citation_groups": [["DOC001.P001.B01"]],
             },
         }
     )
@@ -47,7 +47,7 @@ def test_schema_rejects_invalid_citation_format():
         )
 
 
-def test_schema_accepts_xml_citation_and_normalizes():
+def test_schema_accepts_dotted_citation_tokens():
     item = SyntheticItem.model_validate(
         {
             "schema_version": "v1",
@@ -65,17 +65,19 @@ def test_schema_accepts_xml_citation_and_normalizes():
         }
     )
 
-    assert item.grading_contract.expected_citation_groups[0][0] == "DOC001[P001.B01]"
+    assert item.grading_contract.expected_citation_groups[0][0] == "DOC001.P001.B01"
 
 
-def test_format_citation_token_as_block_id_converts_canonical_and_xml():
-    assert format_citation_token_as_block_id("DOC001[P001.B01]") == "DOC001.P001.B01"
+def test_format_citation_token_as_block_id_accepts_only_dotted():
     assert format_citation_token_as_block_id("DOC001.P001.B01") == "DOC001.P001.B01"
+    with pytest.raises(ValueError):
+        format_citation_token_as_block_id("DOC001[P001.B01]")
 
 
-def test_extract_doc_id_from_citation_token_handles_both_formats():
-    assert extract_doc_id_from_citation_token("DOC001[P001.B01]") == "DOC001"
+def test_extract_doc_id_from_citation_token_accepts_only_dotted():
     assert extract_doc_id_from_citation_token("DOC001.P001.B01") == "DOC001"
+    with pytest.raises(ValueError):
+        extract_doc_id_from_citation_token("DOC001[P001.B01]")
 
 
 def test_schema_allows_mode_a_with_empty_expected_citations():

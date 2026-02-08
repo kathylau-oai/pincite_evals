@@ -4,30 +4,31 @@ from typing import Literal
 from pydantic import BaseModel, Field, field_validator, model_validator
 
 
-CANONICAL_CITATION_TOKEN_PATTERN = re.compile(r"^DOC\d{3}\[P\d{3}\.B\d{2}\]$")
-XML_CITATION_TOKEN_PATTERN = re.compile(r"^DOC\d{3}\.P\d{3}\.B\d{2}$")
+# Citation tokens must be dotted packet block IDs:
+#   DOC###.P###.B##
+#
+# We intentionally do not accept bracket citations (DOC###\[P###.B##\]) to keep the
+# pipeline aligned with packet rendering (<BLOCK id="DOC###.P###.B##"> ...).
+DOTTED_CITATION_TOKEN_PATTERN = re.compile(r"^DOC\d{3}\.P\d{3}\.B\d{2}$")
 
 
 def normalize_citation_token(citation_token: str) -> str:
     text_value = citation_token.strip()
-    if CANONICAL_CITATION_TOKEN_PATTERN.match(text_value):
+    if DOTTED_CITATION_TOKEN_PATTERN.match(text_value):
         return text_value
-    if XML_CITATION_TOKEN_PATTERN.match(text_value):
-        doc_id, page_number, block_number = text_value.split(".")
-        return f"{doc_id}[{page_number}.{block_number}]"
-    raise ValueError(f"Invalid citation token '{citation_token}'. Expected DOC_ID[P###.B##] or DOC_ID.P###.B##.")
+    raise ValueError(
+        f"Invalid citation token '{citation_token}'. Expected DOC###.P###.B## (dotted packet block ID)."
+    )
 
 
 def format_citation_token_as_block_id(citation_token: str) -> str:
-    normalized_citation_token = normalize_citation_token(citation_token)
-    doc_id, excerpt_id = normalized_citation_token.split("[", maxsplit=1)
-    excerpt_id = excerpt_id.rstrip("]")
-    return f"{doc_id}.{excerpt_id}"
+    # Citation tokens are already block IDs in dotted format.
+    return normalize_citation_token(citation_token)
 
 
 def extract_doc_id_from_citation_token(citation_token: str) -> str:
     normalized_citation_token = normalize_citation_token(citation_token)
-    return normalized_citation_token.split("[", maxsplit=1)[0]
+    return normalized_citation_token.split(".", maxsplit=1)[0]
 
 
 class GradingContract(BaseModel):
