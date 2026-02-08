@@ -2121,6 +2121,137 @@ def _write_manifest(
     (run_dir / "manifest.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
+def _build_terminal_error_mode_summary_frame(
+    predictions_and_grades_frame: pd.DataFrame,
+    error_frame: pd.DataFrame,
+) -> pd.DataFrame:
+    summary_columns = [
+        "model_config",
+        "target_error_mode",
+        "item_count",
+        "completed_count",
+        "model_error_count",
+        "model_incomplete_count",
+        "required_grader_eval_count",
+        "required_grader_pass_rate",
+        "grader_issue_count",
+        "latency_p50_seconds",
+        "latency_p95_seconds",
+        "total_tokens_avg",
+    ]
+    if predictions_and_grades_frame.empty:
+        return pd.DataFrame(columns=summary_columns)
+
+    grouped_rows: List[Dict[str, Any]] = []
+    grouped_predictions = predictions_and_grades_frame.groupby(
+        ["model_config", "target_error_mode"], dropna=False, sort=False
+    )
+    for (model_config, target_error_mode), mode_rows in grouped_predictions:
+        response_status_series = mode_rows.get("response_status", pd.Series(index=mode_rows.index, dtype=object))
+        grader_pass_series = mode_rows.get(
+            "overall_required_graders_passed",
+            pd.Series(index=mode_rows.index, dtype=object),
+        )
+
+        grader_eval_series = grader_pass_series[grader_pass_series.notna()].astype(bool)
+        required_grader_pass_rate = float(grader_eval_series.mean()) if not grader_eval_series.empty else None
+
+        latency_series = pd.to_numeric(mode_rows.get("latency_seconds"), errors="coerce")
+        token_series = pd.to_numeric(mode_rows.get("total_tokens"), errors="coerce")
+
+        grouped_rows.append(
+            {
+                "model_config": str(model_config),
+                "target_error_mode": str(target_error_mode),
+                "item_count": int(mode_rows.shape[0]),
+                "completed_count": int((response_status_series == "completed").sum()),
+                "model_error_count": int((response_status_series == "error").sum()),
+                "model_incomplete_count": int((response_status_series == "incomplete").sum()),
+                "required_grader_eval_count": int(grader_eval_series.shape[0]),
+                "required_grader_pass_rate": required_grader_pass_rate,
+                "latency_p50_seconds": (
+                    float(latency_series.quantile(0.50))
+                    if not latency_series.dropna().empty
+                    else None
+                ),
+                "latency_p95_seconds": (
+                    float(latency_series.quantile(0.95))
+                    if not latency_series.dropna().empty
+                    else None
+                ),
+                "total_tokens_avg": float(token_series.mean()) if not token_series.dropna().empty else None,
+            }
+        )
+
+    summary_frame = pd.DataFrame(grouped_rows)
+    summary_frame["grader_issue_count"] = 0
+
+    if not error_frame.empty:
+        grader_issue_frame = error_frame[error_frame["stage"] == "grader"]
+        if not grader_issue_frame.empty:
+            grader_issue_counts = (
+                grader_issue_frame.groupby(["model_config", "target_error_mode"], dropna=False)
+                .size()
+                .reset_index(name="grader_issue_count")
+            )
+            summary_frame = summary_frame.merge(
+                grader_issue_counts,
+                on=["model_config", "target_error_mode"],
+                how="left",
+                suffixes=("", "_from_errors"),
+            )
+            summary_frame["grader_issue_count"] = (
+                summary_frame["grader_issue_count_from_errors"].fillna(summary_frame["grader_issue_count"]).fillna(0).astype(int)
+            )
+            summary_frame = summary_frame.drop(columns=["grader_issue_count_from_errors"])
+
+    summary_frame = summary_frame.sort_values(
+        by=["model_config", "target_error_mode"],
+        kind="mergesort",
+    ).reset_index(drop=True)
+    return summary_frame[summary_columns]
+
+
+def _build_terminal_error_mode_summary_lines(
+    predictions_and_grades_frame: pd.DataFrame,
+    error_frame: pd.DataFrame,
+) -> List[str]:
+    summary_frame = _build_terminal_error_mode_summary_frame(
+        predictions_and_grades_frame=predictions_and_grades_frame,
+        error_frame=error_frame,
+    )
+    if summary_frame.empty:
+        return ["", "Evaluation Summary by Error Mode", "No rows were evaluated."]
+
+    display_frame = summary_frame.rename(
+        columns={
+            "model_config": "model",
+            "target_error_mode": "mode",
+            "item_count": "items",
+            "completed_count": "completed",
+            "model_error_count": "model_errors",
+            "model_incomplete_count": "model_incomplete",
+            "required_grader_eval_count": "grader_rows",
+            "required_grader_pass_rate": "grader_pass_rate",
+            "grader_issue_count": "grader_issues",
+            "latency_p50_seconds": "lat_p50_s",
+            "latency_p95_seconds": "lat_p95_s",
+            "total_tokens_avg": "tokens_avg",
+        }
+    )
+
+    display_frame["grader_pass_rate"] = display_frame["grader_pass_rate"].map(
+        lambda value: "n/a" if pd.isna(value) else f"{float(value):.1%}"
+    )
+    for numeric_column in ["lat_p50_s", "lat_p95_s", "tokens_avg"]:
+        display_frame[numeric_column] = display_frame[numeric_column].map(
+            lambda value: "n/a" if pd.isna(value) else f"{float(value):.2f}"
+        )
+
+    lines = ["", "Evaluation Summary by Error Mode", display_frame.to_string(index=False)]
+    return lines
+
+
 def _build_run_id(args: argparse.Namespace) -> str:
     if args.run_id:
         return _sanitize_name(args.run_id)
@@ -2297,6 +2428,12 @@ def main() -> None:
             grader_frame=grader_frame,
         )
         predictions_and_grades_debug_frame.to_csv(debug_dir / "predictions_and_grades.csv", index=False)
+
+    for summary_line in _build_terminal_error_mode_summary_lines(
+        predictions_and_grades_frame=predictions_and_grades_frame,
+        error_frame=error_frame,
+    ):
+        print(summary_line)
 
     print(f"Run complete. Artifacts saved to: {run_dir}")
 

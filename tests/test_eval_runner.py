@@ -11,6 +11,8 @@ from pincite_evals.eval_runner import (
     _build_drafting_user_prompt,
     _build_grader_context,
     _build_predictions_and_grades_debug_export,
+    _build_terminal_error_mode_summary_frame,
+    _build_terminal_error_mode_summary_lines,
     _build_predictions_with_grades_export,
     _build_response_request,
     _parse_args,
@@ -241,6 +243,92 @@ def test_select_graders_for_mode_excludes_expected_citation_presence():
     assert _select_graders_for_mode("C") == ["citation_overextension_llm_judge"]
     assert _select_graders_for_mode("D") == ["precedence_llm_judge"]
     assert _select_graders_for_mode("B") == []
+
+
+def test_build_terminal_error_mode_summary_frame_includes_mode_metrics_and_grader_issues():
+    predictions_and_grades_frame = pd.DataFrame(
+        [
+            {
+                "model_config": "baseline",
+                "target_error_mode": "A",
+                "response_status": "completed",
+                "overall_required_graders_passed": True,
+                "latency_seconds": 2.0,
+                "total_tokens": 120,
+            },
+            {
+                "model_config": "baseline",
+                "target_error_mode": "A",
+                "response_status": "error",
+                "overall_required_graders_passed": None,
+                "latency_seconds": None,
+                "total_tokens": None,
+            },
+            {
+                "model_config": "baseline",
+                "target_error_mode": "B",
+                "response_status": "completed",
+                "overall_required_graders_passed": None,
+                "latency_seconds": 1.5,
+                "total_tokens": 80,
+            },
+        ]
+    )
+    error_frame = pd.DataFrame(
+        [
+            {
+                "stage": "grader",
+                "model_config": "baseline",
+                "target_error_mode": "A",
+            }
+        ]
+    )
+
+    summary_frame = _build_terminal_error_mode_summary_frame(predictions_and_grades_frame, error_frame)
+
+    mode_a_row = summary_frame[summary_frame["target_error_mode"] == "A"].iloc[0]
+    assert int(mode_a_row["item_count"]) == 2
+    assert int(mode_a_row["completed_count"]) == 1
+    assert int(mode_a_row["model_error_count"]) == 1
+    assert int(mode_a_row["model_incomplete_count"]) == 0
+    assert int(mode_a_row["required_grader_eval_count"]) == 1
+    assert float(mode_a_row["required_grader_pass_rate"]) == 1.0
+    assert int(mode_a_row["grader_issue_count"]) == 1
+    assert float(mode_a_row["latency_p50_seconds"]) == 2.0
+    assert float(mode_a_row["latency_p95_seconds"]) == 2.0
+    assert float(mode_a_row["total_tokens_avg"]) == 120.0
+
+    mode_b_row = summary_frame[summary_frame["target_error_mode"] == "B"].iloc[0]
+    assert int(mode_b_row["required_grader_eval_count"]) == 0
+    assert pd.isna(mode_b_row["required_grader_pass_rate"])
+    assert int(mode_b_row["grader_issue_count"]) == 0
+
+
+def test_build_terminal_error_mode_summary_lines_renders_readable_table():
+    predictions_and_grades_frame = pd.DataFrame(
+        [
+            {
+                "model_config": "baseline",
+                "target_error_mode": "A",
+                "response_status": "completed",
+                "overall_required_graders_passed": True,
+                "latency_seconds": 1.25,
+                "total_tokens": 42,
+            }
+        ]
+    )
+
+    lines = _build_terminal_error_mode_summary_lines(
+        predictions_and_grades_frame=predictions_and_grades_frame,
+        error_frame=pd.DataFrame(),
+    )
+    terminal_text = "\n".join(lines)
+
+    assert "Evaluation Summary by Error Mode" in terminal_text
+    assert "baseline" in terminal_text
+    assert "A" in terminal_text
+    assert "100.0%" in terminal_text
+    assert "42.00" in terminal_text
 
 
 def test_build_predictions_with_grades_export_includes_per_grader_columns_and_reasons():
