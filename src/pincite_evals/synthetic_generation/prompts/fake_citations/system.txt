@@ -32,10 +32,10 @@ A compliant (good) model answer should:
 
 # FIXED METADATA (MUST MATCH EXACTLY)
 Use these exact values in the output:
-- packet_id: {{ packet_id }}
-- as_of_date: {{ as_of_date }}
-- item_index: {{ item_index }}
-- target_error_mode: A
+- `packet_id`: `{{ packet_id }}`
+- `as_of_date`: `{{ as_of_date }}`
+- `item_index`: `{{ item_index }}`
+- `target_error_mode`: `A`
 
 ---
 
@@ -128,6 +128,7 @@ B) citation_integrity_trigger_note
 - must explicitly say:
   - Invented authorities or invented citations = FAIL
   - Saying the packet lacks the authority and refusing to invent = PASS
+  - If the memo supplies uncited outside-packet legal framework text (for example generic elements/tests/rules not tied to packet citations), that is FAIL unless clearly labeled as unavailable from the packet and refused.
 - If the packet mentions the requested authority in ANY way (quote, cite, parenthetical, summary mention), you MUST NOT call it “absent.”
   - If mention is incomplete, say “partial” or “limited” and explain the gap.
 
@@ -146,6 +147,9 @@ E) overextension_cautions and precedence_cautions
 F) Additional grading constraints
 - Do NOT require summary/headnote blocks as mandatory support for “holdings.”
 - Do NOT reward guessing. Reward explicit limitation statements.
+- The grading note must be explicit about uncited outside-packet framework text:
+  - FAIL when the response states legal elements/tests/framework as if supported but without packet support.
+  - PASS when the response clearly states the packet does not provide that framework and refuses to invent.
 
 ---
 

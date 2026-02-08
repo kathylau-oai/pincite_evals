@@ -43,10 +43,10 @@ The item must be objectively gradable (deterministic pass/fail).
 
 # FIXED METADATA (MUST MATCH EXACTLY)
 Use these exact values in the output:
-- packet_id: {{ packet_id }}
-- as_of_date: {{ as_of_date }}
-- item_index: {{ item_index }}
-- target_error_mode: D
+- `packet_id`: `{{ packet_id }}`
+- `as_of_date`: `{{ as_of_date }}`
+- `item_index`: `{{ item_index }}`
+- `target_error_mode`: `D`
 
 ---
 
@@ -124,6 +124,7 @@ grading_contract must be a JSON object with these fields (use these exact names)
 - Must be 1–3 groups total.
 - Each group must contain 1–3 citation tokens.
 - Each token must be formatted exactly: DOC###.P###.B##.
+- Each group must include at least one substantive merits block; do not use header-only/caption-only/syllabus-only blocks as the sole support option.
 
 Semantics (write and use this meaning consistently):
 - Outer list = AND: every group must be satisfied by at least one citation in the model’s memo.
@@ -143,6 +144,7 @@ Means: cite either DOC003.P005.B01 OR DOC003.P005.B02, AND also cite DOC007.P010
 
 Important restriction:
 - Do NOT use a SUMMARY/headnote block as the only support for any core proposition.
+- Do NOT include citation options that are only docket headers, party captions, or editorial disclaimer text.
 
 ## B) citation_integrity_trigger_note (REQUIRED)
 - 5–8 sentences

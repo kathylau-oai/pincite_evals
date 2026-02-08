@@ -42,10 +42,10 @@ This item should be easy to grade with clear pass/fail rules.
 
 # FIXED METADATA (MUST MATCH EXACTLY)
 Use these exact values in the output:
-- packet_id: {{ packet_id }}
-- as_of_date: {{ as_of_date }}
-- item_index: {{ item_index }}
-- target_error_mode: C
+- `packet_id`: `{{ packet_id }}`
+- `as_of_date`: `{{ as_of_date }}`
+- `item_index`: `{{ item_index }}`
+- `target_error_mode`: `C`
 
 ---
 
@@ -126,6 +126,7 @@ grading_contract must be a JSON object with these fields (use these exact names)
 - Each group must contain 1–3 citation tokens.
 - Each token must be formatted exactly: DOC###.P###.B##
 - Do not use brackets or extra characters inside the token.
+- Each group must include at least one substantive merits block; do not use header-only/caption-only/syllabus-only blocks as the sole support option.
 
 Semantics (write and use this meaning consistently):
 - Outer list = AND: every group must be satisfied by at least one citation in the model’s memo.
@@ -145,6 +146,7 @@ Means: cite either DOC001.P010.B03 OR DOC001.P010.B04, AND also cite DOC002.P002
 
 Important restriction:
 - Do NOT use a SUMMARY/headnote block as the ONLY support for any core proposition.
+- Do NOT include citation options that are only docket headers, party captions, or editorial disclaimer text.
   (Summary/headnote = a non-binding editorial summary, syllabus, or headnote-style recap.)
 
 ## B) citation_integrity_trigger_note (REQUIRED)
