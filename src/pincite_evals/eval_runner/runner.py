@@ -27,7 +27,6 @@ from pincite_evals.citations import extract_excerpt_citations
 from pincite_evals.graders import (
     CitationFidelityLLMJudgeGrader,
     CitationOverextensionLLMJudgeGrader,
-    ExpectedCitationPresenceGrader,
     PrecedenceLLMJudgeGrader,
 )
 from pincite_evals.openai_model_capabilities import supports_reasoning_effort
@@ -1248,7 +1247,9 @@ def _build_grader_context(row: Dict[str, Any], block_text_by_packet: Dict[str, D
 
 
 def _select_graders_for_mode(target_error_mode: str) -> List[str]:
-    selected_graders = ["expected_citation_presence"]
+    # Keep required graders scoped to mode-specific LLM judges for now.
+    # expected_citation_presence is intentionally disabled because it is too noisy.
+    selected_graders: List[str] = []
     mode_token = str(target_error_mode).strip().upper()
     extra_grader = MODE_TO_EXTRA_GRADER.get(mode_token)
     if extra_grader:
@@ -1257,9 +1258,7 @@ def _select_graders_for_mode(target_error_mode: str) -> List[str]:
 
 
 def _build_grader_registry(args: argparse.Namespace) -> Dict[str, Any]:
-    grader_registry: Dict[str, Any] = {
-        "expected_citation_presence": ExpectedCitationPresenceGrader(),
-    }
+    grader_registry: Dict[str, Any] = {}
 
     if args.dry_run:
         return grader_registry
@@ -1341,7 +1340,7 @@ def _run_single_grader(
             {},
         )
 
-    if grader_name != "expected_citation_presence" and dry_run:
+    if dry_run:
         return (
             {
                 **base_row,
@@ -1739,6 +1738,7 @@ def _build_predictions_with_grades_export(
 
     grader_with_reason = grader_frame.copy()
     grader_with_reason["grader_reason"] = grader_with_reason.apply(_build_grader_reason_text, axis=1)
+    grader_names = sorted(grader_with_reason["grader_name"].dropna().astype(str).unique().tolist())
 
     wide_columns = [
         ("grader_status", "status"),
@@ -1749,6 +1749,12 @@ def _build_predictions_with_grades_export(
         ("grader_details_json", "details_json"),
     ]
 
+    # Some test fixtures and older artifacts can omit optional grader fields.
+    # Keep export robust by creating missing columns with null values.
+    for grader_column_name, _ in wide_columns:
+        if grader_column_name not in grader_with_reason.columns:
+            grader_with_reason[grader_column_name] = None
+
     merged_frame = compact_frame
     for grader_column_name, export_suffix in wide_columns:
         wide_frame = (
@@ -1758,6 +1764,60 @@ def _build_predictions_with_grades_export(
                 values=grader_column_name,
                 aggfunc="first",
             )
+            .reindex(columns=grader_names)
+            .rename(columns=lambda grader_name: f"grader_{grader_name}_{export_suffix}")
+            .reset_index()
+        )
+        merged_frame = merged_frame.merge(wide_frame, on=key_columns, how="left")
+
+    return merged_frame
+
+
+def _build_predictions_and_grades_debug_export(predictions_frame: pd.DataFrame, grader_frame: pd.DataFrame) -> pd.DataFrame:
+    key_columns = ["model_config", "source_row_index", "item_id"]
+
+    # Keep this debug artifact focused on manual grader review.
+    preferred_columns = [
+        "model_config",
+        "source_row_index",
+        "item_id",
+        "packet_id",
+        "query_id",
+        "as_of_date",
+        "target_error_mode",
+        "source_user_query",
+        "model_output",
+        "response_status",
+    ]
+    available_columns = [column for column in preferred_columns if column in predictions_frame.columns]
+    debug_frame = predictions_frame[available_columns].copy()
+    debug_frame = debug_frame.rename(columns={"source_user_query": "user_query"})
+
+    if grader_frame.empty:
+        return debug_frame
+
+    grader_with_reason = grader_frame.copy()
+    grader_with_reason["grader_reason"] = grader_with_reason.apply(_build_grader_reason_text, axis=1)
+    grader_names = sorted(grader_with_reason["grader_name"].dropna().astype(str).unique().tolist())
+
+    wide_columns = [
+        ("grader_passed", "passed"),
+        ("grader_reason", "reason"),
+    ]
+    for grader_column_name, _ in wide_columns:
+        if grader_column_name not in grader_with_reason.columns:
+            grader_with_reason[grader_column_name] = None
+
+    merged_frame = debug_frame
+    for grader_column_name, export_suffix in wide_columns:
+        wide_frame = (
+            grader_with_reason.pivot_table(
+                index=key_columns,
+                columns="grader_name",
+                values=grader_column_name,
+                aggfunc="first",
+            )
+            .reindex(columns=grader_names)
             .rename(columns=lambda grader_name: f"grader_{grader_name}_{export_suffix}")
             .reset_index()
         )
@@ -2232,7 +2292,11 @@ def main() -> None:
             ["input_tokens", "output_tokens", "reasoning_tokens", "total_tokens"],
             "tokens",
         ).to_csv(debug_dir / "token_metrics.csv", index=False)
-        predictions_and_grades_frame.to_csv(debug_dir / "predictions_and_grades.csv", index=False)
+        predictions_and_grades_debug_frame = _build_predictions_and_grades_debug_export(
+            predictions_frame=all_results_frame,
+            grader_frame=grader_frame,
+        )
+        predictions_and_grades_debug_frame.to_csv(debug_dir / "predictions_and_grades.csv", index=False)
 
     print(f"Run complete. Artifacts saved to: {run_dir}")
 

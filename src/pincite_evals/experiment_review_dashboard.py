@@ -107,7 +107,13 @@ def list_experiment_runs(results_root: Path) -> List[Path]:
     if not results_root.exists():
         return []
 
-    run_directories = [path for path in results_root.iterdir() if path.is_dir()]
+    run_directories: List[Path] = []
+    for run_directory in results_root.iterdir():
+        if not run_directory.is_dir():
+            continue
+        predictions_file_path = run_directory / "final" / "predictions_with_grades.csv"
+        if predictions_file_path.exists():
+            run_directories.append(run_directory)
 
     def run_sort_key(run_path: Path) -> tuple[int, datetime]:
         parsed_timestamp = _parse_experiment_timestamp(run_path.name)

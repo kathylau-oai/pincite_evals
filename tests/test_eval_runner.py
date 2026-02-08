@@ -10,6 +10,7 @@ from pincite_evals.eval_runner import (
     ModelConfig,
     _build_drafting_user_prompt,
     _build_grader_context,
+    _build_predictions_and_grades_debug_export,
     _build_predictions_with_grades_export,
     _build_response_request,
     _parse_args,
@@ -18,6 +19,7 @@ from pincite_evals.eval_runner import (
     _evaluate_single_row,
     _prepare_spreadsheet_friendly_export_frame,
     _prepare_dataset,
+    _select_graders_for_mode,
     _template_grade,
     _write_spreadsheet_friendly_csv,
 )
@@ -234,7 +236,14 @@ def test_build_grader_context_allows_mode_a_unexpected_when_expected_groups_empt
     assert context["allow_unexpected_citations_when_no_expected_groups"] is True
 
 
-def test_build_predictions_with_grades_export_keeps_compact_columns_and_reasons():
+def test_select_graders_for_mode_excludes_expected_citation_presence():
+    assert _select_graders_for_mode("A") == ["citation_fidelity_llm_judge"]
+    assert _select_graders_for_mode("C") == ["citation_overextension_llm_judge"]
+    assert _select_graders_for_mode("D") == ["precedence_llm_judge"]
+    assert _select_graders_for_mode("B") == []
+
+
+def test_build_predictions_with_grades_export_includes_per_grader_columns_and_reasons():
     predictions_with_grades_frame = pd.DataFrame(
         [
             {
@@ -303,9 +312,9 @@ def test_build_predictions_with_grades_export_keeps_compact_columns_and_reasons(
         ]
     )
 
-    compact_frame = _build_predictions_with_grades_export(predictions_with_grades_frame, grader_frame)
+    export_frame = _build_predictions_with_grades_export(predictions_with_grades_frame, grader_frame)
 
-    assert compact_frame.columns.tolist() == [
+    expected_base_columns = {
         "model_config",
         "source_row_index",
         "item_id",
@@ -318,15 +327,110 @@ def test_build_predictions_with_grades_export_keeps_compact_columns_and_reasons(
         "response_status",
         "overall_required_graders_passed",
         "overall_required_graders_reason",
-    ]
-    assert "rendered_user_prompt" not in compact_frame.columns
-    assert compact_frame.loc[0, "overall_required_graders_reason"] == "All required graders passed."
-    assert "expected_citation_presence: Missing groups: 1; unexpected citations: 0." in compact_frame.loc[
+    }
+    assert expected_base_columns.issubset(set(export_frame.columns))
+    assert "rendered_user_prompt" not in export_frame.columns
+    assert export_frame.loc[0, "overall_required_graders_reason"] == "All required graders passed."
+    assert "expected_citation_presence: Missing groups: 1; unexpected citations: 0." in export_frame.loc[
         1, "overall_required_graders_reason"
     ]
-    assert "citation_overextension_llm_judge: Claim overstates the authority." in compact_frame.loc[
+    assert "citation_overextension_llm_judge: Claim overstates the authority." in export_frame.loc[
         1, "overall_required_graders_reason"
     ]
+
+    # Per-grader granular columns are required for easier manual audit.
+    assert export_frame.loc[0, "grader_expected_citation_presence_status"] == "completed"
+    assert bool(export_frame.loc[0, "grader_expected_citation_presence_passed"]) is True
+    assert export_frame.loc[0, "grader_expected_citation_presence_reason"] == "Grader did not provide a reason."
+
+    assert export_frame.loc[1, "grader_expected_citation_presence_status"] == "completed"
+    assert bool(export_frame.loc[1, "grader_expected_citation_presence_passed"]) is False
+    assert export_frame.loc[1, "grader_expected_citation_presence_reason"] == "Missing groups: 1; unexpected citations: 0."
+
+    assert export_frame.loc[1, "grader_citation_overextension_llm_judge_status"] == "completed"
+    assert bool(export_frame.loc[1, "grader_citation_overextension_llm_judge_passed"]) is False
+    assert export_frame.loc[1, "grader_citation_overextension_llm_judge_reason"] == "Claim overstates the authority."
+
+
+def test_build_predictions_and_grades_debug_export_keeps_only_granular_grader_pass_fail_and_reason():
+    predictions_frame = pd.DataFrame(
+        [
+            {
+                "model_config": "baseline",
+                "source_row_index": 0,
+                "item_id": "item_0",
+                "packet_id": "packet_1",
+                "query_id": "q_0",
+                "as_of_date": "2026-02-08",
+                "target_error_mode": "A",
+                "source_user_query": "Query 0",
+                "model_output": "Output 0",
+                "response_status": "completed",
+                "overall_required_graders_passed": True,
+            },
+            {
+                "model_config": "baseline",
+                "source_row_index": 1,
+                "item_id": "item_1",
+                "packet_id": "packet_1",
+                "query_id": "q_1",
+                "as_of_date": "2026-02-08",
+                "target_error_mode": "C",
+                "source_user_query": "Query 1",
+                "model_output": "Output 1",
+                "response_status": "completed",
+                "overall_required_graders_passed": False,
+            },
+        ]
+    )
+
+    grader_frame = pd.DataFrame(
+        [
+            {
+                "model_config": "baseline",
+                "source_row_index": 0,
+                "item_id": "item_0",
+                "grader_name": "expected_citation_presence",
+                "grader_status": "completed",
+                "grader_passed": True,
+                "grader_details_json": "{}",
+            },
+            {
+                "model_config": "baseline",
+                "source_row_index": 1,
+                "item_id": "item_1",
+                "grader_name": "citation_overextension_llm_judge",
+                "grader_status": "completed",
+                "grader_passed": False,
+                "grader_details_json": "{\"reason\": \"Claim overstates the authority.\"}",
+            },
+        ]
+    )
+
+    export_frame = _build_predictions_and_grades_debug_export(predictions_frame, grader_frame)
+
+    assert "user_query" in export_frame.columns
+    assert "source_user_query" not in export_frame.columns
+    assert "overall_required_graders_passed" not in export_frame.columns
+    assert "overall_required_graders_reason" not in export_frame.columns
+
+    assert bool(export_frame.loc[0, "grader_expected_citation_presence_passed"]) is True
+    assert export_frame.loc[0, "grader_expected_citation_presence_reason"] == "Grader did not provide a reason."
+    assert bool(export_frame.loc[1, "grader_citation_overextension_llm_judge_passed"]) is False
+    assert export_frame.loc[1, "grader_citation_overextension_llm_judge_reason"] == "Claim overstates the authority."
+
+    unexpected_grader_columns = [
+        column_name
+        for column_name in export_frame.columns
+        if column_name.startswith("grader_")
+        and (
+            column_name.endswith("_status")
+            or column_name.endswith("_score")
+            or column_name.endswith("_label")
+            or column_name.endswith("_details_json")
+        )
+    ]
+    assert unexpected_grader_columns == []
 
 
 def test_prepare_spreadsheet_friendly_export_frame_normalizes_embedded_newlines():

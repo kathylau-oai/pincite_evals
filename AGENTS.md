@@ -144,6 +144,10 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
   - **Fix**: Sort run directories by parsed run-id timestamps first (fallback to `mtime` only when no timestamp suffix exists).
   - **Why**: Keeps default dashboard/run selection aligned with actual experiment chronology.
 
+- **Dashboard failure review could show empty query/grader details on compact exports**
+  - **Fix**: In review UIs, support both schema variants (`source_user_query` and `user_query`) and provide grader fallbacks from `overall_required_graders_*` plus `errors.csv` when per-grader columns are absent.
+  - **Why**: New compact prediction exports omit per-grader item columns, so strict column assumptions hide critical failure context.
+
 - **Synthetic generation + quality audit needed a repeatable one-command path**
   - **Fix**: Use `skills/synthetic-generation-audit/scripts/run_and_analyze.sh` to run (or reuse) all-packet generation and emit a standardized audit report under `results/synthetic_generation_audit/<run_timestamp>/`.
   - **Why**: Keeps accepted/rejected analysis, trace health checks, and prompt-only recommendations consistent across runs.
@@ -217,3 +221,10 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
 - **Citation-fidelity short-circuit rows (`no_citations_predicted`) do not include `judge_result`**
   - **Fix**: Handle these rows separately in audits and contract checks, and validate `judge_result` fields only for rows that actually called the LLM judge.
   - **Why**: Avoids false alarms when measuring schema compliance from `grader_details_json`.
+
+- **`predictions_with_grades.csv` could miss granular grader fields or crash on sparse grader frames**
+  - **Fix**: Always export per-grader wide columns (`status`, `passed`, `score`, `label`, `reason`, `details_json`) and backfill missing optional grader columns before pivoting.
+  - **Why**: Keeps manual review easy and prevents `KeyError` failures when fixtures or legacy grader rows omit optional fields like `grader_score`.
+- **Eval runner stream failures can mask incomplete Responses API outcomes**
+  - **Fix**: Handle stream terminal `response.incomplete` explicitly (including `content_filter`), preserve partial `output_text`/status, and avoid treating missing `response.completed` as an unconditional model request error.
+  - **Why**: In long legal-memo runs, some requests end incomplete rather than completed; collapsing these into generic errors inflates model-failure counts and skips graders unnecessarily.
