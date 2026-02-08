@@ -6,6 +6,7 @@ from typing import Any, Dict, Optional
 
 from openai import OpenAI
 
+from pincite_evals.openai_model_capabilities import supports_reasoning_effort
 from pincite_evals.prompt_templates import load_template_text, render_template_text
 
 PROMPTS_DIR = Path(__file__).resolve().parent / "prompts"
@@ -64,8 +65,9 @@ def call_llm_judge(
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
         ],
-        "reasoning": {"effort": config.reasoning_effort},
     }
+    if supports_reasoning_effort(config.model):
+        request["reasoning"] = {"effort": config.reasoning_effort}
     if response_schema_name is not None and response_schema is not None:
         # Structured outputs ensure judge responses follow the exact JSON contract.
         request["text"] = {
@@ -76,7 +78,11 @@ def call_llm_judge(
                 "strict": True,
             }
         }
-    if config.reasoning_effort == "none":
+    if supports_reasoning_effort(config.model):
+        if config.reasoning_effort == "none":
+            request["temperature"] = config.temperature
+    else:
+        # Non-reasoning models reject `reasoning.effort` — fall back to temperature.
         request["temperature"] = config.temperature
 
     response = client.responses.create(**request)

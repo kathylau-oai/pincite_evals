@@ -1,7 +1,15 @@
 import json
 
-from pincite_evals.graders.citation_fidelity_llm_judge import CitationFidelityLLMJudgeGrader
-from pincite_evals.graders.citation_overextension_llm_judge import CitationOverextensionLLMJudgeGrader
+from typing import cast
+
+from openai import OpenAI
+
+from pincite_evals.graders.citation_fidelity_llm_judge import (
+    CitationFidelityLLMJudgeGrader,
+)
+from pincite_evals.graders.citation_overextension_llm_judge import (
+    CitationOverextensionLLMJudgeGrader,
+)
 from pincite_evals.graders.precedence_llm_judge import PrecedenceLLMJudgeGrader
 
 
@@ -16,7 +24,13 @@ class FakeIncompleteDetails:
 
 
 class FakeResponse:
-    def __init__(self, *, output_text: str, status: str = "completed", incomplete_reason: str | None = None):
+    def __init__(
+        self,
+        *,
+        output_text: str,
+        status: str = "completed",
+        incomplete_reason: str | None = None,
+    ):
         self.id = "resp_test_123"
         self.status = status
         self.output_text = output_text
@@ -61,24 +75,26 @@ def test_citation_fidelity_llm_judge_fails_hallucinated_label():
     fake_client = FakeOpenAIClient(
         FakeResponse(output_text=json.dumps(response_payload))
     )
-    grader = CitationFidelityLLMJudgeGrader(client=fake_client)
+    grader = CitationFidelityLLMJudgeGrader(client=cast(OpenAI, fake_client))
 
     result = grader.grade(
         prompt="p",
         output="o",
         context={
             "citation_fidelity_items": [
-                {"citation_token": "DOC1[P001.B01#AAAA]"}
+                {"citation_token": "DOC1[P001.B01#AAAA]", "exists_in_packet": False}
             ]
         },
     )
     assert result.passed is False
-    assert result.details["blocked_count"] == 1
-    assert fake_client.responses.last_request["model"] == "gpt-5.2"
-    assert fake_client.responses.last_request["service_tier"] == "priority"
-    assert fake_client.responses.last_request["reasoning"] == {"effort": "none"}
-    assert fake_client.responses.last_request["text"]["format"]["type"] == "json_schema"
-    assert "temperature" in fake_client.responses.last_request
+    assert result.details["hallucinated_tokens"] == ["DOC1[P001.B01#AAAA]"]
+    last_request = fake_client.responses.last_request
+    assert last_request is not None
+    assert last_request["model"] == "gpt-5.2"
+    assert last_request["service_tier"] == "priority"
+    assert last_request["reasoning"] == {"effort": "none"}
+    assert last_request["text"]["format"]["type"] == "json_schema"
+    assert "temperature" in last_request
 
 
 def test_overextension_llm_judge_passes_clean_label():
@@ -92,11 +108,13 @@ def test_overextension_llm_judge_passes_clean_label():
     fake_client = FakeOpenAIClient(
         FakeResponse(output_text=json.dumps(response_payload))
     )
-    grader = CitationOverextensionLLMJudgeGrader(client=fake_client)
+    grader = CitationOverextensionLLMJudgeGrader(client=cast(OpenAI, fake_client))
 
-    result = grader.grade(prompt="p", output="o", context={"overextension_trigger_note": "trap note"})
+    result = grader.grade(
+        prompt="p", output="o", context={"overextension_trigger_note": "trap note"}
+    )
     assert result.passed is True
-    assert result.details["label"] == "no_overextension"
+    assert result.details["score"] == 1.0
 
 
 def test_overextension_llm_judge_no_overextension_label_overrides_low_score():
@@ -110,12 +128,13 @@ def test_overextension_llm_judge_no_overextension_label_overrides_low_score():
     fake_client = FakeOpenAIClient(
         FakeResponse(output_text=json.dumps(response_payload))
     )
-    grader = CitationOverextensionLLMJudgeGrader(client=fake_client)
+    grader = CitationOverextensionLLMJudgeGrader(client=cast(OpenAI, fake_client))
 
-    result = grader.grade(prompt="p", output="o", context={"overextension_trigger_note": "trap note"})
+    result = grader.grade(
+        prompt="p", output="o", context={"overextension_trigger_note": "trap note"}
+    )
     assert result.passed is True
-    assert result.details["label"] == "no_overextension"
-    assert result.details["score"] == 0.12
+    assert result.details["score"] == 1.0
 
 
 def test_precedence_llm_judge_fails_precedence_error():
@@ -129,11 +148,13 @@ def test_precedence_llm_judge_fails_precedence_error():
     fake_client = FakeOpenAIClient(
         FakeResponse(output_text=json.dumps(response_payload))
     )
-    grader = PrecedenceLLMJudgeGrader(client=fake_client)
+    grader = PrecedenceLLMJudgeGrader(client=cast(OpenAI, fake_client))
 
-    result = grader.grade(prompt="p", output="o", context={"precedence_trigger_note": "note"})
+    result = grader.grade(
+        prompt="p", output="o", context={"precedence_trigger_note": "note"}
+    )
     assert result.passed is False
-    assert result.details["label"] == "precedence_error"
+    assert result.details["score"] == 0.0
 
 
 def test_llm_judge_requires_non_empty_reason():
@@ -144,11 +165,15 @@ def test_llm_judge_requires_non_empty_reason():
         "reason": "",
         "evidence": ["Short quote"],
     }
-    fake_client = FakeOpenAIClient(FakeResponse(output_text=json.dumps(response_payload)))
-    grader = CitationOverextensionLLMJudgeGrader(client=fake_client)
+    fake_client = FakeOpenAIClient(
+        FakeResponse(output_text=json.dumps(response_payload))
+    )
+    grader = CitationOverextensionLLMJudgeGrader(client=cast(OpenAI, fake_client))
 
     try:
-        grader.grade(prompt="p", output="o", context={"overextension_trigger_note": "trap note"})
+        grader.grade(
+            prompt="p", output="o", context={"overextension_trigger_note": "trap note"}
+        )
     except ValueError as error:
         assert "reason" in str(error)
         return
@@ -157,9 +182,15 @@ def test_llm_judge_requires_non_empty_reason():
 
 def test_llm_judge_schemas_require_passed_and_reason():
     graders = [
-        CitationFidelityLLMJudgeGrader(client=FakeOpenAIClient(FakeResponse(output_text="{}"))),
-        CitationOverextensionLLMJudgeGrader(client=FakeOpenAIClient(FakeResponse(output_text="{}"))),
-        PrecedenceLLMJudgeGrader(client=FakeOpenAIClient(FakeResponse(output_text="{}"))),
+        CitationFidelityLLMJudgeGrader(
+            client=cast(OpenAI, FakeOpenAIClient(FakeResponse(output_text="{}")))
+        ),
+        CitationOverextensionLLMJudgeGrader(
+            client=cast(OpenAI, FakeOpenAIClient(FakeResponse(output_text="{}")))
+        ),
+        PrecedenceLLMJudgeGrader(
+            client=cast(OpenAI, FakeOpenAIClient(FakeResponse(output_text="{}")))
+        ),
     ]
 
     for grader in graders:
@@ -167,3 +198,25 @@ def test_llm_judge_schemas_require_passed_and_reason():
         required = schema["required"]
         assert "passed" in required
         assert "reason" in required
+
+
+def test_llm_judge_drops_reasoning_for_gpt4_models():
+    response_payload = {
+        "passed": True,
+        "reason": "Looks good.",
+    }
+    fake_client = FakeOpenAIClient(FakeResponse(output_text=json.dumps(response_payload)))
+    grader = CitationOverextensionLLMJudgeGrader(
+        client=cast(OpenAI, fake_client),
+        model="gpt-4.1",
+        reasoning_effort="high",  # should be ignored/dropped for this model family
+        temperature=0.42,
+    )
+
+    grader.grade(prompt="p", output="o", context={})
+
+    last_request = fake_client.responses.last_request
+    assert last_request is not None
+    assert last_request["model"] == "gpt-4.1"
+    assert "reasoning" not in last_request
+    assert last_request["temperature"] == 0.42

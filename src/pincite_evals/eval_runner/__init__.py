@@ -28,6 +28,7 @@ from pincite_evals.graders import (
     ExpectedCitationPresenceGrader,
     PrecedenceLLMJudgeGrader,
 )
+from pincite_evals.openai_model_capabilities import supports_reasoning_effort
 from pincite_evals.prompt_templates import render_template_file
 from pincite_evals.synthetic_generation.schema import normalize_citation_token
 
@@ -52,7 +53,8 @@ BLOCK_PATTERN = re.compile(
 DEFAULT_DRAFTING_SYSTEM_PROMPT = (
     "You are a careful legal drafting assistant writing an internal litigation memo in a closed-world setting. "
     "Use only the packet authorities provided in the user message. Do not rely on outside law, cases, statutes, "
-    "or treatises. Use pinpoint citations in this exact format: DOC###(P###.B##) written as DOC###[P###.B##]. "
+    "or treatises. Use pinpoint citations as dotted packet block IDs in this exact format: DOC###.P###.B##. "
+    "Use the exact `<BLOCK id=\"DOC###.P###.B##\">` identifiers from the packet; do not use bracket notation. "
     "If authority is missing from the packet, say so explicitly instead of fabricating support."
 )
 
@@ -382,9 +384,15 @@ def _build_response_request(model_config: ModelConfig, prompt_text: str) -> Dict
             {"role": "system", "content": model_config.system_prompt},
             {"role": "user", "content": prompt_text},
         ],
-        "reasoning": {"effort": model_config.reasoning_effort},
     }
-    if model_config.reasoning_effort == "none":
+
+    if supports_reasoning_effort(model_config.model):
+        request["reasoning"] = {"effort": model_config.reasoning_effort}
+        if model_config.reasoning_effort == "none":
+            request["temperature"] = model_config.temperature
+    else:
+        # Many non-reasoning models (e.g. gpt-4o, gpt-4.1) reject `reasoning.effort`.
+        # In that case, we always fall back to temperature-based control.
         request["temperature"] = model_config.temperature
     return request
 
@@ -801,7 +809,7 @@ def _build_drafting_user_prompt(
     guidance = [
         "Output requirements:",
         "1) Draft as an internal legal memo.",
-        "2) Use only packet authorities and cite in DOC###[P###.B##] format.",
+        "2) Use only packet authorities and cite using dotted packet block IDs: DOC###.P###.B##.",
         "3) If authority is missing, say so clearly and do not fabricate citations.",
         "4) Keep legal claims faithful to source scope and qualifiers.",
     ]

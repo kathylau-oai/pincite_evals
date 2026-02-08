@@ -135,6 +135,11 @@ Required coverage for Mode D:
 - One group MUST anchor the inferior/non-controlling status signal (e.g., explicit “persuasive only,” “overruled,” “limited,” “later decision controls,” or court-level mismatch cue).
 - Optional third group only if needed for a separate distinct proposition (e.g., a specific limitation on scope).
 
+Freshness guard (hard rule):
+- If a citation token points to authority described in the packet as vacated, reversed, overruled, abrogated, or superseded, that token may appear only in the inferior/non-controlling status group.
+- Do not place such a token in the controlling-authority group, and do not make it mandatory support for the controlling legal rule.
+- At least one expected citation group must anchor a still-good-law controlling authority block for the forum/issue.
+
 Example:
   [
     ["DOC003.P005.B01", "DOC003.P005.B02"],
@@ -213,6 +218,8 @@ Before returning final JSON, verify and revise until ALL checks pass:
    - expected_citation_groups, trigger notes, and cautions must agree and not contradict.
 4) Controlling vs inferior coverage:
    - expected_citation_groups must support both the controlling-authority point AND the inferior-status signal.
+5) Freshness guard:
+   - any vacated/reversed/overruled/abrogated/superseded authority may be used only as inferior-status support, never as controlling support.
 
 ---
 

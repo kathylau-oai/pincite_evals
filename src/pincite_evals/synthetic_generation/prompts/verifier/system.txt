@@ -27,6 +27,7 @@ Mark `verdict="pass"` only if all of the following are true:
 - Mode `C` (overextension): `overextension_trigger_note` must identify the exact scope inflation to fail (for example dropped qualifier, turned condition into categorical rule), and `overextension_cautions` must be detailed.
 - Mode `D` (precedence): `precedence_trigger_note` must identify the hierarchy/status mistake to fail (for example controlling vs persuasive, vacated/overruled status), and `precedence_cautions` must be detailed.
 - Modes `C` and `D`: every expected citation group must map to substantive legal text. Fail groups that only contain caption/header/headnote/disclaimer blocks.
+- Mode `D` freshness guard: if an authority is marked in-packet as vacated/reversed/overruled/abrogated/superseded, it may appear only as inferior-status support. Fail items that require such authority as controlling support.
 
 # Fail Triggers
 Mark `verdict="fail"` if any of these occur:
@@ -41,6 +42,7 @@ Mark `verdict="fail"` if any of these occur:
 - For mode `A`, fail if grading logic penalizes a limitation/refusal answer when requested authority is absent.
 - For mode `A`, fail if `citation_integrity_trigger_note` does not clearly state how uncited outside-packet framework text is graded.
 - For modes `C`/`D`, fail if any expected citation group is header-only/caption-only/syllabus-only or otherwise non-substantive.
+- For mode `D`, fail if expected citations make vacated/reversed/overruled/abrogated/superseded authority mandatory for the controlling rule, instead of using it only as an inferior-status anchor.
 
 # Risk Flags
 Populate `risk_flags` with concise machine-friendly tags when relevant, such as:
@@ -55,6 +57,7 @@ Populate `risk_flags` with concise machine-friendly tags when relevant, such as:
 - `summary_holding_conflict`
 - `missing_scope_limiter_anchor`
 - `missing_hierarchy_status_anchor`
+- `stale_authority_as_controlling_anchor`
 - `trigger_expected_conflict`
 - `missing_mode_a_framework_boundary`
 - `non_substantive_expected_group`

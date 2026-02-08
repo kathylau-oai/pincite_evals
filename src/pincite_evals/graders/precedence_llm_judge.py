@@ -23,28 +23,13 @@ class PrecedenceLLMJudgeGrader(BaseLLMJudgeGrader):
             "type": "object",
             "additionalProperties": False,
             "properties": {
-                "label": {
-                    "type": "string",
-                    "enum": ["precedence_correct", "precedence_error", "insufficient_evidence"],
-                },
-                "score": {"type": "number"},
                 "passed": {"type": "boolean"},
                 "reason": {"type": "string"},
-                "evidence": {"type": "array", "items": {"type": "string"}},
             },
-            "required": ["label", "score", "passed", "reason", "evidence"],
+            "required": ["passed", "reason"],
         }
 
     def _compute_grade(self, *, parsed: Dict[str, Any], context: Dict[str, Any]) -> tuple[bool, Dict[str, Any]]:
-        score = float(parsed.get("score", 0.0))
-        threshold = float(context.get("pass_threshold", self.pass_threshold))
-        label = str(parsed.get("label", "")).strip().lower()
-        model_passed = bool(parsed.get("passed", False))
-
-        passed = model_passed and (score >= threshold) and (label != "precedence_error")
-
-        return passed, {
-            "score": score,
-            "label": label,
-            "pass_threshold": threshold,
-        }
+        judge_passed = bool(parsed.get("passed", False))
+        score = 1.0 if judge_passed else 0.0
+        return judge_passed, {"score": score}
