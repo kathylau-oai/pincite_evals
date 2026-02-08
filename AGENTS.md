@@ -197,3 +197,11 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
 - **Overextension grader produced contradictory outcomes (`no_overextension` + `passed=true` but failed by thresholded score)**
   - **Fix**: In pass logic, let label + explicit `passed` drive final verdict for `no_overextension`/`overextended`; use score-threshold fallback only for other labels.
   - **Why**: Avoids score-calibration artifacts overriding the grader’s categorical verdict.
+
+- **LLM judge outputs could drift from required fields without strict schema enforcement**
+  - **Fix**: Call Responses API with `text.format` JSON Schema (`strict: true`) per grader and require top-level `passed` + non-empty `reason` in runtime validation before scoring.
+  - **Why**: Keeps grader outputs machine-reliable and prevents silent contract regressions from prompt drift.
+
+- **Citation-fidelity short-circuit rows (`no_citations_predicted`) do not include `judge_result`**
+  - **Fix**: Handle these rows separately in audits and contract checks, and validate `judge_result` fields only for rows that actually called the LLM judge.
+  - **Why**: Avoids false alarms when measuring schema compliance from `grader_details_json`.

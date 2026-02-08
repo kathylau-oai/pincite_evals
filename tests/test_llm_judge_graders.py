@@ -153,3 +153,17 @@ def test_llm_judge_requires_non_empty_reason():
         assert "reason" in str(error)
         return
     raise AssertionError("Expected a ValueError when required 'reason' is empty.")
+
+
+def test_llm_judge_schemas_require_passed_and_reason():
+    graders = [
+        CitationFidelityLLMJudgeGrader(client=FakeOpenAIClient(FakeResponse(output_text="{}"))),
+        CitationOverextensionLLMJudgeGrader(client=FakeOpenAIClient(FakeResponse(output_text="{}"))),
+        PrecedenceLLMJudgeGrader(client=FakeOpenAIClient(FakeResponse(output_text="{}"))),
+    ]
+
+    for grader in graders:
+        schema = grader._response_schema()
+        required = schema["required"]
+        assert "passed" in required
+        assert "reason" in required
