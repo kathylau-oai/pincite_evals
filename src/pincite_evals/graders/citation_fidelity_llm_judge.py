@@ -31,6 +31,51 @@ class CitationFidelityLLMJudgeGrader(BaseLLMJudgeGrader):
             "citation_fidelity_items": context.get("citation_fidelity_items", []),
         }
 
+    def _response_schema(self) -> Dict[str, Any]:
+        return {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "overall_score": {"type": "number"},
+                "passed": {"type": "boolean"},
+                "reason": {"type": "string"},
+                "summary": {"type": "string"},
+                "item_results": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": False,
+                        "properties": {
+                            "citation_token": {"type": "string"},
+                            "label": {
+                                "type": "string",
+                                "enum": [
+                                    "accurate",
+                                    "wrong_block_like",
+                                    "hallucinated",
+                                    "metadata_mismatch",
+                                    "unsupported",
+                                ],
+                            },
+                            "score": {"type": "number"},
+                            "passed": {"type": "boolean"},
+                            "reason": {"type": "string"},
+                            "evidence_excerpt": {"type": "string"},
+                        },
+                        "required": [
+                            "citation_token",
+                            "label",
+                            "score",
+                            "passed",
+                            "reason",
+                            "evidence_excerpt",
+                        ],
+                    },
+                },
+            },
+            "required": ["overall_score", "passed", "reason", "summary", "item_results"],
+        }
+
     def _compute_grade(self, *, parsed: Dict[str, Any], context: Dict[str, Any]) -> tuple[bool, Dict[str, Any]]:
         overall_score = float(parsed.get("overall_score", 0.0))
         threshold = float(context.get("pass_threshold", self.pass_threshold))

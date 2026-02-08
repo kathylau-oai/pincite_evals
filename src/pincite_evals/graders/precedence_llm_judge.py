@@ -18,6 +18,23 @@ class PrecedenceLLMJudgeGrader(BaseLLMJudgeGrader):
             "authority_graph": context.get("authority_graph"),
         }
 
+    def _response_schema(self) -> Dict[str, Any]:
+        return {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "label": {
+                    "type": "string",
+                    "enum": ["precedence_correct", "precedence_error", "insufficient_evidence"],
+                },
+                "score": {"type": "number"},
+                "passed": {"type": "boolean"},
+                "reason": {"type": "string"},
+                "evidence": {"type": "array", "items": {"type": "string"}},
+            },
+            "required": ["label", "score", "passed", "reason", "evidence"],
+        }
+
     def _compute_grade(self, *, parsed: Dict[str, Any], context: Dict[str, Any]) -> tuple[bool, Dict[str, Any]]:
         score = float(parsed.get("score", 0.0))
         threshold = float(context.get("pass_threshold", self.pass_threshold))

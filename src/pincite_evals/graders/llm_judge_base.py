@@ -39,6 +39,19 @@ class BaseLLMJudgeGrader(Grader):
     def _compute_grade(self, *, parsed: Dict[str, Any], context: Dict[str, Any]) -> tuple[bool, Dict[str, Any]]:
         raise NotImplementedError
 
+    def _response_schema(self) -> Dict[str, Any]:
+        raise NotImplementedError
+
+    def _validate_required_fields(self, parsed: Dict[str, Any]) -> None:
+        if "passed" not in parsed:
+            raise ValueError("Judge output is missing required key: passed")
+        if not isinstance(parsed["passed"], bool):
+            raise ValueError("Judge output key 'passed' must be a boolean.")
+
+        reason = parsed.get("reason")
+        if not isinstance(reason, str) or not reason.strip():
+            raise ValueError("Judge output key 'reason' must be a non-empty string.")
+
     def grade(self, *, prompt: str, output: str, context: Dict[str, Any]) -> GradeResult:
         context_validation = self._validate_context(context)
         if context_validation is not None:
@@ -55,8 +68,11 @@ class BaseLLMJudgeGrader(Grader):
             config=self.config,
             system_prompt=self.system_prompt_template,
             user_prompt=user_prompt,
+            response_schema_name=f"{self.name}_schema",
+            response_schema=self._response_schema(),
         )
         parsed = judge_result["parsed"]
+        self._validate_required_fields(parsed)
 
         passed, mode_details = self._compute_grade(parsed=parsed, context=context)
         details = {

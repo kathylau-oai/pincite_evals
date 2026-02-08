@@ -45,6 +45,7 @@ def test_citation_fidelity_llm_judge_fails_hallucinated_label():
     response_payload = {
         "overall_score": 0.92,
         "passed": True,
+        "reason": "At least one citation is hallucinated.",
         "summary": "One citation was hallucinated.",
         "item_results": [
             {
@@ -76,6 +77,7 @@ def test_citation_fidelity_llm_judge_fails_hallucinated_label():
     assert fake_client.responses.last_request["model"] == "gpt-5.2"
     assert fake_client.responses.last_request["service_tier"] == "priority"
     assert fake_client.responses.last_request["reasoning"] == {"effort": "none"}
+    assert fake_client.responses.last_request["text"]["format"]["type"] == "json_schema"
     assert "temperature" in fake_client.responses.last_request
 
 
@@ -132,3 +134,22 @@ def test_precedence_llm_judge_fails_precedence_error():
     result = grader.grade(prompt="p", output="o", context={"precedence_trigger_note": "note"})
     assert result.passed is False
     assert result.details["label"] == "precedence_error"
+
+
+def test_llm_judge_requires_non_empty_reason():
+    response_payload = {
+        "label": "no_overextension",
+        "score": 0.95,
+        "passed": True,
+        "reason": "",
+        "evidence": ["Short quote"],
+    }
+    fake_client = FakeOpenAIClient(FakeResponse(output_text=json.dumps(response_payload)))
+    grader = CitationOverextensionLLMJudgeGrader(client=fake_client)
+
+    try:
+        grader.grade(prompt="p", output="o", context={"overextension_trigger_note": "trap note"})
+    except ValueError as error:
+        assert "reason" in str(error)
+        return
+    raise AssertionError("Expected a ValueError when required 'reason' is empty.")

@@ -51,7 +51,12 @@ def call_llm_judge(
     config: LLMJudgeConfig,
     system_prompt: str,
     user_prompt: str,
+    response_schema_name: str | None = None,
+    response_schema: Dict[str, Any] | None = None,
 ) -> Dict[str, Any]:
+    if (response_schema_name is None) != (response_schema is None):
+        raise ValueError("response_schema_name and response_schema must be set together.")
+
     request: Dict[str, Any] = {
         "model": config.model,
         "service_tier": config.service_tier,
@@ -61,6 +66,16 @@ def call_llm_judge(
         ],
         "reasoning": {"effort": config.reasoning_effort},
     }
+    if response_schema_name is not None and response_schema is not None:
+        # Structured outputs ensure judge responses follow the exact JSON contract.
+        request["text"] = {
+            "format": {
+                "type": "json_schema",
+                "name": response_schema_name,
+                "schema": response_schema,
+                "strict": True,
+            }
+        }
     if config.reasoning_effort == "none":
         request["temperature"] = config.temperature
 
