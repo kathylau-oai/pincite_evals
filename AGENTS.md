@@ -144,6 +144,10 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
   - **Fix**: Treat scripted rejection fields as hints only and require evidence-first review using `rejected_reasoning_evidence.csv`, `accepted_reasoning_evidence.csv`, and `trace_reasoning_evidence.csv`.
   - **Why**: Preserves model-led root-cause reasoning and avoids circular conclusions from pre-labeled metadata.
 
+- **Verifier retry failures were undercounted when relying on trace exports alone**
+  - **Fix**: Treat `validation_request_status` in `validation_datapoints.csv` as the source of truth for verifier retry failures (for example `verifier_request_failed_after_4_attempts:RateLimitError`) and use `trace_health.csv` as a completed-trace/latency view.
+  - **Why**: Failed verifier calls may not emit trace JSON artifacts, so trace-only audits can hide operational failure rates.
+
 ### Reliability and correctness in structured outputs / grading contracts
 
 - **`client.responses.parse(...)` can raise local `ValidationError` on truncated/malformed structured output**

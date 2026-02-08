@@ -23,6 +23,10 @@ uv run pincite-eval \
   --dry-run
 ```
 
+```bash
+uv run pincite-eval --input-glob 'data/datasets/packet_*/synthetic_items.csv' --experiment-name gpt52_none_full --model gpt-5.2 --reasoning-effort none --temperature 0.0 --max-model-workers 32 --max-item-workers 64 --max-grader-workers 32
+```
+
 ## Multi-model run
 
 ```bash
