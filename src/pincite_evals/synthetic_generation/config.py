@@ -39,8 +39,6 @@ class SyntheticGenerationConfig:
     validation_model: str
     validation_reasoning_effort: str
     validation_temperature: float | None
-    selection_model: str
-    selection_reasoning_effort: str
     service_tier: str
     generate_count: ModeCountConfig
     parallelism: ParallelismConfig
@@ -54,13 +52,11 @@ DEFAULT_CONFIG = {
     "output_root": "results/synthetic_generation",
     "dataset_root": "data/datasets",
     "generation_model": "gpt-5.2",
-    "generation_reasoning_effort": "medium",
+    "generation_reasoning_effort": "high",
     "generation_temperature": None,
     "validation_model": "gpt-5.2",
-    "validation_reasoning_effort": "medium",
+    "validation_reasoning_effort": "high",
     "validation_temperature": None,
-    "selection_model": "gpt-5.2",
-    "selection_reasoning_effort": "medium",
     "service_tier": "priority",
     "generate_count": {
         "overextension": 5,
@@ -77,7 +73,12 @@ DEFAULT_CONFIG = {
     "dry_run": False,
 }
 
-DEPRECATED_CONFIG_FIELDS = {"final_keep_count", "quality_thresholds"}
+DEPRECATED_CONFIG_FIELDS = {
+    "final_keep_count",
+    "quality_thresholds",
+    "selection_model",
+    "selection_reasoning_effort",
+}
 
 
 def _load_dict_from_file(config_path: Path) -> dict[str, Any]:
@@ -149,7 +150,6 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
 
     generation_reasoning_effort = str(merged["generation_reasoning_effort"]).strip()
     validation_reasoning_effort = str(merged["validation_reasoning_effort"]).strip()
-    selection_reasoning_effort = str(merged["selection_reasoning_effort"]).strip()
     service_tier = str(merged["service_tier"]).strip()
 
     _validate_reasoning_and_temperature(
@@ -161,11 +161,6 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
         "validation",
         validation_reasoning_effort,
         merged.get("validation_temperature"),
-    )
-    _validate_reasoning_and_temperature(
-        "selection",
-        selection_reasoning_effort,
-        None,
     )
     _validate_service_tier(service_tier)
 
@@ -221,8 +216,6 @@ def load_config(config_path: Path) -> SyntheticGenerationConfig:
             if merged.get("validation_temperature") is not None
             else None
         ),
-        selection_model=str(merged["selection_model"]),
-        selection_reasoning_effort=selection_reasoning_effort,
         service_tier=service_tier,
         generate_count=generate_count,
         parallelism=parallelism,

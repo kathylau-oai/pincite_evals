@@ -28,7 +28,8 @@ generate_count:
 
     summary = pipeline.run_all(context=context, openai_client=None)
 
-    assert summary["selected_items"] == 9
+    assert summary["accepted_items"] == 9
+    assert not (Path(summary["run_root"]) / "selection").exists()
 
     dataset_csv = Path(summary["dataset_dir"]) / "synthetic_items.csv"
     saved = pd.read_csv(dataset_csv)

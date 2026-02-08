@@ -53,8 +53,7 @@ def _cmd_validate(args: argparse.Namespace) -> None:
         candidates=candidates,
         openai_client=openai_client,
     )
-    selection_result = pipeline.run_selection(context=context, accepted_items=validation_result.accepted_items)
-    dataset_dir = pipeline.export_canonical_dataset(selection_result.selected_items)
+    dataset_dir = pipeline.export_canonical_dataset(validation_result.accepted_items)
 
     metrics_frames = []
     generation_metrics = context.run_paths.generation_metrics_dir / "request_metrics.csv"
@@ -71,7 +70,6 @@ def _cmd_validate(args: argparse.Namespace) -> None:
 
     print(f"run_root={context.run_paths.run_root}")
     print(f"accepted_items={len(validation_result.accepted_items)}")
-    print(f"selected_items={len(selection_result.selected_items)}")
     print(f"dataset_dir={dataset_dir}")
 
 
@@ -91,7 +89,6 @@ def _cmd_run_all(args: argparse.Namespace) -> None:
         + ",".join([f"{mode}:{count}" for mode, count in summary["generated_counts"].items()])
     )
     print(f"accepted_items={summary['accepted_items']}")
-    print(f"selected_items={summary['selected_items']}")
     print(f"dataset_dir={summary['dataset_dir']}")
 
 
@@ -103,11 +100,11 @@ def parse_args() -> argparse.Namespace:
     _add_common_args(generate_parser)
     generate_parser.set_defaults(handler=_cmd_generate)
 
-    validate_parser = subparsers.add_parser("validate", help="Run validation + selection using existing run candidates.")
+    validate_parser = subparsers.add_parser("validate", help="Run validation using existing run candidates.")
     _add_common_args(validate_parser)
     validate_parser.set_defaults(handler=_cmd_validate)
 
-    run_all_parser = subparsers.add_parser("run-all", help="Run end-to-end generation + validation + selection.")
+    run_all_parser = subparsers.add_parser("run-all", help="Run end-to-end generation + validation.")
     _add_common_args(run_all_parser)
     run_all_parser.set_defaults(handler=_cmd_run_all)
 

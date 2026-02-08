@@ -14,7 +14,7 @@ Mode `B` (wrong span) is intentionally not generated here; it is measured by gra
 2. Loads up to 8 parsed docs from `text/DOC###.annotated.txt` and builds one packet corpus directly from annotated text.
 3. Generates candidates in parallel per mode by giving the model the full packet corpus and letting it choose trap opportunities (no deterministic mode target-bank seeding).
 4. Validates with lightweight deterministic checks + single LLM pass/fail verifier.
-5. Selects a diverse final set per mode.
+5. Exports all verifier-accepted items as the canonical dataset.
 6. Writes canonical dataset files under `data/datasets/<packet_id>/`.
 
 Citation format: generation and validation accept only dotted packet block IDs like `DOC001.P001.B01` (no brackets).
@@ -28,7 +28,7 @@ Generation/verifier requests do not set `max_output_tokens`; outputs are control
 - `config.py`: typed config loader and defaults.
 - `schema.py`: item schema and citation token validation.
 - `structured_outputs.py`: structured output model classes used by Responses API parsing.
-- `pipeline.py`: end-to-end logic (packet corpus prep, generation, validation, selection, metrics).
+- `pipeline.py`: end-to-end logic (packet corpus prep, generation, validation, export, metrics).
 - `cli.py`: CLI entrypoint (`generate`, `validate`, `run-all`).
 - `prompts/`: editable prompt templates per generation mode plus verifier prompts.
 
@@ -70,7 +70,8 @@ Run folder layout:
 - `validation/validation_datapoints.csv`: full validation review table for all generated datapoints (deterministic + LLM + rejection + latency/tokens)
 - `validation/metrics/`: request metrics + validation datapoint timings
 - `validation/traces/`: raw validation Responses API payloads
-- `selection/`: selected items and selection report
+- `validation/accepted_items.jsonl`: accepted item payloads exported from verifier pass items
+- `validation/accepted_items.csv`: accepted item payloads in CSV form
 - `summary/`: cross-stage summaries (`run_summary.json`, stage metrics, datapoint timings)
 
 ## Prompt layout

@@ -64,15 +64,21 @@ generate_count:
     assert summary["generated_counts"]["overextension"] == 2
     assert summary["generated_counts"]["precedence"] == 2
     assert summary["generated_counts"]["fake_citations"] == 2
-    assert summary["selected_items"] == 6
+    assert summary["accepted_items"] == 6
     assert Path(summary["dataset_dir"]).exists()
 
     run_root = Path(summary["run_root"])
     llm_reviews_csv = run_root / "validation" / "llm_consensus_reviews.csv"
     validation_datapoints_csv = run_root / "validation" / "validation_datapoints.csv"
+    accepted_items_jsonl = run_root / "validation" / "accepted_items.jsonl"
+    accepted_items_csv = run_root / "validation" / "accepted_items.csv"
+    selection_dir = run_root / "selection"
 
     assert llm_reviews_csv.exists()
     assert validation_datapoints_csv.exists()
+    assert accepted_items_jsonl.exists()
+    assert accepted_items_csv.exists()
+    assert not selection_dir.exists()
 
     llm_reviews_df = pd.read_csv(llm_reviews_csv)
     validation_datapoints_df = pd.read_csv(validation_datapoints_csv)

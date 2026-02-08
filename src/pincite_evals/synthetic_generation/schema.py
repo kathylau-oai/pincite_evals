@@ -10,6 +10,9 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 # We intentionally do not accept bracket citations (DOC###\[P###.B##\]) to keep the
 # pipeline aligned with packet rendering (<BLOCK id="DOC###.P###.B##"> ...).
 DOTTED_CITATION_TOKEN_PATTERN = re.compile(r"^DOC\d{3}\.P\d{3}\.B\d{2}$")
+MAX_SCENARIO_FACTS = 5
+MAX_SCENARIO_FACT_WORDS = 28
+MAX_TOTAL_SCENARIO_FACT_WORDS = 120
 
 
 def normalize_citation_token(citation_token: str) -> str:
@@ -87,9 +90,29 @@ class SyntheticItem(BaseModel):
     def validate_scenario_facts(cls, value: list[str]) -> list[str]:
         if not value:
             raise ValueError("scenario_facts must be non-empty.")
-        cleaned_facts = [fact.strip() for fact in value if fact.strip()]
+        cleaned_facts = [" ".join(fact.split()) for fact in value if fact.strip()]
         if not cleaned_facts:
             raise ValueError("scenario_facts must contain at least one non-empty value.")
+        if len(cleaned_facts) > MAX_SCENARIO_FACTS:
+            raise ValueError(
+                f"scenario_facts can include at most {MAX_SCENARIO_FACTS} facts."
+            )
+
+        total_word_count = 0
+        for fact_index, fact in enumerate(cleaned_facts):
+            word_count = len(fact.split())
+            total_word_count += word_count
+            if word_count > MAX_SCENARIO_FACT_WORDS:
+                raise ValueError(
+                    f"scenario_facts[{fact_index}] is too long ({word_count} words). "
+                    f"Use at most {MAX_SCENARIO_FACT_WORDS} words per fact."
+                )
+
+        if total_word_count > MAX_TOTAL_SCENARIO_FACT_WORDS:
+            raise ValueError(
+                "scenario_facts is too long overall "
+                f"({total_word_count} words). Use at most {MAX_TOTAL_SCENARIO_FACT_WORDS} words total."
+            )
         return cleaned_facts
 
     @model_validator(mode="after")

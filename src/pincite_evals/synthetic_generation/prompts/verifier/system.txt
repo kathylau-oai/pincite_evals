@@ -48,6 +48,11 @@ Populate `risk_flags` with concise machine-friendly tags when relevant, such as:
 - `weak_citation_expectations`
 - `not_packet_answerable`
 - `underspecified_trigger_note`
+- `contradictory_absence_claim`
+- `summary_holding_conflict`
+- `missing_scope_limiter_anchor`
+- `missing_hierarchy_status_anchor`
+- `trigger_expected_conflict`
 
 # Output Rules
 - Output must match schema fields exactly: `verdict`, `reason`, `risk_flags`, `suggested_fix`.

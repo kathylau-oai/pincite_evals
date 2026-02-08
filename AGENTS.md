@@ -136,6 +136,10 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
   - **Fix**: Resolve packet/output/dataset roots to absolute paths during config load and re-`mkdir` generation output subdirectories immediately before candidate/metrics writes.
   - **Why**: Prevents late-stage `FileNotFoundError` from cwd drift or partial-run directory cleanup.
 
+- **Synthetic generation + quality audit needed a repeatable one-command path**
+  - **Fix**: Use `skills/synthetic-generation-audit/scripts/run_and_analyze.sh` to run (or reuse) all-packet generation and emit a standardized audit report under `results/synthetic_generation_audit/<run_timestamp>/`.
+  - **Why**: Keeps accepted/rejected analysis, trace health checks, and prompt-only recommendations consistent across runs.
+
 ### Reliability and correctness in structured outputs / grading contracts
 
 - **`client.responses.parse(...)` can raise local `ValidationError` on truncated/malformed structured output**

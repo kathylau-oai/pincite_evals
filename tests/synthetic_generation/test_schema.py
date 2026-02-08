@@ -146,3 +146,54 @@ def test_schema_accepts_legacy_prompt_field_alias():
     )
 
     assert item.user_query == "Legacy prompt field still populated."
+
+
+def test_schema_rejects_too_many_scenario_facts():
+    with pytest.raises(ValidationError, match="scenario_facts can include at most 5 facts"):
+        SyntheticItem.model_validate(
+            {
+                "schema_version": "v1",
+                "item_id": "packet_1_A_13",
+                "packet_id": "packet_1",
+                "target_error_mode": "A",
+                "query_id": "q_0013",
+                "as_of_date": "2026-02-06",
+                "user_query": "Draft a memo section.",
+                "scenario_facts": [
+                    "Fact one.",
+                    "Fact two.",
+                    "Fact three.",
+                    "Fact four.",
+                    "Fact five.",
+                    "Fact six.",
+                ],
+                "grading_contract": {
+                    "expected_citation_groups": [],
+                    "citation_integrity_trigger_note": "Fail fabricated authority; pass explicit limitation and no invention.",
+                    "citation_integrity_cautions": ["Do not reward invented citations or unsupported quotations."],
+                },
+            }
+        )
+
+
+def test_schema_rejects_overly_long_scenario_fact():
+    with pytest.raises(ValidationError, match="scenario_facts\\[0\\] is too long"):
+        SyntheticItem.model_validate(
+            {
+                "schema_version": "v1",
+                "item_id": "packet_1_A_14",
+                "packet_id": "packet_1",
+                "target_error_mode": "A",
+                "query_id": "q_0014",
+                "as_of_date": "2026-02-06",
+                "user_query": "Draft a memo section.",
+                "scenario_facts": [
+                    " ".join(["word"] * 29),
+                ],
+                "grading_contract": {
+                    "expected_citation_groups": [],
+                    "citation_integrity_trigger_note": "Fail fabricated authority; pass explicit limitation and no invention.",
+                    "citation_integrity_cautions": ["Do not reward invented citations or unsupported quotations."],
+                },
+            }
+        )

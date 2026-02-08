@@ -18,7 +18,12 @@ from openai import (
     RateLimitError,
 )
 from pydantic import BaseModel, ValidationError
-from tenacity import Retrying, retry_if_exception_type, stop_after_attempt, wait_exponential
+from tenacity import (
+    Retrying,
+    retry_if_exception_type,
+    stop_after_attempt,
+    wait_exponential,
+)
 
 from pincite_evals.prompt_templates import load_template_text, render_template_text
 
@@ -39,8 +44,12 @@ MODE_TO_ERROR = {
 }
 ERROR_TO_MODE = {value: key for key, value in MODE_TO_ERROR.items()}
 PROMPTS_ROOT = Path(__file__).resolve().parent / "prompts"
-ANNOTATED_BLOCK_ID_PATTERN = re.compile(r"<BLOCK\s+id=['\"](DOC\d{3}\.P\d{3}\.B\d{2})['\"]\s*>")
-ANNOTATED_CITE_START_PATTERN = re.compile(r"\[CITE_START:(DOC\d{3}\[P\d{3}\.B\d{2}\]|DOC\d{3}\.P\d{3}\.B\d{2})\]")
+ANNOTATED_BLOCK_ID_PATTERN = re.compile(
+    r"<BLOCK\s+id=['\"](DOC\d{3}\.P\d{3}\.B\d{2})['\"]\s*>"
+)
+ANNOTATED_CITE_START_PATTERN = re.compile(
+    r"\[CITE_START:(DOC\d{3}\[P\d{3}\.B\d{2}\]|DOC\d{3}\.P\d{3}\.B\d{2})\]"
+)
 ANNOTATED_CITATION_TOKEN_PATTERN = re.compile(
     r"<BLOCK\s+id=['\"](DOC\d{3}\.P\d{3}\.B\d{2})['\"]\s*>|\[CITE_START:(DOC\d{3}\[P\d{3}\.B\d{2}\]|DOC\d{3}\.P\d{3}\.B\d{2})\]"
 )
@@ -70,16 +79,22 @@ def _build_realistic_lawyer_query_style_guide() -> str:
         "## Lawyer-realistic query style guide",
         "Use these examples as style anchors for `user_query` and `scenario_facts` phrasing.",
         "Do not copy an example verbatim. Keep the issue packet-grounded and adapt it to the packet facts.",
-        "Write `user_query` like a real lawyer request, not an instruction list to another model.",
+        "Write `user_query` like a real lawyer request into an LLM drafting app, not an instruction list to another model.",
         "Write `scenario_facts` as concrete client/case facts, not generic constraints or meta instructions.",
+        "Keep `scenario_facts` concise and high-signal: 1-5 short factual bullets only.",
+        "Each `scenario_facts` bullet should usually be one sentence and no more than ~25 words.",
+        "Only include facts that materially affect the legal analysis; avoid long background narrative and repeated facts.",
         "Avoid phrases like 'Task:', numbered compliance checklists, or closed-world reminders in `user_query`.",
         "Keep `user_query` concise: usually one short paragraph plus a brief facts paragraph.",
+        "The user_query should be max 2-5 sentences and should not contain LLM instructions or sections such as 'Task:', numbered compliance checklists, or closed-world reminders.",
         "",
         "Examples:",
     ]
     numbered_examples = [
         f"{example_index}) {query_example}"
-        for example_index, query_example in enumerate(REALISTIC_LAWYER_QUERY_EXAMPLES, start=1)
+        for example_index, query_example in enumerate(
+            REALISTIC_LAWYER_QUERY_EXAMPLES, start=1
+        )
     ]
     return "\n".join(guidance_lines + numbered_examples)
 
@@ -107,7 +122,6 @@ class RunPaths:
     validation_dir: Path
     validation_metrics_dir: Path
     validation_traces_dir: Path
-    selection_dir: Path
     summary_dir: Path
 
 
@@ -144,13 +158,6 @@ class ValidationResult:
     request_metrics: pd.DataFrame
 
 
-@dataclass(frozen=True)
-class SelectionResult:
-    selected_items: list[dict[str, Any]]
-    selection_table: pd.DataFrame
-    selection_report_markdown: str
-
-
 class MissingParsedStructuredOutputError(RuntimeError):
     """Raised when a structured-output response is missing output_parsed."""
 
@@ -185,12 +192,25 @@ def _compute_distribution_stats(values: pd.Series, prefix: str) -> dict[str, Any
 
 def summarize_request_metrics(metrics_dataframe: pd.DataFrame) -> pd.DataFrame:
     if metrics_dataframe.empty:
-        return pd.DataFrame([{"stage": "none", "request_count": 0, "completed_count": 0, "items_per_minute": None}])
+        return pd.DataFrame(
+            [
+                {
+                    "stage": "none",
+                    "request_count": 0,
+                    "completed_count": 0,
+                    "items_per_minute": None,
+                }
+            ]
+        )
 
     summary_rows: list[dict[str, Any]] = []
     for stage_name, stage_rows in metrics_dataframe.groupby("stage"):
         completed_rows = stage_rows[stage_rows["status"] == "completed"]
-        total_latency_seconds = pd.to_numeric(completed_rows["latency_seconds"], errors="coerce").dropna().sum()
+        total_latency_seconds = (
+            pd.to_numeric(completed_rows["latency_seconds"], errors="coerce")
+            .dropna()
+            .sum()
+        )
         completed_count = int(completed_rows.shape[0])
         items_per_minute = None
         if total_latency_seconds > 0 and completed_count > 0:
@@ -202,11 +222,25 @@ def summarize_request_metrics(metrics_dataframe: pd.DataFrame) -> pd.DataFrame:
             "completed_count": completed_count,
             "items_per_minute": items_per_minute,
         }
-        summary_row.update(_compute_distribution_stats(stage_rows["latency_seconds"], "latency_seconds"))
-        summary_row.update(_compute_distribution_stats(stage_rows["input_tokens"], "input_tokens"))
-        summary_row.update(_compute_distribution_stats(stage_rows["output_tokens"], "output_tokens"))
-        summary_row.update(_compute_distribution_stats(stage_rows["reasoning_tokens"], "reasoning_tokens"))
-        summary_row.update(_compute_distribution_stats(stage_rows["total_tokens"], "total_tokens"))
+        summary_row.update(
+            _compute_distribution_stats(
+                stage_rows["latency_seconds"], "latency_seconds"
+            )
+        )
+        summary_row.update(
+            _compute_distribution_stats(stage_rows["input_tokens"], "input_tokens")
+        )
+        summary_row.update(
+            _compute_distribution_stats(stage_rows["output_tokens"], "output_tokens")
+        )
+        summary_row.update(
+            _compute_distribution_stats(
+                stage_rows["reasoning_tokens"], "reasoning_tokens"
+            )
+        )
+        summary_row.update(
+            _compute_distribution_stats(stage_rows["total_tokens"], "total_tokens")
+        )
         summary_rows.append(summary_row)
 
     return pd.DataFrame(summary_rows)
@@ -217,7 +251,9 @@ def _augment_with_latency_milliseconds(metrics_dataframe: pd.DataFrame) -> pd.Da
         return metrics_dataframe
 
     augmented_dataframe = metrics_dataframe.copy()
-    latency_series = pd.to_numeric(augmented_dataframe["latency_seconds"], errors="coerce")
+    latency_series = pd.to_numeric(
+        augmented_dataframe["latency_seconds"], errors="coerce"
+    )
     augmented_dataframe["latency_milliseconds"] = latency_series * 1000.0
     return augmented_dataframe
 
@@ -234,23 +270,35 @@ def _build_candidate_review_table(candidates: list[dict[str, Any]]) -> pd.DataFr
         for citation_group in expected_citation_groups:
             if not isinstance(citation_group, list):
                 continue
-            cleaned_group = [str(citation_token).strip() for citation_token in citation_group if str(citation_token).strip()]
+            cleaned_group = [
+                str(citation_token).strip()
+                for citation_token in citation_group
+                if str(citation_token).strip()
+            ]
             if cleaned_group:
                 normalized_groups.append(cleaned_group)
 
-        expected_citation_count = sum(len(citation_group) for citation_group in normalized_groups)
+        expected_citation_count = sum(
+            len(citation_group) for citation_group in normalized_groups
+        )
         primary_doc_id = ""
         if normalized_groups and normalized_groups[0]:
             try:
-                primary_doc_id = extract_doc_id_from_citation_token(normalized_groups[0][0])
+                primary_doc_id = extract_doc_id_from_citation_token(
+                    normalized_groups[0][0]
+                )
             except ValueError:
-                primary_doc_id = str(normalized_groups[0][0]).split("[")[0].split(".")[0]
+                primary_doc_id = (
+                    str(normalized_groups[0][0]).split("[")[0].split(".")[0]
+                )
 
         scenario_facts = item.get("scenario_facts", [])
         if not isinstance(scenario_facts, list):
             scenario_facts = []
 
-        mode_name = ERROR_TO_MODE.get(str(item.get("target_error_mode", "")).strip(), "")
+        mode_name = ERROR_TO_MODE.get(
+            str(item.get("target_error_mode", "")).strip(), ""
+        )
         user_query = _extract_user_query(item)
         rows.append(
             {
@@ -265,7 +313,9 @@ def _build_candidate_review_table(candidates: list[dict[str, Any]]) -> pd.DataFr
                 "scenario_facts_json": json.dumps(scenario_facts, ensure_ascii=True),
                 "expected_citation_group_count": int(len(normalized_groups)),
                 "expected_citation_count": int(expected_citation_count),
-                "expected_citation_groups_json": json.dumps(normalized_groups, ensure_ascii=True),
+                "expected_citation_groups_json": json.dumps(
+                    normalized_groups, ensure_ascii=True
+                ),
                 "primary_doc_id": primary_doc_id,
             }
         )
@@ -290,12 +340,20 @@ def _build_llm_review_csv_table(llm_reviews: list[dict[str, Any]]) -> pd.DataFra
         )
 
     llm_reviews_df = pd.DataFrame(llm_reviews)
-    risk_flags_series = llm_reviews_df["risk_flags"].apply(lambda value: value if isinstance(value, list) else [])
-    full_response_series = llm_reviews_df["full_response"].apply(lambda value: value if isinstance(value, dict) else {})
+    risk_flags_series = llm_reviews_df["risk_flags"].apply(
+        lambda value: value if isinstance(value, list) else []
+    )
+    full_response_series = llm_reviews_df["full_response"].apply(
+        lambda value: value if isinstance(value, dict) else {}
+    )
 
     llm_reviews_df["llm_risk_flag_count"] = risk_flags_series.apply(len)
-    llm_reviews_df["llm_risk_flags_json"] = risk_flags_series.apply(lambda value: json.dumps(value, ensure_ascii=True))
-    llm_reviews_df["llm_full_response_json"] = full_response_series.apply(lambda value: json.dumps(value, ensure_ascii=True))
+    llm_reviews_df["llm_risk_flags_json"] = risk_flags_series.apply(
+        lambda value: json.dumps(value, ensure_ascii=True)
+    )
+    llm_reviews_df["llm_full_response_json"] = full_response_series.apply(
+        lambda value: json.dumps(value, ensure_ascii=True)
+    )
 
     llm_reviews_df = llm_reviews_df.rename(
         columns={
@@ -319,7 +377,9 @@ def _build_llm_review_csv_table(llm_reviews: list[dict[str, Any]]) -> pd.DataFra
 
 
 def _join_unique_values(values: pd.Series) -> str:
-    return "|".join(dict.fromkeys([str(value).strip() for value in values if str(value).strip()]))
+    return "|".join(
+        dict.fromkeys([str(value).strip() for value in values if str(value).strip()])
+    )
 
 
 def _build_validation_datapoints_table(
@@ -342,7 +402,9 @@ def _build_validation_datapoints_table(
     )
 
     if rejection_df.empty:
-        rejection_export_df = pd.DataFrame(columns=["item_id", "rejection_stage", "rejection_reason"])
+        rejection_export_df = pd.DataFrame(
+            columns=["item_id", "rejection_stage", "rejection_reason"]
+        )
     else:
         rejection_export_df = (
             rejection_df.groupby("item_id", as_index=False)
@@ -391,14 +453,20 @@ def _build_validation_datapoints_table(
     merged_df = merged_df.merge(rejection_export_df, on="item_id", how="left")
     merged_df = merged_df.merge(metrics_export_df, on="item_id", how="left")
 
-    rejected_item_ids = set(rejection_df["item_id"]) if not rejection_df.empty else set()
-    merged_df["accepted_after_validation"] = ~merged_df["item_id"].isin(rejected_item_ids)
+    rejected_item_ids = (
+        set(rejection_df["item_id"]) if not rejection_df.empty else set()
+    )
+    merged_df["accepted_after_validation"] = ~merged_df["item_id"].isin(
+        rejected_item_ids
+    )
     merged_df["final_validation_status"] = merged_df["accepted_after_validation"].apply(
         lambda accepted: "accepted" if bool(accepted) else "rejected"
     )
 
     if "mode_name" in merged_df.columns:
-        merged_df = merged_df.sort_values(["mode_name", "item_id"]).reset_index(drop=True)
+        merged_df = merged_df.sort_values(["mode_name", "item_id"]).reset_index(
+            drop=True
+        )
     return merged_df
 
 
@@ -437,11 +505,12 @@ def _build_datapoint_timing_table(
         }
     )
     merged = generation_slice.merge(validation_slice, on="item_id", how="left")
-    merged["end_to_end_latency_seconds"] = (
-        pd.to_numeric(merged["generation_latency_seconds"], errors="coerce")
-        + pd.to_numeric(merged["validation_latency_seconds"], errors="coerce")
+    merged["end_to_end_latency_seconds"] = pd.to_numeric(
+        merged["generation_latency_seconds"], errors="coerce"
+    ) + pd.to_numeric(merged["validation_latency_seconds"], errors="coerce")
+    merged["end_to_end_latency_milliseconds"] = (
+        merged["end_to_end_latency_seconds"] * 1000.0
     )
-    merged["end_to_end_latency_milliseconds"] = merged["end_to_end_latency_seconds"] * 1000.0
     if merged.empty:
         return merged
     return merged.sort_values(["mode_name", "item_id"]).reset_index(drop=True)
@@ -465,7 +534,9 @@ def _load_prompt_template(prompt_relative_path: str) -> str:
     return load_template_text(PROMPTS_ROOT / prompt_relative_path)
 
 
-def _render_prompt_template(prompt_text: str, template_variables: dict[str, Any]) -> str:
+def _render_prompt_template(
+    prompt_text: str, template_variables: dict[str, Any]
+) -> str:
     return render_template_text(prompt_text, template_variables)
 
 
@@ -484,14 +555,20 @@ def _load_mode_prompts(
         "packet_corpus": packet_corpus_text,
         "lawyer_query_style_guide": lawyer_query_style_guide,
     }
-    system_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/system.txt"), template_variables)
-    user_prompt = _render_prompt_template(_load_prompt_template(f"{mode_name}/user.txt"), template_variables)
+    system_prompt = _render_prompt_template(
+        _load_prompt_template(f"{mode_name}/system.txt"), template_variables
+    )
+    user_prompt = _render_prompt_template(
+        _load_prompt_template(f"{mode_name}/user.txt"), template_variables
+    )
     if lawyer_query_style_guide not in system_prompt:
         system_prompt = f"{system_prompt}\n\n{lawyer_query_style_guide}"
     return system_prompt, user_prompt
 
 
-def _load_verifier_prompts(item_payload: dict[str, Any], packet_corpus_text: str) -> tuple[str, str]:
+def _load_verifier_prompts(
+    item_payload: dict[str, Any], packet_corpus_text: str
+) -> tuple[str, str]:
     verifier_item_payload = _convert_item_payload_citations_to_block_ids(item_payload)
     system_prompt = _load_prompt_template("verifier/system.txt")
     user_prompt = _render_prompt_template(
@@ -504,7 +581,9 @@ def _load_verifier_prompts(item_payload: dict[str, Any], packet_corpus_text: str
     return system_prompt, user_prompt
 
 
-def _convert_item_payload_citations_to_block_ids(item_payload: dict[str, Any]) -> dict[str, Any]:
+def _convert_item_payload_citations_to_block_ids(
+    item_payload: dict[str, Any],
+) -> dict[str, Any]:
     converted_item_payload = copy.deepcopy(item_payload)
     grading_contract = converted_item_payload.get("grading_contract")
     if not isinstance(grading_contract, dict):
@@ -526,7 +605,9 @@ def _convert_item_payload_citations_to_block_ids(item_payload: dict[str, Any]) -
                 continue
 
             try:
-                converted_group.append(format_citation_token_as_block_id(cleaned_citation_token))
+                converted_group.append(
+                    format_citation_token_as_block_id(cleaned_citation_token)
+                )
             except ValueError:
                 converted_group.append(cleaned_citation_token)
 
@@ -545,7 +626,9 @@ def _extract_reasoning_tokens(usage: Any) -> int | None:
     return usage.output_tokens_details.reasoning_tokens
 
 
-def _create_run_paths(output_root: Path, packet_id: str, run_id: str | None) -> RunPaths:
+def _create_run_paths(
+    output_root: Path, packet_id: str, run_id: str | None
+) -> RunPaths:
     resolved_run_id = run_id or datetime.utcnow().strftime("%Y%m%d_%H%M%S")
     run_root = output_root / packet_id / resolved_run_id
 
@@ -557,7 +640,6 @@ def _create_run_paths(output_root: Path, packet_id: str, run_id: str | None) -> 
     validation_dir = run_root / "validation"
     validation_metrics_dir = validation_dir / "metrics"
     validation_traces_dir = validation_dir / "traces"
-    selection_dir = run_root / "selection"
     summary_dir = run_root / "summary"
 
     for folder in [
@@ -569,7 +651,6 @@ def _create_run_paths(output_root: Path, packet_id: str, run_id: str | None) -> 
         validation_dir,
         validation_metrics_dir,
         validation_traces_dir,
-        selection_dir,
         summary_dir,
     ]:
         folder.mkdir(parents=True, exist_ok=True)
@@ -584,7 +665,6 @@ def _create_run_paths(output_root: Path, packet_id: str, run_id: str | None) -> 
         validation_dir=validation_dir,
         validation_metrics_dir=validation_metrics_dir,
         validation_traces_dir=validation_traces_dir,
-        selection_dir=selection_dir,
         summary_dir=summary_dir,
     )
 
@@ -597,8 +677,13 @@ def _select_source_documents(
     packet_manifest: pd.DataFrame,
     max_documents: int = 8,
 ) -> pd.DataFrame:
-    if "source_order" not in packet_manifest.columns or "doc_id" not in packet_manifest.columns:
-        raise ValueError("packet_manifest.csv must include source_order and doc_id columns.")
+    if (
+        "source_order" not in packet_manifest.columns
+        or "doc_id" not in packet_manifest.columns
+    ):
+        raise ValueError(
+            "packet_manifest.csv must include source_order and doc_id columns."
+        )
 
     manifest_sorted = packet_manifest.sort_values("source_order")
     if "parse_status" in manifest_sorted.columns:
@@ -618,7 +703,9 @@ def _load_annotated_document_text(packet_root: Path, doc_id: str) -> str:
     return annotated_path.read_text(encoding="utf-8").strip()
 
 
-def _extract_citation_tokens_from_annotated_text(annotated_text: str, doc_id: str) -> list[str]:
+def _extract_citation_tokens_from_annotated_text(
+    annotated_text: str, doc_id: str
+) -> list[str]:
     citation_tokens_in_order: list[str] = []
     for token_match in ANNOTATED_CITATION_TOKEN_PATTERN.finditer(annotated_text):
         raw_token = token_match.group(1) or token_match.group(2)
@@ -626,9 +713,15 @@ def _extract_citation_tokens_from_annotated_text(annotated_text: str, doc_id: st
             citation_tokens_in_order.append(normalize_citation_token(raw_token))
 
     if not citation_tokens_in_order:
-        if ANNOTATED_BLOCK_ID_PATTERN.search(annotated_text) or ANNOTATED_CITE_START_PATTERN.search(annotated_text):
-            raise ValueError(f"Annotated text for {doc_id} contained citation markers but no valid tokens.")
-        raise ValueError(f"No supported citation markers found in annotated text for {doc_id}.")
+        if ANNOTATED_BLOCK_ID_PATTERN.search(
+            annotated_text
+        ) or ANNOTATED_CITE_START_PATTERN.search(annotated_text):
+            raise ValueError(
+                f"Annotated text for {doc_id} contained citation markers but no valid tokens."
+            )
+        raise ValueError(
+            f"No supported citation markers found in annotated text for {doc_id}."
+        )
 
     return citation_tokens_in_order
 
@@ -644,7 +737,9 @@ def _build_packet_corpus_from_annotated_text(
         doc_id = str(source_row["doc_id"])
         source_filename = str(source_row.get("source_filename", ""))
         annotated_text = _load_annotated_document_text(packet_root, doc_id)
-        citation_tokens_in_order.extend(_extract_citation_tokens_from_annotated_text(annotated_text, doc_id))
+        citation_tokens_in_order.extend(
+            _extract_citation_tokens_from_annotated_text(annotated_text, doc_id)
+        )
         lines.append(f'<DOCUMENT id="{doc_id}" source_filename="{source_filename}">')
         lines.append(annotated_text)
         lines.append("</DOCUMENT>")
@@ -663,8 +758,14 @@ def _packet_input_sanity(packet_inputs: PacketInputs) -> pd.DataFrame:
         except ValueError:
             return True
 
-    invalid_tokens = pd.Series(citation_tokens, dtype="string").fillna("").apply(has_invalid_citation_token)
-    duplicate_count = int(pd.Series(citation_tokens).duplicated().sum()) if citation_tokens else 0
+    invalid_tokens = (
+        pd.Series(citation_tokens, dtype="string")
+        .fillna("")
+        .apply(has_invalid_citation_token)
+    )
+    duplicate_count = (
+        int(pd.Series(citation_tokens).duplicated().sum()) if citation_tokens else 0
+    )
     document_count = (
         int(packet_inputs.source_documents["doc_id"].astype(str).nunique())
         if "doc_id" in packet_inputs.source_documents.columns
@@ -675,7 +776,10 @@ def _packet_input_sanity(packet_inputs: PacketInputs) -> pd.DataFrame:
         avg_blocks_per_document = float(len(citation_tokens) / document_count)
     rows = [
         {"metric": "packet_block_rows", "value": int(len(citation_tokens))},
-        {"metric": "citation_universe_size", "value": int(len(packet_inputs.citation_universe))},
+        {
+            "metric": "citation_universe_size",
+            "value": int(len(packet_inputs.citation_universe)),
+        },
         {"metric": "duplicate_citation_tokens", "value": duplicate_count},
         {"metric": "invalid_citation_tokens", "value": int(invalid_tokens.sum())},
         {"metric": "document_count", "value": document_count},
@@ -687,9 +791,11 @@ def _packet_input_sanity(packet_inputs: PacketInputs) -> pd.DataFrame:
 def _load_packet_inputs_for_generation(context: PipelineContext) -> PacketInputs:
     manifest = _load_packet_manifest(context.manifest_csv)
     source_documents = _select_source_documents(manifest, max_documents=8)
-    packet_corpus_text, citation_tokens_in_order = _build_packet_corpus_from_annotated_text(
-        source_documents,
-        context.packet_root,
+    packet_corpus_text, citation_tokens_in_order = (
+        _build_packet_corpus_from_annotated_text(
+            source_documents,
+            context.packet_root,
+        )
     )
     if not citation_tokens_in_order:
         raise ValueError("No citation tokens found in annotated packet text.")
@@ -714,7 +820,9 @@ def _build_generation_request(
         "model": model,
         "service_tier": service_tier,
         "instructions": system_prompt,
-        "input": [{"role": "user", "content": [{"type": "input_text", "text": user_prompt}]}],
+        "input": [
+            {"role": "user", "content": [{"type": "input_text", "text": user_prompt}]}
+        ],
         "reasoning": {"effort": reasoning_effort},
     }
     if reasoning_effort == "none" and temperature is not None:
@@ -722,7 +830,9 @@ def _build_generation_request(
     return request
 
 
-def _call_openai_parse(client: OpenAI, request: dict[str, Any], text_format: type[ParsedModelType]) -> Any:
+def _call_openai_parse(
+    client: OpenAI, request: dict[str, Any], text_format: type[ParsedModelType]
+) -> Any:
     return client.responses.parse(text_format=text_format, **request)
 
 
@@ -800,7 +910,9 @@ def _normalize_generated_item(
 
     citation_integrity_note = grading_contract.get("citation_integrity_trigger_note")
     if isinstance(citation_integrity_note, str) and citation_integrity_note.strip():
-        grading_contract["citation_integrity_trigger_note"] = citation_integrity_note.strip()
+        grading_contract["citation_integrity_trigger_note"] = (
+            citation_integrity_note.strip()
+        )
     else:
         grading_contract["citation_integrity_trigger_note"] = None
 
@@ -826,25 +938,37 @@ def _normalize_generated_item(
     if not isinstance(citation_integrity_cautions, list):
         citation_integrity_cautions = []
     grading_contract["citation_integrity_cautions"] = [
-        str(caution).strip() for caution in citation_integrity_cautions if isinstance(caution, str) and str(caution).strip()
+        str(caution).strip()
+        for caution in citation_integrity_cautions
+        if isinstance(caution, str) and str(caution).strip()
     ]
 
     over_cautions = grading_contract.get("overextension_cautions")
     if not isinstance(over_cautions, list):
         over_cautions = []
     grading_contract["overextension_cautions"] = [
-        str(caution).strip() for caution in over_cautions if isinstance(caution, str) and str(caution).strip()
+        str(caution).strip()
+        for caution in over_cautions
+        if isinstance(caution, str) and str(caution).strip()
     ]
 
     precedence_cautions = grading_contract.get("precedence_cautions")
     if not isinstance(precedence_cautions, list):
         precedence_cautions = []
     grading_contract["precedence_cautions"] = [
-        str(caution).strip() for caution in precedence_cautions if isinstance(caution, str) and str(caution).strip()
+        str(caution).strip()
+        for caution in precedence_cautions
+        if isinstance(caution, str) and str(caution).strip()
     ]
 
-    if not isinstance(normalized.get("user_query"), str) or not str(normalized.get("user_query", "")).strip():
-        if isinstance(normalized.get("prompt"), str) and str(normalized.get("prompt", "")).strip():
+    if (
+        not isinstance(normalized.get("user_query"), str)
+        or not str(normalized.get("user_query", "")).strip()
+    ):
+        if (
+            isinstance(normalized.get("prompt"), str)
+            and str(normalized.get("prompt", "")).strip()
+        ):
             normalized["user_query"] = str(normalized.get("prompt", "")).strip()
         else:
             normalized["user_query"] = (
@@ -924,21 +1048,25 @@ def _default_candidate_from_mode(
                 "When the packet is incomplete, require the memo to acknowledge the limitation rather than fabricate details.",
             ],
             "overextension_trigger_note": over_note,
-            "overextension_cautions": [
-                "Do not reward claims that replace qualified source language with categorical legal rules.",
-                "Do not reward omission of factual predicates, exceptions, or procedural posture limits in cited authorities.",
-                "If the memo broadens the holding beyond the cited text, mark failure even if the citation token is valid.",
-            ]
-            if over_note
-            else [],
+            "overextension_cautions": (
+                [
+                    "Do not reward claims that replace qualified source language with categorical legal rules.",
+                    "Do not reward omission of factual predicates, exceptions, or procedural posture limits in cited authorities.",
+                    "If the memo broadens the holding beyond the cited text, mark failure even if the citation token is valid.",
+                ]
+                if over_note
+                else []
+            ),
             "precedence_trigger_note": precedence_note,
-            "precedence_cautions": [
-                "Do not treat vacated, overruled, or superseded authority as controlling when higher-priority authority exists.",
-                "Do not elevate persuasive or non-binding sources above controlling forum authority.",
-                "Require explicit hierarchy reasoning when authorities conflict across court level or decision status.",
-            ]
-            if precedence_note
-            else [],
+            "precedence_cautions": (
+                [
+                    "Do not treat vacated, overruled, or superseded authority as controlling when higher-priority authority exists.",
+                    "Do not elevate persuasive or non-binding sources above controlling forum authority.",
+                    "Require explicit hierarchy reasoning when authorities conflict across court level or decision status.",
+                ]
+                if precedence_note
+                else []
+            ),
         },
     }
 
@@ -1012,17 +1140,26 @@ def _generate_one_item(
         nonlocal last_usage, parse_attempt_index
         parse_attempt_index += 1
 
-        response = _call_openai_parse(openai_client, request, GeneratedSyntheticItemOutput)
+        response = _call_openai_parse(
+            openai_client, request, GeneratedSyntheticItemOutput
+        )
         last_usage = response.usage
 
-        trace_path = generation_traces_dir / f"{mode_name}_{request_id}_attempt{parse_attempt_index}.json"
+        trace_path = (
+            generation_traces_dir
+            / f"{mode_name}_{request_id}_attempt{parse_attempt_index}.json"
+        )
         trace_path.parent.mkdir(parents=True, exist_ok=True)
         trace_path.write_text(response.model_dump_json(indent=2), encoding="utf-8")
 
         if response.output_parsed is None:
-            raise MissingParsedStructuredOutputError("Generated response did not include output_parsed.")
+            raise MissingParsedStructuredOutputError(
+                "Generated response did not include output_parsed."
+            )
 
-        parsed_candidate = response.output_parsed.model_dump(mode="python", exclude_none=True)
+        parsed_candidate = response.output_parsed.model_dump(
+            mode="python", exclude_none=True
+        )
         try:
             normalized_candidate = _normalize_generated_item(
                 parsed_candidate,
@@ -1031,9 +1168,13 @@ def _generate_one_item(
                 packet_id=config.packet_id,
                 as_of_date=config.as_of_date,
             )
-            validated_candidate = SyntheticItem.model_validate(normalized_candidate).model_dump()
+            validated_candidate = SyntheticItem.model_validate(
+                normalized_candidate
+            ).model_dump()
         except (ValueError, ValidationError) as error:
-            raise InvalidGeneratedCandidateError("Generated candidate failed normalization/validation.") from error
+            raise InvalidGeneratedCandidateError(
+                "Generated candidate failed normalization/validation."
+            ) from error
 
         validated_candidate["item_id"] = item_id
         validated_candidate["query_id"] = query_id
@@ -1103,7 +1244,9 @@ def _has_any_caution(cautions: list[str]) -> bool:
     return False
 
 
-def _deterministic_validation(item_payload: dict[str, Any], citation_universe: set[str]) -> tuple[bool, list[str], dict[str, Any]]:
+def _deterministic_validation(
+    item_payload: dict[str, Any], citation_universe: set[str]
+) -> tuple[bool, list[str], dict[str, Any]]:
     reasons: list[str] = []
     item = SyntheticItem.model_validate(item_payload)
 
@@ -1125,14 +1268,22 @@ def _deterministic_validation(item_payload: dict[str, Any], citation_universe: s
     if not _has_any_caution(item.grading_contract.citation_integrity_cautions):
         reasons.append("missing_citation_integrity_cautions")
 
-    if item.target_error_mode == "C" and not _has_non_empty_note(item.grading_contract.overextension_trigger_note):
+    if item.target_error_mode == "C" and not _has_non_empty_note(
+        item.grading_contract.overextension_trigger_note
+    ):
         reasons.append("missing_overextension_criteria")
-    if item.target_error_mode == "C" and not _has_any_caution(item.grading_contract.overextension_cautions):
+    if item.target_error_mode == "C" and not _has_any_caution(
+        item.grading_contract.overextension_cautions
+    ):
         reasons.append("missing_overextension_cautions")
 
-    if item.target_error_mode == "D" and not _has_non_empty_note(item.grading_contract.precedence_trigger_note):
+    if item.target_error_mode == "D" and not _has_non_empty_note(
+        item.grading_contract.precedence_trigger_note
+    ):
         reasons.append("missing_precedence_criteria")
-    if item.target_error_mode == "D" and not _has_any_caution(item.grading_contract.precedence_cautions):
+    if item.target_error_mode == "D" and not _has_any_caution(
+        item.grading_contract.precedence_cautions
+    ):
         reasons.append("missing_precedence_cautions")
 
     deduped_reasons: list[str] = []
@@ -1143,21 +1294,25 @@ def _deterministic_validation(item_payload: dict[str, Any], citation_universe: s
         deduped_reasons.append(reason)
         seen_reasons.add(reason)
 
-    return len(deduped_reasons) == 0, deduped_reasons, {
-        "expected_citation_count": len(expected_citations),
-        "criteria_checks_passed": not any(
-            reason
-            in {
-                "missing_citation_integrity_criteria",
-                "missing_citation_integrity_cautions",
-                "missing_overextension_criteria",
-                "missing_overextension_cautions",
-                "missing_precedence_criteria",
-                "missing_precedence_cautions",
-            }
-            for reason in deduped_reasons
-        ),
-    }
+    return (
+        len(deduped_reasons) == 0,
+        deduped_reasons,
+        {
+            "expected_citation_count": len(expected_citations),
+            "criteria_checks_passed": not any(
+                reason
+                in {
+                    "missing_citation_integrity_criteria",
+                    "missing_citation_integrity_cautions",
+                    "missing_overextension_criteria",
+                    "missing_overextension_cautions",
+                    "missing_precedence_criteria",
+                    "missing_precedence_cautions",
+                }
+                for reason in deduped_reasons
+            ),
+        },
+    )
 
 
 def _build_validation_request(
@@ -1165,12 +1320,16 @@ def _build_validation_request(
     item_payload: dict[str, Any],
     packet_corpus_text: str,
 ) -> dict[str, Any]:
-    system_prompt, user_prompt = _load_verifier_prompts(item_payload, packet_corpus_text)
+    system_prompt, user_prompt = _load_verifier_prompts(
+        item_payload, packet_corpus_text
+    )
     return {
         "model": config.validation_model,
         "service_tier": config.service_tier,
         "instructions": system_prompt,
-        "input": [{"role": "user", "content": [{"type": "input_text", "text": user_prompt}]}],
+        "input": [
+            {"role": "user", "content": [{"type": "input_text", "text": user_prompt}]}
+        ],
         "reasoning": {"effort": config.validation_reasoning_effort},
     }
 
@@ -1217,14 +1376,17 @@ def _validate_one_item(
         response = _call_openai_parse(openai_client, request, VerifierOutput)
         last_usage = response.usage
         if response.output_parsed is None:
-            raise MissingVerifierStructuredOutputError("Verifier response did not include output_parsed.")
+            raise MissingVerifierStructuredOutputError(
+                "Verifier response did not include output_parsed."
+            )
         return response
 
     try:
         response = _run_with_retries(
             call_fn=_attempt_validation,
             max_attempts=max_attempts,
-            retryable_exceptions=RETRIABLE_OPENAI_EXCEPTIONS + (ValidationError, MissingVerifierStructuredOutputError),
+            retryable_exceptions=RETRIABLE_OPENAI_EXCEPTIONS
+            + (ValidationError, MissingVerifierStructuredOutputError),
         )
     except ValidationError:
         latency = time.perf_counter() - start_time
@@ -1336,7 +1498,9 @@ class SyntheticGenerationPipeline:
         if not manifest_csv.exists():
             raise ValueError(f"Packet manifest not found: {manifest_csv}")
 
-        run_paths = _create_run_paths(self.config.output_root, self.config.packet_id, run_id)
+        run_paths = _create_run_paths(
+            self.config.output_root, self.config.packet_id, run_id
+        )
         (run_paths.metadata_dir / "config_snapshot.md").write_text(
             "\n".join(
                 [
@@ -1383,7 +1547,9 @@ class SyntheticGenerationPipeline:
         packet_inputs: PacketInputs | None = None,
         openai_client: OpenAI | None = None,
     ) -> GenerationResult:
-        resolved_packet_inputs = packet_inputs or _load_packet_inputs_for_generation(context)
+        resolved_packet_inputs = packet_inputs or _load_packet_inputs_for_generation(
+            context
+        )
         packet_corpus_text = resolved_packet_inputs.packet_corpus_text
 
         per_mode_counts = {
@@ -1395,14 +1561,20 @@ class SyntheticGenerationPipeline:
             raise ValueError("No packet citation tokens available for generation.")
         default_citation_token = resolved_packet_inputs.citation_tokens_in_order[0]
 
-        candidates_by_mode: dict[str, list[dict[str, Any]]] = {mode: [] for mode in per_mode_counts}
+        candidates_by_mode: dict[str, list[dict[str, Any]]] = {
+            mode: [] for mode in per_mode_counts
+        }
         metrics_rows: list[dict[str, Any]] = []
 
-        def generate_mode(mode_name: str) -> tuple[str, list[dict[str, Any]], list[dict[str, Any]]]:
+        def generate_mode(
+            mode_name: str,
+        ) -> tuple[str, list[dict[str, Any]], list[dict[str, Any]]]:
             mode_candidates: list[dict[str, Any]] = []
             mode_metrics: list[dict[str, Any]] = []
             item_count = per_mode_counts[mode_name]
-            generation_worker_count = max(1, min(context.config.parallelism.generation_workers, item_count))
+            generation_worker_count = max(
+                1, min(context.config.parallelism.generation_workers, item_count)
+            )
 
             with ThreadPoolExecutor(max_workers=generation_worker_count) as item_pool:
                 futures: dict[Any, dict[str, Any]] = {}
@@ -1453,8 +1625,15 @@ class SyntheticGenerationPipeline:
 
             return mode_name, mode_candidates, mode_metrics
 
-        with ThreadPoolExecutor(max_workers=min(context.config.parallelism.mode_workers, len(per_mode_counts))) as mode_pool:
-            mode_futures = [mode_pool.submit(generate_mode, mode_name) for mode_name in per_mode_counts]
+        with ThreadPoolExecutor(
+            max_workers=min(
+                context.config.parallelism.mode_workers, len(per_mode_counts)
+            )
+        ) as mode_pool:
+            mode_futures = [
+                mode_pool.submit(generate_mode, mode_name)
+                for mode_name in per_mode_counts
+            ]
             for mode_future in as_completed(mode_futures):
                 mode_name, mode_candidates, mode_metrics = mode_future.result()
                 candidates_by_mode[mode_name] = mode_candidates
@@ -1466,7 +1645,10 @@ class SyntheticGenerationPipeline:
         context.run_paths.generation_candidates_dir.mkdir(parents=True, exist_ok=True)
         context.run_paths.generation_metrics_dir.mkdir(parents=True, exist_ok=True)
         for mode_name, candidates in candidates_by_mode.items():
-            with (context.run_paths.generation_candidates_dir / f"{mode_name}_candidates.jsonl").open(
+            with (
+                context.run_paths.generation_candidates_dir
+                / f"{mode_name}_candidates.jsonl"
+            ).open(
                 "w",
                 encoding="utf-8",
             ) as file_handle:
@@ -1474,9 +1656,17 @@ class SyntheticGenerationPipeline:
                     file_handle.write(json.dumps(candidate, ensure_ascii=True) + "\n")
 
         augmented_metrics_df = _augment_with_latency_milliseconds(metrics_df)
-        augmented_metrics_df.to_csv(context.run_paths.generation_metrics_dir / "request_metrics.csv", index=False)
-        augmented_metrics_df.to_csv(context.run_paths.generation_metrics_dir / "datapoint_timings.csv", index=False)
-        return GenerationResult(candidates_by_mode=candidates_by_mode, request_metrics=augmented_metrics_df)
+        augmented_metrics_df.to_csv(
+            context.run_paths.generation_metrics_dir / "request_metrics.csv",
+            index=False,
+        )
+        augmented_metrics_df.to_csv(
+            context.run_paths.generation_metrics_dir / "datapoint_timings.csv",
+            index=False,
+        )
+        return GenerationResult(
+            candidates_by_mode=candidates_by_mode, request_metrics=augmented_metrics_df
+        )
 
     def run_validation(
         self,
@@ -1486,7 +1676,9 @@ class SyntheticGenerationPipeline:
         candidates: list[dict[str, Any]],
         openai_client: OpenAI | None = None,
     ) -> ValidationResult:
-        resolved_packet_inputs = packet_inputs or _load_packet_inputs_for_generation(context)
+        resolved_packet_inputs = packet_inputs or _load_packet_inputs_for_generation(
+            context
+        )
         citation_universe = resolved_packet_inputs.citation_universe
 
         deterministic_rows: list[dict[str, Any]] = []
@@ -1494,9 +1686,13 @@ class SyntheticGenerationPipeline:
         items_for_llm: list[dict[str, Any]] = []
 
         for item_index, item in enumerate(candidates, start=1):
-            item_id = str(item.get("item_id", "")).strip() or f"unknown_item_{item_index:04d}"
+            item_id = (
+                str(item.get("item_id", "")).strip() or f"unknown_item_{item_index:04d}"
+            )
             try:
-                deterministic_pass, reasons, details = _deterministic_validation(item, citation_universe)
+                deterministic_pass, reasons, details = _deterministic_validation(
+                    item, citation_universe
+                )
             except (ValidationError, ValueError, TypeError) as error:
                 deterministic_rows.append(
                     {
@@ -1541,7 +1737,10 @@ class SyntheticGenerationPipeline:
         metrics_rows: list[dict[str, Any]] = []
 
         if items_for_llm:
-            validation_worker_count = max(1, min(context.config.parallelism.validation_workers, len(items_for_llm)))
+            validation_worker_count = max(
+                1,
+                min(context.config.parallelism.validation_workers, len(items_for_llm)),
+            )
 
             with ThreadPoolExecutor(max_workers=validation_worker_count) as pool:
                 futures = {
@@ -1602,15 +1801,29 @@ class SyntheticGenerationPipeline:
         metrics_df = pd.DataFrame(metrics_rows)
         llm_reviews_csv_df = _build_llm_review_csv_table(llm_reviews)
 
-        deterministic_df.to_csv(context.run_paths.validation_dir / "deterministic_checks.csv", index=False)
-        with (context.run_paths.validation_dir / "llm_consensus_reviews.jsonl").open("w", encoding="utf-8") as file_handle:
+        deterministic_df.to_csv(
+            context.run_paths.validation_dir / "deterministic_checks.csv", index=False
+        )
+        with (context.run_paths.validation_dir / "llm_consensus_reviews.jsonl").open(
+            "w", encoding="utf-8"
+        ) as file_handle:
             for review in llm_reviews:
                 file_handle.write(json.dumps(review, ensure_ascii=True) + "\n")
-        llm_reviews_csv_df.to_csv(context.run_paths.validation_dir / "llm_consensus_reviews.csv", index=False)
-        rejection_df.to_csv(context.run_paths.validation_dir / "rejection_log.csv", index=False)
+        llm_reviews_csv_df.to_csv(
+            context.run_paths.validation_dir / "llm_consensus_reviews.csv", index=False
+        )
+        rejection_df.to_csv(
+            context.run_paths.validation_dir / "rejection_log.csv", index=False
+        )
         augmented_metrics_df = _augment_with_latency_milliseconds(metrics_df)
-        augmented_metrics_df.to_csv(context.run_paths.validation_metrics_dir / "request_metrics.csv", index=False)
-        augmented_metrics_df.to_csv(context.run_paths.validation_metrics_dir / "datapoint_timings.csv", index=False)
+        augmented_metrics_df.to_csv(
+            context.run_paths.validation_metrics_dir / "request_metrics.csv",
+            index=False,
+        )
+        augmented_metrics_df.to_csv(
+            context.run_paths.validation_metrics_dir / "datapoint_timings.csv",
+            index=False,
+        )
         validation_datapoints_df = _build_validation_datapoints_table(
             candidates=candidates,
             deterministic_df=deterministic_df,
@@ -1618,7 +1831,17 @@ class SyntheticGenerationPipeline:
             rejection_df=rejection_df,
             validation_metrics_df=augmented_metrics_df,
         )
-        validation_datapoints_df.to_csv(context.run_paths.validation_dir / "validation_datapoints.csv", index=False)
+        validation_datapoints_df.to_csv(
+            context.run_paths.validation_dir / "validation_datapoints.csv", index=False
+        )
+        with (context.run_paths.validation_dir / "accepted_items.jsonl").open(
+            "w", encoding="utf-8"
+        ) as file_handle:
+            for item in accepted_items:
+                file_handle.write(json.dumps(item, ensure_ascii=True) + "\n")
+        pd.DataFrame(accepted_items).to_csv(
+            context.run_paths.validation_dir / "accepted_items.csv", index=False
+        )
 
         return ValidationResult(
             accepted_items=accepted_items,
@@ -1629,66 +1852,35 @@ class SyntheticGenerationPipeline:
             request_metrics=augmented_metrics_df,
         )
 
-    def run_selection(self, *, context: PipelineContext, accepted_items: list[dict[str, Any]]) -> SelectionResult:
+    def export_canonical_dataset(self, accepted_items: list[dict[str, Any]]) -> Path:
         if not accepted_items:
-            raise ValueError("No accepted items available for selection.")
+            raise ValueError("No accepted items available for dataset export.")
 
-        selected_items = list(accepted_items)
-        selection_rows = [
-            {
-                "item_id": item["item_id"],
-                "mode_name": ERROR_TO_MODE[item["target_error_mode"]],
-                "target_error_mode": item["target_error_mode"],
-            }
-            for item in selected_items
-        ]
-        selection_table = pd.DataFrame(selection_rows).sort_values(["mode_name", "item_id"]).reset_index(drop=True)
-
-        report_lines = [
-            "# Selection Report",
-            "",
-            f"Total selected items: {len(selected_items)}",
-            "",
-            "## Per-mode counts",
-        ]
-        for mode_name, count in selection_table.groupby("mode_name")["item_id"].count().to_dict().items():
-            report_lines.append(f"- {mode_name}: {count}")
-        report_lines.append("")
-        report_lines.append("## Selected items")
-        for _, row in selection_table.iterrows():
-            report_lines.append(f"- {row['item_id']} ({row['mode_name']})")
-        report_text = "\n".join(report_lines) + "\n"
-
-        with (context.run_paths.selection_dir / "selected_items.jsonl").open("w", encoding="utf-8") as file_handle:
-            for item in selected_items:
-                file_handle.write(json.dumps(item, ensure_ascii=True) + "\n")
-        selection_table.to_csv(context.run_paths.selection_dir / "selected_items.csv", index=False)
-        (context.run_paths.selection_dir / "selection_report.md").write_text(report_text, encoding="utf-8")
-
-        return SelectionResult(
-            selected_items=selected_items,
-            selection_table=selection_table,
-            selection_report_markdown=report_text,
-        )
-
-    def export_canonical_dataset(self, selected_items: list[dict[str, Any]]) -> Path:
         dataset_dir = self.config.dataset_root / self.config.packet_id
         dataset_dir.mkdir(parents=True, exist_ok=True)
 
-        with (dataset_dir / "synthetic_items.jsonl").open("w", encoding="utf-8") as file_handle:
-            for item in selected_items:
+        with (dataset_dir / "synthetic_items.jsonl").open(
+            "w", encoding="utf-8"
+        ) as file_handle:
+            for item in accepted_items:
                 file_handle.write(json.dumps(item, ensure_ascii=True) + "\n")
 
-        pd.DataFrame(selected_items).to_csv(dataset_dir / "synthetic_items.csv", index=False)
+        pd.DataFrame(accepted_items).to_csv(
+            dataset_dir / "synthetic_items.csv", index=False
+        )
         return dataset_dir
 
-    def run_all(self, context: PipelineContext, openai_client: OpenAI | None = None) -> dict[str, Any]:
+    def run_all(
+        self, context: PipelineContext, openai_client: OpenAI | None = None
+    ) -> dict[str, Any]:
         run_start_time = time.perf_counter()
 
         packet_prep_start_time = time.perf_counter()
         packet_inputs = _load_packet_inputs_for_generation(context)
         packet_input_sanity = _packet_input_sanity(packet_inputs)
-        packet_input_sanity.to_csv(context.run_paths.metadata_dir / "packet_input_sanity.csv", index=False)
+        packet_input_sanity.to_csv(
+            context.run_paths.metadata_dir / "packet_input_sanity.csv", index=False
+        )
         packet_prep_duration_seconds = time.perf_counter() - packet_prep_start_time
 
         generation_start_time = time.perf_counter()
@@ -1712,39 +1904,51 @@ class SyntheticGenerationPipeline:
         )
         validation_duration_seconds = time.perf_counter() - validation_start_time
 
-        selection_start_time = time.perf_counter()
-        selection_result = self.run_selection(context=context, accepted_items=validation_result.accepted_items)
-        selection_duration_seconds = time.perf_counter() - selection_start_time
-
         export_start_time = time.perf_counter()
-        dataset_dir = self.export_canonical_dataset(selection_result.selected_items)
+        dataset_dir = self.export_canonical_dataset(validation_result.accepted_items)
         export_duration_seconds = time.perf_counter() - export_start_time
 
-        metrics_frames = [frame for frame in [generation_result.request_metrics, validation_result.request_metrics] if not frame.empty]
-        combined_metrics = pd.concat(metrics_frames, ignore_index=True) if metrics_frames else pd.DataFrame()
+        metrics_frames = [
+            frame
+            for frame in [
+                generation_result.request_metrics,
+                validation_result.request_metrics,
+            ]
+            if not frame.empty
+        ]
+        combined_metrics = (
+            pd.concat(metrics_frames, ignore_index=True)
+            if metrics_frames
+            else pd.DataFrame()
+        )
         metrics_summary = summarize_request_metrics(combined_metrics)
-        metrics_summary.to_csv(context.run_paths.summary_dir / "stage_metrics_summary.csv", index=False)
+        metrics_summary.to_csv(
+            context.run_paths.summary_dir / "stage_metrics_summary.csv", index=False
+        )
 
         datapoint_timings = _build_datapoint_timing_table(
             generation_metrics=generation_result.request_metrics,
             validation_metrics=validation_result.request_metrics,
         )
-        datapoint_timings.to_csv(context.run_paths.summary_dir / "datapoint_timings.csv", index=False)
+        datapoint_timings.to_csv(
+            context.run_paths.summary_dir / "datapoint_timings.csv", index=False
+        )
 
         total_run_duration_seconds = time.perf_counter() - run_start_time
         run_summary = {
             "packet_block_rows": int(len(packet_inputs.citation_tokens_in_order)),
             "packet_document_count": int(packet_inputs.source_documents.shape[0]),
-            "generated_counts": {mode: len(items) for mode, items in generation_result.candidates_by_mode.items()},
+            "generated_counts": {
+                mode: len(items)
+                for mode, items in generation_result.candidates_by_mode.items()
+            },
             "accepted_items": len(validation_result.accepted_items),
-            "selected_items": len(selection_result.selected_items),
             "run_root": str(context.run_paths.run_root),
             "dataset_dir": str(dataset_dir),
             "stage_durations_seconds": {
                 "packet_prep": packet_prep_duration_seconds,
                 "generation": generation_duration_seconds,
                 "validation": validation_duration_seconds,
-                "selection": selection_duration_seconds,
                 "dataset_export": export_duration_seconds,
                 "run_total": total_run_duration_seconds,
             },
@@ -1762,7 +1966,9 @@ class SyntheticGenerationPipeline:
                     "completed_at_utc": _utc_now_iso(),
                     "layout_version": "v2",
                     "paths": _json_safe(context.run_paths.__dict__),
-                    "summary_file": str(context.run_paths.summary_dir / "run_summary.json"),
+                    "summary_file": str(
+                        context.run_paths.summary_dir / "run_summary.json"
+                    ),
                 },
                 indent=2,
             )

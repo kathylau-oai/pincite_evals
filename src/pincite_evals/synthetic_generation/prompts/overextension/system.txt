@@ -23,6 +23,17 @@ Return exactly one JSON object with these fields:
 - `scenario_facts`
 - `grading_contract`
 
+Field definitions (follow exactly):
+- `schema_version`: Must be the literal string `v1`; this tags the item schema version.
+- `item_id`: Stable item identifier for this datapoint (format: `<packet_id>_<mode_letter>_<item_index>`).
+- `packet_id`: Packet identifier; must match the fixed metadata value.
+- `target_error_mode`: The error-mode letter for this item; for this prompt it must be `C`.
+- `query_id`: Stable query identifier for this datapoint (for example `q_ove_0001`).
+- `as_of_date`: ISO date (`YYYY-MM-DD`) that defines the legal authority time boundary; must match fixed metadata.
+- `user_query`: Realistic lawyer request text that a user would type into a drafting assistant.
+- `scenario_facts`: Focused list of concrete case/client facts that materially affect the query.
+- `grading_contract`: Grading rules object containing expected citations plus trigger notes/cautions for pass/fail.
+
 # Required content rules
 1. Read all packet documents before choosing the trap.
 2. Pick a source proposition that is materially qualified, conditional, fact-bound, or exception-limited.
@@ -38,6 +49,11 @@ Return exactly one JSON object with these fields:
 7. `citation_integrity_trigger_note` must explain how fabricated or unsupported legal claims should be judged.
 8. `overextension_trigger_note` must be specific enough for deterministic pass/fail judgment.
 9. `precedence_trigger_note` should be `null` for this mode.
+10. Do a final verification following the verification section below.
+11. Keep `scenario_facts` tight and factual:
+   - Include 1-5 facts maximum.
+   - Each fact should be one short sentence (usually <= 25 words).
+   - Include only material facts; avoid long background narratives, repetition, or instruction-style text.
 
 # Grading contract requirements
 - `expected_citation_groups`: 1-3 groups, each group containing 1-3 packet citation tokens.
@@ -57,12 +73,21 @@ Return exactly one JSON object with these fields:
   - what a correct narrower claim would look like.
 - `overextension_cautions`: at least 4 detailed cautions; each caution should be at least 10 words.
 - `precedence_cautions`: empty list unless truly needed.
+- `expected_citation_groups` must include one anchor group for the base rule and one anchor group for the limiter, exception, or condition that narrows that rule.
+- Do not use a `SUMMARY`/headnote block as the only support for any core proposition in the grading contract.
+
+# Self-Consistency Audit (hard gate before final output)
+Before returning JSON, run this audit and revise until every check passes:
+1. Absence truthfulness: do not claim authority is absent if any packet block cites or quotes it.
+2. Summary/headnote discipline: do not require summary/headnote blocks as mandatory holding support.
+3. Contract coherence: trigger notes, cautions, and expected citations must agree and must not conflict.
 
 # User query style (hard rule)
 The `user_query` must read like a real lawyer request, not an evaluator instruction prompt.
 - Keep it natural and concise.
 - Do not include "Task:", numbered checklists, formatting mandates, or closed-world policy reminders.
 - Put detailed constraints in `scenario_facts` and `grading_contract`, not in `user_query`.
+- Keep `scenario_facts` concise: 1-5 short factual bullets, not a long narrative.
 
 # Query style guide
 {{ lawyer_query_style_guide }}
@@ -105,9 +130,16 @@ Look for these relationships across the packet:
 - Designed to trigger a real legal drafting mistake that a lawyer would flag.
 - Avoid trivia and avoid impossible tasks.
 
+# Verification Requirements
+- Do a final self-check for realism: would a real lawyer naturally type this `user_query` under time pressure?
+- Do not force the trigger; if it feels contrived or “eval-y,” rewrite it.
+- Re-read the packet blocks you plan to cite and confirm they actually support the rule *and* its key limiters/conditions.
+- Ensure `expected_citation_groups` includes any necessary limiter/exception support so graders can objectively detect overclaiming.
+
 # Output discipline
 - Return exactly one JSON object compatible with the structured output schema.
 - No markdown, no prose outside the JSON object.
 - Keep every claim and citation closed-world (packet only).
 - Write grading guidance that is specific, auditable, and useful for consistent pass/fail decisions.
 - Trigger notes and caution lists must be detailed, concrete, and beginner-readable.
+- Keep `scenario_facts` concise and high-signal (1-5 short factual bullets only).

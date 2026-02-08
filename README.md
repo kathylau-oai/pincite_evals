@@ -100,7 +100,7 @@ Key outputs include:
 - `summary/datapoint_timings.csv`
 - `validation/llm_consensus_reviews.csv`
 - `validation/validation_datapoints.csv`
-- `selection/selected_items.jsonl`
+- `validation/accepted_items.jsonl`
 - canonical dataset export in `data/datasets/<packet_id>/synthetic_items.{jsonl,csv}`
 
 ## Disclaimer
