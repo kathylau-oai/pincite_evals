@@ -17,7 +17,6 @@ from pincite_evals.eval_runner import (
     _build_response_request,
     _parse_args,
     _compute_distribution_stats,
-    _estimate_inter_token_latency_seconds,
     _evaluate_single_row,
     _prepare_spreadsheet_friendly_export_frame,
     _prepare_dataset,
@@ -97,22 +96,7 @@ def test_distribution_stats_computes_expected_values():
     assert stats["latency_p99"] == 4.96
 
 
-def test_estimate_inter_token_latency_seconds_uses_e2e_over_output_tokens():
-    inter_token_latency = _estimate_inter_token_latency_seconds(
-        latency_seconds=8.0,
-        output_tokens=4.0,
-    )
-
-    assert inter_token_latency == 2.0
-
-
-def test_estimate_inter_token_latency_seconds_returns_none_without_valid_tokens():
-    assert _estimate_inter_token_latency_seconds(latency_seconds=5.0, output_tokens=0.0) is None
-    assert _estimate_inter_token_latency_seconds(latency_seconds=5.0, output_tokens=None) is None
-    assert _estimate_inter_token_latency_seconds(latency_seconds=None, output_tokens=5.0) is None
-
-
-def test_evaluate_single_row_estimates_inter_token_latency_from_e2e_and_output_tokens(tmp_path):
+def test_evaluate_single_row_records_non_streaming_fields(tmp_path):
     row = pd.Series(
         {
             "item_id": "row_0",
@@ -144,11 +128,10 @@ def test_evaluate_single_row_estimates_inter_token_latency_from_e2e_and_output_t
                 "output_tokens_details": {"reasoning_tokens": 0},
             },
             "latency_seconds": 8.0,
-            "ttft_seconds": 0.7,
             "raw_response": {"id": "resp_123"},
         }
 
-    result_row, inter_token_latencies = _evaluate_single_row(
+    result_row = _evaluate_single_row(
         row=row,
         source_row_index=0,
         model_config=model_config,
@@ -160,9 +143,10 @@ def test_evaluate_single_row_estimates_inter_token_latency_from_e2e_and_output_t
         dry_run=False,
     )
 
-    assert inter_token_latencies == [2.0]
-    assert result_row["inter_token_latency_avg_seconds"] == 2.0
-    assert result_row["inter_token_event_count"] == 4
+    assert result_row["latency_seconds"] == 8.0
+    assert "ttft_seconds" not in result_row
+    assert "inter_token_latency_avg_seconds" not in result_row
+    assert "inter_token_event_count" not in result_row
 
 
 def test_prepare_dataset_creates_id_and_expected_output_columns(tmp_path):
@@ -346,7 +330,6 @@ def test_build_predictions_with_grades_export_includes_per_grader_columns_and_re
                 "model_output": "Output 0",
                 "response_status": "completed",
                 "rendered_user_prompt": "very large prompt payload",
-                "overall_required_graders_passed": True,
             },
             {
                 "model_config": "baseline",
@@ -360,7 +343,6 @@ def test_build_predictions_with_grades_export_includes_per_grader_columns_and_re
                 "model_output": "Output 1",
                 "response_status": "completed",
                 "rendered_user_prompt": "another large prompt payload",
-                "overall_required_graders_passed": False,
             },
         ]
     )
@@ -395,7 +377,7 @@ def test_build_predictions_with_grades_export_includes_per_grader_columns_and_re
                 "grader_status": "completed",
                 "grader_passed": False,
                 "grader_error": None,
-                "grader_details_json": "{\"reason\": \"Claim overstates the authority.\"}",
+                "grader_details_json": "{\"judge_result\": {\"reason\": \"Claim overstates the authority.\"}}",
             },
         ]
     )
@@ -408,36 +390,39 @@ def test_build_predictions_with_grades_export_includes_per_grader_columns_and_re
         "item_id",
         "packet_id",
         "query_id",
-        "as_of_date",
         "target_error_mode",
         "user_query",
         "model_output",
         "response_status",
-        "overall_required_graders_passed",
-        "overall_required_graders_reason",
     }
     assert expected_base_columns.issubset(set(export_frame.columns))
     assert "rendered_user_prompt" not in export_frame.columns
-    assert export_frame.loc[0, "overall_required_graders_reason"] == "All required graders passed."
-    assert "expected_citation_presence: Missing groups: 1; unexpected citations: 0." in export_frame.loc[
-        1, "overall_required_graders_reason"
-    ]
-    assert "citation_overextension_llm_judge: Claim overstates the authority." in export_frame.loc[
-        1, "overall_required_graders_reason"
-    ]
+    assert "as_of_date" not in export_frame.columns
+    assert "overall_required_graders_passed" not in export_frame.columns
+    assert "overall_required_graders_reason" not in export_frame.columns
 
-    # Per-grader granular columns are required for easier manual audit.
-    assert export_frame.loc[0, "grader_expected_citation_presence_status"] == "completed"
+    # Per-grader granular pass/fail + reason columns are required for easier manual audit.
     assert bool(export_frame.loc[0, "grader_expected_citation_presence_passed"]) is True
     assert export_frame.loc[0, "grader_expected_citation_presence_reason"] == "Grader did not provide a reason."
 
-    assert export_frame.loc[1, "grader_expected_citation_presence_status"] == "completed"
     assert bool(export_frame.loc[1, "grader_expected_citation_presence_passed"]) is False
     assert export_frame.loc[1, "grader_expected_citation_presence_reason"] == "Missing groups: 1; unexpected citations: 0."
 
-    assert export_frame.loc[1, "grader_citation_overextension_llm_judge_status"] == "completed"
     assert bool(export_frame.loc[1, "grader_citation_overextension_llm_judge_passed"]) is False
     assert export_frame.loc[1, "grader_citation_overextension_llm_judge_reason"] == "Claim overstates the authority."
+
+    unexpected_grader_columns = [
+        column_name
+        for column_name in export_frame.columns
+        if column_name.startswith("grader_")
+        and (
+            column_name.endswith("_status")
+            or column_name.endswith("_score")
+            or column_name.endswith("_label")
+            or column_name.endswith("_details_json")
+        )
+    ]
+    assert unexpected_grader_columns == []
 
 
 def test_build_predictions_and_grades_debug_export_keeps_only_granular_grader_pass_fail_and_reason():

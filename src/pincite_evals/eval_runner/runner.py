@@ -324,16 +324,6 @@ def _compute_distribution_stats(values: pd.Series, prefix: str) -> Dict[str, Any
     }
 
 
-def _estimate_inter_token_latency_seconds(
-    *, latency_seconds: Optional[float], output_tokens: Optional[float]
-) -> Optional[float]:
-    if latency_seconds is None or output_tokens is None:
-        return None
-    if output_tokens <= 0:
-        return None
-    return float(latency_seconds / output_tokens)
-
-
 def _build_input_profile(dataset: pd.DataFrame, id_column: str, prompt_column: str) -> Tuple[pd.DataFrame, pd.DataFrame]:
     column_profile_rows: List[Dict[str, Any]] = []
     for column_name in dataset.columns:
@@ -460,23 +450,11 @@ def _build_retrying_caller(*, client: OpenAI, args: argparse.Namespace):
     )
     def _call(request: Dict[str, Any]) -> Dict[str, Any]:
         start_time = time.perf_counter()
-        first_output_delta_timestamp: Optional[float] = None
-        output_fragments: List[str] = []
-
-        with client.responses.stream(**request, timeout=args.request_timeout_seconds) as stream:
-            for event in stream:
-                if event.type == "response.output_text.delta":
-                    now = time.perf_counter()
-                    if first_output_delta_timestamp is None:
-                        first_output_delta_timestamp = now
-                    output_fragments.append(event.delta)
-            final_response = stream.get_final_response()
+        final_response = client.responses.create(**request, timeout=args.request_timeout_seconds)
 
         end_time = time.perf_counter()
 
-        output_text = "".join(output_fragments)
-        if not output_text:
-            output_text = final_response.output_text or ""
+        output_text = final_response.output_text or ""
 
         incomplete_reason: Optional[str] = None
         if final_response.incomplete_details is not None:
@@ -499,11 +477,6 @@ def _build_retrying_caller(*, client: OpenAI, args: argparse.Namespace):
             "output_text": output_text,
             "usage": usage_dict,
             "latency_seconds": end_time - start_time,
-            "ttft_seconds": (
-                first_output_delta_timestamp - start_time
-                if first_output_delta_timestamp is not None
-                else None
-            ),
             "raw_response": final_response.model_dump(mode="json"),
         }
 
@@ -848,7 +821,7 @@ def _evaluate_single_row(
     expected_output_column: str,
     dry_run: bool,
     user_prompt_template: str = DEFAULT_DRAFTING_USER_PROMPT_TEMPLATE,
-) -> Tuple[Dict[str, Any], List[float]]:
+) -> Dict[str, Any]:
     item_id = str(row[id_column])
     source_user_query = str(row[prompt_column])
     expected_output = row[expected_output_column]
@@ -900,16 +873,13 @@ def _evaluate_single_row(
             "incomplete_reason": None,
             "request_error": None,
             "latency_seconds": 0.0,
-            "ttft_seconds": None,
-            "inter_token_latency_avg_seconds": None,
-            "inter_token_event_count": 0,
             "input_tokens": None,
             "output_tokens": None,
             "reasoning_tokens": None,
             "total_tokens": None,
             **grade_data,
         }
-        return result_row, []
+        return result_row
 
     try:
         model_result = call_model(request)
@@ -922,9 +892,6 @@ def _evaluate_single_row(
             "incomplete_reason": None,
             "request_error": str(error),
             "latency_seconds": None,
-            "ttft_seconds": None,
-            "inter_token_latency_avg_seconds": None,
-            "inter_token_event_count": 0,
             "input_tokens": None,
             "output_tokens": None,
             "reasoning_tokens": None,
@@ -934,24 +901,9 @@ def _evaluate_single_row(
             "grade_score": None,
             "grade_notes": "Request failed before grading.",
         }
-        return failed_row, []
+        return failed_row
 
     usage_fields = _extract_usage_fields(model_result["usage"])
-    inter_token_latency_estimate_seconds = _estimate_inter_token_latency_seconds(
-        latency_seconds=model_result["latency_seconds"],
-        output_tokens=usage_fields["output_tokens"],
-    )
-    inter_token_latencies = (
-        [inter_token_latency_estimate_seconds]
-        if inter_token_latency_estimate_seconds is not None
-        else []
-    )
-    output_token_count = (
-        int(usage_fields["output_tokens"])
-        if usage_fields["output_tokens"] is not None and usage_fields["output_tokens"] > 0
-        else 0
-    )
-
     grade_data = _template_grade(model_result["output_text"], expected_output)
 
     if raw_response_dir is not None:
@@ -965,8 +917,6 @@ def _evaluate_single_row(
                 "incomplete_reason": model_result["incomplete_reason"],
                 "output_text": model_result["output_text"],
                 "latency_seconds": model_result["latency_seconds"],
-                "ttft_seconds": model_result["ttft_seconds"],
-                "inter_token_latencies": inter_token_latencies,
                 "usage": model_result["usage"],
             },
             "raw_response": model_result["raw_response"],
@@ -981,17 +931,13 @@ def _evaluate_single_row(
         "incomplete_reason": model_result["incomplete_reason"],
         "request_error": None,
         "latency_seconds": model_result["latency_seconds"],
-        "ttft_seconds": model_result["ttft_seconds"],
-        "inter_token_latency_avg_seconds": inter_token_latency_estimate_seconds,
-        # This denominator is used for the e2e/token estimate above.
-        "inter_token_event_count": output_token_count,
         "input_tokens": usage_fields["input_tokens"],
         "output_tokens": usage_fields["output_tokens"],
         "reasoning_tokens": usage_fields["reasoning_tokens"],
         "total_tokens": usage_fields["total_tokens"],
         **grade_data,
     }
-    return result_row, inter_token_latencies
+    return result_row
 
 
 def _evaluate_model_config(
@@ -1002,7 +948,7 @@ def _evaluate_model_config(
     run_dir: Path,
     progress_position: int,
     user_prompt_template: str,
-) -> Tuple[pd.DataFrame, List[Dict[str, Any]], List[Dict[str, Any]]]:
+) -> Tuple[pd.DataFrame, List[Dict[str, Any]]]:
     raw_response_dir: Optional[Path] = None
     if args.artifact_level == "debug":
         raw_response_dir = run_dir / "debug" / "raw_responses" / _sanitize_name(model_config.name)
@@ -1015,7 +961,6 @@ def _evaluate_model_config(
         call_model = _build_retrying_caller(client=client, args=args)
 
     row_results: List[Dict[str, Any]] = []
-    inter_token_rows: List[Dict[str, Any]] = []
 
     with ThreadPoolExecutor(max_workers=max(1, args.max_item_workers)) as item_pool:
         future_to_index = {}
@@ -1042,16 +987,8 @@ def _evaluate_model_config(
             leave=True,
         )
         for future in as_completed(future_to_index):
-            row_result, inter_token_latencies = future.result()
+            row_result = future.result()
             row_results.append(row_result)
-            for inter_token_latency in inter_token_latencies:
-                inter_token_rows.append(
-                    {
-                        "model_config": model_config.name,
-                        "source_row_index": row_result["source_row_index"],
-                        "inter_token_latency_seconds": inter_token_latency,
-                    }
-                )
             progress_bar.update(1)
         progress_bar.close()
 
@@ -1060,7 +997,7 @@ def _evaluate_model_config(
     )
 
     quality_summary = _summarize_quality_metrics(row_result_frame)
-    latency_summary = _summarize_latency_metrics(row_result_frame, inter_token_rows)
+    latency_summary = _summarize_latency_metrics(row_result_frame)
     token_summary = _summarize_token_metrics(row_result_frame)
 
     summary_row = {
@@ -1069,7 +1006,7 @@ def _evaluate_model_config(
         **latency_summary,
         **token_summary,
     }
-    return row_result_frame, [summary_row], inter_token_rows
+    return row_result_frame, [summary_row]
 
 
 def _summarize_quality_metrics(result_frame: pd.DataFrame) -> Dict[str, Any]:
@@ -1091,17 +1028,11 @@ def _summarize_quality_metrics(result_frame: pd.DataFrame) -> Dict[str, Any]:
     }
 
 
-def _summarize_latency_metrics(result_frame: pd.DataFrame, inter_token_rows: List[Dict[str, Any]]) -> Dict[str, Any]:
+def _summarize_latency_metrics(result_frame: pd.DataFrame) -> Dict[str, Any]:
     latency_stats = _compute_distribution_stats(result_frame["latency_seconds"], "latency_seconds")
-    ttft_stats = _compute_distribution_stats(result_frame["ttft_seconds"], "ttft_seconds")
-
-    inter_token_series = pd.Series([row["inter_token_latency_seconds"] for row in inter_token_rows])
-    inter_token_stats = _compute_distribution_stats(inter_token_series, "inter_token_latency_seconds")
 
     return {
         **latency_stats,
-        **ttft_stats,
-        **inter_token_stats,
     }
 
 
@@ -1661,6 +1592,13 @@ def _build_grader_reason_text(grader_row: pd.Series) -> str:
         if isinstance(reason, str) and reason.strip():
             return reason.strip()
 
+        # LLM-judge graders often place the reason under judge_result.reason.
+        judge_result = details.get("judge_result")
+        if isinstance(judge_result, dict):
+            judge_reason = judge_result.get("reason")
+            if isinstance(judge_reason, str) and judge_reason.strip():
+                return judge_reason.strip()
+
         missing_groups = details.get("missing_groups")
         unexpected_predictions = details.get("unexpected_predictions")
         if isinstance(missing_groups, list) or isinstance(unexpected_predictions, list):
@@ -1710,7 +1648,6 @@ def _build_predictions_with_grades_export(
     predictions_and_grades_frame: pd.DataFrame, grader_frame: pd.DataFrame
 ) -> pd.DataFrame:
     key_columns = ["model_config", "source_row_index", "item_id"]
-    reason_map = _build_required_grader_reason_map(grader_frame)
 
     # Keep this file compact so downstream analysis is easy to inspect and reload.
     preferred_columns = [
@@ -1719,19 +1656,15 @@ def _build_predictions_with_grades_export(
         "item_id",
         "packet_id",
         "query_id",
-        "as_of_date",
         "target_error_mode",
         "source_user_query",
         "model_output",
         "response_status",
-        "overall_required_graders_passed",
     ]
     available_columns = [column for column in preferred_columns if column in predictions_and_grades_frame.columns]
     compact_frame = predictions_and_grades_frame[available_columns].copy()
 
     compact_frame = compact_frame.rename(columns={"source_user_query": "user_query"})
-    compact_frame = compact_frame.merge(reason_map, on=key_columns, how="left")
-    compact_frame["overall_required_graders_reason"] = compact_frame["overall_required_graders_reason"].fillna("")
 
     if grader_frame.empty:
         return compact_frame
@@ -1741,12 +1674,8 @@ def _build_predictions_with_grades_export(
     grader_names = sorted(grader_with_reason["grader_name"].dropna().astype(str).unique().tolist())
 
     wide_columns = [
-        ("grader_status", "status"),
         ("grader_passed", "passed"),
-        ("grader_score", "score"),
-        ("grader_label", "label"),
         ("grader_reason", "reason"),
-        ("grader_details_json", "details_json"),
     ]
 
     # Some test fixtures and older artifacts can omit optional grader fields.
@@ -2334,7 +2263,6 @@ def main() -> None:
 
     all_result_frames: List[pd.DataFrame] = []
     summary_rows: List[Dict[str, Any]] = []
-    all_inter_token_rows: List[Dict[str, Any]] = []
 
     with ThreadPoolExecutor(max_workers=model_worker_count) as model_pool:
         future_to_name = {}
@@ -2351,17 +2279,15 @@ def main() -> None:
             future_to_name[future] = model_config.name
 
         for future in as_completed(future_to_name):
-            result_frame, summary_row_list, inter_token_rows = future.result()
+            result_frame, summary_row_list = future.result()
             all_result_frames.append(result_frame)
             summary_rows.extend(summary_row_list)
-            all_inter_token_rows.extend(inter_token_rows)
 
     all_results_frame = pd.concat(all_result_frames, ignore_index=True)
     summary_frame = pd.DataFrame(summary_rows).sort_values(by="model_config", kind="mergesort")
 
     if debug_dir is not None:
         all_results_frame.to_csv(debug_dir / "predictions.csv", index=False)
-        pd.DataFrame(all_inter_token_rows).to_csv(debug_dir / "inter_token_latency_events.csv", index=False)
 
     grader_frame = _run_graders(
         predictions_frame=all_results_frame,
@@ -2415,7 +2341,7 @@ def main() -> None:
         _build_slice_metrics(grader_frame).to_csv(debug_dir / "slice_metrics.csv", index=False)
         _reshape_metric_table(
             summary_frame,
-            ["latency_seconds", "ttft_seconds", "inter_token_latency_seconds"],
+            ["latency_seconds"],
             "latency",
         ).to_csv(debug_dir / "latency_metrics.csv", index=False)
         _reshape_metric_table(

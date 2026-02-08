@@ -148,6 +148,14 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
   - **Fix**: In review UIs, support both schema variants (`source_user_query` and `user_query`) and provide grader fallbacks from `overall_required_graders_*` plus `errors.csv` when per-grader columns are absent.
   - **Why**: New compact prediction exports omit per-grader item columns, so strict column assumptions hide critical failure context.
 
+- **Dashboard row drilldown could show the wrong row after search filtering**
+  - **Fix**: Reset filtered review-frame indices and select rows via positional `iloc` from the filtered frame; do not map selected labels back through stale original indices.
+  - **Why**: Prevents label-to-row mismatches that can mislead manual failure review.
+
+- **Grader discovery/view logic missed compact export variants**
+  - **Fix**: Discover grader names from all `grader_<name>_<suffix>` families (`status`, `passed`, `score`, `label`, `reason`, `details_json`) and prefer explicit grader status/reason columns in row review.
+  - **Why**: Keeps dashboard behavior aligned with `runner.py` compact exports where `passed` alone may not capture skipped/error grader states.
+
 - **Synthetic generation + quality audit needed a repeatable one-command path**
   - **Fix**: Use `skills/synthetic-generation-audit/scripts/run_and_analyze.sh` to run (or reuse) all-packet generation and emit a standardized audit report under `results/synthetic_generation_audit/<run_timestamp>/`.
   - **Why**: Keeps accepted/rejected analysis, trace health checks, and prompt-only recommendations consistent across runs.
@@ -222,9 +230,15 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
   - **Fix**: Handle these rows separately in audits and contract checks, and validate `judge_result` fields only for rows that actually called the LLM judge.
   - **Why**: Avoids false alarms when measuring schema compliance from `grader_details_json`.
 
-- **`predictions_with_grades.csv` could miss granular grader fields or crash on sparse grader frames**
-  - **Fix**: Always export per-grader wide columns (`status`, `passed`, `score`, `label`, `reason`, `details_json`) and backfill missing optional grader columns before pivoting.
-  - **Why**: Keeps manual review easy and prevents `KeyError` failures when fixtures or legacy grader rows omit optional fields like `grader_score`.
+- **`predictions_with_grades.csv` became noisy for manual review**
+  - **Fix**: Keep reviewer-facing exports focused on per-grader `passed` and `reason` columns (plus row context), and drop aggregate/status/score/label/details columns.
+  - **Why**: Makes spreadsheet review tractable and keeps grading signals front-and-center.
+- **LLM-judge reasons were present but not surfaced in reviewer exports**
+  - **Fix**: When building grader reason text, parse both top-level `reason` and nested `judge_result.reason` from `grader_details_json`.
+  - **Why**: Judge outputs commonly nest rationale under `judge_result`, and missing this path causes false “no reason provided” rows.
 - **Eval runner stream failures can mask incomplete Responses API outcomes**
   - **Fix**: Handle stream terminal `response.incomplete` explicitly (including `content_filter`), preserve partial `output_text`/status, and avoid treating missing `response.completed` as an unconditional model request error.
   - **Why**: In long legal-memo runs, some requests end incomplete rather than completed; collapsing these into generic errors inflates model-failure counts and skips graders unnecessarily.
+- **Drafting evals no longer require streaming telemetry**
+  - **Fix**: Use `client.responses.create(...)` for eval-runner drafting requests and remove TTFT/inter-token columns/artifacts (`ttft_seconds`, `inter_token_*`, `inter_token_latency_events.csv`).
+  - **Why**: Simplifies failure handling and output schemas while preserving core quality, latency, and token accounting metrics.

@@ -8,6 +8,7 @@ from pincite_evals.experiment_review_dashboard import (
     _prepare_display_frame,
     add_failure_columns,
     apply_filters,
+    discover_grader_names,
     list_experiment_runs,
     merge_error_summary,
 )
@@ -173,3 +174,36 @@ def test_prepare_display_frame_stringifies_mixed_object_values():
     frame = pd.DataFrame({"value": ["text", True, 3, None]})
     display_frame = _prepare_display_frame(frame)
     assert display_frame["value"].tolist() == ["text", "True", "3", ""]
+
+
+def test_discover_grader_names_from_status_and_reason_columns():
+    predictions_frame = pd.DataFrame(
+        {
+            "grader_precedence_llm_judge_status": ["completed"],
+            "grader_precedence_llm_judge_reason": ["All good."],
+            "grader_citation_fidelity_llm_judge_passed": [True],
+        }
+    )
+
+    grader_names = discover_grader_names(predictions_frame)
+
+    assert grader_names == ["citation_fidelity_llm_judge", "precedence_llm_judge"]
+
+
+def test_build_grader_view_prefers_explicit_status_and_reason_columns():
+    selected_row = pd.Series(
+        {
+            "grader_precedence_llm_judge_status": "skipped_model_error",
+            "grader_precedence_llm_judge_reason": "Model output unavailable.",
+            "grader_precedence_llm_judge_passed": None,
+            "overall_required_graders_passed": False,
+            "overall_required_graders_reason": "precedence_llm_judge: Model output unavailable.",
+        }
+    )
+
+    grader_frame = _build_grader_view(selected_row=selected_row, grader_names=["precedence_llm_judge"])
+
+    assert grader_frame.shape[0] == 2
+    assert grader_frame.iloc[0]["grader"] == "precedence_llm_judge"
+    assert grader_frame.iloc[0]["status"] == "SKIPPED_MODEL_ERROR"
+    assert "Model output unavailable" in grader_frame.iloc[0]["detail"]
