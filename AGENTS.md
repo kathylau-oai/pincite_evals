@@ -1,244 +1,108 @@
 # Pincite Evals — Agent Guidance
 
-This file is the “house style” for running evals in this repo. When adding or modifying evaluation code, follow these constraints so runs are comparable, debuggable, and fast.
+This is the repo “house style” for evals and synthetic generation. Follow these rules so runs are **comparable**, **reproducible**, and **easy to debug**.
 
-## Non-negotiables (do these by default)
+## Defaults (do these unless you have a strong reason not to)
 
-- **Parallelize work** whenever possible to reduce end-to-end runtime.
-- **Support multiple model configurations in one run** (e.g., model, reasoning effort, temperature, prompt variants) so comparisons are apples-to-apples on identical inputs.
-- **Make runs reproducible**: keep configuration explicit and fully recorded in outputs.
-- **Use the OpenAI Responses API** for evaluation calls (do not use Chat Completions).
-- **Use `tenacity` for retries** with explicit attempt limits, backoff, and a clear definition of retriable error types.
-- **Use `tqdm`** progress bars for long-running evaluation and grading jobs.
-- **Use pandas DataFrames** for loading, transforming, and aggregating results.
-- **Use Plotly** for analysis and plotting outputs, especially for slice comparisons.
+- **Parallelize safely**: use bounded concurrency (avoid unbounded fan-out).
+- **Run apples-to-apples comparisons**: support multiple model configs in one run (model, reasoning effort, temperature, prompt variants) over the exact same inputs.
+- **Be reproducible**: write the full configuration used for the run into the run folder (don’t rely on implicit defaults).
+- **Use the OpenAI Responses API** for all model calls (do not use Chat Completions).
+- **Retry with `tenacity`**: explicit attempt limits, backoff, and a clear set of retriable error types.
+- **Progress visibility**: use `tqdm` for long-running drafting/grading jobs.
+- **Use DataFrames**: use pandas for load/transform/aggregate; avoid ad-hoc row-by-row bookkeeping.
+- **Plotting**: prefer Plotly for slice comparisons and dashboards.
 
-## API keys / secrets
+## Secrets
 
-- **Do not ask for an OpenAI API key**. This repo already has the key set in environment variables; just run commands that rely on it.
+- **Do not ask for an OpenAI API key**. This repo expects credentials via environment variables.
 
-## Results and experiment structure
+## Outputs (required run artifacts)
 
-- **Write all outputs under `results/`**, grouped under an experiment-specific subfolder (one folder per run).
-- **Always save “final” artifacts** that are easy to reload/share:
-  - Final predictions + grades CSV
-  - Aggregated metrics summary (quality + latency + token stats)
-  - Per-model and per-slice comparison tables
-- **Also save “debuggable” intermediate artifacts** so failures can be diagnosed without re-running:
-  - Raw model responses / traces
+Write everything under `results/<experiment>/<run_id>/`.
+
+- **Final artifacts (easy to reload/share)**
+  - **Predictions + grades** (CSV)
+  - **Aggregated metrics summary** (quality + latency + token usage) with per-model breakdown
+  - **Per-slice comparison tables** (per grader and per model)
+- **Debug artifacts (make failures diagnosable without reruns)**
+  - Raw model responses / traces (when available)
   - Judge / grader intermediate outputs
   - Item-level error annotations (when available)
-  - Retry / failure logs and status metadata
+  - Retry / failure logs + request status metadata
+
+**Spreadsheet friendliness matters**: if an export is intended for Excel, normalize embedded newlines to literal `\n` and quote fields so rows don’t visually “break”.
+
+## Metrics (what to report)
+
+- **Tokens**
+  - Token accounting must include **reasoning tokens** when reasoning is enabled.
+  - Report distribution stats per model: `avg`, `p50`, `p90`, `p95`, `p99`.
+- **Latency**
+  - Always report **end-to-end latency** distribution stats per model.
+  - **TTFT / inter-token** latency is optional and only applies when a component uses streaming. Do not require streaming just to collect TTFT.
 
 ## Analysis quality bar
 
-- **Start grader-first**: compute slice-level metrics broken out by grader and compare grader behavior directly.
-- **Report meaningful slices** (when applicable), for example:
-  - Citation type
-  - Court / jurisdiction
-  - Difficulty buckets
-  - Other domain-relevant segments
-- **Make regressions obvious** with clear visuals and tables.
-  - Include bar plots for:
-    - Per grader
-    - Per model run
-    - Per grader × per model run comparisons
-  - Ensure plots are polished: clear labels, no truncation/overlap, legible legends, sensible scales.
+- **Start grader-first**: compute slice metrics by **grader** first, then compare models.
+- **Prefer meaningful slices** when available (citation type, court/jurisdiction, difficulty buckets, domain-specific segments).
+- **Make regressions obvious**: clean comparison tables + plots with readable labels and sensible scales.
 
-## Metrics requirements
+## Hard contracts (do not drift)
 
-- **Token accounting must include reasoning tokens** whenever reasoning is enabled. Do not report token usage without them.
-- **Token metrics**: report distribution stats (`avg`, `p50`, `p90`, `p95`, `p99`) with a clear per-model breakdown.
-- **Latency metrics must include**:
-  - End-to-end latency
-  - Time-to-first-token (TTFT)
-  - Inter-token latency (token-by-token) with distribution stats
+### Citations and packet rendering
 
-## Recent learnings (keep these invariants in mind)
+- **Only accept dotted packet block IDs**: `DOC###.P###.B##`.
+- **Do not accept bracket citation notation** anywhere (items, prompts, normalization, validators, graders).
+- **Packet text must have explicit block boundaries** using:
+  - `<BLOCK id="DOC###.P###.B##"> ... </BLOCK>`
 
-Grouped by theme to make constraints easier to find. Each item captures a concrete problem we hit, the fix, and why it matters.
+Enforce these at parse/validation time so “notation-only” differences never become grading disputes.
 
-### Citations, normalization, and packet rendering
+### Structured outputs and grading contracts
 
-- **Excerpt citation parsing accepted overly broad IDs and legacy styles**
-  - **Fix**: Enforce only dotted packet block IDs (`DOC###.P###.B##`) in parser/tests and reject legacy paragraph citations.
-  - **Why**: Keeps citations block-level, deterministic, and consistent with the current grading format.
+- **Use strict JSON Schema structured outputs** for LLM judges/graders (`text.format` with `strict: true`).
+- **Validate required fields at runtime** (at minimum: top-level `passed` plus a non-empty `reason`) before scoring.
+- **Do not paper over missing rationale**:
+  - Don’t backfill missing trigger notes.
+  - Don’t inject fallback caution text.
+  - Fail deterministic validation when required fields are missing/empty.
 
-- **Packet text needed unambiguous, low-noise block boundaries**
-  - **Fix**: Render annotated packet text with XML wrappers: `<BLOCK id="DOC###.P###.B##"> ... </BLOCK>` per block.
-  - **Why**: Makes block anchors explicit with lower token noise and simpler parsing.
+### Grader execution gotchas (easy to regress)
 
-- **Packet annotations exposed XML block IDs while some components expected bracket citations**
-  - **Fix**: Standardize on dotted packet block IDs (`DOC###.P###.B##`) everywhere and reject bracket citation notation.
-  - **Why**: Eliminates notation drift and keeps parsing/validation deterministic.
-
-- **Verifier false-rejected due to mixed citation notation between item JSON and packet corpus**
-  - **Fix**: Require dotted packet block IDs (`DOC###.P###.B##`) in item payloads and verifier prompts; fail bracket-style citations at validation time.
-  - **Why**: Prevents notation-only disputes and keeps validation focused on substantive grading quality.
-
-### Synthetic generation: scope, quality, and throughput
-
-- **Synthetic traps looked valid when only local excerpts were checked**
-  - **Fix**: Require generation and validation to scan all packet documents for counterevidence before accepting a candidate.
-  - **Why**: Prevents ambiguous items and improves lawyer-consensus reliability.
-
-- **Synthetic pipeline scope drifted toward all error modes**
-  - **Fix**: Explicitly scope adversarial generation to `A/C/D` and treat `B` as grader-only measurement for this phase.
-  - **Why**: Preserves focus on high-signal trap types while still tracking span errors in downstream grading.
-
-- **Generation/verification was slow and config drifted**
-  - **Fix**: Default to `gpt-5.2` with high reasoning for generation + verifier and run mode workers in parallel with bounded concurrency.
-  - **Why**: Improves quality consistency and end-to-end throughput.
-
-- **Deterministic conflict checks could over-reject and starve quotas**
-  - **Fix**: Prioritize low-counterevidence targets during generation (`counterevidence_count` ascending) before LLM calls.
-  - **Why**: Maintains strict validation while keeping enough pass candidates for stable 3/3/3 selection.
-
-- **Deterministic target-bank seeding constrained discovery**
-  - **Fix**: Build a full packet corpus (8 docs) and let the model discover trap opportunities directly per mode.
-  - **Why**: Aligns generation with prompt-driven adversarial discovery and reduces hand-crafted target bias.
-
-- **Hard `max_output_tokens` caps caused avoidable incompletes**
-  - **Fix**: Remove explicit `max_output_tokens` for synthetic generation/verifier calls; rely on prompt constraints + schema parsing.
-  - **Why**: Reduces truncation failures while preserving structured-output validation.
-
-- **Mode A hallucination traps were too answerable and over-constrained**
-  - **Fix**: Redefine Mode A prompts to request absent authority, allow empty/minimal `expected_citation_groups`, and treat compliant “insufficient packet support” responses as the pass path.
-  - **Why**: Better isolates fabricated-citation behavior instead of penalizing valid packet-grounded answers.
-
-- **Failed generation requests emitted placeholder candidates**
-  - **Fix**: Retry malformed generation outputs up to configured attempts; then drop the datapoint from candidates instead of emitting fallback items.
-  - **Why**: Keeps datasets free of stub noise and preserves quality signal from real model outputs only.
-
-### Pipeline ergonomics and auditability
-
-- **Synthetic pipeline was hard to follow across many files**
-  - **Fix**: Consolidate into `config.py`, `schema.py`, `pipeline.py`, and a single `cli.py` with subcommands.
-  - **Why**: Keeps ownership simple and reduces navigation overhead during fast iteration.
-
-- **Validation outputs were split and hard to audit end-to-end**
-  - **Fix**: Export `validation/llm_consensus_reviews.csv` plus `validation/validation_datapoints.csv` merging candidate payload fields, deterministic checks, LLM verdicts, rejection reasons, and request metrics.
-  - **Why**: Enables fast audit of accepted vs rejected datapoints without manual joins.
-
-- **Eval runner input contract should stay strict on `user_query` once datasets are regenerated**
-  - **Fix**: Enforce `user_query` as the only drafting prompt column in the eval runner and fail fast when missing.
-  - **Why**: Avoids silent schema drift and keeps packet-generation and eval-runner contracts aligned.
-
-- **Runner naming drift (`template_eval_runner` vs `eval_runner`) made discoverability worse**
-  - **Fix**: Standardize module/CLI naming on `eval_runner` and `pincite-eval`.
-  - **Why**: Keeps entrypoints obvious and reduces maintenance overhead.
-
-- **Root-level `graders/` package created split ownership and import ambiguity**
-  - **Fix**: Move graders into `src/pincite_evals/graders` and import via `pincite_evals.graders`.
-  - **Why**: Keeps all runtime code under one package tree and avoids path-dependent behavior.
-
-- **Excel review CSV looked malformed because multiline model outputs created wrapped/broken-looking rows**
-  - **Fix**: Write `final/predictions_with_grades.csv` in spreadsheet-friendly form (UTF-8 BOM, CRLF, full quoting, and newline normalization to literal `\n`).
-  - **Why**: Keeps columns aligned and readable when opening directly in Excel while preserving row-level reloadability.
-
-- **Run artifacts failed to write when `generation/candidates` was missing mid-run**
-  - **Fix**: Resolve packet/output/dataset roots to absolute paths during config load and re-`mkdir` generation output subdirectories immediately before candidate/metrics writes.
-  - **Why**: Prevents late-stage `FileNotFoundError` from cwd drift or partial-run directory cleanup.
-
-- **“Latest experiment” selectors could pick manual/debug folders instead of timestamped runs**
-  - **Fix**: Sort run directories by parsed run-id timestamps first (fallback to `mtime` only when no timestamp suffix exists).
-  - **Why**: Keeps default dashboard/run selection aligned with actual experiment chronology.
-
-- **Dashboard failure review could show empty query/grader details on compact exports**
-  - **Fix**: In review UIs, support both schema variants (`source_user_query` and `user_query`) and provide grader fallbacks from `overall_required_graders_*` plus `errors.csv` when per-grader columns are absent.
-  - **Why**: New compact prediction exports omit per-grader item columns, so strict column assumptions hide critical failure context.
-
-- **Dashboard row drilldown could show the wrong row after search filtering**
-  - **Fix**: Reset filtered review-frame indices and select rows via positional `iloc` from the filtered frame; do not map selected labels back through stale original indices.
-  - **Why**: Prevents label-to-row mismatches that can mislead manual failure review.
-
-- **Grader discovery/view logic missed compact export variants**
-  - **Fix**: Discover grader names from all `grader_<name>_<suffix>` families (`status`, `passed`, `score`, `label`, `reason`, `details_json`) and prefer explicit grader status/reason columns in row review.
-  - **Why**: Keeps dashboard behavior aligned with `runner.py` compact exports where `passed` alone may not capture skipped/error grader states.
-
-- **Synthetic generation + quality audit needed a repeatable one-command path**
-  - **Fix**: Use `skills/synthetic-generation-audit/scripts/run_and_analyze.sh` to run (or reuse) all-packet generation and emit a standardized audit report under `results/synthetic_generation_audit/<run_timestamp>/`.
-  - **Why**: Keeps accepted/rejected analysis, trace health checks, and prompt-only recommendations consistent across runs.
-
-- **Heuristic rejection labels were easy to over-trust during audit**
-  - **Fix**: Treat scripted rejection fields as hints only and require evidence-first review using `rejected_reasoning_evidence.csv`, `accepted_reasoning_evidence.csv`, and `trace_reasoning_evidence.csv`.
-  - **Why**: Preserves model-led root-cause reasoning and avoids circular conclusions from pre-labeled metadata.
-
-- **Verifier retry failures were undercounted when relying on trace exports alone**
-  - **Fix**: Treat `validation_request_status` in `validation_datapoints.csv` as the source of truth for verifier retry failures (for example `verifier_request_failed_after_4_attempts:RateLimitError`) and use `trace_health.csv` as a completed-trace/latency view.
-  - **Why**: Failed verifier calls may not emit trace JSON artifacts, so trace-only audits can hide operational failure rates.
-
-### Reliability and correctness in structured outputs / grading contracts
-
-- **`client.responses.parse(...)` can raise local `ValidationError` on truncated/malformed structured output**
-  - **Fix**: Catch parse `ValidationError` in generation/validation workers and downgrade to explicit fallback statuses instead of crashing the run.
-  - **Why**: Preserves long parallel jobs and keeps failure modes auditable in metrics.
-
-- **Backfilled trigger-note defaults hid missing model rationale**
-  - **Fix**: Do not backfill missing trigger notes in normalization; fail deterministic validation when the expected error-mode trigger note is missing.
-  - **Why**: Preserves signal about model completeness and prevents silently passing under-specified grading contracts.
-
-- **Fallback caution injection hid weak model-produced grading contracts**
-  - **Fix**: Never inject fallback caution text; keep only model-produced notes/cautions and fail deterministic validation when required note/caution fields are empty.
-  - **Why**: Ensures grader rationale quality is attributable to model output and failures remain transparent.
-
-### Latency observability
-
-- **Needed TTFT and inter-token latency from Responses API calls**
-  - **Fix**: Use `client.responses.stream(...)`, timestamp `response.output_text.delta` events, and finalize with `stream.get_final_response()` for status/usage.
-  - **Why**: Captures latency distributions and token usage (including reasoning tokens) from one request path.
+- **Grading from CSV artifacts**: when grading from `predictions.csv` rows, parse `expected_citation_groups_json` / `grading_contract_json` and normalize before building grader context (don’t rely on in-memory dataset fields).
+- **Mode A (no required citation groups)**: if `expected_citation_groups` is empty, allow packet-grounded “helpful” citations so expected-citation-presence doesn’t fail by construction.
+- **Overextension verdicts**: for categorical labels like `no_overextension` / `overextended`, let the explicit label + `passed` drive the final verdict (don’t override with score-threshold fallbacks).
+- **Citation-fidelity short-circuits**: rows like `no_citations_predicted` may not include `judge_result`; validate judge fields only when a judge call actually happened.
+- **Reviewer-facing reasons**: when extracting grader reasons, check both top-level `reason` and nested `judge_result.reason` (common nesting pattern).
 
 ### Prompt templating
 
-- **String `.replace(...)` prompt injection drifted as templates grew**
-  - **Fix**: Centralize prompt rendering with Jinja (`Environment(undefined=StrictUndefined)`) and migrate prompt files to explicit Jinja variables.
-  - **Why**: Missing placeholders now fail fast, prompt loading is consistent across pipelines, and template changes are safer to refactor.
+- Use Jinja with `StrictUndefined` (missing placeholders should fail fast).
+- Keep instruction-heavy guidance in `system.txt`; keep `user.txt` minimal (task + packet corpus).
 
-- **Generation prompts mixed critical instructions into `user` messages**
-  - **Fix**: Keep instruction-heavy guidance in mode `system.txt` templates (including `{{ lawyer_query_style_guide }}`) and keep mode `user.txt` prompts minimal (`generate` + packet corpus only).
-  - **Why**: Preserves instruction priority and reduces drift where high-priority constraints are buried in lower-priority prompt roles.
+## Reliability and throughput
 
-- **Eval runner prompt logic embedded in `__init__.py` made prompt evolution and module readability harder**
-  - **Fix**: Move implementation to `eval_runner/runner.py`, keep `eval_runner/__init__.py` as a compatibility export shim, and store default drafting prompts in `eval_runner/prom/{system,user}.txt` with CLI override (`--user-prompt-file`).
-  - **Why**: Improves maintainability, keeps imports stable, and makes prompt iteration explicit and auditable.
+- **Handle local schema/parse failures**: `client.responses.parse(...)` can raise a local `ValidationError` when outputs are truncated/malformed; downgrade to an explicit status instead of crashing a parallel run.
+- **Rate limits are normal**: when drafting + grading both use heavy models, reduce `--max-item-workers` and/or `--max-grader-workers` to avoid burst TPM spikes.
+- **Avoid late write failures**: resolve output roots to absolute paths and ensure required subdirectories exist immediately before writing artifacts.
 
-### Eval throughput and rate limits
+## Ergonomics and compatibility (things that keep breaking)
 
-- **Full eval runs hit TPM limits when drafting and graders both used `gpt-5.2` with high concurrency**
-  - **Fix**: For all-`gpt-5.2` runs, reduce `--max-item-workers` and/or `--max-grader-workers` to avoid burst token spikes, especially with large packet prompts.
-  - **Why**: Prevents large `response_status=error` / `skipped_model_error` cohorts that invalidate quality comparisons.
+- **Keep ownership consolidated**: runtime code should live under `src/pincite_evals/` (including graders).
+- **Eval runner input contract**: prefer a strict `user_query` drafting prompt column; fail fast when missing.
+- **Compact exports compatibility** (dashboards/review UIs)
+  - Support both `source_user_query` and `user_query` schema variants.
+  - Discover graders from any `grader_<name>_<suffix>` columns (`status`, `passed`, `score`, `label`, `reason`, `details_json`).
+  - When filtering review tables, select rows by positional `iloc` on the filtered frame to avoid index/label mismatches.
 
-### Grader context and contracts
+## Synthetic generation (high-signal constraints)
 
-- **Expected-citation grading silently dropped required groups when grading from `predictions.csv` rows**
-  - **Fix**: In grader context assembly, parse `expected_citation_groups_json` / `grading_contract_json` from prediction rows and normalize them before building grader context.
-  - **Why**: Graders run after inference over serialized prediction artifacts; relying only on in-memory parsed dataset fields causes false failures.
+- Validate candidates against the **full packet corpus** (scan all documents for counterevidence).
+- Avoid “placeholder” datapoints: retry malformed generation outputs up to the configured attempts; if still malformed, **drop the datapoint** rather than emitting stubs.
+- Avoid avoidable incompletes: don’t use hard `max_output_tokens` caps for generation/verifiers; rely on prompt constraints + strict schema parsing.
 
-- **Mode A (missing-authority traps) was penalized for helpful packet-grounded fallback citations**
-  - **Fix**: Add a context flag `allow_unexpected_citations_when_no_expected_groups` for Mode A with empty expected groups so expected-citation-presence does not fail by construction.
-  - **Why**: Mode A evaluates fabrication risk; strict citation-presence precision is not meaningful when no required citation groups exist.
+## Streaming notes (only where applicable)
 
-- **Overextension grader produced contradictory outcomes (`no_overextension` + `passed=true` but failed by thresholded score)**
-  - **Fix**: In pass logic, let label + explicit `passed` drive final verdict for `no_overextension`/`overextended`; use score-threshold fallback only for other labels.
-  - **Why**: Avoids score-calibration artifacts overriding the grader’s categorical verdict.
-
-- **LLM judge outputs could drift from required fields without strict schema enforcement**
-  - **Fix**: Call Responses API with `text.format` JSON Schema (`strict: true`) per grader and require top-level `passed` + non-empty `reason` in runtime validation before scoring.
-  - **Why**: Keeps grader outputs machine-reliable and prevents silent contract regressions from prompt drift.
-
-- **Citation-fidelity short-circuit rows (`no_citations_predicted`) do not include `judge_result`**
-  - **Fix**: Handle these rows separately in audits and contract checks, and validate `judge_result` fields only for rows that actually called the LLM judge.
-  - **Why**: Avoids false alarms when measuring schema compliance from `grader_details_json`.
-
-- **`predictions_with_grades.csv` became noisy for manual review**
-  - **Fix**: Keep reviewer-facing exports focused on per-grader `passed` and `reason` columns (plus row context), and drop aggregate/status/score/label/details columns.
-  - **Why**: Makes spreadsheet review tractable and keeps grading signals front-and-center.
-- **LLM-judge reasons were present but not surfaced in reviewer exports**
-  - **Fix**: When building grader reason text, parse both top-level `reason` and nested `judge_result.reason` from `grader_details_json`.
-  - **Why**: Judge outputs commonly nest rationale under `judge_result`, and missing this path causes false “no reason provided” rows.
-- **Eval runner stream failures can mask incomplete Responses API outcomes**
-  - **Fix**: Handle stream terminal `response.incomplete` explicitly (including `content_filter`), preserve partial `output_text`/status, and avoid treating missing `response.completed` as an unconditional model request error.
-  - **Why**: In long legal-memo runs, some requests end incomplete rather than completed; collapsing these into generic errors inflates model-failure counts and skips graders unnecessarily.
-- **Drafting evals no longer require streaming telemetry**
-  - **Fix**: Use `client.responses.create(...)` for eval-runner drafting requests and remove TTFT/inter-token columns/artifacts (`ttft_seconds`, `inter_token_*`, `inter_token_latency_events.csv`).
-  - **Why**: Simplifies failure handling and output schemas while preserving core quality, latency, and token accounting metrics.
+- Drafting evals typically use `client.responses.create(...)` and do **not** need streaming telemetry (don’t emit TTFT/inter-token columns/artifacts for drafting by default).
+- If a component does use streaming, handle terminal `response.incomplete` explicitly (including `content_filter`) and preserve partial output/status for auditability.

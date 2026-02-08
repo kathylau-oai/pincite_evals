@@ -1216,21 +1216,6 @@ def _build_grader_registry(args: argparse.Namespace) -> Dict[str, Any]:
     return grader_registry
 
 
-def _extract_score_from_grader_details(details: Dict[str, Any]) -> Optional[float]:
-    if "score" in details:
-        return _safe_float(details.get("score"))
-    if "overall_score" in details:
-        return _safe_float(details.get("overall_score"))
-    return None
-
-
-def _extract_label_from_grader_details(details: Dict[str, Any]) -> Optional[str]:
-    for key in ["label", "grade_label"]:
-        if key in details and str(details[key]).strip():
-            return str(details[key]).strip()
-    return None
-
-
 def _run_single_grader(
     *,
     prediction_row: Dict[str, Any],
@@ -1258,8 +1243,6 @@ def _run_single_grader(
                 **base_row,
                 "grader_status": "skipped_model_error",
                 "grader_passed": None,
-                "grader_score": None,
-                "grader_label": None,
                 "grader_error": "Model output unavailable due to model request error.",
                 "grader_latency_seconds": float(time.perf_counter() - start_time),
                 "grader_input_tokens": None,
@@ -1277,8 +1260,6 @@ def _run_single_grader(
                 **base_row,
                 "grader_status": "skipped_dry_run",
                 "grader_passed": None,
-                "grader_score": None,
-                "grader_label": None,
                 "grader_error": None,
                 "grader_latency_seconds": float(time.perf_counter() - start_time),
                 "grader_input_tokens": None,
@@ -1307,8 +1288,6 @@ def _run_single_grader(
                 **base_row,
                 "grader_status": "completed",
                 "grader_passed": True,
-                "grader_score": 1.0,
-                "grader_label": "no_citations_predicted",
                 "grader_error": None,
                 "grader_latency_seconds": latency_seconds,
                 "grader_input_tokens": None,
@@ -1338,8 +1317,6 @@ def _run_single_grader(
                 **base_row,
                 "grader_status": "error",
                 "grader_passed": None,
-                "grader_score": None,
-                "grader_label": None,
                 "grader_error": str(error),
                 "grader_latency_seconds": latency_seconds,
                 "grader_input_tokens": None,
@@ -1365,8 +1342,6 @@ def _run_single_grader(
         **base_row,
         "grader_status": "completed",
         "grader_passed": bool(grade_result.passed),
-        "grader_score": _extract_score_from_grader_details(details),
-        "grader_label": _extract_label_from_grader_details(details),
         "grader_error": None,
         "grader_latency_seconds": latency_seconds,
         "grader_input_tokens": usage_fields["input_tokens"],
@@ -1563,20 +1538,8 @@ def _build_predictions_and_grades(predictions_frame: pd.DataFrame, grader_frame:
         .reset_index()
     )
 
-    grader_score_wide = (
-        grader_frame.pivot_table(
-            index=key_columns,
-            columns="grader_name",
-            values="grader_score",
-            aggfunc="first",
-        )
-        .rename(columns=lambda grader_name: f"grader_{grader_name}_score")
-        .reset_index()
-    )
-
     merged = predictions_frame.merge(grader_status_summary, on=key_columns, how="left")
     merged = merged.merge(grader_pass_wide, on=key_columns, how="left")
-    merged = merged.merge(grader_score_wide, on=key_columns, how="left")
     return merged
 
 
@@ -2296,7 +2259,31 @@ def main() -> None:
         block_text_by_packet=block_text_by_packet,
     )
     if debug_dir is not None:
-        grader_frame.to_csv(debug_dir / "grader_results.csv", index=False)
+        # Debug artifact should stay compact: keep pass/fail + reason, omit verbose metadata.
+        compact_grader_frame = grader_frame.copy()
+        compact_grader_frame["grader_reason"] = compact_grader_frame.apply(_build_grader_reason_text, axis=1)
+        preferred_grader_columns = [
+            "model_config",
+            "source_row_index",
+            "item_id",
+            "packet_id",
+            "target_error_mode",
+            "query_id",
+            "as_of_date",
+            "grader_name",
+            "grader_passed",
+            "grader_reason",
+            "grader_error",
+            "grader_latency_seconds",
+            "grader_input_tokens",
+            "grader_output_tokens",
+            "grader_reasoning_tokens",
+            "grader_total_tokens",
+        ]
+        available_grader_columns = [
+            column_name for column_name in preferred_grader_columns if column_name in compact_grader_frame.columns
+        ]
+        compact_grader_frame[available_grader_columns].to_csv(debug_dir / "grader_results.csv", index=False)
 
     grader_summary_frame = _summarize_grader_metrics(grader_frame)
 
