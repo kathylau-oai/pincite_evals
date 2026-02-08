@@ -177,3 +177,23 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
 - **Generation prompts mixed critical instructions into `user` messages**
   - **Fix**: Keep instruction-heavy guidance in mode `system.txt` templates (including `{{ lawyer_query_style_guide }}`) and keep mode `user.txt` prompts minimal (`generate` + packet corpus only).
   - **Why**: Preserves instruction priority and reduces drift where high-priority constraints are buried in lower-priority prompt roles.
+
+### Eval throughput and rate limits
+
+- **Full eval runs hit TPM limits when drafting and graders both used `gpt-5.2` with high concurrency**
+  - **Fix**: For all-`gpt-5.2` runs, reduce `--max-item-workers` and/or `--max-grader-workers` to avoid burst token spikes, especially with large packet prompts.
+  - **Why**: Prevents large `response_status=error` / `skipped_model_error` cohorts that invalidate quality comparisons.
+
+### Grader context and contracts
+
+- **Expected-citation grading silently dropped required groups when grading from `predictions.csv` rows**
+  - **Fix**: In grader context assembly, parse `expected_citation_groups_json` / `grading_contract_json` from prediction rows and normalize them before building grader context.
+  - **Why**: Graders run after inference over serialized prediction artifacts; relying only on in-memory parsed dataset fields causes false failures.
+
+- **Mode A (missing-authority traps) was penalized for helpful packet-grounded fallback citations**
+  - **Fix**: Add a context flag `allow_unexpected_citations_when_no_expected_groups` for Mode A with empty expected groups so expected-citation-presence does not fail by construction.
+  - **Why**: Mode A evaluates fabrication risk; strict citation-presence precision is not meaningful when no required citation groups exist.
+
+- **Overextension grader produced contradictory outcomes (`no_overextension` + `passed=true` but failed by thresholded score)**
+  - **Fix**: In pass logic, let label + explicit `passed` drive final verdict for `no_overextension`/`overextended`; use score-threshold fallback only for other labels.
+  - **Why**: Avoids score-calibration artifacts overriding the grader’s categorical verdict.

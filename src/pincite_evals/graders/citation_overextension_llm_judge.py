@@ -23,7 +23,13 @@ class CitationOverextensionLLMJudgeGrader(BaseLLMJudgeGrader):
         label = str(parsed.get("label", "")).strip().lower()
         model_passed = bool(parsed.get("passed", False))
 
-        passed = model_passed and (score >= threshold) and (label != "overextended")
+        # For overextension, label + explicit pass signal should dominate numeric score calibration.
+        if label == "overextended":
+            passed = False
+        elif label == "no_overextension":
+            passed = model_passed
+        else:
+            passed = model_passed and (score >= threshold)
 
         return passed, {
             "score": score,

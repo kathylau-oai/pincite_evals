@@ -302,6 +302,16 @@ def _compute_distribution_stats(values: pd.Series, prefix: str) -> Dict[str, Any
     }
 
 
+def _estimate_inter_token_latency_seconds(
+    *, latency_seconds: Optional[float], output_tokens: Optional[float]
+) -> Optional[float]:
+    if latency_seconds is None or output_tokens is None:
+        return None
+    if output_tokens <= 0:
+        return None
+    return float(latency_seconds / output_tokens)
+
+
 def _build_input_profile(dataset: pd.DataFrame, id_column: str, prompt_column: str) -> Tuple[pd.DataFrame, pd.DataFrame]:
     column_profile_rows: List[Dict[str, Any]] = []
     for column_name in dataset.columns:
@@ -422,14 +432,15 @@ def _build_retrying_caller(*, client: OpenAI, args: argparse.Namespace):
     )
     def _call(request: Dict[str, Any]) -> Dict[str, Any]:
         start_time = time.perf_counter()
-        delta_timestamps: List[float] = []
+        first_output_delta_timestamp: Optional[float] = None
         output_fragments: List[str] = []
 
         with client.responses.stream(**request, timeout=args.request_timeout_seconds) as stream:
             for event in stream:
                 if event.type == "response.output_text.delta":
                     now = time.perf_counter()
-                    delta_timestamps.append(now)
+                    if first_output_delta_timestamp is None:
+                        first_output_delta_timestamp = now
                     output_fragments.append(event.delta)
             final_response = stream.get_final_response()
 
@@ -449,10 +460,6 @@ def _build_retrying_caller(*, client: OpenAI, args: argparse.Namespace):
                 "Review response.incomplete_details and rerun."
             )
 
-        inter_token_latencies: List[float] = []
-        for index in range(1, len(delta_timestamps)):
-            inter_token_latencies.append(delta_timestamps[index] - delta_timestamps[index - 1])
-
         usage_dict = None
         if final_response.usage is not None:
             usage_dict = final_response.usage.model_dump(mode="json")
@@ -464,8 +471,11 @@ def _build_retrying_caller(*, client: OpenAI, args: argparse.Namespace):
             "output_text": output_text,
             "usage": usage_dict,
             "latency_seconds": end_time - start_time,
-            "ttft_seconds": (delta_timestamps[0] - start_time) if delta_timestamps else None,
-            "inter_token_latencies": inter_token_latencies,
+            "ttft_seconds": (
+                first_output_delta_timestamp - start_time
+                if first_output_delta_timestamp is not None
+                else None
+            ),
             "raw_response": final_response.model_dump(mode="json"),
         }
 
@@ -579,6 +589,28 @@ def _flatten_expected_tokens(expected_groups: List[List[str]]) -> List[str]:
             seen_tokens.add(citation_token)
             ordered_tokens.append(citation_token)
     return ordered_tokens
+
+
+def _parse_structured_field(raw_value: Any) -> Any:
+    if isinstance(raw_value, (dict, list)):
+        return raw_value
+
+    if raw_value is None or (isinstance(raw_value, float) and pd.isna(raw_value)):
+        return None
+
+    text_value = str(raw_value).strip()
+    if not text_value:
+        return None
+
+    try:
+        return json.loads(text_value)
+    except json.JSONDecodeError:
+        pass
+
+    try:
+        return ast.literal_eval(text_value)
+    except (ValueError, SyntaxError):
+        return None
 
 
 def _load_input_paths(args: argparse.Namespace) -> List[Path]:
@@ -818,6 +850,25 @@ def _evaluate_single_row(
 
     request = _build_response_request(model_config, rendered_user_prompt)
 
+    # Most output columns are identical across dry-run, error, and success paths.
+    # Keep them in one place so we don't drift schemas across branches.
+    base_row = {
+        "source_row_index": source_row_index,
+        "model_config": model_config.name,
+        "item_id": item_id,
+        "packet_id": str(row.get("packet_id", "")),
+        "target_error_mode": str(row.get("target_error_mode", "")),
+        "query_id": str(row.get("query_id", "")),
+        "as_of_date": str(row.get("as_of_date", "")),
+        "source_dataset_path": str(row.get("source_dataset_path", "")),
+        "source_user_query": source_user_query,
+        "rendered_user_prompt": rendered_user_prompt,
+        "scenario_facts_json": json.dumps(scenario_facts, ensure_ascii=True),
+        "grading_contract_json": json.dumps(row.get("grading_contract_parsed", {}), ensure_ascii=True),
+        "expected_citation_groups_json": json.dumps(row.get("expected_citation_groups", []), ensure_ascii=True),
+        "expected_output": expected_output,
+    }
+
     if dry_run:
         output_text = (
             f"[DRY_RUN::{model_config.name}] Memo draft placeholder for {item_id}. "
@@ -825,20 +876,7 @@ def _evaluate_single_row(
         )
         grade_data = _template_grade(output_text, expected_output)
         result_row = {
-            "source_row_index": source_row_index,
-            "model_config": model_config.name,
-            "item_id": item_id,
-            "packet_id": str(row.get("packet_id", "")),
-            "target_error_mode": str(row.get("target_error_mode", "")),
-            "query_id": str(row.get("query_id", "")),
-            "as_of_date": str(row.get("as_of_date", "")),
-            "source_dataset_path": str(row.get("source_dataset_path", "")),
-            "source_user_query": source_user_query,
-            "rendered_user_prompt": rendered_user_prompt,
-            "scenario_facts_json": json.dumps(scenario_facts, ensure_ascii=True),
-            "grading_contract_json": json.dumps(row.get("grading_contract_parsed", {}), ensure_ascii=True),
-            "expected_citation_groups_json": json.dumps(row.get("expected_citation_groups", []), ensure_ascii=True),
-            "expected_output": expected_output,
+            **base_row,
             "model_output": output_text,
             "response_id": None,
             "response_status": "completed",
@@ -860,20 +898,7 @@ def _evaluate_single_row(
         model_result = call_model(request)
     except (OpenAIError, RuntimeError, TypeError, ValueError) as error:
         failed_row = {
-            "source_row_index": source_row_index,
-            "model_config": model_config.name,
-            "item_id": item_id,
-            "packet_id": str(row.get("packet_id", "")),
-            "target_error_mode": str(row.get("target_error_mode", "")),
-            "query_id": str(row.get("query_id", "")),
-            "as_of_date": str(row.get("as_of_date", "")),
-            "source_dataset_path": str(row.get("source_dataset_path", "")),
-            "source_user_query": source_user_query,
-            "rendered_user_prompt": rendered_user_prompt,
-            "scenario_facts_json": json.dumps(scenario_facts, ensure_ascii=True),
-            "grading_contract_json": json.dumps(row.get("grading_contract_parsed", {}), ensure_ascii=True),
-            "expected_citation_groups_json": json.dumps(row.get("expected_citation_groups", []), ensure_ascii=True),
-            "expected_output": expected_output,
+            **base_row,
             "model_output": "",
             "response_id": None,
             "response_status": "error",
@@ -895,7 +920,20 @@ def _evaluate_single_row(
         return failed_row, []
 
     usage_fields = _extract_usage_fields(model_result["usage"])
-    inter_token_latencies = model_result["inter_token_latencies"]
+    inter_token_latency_estimate_seconds = _estimate_inter_token_latency_seconds(
+        latency_seconds=model_result["latency_seconds"],
+        output_tokens=usage_fields["output_tokens"],
+    )
+    inter_token_latencies = (
+        [inter_token_latency_estimate_seconds]
+        if inter_token_latency_estimate_seconds is not None
+        else []
+    )
+    output_token_count = (
+        int(usage_fields["output_tokens"])
+        if usage_fields["output_tokens"] is not None and usage_fields["output_tokens"] > 0
+        else 0
+    )
 
     grade_data = _template_grade(model_result["output_text"], expected_output)
 
@@ -918,20 +956,7 @@ def _evaluate_single_row(
     raw_path.write_text(json.dumps(raw_payload, indent=2), encoding="utf-8")
 
     result_row = {
-        "source_row_index": source_row_index,
-        "model_config": model_config.name,
-        "item_id": item_id,
-        "packet_id": str(row.get("packet_id", "")),
-        "target_error_mode": str(row.get("target_error_mode", "")),
-        "query_id": str(row.get("query_id", "")),
-        "as_of_date": str(row.get("as_of_date", "")),
-        "source_dataset_path": str(row.get("source_dataset_path", "")),
-        "source_user_query": source_user_query,
-        "rendered_user_prompt": rendered_user_prompt,
-        "scenario_facts_json": json.dumps(scenario_facts, ensure_ascii=True),
-        "grading_contract_json": json.dumps(row.get("grading_contract_parsed", {}), ensure_ascii=True),
-        "expected_citation_groups_json": json.dumps(row.get("expected_citation_groups", []), ensure_ascii=True),
-        "expected_output": expected_output,
+        **base_row,
         "model_output": model_result["output_text"],
         "response_id": model_result["response_id"],
         "response_status": model_result["status"],
@@ -939,10 +964,9 @@ def _evaluate_single_row(
         "request_error": None,
         "latency_seconds": model_result["latency_seconds"],
         "ttft_seconds": model_result["ttft_seconds"],
-        "inter_token_latency_avg_seconds": (
-            float(pd.Series(inter_token_latencies).mean()) if inter_token_latencies else None
-        ),
-        "inter_token_event_count": len(inter_token_latencies),
+        "inter_token_latency_avg_seconds": inter_token_latency_estimate_seconds,
+        # This denominator is used for the e2e/token estimate above.
+        "inter_token_event_count": output_token_count,
         "input_tokens": usage_fields["input_tokens"],
         "output_tokens": usage_fields["output_tokens"],
         "reasoning_tokens": usage_fields["reasoning_tokens"],
@@ -1140,26 +1164,43 @@ def _build_citation_fidelity_items(
 
 
 def _build_grader_context(row: Dict[str, Any], block_text_by_packet: Dict[str, Dict[str, str]]) -> Dict[str, Any]:
-    grading_contract = row.get("grading_contract_parsed", {})
+    grading_contract = row.get("grading_contract_parsed")
     if not isinstance(grading_contract, dict):
-        grading_contract = {}
+        parsed_contract = _parse_structured_field(row.get("grading_contract_json"))
+        grading_contract = parsed_contract if isinstance(parsed_contract, dict) else {}
 
-    scenario_facts = row.get("scenario_facts_parsed", [])
+    scenario_facts = row.get("scenario_facts_parsed")
     if not isinstance(scenario_facts, list):
-        scenario_facts = []
+        parsed_scenario_facts = _parse_structured_field(row.get("scenario_facts_json"))
+        scenario_facts = parsed_scenario_facts if isinstance(parsed_scenario_facts, list) else []
 
-    expected_citation_groups = row.get("expected_citation_groups", [])
-    if not isinstance(expected_citation_groups, list):
-        expected_citation_groups = []
+    expected_citation_groups_raw = row.get("expected_citation_groups")
+    if isinstance(expected_citation_groups_raw, list):
+        expected_citation_groups = _normalize_expected_citation_groups(expected_citation_groups_raw)
+    else:
+        parsed_expected_groups = _parse_structured_field(row.get("expected_citation_groups_json"))
+        if isinstance(parsed_expected_groups, list):
+            expected_citation_groups = _normalize_expected_citation_groups(parsed_expected_groups)
+        else:
+            expected_citation_groups = _normalize_expected_citation_groups(
+                grading_contract.get("expected_citation_groups", [])
+            )
 
     model_output = str(row.get("model_output", ""))
     predicted_tokens = _extract_predicted_citation_tokens(model_output)
+    target_error_mode = str(row.get("target_error_mode", "")).strip().upper()
 
     packet_id = str(row.get("packet_id", ""))
     block_map = block_text_by_packet.get(packet_id, {})
 
+    # Mode A items intentionally omit required citation groups when missing authority is the point of the test.
+    allow_unexpected_citations_when_no_expected_groups = (
+        target_error_mode == "A" and len(expected_citation_groups) == 0
+    )
+
     context: Dict[str, Any] = {
         "expected_citation_groups": expected_citation_groups,
+        "allow_unexpected_citations_when_no_expected_groups": allow_unexpected_citations_when_no_expected_groups,
         "test_case_context": {
             "item_id": str(row.get("item_id", "")),
             "packet_id": packet_id,

@@ -97,6 +97,25 @@ def test_overextension_llm_judge_passes_clean_label():
     assert result.details["label"] == "no_overextension"
 
 
+def test_overextension_llm_judge_no_overextension_label_overrides_low_score():
+    response_payload = {
+        "label": "no_overextension",
+        "score": 0.12,
+        "passed": True,
+        "reason": "Claims stayed within source qualifiers.",
+        "evidence": ["Short quote"],
+    }
+    fake_client = FakeOpenAIClient(
+        FakeResponse(output_text=json.dumps(response_payload))
+    )
+    grader = CitationOverextensionLLMJudgeGrader(client=fake_client)
+
+    result = grader.grade(prompt="p", output="o", context={"overextension_trigger_note": "trap note"})
+    assert result.passed is True
+    assert result.details["label"] == "no_overextension"
+    assert result.details["score"] == 0.12
+
+
 def test_precedence_llm_judge_fails_precedence_error():
     response_payload = {
         "label": "precedence_error",
