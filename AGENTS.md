@@ -140,6 +140,10 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
   - **Fix**: Use `skills/synthetic-generation-audit/scripts/run_and_analyze.sh` to run (or reuse) all-packet generation and emit a standardized audit report under `results/synthetic_generation_audit/<run_timestamp>/`.
   - **Why**: Keeps accepted/rejected analysis, trace health checks, and prompt-only recommendations consistent across runs.
 
+- **Heuristic rejection labels were easy to over-trust during audit**
+  - **Fix**: Treat scripted rejection fields as hints only and require evidence-first review using `rejected_reasoning_evidence.csv`, `accepted_reasoning_evidence.csv`, and `trace_reasoning_evidence.csv`.
+  - **Why**: Preserves model-led root-cause reasoning and avoids circular conclusions from pre-labeled metadata.
+
 ### Reliability and correctness in structured outputs / grading contracts
 
 - **`client.responses.parse(...)` can raise local `ValidationError` on truncated/malformed structured output**

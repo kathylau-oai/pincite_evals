@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Audit synthetic generation outputs across packets and emit a reproducible report."""
+"""Prepare structured evidence for synthetic-generation root-cause analysis."""
 
 import argparse
 import json
 import re
-from collections import Counter
 from pathlib import Path
 
 import pandas as pd
@@ -17,7 +16,10 @@ REJECTION_STAGE_COLUMN = "final_rejection_stage"
 
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Analyze synthetic generation run outputs and write a markdown report with CSV artifacts."
+        description=(
+            "Prepare synthetic-generation evidence tables and descriptive summaries. "
+            "This script does not determine root causes or recommendations."
+        )
     )
     parser.add_argument(
         "--repo-root",
@@ -27,7 +29,10 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--run-timestamp",
         default="",
-        help="Run timestamp prefix (for example 20260208T001140Z). If omitted, the newest complete run is used.",
+        help=(
+            "Run timestamp prefix (for example 20260208T001140Z). "
+            "If omitted, the newest complete run is used."
+        ),
     )
     parser.add_argument(
         "--max-examples",
@@ -61,9 +66,8 @@ def list_run_prefixes_for_packet(results_root: Path, packet_id: str) -> set[str]
         if not run_dir.is_dir():
             continue
         run_name = run_dir.name
-        if not run_name.endswith(suffix):
-            continue
-        prefixes.add(run_name[: -len(suffix)])
+        if run_name.endswith(suffix):
+            prefixes.add(run_name[: -len(suffix)])
     return prefixes
 
 
@@ -96,7 +100,9 @@ def resolve_run_timestamp(repo_root: Path, packet_ids: list[str], run_timestamp:
 
 
 def load_validation_table(
-    repo_root: Path, packet_ids: list[str], run_timestamp: str
+    repo_root: Path,
+    packet_ids: list[str],
+    run_timestamp: str,
 ) -> pd.DataFrame:
     frames: list[pd.DataFrame] = []
     results_root = repo_root / "results" / "synthetic_generation"
@@ -123,56 +129,6 @@ def normalize_status(validation_dataframe: pd.DataFrame) -> pd.DataFrame:
     return normalized_dataframe
 
 
-def parse_json_list(text_value: object) -> list[str]:
-    if text_value is None:
-        return []
-
-    text = str(text_value).strip()
-    if not text or text.lower() == "nan":
-        return []
-
-    parsed = json.loads(text)
-    if not isinstance(parsed, list):
-        return []
-
-    return [str(item) for item in parsed]
-
-
-def build_rejection_breakdowns(
-    rejected_dataframe: pd.DataFrame,
-) -> tuple[pd.DataFrame, pd.DataFrame, Counter[str], Counter[str]]:
-    by_mode = (
-        rejected_dataframe[MODE_COLUMN]
-        .value_counts()
-        .rename_axis("target_error_mode")
-        .reset_index(name="count")
-    )
-    by_stage = (
-        rejected_dataframe[REJECTION_STAGE_COLUMN]
-        .fillna("<missing>")
-        .value_counts()
-        .rename_axis("rejection_stage")
-        .reset_index(name="count")
-    )
-
-    risk_counter: Counter[str] = Counter()
-    for risk_flags_text in rejected_dataframe["llm_risk_flags_json"].dropna():
-        for risk_flag in parse_json_list(risk_flags_text):
-            risk_counter[risk_flag] += 1
-
-    deterministic_counter: Counter[str] = Counter()
-    for reason_codes_text in rejected_dataframe["deterministic_reason_codes"].dropna():
-        reason_codes = str(reason_codes_text).strip()
-        if not reason_codes:
-            continue
-        for reason_code in reason_codes.split("|"):
-            cleaned_reason_code = reason_code.strip()
-            if cleaned_reason_code:
-                deterministic_counter[cleaned_reason_code] += 1
-
-    return by_mode, by_stage, risk_counter, deterministic_counter
-
-
 def extract_message_prefix(trace_payload: dict) -> str:
     outputs = trace_payload.get("output")
     if not isinstance(outputs, list):
@@ -186,23 +142,23 @@ def extract_message_prefix(trace_payload: dict) -> str:
         content_items = output_item.get("content")
         if not isinstance(content_items, list):
             continue
+
         for content_item in content_items:
             if not isinstance(content_item, dict):
                 continue
             if content_item.get("type") != "output_text":
                 continue
             text_value = content_item.get("text")
-            if not isinstance(text_value, str):
-                continue
-            stripped_text = text_value.strip()
-            if stripped_text:
-                return stripped_text.replace("\n", " ")[:220]
+            if isinstance(text_value, str) and text_value.strip():
+                return text_value.strip().replace("\n", " ")[:220]
 
     return ""
 
 
 def collect_trace_health(
-    repo_root: Path, packet_ids: list[str], run_timestamp: str
+    repo_root: Path,
+    packet_ids: list[str],
+    run_timestamp: str,
 ) -> pd.DataFrame:
     results_root = repo_root / "results" / "synthetic_generation"
     attempt_pattern = re.compile(r"attempt(\d+)")
@@ -220,6 +176,7 @@ def collect_trace_health(
                 trace_text = trace_file.read_text(encoding="utf-8")
                 try:
                     trace_payload = json.loads(trace_text)
+                    json_parse_ok = True
                 except json.JSONDecodeError:
                     rows.append(
                         {
@@ -243,19 +200,20 @@ def collect_trace_health(
                 usage = trace_payload.get("usage")
                 if not isinstance(usage, dict):
                     usage = {}
+
                 output_token_details = usage.get("output_tokens_details")
                 if not isinstance(output_token_details, dict):
                     output_token_details = {}
 
-                incomplete_details = trace_payload.get("incomplete_details")
                 incomplete_reason = ""
+                incomplete_details = trace_payload.get("incomplete_details")
                 if isinstance(incomplete_details, dict):
-                    incomplete_reason_value = incomplete_details.get("reason")
-                    if incomplete_reason_value is not None:
-                        incomplete_reason = str(incomplete_reason_value)
+                    reason_value = incomplete_details.get("reason")
+                    if reason_value is not None:
+                        incomplete_reason = str(reason_value)
 
-                attempt_match = attempt_pattern.search(trace_file.name)
                 attempt_number = 1
+                attempt_match = attempt_pattern.search(trace_file.name)
                 if attempt_match:
                     attempt_number = int(attempt_match.group(1))
 
@@ -264,7 +222,7 @@ def collect_trace_health(
                         "packet": packet_id,
                         "stage": stage_name,
                         "trace_file": str(trace_file),
-                        "json_parse_ok": True,
+                        "json_parse_ok": json_parse_ok,
                         "status": str(trace_payload.get("status", "")),
                         "error": "" if trace_payload.get("error") is None else str(trace_payload.get("error")),
                         "incomplete_reason": incomplete_reason,
@@ -284,110 +242,99 @@ def to_markdown_table(dataframe: pd.DataFrame, max_rows: int) -> str:
     if dataframe.empty:
         return "(none)"
 
-    preview_dataframe = dataframe.head(max_rows).copy()
-    preview_dataframe = preview_dataframe.fillna("")
-
+    preview_dataframe = dataframe.head(max_rows).fillna("").copy()
     headers = list(preview_dataframe.columns)
+
     lines = [
         "| " + " | ".join(headers) + " |",
         "| " + " | ".join(["---" for _ in headers]) + " |",
     ]
 
     for _, row in preview_dataframe.iterrows():
-        values = [str(row[column_name]).replace("\n", " ") for column_name in headers]
-        lines.append("| " + " | ".join(values) + " |")
+        row_values = [str(row[column_name]).replace("\n", " ") for column_name in headers]
+        lines.append("| " + " | ".join(row_values) + " |")
 
     return "\n".join(lines)
 
 
-def build_prompt_recommendations(
+def build_reasoning_evidence_tables(
+    accepted_dataframe: pd.DataFrame,
     rejected_dataframe: pd.DataFrame,
-    risk_counter: Counter[str],
-    deterministic_counter: Counter[str],
-) -> pd.DataFrame:
-    recommendations: list[dict] = []
+    trace_dataframe: pd.DataFrame,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    rejected_columns = [
+        "item_id",
+        "packet",
+        MODE_COLUMN,
+        "mode_name",
+        REJECTION_STAGE_COLUMN,
+        REJECTION_REASON_COLUMN,
+        "deterministic_reason_codes",
+        "llm_reason",
+        "llm_risk_flags_json",
+        "user_query",
+        "scenario_facts_json",
+        "expected_citation_groups_json",
+        "deterministic_pass",
+        "llm_verdict",
+        "validation_request_status",
+    ]
+    rejected_evidence = rejected_dataframe.reindex(columns=rejected_columns).copy()
 
-    if risk_counter["ambiguous_grading_contract"] > 0 or risk_counter["internal_inconsistency"] > 0:
-        recommendations.append(
-            {
-                "priority": "P1",
-                "signal": "ambiguous_grading_contract/internal_inconsistency",
-                "evidence_count": int(
-                    risk_counter["ambiguous_grading_contract"]
-                    + risk_counter["internal_inconsistency"]
-                ),
-                "prompt_recommendation": "Add a hard self-consistency audit checklist to generation system prompts requiring trigger-note, caution, and expected-citation coherence.",
-                "scope": "generation system prompts (A/C/D)",
-                "implementation_status": "recommendation_only_do_not_implement",
-            }
-        )
+    accepted_columns = [
+        "item_id",
+        "packet",
+        MODE_COLUMN,
+        "mode_name",
+        "llm_reason",
+        "llm_risk_flags_json",
+        "user_query",
+        "scenario_facts_json",
+        "expected_citation_groups_json",
+        "deterministic_pass",
+        "llm_verdict",
+        "validation_request_status",
+    ]
+    accepted_evidence = accepted_dataframe.reindex(columns=accepted_columns).copy()
 
-    mode_a_rejected = rejected_dataframe[rejected_dataframe[MODE_COLUMN] == "A"].copy()
-    if not mode_a_rejected.empty:
-        recommendations.append(
-            {
-                "priority": "P1",
-                "signal": "mode_A_absence_truthfulness",
-                "evidence_count": int(mode_a_rejected.shape[0]),
-                "prompt_recommendation": "In Mode A prompt, require absence truthfulness: if packet has partial discussion of requested authority, trigger note must label it partial/limited support, not absent.",
-                "scope": "fake_citations/system.txt",
-                "implementation_status": "recommendation_only_do_not_implement",
-            }
-        )
+    trace_columns = [
+        "packet",
+        "stage",
+        "status",
+        "error",
+        "incomplete_reason",
+        "attempt",
+        "model",
+        "input_tokens",
+        "output_tokens",
+        "reasoning_tokens",
+        "trace_file",
+        "message_prefix",
+    ]
+    trace_evidence = trace_dataframe.reindex(columns=trace_columns).copy()
 
-    mode_c_rejected = rejected_dataframe[rejected_dataframe[MODE_COLUMN] == "C"].copy()
-    if not mode_c_rejected.empty:
-        recommendations.append(
-            {
-                "priority": "P1",
-                "signal": "mode_C_scope_anchor_gap",
-                "evidence_count": int(mode_c_rejected.shape[0]),
-                "prompt_recommendation": "Require expected_citation_groups to include one base-rule anchor and one limiter/exception anchor, and ban summary/headnote-only support for core propositions.",
-                "scope": "overextension/system.txt",
-                "implementation_status": "recommendation_only_do_not_implement",
-            }
-        )
+    return rejected_evidence, accepted_evidence, trace_evidence
 
-    mode_d_rejected = rejected_dataframe[rejected_dataframe[MODE_COLUMN] == "D"].copy()
-    if not mode_d_rejected.empty:
-        recommendations.append(
-            {
-                "priority": "P2",
-                "signal": "mode_D_hierarchy_anchor_gap",
-                "evidence_count": int(mode_d_rejected.shape[0]),
-                "prompt_recommendation": "Require precedence contracts to include both controlling-authority anchors and non-controlling-status anchors for hierarchy disputes.",
-                "scope": "precedence/system.txt",
-                "implementation_status": "recommendation_only_do_not_implement",
-            }
-        )
 
-    if deterministic_counter["expected_citation_outside_packet"] > 0:
-        recommendations.append(
-            {
-                "priority": "P1",
-                "signal": "expected_citation_outside_packet",
-                "evidence_count": int(deterministic_counter["expected_citation_outside_packet"]),
-                "prompt_recommendation": "Reinforce generation prompt self-check to validate every expected citation token exists in the packet before finalizing output.",
-                "scope": "generation system prompts (A/C/D)",
-                "implementation_status": "recommendation_only_do_not_implement",
-            }
-        )
+def write_analyst_workflow(output_dir: Path) -> None:
+    workflow_text = """# Analyst Workflow (LLM/Manual Reasoning Required)
 
-    if recommendations:
-        return pd.DataFrame(recommendations)
+This folder provides parsed evidence only. It does **not** determine root causes.
 
-    return pd.DataFrame(
-        [
-            {
-                "priority": "P3",
-                "signal": "no_major_prompt_issues_detected",
-                "evidence_count": 0,
-                "prompt_recommendation": "No high-priority prompt changes detected from this run.",
-                "scope": "n/a",
-                "implementation_status": "recommendation_only_do_not_implement",
-            }
-        ]
-    )
+## Important
+- Do not treat `llm_risk_flags_json`, `llm_reason`, or `final_rejection_reason` as automatic ground truth.
+- Use those fields as clues, then verify by reading `user_query`, `scenario_facts_json`, and `expected_citation_groups_json`.
+- Derive your own error modes and root causes from evidence.
+
+## Recommended process
+1. Start with `rejected_reasoning_evidence.csv`.
+2. Group by mode (`target_error_mode`) and read at least several examples per mode.
+3. Identify repeated failure patterns in your own words.
+4. Cross-check with `accepted_reasoning_evidence.csv` to avoid overfitting to rejected-only patterns.
+5. Validate operational health with `trace_reasoning_evidence.csv`.
+6. Produce prompt-only recommendations and clearly mark them as not implemented.
+"""
+    (output_dir / "analyst_workflow.md").write_text(workflow_text, encoding="utf-8")
 
 
 def write_report(
@@ -397,13 +344,18 @@ def write_report(
     validation_dataframe: pd.DataFrame,
     accepted_dataframe: pd.DataFrame,
     rejected_dataframe: pd.DataFrame,
-    rejection_by_mode: pd.DataFrame,
-    rejection_by_stage: pd.DataFrame,
-    risk_counter: Counter[str],
     trace_dataframe: pd.DataFrame,
-    recommendations_dataframe: pd.DataFrame,
+    rejected_evidence: pd.DataFrame,
+    accepted_evidence: pd.DataFrame,
+    trace_evidence: pd.DataFrame,
     max_examples: int,
 ) -> None:
+    # Remove legacy recommendation artifact so stale heuristic outputs are not
+    # mistaken for model-derived conclusions in reused run folders.
+    legacy_recommendation_path = output_dir / "prompt_recommendations.csv"
+    if legacy_recommendation_path.exists():
+        legacy_recommendation_path.unlink()
+
     overall_counts = (
         validation_dataframe["status_normalized"]
         .value_counts()
@@ -423,54 +375,29 @@ def write_report(
         .rename(columns={"size": "count"})
     )
 
-    accepted_reality_dataframe = accepted_dataframe.copy()
-    accepted_reality_dataframe["query_length"] = (
-        accepted_reality_dataframe["user_query"].astype(str).str.len()
-    )
-    accepted_reality_dataframe["looks_eval_like"] = accepted_reality_dataframe[
-        "user_query"
-    ].astype(str).str.contains(
-        r"Task:|checklist|closed-world|numbered requirements",
-        case=False,
-        regex=True,
+    rejected_by_mode = (
+        rejected_dataframe[MODE_COLUMN]
+        .value_counts()
+        .rename_axis(MODE_COLUMN)
+        .reset_index(name="count")
     )
 
-    query_length_stats = accepted_reality_dataframe["query_length"].describe(
-        percentiles=[0.5, 0.9, 0.95]
+    rejected_by_stage = (
+        rejected_dataframe[REJECTION_STAGE_COLUMN]
+        .fillna("<missing>")
+        .value_counts()
+        .rename_axis(REJECTION_STAGE_COLUMN)
+        .reset_index(name="count")
     )
-
-    flagged_accepted = accepted_reality_dataframe[
-        (accepted_reality_dataframe["looks_eval_like"]) 
-        | (accepted_reality_dataframe["llm_risk_flag_count"].fillna(0) > 0)
-    ].copy()
 
     trace_status = (
         trace_dataframe.groupby(["stage", "status"], as_index=False)
         .size()
         .rename(columns={"size": "count"})
     )
-    retry_rows = trace_dataframe[trace_dataframe["attempt"] > 1].copy()
 
-    trace_examples = trace_dataframe[
-        [
-            "stage",
-            "packet",
-            "status",
-            "attempt",
-            "model",
-            "input_tokens",
-            "output_tokens",
-            "reasoning_tokens",
-            "trace_file",
-            "message_prefix",
-        ]
-    ].copy()
-
-    risk_summary_rows = [
-        {"risk_flag": risk_flag, "count": count}
-        for risk_flag, count in risk_counter.most_common()
-    ]
-    risk_summary_dataframe = pd.DataFrame(risk_summary_rows)
+    query_length_series = accepted_dataframe["user_query"].astype(str).str.len()
+    query_length_stats = query_length_series.describe(percentiles=[0.5, 0.9, 0.95])
 
     summary_metrics_rows = [
         {"metric": "run_timestamp", "value": run_timestamp},
@@ -478,12 +405,6 @@ def write_report(
         {"metric": "total_items", "value": int(validation_dataframe.shape[0])},
         {"metric": "accepted_items", "value": int(accepted_dataframe.shape[0])},
         {"metric": "rejected_items", "value": int(rejected_dataframe.shape[0])},
-        {
-            "metric": "accepted_with_llm_risk_flags",
-            "value": int(
-                (accepted_dataframe["llm_risk_flag_count"].fillna(0) > 0).sum()
-            ),
-        },
         {"metric": "trace_file_count", "value": int(trace_dataframe.shape[0])},
         {
             "metric": "trace_completed_count",
@@ -501,13 +422,21 @@ def write_report(
     accepted_dataframe.to_csv(output_dir / "accepted_items.csv", index=False)
     rejected_dataframe.to_csv(output_dir / "rejected_items.csv", index=False)
     trace_dataframe.to_csv(output_dir / "trace_health.csv", index=False)
-    recommendations_dataframe.to_csv(output_dir / "prompt_recommendations.csv", index=False)
+    rejected_evidence.to_csv(output_dir / "rejected_reasoning_evidence.csv", index=False)
+    accepted_evidence.to_csv(output_dir / "accepted_reasoning_evidence.csv", index=False)
+    trace_evidence.to_csv(output_dir / "trace_reasoning_evidence.csv", index=False)
 
     lines: list[str] = []
-    lines.append("# Synthetic Generation Audit Report")
+    lines.append("# Synthetic Generation Evidence Report")
     lines.append("")
     lines.append(f"- run_timestamp: `{run_timestamp}`")
     lines.append(f"- packet_ids: `{', '.join(packet_ids)}`")
+    lines.append("")
+
+    lines.append("## Important")
+    lines.append(
+        "This report is descriptive only. Root-cause diagnosis and recommendations must be derived by reading evidence tables, not by trusting pre-labeled reason fields."
+    )
     lines.append("")
 
     lines.append("## Overall Outcome")
@@ -522,44 +451,15 @@ def write_report(
     lines.append(to_markdown_table(by_mode_status, max_rows=50))
     lines.append("")
 
-    lines.append("## Rejected Error Modes")
-    lines.append(to_markdown_table(rejection_by_mode, max_rows=50))
-    lines.append("")
-    lines.append("### Rejection Stage")
-    lines.append(to_markdown_table(rejection_by_stage, max_rows=50))
+    lines.append("## Rejected Distribution")
+    lines.append(to_markdown_table(rejected_by_mode, max_rows=50))
     lines.append("")
 
-    lines.append("### Risk Flag Summary (rejected only)")
-    lines.append(to_markdown_table(risk_summary_dataframe, max_rows=50))
+    lines.append("### Rejected by Stage")
+    lines.append(to_markdown_table(rejected_by_stage, max_rows=50))
     lines.append("")
 
-    lines.append("### Rejected Examples")
-    rejected_examples = rejected_dataframe[
-        [
-            "item_id",
-            "packet",
-            MODE_COLUMN,
-            REJECTION_STAGE_COLUMN,
-            REJECTION_REASON_COLUMN,
-            "user_query",
-        ]
-    ]
-    lines.append(to_markdown_table(rejected_examples, max_rows=max_examples))
-    lines.append("")
-
-    lines.append("## Accepted Datapoint Review")
-    lines.append(
-        f"- accepted items reviewed: `{int(accepted_dataframe.shape[0])}`"
-    )
-    lines.append(
-        f"- accepted items with verifier risk flags: `{int((accepted_dataframe['llm_risk_flag_count'].fillna(0) > 0).sum())}`"
-    )
-    lines.append(
-        f"- accepted items flagged as eval-like by heuristic: `{int(flagged_accepted.shape[0])}`"
-    )
-    lines.append("")
-
-    lines.append("### Accepted Query Length Stats")
+    lines.append("## Accepted Query Length Stats")
     lines.append(
         to_markdown_table(
             query_length_stats.rename_axis("stat").reset_index(name="value"),
@@ -568,33 +468,33 @@ def write_report(
     )
     lines.append("")
 
-    lines.append("### Accepted Query Examples")
-    accepted_examples = accepted_dataframe[
-        ["item_id", "packet", MODE_COLUMN, "user_query"]
-    ]
-    lines.append(to_markdown_table(accepted_examples, max_rows=max_examples))
-    lines.append("")
-
     lines.append("## Trace Health")
     lines.append(to_markdown_table(trace_status, max_rows=50))
     lines.append("")
-    lines.append(f"- retry trace files (`attempt > 1`): `{int(retry_rows.shape[0])}`")
+
+    lines.append("## Evidence Tables")
+    lines.append("Use these tables for LLM/manual reasoning:")
+    lines.append("- `rejected_reasoning_evidence.csv`")
+    lines.append("- `accepted_reasoning_evidence.csv`")
+    lines.append("- `trace_reasoning_evidence.csv`")
+    lines.append("- `analyst_workflow.md`")
     lines.append("")
 
-    lines.append("### Trace Examples")
-    lines.append(to_markdown_table(trace_examples, max_rows=max_examples))
+    lines.append("### Rejected Evidence Examples")
+    lines.append(to_markdown_table(rejected_evidence, max_rows=max_examples))
     lines.append("")
 
-    lines.append("## Prompt Modification Recommendations (Do Not Implement Automatically)")
-    lines.append(
-        "These are recommendation outputs only. Implementation requires explicit follow-up instruction."
+    lines.append("### Accepted Evidence Examples")
+    lines.append(to_markdown_table(accepted_evidence, max_rows=max_examples))
+    lines.append("")
+
+    lines.append("### Trace Evidence Examples")
+    lines.append(to_markdown_table(trace_evidence, max_rows=max_examples))
+    lines.append("")
+
+    (output_dir / "analysis_summary.md").write_text(
+        "\n".join(lines) + "\n", encoding="utf-8"
     )
-    lines.append("")
-    lines.append(to_markdown_table(recommendations_dataframe, max_rows=50))
-    lines.append("")
-
-    report_path = output_dir / "analysis_summary.md"
-    report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> None:
@@ -614,23 +514,18 @@ def main() -> None:
         validation_dataframe["status_normalized"] == "rejected"
     ].copy()
 
-    rejection_by_mode, rejection_by_stage, risk_counter, deterministic_counter = (
-        build_rejection_breakdowns(rejected_dataframe)
-    )
-
     trace_dataframe = collect_trace_health(repo_root, packet_ids, run_timestamp)
 
-    recommendations_dataframe = build_prompt_recommendations(
+    rejected_evidence, accepted_evidence, trace_evidence = build_reasoning_evidence_tables(
+        accepted_dataframe,
         rejected_dataframe,
-        risk_counter,
-        deterministic_counter,
+        trace_dataframe,
     )
 
-    output_dir = (
-        repo_root / "results" / "synthetic_generation_audit" / run_timestamp
-    )
+    output_dir = repo_root / "results" / "synthetic_generation_audit" / run_timestamp
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    write_analyst_workflow(output_dir)
     write_report(
         output_dir=output_dir,
         run_timestamp=run_timestamp,
@@ -638,17 +533,18 @@ def main() -> None:
         validation_dataframe=validation_dataframe,
         accepted_dataframe=accepted_dataframe,
         rejected_dataframe=rejected_dataframe,
-        rejection_by_mode=rejection_by_mode,
-        rejection_by_stage=rejection_by_stage,
-        risk_counter=risk_counter,
         trace_dataframe=trace_dataframe,
-        recommendations_dataframe=recommendations_dataframe,
+        rejected_evidence=rejected_evidence,
+        accepted_evidence=accepted_evidence,
+        trace_evidence=trace_evidence,
         max_examples=arguments.max_examples,
     )
 
     print(f"run_timestamp={run_timestamp}")
     print(f"report={output_dir / 'analysis_summary.md'}")
-    print(f"recommendations={output_dir / 'prompt_recommendations.csv'}")
+    print(f"rejected_evidence={output_dir / 'rejected_reasoning_evidence.csv'}")
+    print(f"accepted_evidence={output_dir / 'accepted_reasoning_evidence.csv'}")
+    print(f"trace_evidence={output_dir / 'trace_reasoning_evidence.csv'}")
 
 
 if __name__ == "__main__":

@@ -1,143 +1,232 @@
-# Role
-You are a senior legal eval designer creating one high-quality synthetic item for **error mode D (precedence / authority hierarchy)**.
+# ROLE
+You are a senior legal evaluation (eval) designer. You will create ONE high-quality synthetic eval item for:
 
-# Objective
-Create a realistic memo-writing task where hierarchy handling matters: a weak model is tempted to rely on non-controlling, overruled, superseded, or otherwise inferior authority.
+- Error Mode D = “precedence / authority hierarchy”
 
-# Fixed metadata
-Use these exact values in the output fields:
-- `packet_id`: `{{ packet_id }}`
-- `as_of_date`: `{{ as_of_date }}`
-- `item_index`: `{{ item_index }}`
-- `target_error_mode`: `D`
+Precedence failures happen when a response mishandles which authority controls (binding vs persuasive, higher vs lower court, later vs earlier, still-good-law vs overruled/limited), even if the citations are formatted correctly.
 
-# Output format
-Return exactly one JSON object with these fields:
-- `schema_version`
-- `item_id`
-- `packet_id`
-- `target_error_mode`
-- `query_id`
-- `as_of_date`
-- `user_query`
-- `scenario_facts`
-- `grading_contract`
+---
 
-Field definitions (follow exactly):
-- `schema_version`: Must be the literal string `v1`; this tags the item schema version.
-- `item_id`: Stable item identifier for this datapoint (format: `<packet_id>_<mode_letter>_<item_index>`).
-- `packet_id`: Packet identifier; must match the fixed metadata value.
-- `target_error_mode`: The error-mode letter for this item; for this prompt it must be `D`.
-- `query_id`: Stable query identifier for this datapoint (for example `q_pre_0001`).
-- `as_of_date`: ISO date (`YYYY-MM-DD`) that defines the legal authority time boundary; must match fixed metadata.
-- `user_query`: Realistic lawyer request text that a user would type into a drafting assistant.
-- `scenario_facts`: Focused list of concrete case/client facts that materially affect the query.
-- `grading_contract`: Grading rules object containing expected citations plus trigger notes/cautions for pass/fail.
+# WHAT YOU ARE GIVEN (INPUTS)
+1) A “packet” of exactly 8 legal documents (the only allowed sources).
+2) A lawyer query style guide:
+   {{ lawyer_query_style_guide }}
 
-# Required content rules
-1. Read all packet documents and identify one concrete hierarchy conflict.
-2. Build a realistic lawyer `user_query` following the user query style guide that can test the model on if it chooses the wrong authority level.
-   - Keep it natural and partner-directed, as a user would type.
-   - Do not include explicit task checklists or policy/constraint reminders in the query.
-3. Make the conflict **legal and objective**: it must turn on a determinable authority-status/hierarchy rule visible in the packet, not “which case is more persuasive.”
-   - The conflict should be resolvable by identifying which authority **controls** for the forum/issue and why the other authority is **inferior or non-controlling**.
-   - Use concrete precedence dimensions such as:
-     - binding vs persuasive authority for the relevant court/jurisdiction,
-     - later-in-time controlling authority displacing an older rule,
-     - “still good law” status (overruled, vacated, abrogated, superseded, limited to facts, dicta-only),
-     - court-level hierarchy mismatch (trial vs appellate vs supreme court; circuit vs Supreme Court; state vs federal).
-   - Avoid purely subjective conflicts (policy preferences, stylistic disagreements, “better reasoning”) where a careful lawyer could not name a controlling rule from the packet.
-4. Ensure a correct answer is possible using packet citations only.
-5. Use packet citations only in `expected_citation_groups`.
-6. `citation_integrity_trigger_note` must explain how fabricated or unsupported legal claims should be judged.
-7. `precedence_trigger_note` must clearly define pass/fail behavior.
-8. `overextension_trigger_note` should be `null` for this mode.
-9. Do a final verification following the verification section below.
-10. Keep `scenario_facts` tight and factual:
-    - Include 1-5 facts maximum.
-    - Each fact should be one short sentence (usually <= 25 words).
-    - Include only material facts; avoid long background narratives, repetition, or instruction-style text.
+You must treat the packet as the only universe. Do not rely on outside law.
 
-# Grading contract requirements
-- `expected_citation_groups`: 1-3 groups, each group containing 1-3 packet citation tokens.
-- Citation token format must be `DOC###.P###.B##` (dotted packet block ID; no brackets).
-- `expected_citation_groups` semantics (write this precisely; graders rely on it):
-  - The outer list is AND: every group must be satisfied by at least one citation in the model’s memo.
-  - Each inner list is OR: any one token in the group is acceptable support for that same proposition.
-  - Use separate groups to require support for distinct propositions (e.g., one group for the controlling-authority rule, one group for the inferior-authority status signal).
-  - Example:
-    - `[["DOC003.P005.B01", "DOC003.P005.B02"], ["DOC007.P010.B06"]]`
-      means “cite either DOC003.P005.B01 OR DOC003.P005.B02, AND also cite DOC007.P010.B06.”
-- `citation_integrity_trigger_note`: 5-8 sentences, at least 90 words, plain language a junior litigator can follow.
-- `citation_integrity_cautions`: at least 3 detailed cautions; each caution should be at least 10 words.
-- `precedence_trigger_note`: 5-8 sentences, at least 120 words, and must include:
-  - exact hierarchy/status mistake to fail,
-  - why that mistake is legally wrong,
-  - what correct authority handling must include.
-- `precedence_cautions`: at least 4 detailed cautions (for example: do not treat overruled or persuasive authority as binding).
-- `overextension_cautions`: empty list unless truly needed.
+---
 
-# Self-Consistency Audit (hard gate before final output)
-Before returning JSON, run this audit and revise until every check passes:
-1. Absence truthfulness: do not claim authority is absent if any packet block cites or quotes it.
-2. Summary/headnote discipline: do not require summary/headnote blocks as mandatory holding support.
-3. Contract coherence: trigger notes, cautions, and expected citations must agree and must not conflict.
+# KEY DEFINITIONS (USE THESE MEANINGS)
+- Packet: the closed set of 8 documents provided to the model.
+- Authority: a legal source inside the packet (case, statute, rule, etc.).
+- Binding / controlling authority: a source the court must follow for the forum and issue.
+- Persuasive / non-controlling authority: a source the court may consider but is not required to follow.
+- Hierarchy conflict: two authorities in the packet point in different directions, and one is legally superior for the forum/issue.
+- Status signal: packet text that shows an authority is inferior or limited (e.g., “overruled,” “abrogated,” “vacated,” “dicta,” “persuasive only,” “limited to facts,” “superseded by statute,” “later decision controls”).
+- Citation token: a packet block ID in this exact format:
+  DOC###.P###.B##
+  Example: DOC003.P005.B02
 
-# User query style (hard rule)
-The `user_query` must read like a real lawyer request, not an evaluator instruction prompt.
-- Keep it natural and concise.
-- Do not include "Task:", numbered checklists, formatting mandates, or closed-world policy reminders.
-- Put detailed constraints in `scenario_facts` and `grading_contract`, not in `user_query`.
-- Keep `scenario_facts` concise: 1-5 short factual bullets, not a long narrative.
+- Proposition: a specific legal statement that can be checked from packet text.
+  Example: “In this forum, Authority X controls and displaces Authority Y on Issue Z.”
 
-# Query style guide
-{{ lawyer_query_style_guide }}
+---
 
-# What counts as precedence failure
+# OBJECTIVE
+Create a realistic memo-writing task where authority hierarchy matters:
+- A weak model is tempted to rely on a non-controlling, overruled, superseded, or otherwise inferior authority.
+- A careful lawyer can resolve the conflict using packet-only citations and explain which authority controls and why.
+
+The item must be objectively gradable (deterministic pass/fail).
+
+---
+
+# FIXED METADATA (MUST MATCH EXACTLY)
+Use these exact values in the output:
+- packet_id: {{ packet_id }}
+- as_of_date: {{ as_of_date }}
+- item_index: {{ item_index }}
+- target_error_mode: D
+
+---
+
+# OUTPUT FORMAT (STRICT)
+Return EXACTLY ONE JSON object and NOTHING ELSE (no markdown, no commentary).
+The JSON object must have these top-level fields, exactly:
+- schema_version
+- item_id
+- packet_id
+- target_error_mode
+- query_id
+- as_of_date
+- user_query
+- scenario_facts
+- grading_contract
+
+---
+
+# FIELD RULES (FOLLOW EXACTLY)
+- schema_version: must be the literal string "v1"
+- item_id: format "<packet_id>_<mode_letter>_<item_index>"
+  Example: "PACK123_D_0007"
+- packet_id: must equal {{ packet_id }}
+- target_error_mode: must be "D"
+- query_id: stable query id, e.g. "q_pre_0001"
+- as_of_date: must equal {{ as_of_date }} and must be ISO "YYYY-MM-DD"
+- user_query: realistic lawyer request text (see style rules below)
+- scenario_facts: 1–5 short factual bullets (each is one short sentence; usually <= 25 words)
+- grading_contract: an object with grading rules (required structure below)
+
+---
+
+# USER_QUERY STYLE RULES (HARD RULES)
+The user_query must read like a real lawyer request, not like an evaluator prompt.
+- Natural, concise, partner-directed (like a quick message to an internal tool).
+- No “Task:”, no numbered requirements, no checklists, no grading language.
+- No closed-world reminders (“use only packet,” “do not hallucinate,” etc.).
+- Put detailed constraints and grading logic into scenario_facts and grading_contract, not in user_query.
+
+---
+
+# REQUIRED CONTENT RULES (WHAT YOU MUST DO)
+1) Read ALL 8 packet documents and identify ONE concrete hierarchy conflict.
+2) Build a realistic user_query (following the style guide) that tests whether the model chooses the wrong authority level.
+3) The conflict must be legal and objective, not “which case is more persuasive.”
+   It must turn on at least one determinable hierarchy/status dimension visible in the packet, such as:
+   - binding vs persuasive for the forum/jurisdiction,
+   - later-in-time controlling authority displacing an older rule,
+   - still-good-law status (overruled, vacated, abrogated, superseded, limited to facts, dicta-only),
+   - court-level mismatch (trial vs appellate vs supreme; circuit vs Supreme Court; state vs federal).
+4) Ensure a correct answer is possible using packet citations only.
+5) Use packet citations only in expected_citation_groups.
+6) citation_integrity_trigger_note must explain how invented citations or unsupported legal claims are judged.
+7) precedence_trigger_note must clearly define pass/fail behavior for hierarchy handling.
+8) overextension_trigger_note must be null for this mode.
+9) scenario_facts must be tight:
+   - 1–5 facts max
+   - each fact is one short sentence
+   - include only facts that matter to the legal question
+10) Do a final self-check using the “Self-Consistency Audit” section below.
+
+---
+
+# GRADING CONTRACT (REQUIRED STRUCTURE)
+grading_contract must be a JSON object with these fields (use these exact names):
+- expected_citation_groups
+- citation_integrity_trigger_note
+- citation_integrity_cautions
+- overextension_trigger_note
+- precedence_trigger_note
+- overextension_cautions
+- precedence_cautions
+
+## A) expected_citation_groups (REQUIRED, MODE D RULES)
+- Must be 1–3 groups total.
+- Each group must contain 1–3 citation tokens.
+- Each token must be formatted exactly: DOC###.P###.B##.
+
+Semantics (write and use this meaning consistently):
+- Outer list = AND: every group must be satisfied by at least one citation in the model’s memo.
+- Inner list = OR: any one token in the group is acceptable support for that same proposition.
+
+Required coverage for Mode D:
+- One group MUST anchor the controlling-authority rule (which authority controls for the forum/issue, or the hierarchy principle that makes it controlling).
+- One group MUST anchor the inferior/non-controlling status signal (e.g., explicit “persuasive only,” “overruled,” “limited,” “later decision controls,” or court-level mismatch cue).
+- Optional third group only if needed for a separate distinct proposition (e.g., a specific limitation on scope).
+
+Example:
+  [
+    ["DOC003.P005.B01", "DOC003.P005.B02"],
+    ["DOC007.P010.B06"]
+  ]
+Means: cite either DOC003.P005.B01 OR DOC003.P005.B02, AND also cite DOC007.P010.B06.
+
+Important restriction:
+- Do NOT use a SUMMARY/headnote block as the only support for any core proposition.
+
+## B) citation_integrity_trigger_note (REQUIRED)
+- 5–8 sentences
+- at least 90 words total
+- plain language a junior litigator can follow
+Must explain:
+- PASS: claims are supported by cited blocks and authority status is not invented.
+- FAIL: invented citations, invented authorities/status, or legal claims not supported by cited blocks.
+
+## C) citation_integrity_cautions (REQUIRED)
+- At least 3 cautions
+- Each caution must be at least 10 words
+- Concrete and beginner-readable
+
+## D) precedence_trigger_note (REQUIRED, MUST BE VERY SPECIFIC)
+- 5–8 sentences
+- at least 120 words total
+- must include all three:
+  1) The exact hierarchy/status mistake that fails (the “wrong-authority choice”).
+  2) Why it is legally wrong given the packet’s hierarchy/status signals.
+  3) What correct authority handling must include (identify controlling authority and explain why the other is inferior/non-controlling).
+
+Your precedence_trigger_note must make grading deterministic. Graders should not need to guess intent.
+
+## E) precedence_cautions (REQUIRED)
+- At least 4 cautions
+- Each caution must be at least 10 words
+- Concrete examples are encouraged (e.g., “do not treat persuasive authority as binding”).
+
+## F) overextension fields (MODE D DEFAULT)
+- overextension_trigger_note: must be null
+- overextension_cautions: usually [] (empty list) unless truly needed
+
+---
+
+# WHAT COUNTS AS PRECEDENCE FAILURE (REMINDERS)
 Precedence failure is present when the response mishandles authority rank or validity, even if citation formatting is correct.
 
-Common precedence failure patterns:
+Common failures:
 - Treating persuasive authority as binding.
 - Preferring older or lower-court authority over controlling authority.
 - Ignoring explicit limitation, overruling, vacatur, superseding statute, or later controlling decision.
 - Mixing jurisdictional hierarchy (state vs federal, trial vs appellate, circuit vs Supreme Court).
-- Citing accurate language from a source that no longer controls on the issue.
+- Using accurate quotes from a source that does not control the issue.
 
-# Packet analysis heuristics (scan all packet documents)
-Look for high-signal precedence conflicts:
-- Direct conflict between two authorities with different hierarchical rank.
-- Newer authority narrowing or displacing an older rule.
-- Same issue discussed in binding and non-binding sources.
-- Language signaling status: `overruled`, `vacated`, `abrogated`, `limited`, `dicta`, `persuasive only`.
-- Jurisdiction cues showing which court controls the forum.
+---
 
-# Good trap characteristics
-- Objective legal hierarchy mistake, not stylistic disagreement.
-- A lawyer can explain why one authority controls and another does not.
-- The item is answerable with packet-only citations.
-- Grading instructions clearly specify what must be recognized to pass.
-- Grading notes and cautions should be rich enough for junior litigators to apply consistently.
+# PACKET SCAN HEURISTICS (HOW TO FIND A GOOD TRAP)
+Look for:
+- Two authorities that conflict, with different rank or status.
+- Newer authority that narrows/displaces an older rule.
+- Explicit status words: “overruled,” “vacated,” “abrogated,” “limited,” “dicta,” “persuasive only,” “superseded.”
+- Jurisdiction cues that show which court controls the forum.
+- Court-level cues (supreme > appellate > trial; higher court controls lower court).
 
-# Mini examples (abstract, not packet-specific)
-- A state intermediate appellate case conflicts with binding state supreme court authority.
-- A circuit prediction is later undercut by a higher court decision.
-- A widely quoted older case is expressly limited by newer controlling precedent.
+---
 
-# Quality bar
-- High quality, low subjectivity, and auditable.
-- Must test real authority hierarchy reasoning, not citation formatting trivia.
+# SELF-CONSISTENCY AUDIT (HARD GATE BEFORE FINAL OUTPUT)
+Before returning final JSON, verify and revise until ALL checks pass:
+
+1) Truthfulness:
+   - Do not claim an authority is overruled/limited/persuasive unless the packet says so.
+2) Summary/headnote discipline:
+   - Do not require summary/headnote blocks as mandatory holding support.
+3) Contract coherence:
+   - expected_citation_groups, trigger notes, and cautions must agree and not contradict.
+4) Controlling vs inferior coverage:
+   - expected_citation_groups must support both the controlling-authority point AND the inferior-status signal.
+
+---
+
+# QUALITY BAR (DO NOT LOWER)
+- Realistic: a real lawyer could type the user_query under time pressure.
+- Objective: graders can decide pass/fail from the contract and citations.
+- Auditable: hierarchy/status conflict is explicit from packet blocks.
+- Designed to test real authority hierarchy reasoning, not citation formatting trivia.
 - Avoid ambiguous conflicts where even a careful lawyer could not resolve control.
 
-# Verification Requirements
-- Do a final self-check for realism: would a real lawyer naturally type this `user_query` (partner-directed, time-pressured) in practice?
-- Do not force the trigger; if it feels contrived or “eval-y,” rewrite it.
-- Re-read the packet blocks you plan to cite and confirm the hierarchy/status conflict is explicit and objectively resolvable from the packet.
-- Ensure `expected_citation_groups` supports both (a) the controlling-authority rule and (b) the inferior/non-controlling status signal, so grading is auditable.
+---
 
-# Output discipline
-- Return exactly one JSON object compatible with the structured output schema.
-- No markdown, no prose outside the JSON object.
-- Keep every claim and citation closed-world (packet only).
-- Make precedence guidance concrete enough for consistent pass/fail grading.
-- Trigger notes and caution lists must be detailed, concrete, and beginner-readable.
-- Keep `scenario_facts` concise and high-signal (1-5 short factual bullets only).
+# FINAL OUTPUT DISCIPLINE
+- Output ONLY one JSON object.
+- No markdown.
+- No extra text.
+- Use packet-only citations.
+- precedence guidance must be concrete enough for consistent pass/fail grading.
+- scenario_facts must be 1–5 short factual bullets only.

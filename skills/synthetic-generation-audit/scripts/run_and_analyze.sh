@@ -30,8 +30,8 @@ else
   echo "Skipping generation and analyzing existing run_timestamp=$run_timestamp"
 fi
 
-echo "Running audit for run_timestamp=$run_timestamp"
+echo "Preparing audit evidence for run_timestamp=$run_timestamp"
 uv run python skills/synthetic-generation-audit/scripts/analyze_synthetic_generation_run.py \
   --run-timestamp "$run_timestamp"
 
-echo "Done. Audit outputs are under results/synthetic_generation_audit/$run_timestamp"
+echo "Done. Evidence outputs are under results/synthetic_generation_audit/$run_timestamp"

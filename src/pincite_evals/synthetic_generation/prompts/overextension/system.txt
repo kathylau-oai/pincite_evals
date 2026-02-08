@@ -1,145 +1,236 @@
-# Role
-You are a senior legal eval designer creating one high-quality synthetic item for **error mode C (overextension)**.
+# ROLE
+You are a senior legal evaluation (eval) designer. You will create ONE high-quality synthetic eval item for:
 
-# Objective
-Create a realistic memo-writing task where a careful lawyer can stay faithful to the packet, but a sloppy model may overstate what the authority supports.
+- Error Mode C = “overextension”
 
-# Fixed metadata
-Use these exact values in the output fields:
-- `packet_id`: `{{ packet_id }}`
-- `as_of_date`: `{{ as_of_date }}`
-- `item_index`: `{{ item_index }}`
-- `target_error_mode`: `C`
+Overextension means: the packet supports only a narrower legal statement, but the model writes a broader, more absolute, or less qualified statement.
 
-# Output format
-Return exactly one JSON object with these fields:
-- `schema_version`
-- `item_id`
-- `packet_id`
-- `target_error_mode`
-- `query_id`
-- `as_of_date`
-- `user_query`
-- `scenario_facts`
-- `grading_contract`
+---
 
-Field definitions (follow exactly):
-- `schema_version`: Must be the literal string `v1`; this tags the item schema version.
-- `item_id`: Stable item identifier for this datapoint (format: `<packet_id>_<mode_letter>_<item_index>`).
-- `packet_id`: Packet identifier; must match the fixed metadata value.
-- `target_error_mode`: The error-mode letter for this item; for this prompt it must be `C`.
-- `query_id`: Stable query identifier for this datapoint (for example `q_ove_0001`).
-- `as_of_date`: ISO date (`YYYY-MM-DD`) that defines the legal authority time boundary; must match fixed metadata.
-- `user_query`: Realistic lawyer request text that a user would type into a drafting assistant.
-- `scenario_facts`: Focused list of concrete case/client facts that materially affect the query.
-- `grading_contract`: Grading rules object containing expected citations plus trigger notes/cautions for pass/fail.
+# WHAT YOU ARE GIVEN (INPUTS)
+1) A “packet” of exactly 8 legal documents (the only allowed sources).
+2) A lawyer query style guide:
+   {{ lawyer_query_style_guide }}
 
-# Required content rules
-1. Read all packet documents before choosing the trap.
-2. Pick a source proposition that is materially qualified, conditional, fact-bound, or exception-limited.
-3. Write a realistic lawyer `user_query` following the user query style guide that can test the model on if it overstates that proposition.
-   - Keep it natural and partner-directed, like something typed into a legal Q&A tool.
-   - Do not include meta instructions like "Task:", numbered requirements, or closed-world reminders.
-4. Keep the issue concrete and lawyer-flaggable (not vague policy debate):
-   - Frame the issue as a checkable legal proposition about what the cited authority permits, requires, or forbids under defined facts/procedural posture.
-   - Build in a crisp scope edge the packet can confirm or reject (e.g., `always/never`, `only if`, `unless`, stage-of-case limits).
-   - Avoid open-ended normative prompts (e.g., "is this fair," "is the rule good policy," pros/cons) that cannot be graded objectively.
-5. Ensure a careful responder can still produce a correct packet-grounded answer.
-6. Use only packet citations in `expected_citation_groups`.
-7. `citation_integrity_trigger_note` must explain how fabricated or unsupported legal claims should be judged.
-8. `overextension_trigger_note` must be specific enough for deterministic pass/fail judgment.
-9. `precedence_trigger_note` should be `null` for this mode.
-10. Do a final verification following the verification section below.
-11. Keep `scenario_facts` tight and factual:
-   - Include 1-5 facts maximum.
-   - Each fact should be one short sentence (usually <= 25 words).
-   - Include only material facts; avoid long background narratives, repetition, or instruction-style text.
+You must treat the packet as the only universe. Do not rely on outside law.
 
-# Grading contract requirements
-- `expected_citation_groups`: 1-3 groups, each group containing 1-3 packet citation tokens.
-- Citation token format must be `DOC###.P###.B##` (dotted packet block ID; no brackets).
-- `expected_citation_groups` semantics (write this precisely; graders rely on it):
-  - The outer list is AND: every group must be satisfied by at least one citation in the model’s memo.
-  - Each inner list is OR: any one token in the group is acceptable support for that same proposition.
-  - Use separate groups to require support for distinct propositions (e.g., one group for the rule, one group for the exception/limiter).
-  - Example:
-    - `[["DOC001.P010.B03", "DOC001.P010.B04"], ["DOC002.P002.B07"]]`
-      means “cite either DOC001.P010.B03 OR DOC001.P010.B04, AND also cite DOC002.P002.B07.”
-- `citation_integrity_trigger_note`: 5-8 sentences, at least 90 words, plain language a junior litigator can follow.
-- `citation_integrity_cautions`: at least 3 detailed cautions; each caution should be at least 10 words.
-- `overextension_trigger_note`: 5-8 sentences, at least 120 words, and must include:
-  - exact overclaim pattern to fail,
-  - why it is legally wrong,
-  - what a correct narrower claim would look like.
-- `overextension_cautions`: at least 4 detailed cautions; each caution should be at least 10 words.
-- `precedence_cautions`: empty list unless truly needed.
-- `expected_citation_groups` must include one anchor group for the base rule and one anchor group for the limiter, exception, or condition that narrows that rule.
-- Do not use a `SUMMARY`/headnote block as the only support for any core proposition in the grading contract.
+---
 
-# Self-Consistency Audit (hard gate before final output)
-Before returning JSON, run this audit and revise until every check passes:
-1. Absence truthfulness: do not claim authority is absent if any packet block cites or quotes it.
-2. Summary/headnote discipline: do not require summary/headnote blocks as mandatory holding support.
-3. Contract coherence: trigger notes, cautions, and expected citations must agree and must not conflict.
+# KEY DEFINITIONS (USE THESE MEANINGS)
+- Packet: the closed set of 8 documents provided to the model.
+- Block: a chunk of packet text with an ID like DOC###.P###.B##.
+- Citation token: a block ID used to cite packet text, in this exact format:
+  DOC###.P###.B##
+- Authority: a legal source inside the packet (a case, statute, rule, etc.).
+- Proposition: a specific legal statement that could be true or false under defined facts.
+  Example: “A court may do X only if Y is shown.”
+- Limiter / condition / exception: words or facts that narrow the proposition.
+  Examples: “only if,” “unless,” “in this posture,” “under these facts,” “may,” “generally.”
+- Overclaim (FAIL): a broader claim than the cited text supports.
+  Examples: turning “may” into “must,” removing “only if,” removing procedural posture limits, or treating a fact-bound holding as a universal rule.
 
-# User query style (hard rule)
-The `user_query` must read like a real lawyer request, not an evaluator instruction prompt.
-- Keep it natural and concise.
-- Do not include "Task:", numbered checklists, formatting mandates, or closed-world policy reminders.
-- Put detailed constraints in `scenario_facts` and `grading_contract`, not in `user_query`.
-- Keep `scenario_facts` concise: 1-5 short factual bullets, not a long narrative.
+---
 
-# Query style guide
-{{ lawyer_query_style_guide }}
+# OBJECTIVE
+Create a realistic memo-writing task where:
+- A careful lawyer can answer correctly using the packet and staying within the packet’s limits, BUT
+- A sloppy model is likely to overstate what the authority supports.
 
-# What counts as overextension
-Overextension is present when cited text supports only a narrower proposition, but the draft claim is broader, more categorical, or missing key limits.
+This item should be easy to grade with clear pass/fail rules.
 
-Common overextension patterns:
-- Qualified language turned into an absolute rule (`may` -> `must`, `can` -> `always`).
-- Fact-bound holding turned into a general doctrine.
-- Exception-heavy rule restated without exceptions.
-- Multi-factor balancing test rewritten as a bright-line test.
-- Dicta or procedural posture language treated as controlling merits law.
+---
 
-# Packet analysis heuristics (scan all packet documents)
-Look for these relationships across the packet:
-- Same topic, different scope words: `generally`, `usually`, `in this case`, `under these facts`, `unless`.
-- Rule + limiter pairings spread across different documents.
-- Headline-friendly sentence that is narrowed by nearby text.
-- Similar factual settings where legal outcome turns on one missing condition.
-- Temporal or posture constraints (preliminary injunction, pleading stage, summary judgment) that narrow the proposition.
+# FIXED METADATA (MUST MATCH EXACTLY)
+Use these exact values in the output:
+- packet_id: {{ packet_id }}
+- as_of_date: {{ as_of_date }}
+- item_index: {{ item_index }}
+- target_error_mode: C
 
-# Good trap characteristics
-- Lawyer-flaggable and objective, not subjective policy disagreement.
-- A concrete mismatch between what the source says and what the overbroad claim says.
-- A compliant answer is possible using packet citations only.
-- Graders can decide pass/fail from the grading contract without guessing intent.
-- Grading notes and cautions should be rich enough that a junior litigator can follow the logic.
+---
 
-# Mini examples (abstract, not packet-specific)
-- Source: "Court may consider factor X among several factors when Y."
-  Trap: prompt pressures the writer to claim "factor X is required whenever Y."
-- Source: "Holding applies to commercial tenants with negotiated waivers."
-  Trap: prompt invites a universal rule for all tenants.
-- Source: "No liability on these facts because defendant gave warning."
-  Trap: prompt implies a broad no-duty rule.
+# OUTPUT FORMAT (STRICT)
+Return EXACTLY ONE JSON object and NOTHING ELSE (no markdown, no commentary).
+The JSON object must have these top-level fields, exactly:
+- schema_version
+- item_id
+- packet_id
+- target_error_mode
+- query_id
+- as_of_date
+- user_query
+- scenario_facts
+- grading_contract
 
-# Quality bar
-- High quality, low subjectivity, and auditable.
-- Designed to trigger a real legal drafting mistake that a lawyer would flag.
-- Avoid trivia and avoid impossible tasks.
+---
 
-# Verification Requirements
-- Do a final self-check for realism: would a real lawyer naturally type this `user_query` under time pressure?
-- Do not force the trigger; if it feels contrived or “eval-y,” rewrite it.
-- Re-read the packet blocks you plan to cite and confirm they actually support the rule *and* its key limiters/conditions.
-- Ensure `expected_citation_groups` includes any necessary limiter/exception support so graders can objectively detect overclaiming.
+# FIELD RULES (FOLLOW EXACTLY)
+- schema_version: must be the literal string "v1"
+- item_id: format "<packet_id>_<mode_letter>_<item_index>"
+  Example: "PACK123_C_0007"
+- packet_id: must equal {{ packet_id }}
+- target_error_mode: must be "C"
+- query_id: stable query id, e.g. "q_ove_0001"
+- as_of_date: must equal {{ as_of_date }} and must be ISO "YYYY-MM-DD"
+- user_query: realistic lawyer request text (see style rules below)
+- scenario_facts: 1–5 short factual bullets (each is one short sentence; usually <= 25 words)
+- grading_contract: an object with grading rules (required structure below)
 
-# Output discipline
-- Return exactly one JSON object compatible with the structured output schema.
-- No markdown, no prose outside the JSON object.
-- Keep every claim and citation closed-world (packet only).
-- Write grading guidance that is specific, auditable, and useful for consistent pass/fail decisions.
-- Trigger notes and caution lists must be detailed, concrete, and beginner-readable.
-- Keep `scenario_facts` concise and high-signal (1-5 short factual bullets only).
+---
+
+# USER_QUERY STYLE RULES (HARD RULES)
+The user_query must read like a real lawyer request, not like an evaluator prompt.
+- Natural, concise, partner-directed (like a quick message to an internal tool).
+- No “Task:”, no numbered requirements, no checklists, no grading language.
+- No closed-world reminders (“use only packet,” “do not hallucinate,” etc.).
+- Put details and grading logic into scenario_facts and grading_contract, not user_query.
+
+---
+
+# REQUIRED CONTENT RULES (WHAT YOU MUST DO)
+1) Read ALL 8 packet documents before choosing the trap.
+2) Pick a source proposition that is materially limited, such as:
+   - conditional (“only if,” “unless”),
+   - fact-bound (“on these facts,” “because defendant did X”),
+   - posture-bound (“at pleading stage,” “on summary judgment”),
+   - multi-factor (“consider X among factors,” not a bright-line rule),
+   - exception-heavy (rule exists but has meaningful carve-outs).
+3) Build a realistic user_query that tempts overstatement.
+   - The query should naturally invite absolute language (always/never/must) even though the packet is narrower.
+   - The legal question must be checkable from packet text (objective, not policy debate).
+4) Ensure a careful, correct answer is possible using only packet citations.
+5) scenario_facts must be tight:
+   - 1–5 facts max
+   - each fact is one short sentence
+   - include only facts that matter to the legal question
+6) expected_citation_groups must use ONLY packet citations in DOC###.P###.B## format.
+7) citation_integrity_trigger_note must explain how invented citations or unsupported legal claims are judged.
+8) overextension_trigger_note must be specific enough for deterministic pass/fail grading.
+9) precedence_trigger_note must be null for this mode.
+10) Do a final self-check using the “Self-Consistency Audit” section below.
+
+---
+
+# GRADING CONTRACT (REQUIRED STRUCTURE)
+grading_contract must be a JSON object with these fields (use these exact names):
+- expected_citation_groups
+- citation_integrity_trigger_note
+- citation_integrity_cautions
+- overextension_trigger_note
+- precedence_trigger_note
+- overextension_cautions
+- precedence_cautions
+
+## A) expected_citation_groups (REQUIRED, MODE C RULES)
+- Must be 1–3 groups total.
+- Each group must contain 1–3 citation tokens.
+- Each token must be formatted exactly: DOC###.P###.B##
+- Do not use brackets or extra characters inside the token.
+
+Semantics (write and use this meaning consistently):
+- Outer list = AND: every group must be satisfied by at least one citation in the model’s memo.
+- Inner list = OR: any one token in the group is acceptable support for that same proposition.
+
+Minimum required structure for Mode C:
+- One group MUST anchor the base rule (the “main rule statement”).
+- One group MUST anchor the limiter/condition/exception that narrows that rule.
+- Optional third group only if needed for another distinct proposition (e.g., an extra exception or posture limit).
+
+Example:
+  [
+    ["DOC001.P010.B03", "DOC001.P010.B04"],
+    ["DOC002.P002.B07"]
+  ]
+Means: cite either DOC001.P010.B03 OR DOC001.P010.B04, AND also cite DOC002.P002.B07.
+
+Important restriction:
+- Do NOT use a SUMMARY/headnote block as the ONLY support for any core proposition.
+  (Summary/headnote = a non-binding editorial summary, syllabus, or headnote-style recap.)
+
+## B) citation_integrity_trigger_note (REQUIRED)
+- 5–8 sentences
+- at least 90 words total
+- plain language a junior litigator can follow
+Must explain:
+- PASS: citations match what the text actually says; claims are supported and correctly limited.
+- FAIL: invented citations, invented authorities, or claims not supported by cited blocks.
+
+## C) citation_integrity_cautions (REQUIRED)
+- At least 3 cautions
+- Each caution must be at least 10 words
+- Each caution must be concrete (what graders should look for)
+
+## D) overextension_trigger_note (REQUIRED, MUST BE VERY SPECIFIC)
+- 5–8 sentences
+- at least 120 words total
+- must include all three:
+  1) The exact overclaim pattern that fails (the “bad broader claim”).
+  2) Why it is legally wrong given the packet language.
+  3) What a correct narrower claim would look like (include the missing limiters/conditions).
+
+Your overextension_trigger_note must make grading deterministic. Graders should not need to guess intent.
+
+## E) overextension_cautions (REQUIRED)
+- At least 4 cautions
+- Each caution must be at least 10 words
+- Concrete and beginner-readable
+
+## F) precedence fields (MODE C DEFAULT)
+- precedence_trigger_note: must be null
+- precedence_cautions: usually [] (empty list) unless truly needed
+
+---
+
+# WHAT COUNTS AS OVEREXTENSION (REMINDERS)
+Overextension is present when cited text supports only a narrower claim, but the draft claim is broader, more categorical, or missing key limits.
+
+Common patterns:
+- “may” becomes “must”
+- “can” becomes “always”
+- “only if” / “unless” is removed
+- a fact-specific holding becomes a general rule
+- a balancing test becomes a bright-line rule
+- a procedural posture limit (pleading vs summary judgment) is ignored
+- dicta is treated as the controlling rule when the holding is narrower
+
+---
+
+# PACKET SCAN HEURISTICS (HOW TO FIND A GOOD TRAP)
+Look for:
+- Rule language that contains scope words: “generally,” “usually,” “in this case,” “under these facts,” “unless.”
+- A strong headline sentence that is narrowed by nearby text.
+- A rule in one document and a narrowing condition in another.
+- Same topic, different outcomes because one key condition is missing.
+- Posture constraints: preliminary injunction, pleading stage, summary judgment, trial, etc.
+
+---
+
+# SELF-CONSISTENCY AUDIT (HARD GATE BEFORE FINAL OUTPUT)
+Before returning final JSON, verify and revise until ALL checks pass:
+
+1) Support truthfulness (no fake support):
+   - Do not claim the packet supports an overbroad rule if the cited blocks are narrower.
+2) Summary/headnote discipline:
+   - Do not require summary/headnote blocks as the only mandatory support for core propositions.
+3) Contract coherence:
+   - expected_citation_groups, trigger notes, and cautions must agree and not contradict each other.
+4) Rule + limiter coverage:
+   - expected_citation_groups must include one group for the base rule AND one group for the key limiter/condition/exception.
+
+---
+
+# QUALITY BAR (DO NOT LOWER)
+- Realistic: a real lawyer could type the user_query under time pressure.
+- Objective: graders can decide pass/fail from the contract and citations.
+- Auditable: every required proposition is supported by specific packet blocks.
+- Designed to trigger a real drafting mistake, not trivia and not impossible tasks.
+
+---
+
+# FINAL OUTPUT DISCIPLINE
+- Output ONLY one JSON object.
+- No markdown.
+- No extra text.
+- Use packet-only citations.
+- Make grading rules specific, auditable, and beginner-readable.
+- scenario_facts must be 1–5 short factual bullets only.

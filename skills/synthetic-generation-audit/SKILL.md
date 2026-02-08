@@ -1,26 +1,37 @@
 ---
 name: synthetic-generation-audit
-description: Run full synthetic data generation for all packets, audit ACCEPTED/REJECTED datapoints and request traces, and produce prompt-only recommendation output (no implementation) with examples.
+description: Run full synthetic data generation for all packets, build parsed evidence tables for accepted/rejected datapoints and traces, then perform model-led root-cause analysis and prompt-only recommendations (no implementation).
 ---
 
 # Synthetic Generation Audit
 
 ## Overview
-Run the repo synthetic generation pipeline end-to-end, then produce a clear quality audit across accepted and rejected datapoints, trace health, user-query realism, and prompt-only improvement recommendations.
+Run the repo synthetic generation pipeline end-to-end, then prepare evidence tables that make LLM/manual reasoning easier.
 
-This skill is designed to replicate the same workflow consistently and quickly.
+Critical principle: scripts do parsing/formatting; the model does the reasoning.
+
+## Reasoning policy (hard rule)
+- Do **not** treat scripted fields (`llm_risk_flags_json`, `llm_reason`, `final_rejection_reason`) as ground truth.
+- Use those fields only as clues.
+- Determine root causes and error modes by reading the underlying datapoint evidence itself:
+  - `user_query`
+  - `scenario_facts_json`
+  - `expected_citation_groups_json`
+  - deterministic fields + trace evidence
+- Recommendations must come from this model-led reasoning and must be marked as recommendation-only (not implemented).
 
 ## What this skill must do
 1. Trigger generation using the repo script:
 ```bash
 bash src/pincite_evals/synthetic_generation/run_all_packets.sh <run_timestamp>
 ```
-2. Audit ACCEPTED and REJECTED datapoints across all packets.
-3. Explain rejected error modes in clear language with concrete examples.
-4. Review request traces (generation + validation) to confirm requests worked properly.
-5. Review accepted user queries for realism and whether they match expected legal-assistant usage.
-6. Output prompt modification recommendations only.
-7. **Do not implement recommendations unless explicitly asked.**
+2. Build parsed evidence tables for ACCEPTED/REJECTED datapoints and traces.
+3. Perform root-cause/error-mode analysis using evidence tables.
+4. Explain rejected patterns in clear language with concrete examples.
+5. Review traces to confirm request health and distinguish quality issues from infra/runtime issues.
+6. Review accepted queries for realism and likely production behavior.
+7. Output prompt modification recommendations only.
+8. **Do not implement recommendations unless explicitly asked.**
 
 ## Repeatable command
 Preferred wrapper command:
@@ -37,22 +48,25 @@ bash skills/synthetic-generation-audit/scripts/run_and_analyze.sh <run_timestamp
 ## Outputs
 The script writes outputs under:
 - `results/synthetic_generation_audit/<run_timestamp>/analysis_summary.md`
+- `results/synthetic_generation_audit/<run_timestamp>/summary_metrics.csv`
 - `results/synthetic_generation_audit/<run_timestamp>/validation_all.csv`
 - `results/synthetic_generation_audit/<run_timestamp>/accepted_items.csv`
 - `results/synthetic_generation_audit/<run_timestamp>/rejected_items.csv`
 - `results/synthetic_generation_audit/<run_timestamp>/trace_health.csv`
-- `results/synthetic_generation_audit/<run_timestamp>/prompt_recommendations.csv`
-- `results/synthetic_generation_audit/<run_timestamp>/summary_metrics.csv`
+- `results/synthetic_generation_audit/<run_timestamp>/rejected_reasoning_evidence.csv`
+- `results/synthetic_generation_audit/<run_timestamp>/accepted_reasoning_evidence.csv`
+- `results/synthetic_generation_audit/<run_timestamp>/trace_reasoning_evidence.csv`
+- `results/synthetic_generation_audit/<run_timestamp>/analyst_workflow.md`
 
 ## Interpretation checklist
 When presenting results, include:
 1. Run ID and packet coverage.
 2. Accepted vs rejected totals (overall and by packet + mode).
-3. Rejected mode breakdown and dominant failure reasons.
-4. Whether any accepted items look questionable.
-5. Trace health summary (completion/error/incomplete/retries) with a few concrete trace examples.
+3. Root-cause clusters you inferred from evidence (not from pre-labeled flags alone).
+4. Whether any accepted items should likely have been rejected.
+5. Trace health summary (completion/error/incomplete/retries) with examples.
 6. Accepted query realism summary with examples.
-7. Prompt-only recommendations prioritized by impact.
+7. Prompt-only recommendations prioritized by impact, explicitly marked not implemented.
 
 ## Guardrails
 - Use pandas DataFrames for CSV manipulation.
