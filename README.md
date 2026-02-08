@@ -86,6 +86,22 @@ By default, the runner writes under `results/experiments/<run_id>/` with a compa
 
 Use `--artifact-level debug` to additionally save verbose debug traces under `debug/`.
 
+### Experiment Review Dashboard
+
+Use the Streamlit dashboard to inspect the latest run, filter failures, and drill into grader outcomes:
+
+```bash
+uv run pincite-review-dashboard
+```
+
+Key features:
+
+- Defaults to the newest folder in `results/experiments/`
+- Run selector dropdown for switching experiments
+- Failure filters for model errors, grade failures, and grader failures
+- Drilldown panel for `user_query`, `model_output`, and per-grader pass/score
+- Interactive Plotly charts for status, failure mix, grader pass rates, and latency
+
 ### Synthetic Generation Pipeline
 
 Run packet-level synthetic generation (modes `A/C/D`) via the package CLI:

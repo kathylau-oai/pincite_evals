@@ -132,9 +132,17 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
   - **Fix**: Move graders into `src/pincite_evals/graders` and import via `pincite_evals.graders`.
   - **Why**: Keeps all runtime code under one package tree and avoids path-dependent behavior.
 
+- **Excel review CSV looked malformed because multiline model outputs created wrapped/broken-looking rows**
+  - **Fix**: Write `final/predictions_with_grades.csv` in spreadsheet-friendly form (UTF-8 BOM, CRLF, full quoting, and newline normalization to literal `\n`).
+  - **Why**: Keeps columns aligned and readable when opening directly in Excel while preserving row-level reloadability.
+
 - **Run artifacts failed to write when `generation/candidates` was missing mid-run**
   - **Fix**: Resolve packet/output/dataset roots to absolute paths during config load and re-`mkdir` generation output subdirectories immediately before candidate/metrics writes.
   - **Why**: Prevents late-stage `FileNotFoundError` from cwd drift or partial-run directory cleanup.
+
+- **“Latest experiment” selectors could pick manual/debug folders instead of timestamped runs**
+  - **Fix**: Sort run directories by parsed run-id timestamps first (fallback to `mtime` only when no timestamp suffix exists).
+  - **Why**: Keeps default dashboard/run selection aligned with actual experiment chronology.
 
 - **Synthetic generation + quality audit needed a repeatable one-command path**
   - **Fix**: Use `skills/synthetic-generation-audit/scripts/run_and_analyze.sh` to run (or reuse) all-packet generation and emit a standardized audit report under `results/synthetic_generation_audit/<run_timestamp>/`.
@@ -177,6 +185,10 @@ Grouped by theme to make constraints easier to find. Each item captures a concre
 - **Generation prompts mixed critical instructions into `user` messages**
   - **Fix**: Keep instruction-heavy guidance in mode `system.txt` templates (including `{{ lawyer_query_style_guide }}`) and keep mode `user.txt` prompts minimal (`generate` + packet corpus only).
   - **Why**: Preserves instruction priority and reduces drift where high-priority constraints are buried in lower-priority prompt roles.
+
+- **Eval runner prompt logic embedded in `__init__.py` made prompt evolution and module readability harder**
+  - **Fix**: Move implementation to `eval_runner/runner.py`, keep `eval_runner/__init__.py` as a compatibility export shim, and store default drafting prompts in `eval_runner/prom/{system,user}.txt` with CLI override (`--user-prompt-file`).
+  - **Why**: Improves maintainability, keeps imports stable, and makes prompt iteration explicit and auditable.
 
 ### Eval throughput and rate limits
 

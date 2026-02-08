@@ -1,0 +1,10 @@
+Drafting task:
+{{ source_user_query }}
+
+Scenario facts:
+{{ scenario_facts_block }}
+
+Use only the packet corpus below as authority.
+
+Annotated packet corpus:
+{{ packet_corpus_text }}

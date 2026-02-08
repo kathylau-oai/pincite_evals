@@ -9,9 +9,16 @@ This package contains the main evaluation runner used to:
 
 ## Main entrypoint
 
-- Module: `pincite_evals.eval_runner`
+- Module: `pincite_evals.eval_runner.runner`
 - Function: `main()`
 - CLI script: `pincite-eval`
+
+Default drafting prompts live under:
+
+- `src/pincite_evals/eval_runner/prom/system.txt`
+- `src/pincite_evals/eval_runner/prom/user.txt`
+
+You can override the user template at runtime with `--user-prompt-file`.
 
 ## Quick run
 

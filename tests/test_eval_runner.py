@@ -6,15 +6,20 @@ import pandas as pd
 import pytest
 
 from pincite_evals.eval_runner import (
+    DEFAULT_DRAFTING_SYSTEM_PROMPT,
     ModelConfig,
+    _build_drafting_user_prompt,
     _build_grader_context,
+    _build_predictions_with_grades_export,
     _build_response_request,
     _parse_args,
     _compute_distribution_stats,
     _estimate_inter_token_latency_seconds,
     _evaluate_single_row,
+    _prepare_spreadsheet_friendly_export_frame,
     _prepare_dataset,
     _template_grade,
+    _write_spreadsheet_friendly_csv,
 )
 
 
@@ -227,3 +232,168 @@ def test_build_grader_context_allows_mode_a_unexpected_when_expected_groups_empt
 
     assert context["expected_citation_groups"] == []
     assert context["allow_unexpected_citations_when_no_expected_groups"] is True
+
+
+def test_build_predictions_with_grades_export_keeps_compact_columns_and_reasons():
+    predictions_with_grades_frame = pd.DataFrame(
+        [
+            {
+                "model_config": "baseline",
+                "source_row_index": 0,
+                "item_id": "item_0",
+                "packet_id": "packet_1",
+                "query_id": "q_0",
+                "as_of_date": "2026-02-08",
+                "target_error_mode": "A",
+                "source_user_query": "Query 0",
+                "model_output": "Output 0",
+                "response_status": "completed",
+                "rendered_user_prompt": "very large prompt payload",
+                "overall_required_graders_passed": True,
+            },
+            {
+                "model_config": "baseline",
+                "source_row_index": 1,
+                "item_id": "item_1",
+                "packet_id": "packet_1",
+                "query_id": "q_1",
+                "as_of_date": "2026-02-08",
+                "target_error_mode": "C",
+                "source_user_query": "Query 1",
+                "model_output": "Output 1",
+                "response_status": "completed",
+                "rendered_user_prompt": "another large prompt payload",
+                "overall_required_graders_passed": False,
+            },
+        ]
+    )
+
+    grader_frame = pd.DataFrame(
+        [
+            {
+                "model_config": "baseline",
+                "source_row_index": 0,
+                "item_id": "item_0",
+                "grader_name": "expected_citation_presence",
+                "grader_status": "completed",
+                "grader_passed": True,
+                "grader_error": None,
+                "grader_details_json": "{}",
+            },
+            {
+                "model_config": "baseline",
+                "source_row_index": 1,
+                "item_id": "item_1",
+                "grader_name": "expected_citation_presence",
+                "grader_status": "completed",
+                "grader_passed": False,
+                "grader_error": None,
+                "grader_details_json": "{\"missing_groups\": [[\"DOC001.P001.B01\"]], \"unexpected_predictions\": []}",
+            },
+            {
+                "model_config": "baseline",
+                "source_row_index": 1,
+                "item_id": "item_1",
+                "grader_name": "citation_overextension_llm_judge",
+                "grader_status": "completed",
+                "grader_passed": False,
+                "grader_error": None,
+                "grader_details_json": "{\"reason\": \"Claim overstates the authority.\"}",
+            },
+        ]
+    )
+
+    compact_frame = _build_predictions_with_grades_export(predictions_with_grades_frame, grader_frame)
+
+    assert compact_frame.columns.tolist() == [
+        "model_config",
+        "source_row_index",
+        "item_id",
+        "packet_id",
+        "query_id",
+        "as_of_date",
+        "target_error_mode",
+        "user_query",
+        "model_output",
+        "response_status",
+        "overall_required_graders_passed",
+        "overall_required_graders_reason",
+    ]
+    assert "rendered_user_prompt" not in compact_frame.columns
+    assert compact_frame.loc[0, "overall_required_graders_reason"] == "All required graders passed."
+    assert "expected_citation_presence: Missing groups: 1; unexpected citations: 0." in compact_frame.loc[
+        1, "overall_required_graders_reason"
+    ]
+    assert "citation_overextension_llm_judge: Claim overstates the authority." in compact_frame.loc[
+        1, "overall_required_graders_reason"
+    ]
+
+
+def test_prepare_spreadsheet_friendly_export_frame_normalizes_embedded_newlines():
+    export_frame = pd.DataFrame(
+        [
+            {
+                "item_id": "item_0",
+                "model_output": "Line one.\nLine two.\r\nLine three.\rLine four.",
+                "score": 1.0,
+            }
+        ]
+    )
+
+    spreadsheet_frame = _prepare_spreadsheet_friendly_export_frame(export_frame)
+
+    assert spreadsheet_frame.loc[0, "model_output"] == "Line one.\\nLine two.\\nLine three.\\nLine four."
+    assert spreadsheet_frame.loc[0, "score"] == 1.0
+
+
+def test_write_spreadsheet_friendly_csv_writes_bom_and_round_trippable_rows(tmp_path):
+    output_csv_path = tmp_path / "predictions_with_grades.csv"
+    export_frame = pd.DataFrame(
+        [
+            {
+                "item_id": "item_0",
+                "model_output": "First line.\nSecond line.",
+                "overall_required_graders_reason": "all good",
+            }
+        ]
+    )
+
+    _write_spreadsheet_friendly_csv(export_frame=export_frame, output_csv_path=output_csv_path)
+
+    raw_bytes = output_csv_path.read_bytes()
+    assert raw_bytes.startswith(b"\xef\xbb\xbf")
+
+    loaded_frame = pd.read_csv(output_csv_path, encoding="utf-8-sig")
+    assert loaded_frame.loc[0, "model_output"] == "First line.\\nSecond line."
+    assert loaded_frame.shape == (1, 3)
+
+
+def test_build_drafting_user_prompt_renders_user_template_variables():
+    user_prompt_template = (
+        "Task:\n{{ source_user_query }}\n\n"
+        "Facts:\n{{ scenario_facts_block }}\n\n"
+        "Corpus:\n{{ packet_corpus_text }}"
+    )
+
+    rendered_prompt = _build_drafting_user_prompt(
+        source_user_query="Write memo section",
+        scenario_facts=["Fact one", "Fact two"],
+        packet_corpus_text='<DOCUMENT id=\"DOC001\">...</DOCUMENT>',
+        user_prompt_template=user_prompt_template,
+    )
+
+    assert "Task:\nWrite memo section" in rendered_prompt
+    assert "Facts:\n- Fact one\n- Fact two" in rendered_prompt
+    assert 'Corpus:\n<DOCUMENT id="DOC001">...</DOCUMENT>' in rendered_prompt
+
+
+def test_default_system_prompt_contains_memo_headings_and_footnote_requirements():
+    assert "# Question Presented" in DEFAULT_DRAFTING_SYSTEM_PROMPT
+    assert "# Brief Answer" in DEFAULT_DRAFTING_SYSTEM_PROMPT
+    assert "# Rule / Governing Standard" in DEFAULT_DRAFTING_SYSTEM_PROMPT
+    assert "# Analysis" in DEFAULT_DRAFTING_SYSTEM_PROMPT
+    assert "# Counterarguments / Distinguishing" in DEFAULT_DRAFTING_SYSTEM_PROMPT
+    assert "# Recommendation + Risk/Uncertainty" in DEFAULT_DRAFTING_SYSTEM_PROMPT
+    assert "# Citations (verbatim list)" in DEFAULT_DRAFTING_SYSTEM_PROMPT
+    assert "Footnote requirements" in DEFAULT_DRAFTING_SYSTEM_PROMPT
+    assert "DOC###.P###.B##" in DEFAULT_DRAFTING_SYSTEM_PROMPT

@@ -24,6 +24,7 @@ dependencies = [
   "plotly>=5.22.0",
   "kaleido>=1.0.0",
   "Jinja2>=3.1.0",
+  "streamlit>=1.41.0",
 ]
 
 [project.optional-dependencies]
@@ -32,8 +33,9 @@ dev = [
 ]
 
 [project.scripts]
-pincite-eval = "pincite_evals.eval_runner:main"
+pincite-eval = "pincite_evals.eval_runner.runner:main"
 pincite-synth = "pincite_evals.synthetic_generation.cli:main"
+pincite-review-dashboard = "pincite_evals.experiment_review_dashboard:launch"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -42,6 +44,7 @@ package-dir = {"" = "src"}
 where = ["src"]
 
 [tool.setuptools.package-data]
+"pincite_evals.eval_runner" = ["prom/**/*.txt"]
 "pincite_evals.synthetic_generation" = ["prompts/**/*.txt"]
 "pincite_evals.graders" = ["prompts/**/*.txt"]
 
