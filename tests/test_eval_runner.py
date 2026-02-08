@@ -1,3 +1,4 @@
+import sys
 from argparse import Namespace
 from pathlib import Path
 
@@ -8,6 +9,7 @@ from pincite_evals.eval_runner import (
     ModelConfig,
     _build_grader_context,
     _build_response_request,
+    _parse_args,
     _compute_distribution_stats,
     _estimate_inter_token_latency_seconds,
     _evaluate_single_row,
@@ -47,6 +49,14 @@ def test_build_response_request_omits_temperature_when_reasoning_enabled():
     assert request["service_tier"] == "priority"
     assert request["reasoning"] == {"effort": "high"}
     assert "temperature" not in request
+
+
+def test_parse_args_defaults_output_root_and_artifact_level(monkeypatch):
+    monkeypatch.setattr(sys, "argv", ["pincite-eval"])
+    args = _parse_args()
+
+    assert args.output_root == "results/experiments"
+    assert args.artifact_level == "standard"
 
 
 def test_template_grade_exact_match_and_not_graded_cases():

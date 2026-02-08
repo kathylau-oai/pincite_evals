@@ -74,13 +74,17 @@ uv run pincite-eval \
   --experiment-name template_eval_multi_config
 ```
 
-The runner writes all outputs under `results/<run_id>/`, including:
+By default, the runner writes under `results/experiments/<run_id>/` with a compact structure:
 
-- `predictions_and_grades.csv`
-- `metrics_summary.csv`
-- `latency_metrics.csv`
-- `token_metrics.csv`
-- `raw_responses/` (per-item raw API payloads for auditability)
+- `manifest.json`
+- `final/predictions_with_grades.csv`
+- `final/metrics_summary.csv`
+- `final/grader_metrics_summary.csv`
+- `final/errors.csv`
+- `analysis/failure_mode_report.md`
+- `analysis/charts/` (metric plots + grader performance bar plot)
+
+Use `--artifact-level debug` to additionally save verbose debug traces under `debug/`.
 
 ### Synthetic Generation Pipeline
 

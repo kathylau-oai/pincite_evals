@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 import pandas as pd
+import plotly.express as px
 from openai import (
     APIConnectionError,
     APITimeoutError,
@@ -98,9 +99,17 @@ def _parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--packet-root", default="data/case_law_packets", help="Root folder for packet corpora.")
 
-    parser.add_argument("--output-root", default="results", help="Root directory for run outputs.")
-    parser.add_argument("--run-id", default=None, help="Optional run ID. Outputs are written to results/<run_id>.")
+    parser.add_argument("--output-root", default="results/experiments", help="Root directory for run outputs.")
+    parser.add_argument(
+        "--run-id", default=None, help="Optional run ID. Outputs are written to <output-root>/<run_id>."
+    )
     parser.add_argument("--experiment-name", default="template_eval", help="Name used when auto-generating run IDs.")
+    parser.add_argument(
+        "--artifact-level",
+        default="standard",
+        choices=["standard", "debug"],
+        help="Artifact verbosity. standard writes compact final/analysis outputs; debug also writes raw request traces.",
+    )
 
     parser.add_argument("--id-column", default="item_id", help="CSV column for unique item IDs.")
     parser.add_argument(
@@ -835,7 +844,7 @@ def _evaluate_single_row(
     source_row_index: int,
     model_config: ModelConfig,
     call_model,
-    raw_response_dir: Path,
+    raw_response_dir: Optional[Path],
     prompt_column: str,
     id_column: str,
     expected_output_column: str,
@@ -945,23 +954,24 @@ def _evaluate_single_row(
 
     grade_data = _template_grade(model_result["output_text"], expected_output)
 
-    file_stem = _sanitize_name(f"{source_row_index}_{item_id}")
-    raw_path = raw_response_dir / f"{file_stem}.json"
-    raw_payload = {
-        "request": request,
-        "result": {
-            "response_id": model_result["response_id"],
-            "status": model_result["status"],
-            "incomplete_reason": model_result["incomplete_reason"],
-            "output_text": model_result["output_text"],
-            "latency_seconds": model_result["latency_seconds"],
-            "ttft_seconds": model_result["ttft_seconds"],
-            "inter_token_latencies": inter_token_latencies,
-            "usage": model_result["usage"],
-        },
-        "raw_response": model_result["raw_response"],
-    }
-    raw_path.write_text(json.dumps(raw_payload, indent=2), encoding="utf-8")
+    if raw_response_dir is not None:
+        file_stem = _sanitize_name(f"{source_row_index}_{item_id}")
+        raw_path = raw_response_dir / f"{file_stem}.json"
+        raw_payload = {
+            "request": request,
+            "result": {
+                "response_id": model_result["response_id"],
+                "status": model_result["status"],
+                "incomplete_reason": model_result["incomplete_reason"],
+                "output_text": model_result["output_text"],
+                "latency_seconds": model_result["latency_seconds"],
+                "ttft_seconds": model_result["ttft_seconds"],
+                "inter_token_latencies": inter_token_latencies,
+                "usage": model_result["usage"],
+            },
+            "raw_response": model_result["raw_response"],
+        }
+        raw_path.write_text(json.dumps(raw_payload, indent=2), encoding="utf-8")
 
     result_row = {
         **base_row,
@@ -992,8 +1002,10 @@ def _evaluate_model_config(
     run_dir: Path,
     progress_position: int,
 ) -> Tuple[pd.DataFrame, List[Dict[str, Any]], List[Dict[str, Any]]]:
-    raw_response_dir = run_dir / "raw_responses" / _sanitize_name(model_config.name)
-    raw_response_dir.mkdir(parents=True, exist_ok=True)
+    raw_response_dir: Optional[Path] = None
+    if args.artifact_level == "debug":
+        raw_response_dir = run_dir / "debug" / "raw_responses" / _sanitize_name(model_config.name)
+        raw_response_dir.mkdir(parents=True, exist_ok=True)
 
     if args.dry_run:
         call_model = None
@@ -1449,8 +1461,10 @@ def _run_graders(
 ) -> pd.DataFrame:
     grader_registry = _build_grader_registry(args)
 
-    raw_grader_dir = run_dir / "raw_grader_responses"
-    raw_grader_dir.mkdir(parents=True, exist_ok=True)
+    raw_grader_dir: Optional[Path] = None
+    if args.artifact_level == "debug":
+        raw_grader_dir = run_dir / "debug" / "raw_grader_responses"
+        raw_grader_dir.mkdir(parents=True, exist_ok=True)
 
     prediction_records = predictions_frame.to_dict(orient="records")
 
@@ -1482,11 +1496,12 @@ def _run_graders(
             grader_row, raw_payload = future.result()
             grader_rows.append(grader_row)
 
-            raw_file_stem = _sanitize_name(
-                f"{record_context['source_row_index']}_{record_context['item_id']}_{record_context['model_config']}_{record_context['grader_name']}"
-            )
-            raw_path = raw_grader_dir / f"{raw_file_stem}.json"
-            raw_path.write_text(json.dumps(raw_payload, indent=2), encoding="utf-8")
+            if raw_grader_dir is not None:
+                raw_file_stem = _sanitize_name(
+                    f"{record_context['source_row_index']}_{record_context['item_id']}_{record_context['model_config']}_{record_context['grader_name']}"
+                )
+                raw_path = raw_grader_dir / f"{raw_file_stem}.json"
+                raw_path.write_text(json.dumps(raw_payload, indent=2), encoding="utf-8")
             progress_bar.update(1)
         progress_bar.close()
 
@@ -1632,24 +1647,271 @@ def _build_predictions_and_grades(predictions_frame: pd.DataFrame, grader_frame:
     return merged
 
 
-def _save_run_configuration(
+def _build_error_table(predictions_frame: pd.DataFrame, grader_frame: pd.DataFrame) -> pd.DataFrame:
+    model_error_rows: List[Dict[str, Any]] = []
+    prediction_errors = predictions_frame[predictions_frame["response_status"] != "completed"]
+    for _, row in prediction_errors.iterrows():
+        model_error_rows.append(
+            {
+                "stage": "model",
+                "model_config": row.get("model_config"),
+                "source_row_index": row.get("source_row_index"),
+                "item_id": row.get("item_id"),
+                "packet_id": row.get("packet_id"),
+                "target_error_mode": row.get("target_error_mode"),
+                "component_name": "drafting_model",
+                "status": row.get("response_status"),
+                "error_message": row.get("request_error"),
+                "incomplete_reason": row.get("incomplete_reason"),
+            }
+        )
+
+    grader_error_rows: List[Dict[str, Any]] = []
+    if not grader_frame.empty:
+        grader_issues = grader_frame[grader_frame["grader_status"] != "completed"]
+        for _, row in grader_issues.iterrows():
+            grader_error_rows.append(
+                {
+                    "stage": "grader",
+                    "model_config": row.get("model_config"),
+                    "source_row_index": row.get("source_row_index"),
+                    "item_id": row.get("item_id"),
+                    "packet_id": row.get("packet_id"),
+                    "target_error_mode": row.get("target_error_mode"),
+                    "component_name": row.get("grader_name"),
+                    "status": row.get("grader_status"),
+                    "error_message": row.get("grader_error"),
+                    "incomplete_reason": None,
+                }
+            )
+
+    if not model_error_rows and not grader_error_rows:
+        return pd.DataFrame(
+            columns=[
+                "stage",
+                "model_config",
+                "source_row_index",
+                "item_id",
+                "packet_id",
+                "target_error_mode",
+                "component_name",
+                "status",
+                "error_message",
+                "incomplete_reason",
+            ]
+        )
+
+    error_frame = pd.DataFrame(model_error_rows + grader_error_rows)
+    return error_frame.sort_values(
+        by=["stage", "source_row_index", "item_id", "component_name"], kind="mergesort"
+    ).reset_index(drop=True)
+
+
+def _aggregate_grader_performance(grader_frame: pd.DataFrame) -> pd.DataFrame:
+    if grader_frame.empty:
+        return pd.DataFrame(columns=["model_config", "grader_name", "completed_count", "pass_count", "pass_rate"])
+
+    completed = grader_frame[grader_frame["grader_status"] == "completed"]
+    if completed.empty:
+        return pd.DataFrame(columns=["model_config", "grader_name", "completed_count", "pass_count", "pass_rate"])
+
+    grouped = (
+        completed.groupby(["model_config", "grader_name"], dropna=False)["grader_passed"]
+        .agg(completed_count="count", pass_count="sum")
+        .reset_index()
+    )
+    grouped["pass_rate"] = grouped["pass_count"] / grouped["completed_count"]
+    return grouped.sort_values(by=["model_config", "grader_name"], kind="mergesort")
+
+
+def _save_metric_plots(
+    *,
+    charts_dir: Path,
+    summary_frame: pd.DataFrame,
+    grader_performance_frame: pd.DataFrame,
+) -> None:
+    charts_dir.mkdir(parents=True, exist_ok=True)
+
+    pass_rate_frame = summary_frame[["model_config", "graded_pass_rate"]].copy()
+    pass_rate_frame["graded_pass_rate"] = pass_rate_frame["graded_pass_rate"].fillna(0.0)
+    pass_rate_figure = px.bar(
+        pass_rate_frame,
+        x="model_config",
+        y="graded_pass_rate",
+        text=pass_rate_frame["graded_pass_rate"].map(lambda value: f"{value:.1%}"),
+        title="Template Graded Pass Rate by Model",
+        labels={"model_config": "Model Config", "graded_pass_rate": "Pass Rate"},
+    )
+    pass_rate_figure.update_layout(yaxis=dict(range=[0, 1]), template="plotly_white")
+    pass_rate_figure.write_image(charts_dir / "metrics_pass_rate_by_model.png", width=1100, height=700, scale=2)
+
+    latency_frame = summary_frame[
+        ["model_config", "latency_seconds_p50", "latency_seconds_p90", "latency_seconds_p95"]
+    ].melt(
+        id_vars="model_config",
+        var_name="latency_metric",
+        value_name="seconds",
+    )
+    latency_figure = px.bar(
+        latency_frame,
+        x="model_config",
+        y="seconds",
+        color="latency_metric",
+        barmode="group",
+        title="Latency Metrics by Model",
+        labels={"model_config": "Model Config", "seconds": "Seconds", "latency_metric": "Metric"},
+    )
+    latency_figure.update_layout(template="plotly_white")
+    latency_figure.write_image(charts_dir / "metrics_latency_by_model.png", width=1200, height=700, scale=2)
+
+    token_frame = summary_frame[
+        ["model_config", "output_tokens_avg", "output_tokens_p90", "total_tokens_avg"]
+    ].melt(
+        id_vars="model_config",
+        var_name="token_metric",
+        value_name="tokens",
+    )
+    token_figure = px.bar(
+        token_frame,
+        x="model_config",
+        y="tokens",
+        color="token_metric",
+        barmode="group",
+        title="Token Metrics by Model",
+        labels={"model_config": "Model Config", "tokens": "Tokens", "token_metric": "Metric"},
+    )
+    token_figure.update_layout(template="plotly_white")
+    token_figure.write_image(charts_dir / "metrics_tokens_by_model.png", width=1200, height=700, scale=2)
+
+    if grader_performance_frame.empty:
+        return
+
+    grader_plot = grader_performance_frame.copy()
+    grader_plot["pass_rate"] = grader_plot["pass_rate"].fillna(0.0)
+    grader_figure = px.bar(
+        grader_plot,
+        x="grader_name",
+        y="pass_rate",
+        color="model_config",
+        barmode="group",
+        text=grader_plot["pass_rate"].map(lambda value: f"{value:.1%}"),
+        title="Grader Performance Pass Rate",
+        labels={"grader_name": "Grader", "pass_rate": "Pass Rate", "model_config": "Model Config"},
+    )
+    grader_figure.update_layout(yaxis=dict(range=[0, 1]), template="plotly_white")
+    grader_figure.write_image(charts_dir / "grader_performance_by_grader.png", width=1400, height=800, scale=2)
+
+
+def _write_failure_mode_report(
+    *,
+    analysis_dir: Path,
+    predictions_and_grades_frame: pd.DataFrame,
+    grader_performance_frame: pd.DataFrame,
+    error_frame: pd.DataFrame,
+) -> None:
+    analysis_dir.mkdir(parents=True, exist_ok=True)
+
+    total_items = int(predictions_and_grades_frame.shape[0])
+    completed_items = int((predictions_and_grades_frame["response_status"] == "completed").sum())
+
+    overall_pass_series = predictions_and_grades_frame["overall_required_graders_passed"].dropna()
+    overall_pass_rate = float(overall_pass_series.mean()) if not overall_pass_series.empty else None
+
+    mode_summary = (
+        predictions_and_grades_frame.groupby("target_error_mode", dropna=False)["overall_required_graders_passed"]
+        .agg(item_count="count", pass_count="sum", pass_rate="mean")
+        .reset_index()
+        .sort_values("target_error_mode", kind="mergesort")
+    )
+
+    report_lines = [
+        "# Failure Mode Report",
+        "",
+        f"- Total items: {total_items}",
+        f"- Completed model responses: {completed_items}/{total_items}",
+        (
+            f"- Overall required-grader pass rate: {overall_pass_rate:.1%}"
+            if overall_pass_rate is not None
+            else "- Overall required-grader pass rate: n/a"
+        ),
+        f"- Total non-completed/error rows: {int(error_frame.shape[0])}",
+        "",
+        "## Pass Rate by Error Mode",
+    ]
+
+    for _, row in mode_summary.iterrows():
+        pass_rate_text = "n/a" if pd.isna(row["pass_rate"]) else f"{float(row['pass_rate']):.1%}"
+        report_lines.append(
+            f"- Mode {row['target_error_mode']}: {int(row['pass_count'])}/{int(row['item_count'])} ({pass_rate_text})"
+        )
+
+    report_lines.append("")
+    report_lines.append("## Grader Pass Rates")
+    if grader_performance_frame.empty:
+        report_lines.append("- No completed grader rows.")
+    else:
+        for _, row in grader_performance_frame.iterrows():
+            report_lines.append(
+                f"- `{row['model_config']}` / `{row['grader_name']}`: "
+                f"{int(row['pass_count'])}/{int(row['completed_count'])} ({float(row['pass_rate']):.1%})"
+            )
+
+    report_lines.append("")
+    report_lines.append("## Error Summary")
+    if error_frame.empty:
+        report_lines.append("- No model or grader errors.")
+    else:
+        stage_counts = error_frame.groupby("stage", dropna=False).size().to_dict()
+        for stage_name, stage_count in stage_counts.items():
+            report_lines.append(f"- {stage_name}: {int(stage_count)}")
+        top_rows = error_frame.head(10)
+        report_lines.append("- First 10 error rows:")
+        for _, row in top_rows.iterrows():
+            report_lines.append(
+                f"  - [{row['stage']}] item={row['item_id']} component={row['component_name']} status={row['status']} "
+                f"error={row['error_message']}"
+            )
+
+    (analysis_dir / "failure_mode_report.md").write_text("\n".join(report_lines) + "\n", encoding="utf-8")
+
+
+def _write_manifest(
     *,
     run_dir: Path,
     args: argparse.Namespace,
     model_configs: List[ModelConfig],
+    final_dir: Path,
+    analysis_dir: Path,
+    predictions_and_grades_frame: pd.DataFrame,
+    error_frame: pd.DataFrame,
 ) -> None:
-    config_payload = {
+    completed_items = int((predictions_and_grades_frame["response_status"] == "completed").sum())
+    overall_required_pass = predictions_and_grades_frame["overall_required_graders_passed"].dropna()
+    payload = {
         "created_at": datetime.now().isoformat(),
+        "run_id": run_dir.name,
+        "artifact_level": args.artifact_level,
         "cli_args": vars(args),
         "model_configs": [asdict(config) for config in model_configs],
-        "grader_config": {
-            "grader_model": args.grader_model,
-            "grader_reasoning_effort": args.grader_reasoning_effort,
-            "grader_temperature": args.grader_temperature,
-            "service_tier": PRIORITY_SERVICE_TIER,
+        "summary": {
+            "item_count": int(predictions_and_grades_frame.shape[0]),
+            "completed_item_count": completed_items,
+            "non_completed_item_count": int(predictions_and_grades_frame.shape[0] - completed_items),
+            "overall_required_graders_pass_rate": (
+                float(overall_required_pass.mean()) if not overall_required_pass.empty else None
+            ),
+            "error_row_count": int(error_frame.shape[0]),
+        },
+        "artifacts": {
+            "predictions_with_grades_csv": str((final_dir / "predictions_with_grades.csv").relative_to(run_dir)),
+            "metrics_summary_csv": str((final_dir / "metrics_summary.csv").relative_to(run_dir)),
+            "grader_metrics_summary_csv": str((final_dir / "grader_metrics_summary.csv").relative_to(run_dir)),
+            "errors_csv": str((final_dir / "errors.csv").relative_to(run_dir)),
+            "failure_mode_report_md": str((analysis_dir / "failure_mode_report.md").relative_to(run_dir)),
+            "charts_dir": str((analysis_dir / "charts").relative_to(run_dir)),
         },
     }
-    (run_dir / "run_config.json").write_text(json.dumps(config_payload, indent=2), encoding="utf-8")
+    (run_dir / "manifest.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
 def _build_run_id(args: argparse.Namespace) -> str:
@@ -1677,14 +1939,25 @@ def main() -> None:
     run_id = _build_run_id(args)
     run_dir = Path(args.output_root) / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
+    final_dir = run_dir / "final"
+    analysis_dir = run_dir / "analysis"
+    charts_dir = analysis_dir / "charts"
+    final_dir.mkdir(parents=True, exist_ok=True)
+    analysis_dir.mkdir(parents=True, exist_ok=True)
+
+    debug_dir: Optional[Path] = None
+    if args.artifact_level == "debug":
+        debug_dir = run_dir / "debug"
+        debug_dir.mkdir(parents=True, exist_ok=True)
 
     input_summary_frame, input_column_profile_frame = _build_input_profile(
         dataset,
         id_column=args.id_column,
         prompt_column=USER_QUERY_COLUMN,
     )
-    input_summary_frame.to_csv(run_dir / "input_summary.csv", index=False)
-    input_column_profile_frame.to_csv(run_dir / "input_column_profile.csv", index=False)
+    if debug_dir is not None:
+        input_summary_frame.to_csv(debug_dir / "input_summary.csv", index=False)
+        input_column_profile_frame.to_csv(debug_dir / "input_column_profile.csv", index=False)
 
     packet_resource_map = _build_packet_resource_map(dataset, Path(args.packet_root))
 
@@ -1715,9 +1988,8 @@ def main() -> None:
                 "corpus_char_length": len(packet_resources.packet_corpus_text),
             }
         )
-    pd.DataFrame(packet_sanity_rows).to_csv(run_dir / "packet_input_sanity.csv", index=False)
-
-    _save_run_configuration(run_dir=run_dir, args=args, model_configs=model_configs)
+    if debug_dir is not None:
+        pd.DataFrame(packet_sanity_rows).to_csv(debug_dir / "packet_input_sanity.csv", index=False)
 
     model_to_position = {config.name: index for index, config in enumerate(model_configs)}
 
@@ -1747,24 +2019,9 @@ def main() -> None:
     all_results_frame = pd.concat(all_result_frames, ignore_index=True)
     summary_frame = pd.DataFrame(summary_rows).sort_values(by="model_config", kind="mergesort")
 
-    all_results_frame.to_csv(run_dir / "predictions.csv", index=False)
-    summary_frame.to_csv(run_dir / "metrics_summary.csv", index=False)
-
-    latency_metrics_frame = _reshape_metric_table(
-        summary_frame,
-        ["latency_seconds", "ttft_seconds", "inter_token_latency_seconds"],
-        "latency",
-    )
-    token_metrics_frame = _reshape_metric_table(
-        summary_frame,
-        ["input_tokens", "output_tokens", "reasoning_tokens", "total_tokens"],
-        "tokens",
-    )
-
-    latency_metrics_frame.to_csv(run_dir / "latency_metrics.csv", index=False)
-    token_metrics_frame.to_csv(run_dir / "token_metrics.csv", index=False)
-
-    pd.DataFrame(all_inter_token_rows).to_csv(run_dir / "inter_token_latency_events.csv", index=False)
+    if debug_dir is not None:
+        all_results_frame.to_csv(debug_dir / "predictions.csv", index=False)
+        pd.DataFrame(all_inter_token_rows).to_csv(debug_dir / "inter_token_latency_events.csv", index=False)
 
     grader_frame = _run_graders(
         predictions_frame=all_results_frame,
@@ -1772,16 +2029,54 @@ def main() -> None:
         run_dir=run_dir,
         block_text_by_packet=block_text_by_packet,
     )
-    grader_frame.to_csv(run_dir / "grader_results.csv", index=False)
+    if debug_dir is not None:
+        grader_frame.to_csv(debug_dir / "grader_results.csv", index=False)
 
     grader_summary_frame = _summarize_grader_metrics(grader_frame)
-    grader_summary_frame.to_csv(run_dir / "grader_metrics_summary.csv", index=False)
-
-    slice_metrics_frame = _build_slice_metrics(grader_frame)
-    slice_metrics_frame.to_csv(run_dir / "slice_metrics.csv", index=False)
 
     predictions_and_grades_frame = _build_predictions_and_grades(all_results_frame, grader_frame)
-    predictions_and_grades_frame.to_csv(run_dir / "predictions_and_grades.csv", index=False)
+    error_frame = _build_error_table(all_results_frame, grader_frame)
+    grader_performance_frame = _aggregate_grader_performance(grader_frame)
+
+    predictions_and_grades_frame.to_csv(final_dir / "predictions_with_grades.csv", index=False)
+    summary_frame.to_csv(final_dir / "metrics_summary.csv", index=False)
+    grader_summary_frame.to_csv(final_dir / "grader_metrics_summary.csv", index=False)
+    error_frame.to_csv(final_dir / "errors.csv", index=False)
+
+    _save_metric_plots(
+        charts_dir=charts_dir,
+        summary_frame=summary_frame,
+        grader_performance_frame=grader_performance_frame,
+    )
+    _write_failure_mode_report(
+        analysis_dir=analysis_dir,
+        predictions_and_grades_frame=predictions_and_grades_frame,
+        grader_performance_frame=grader_performance_frame,
+        error_frame=error_frame,
+    )
+    _write_manifest(
+        run_dir=run_dir,
+        args=args,
+        model_configs=model_configs,
+        final_dir=final_dir,
+        analysis_dir=analysis_dir,
+        predictions_and_grades_frame=predictions_and_grades_frame,
+        error_frame=error_frame,
+    )
+
+    if debug_dir is not None:
+        _build_slice_metrics(grader_frame).to_csv(debug_dir / "slice_metrics.csv", index=False)
+        _reshape_metric_table(
+            summary_frame,
+            ["latency_seconds", "ttft_seconds", "inter_token_latency_seconds"],
+            "latency",
+        ).to_csv(debug_dir / "latency_metrics.csv", index=False)
+        _reshape_metric_table(
+            summary_frame,
+            ["input_tokens", "output_tokens", "reasoning_tokens", "total_tokens"],
+            "tokens",
+        ).to_csv(debug_dir / "token_metrics.csv", index=False)
+        predictions_and_grades_frame.to_csv(debug_dir / "predictions_and_grades.csv", index=False)
 
     print(f"Run complete. Artifacts saved to: {run_dir}")
 

@@ -39,4 +39,14 @@ uv run pincite-eval \
   --experiment-name multi_model_eval
 ```
 
-Outputs are written under `results/<run_id>/`.
+Outputs are written under `results/experiments/<run_id>/` by default, with:
+
+- `manifest.json`
+- `final/predictions_with_grades.csv`
+- `final/metrics_summary.csv`
+- `final/grader_metrics_summary.csv`
+- `final/errors.csv`
+- `analysis/failure_mode_report.md`
+- `analysis/charts/grader_performance_by_grader.png` (single bar plot across graders)
+
+Add `--artifact-level debug` to include verbose trace files under `debug/`.
